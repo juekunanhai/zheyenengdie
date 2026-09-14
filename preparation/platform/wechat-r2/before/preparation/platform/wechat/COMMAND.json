@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/Applications/CocosCreator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+    "--project",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die",
+    "--build",
+    "configPath=/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/platform/wechat-build.json"
+  ],
+  "display": "/Applications/CocosCreator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /Users/admin/Desktop/douchao/my-project/wechatgames/die --build configPath=/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/platform/wechat-build.json",
+  "config": "preparation/platform/wechat-build.json",
+  "config_sha256": "d2520a09713880d6d225aece9c35959a1620e393a534ddc8af734d7d247cba86",
+  "cwd": "/Users/admin/Desktop/douchao/my-project/wechatgames/die",
+  "documentation": [
+    "https://docs.cocos.com/creator/3.8/manual/zh/editor/publish/publish-in-command-line.html",
+    "https://docs.cocos.com/creator/3.8/manual/zh/editor/publish/publish-wechatgame.html"
+  ],
+  "installed_platform_plugin": "wechatgame 1.0.4 in Cocos Creator 3.8.8 app.asar"
+}

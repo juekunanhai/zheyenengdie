@@ -1,0 +1,93 @@
+{
+  "recorded_at": "2026-09-14T20:31:11.965939+08:00",
+  "scope": "Local Creator build and official WeChat developer tool verification only",
+  "tool": {
+    "version": "2.01.2510290",
+    "mode": "小游戏",
+    "base_library": "3.17.2",
+    "simulator": "iPhone 12/13 (Pro), 75%",
+    "project": "build/wechatgame",
+    "appid": "wxc0360e0c829a3307"
+  },
+  "provenance": "CUA native app accessibility text and screenshots in this task; user manual confirmation; read-only console query in gameContext. Screenshots are in the conversation tool results, not saved PNG evidence.",
+  "observations": [
+    {
+      "id": "home_boot",
+      "status": "observed",
+      "evidence": "New build displayed Home artwork; console Success to load scene: db://assets/batch0/scenes/Home.scene; Box2D wasm lib loaded; Cocos Creator v3.8.8."
+    },
+    {
+      "id": "home_to_hud",
+      "status": "user_confirmed_and_runtime_observed",
+      "user_reply": "可以进入对局",
+      "evidence": "User clicked 开始叠 manually. Later log LoadScene HUD: 685.890869140625 ms; screenshot showed HUD at 4.9m and then 8.0m."
+    },
+    {
+      "id": "running_physics_and_music",
+      "status": "read_only_observed",
+      "snapshot": {
+        "scene": "HUD",
+        "phase": "observing",
+        "releases": 17,
+        "placed": 15,
+        "stars": 2,
+        "peak": 11.03311767578125,
+        "music": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.28,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 3.2321875000000055,
+              "volume": 0.28
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        }
+      },
+      "boundary": "Natural/user-started run with automatic releases; no calibration or body/score/state injection. Single snapshot does not measure playability or stability distribution."
+    },
+    {
+      "id": "result",
+      "status": "observed",
+      "evidence": "Console LoadScene Result: 274.686767578125 ms; native screenshot showed R13 result with 11.4m. No finish() or scene-changing console command executed.",
+      "boundary": "Failure reason and exact final internal score were not captured; no claim of a full accident-rule regression."
+    },
+    {
+      "id": "package_ui",
+      "status": "observed",
+      "local_code_label": "30450 KB",
+      "last_preview": "无",
+      "last_upload": "无",
+      "boundary": "Aggregate local-code file statistic only. UI per-package rows were not obtained; breakdown comes from separately recorded raw filesystem bytes. Not the platform compressed upload package."
+    }
+  ],
+  "console_query": "JSON.stringify((()=>{const s=cc.director.getScene(),g=s.getChildByName(\"Canvas\").getComponent(\"StackGameController\"),q=g?.snapshot();return {scene:s.name,phase:q?.phase,releases:q?.releases,placed:q?.placed,stars:q?.stars,peak:q?.peakMetres,music:q?.music}})())",
+  "diagnostics": {
+    "first_new_build_session": "2 errors / 3 warnings visible; one expanded error was SystemError appServiceSDKScriptError: webapi_getwxaasyncsecinfo:fail Failed to fetch (WAGame.js). Home still loaded.",
+    "later_user_started_session": "2 errors / 3 warnings visible after user interaction/recompile; expanded [jsbridge] invoke getSystemInfo fail: jsbridge not ready (WAGame.js). The other counted error was not independently expanded in this later session. SharedArrayBuffer deprecation, getSystemInfo API advice and Failed to set shading scale/pipelineSceneData invalid were observed.",
+    "automation_probe": "Earlier top-context query had an input-generated SyntaxError due lost punctuation; this is an agent console probe error, not game code. Top-context cc/System undefined was resolved by selecting gameContext. These prior probe messages disappeared after the later recompile and are not the later 2-error count.",
+    "status": "Not a zero-error tool acceptance; SDK/environment messages retained, no security/network settings changed."
+  },
+  "input_boundary": "CUA automatic simulator taps did not establish a working touch sequence; user manual tap established Home->HUD. Extra automated taps (pause/result close) did not prove their target actions and are not marked passed. Existing Web input tests remain separately recorded historical evidence.",
+  "not_verified": [
+    "Current WeChat drag/rotate/pause/resume/Settings/end-screen button regression",
+    "Home A complete loop and Home A/B switch lifecycle in WeChat",
+    "Final platform compressed main package and total package size acceptance",
+    "Phone safe area, audio speaker mix, native background/foreground and long-run performance",
+    "Preview upload, real device testing, upload or release"
+  ],
+  "runtime_changes": false,
+  "upload_or_publish_performed": false
+}

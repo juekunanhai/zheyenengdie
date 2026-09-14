@@ -1,0 +1,133 @@
+{
+  "status": "approved_for_current_use",
+  "approval_text": "音频先按照这版使用，后续如果不合适再换",
+  "candidate_manifest": "audio/batch1a-v2/MANIFEST.json",
+  "entries": [
+    {
+      "id": "impact_paper_1",
+      "candidate": "audio/batch1a-v2/encoded/impact_paper_1.mp3",
+      "import_path": "assets/batch1/audio/impact_paper_1.mp3",
+      "sha256": "1723d08854f14a15bafd72bfa9751a88aaaa542519c535c258c503b76c79b7e2",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_paper_2",
+      "candidate": "audio/batch1a-v2/encoded/impact_paper_2.mp3",
+      "import_path": "assets/batch1/audio/impact_paper_2.mp3",
+      "sha256": "3150afb53987a5a20bf97d5e4422ee6183af31185e76ff109198ed8b3e08dda8",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_paper_3",
+      "candidate": "audio/batch1a-v2/encoded/impact_paper_3.mp3",
+      "import_path": "assets/batch1/audio/impact_paper_3.mp3",
+      "sha256": "490a3e046c1c399e54311dfc1fb35c64d7f3a9588fb4bea35f9576b468fb75f4",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_wood_1",
+      "candidate": "audio/batch1a-v2/encoded/impact_wood_1.mp3",
+      "import_path": "assets/batch1/audio/impact_wood_1.mp3",
+      "sha256": "dec6962d80dc980910c3dbf24359807ef8c3541d96bd72e516402d04ba23add5",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_wood_2",
+      "candidate": "audio/batch1a-v2/encoded/impact_wood_2.mp3",
+      "import_path": "assets/batch1/audio/impact_wood_2.mp3",
+      "sha256": "b0c60355de07522b7f047b28efbc1f05c474452954633c49df17580c3ade5eb9",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_wood_3",
+      "candidate": "audio/batch1a-v2/encoded/impact_wood_3.mp3",
+      "import_path": "assets/batch1/audio/impact_wood_3.mp3",
+      "sha256": "d2b9f2e4c5b5eb4ebbabd6fadd800744d683d08eca419ba370f39b5ec4c8dc4a",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_rubber_1",
+      "candidate": "audio/batch1a-v2/encoded/impact_rubber_1.mp3",
+      "import_path": "assets/batch1/audio/impact_rubber_1.mp3",
+      "sha256": "63996454af2c241c5bbf4e79225c32186edf8768ecc791c4dfaf578c1c83464a",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_rubber_2",
+      "candidate": "audio/batch1a-v2/encoded/impact_rubber_2.mp3",
+      "import_path": "assets/batch1/audio/impact_rubber_2.mp3",
+      "sha256": "943e30eda154470fbd86fc013a6f313b684e00490c7bd5e6093e81ea9d46d974",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_rubber_3",
+      "candidate": "audio/batch1a-v2/encoded/impact_rubber_3.mp3",
+      "import_path": "assets/batch1/audio/impact_rubber_3.mp3",
+      "sha256": "c3e3daa26cbb66ea469268601306a8bf83933846e9a1e63c44fb27d4a6af75ad",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_metal_1",
+      "candidate": "audio/batch1a-v2/encoded/impact_metal_1.mp3",
+      "import_path": "assets/batch1/audio/impact_metal_1.mp3",
+      "sha256": "a8cb0442ef13d00302e408207b41ce34da1adbabbeab473b5f9415aed5fbc56c",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_metal_2",
+      "candidate": "audio/batch1a-v2/encoded/impact_metal_2.mp3",
+      "import_path": "assets/batch1/audio/impact_metal_2.mp3",
+      "sha256": "9bc35d647791b118f75a30419ee9d1a515a0dd1351a27e8a05f9b0ad3e1d661f",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "impact_metal_3",
+      "candidate": "audio/batch1a-v2/encoded/impact_metal_3.mp3",
+      "import_path": "assets/batch1/audio/impact_metal_3.mp3",
+      "sha256": "67ef3d60f6b25036c0f9d7a2f3d0038dcbe6a2a881be06ae2f6368dfa1f05776",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "claw_grip",
+      "candidate": "audio/batch1a-v2/encoded/claw_grip.mp3",
+      "import_path": "assets/batch1/audio/claw_grip.mp3",
+      "sha256": "853e53ac7af9d7efe6f0708b8e4b22f61c5170f7839ba35af5e51ab17fe0a503",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "claw_open",
+      "candidate": "audio/batch1a-v2/encoded/claw_open.mp3",
+      "import_path": "assets/batch1/audio/claw_open.mp3",
+      "sha256": "55decb88a476e76aaad14ed5d8594084c97f870f4364a05a6a341c916d737290",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "rotate_90",
+      "candidate": "audio/batch1a-v2/encoded/rotate_90.mp3",
+      "import_path": "assets/batch1/audio/rotate_90.mp3",
+      "sha256": "801db367f5dc91667bc5bb3aec6aa2d3dd72c5c861bf299404d98be5ebf7f86a",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "next_handoff",
+      "candidate": "audio/batch1a-v2/encoded/next_handoff.mp3",
+      "import_path": "assets/batch1/audio/next_handoff.mp3",
+      "sha256": "7cd6981bd966f1217836abbf24c29d3f0de518b9da5633fbc5a03af16a8c9e44",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "stable",
+      "candidate": "audio/batch1a-v2/encoded/stable.mp3",
+      "import_path": "assets/batch1/audio/stable.mp3",
+      "sha256": "24aea0fa701aeea0a52632dbd46369ab9dab22a842b0b2132e9c728fb6001545",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    },
+    {
+      "id": "run_end",
+      "candidate": "audio/batch1a-v2/encoded/run_end.mp3",
+      "import_path": "assets/batch1/audio/run_end.mp3",
+      "sha256": "0aafc01b7163b807ceff8df3aead2d5100c4d04f9455588ece3b70a15279acd8",
+      "license": "CC0-1.0 source adaptations; see A2 source manifests"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "before812": {
+    "height": 1200,
+    "rect": {
+      "height": 812,
+      "width": 375,
+      "x": 118.5,
+      "y": 316.8984375
+    },
+    "width": 1280,
+    "raw_pixels": [
+      1265,
+      1186
+    ],
+    "native_scale": [
+      0.98828125,
+      0.9883333333333333
+    ],
+    "crop_pixels": [
+      117,
+      313,
+      488,
+      1116
+    ],
+    "normalized_pixels": [
+      375,
+      812
+    ]
+  },
+  "before667": {
+    "height": 1200,
+    "rect": {
+      "height": 667,
+      "width": 375,
+      "x": 118.5,
+      "y": 316.8984375
+    },
+    "width": 1280,
+    "raw_pixels": [
+      1265,
+      1186
+    ],
+    "native_scale": [
+      0.98828125,
+      0.9883333333333333
+    ],
+    "crop_pixels": [
+      117,
+      313,
+      488,
+      972
+    ],
+    "normalized_pixels": [
+      375,
+      667
+    ]
+  },
+  "after667": {
+    "height": 1200,
+    "rect": {
+      "height": 667,
+      "width": 375,
+      "x": 118.5,
+      "y": 316.8984375
+    },
+    "width": 1280,
+    "raw_pixels": [
+      1265,
+      1186
+    ],
+    "native_scale": [
+      0.98828125,
+      0.9883333333333333
+    ],
+    "crop_pixels": [
+      117,
+      313,
+      488,
+      972
+    ],
+    "normalized_pixels": [
+      375,
+      667
+    ]
+  },
+  "after812": {
+    "height": 1200,
+    "rect": {
+      "height": 812,
+      "width": 375,
+      "x": 118.5,
+      "y": 316.8984375
+    },
+    "width": 1280,
+    "raw_pixels": [
+      1265,
+      1186
+    ],
+    "native_scale": [
+      0.98828125,
+      0.9883333333333333
+    ],
+    "crop_pixels": [
+      117,
+      313,
+      488,
+      1116
+    ],
+    "normalized_pixels": [
+      375,
+      812
+    ]
+  },
+  "normalization_notes": {
+    "source_pixels": [
+      1448,
+      1086
+    ],
+    "source_home_crop": [
+      17,
+      102,
+      378,
+      725
+    ],
+    "source_home_normalized": [
+      375,
+      647
+    ],
+    "comparison": "Equal width; source historical top/bottom controls retained in evidence only. No vertical stretching. Source does not supply a long-screen version.",
+    "invalid_capture_replaced": "The screenshot clip API changed rendering scale. Those files were replaced by crops of native complete captures with measured bounds."
+  }
+}

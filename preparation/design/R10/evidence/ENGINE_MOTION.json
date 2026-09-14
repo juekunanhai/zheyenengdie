@@ -1,0 +1,384 @@
+{
+  "first": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    },
+    "homePresentation": true,
+    "canvasSize": {
+      "width": 750,
+      "height": 1334
+    },
+    "nodes": [
+      {
+        "name": "R9Cloud0",
+        "position": {
+          "x": -254.59911861616067,
+          "y": 295.5694712621631
+        },
+        "size": {
+          "width": 340,
+          "height": 130.82096933728982
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Cloud1",
+        "position": {
+          "x": 244.200827426326,
+          "y": 128.9686569717103
+        },
+        "size": {
+          "width": 290,
+          "height": 111.58259149357072
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Cloud2",
+        "position": {
+          "x": -311.3247698896781,
+          "y": -104.74601156235238
+        },
+        "size": {
+          "width": 185,
+          "height": 71.18199802176063
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "HomeAirship",
+        "position": {
+          "x": -310,
+          "y": 480.5178383530956
+        },
+        "size": {
+          "width": 112,
+          "height": 64
+        },
+        "rotation": 10,
+        "spriteFrame": "7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "HomeAirplane",
+        "position": {
+          "x": 319.5,
+          "y": 289.25368740969935
+        },
+        "size": {
+          "width": 99,
+          "height": 58.528301886792455
+        },
+        "rotation": -22,
+        "spriteFrame": "5e2578a8-4a8b-5612-9b1f-15da9ed36867@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9WoodBoard",
+        "position": {
+          "x": -240,
+          "y": -141.65999999999997
+        },
+        "size": {
+          "width": 226,
+          "height": 310
+        },
+        "rotation": 7,
+        "spriteFrame": "0828129a-4f9c-54b6-9ee2-179ce3117b59@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Hero",
+        "position": {
+          "x": 45,
+          "y": -182.810546875
+        },
+        "size": {
+          "width": 470,
+          "height": 705
+        },
+        "rotation": 0,
+        "spriteFrame": "5aaf430f-206d-5b84-9912-fd9e41fec676@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9SlipperBack",
+        "position": {
+          "x": -85.45703125,
+          "y": 251.26592371323528
+        },
+        "size": {
+          "width": 144,
+          "height": 108.84705882352941
+        },
+        "rotation": 6,
+        "spriteFrame": "c8e884b0-443b-5289-b43b-28289dbcbab5@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9SlipperFront",
+        "position": {
+          "x": -15.45703125,
+          "y": 217.3688648897059
+        },
+        "size": {
+          "width": 194,
+          "height": 146.64117647058825
+        },
+        "rotation": 0,
+        "spriteFrame": "c8e884b0-443b-5289-b43b-28289dbcbab5@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "logo_main",
+        "position": {
+          "x": 0,
+          "y": 466.1036457390478
+        },
+        "size": {
+          "width": 560,
+          "height": 296.82838522809556
+        },
+        "rotation": 0,
+        "spriteFrame": "2a967c38-21e7-5ab5-8f8c-70f49d9e9e74@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_settings_icon",
+        "position": {
+          "x": 315.5,
+          "y": 608.5
+        },
+        "size": {
+          "width": 67,
+          "height": 67
+        },
+        "rotation": 0,
+        "spriteFrame": "34764b14-1abf-5de9-a05d-1daa96843744@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_start",
+        "position": {
+          "x": 0,
+          "y": -562.2828282828283
+        },
+        "size": {
+          "width": 556,
+          "height": 196.56565656565655
+        },
+        "rotation": 0,
+        "spriteFrame": "15e4005b-d75b-5047-85ee-ad1a2b421b35@f9941",
+        "opacity": 255
+      }
+    ]
+  },
+  "second": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    },
+    "homePresentation": true,
+    "canvasSize": {
+      "width": 750,
+      "height": 1334
+    },
+    "nodes": [
+      {
+        "name": "R9Cloud0",
+        "position": {
+          "x": -247.92441340413382,
+          "y": 295.23573600156175
+        },
+        "size": {
+          "width": 340,
+          "height": 130.82096933728982
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Cloud1",
+        "position": {
+          "x": 309.3198558927264,
+          "y": 125.24756963077311
+        },
+        "size": {
+          "width": 290,
+          "height": 111.58259149357072
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Cloud2",
+        "position": {
+          "x": -286.2459703298681,
+          "y": -106.1139460837966
+        },
+        "size": {
+          "width": 185,
+          "height": 71.18199802176063
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "HomeAirship",
+        "position": {
+          "x": -310,
+          "y": 480.5178383530956
+        },
+        "size": {
+          "width": 112,
+          "height": 64
+        },
+        "rotation": 10,
+        "spriteFrame": "7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "HomeAirplane",
+        "position": {
+          "x": 319.5,
+          "y": 289.25368740969935
+        },
+        "size": {
+          "width": 99,
+          "height": 58.528301886792455
+        },
+        "rotation": -22,
+        "spriteFrame": "5e2578a8-4a8b-5612-9b1f-15da9ed36867@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9WoodBoard",
+        "position": {
+          "x": -240,
+          "y": -141.65999999999997
+        },
+        "size": {
+          "width": 226,
+          "height": 310
+        },
+        "rotation": 7,
+        "spriteFrame": "0828129a-4f9c-54b6-9ee2-179ce3117b59@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Hero",
+        "position": {
+          "x": 45,
+          "y": -182.810546875
+        },
+        "size": {
+          "width": 470,
+          "height": 705
+        },
+        "rotation": 0,
+        "spriteFrame": "5aaf430f-206d-5b84-9912-fd9e41fec676@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9SlipperBack",
+        "position": {
+          "x": -85.45703125,
+          "y": 251.26592371323528
+        },
+        "size": {
+          "width": 144,
+          "height": 108.84705882352941
+        },
+        "rotation": 6,
+        "spriteFrame": "c8e884b0-443b-5289-b43b-28289dbcbab5@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9SlipperFront",
+        "position": {
+          "x": -15.45703125,
+          "y": 217.3688648897059
+        },
+        "size": {
+          "width": 194,
+          "height": 146.64117647058825
+        },
+        "rotation": 0,
+        "spriteFrame": "c8e884b0-443b-5289-b43b-28289dbcbab5@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "logo_main",
+        "position": {
+          "x": 0,
+          "y": 466.1036457390478
+        },
+        "size": {
+          "width": 560,
+          "height": 296.82838522809556
+        },
+        "rotation": 0,
+        "spriteFrame": "2a967c38-21e7-5ab5-8f8c-70f49d9e9e74@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_settings_icon",
+        "position": {
+          "x": 315.5,
+          "y": 608.5
+        },
+        "size": {
+          "width": 67,
+          "height": 67
+        },
+        "rotation": 0,
+        "spriteFrame": "34764b14-1abf-5de9-a05d-1daa96843744@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_start",
+        "position": {
+          "x": 0,
+          "y": -562.2828282828283
+        },
+        "size": {
+          "width": 556,
+          "height": 196.56565656565655
+        },
+        "rotation": 0,
+        "spriteFrame": "15e4005b-d75b-5047-85ee-ad1a2b421b35@f9941",
+        "opacity": 255
+      }
+    ]
+  },
+  "verified_moving_nodes": [
+    "R9Cloud0",
+    "R9Cloud1",
+    "R9Cloud2"
+  ],
+  "non_cloud_nodes_stable": true
+}

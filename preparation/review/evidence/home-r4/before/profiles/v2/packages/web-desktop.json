@@ -1,0 +1,37 @@
+{
+  "__version__": "1.0.1",
+  "builder": {
+    "common": {
+      "binGroupConfig": {
+        "threshold": 16,
+        "enable": false
+      },
+      "polyfills": {
+        "asyncFunctions": true
+      },
+      "startScene": "b35d6350-0c9c-52a9-8eab-897e6f0d1d60",
+      "debug": true
+    },
+    "options": {
+      "web-desktop": {
+        "useWebGPU": false,
+        "resolution": {
+          "designWidth": 375,
+          "designHeight": 667
+        },
+        "__version__": "1.0.1"
+      }
+    },
+    "taskOptionsMap": {
+      "1789211181742": {
+        "useWebGPU": false,
+        "resolution": {
+          "designWidth": 375,
+          "designHeight": 667
+        },
+        "__version__": "1.0.1"
+      }
+    },
+    "__version__": "1.3.9"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "reference_canvas": [
+    298,
+    336
+  ],
+  "source_origin_in_original": [
+    407,
+    242
+  ],
+  "status": "visual_only_no_runtime_integration",
+  "reference_rect_note": "从低分辨率母版测量的构图目标，不将其当作物理尺寸；独立素材组装仍须做视觉复核。",
+  "groups": [
+    {
+      "id": "panel",
+      "title": "底板、云光与彩纸",
+      "file": "assets/result_panel_decorated.png",
+      "reference_rect": [
+        3,
+        20,
+        282,
+        311
+      ],
+      "z": 0,
+      "status": "independent_visual_candidate",
+      "note": ""
+    },
+    {
+      "id": "tower",
+      "title": "右侧歪塔",
+      "file": "assets/result_character_tower.png",
+      "reference_rect": [
+        157,
+        11,
+        116,
+        252
+      ],
+      "z": 1,
+      "status": "independent_visual_candidate",
+      "note": "下部被按钮遮挡的结构按同物件补全；后续组装必须保留遮挡"
+    },
+    {
+      "id": "title",
+      "title": "标题纸片",
+      "file": "assets/result_title.png",
+      "reference_rect": [
+        42,
+        40,
+        116,
+        45
+      ],
+      "z": 2,
+      "status": "independent_visual_candidate",
+      "note": ""
+    },
+    {
+      "id": "height",
+      "title": "成绩字形",
+      "file": "assets/height_glyph_atlas.png",
+      "reference_rect": [
+        13,
+        84,
+        161,
+        66
+      ],
+      "z": 2,
+      "status": "independent_visual_candidate",
+      "note": "0-9、小数点、m 独立PNG；稿中示例42.7m"
+    },
+    {
+      "id": "record",
+      "title": "新纪录贴纸",
+      "file": "assets/result_record.png",
+      "reference_rect": [
+        43,
+        140,
+        95,
+        53
+      ],
+      "z": 2,
+      "status": "independent_visual_candidate",
+      "note": ""
+    },
+    {
+      "id": "bubble",
+      "title": "太棒了气泡",
+      "file": "assets/result_bubble.png",
+      "reference_rect": [
+        209,
+        152,
+        64,
+        39
+      ],
+      "z": 3,
+      "status": "independent_visual_candidate",
+      "note": ""
+    },
+    {
+      "id": "metrics",
+      "title": "数据白板与标题",
+      "file": "assets/result_metrics.png",
+      "reference_rect": [
+        18,
+        189,
+        209,
+        70
+      ],
+      "z": 3,
+      "status": "independent_visual_candidate",
+      "note": ""
+    },
+    {
+      "id": "share",
+      "title": "分享组件",
+      "file": "assets/result_share.png",
+      "reference_rect": [
+        222,
+        197,
+        51,
+        60
+      ],
+      "z": 4,
+      "status": "independent_visual_candidate",
+      "note": ""
+    },
+    {
+      "id": "retry",
+      "title": "再来一局",
+      "file": "assets/result_retry.png",
+      "reference_rect": [
+        27,
+        266,
+        233,
+        60
+      ],
+      "z": 5,
+      "status": "independent_visual_candidate",
+      "note": ""
+    },
+    {
+      "id": "close",
+      "title": "关闭",
+      "file": "assets/result_close.png",
+      "reference_rect": [
+        254,
+        -1,
+        41,
+        42
+      ],
+      "z": 5,
+      "status": "independent_visual_candidate",
+      "note": ""
+    }
+  ]
+}

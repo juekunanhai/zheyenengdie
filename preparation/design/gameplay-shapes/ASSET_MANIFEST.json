@@ -1,0 +1,79 @@
+{
+  "processing": "alpha threshold 160, 7px median, seed flood-fill component, 0.7px alpha feather, uniform Lanczos resize to max 768, 8px margin; RGB material retained; NEXT constant RGB with same alpha",
+  "assets": [
+    {
+      "slug": "toilet",
+      "source": "assets/object_toilet.generated.png",
+      "source_sha256": "016d459db4fe9d5b382a9918e9db76dc5826cc09d117a69c28ed3f4cd11b1167",
+      "source_size": [
+        1078,
+        1459
+      ],
+      "crop_source_px": [
+        72,
+        148,
+        1010,
+        1351
+      ],
+      "uniform_raster_scale": 0.6384039900249376,
+      "sprite": "assets/object_toilet.png",
+      "sprite_sha256": "32500eda53f586315e288322dce74f76175a3d7c85b61ea152945a06bf7af484",
+      "next": "assets/next_toilet.png",
+      "next_sha256": "a3ee37d944204b5edfed319bd2e02f24a893cdbadcd282bbd6d90de37edd98cc",
+      "size_px": [
+        615,
+        784
+      ],
+      "alpha_bounds_px": [
+        8,
+        8,
+        607,
+        776
+      ],
+      "alpha128_bounds_px": [
+        9,
+        9,
+        606,
+        775
+      ],
+      "status": "complete_generated_candidate_self_checked_not_user_approved_or_runtime_verified"
+    },
+    {
+      "slug": "dumbbell",
+      "source": "assets/object_dumbbell.generated.png",
+      "source_sha256": "dbe60520827e306ef5b59aa370d4909aa35d4364f6cd24af96db6e68643c0fba",
+      "source_size": [
+        2005,
+        784
+      ],
+      "crop_source_px": [
+        41,
+        95,
+        1963,
+        682
+      ],
+      "uniform_raster_scale": 0.3995837669094693,
+      "sprite": "assets/object_dumbbell.png",
+      "sprite_sha256": "d550217e1ee82dfad1cc340325766d347c73c3bfaa8a52e0969b13778d8c0e70",
+      "next": "assets/next_dumbbell.png",
+      "next_sha256": "7d00350198c6673398b476d537ed99342d9dcdeca08c3340c418480816a50b08",
+      "size_px": [
+        784,
+        251
+      ],
+      "alpha_bounds_px": [
+        8,
+        8,
+        776,
+        243
+      ],
+      "alpha128_bounds_px": [
+        9,
+        9,
+        775,
+        242
+      ],
+      "status": "complete_generated_candidate_self_checked_not_user_approved_or_runtime_verified"
+    }
+  ]
+}

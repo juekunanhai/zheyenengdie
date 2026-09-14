@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "toilet",
+    "outline_vertices": 36,
+    "simple_polygon": true,
+    "self_intersections": [],
+    "concave_vertices": 11,
+    "polygon_pixels": 253279,
+    "polygon_outside_alpha128_pixels": 2954,
+    "outside_percentage": 1.166,
+    "visible_alpha_not_in_polygon_pixels": 4196,
+    "notes": "Raster overlap is diagnostic, not physics validation. Shadows/rounded bevels can intentionally remain outside simplified solid bearing profile."
+  },
+  {
+    "slug": "dumbbell",
+    "outline_vertices": 36,
+    "simple_polygon": true,
+    "self_intersections": [],
+    "concave_vertices": 16,
+    "polygon_pixels": 121805,
+    "polygon_outside_alpha128_pixels": 984,
+    "outside_percentage": 0.808,
+    "visible_alpha_not_in_polygon_pixels": 1200,
+    "notes": "Raster overlap is diagnostic, not physics validation. Shadows/rounded bevels can intentionally remain outside simplified solid bearing profile."
+  }
+]

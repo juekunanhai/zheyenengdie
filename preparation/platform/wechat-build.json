@@ -1,0 +1,13 @@
+{
+  "platform": "wechatgame",
+  "taskName": "wechatgame",
+  "debug": true,
+  "packages": {
+    "wechatgame": {
+      "appid": "wxc0360e0c829a3307",
+      "orientation": "portrait"
+    }
+  },
+  "startScene": "b35d6350-0c9c-52a9-8eab-897e6f0d1d60",
+  "mainBundleCompressionType": "subpackage"
+}

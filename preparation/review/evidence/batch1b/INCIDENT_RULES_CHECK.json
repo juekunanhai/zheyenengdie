@@ -1,0 +1,108 @@
+{
+  "executedAt": "2026-09-13T16:05:55.989Z",
+  "source": "assets/batch1/incident-state.ts",
+  "sourceSha256": "065113e7c37003725724c5a488124141fb2d4f0e8da61ed3fcb8d092da804074",
+  "compiler": "TypeScript 5.8.2 transpileModule; CommonJS/ES2017",
+  "scope": "Pure production Incident rules. No Cocos, physical timing, controller, visual, audio or real-device acceptance.",
+  "passed": 9,
+  "total": 9,
+  "checks": [
+    {
+      "name": "Threshold table covers disabled, rounded and capped collapse counts",
+      "pass": true,
+      "details": [
+        [
+          0,
+          null
+        ],
+        [
+          1,
+          null
+        ],
+        [
+          2,
+          null
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          20,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "Trend-only context does not charge a star or invent a loss",
+      "pass": true
+    },
+    {
+      "name": "An unplaced caller-excluded body charges once but never fills the old-tower threshold",
+      "pass": true,
+      "details": {
+        "boundary": "Eligibility filtering is caller fixture setup; production filtering requires engine/controller verification."
+      }
+    },
+    {
+      "name": "Repeated loss events neither charge twice nor inflate the collapse count",
+      "pass": true
+    },
+    {
+      "name": "One-star protection does not stop later collapse losses in the same incident",
+      "pass": true
+    },
+    {
+      "name": "Fewer than three initial members never activates quantity failure",
+      "pass": true
+    },
+    {
+      "name": "Caller mutations and later stable pieces cannot alter frozen membership or view",
+      "pass": true
+    },
+    {
+      "name": "Diagnostic snapshots cannot mutate pending incident decisions",
+      "pass": true
+    },
+    {
+      "name": "Minimal external star driver ends on the third separate ordinary incident",
+      "pass": true,
+      "details": {
+        "remaining": [
+          2,
+          1,
+          0
+        ],
+        "boundary": "External star-driver contract simulation; actual controller failure locking remains a separate engine check."
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+precontact_does_not_start_deadline: passed
+stable_advance_before_deadline: passed
+real_light_sway_times_out_without_scoring_then_scores_once: passed
+brief_native_contact_gap_does_not_reset_deadline: passed
+paused_wall_time_does_not_advance_wait: passed
+ten_fps_wait_uses_real_active_seconds: passed
+older_unqualified_body_escape_blocks_release_and_ends: passed
+current_body_escape_never_forces_next: passed
+first_two_tutorial_exemptions_and_next_sequence: passed
+repeated_deadlines_keep_camera_clearance_without_score: passed
+contacting_horizontal_top_keeps_four_rotation_clearance: passed
+transient_airborne_object_does_not_raise_camera_or_score: passed
+ordinary_center_six_object_regression: passed
+{"status":"passed","checks":[{"name":"precontact_does_not_start_deadline","status":"passed"},{"name":"stable_advance_before_deadline","status":"passed"},{"name":"real_light_sway_times_out_without_scoring_then_scores_once","status":"passed"},{"name":"brief_native_contact_gap_does_not_reset_deadline","status":"passed"},{"name":"paused_wall_time_does_not_advance_wait","status":"passed"},{"name":"ten_fps_wait_uses_real_active_seconds","status":"passed"},{"name":"older_unqualified_body_escape_blocks_release_and_ends","status":"passed"},{"name":"current_body_escape_never_forces_next","status":"passed"},{"name":"first_two_tutorial_exemptions_and_next_sequence","status":"passed"},{"name":"repeated_deadlines_keep_camera_clearance_without_score","status":"passed"},{"name":"contacting_horizontal_top_keeps_four_rotation_clearance","status":"passed"},{"name":"transient_airborne_object_does_not_raise_camera_or_score","status":"passed"},{"name":"ordinary_center_six_object_regression","status":"passed"}],"errors":[]}

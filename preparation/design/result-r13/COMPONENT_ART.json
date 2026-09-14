@@ -1,0 +1,166 @@
+{
+  "assets": [
+    {
+      "id": "result_panel_background",
+      "tool_source_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-135d35a4-1d78-4430-a173-c9451996c34f.png",
+      "tool_source_sha256": "f50bfc0f28600ea9ce36aa6729239adaa4f51f7152c5e7001b20a09f0ef1bf0a",
+      "saved_original": "component-generated/result_panel_background-original.png",
+      "saved_original_sha256": "f50bfc0f28600ea9ce36aa6729239adaa4f51f7152c5e7001b20a09f0ef1bf0a",
+      "raw_mode": "RGB",
+      "raw_size": [
+        1194,
+        1317
+      ],
+      "output": "assets/result_panel_background.png",
+      "output_sha256": "ab285401ffb6e2b083d69e9e3392dfed18fdd34490178885e569ea51fec38ee5",
+      "output_size": [
+        1107,
+        1233
+      ],
+      "alpha_visible_bbox": [
+        3,
+        3,
+        1104,
+        1230
+      ],
+      "crop_source_xyxy": [
+        44,
+        41,
+        1151,
+        1274
+      ],
+      "visible_rgb_exact_to_generated_source": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "three_pixel_clear_margin": true,
+      "transparent_fraction": 0.014975115958242578,
+      "qa_backdrops": [
+        "evidence/result_panel_background-navy.png",
+        "evidence/result_panel_background-cream.png"
+      ],
+      "reference_panel_size": [
+        282,
+        311
+      ],
+      "generated_visible_ratio": 0.8973105134474327,
+      "reference_visible_ratio": 0.9067524115755627,
+      "relative_ratio_difference": -0.010412873467547601,
+      "visual_notes": [
+        "The panel retains luminous white rounded rim and pale aqua/cloud light; no foreground text, button, confetti, or character remains.",
+        "Generated visible silhouette is approximately 1 percent narrower than the target reference panel; this is disclosed, not claimed as mathematically exact restoration."
+      ]
+    },
+    {
+      "id": "result_character_tower",
+      "tool_source_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-565088dc-f4a5-4f57-8860-1bdf7608e7c0.png",
+      "tool_source_sha256": "c8aae57b1cb52aeb28e40b09160b7b218b41609e0306e97dd0f35b25a7a69fd9",
+      "saved_original": "component-generated/result_character_tower-original.png",
+      "saved_original_sha256": "c8aae57b1cb52aeb28e40b09160b7b218b41609e0306e97dd0f35b25a7a69fd9",
+      "raw_mode": "RGB",
+      "raw_size": [
+        1024,
+        1536
+      ],
+      "output": "assets/result_character_tower.png",
+      "output_sha256": "5aa6cd284910f44ed072bcc0fc1cd69d8a9006f619f56672b999f93fe062acb4",
+      "output_size": [
+        748,
+        1506
+      ],
+      "alpha_visible_bbox": [
+        3,
+        3,
+        745,
+        1503
+      ],
+      "crop_source_xyxy": [
+        185,
+        11,
+        933,
+        1517
+      ],
+      "visible_rgb_exact_to_generated_source": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "three_pixel_clear_margin": true,
+      "transparent_fraction": 0.4314710853555475,
+      "qa_backdrops": [
+        "evidence/result_character_tower-navy.png",
+        "evidence/result_character_tower-cream.png"
+      ],
+      "visual_notes": [
+        "Identity/order/lean preserve the reference: red slipper hat/yellow duck, ochre side block, white face block, blue-grey segmented support, orange hollow brick, yellow-orange block, blue lower block.",
+        "The blue lower block behind the reference button/share UI was redrawn as a continuation of that same object; its previously occluded silhouette cannot be compared pixel-for-pixel.",
+        "No toilet/home-page hero, new gameplay objects, or original screenshot pixels used as production art."
+      ]
+    }
+  ],
+  "reference": {
+    "path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/result-r12/reference-only/result-card.png",
+    "sha256": "0ac7cf0018b7e958f5e8743a1226bf2f9d7b6ad6184367b887b98783852b5955"
+  },
+  "revision": "result-r13-components",
+  "status": "self_checked_visual_candidates_not_imported_into_game",
+  "tool": "built-in image_gen",
+  "input_image_authorization": "Parent relayed explicit user permission to use this and other supplied images as imagegen references for this batch.",
+  "submitted_images": [
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/result-r12/reference-only/result-card.png"
+  ],
+  "original_ui_pixels_used_as_production_asset": false,
+  "generation_calls": [
+    {
+      "id": "result_panel_background",
+      "prompt": "Use case: precise-object-edit. Asset type: a finished standalone transparent background panel for a mobile game's result card. The attached image is the EXACT approved result-card master; use it solely as reference and redraw the panel at high resolution, do not output a crop of the reference. Remove EVERY foreground element: all title stickers, numbers, letters, characters, stacked objects, buttons, close button, icon, speech bubbles, confetti and background city outside the card. Reconstruct ONLY the full underlying panel, faithfully. In the reference the visible panel has width 282 and height 311 (ratio 0.90675), a subtly rounded rectangular silhouette with small 14-unit corner radius, an extremely thin soft white luminous rim, and a clean pale aqua-blue translucent-glass-like interior showing gentle white cloudy sky light. It is a soft luminous game card, not a thick plastic frame, not a dark box. Upper interior is airy light blue/cyan with softly varied sky brightness; lower edge and bottom corners are creamy white rolling cloud light as in the master, blended gently into the cyan center. Match the reference's border thinness, bright white edge, gentle lower shadow, material, exact upright overall proportion and subtle dimensional volume. No large architectural frame, no added bevel ornaments, no texture noise, no scenery buildings, no objects. Entire finished panel centered on a GENUINELY TRANSPARENT alpha background with just a small uniform margin outside the panel, no matte or checkerboard. Interior is the illustrated pale sky panel, not transparent empty space. Target final visible panel approximately 1410x1555 pixels or larger, preserve 282:311 shape. No text anywhere. Preserve this exact approved art direction instead of redesigning.",
+      "referenced_image_paths": [
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/result-r12/reference-only/result-card.png"
+      ],
+      "source_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-135d35a4-1d78-4430-a173-c9451996c34f.png"
+    },
+    {
+      "id": "result_character_tower",
+      "prompt": "Use case: stylized-concept. Asset type: finished transparent character-tower sprite for an approved mobile game RESULT CARD. The attached image is the EXACT approved composition reference. Redraw ONLY the leaning object tower at the RIGHT of that card at high resolution, preserving every identity, ordering, tilt, colors, compact silhouette and soft 2.5D game material. Do not redesign it and do not reproduce any other part of the card. From TOP to BOTTOM reproduce exactly: a cheerful yellow rubber DUCK wearing the red slide-slipper with white stripes as its jaunty hat; directly below a WHITE rectangular smiling toy face block with tiny dark curved eyes and pink cheeks; next a short tilted segmented BLUE-GREY rectangular support piece with small cream square joints; beneath this an ORANGE hollow rectangular building brick showing its two large front rectangular holes and side/top depth; lower down a YELLOW-ORANGE chunky block; at the base a BLUE block. Keep the small warm ochre cuboid sticking left beside the white face if present in the reference; it belongs to that original tower silhouette. Preserve the original precarious lean: the head near upper right, the orange hollow brick bulging left, the lower blue/yellow base tucked below, just as in the reference. The original is a deliberately funny toy tower, not a vertical catalog arrangement. All artwork must be complete where foreground speech bubbles or share button occlude it: reconstruct only hidden continuation of these same existing blocks, never add new objects. No toilet, no home-page hero stack, no cardboard parcel character, no refrigerator, no extra animals, no limbs or pedestal. Match the reference's rounded edges, smooth shaded volume, joyful yellow-orange/red/blue palette, small glossy highlights and white face. Preserve the fairly broad irregular silhouette rather than creating a thin tall tower. Output one standalone sprite with a REAL TRANSPARENT alpha background and clean antialiased silhouette, no drawn checkerboard, no shadows floating outside, no panel or blue background. No text, numbers, speech bubble, white card, button or share icon. Leave only a small transparent margin. Large high resolution finished production art faithfully redrawn from the reference, not cropped pixels.",
+      "referenced_image_paths": [
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/result-r12/reference-only/result-card.png"
+      ],
+      "source_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-565088dc-f4a5-4f57-8860-1bdf7608e7c0.png"
+    }
+  ],
+  "processing": {
+    "shared": [
+      "Only generated RGB images were processed locally, not the UI master.",
+      "All visible RGB values remain identical to the corresponding generated source pixel; no RGB repainting, object reconstruction by code, or image rescaling.",
+      "After silhouette extraction, alpha is feathered with Pillow GaussianBlur radius 0.45 source pixels.",
+      "Crop to nonzero alpha bbox plus 3 pixels; set RGB to zero only where final alpha is zero. Genuine RGBA outputs preserve this alpha."
+    ],
+    "panel": [
+      "Identify cyan panel pixels by B-R>15 and G-R>8 using int16 RGB.",
+      "Pad 1 pixel with 0; flood outer zero pixels to 128 (4-connected Pillow ImageDraw.floodfill). Interior including white cloud/light holes is retained.",
+      "Erode the filled mask by 1 pixel with MinFilter(3) to exclude checkerboard beyond the real rim, then shared feather/crop."
+    ],
+    "tower": [
+      "Neutral checkerboard candidate: max(R,G,B)-min(R,G,B)<14 AND max(R,G,B)<245.",
+      "Pad 1 pixel with checkerboard candidate; flood from outer (0,0) and the enclosed real air-gap seed (810,356) in padded image coordinates to 128.",
+      "Retain foreground connected to original pixel (512,768), preserving enclosed eyes/recesses and white block.",
+      "For tiny generated hat-edge burrs only: within x<570,y<110 OR x>922,240<y<310, clear pixels that do not satisfy R>1.5G AND R>1.4B. No body RGB painting.",
+      "Open binary alpha by MinFilter(3), then MaxFilter(3); shared feather/crop."
+    ]
+  },
+  "self_review": {
+    "method": "Compared approved full card and enlarged right-tower reference; inspected opaque navy and cream technical composites.",
+    "passed": [
+      "PNG alpha 0..255",
+      "3-pixel transparent margins",
+      "white face, eyes and blue-grey parts remain intact",
+      "no checkerboard in exterior or actual hat/neck air gap",
+      "no panel text or inserted features",
+      "no runtime import"
+    ],
+    "limitations": [
+      "Component appearance and composite placement remain for final design review; no engine validation in this scope."
+    ]
+  }
+}

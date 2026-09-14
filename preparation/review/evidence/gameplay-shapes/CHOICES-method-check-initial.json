@@ -1,0 +1,1042 @@
+{
+  "status": "invalidated_manual_frame_cleanup",
+  "createdAt": "2026-09-13T08:33:36.577Z",
+  "method": {
+    "actionSets": {
+      "A": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "B": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 90
+        },
+        {
+          "x": 0,
+          "angle": 180
+        },
+        {
+          "x": 0,
+          "angle": 270
+        }
+      ],
+      "C": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 90
+        },
+        {
+          "x": 0,
+          "angle": 180
+        },
+        {
+          "x": 0,
+          "angle": 270
+        },
+        {
+          "x": -30,
+          "angle": 0
+        },
+        {
+          "x": -30,
+          "angle": 90
+        },
+        {
+          "x": -30,
+          "angle": 180
+        },
+        {
+          "x": -30,
+          "angle": 270
+        },
+        {
+          "x": 30,
+          "angle": 0
+        },
+        {
+          "x": 30,
+          "angle": 90
+        },
+        {
+          "x": 30,
+          "angle": 180
+        },
+        {
+          "x": 30,
+          "angle": 270
+        }
+      ]
+    },
+    "primaryMetric": "stable placements followed by confirmed height",
+    "search": "B and C enumerate their available actions with exactly one visible NEXT. No unknown later object is passed to a search trial.",
+    "actionSampling": "C uses x=0,+/-30 before the first run: the toilet cistern support is approximately x=-35..-12, so a +/-60-only grid would omit its visible ledge. +/-60 and +/-90 remain in the independent width probes.",
+    "tieBreak": "More continuously stable drops, then greater stable height, then action enumeration order (center preferred on ties).",
+    "caveat": "C has more available actions and more simulation evaluations; this measures physical opportunity under a bounded search, not human skill or an optimal policy.",
+    "geometryAblation": "Only toilet/dumbbell are replaced by their convex hulls. Same external bounds and total mass; COM and inertia may change as a consequence of geometry.",
+    "widthAblation": "Only plank collision x coordinates change; height, friction, restitution and total mass fixed. Inertia is allowed to change. Stretched old art is not approved as production art.",
+    "fixtureBoundary": "A common local test volume uses the 750-design-unit / 1.75 view width, bottom -100 world units, and 80 world units of clearance above the current tower. Camera motion, 4-second planning and incident/star rules are excluded from this geometry experiment.",
+    "limits": {
+      "MAX_TRIALS": 4000,
+      "MAX_PHYSICS_STEPS": 2200000,
+      "MAX_WALL_MS": 720000
+    },
+    "decisions": "No game configuration, collider parameter or test case is tuned in response to this run."
+  },
+  "scenarios": [
+    {
+      "id": "S01_center_cycle",
+      "partition": "development",
+      "supports": [],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge"
+      ]
+    },
+    {
+      "id": "S02_narrow_column",
+      "partition": "development",
+      "supports": [
+        {
+          "kind": "fridge",
+          "x": 0
+        }
+      ],
+      "sequence": [
+        "wood_plank",
+        "cardboard_box"
+      ]
+    },
+    {
+      "id": "S03_toilet_step",
+      "partition": "development",
+      "supports": [
+        {
+          "kind": "toilet",
+          "x": 0
+        }
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank"
+      ]
+    },
+    {
+      "id": "S04_dumbbell_cradle",
+      "partition": "development",
+      "supports": [
+        {
+          "kind": "dumbbell",
+          "x": 0
+        }
+      ],
+      "sequence": [
+        "basketball",
+        "cardboard_box"
+      ]
+    },
+    {
+      "id": "S05_offcentre_repair",
+      "partition": "development",
+      "supports": [
+        {
+          "kind": "cardboard_box",
+          "x": -32
+        }
+      ],
+      "sequence": [
+        "wood_plank",
+        "fridge"
+      ]
+    },
+    {
+      "id": "S06_two_dynamic_piers",
+      "partition": "development",
+      "supports": [
+        {
+          "kind": "cardboard_box",
+          "x": -55
+        },
+        {
+          "kind": "cardboard_box",
+          "x": 55
+        }
+      ],
+      "sequence": [
+        "wood_plank",
+        "toilet"
+      ]
+    },
+    {
+      "id": "H01_toilet_dumbbell_bridge",
+      "partition": "holdout",
+      "supports": [
+        {
+          "kind": "toilet",
+          "x": 0
+        }
+      ],
+      "sequence": [
+        "dumbbell",
+        "wood_plank"
+      ]
+    },
+    {
+      "id": "H02_dumbbell_fridge_ball",
+      "partition": "holdout",
+      "supports": [
+        {
+          "kind": "dumbbell",
+          "x": 0
+        }
+      ],
+      "sequence": [
+        "fridge",
+        "basketball"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "real_gravity_stable_support_and_repeatability",
+      "passed": false,
+      "delta": 0.0028230725974503143,
+      "first": {
+        "scenario": "sanity",
+        "variant": {},
+        "initial": [],
+        "setup": {
+          "status": "stable",
+          "steps": 0
+        },
+        "supportState": [],
+        "outcomes": [
+          {
+            "kind": "cardboard_box",
+            "action": {
+              "x": 0,
+              "angle": 0
+            },
+            "release": {
+              "x": 0,
+              "y": 130,
+              "angle": 0
+            },
+            "spec": {
+              "kind": "cardboard_box",
+              "width": 100,
+              "height": 100,
+              "circle": false,
+              "spriteWidth": 123.4306,
+              "spriteHeight": 122.605,
+              "outline": [
+                [
+                  -50,
+                  -34
+                ],
+                [
+                  -18,
+                  -50
+                ],
+                [
+                  17,
+                  -50
+                ],
+                [
+                  50,
+                  -29
+                ],
+                [
+                  50,
+                  39
+                ],
+                [
+                  25,
+                  50
+                ],
+                [
+                  -20,
+                  50
+                ],
+                [
+                  -50,
+                  32
+                ]
+              ],
+              "friction": 0.65,
+              "restitution": 0.02,
+              "density": 0.5
+            },
+            "status": "stable",
+            "stableSeconds": 0.6500000000000004,
+            "maxPenetration": 0.4800001382827759,
+            "steps": 63,
+            "heightAfter": 100.56268679669176,
+            "state": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "x": -0.0008556991815567017,
+                "y": 50.54369354248047,
+                "angle": -0.05447641821631142,
+                "vx": -4.798104669134773e-08,
+                "vy": 0,
+                "angularVelocity": 3.0000521178408235e-08,
+                "contacts": 1,
+                "mass": 4.3896484375,
+                "dynamic": true,
+                "placed": true,
+                "bounds": {
+                  "left": -50.03316005146325,
+                  "right": 50.036202616696706,
+                  "bottom": 0.5275526664271126,
+                  "top": 100.56268679669176
+                }
+              }
+            ]
+          }
+        ],
+        "completed": true,
+        "successfulDrops": 1,
+        "stableHeight": 100.56268679669176,
+        "finalState": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "x": -0.0008556991815567017,
+            "y": 50.54369354248047,
+            "angle": -0.05447641821631142,
+            "vx": -4.798104669134773e-08,
+            "vy": 0,
+            "angularVelocity": 3.0000521178408235e-08,
+            "contacts": 1,
+            "mass": 4.3896484375,
+            "dynamic": true,
+            "placed": true,
+            "bounds": {
+              "left": -50.03316005146325,
+              "right": 50.036202616696706,
+              "bottom": 0.5275526664271126,
+              "top": 100.56268679669176
+            }
+          }
+        ],
+        "steps": 63
+      },
+      "second": {
+        "scenario": "sanity",
+        "variant": {},
+        "initial": [],
+        "setup": {
+          "status": "stable",
+          "steps": 0
+        },
+        "supportState": [],
+        "outcomes": [
+          {
+            "kind": "cardboard_box",
+            "action": {
+              "x": 0,
+              "angle": 0
+            },
+            "release": {
+              "x": 0,
+              "y": 130,
+              "angle": 0
+            },
+            "spec": {
+              "kind": "cardboard_box",
+              "width": 100,
+              "height": 100,
+              "circle": false,
+              "spriteWidth": 123.4306,
+              "spriteHeight": 122.605,
+              "outline": [
+                [
+                  -50,
+                  -34
+                ],
+                [
+                  -18,
+                  -50
+                ],
+                [
+                  17,
+                  -50
+                ],
+                [
+                  50,
+                  -29
+                ],
+                [
+                  50,
+                  39
+                ],
+                [
+                  25,
+                  50
+                ],
+                [
+                  -20,
+                  50
+                ],
+                [
+                  -50,
+                  32
+                ]
+              ],
+              "friction": 0.65,
+              "restitution": 0.02,
+              "density": 0.5
+            },
+            "status": "stable",
+            "stableSeconds": 0.6500000000000004,
+            "maxPenetration": 0.4800001382827759,
+            "steps": 63,
+            "heightAfter": 100.56112762126617,
+            "state": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "x": -0.000407487154006958,
+                "y": 50.54311752319336,
+                "angle": -0.051653345618861105,
+                "vx": -1.4857496566378359e-08,
+                "vy": -6.489547388355277e-08,
+                "angularVelocity": -1.2576545138642814e-08,
+                "contacts": 1,
+                "mass": 4.3896484375,
+                "dynamic": true,
+                "placed": true,
+                "bounds": {
+                  "left": -50.03103887682726,
+                  "right": 50.03473150666226,
+                  "bottom": 0.5278119876063556,
+                  "top": 100.56112762126617
+                }
+              }
+            ]
+          }
+        ],
+        "completed": true,
+        "successfulDrops": 1,
+        "stableHeight": 100.56112762126617,
+        "finalState": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "x": -0.000407487154006958,
+            "y": 50.54311752319336,
+            "angle": -0.051653345618861105,
+            "vx": -1.4857496566378359e-08,
+            "vy": -6.489547388355277e-08,
+            "angularVelocity": -1.2576545138642814e-08,
+            "contacts": 1,
+            "mass": 4.3896484375,
+            "dynamic": true,
+            "placed": true,
+            "bounds": {
+              "left": -50.03103887682726,
+              "right": 50.03473150666226,
+              "bottom": 0.5278119876063556,
+              "top": 100.56112762126617
+            }
+          }
+        ],
+        "steps": 63
+      }
+    }
+  ],
+  "results": [],
+  "forecastTrials": [
+    {
+      "trial": 1,
+      "scenario": "sanity",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "setup": {
+        "status": "stable",
+        "steps": 0
+      },
+      "completed": true,
+      "successfulDrops": 1,
+      "stableHeight": 100.56268679669176,
+      "steps": 63,
+      "outcomes": [
+        {
+          "kind": "cardboard_box",
+          "action": {
+            "x": 0,
+            "angle": 0
+          },
+          "status": "stable",
+          "maxPenetration": 0.4800001382827759,
+          "heightAfter": 100.56268679669176
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "scenario": "sanity",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "setup": {
+        "status": "stable",
+        "steps": 0
+      },
+      "completed": true,
+      "successfulDrops": 1,
+      "stableHeight": 100.56112762126617,
+      "steps": 63,
+      "outcomes": [
+        {
+          "kind": "cardboard_box",
+          "action": {
+            "x": 0,
+            "angle": 0
+          },
+          "status": "stable",
+          "maxPenetration": 0.4800001382827759,
+          "heightAfter": 100.56112762126617
+        }
+      ]
+    }
+  ],
+  "widthProbes": [],
+  "errors": [],
+  "trials": 2,
+  "physicsSteps": 126,
+  "sourceHashes": {
+    "assets/batch1/object-data.ts": "75d6f9840ec476b0af5e2ae3fe9bf0ba0aa8e95a03516b2e52f13fc43887f583",
+    "assets/batch1/tower-world.ts": "b990421aafcea19a938658a54583eae66df311f42173556307ffa57ae5435c78",
+    "assets/batch1/play-view.ts": "0191d5d83e53ade1ca13bda02cf827273d6d28a0d129c4a8aa43700145a02ea8",
+    "preparation/design/gameplay-shapes/GEOMETRY.json": "b9a2f5ad9be901aca33ae6279bbd86606827a0273893753c0b3e83eb81998e74",
+    "preparation/design/gameplay-shapes/assets/object_toilet.png": "32500eda53f586315e288322dce74f76175a3d7c85b61ea152945a06bf7af484",
+    "preparation/design/gameplay-shapes/assets/object_dumbbell.png": "d550217e1ee82dfad1cc340325766d347c73c3bfaa8a52e0969b13778d8c0e70",
+    "preparation/tools/check_gameplay_choices.cjs": "a37d611a32ab4a32b3e145e5e7a28fbd75f8b6dda495f33e0e871f1ed582e8e2",
+    "preparation/review/gameplay-lab.js": "922d9e7e46ed7055ae7e9ae788bf7d3bb8461ccf1b671dd8a055d79264c6b8e5"
+  },
+  "engine": {
+    "engine": "3.8.8",
+    "fixedTimeStep": 0.016666666666666666,
+    "gravity": {
+      "x": 0,
+      "y": -1000
+    },
+    "velocityIterations": 10,
+    "positionIterations": 10,
+    "publicLifecycleStepping": "autoSimulation false outside synchronous postUpdate; one AFTER_PHYSICS event per step",
+    "limits": {
+      "stableSeconds": 0.65,
+      "settleSeconds": 8,
+      "dropGap": 80,
+      "worldLeft": -214.28571428571428,
+      "worldRight": 214.28571428571428,
+      "floor": -100,
+      "deepPenetration": 4,
+      "persistentPenetrationSeconds": 0.15
+    },
+    "specs": {
+      "cardboard_box": {
+        "kind": "cardboard_box",
+        "width": 100,
+        "height": 100,
+        "circle": false,
+        "spriteWidth": 123.4306,
+        "spriteHeight": 122.605,
+        "outline": [
+          [
+            -50,
+            -34
+          ],
+          [
+            -18,
+            -50
+          ],
+          [
+            17,
+            -50
+          ],
+          [
+            50,
+            -29
+          ],
+          [
+            50,
+            39
+          ],
+          [
+            25,
+            50
+          ],
+          [
+            -20,
+            50
+          ],
+          [
+            -50,
+            32
+          ]
+        ],
+        "friction": 0.65,
+        "restitution": 0.02,
+        "density": 0.5
+      },
+      "wood_plank": {
+        "kind": "wood_plank",
+        "width": 195,
+        "height": 28,
+        "circle": false,
+        "spriteWidth": 206.7773,
+        "spriteHeight": 54.6483,
+        "spriteOffset": [
+          0,
+          7.85
+        ],
+        "outline": [
+          [
+            -83.5,
+            -14
+          ],
+          [
+            83.5,
+            -14
+          ],
+          [
+            97.5,
+            5
+          ],
+          [
+            87,
+            14
+          ],
+          [
+            -87,
+            14
+          ],
+          [
+            -97.5,
+            5
+          ]
+        ],
+        "friction": 0.65,
+        "restitution": 0.02,
+        "density": 0.7
+      },
+      "basketball": {
+        "kind": "basketball",
+        "width": 68,
+        "height": 68,
+        "circle": true,
+        "spriteWidth": 70.2295,
+        "spriteHeight": 70.2295,
+        "friction": 0.85,
+        "restitution": 0.03,
+        "density": 0.4,
+        "contactAngularDamping": 6,
+        "adhesion": {
+          "maxForce": 1500,
+          "maxTorque": 150,
+          "maxImpactSpeed": 2
+        },
+        "description": "别担心，有人给它贴了双面胶。"
+      },
+      "fridge": {
+        "kind": "fridge",
+        "width": 82,
+        "height": 145,
+        "circle": false,
+        "spriteWidth": 121.9219,
+        "spriteHeight": 170.203,
+        "spriteOffset": [
+          10,
+          0
+        ],
+        "outline": [
+          [
+            -41,
+            -49
+          ],
+          [
+            -12,
+            -72.5
+          ],
+          [
+            7,
+            -72.5
+          ],
+          [
+            41,
+            -55
+          ],
+          [
+            41,
+            67
+          ],
+          [
+            26,
+            72.5
+          ],
+          [
+            -12,
+            72.5
+          ],
+          [
+            -41,
+            56
+          ]
+        ],
+        "friction": 0.6,
+        "restitution": 0.01,
+        "density": 1.2
+      },
+      "toilet": {
+        "width": 89.627937,
+        "height": 115,
+        "spriteWidth": 92.330287,
+        "spriteHeight": 117.70235,
+        "spriteOffset": [
+          0,
+          0
+        ],
+        "outline": [
+          [
+            -41.811358,
+            55.248042
+          ],
+          [
+            -44.813969,
+            52.395561
+          ],
+          [
+            -44.663838,
+            46.690601
+          ],
+          [
+            -42.862272,
+            45.789817
+          ],
+          [
+            -41.811358,
+            1.651436
+          ],
+          [
+            -39.70953,
+            -3.753264
+          ],
+          [
+            -35.656005,
+            -6.155352
+          ],
+          [
+            -35.055483,
+            -9.007833
+          ],
+          [
+            -32.803525,
+            -13.211488
+          ],
+          [
+            -23.945822,
+            -18.315927
+          ],
+          [
+            -19.742167,
+            -26.723238
+          ],
+          [
+            -17.340078,
+            -34.980418
+          ],
+          [
+            -16.289164,
+            -42.036554
+          ],
+          [
+            -17.940601,
+            -46.990862
+          ],
+          [
+            -21.393603,
+            -52.0953
+          ],
+          [
+            -21.543734,
+            -55.398172
+          ],
+          [
+            -18.541123,
+            -57.5
+          ],
+          [
+            29.050261,
+            -57.5
+          ],
+          [
+            32.203003,
+            -55.398172
+          ],
+          [
+            32.203003,
+            -52.545692
+          ],
+          [
+            30.251305,
+            -48.792428
+          ],
+          [
+            24.546345,
+            -37.983029
+          ],
+          [
+            23.19517,
+            -29.125326
+          ],
+          [
+            33.554178,
+            -22.969974
+          ],
+          [
+            40.610313,
+            -15.463446
+          ],
+          [
+            44.363577,
+            -6.755875
+          ],
+          [
+            44.663838,
+            3.753264
+          ],
+          [
+            41.961488,
+            7.806789
+          ],
+          [
+            27.849217,
+            9.908616
+          ],
+          [
+            -6.080287,
+            9.908616
+          ],
+          [
+            -9.833551,
+            7.656658
+          ],
+          [
+            -9.833551,
+            45.939948
+          ],
+          [
+            -8.031984,
+            49.39295
+          ],
+          [
+            -8.782637,
+            55.097911
+          ],
+          [
+            -12.38577,
+            57.5
+          ],
+          [
+            -34.905352,
+            57.5
+          ]
+        ],
+        "kind": "toilet",
+        "circle": false,
+        "friction": 0.62,
+        "restitution": 0.015,
+        "density": 0.9
+      },
+      "dumbbell": {
+        "width": 147.939914,
+        "height": 45,
+        "spriteWidth": 151.416309,
+        "spriteHeight": 48.476395,
+        "spriteOffset": [
+          0,
+          0
+        ],
+        "outline": [
+          [
+            -67.982833,
+            17.285408
+          ],
+          [
+            -70.493562,
+            11.491416
+          ],
+          [
+            -73.969957,
+            9.560086
+          ],
+          [
+            -73.969957,
+            -9.946352
+          ],
+          [
+            -70.493562,
+            -11.684549
+          ],
+          [
+            -67.982833,
+            -17.478541
+          ],
+          [
+            -62.76824,
+            -22.5
+          ],
+          [
+            -35.729614,
+            -22.5
+          ],
+          [
+            -31.287554,
+            -18.05794
+          ],
+          [
+            -28.969957,
+            -11.298283
+          ],
+          [
+            -26.652361,
+            -8.401288
+          ],
+          [
+            -22.982833,
+            -7.049356
+          ],
+          [
+            22.7897,
+            -7.049356
+          ],
+          [
+            26.652361,
+            -8.401288
+          ],
+          [
+            28.390558,
+            -11.298283
+          ],
+          [
+            30.515021,
+            -17.478541
+          ],
+          [
+            35.729614,
+            -22.5
+          ],
+          [
+            62.961373,
+            -22.5
+          ],
+          [
+            68.175966,
+            -17.478541
+          ],
+          [
+            70.493562,
+            -12.070815
+          ],
+          [
+            73.969957,
+            -9.946352
+          ],
+          [
+            73.969957,
+            9.560086
+          ],
+          [
+            70.493562,
+            11.298283
+          ],
+          [
+            67.7897,
+            17.285408
+          ],
+          [
+            62.961373,
+            22.5
+          ],
+          [
+            35.729614,
+            22.5
+          ],
+          [
+            30.901288,
+            17.671674
+          ],
+          [
+            28.583691,
+            12.070815
+          ],
+          [
+            26.652361,
+            8.787554
+          ],
+          [
+            22.7897,
+            7.049356
+          ],
+          [
+            -22.982833,
+            7.049356
+          ],
+          [
+            -25.686695,
+            8.208155
+          ],
+          [
+            -28.583691,
+            11.10515
+          ],
+          [
+            -30.321888,
+            17.092275
+          ],
+          [
+            -35.729614,
+            22.5
+          ],
+          [
+            -62.76824,
+            22.5
+          ]
+        ],
+        "kind": "dumbbell",
+        "circle": false,
+        "friction": 0.72,
+        "restitution": 0.015,
+        "density": 1.1
+      }
+    }
+  },
+  "failure": "Error: Manual-step sanity failed.\n    at main (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_gameplay_choices.cjs:142:74)",
+  "elapsedMs": 2992,
+  "originalStatus": "failed_or_incomplete",
+  "invalidatedReason": "Batched postUpdate omitted the public Node.resetHasChangedFlags called by Director.tick at every frame end. Resulting repeated SetTransform changed contacts/sleep. Data retained as method failure, not gameplay evidence."
+}

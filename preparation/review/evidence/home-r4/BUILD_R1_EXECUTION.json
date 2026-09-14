@@ -1,0 +1,9 @@
+{
+  "actual_creator_exit_code": 36,
+  "creator_execution_source": "Root tool exec session 88102 returned exit 36",
+  "actual_project_typecheck_exit_code": 0,
+  "project_typecheck_command": "Cocos bundled TypeScript --noEmit --skipLibCheck",
+  "project_typecheck_stdout": "TSC_R1.stdout.log",
+  "project_typecheck_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "build_report_sha256": "d50ca01a23a3478134db18ab121d90e773d3a7e263eb594d9ca9a75429856d7a"
+}

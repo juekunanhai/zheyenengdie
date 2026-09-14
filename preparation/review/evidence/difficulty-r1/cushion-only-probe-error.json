@@ -1,0 +1,1246 @@
+{
+  "status": "failed_or_incomplete",
+  "createdAt": "2026-09-13T10:26:21.324Z",
+  "profile": "cushion-only",
+  "method": {
+    "driver": "Cocos 3.8.8 ordinary automatic frames and native Box2D; controller moveTo/release after 0.18 active seconds in each planning phase. No altered contacts, isStable, scoring, damping, poses or native stepping.",
+    "timing": "Current 1.5-second first-contact handoff remains live. Releases continue even with pending unplaced bodies. After last scheduled release wait at least 3 active seconds, and until true strict stability + all released bodies placed, up to 10 seconds.",
+    "scope": "Eight fixed ten-object actions, same cyclic six-object sequence. This diagnoses bounded control policies, not a human success rate. Ended means the existing calibration whole-body loss rule fired.",
+    "override": "Counterfactual exported ObjectSpec override in the loaded engine. This is not evidence of an old engine build."
+  },
+  "scenarios": [
+    {
+      "id": "center10",
+      "xs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    },
+    {
+      "id": "alternating10",
+      "xs": [
+        -10,
+        10,
+        -10,
+        10,
+        -10,
+        10,
+        -10,
+        10,
+        -10,
+        10
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    },
+    {
+      "id": "all_plus10",
+      "xs": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    },
+    {
+      "id": "all_minus10",
+      "xs": [
+        -10,
+        -10,
+        -10,
+        -10,
+        -10,
+        -10,
+        -10,
+        -10,
+        -10,
+        -10
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    },
+    {
+      "id": "fridge_plus15",
+      "xs": [
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    },
+    {
+      "id": "fridge_minus15",
+      "xs": [
+        0,
+        0,
+        0,
+        -15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -15
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    },
+    {
+      "id": "paper_plus10",
+      "xs": [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    },
+    {
+      "id": "paper_minus10",
+      "xs": [
+        -10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -10,
+        0,
+        0,
+        0
+      ],
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball",
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge"
+      ]
+    }
+  ],
+  "results": [],
+  "errors": [
+    "TypeError: Cannot read properties of undefined (reading 'id')"
+  ],
+  "sources": {
+    "assets/batch1/object-data.ts": "c1653430ad0bb9dd085900e4cc5e3c44dae93484db537ebdec6ccaf7f9e3e342",
+    "assets/batch1/tower-world.ts": "0afa62df9488ce8ac54f68ff7861b5c940b214e70500237b5d261273aad4081c",
+    "assets/batch1/game-controller.ts": "390bcca0e86048a39e24f559d85259de5e7f0eb415faeb44dd92c93953e1d534",
+    "assets/batch1/play-view.ts": "91b648d0e2bafa214ca9b1f0acdecd50e0aee121064aed536cac65902c93903f",
+    "preparation/review/play-player.html": "bd7696f6f5bd63cc3c1c651c0d7b172e81f55b1f45810c366361a7364870dad0"
+  },
+  "url": "http://127.0.0.1:8767/preparation/review/play-player.html",
+  "engine": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    }
+  },
+  "compiledSpecs": {
+    "cardboard_box": {
+      "kind": "cardboard_box",
+      "width": 100,
+      "height": 100,
+      "circle": false,
+      "spriteWidth": 123.4306,
+      "spriteHeight": 122.605,
+      "outline": [
+        [
+          -50,
+          -34
+        ],
+        [
+          -18,
+          -50
+        ],
+        [
+          17,
+          -50
+        ],
+        [
+          50,
+          -29
+        ],
+        [
+          50,
+          39
+        ],
+        [
+          25,
+          50
+        ],
+        [
+          -20,
+          50
+        ],
+        [
+          -50,
+          32
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.5
+    },
+    "wood_plank": {
+      "kind": "wood_plank",
+      "width": 195,
+      "height": 28,
+      "circle": false,
+      "spriteWidth": 206.7773,
+      "spriteHeight": 54.6483,
+      "spriteOffset": [
+        0,
+        7.85
+      ],
+      "outline": [
+        [
+          -83.5,
+          -14
+        ],
+        [
+          83.5,
+          -14
+        ],
+        [
+          97.5,
+          5
+        ],
+        [
+          87,
+          14
+        ],
+        [
+          -87,
+          14
+        ],
+        [
+          -97.5,
+          5
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.7
+    },
+    "basketball": {
+      "kind": "basketball",
+      "width": 68,
+      "height": 68,
+      "circle": true,
+      "spriteWidth": 70.2295,
+      "spriteHeight": 70.2295,
+      "friction": 0.85,
+      "restitution": 0.03,
+      "density": 0.4,
+      "contactAngularDamping": 6,
+      "adhesion": {
+        "maxForce": 1500,
+        "maxTorque": 150,
+        "maxImpactSpeed": 2
+      },
+      "description": "别担心，有人给它贴了双面胶。"
+    },
+    "fridge": {
+      "kind": "fridge",
+      "width": 82,
+      "height": 145,
+      "circle": false,
+      "spriteWidth": 121.9219,
+      "spriteHeight": 170.203,
+      "spriteOffset": [
+        10,
+        0
+      ],
+      "outline": [
+        [
+          -41,
+          -49
+        ],
+        [
+          -12,
+          -72.5
+        ],
+        [
+          7,
+          -72.5
+        ],
+        [
+          41,
+          -55
+        ],
+        [
+          41,
+          67
+        ],
+        [
+          26,
+          72.5
+        ],
+        [
+          -12,
+          72.5
+        ],
+        [
+          -41,
+          56
+        ]
+      ],
+      "friction": 0.6,
+      "restitution": 0.01,
+      "density": 1.2
+    },
+    "toilet": {
+      "kind": "toilet",
+      "width": 150.900515,
+      "height": 115,
+      "circle": false,
+      "spriteWidth": 154.64837,
+      "spriteHeight": 118.5506,
+      "spriteOffset": [
+        0.098628,
+        0
+      ],
+      "outline": [
+        [
+          -74.266724,
+          54.738422
+        ],
+        [
+          -75.450257,
+          51.582333
+        ],
+        [
+          -74.858491,
+          46.848199
+        ],
+        [
+          -72.096913,
+          44.875643
+        ],
+        [
+          -70.518868,
+          18.837907
+        ],
+        [
+          -67.165523,
+          -1.084906
+        ],
+        [
+          -63.417667,
+          -7.791595
+        ],
+        [
+          -57.697256,
+          -9.764151
+        ],
+        [
+          -52.174099,
+          -16.668096
+        ],
+        [
+          -48.031732,
+          -22.191252
+        ],
+        [
+          -46.256432,
+          -28.897942
+        ],
+        [
+          -47.637221,
+          -34.421098
+        ],
+        [
+          -50.596055,
+          -40.141509
+        ],
+        [
+          -56.119211,
+          -44.678388
+        ],
+        [
+          -63.023156,
+          -47.834477
+        ],
+        [
+          -66.573756,
+          -51.187822
+        ],
+        [
+          -67.75729,
+          -55.921955
+        ],
+        [
+          -64.601201,
+          -57.5
+        ],
+        [
+          64.009434,
+          -57.5
+        ],
+        [
+          67.362779,
+          -54.541166
+        ],
+        [
+          65.192967,
+          -49.01801
+        ],
+        [
+          59.078045,
+          -45.46741
+        ],
+        [
+          56.316467,
+          -41.127787
+        ],
+        [
+          54.738422,
+          -35.21012
+        ],
+        [
+          56.513722,
+          -32.054031
+        ],
+        [
+          63.417667,
+          -28.503431
+        ],
+        [
+          68.546312,
+          -24.163808
+        ],
+        [
+          72.294168,
+          -17.654374
+        ],
+        [
+          74.463979,
+          -9.566895
+        ],
+        [
+          75.450257,
+          -1.282161
+        ],
+        [
+          73.280446,
+          2.465695
+        ],
+        [
+          67.560034,
+          4.43825
+        ],
+        [
+          24.95283,
+          4.43825
+        ],
+        [
+          22.585763,
+          4.240995
+        ],
+        [
+          24.95283,
+          45.861921
+        ],
+        [
+          27.517153,
+          47.24271
+        ],
+        [
+          28.108919,
+          51.779588
+        ],
+        [
+          26.925386,
+          55.330189
+        ],
+        [
+          21.993997,
+          57.5
+        ],
+        [
+          -68.940823,
+          57.5
+        ]
+      ],
+      "friction": 0.62,
+      "restitution": 0.015,
+      "density": 0.401990728786
+    },
+    "dumbbell": {
+      "kind": "dumbbell",
+      "width": 147.939914,
+      "height": 45,
+      "circle": false,
+      "spriteWidth": 151.416309,
+      "spriteHeight": 48.476395,
+      "spriteOffset": [
+        0,
+        0
+      ],
+      "outline": [
+        [
+          -67.982833,
+          17.285408
+        ],
+        [
+          -70.493562,
+          11.491416
+        ],
+        [
+          -73.969957,
+          9.560086
+        ],
+        [
+          -73.969957,
+          -9.946352
+        ],
+        [
+          -70.493562,
+          -11.684549
+        ],
+        [
+          -67.982833,
+          -17.478541
+        ],
+        [
+          -62.76824,
+          -22.5
+        ],
+        [
+          -35.729614,
+          -22.5
+        ],
+        [
+          -31.287554,
+          -18.05794
+        ],
+        [
+          -28.969957,
+          -11.298283
+        ],
+        [
+          -26.652361,
+          -8.401288
+        ],
+        [
+          -22.982833,
+          -7.049356
+        ],
+        [
+          22.7897,
+          -7.049356
+        ],
+        [
+          26.652361,
+          -8.401288
+        ],
+        [
+          28.390558,
+          -11.298283
+        ],
+        [
+          30.515021,
+          -17.478541
+        ],
+        [
+          35.729614,
+          -22.5
+        ],
+        [
+          62.961373,
+          -22.5
+        ],
+        [
+          68.175966,
+          -17.478541
+        ],
+        [
+          70.493562,
+          -12.070815
+        ],
+        [
+          73.969957,
+          -9.946352
+        ],
+        [
+          73.969957,
+          9.560086
+        ],
+        [
+          70.493562,
+          11.298283
+        ],
+        [
+          67.7897,
+          17.285408
+        ],
+        [
+          62.961373,
+          22.5
+        ],
+        [
+          35.729614,
+          22.5
+        ],
+        [
+          30.901288,
+          17.671674
+        ],
+        [
+          28.583691,
+          12.070815
+        ],
+        [
+          26.652361,
+          8.787554
+        ],
+        [
+          22.7897,
+          7.049356
+        ],
+        [
+          -22.982833,
+          7.049356
+        ],
+        [
+          -25.686695,
+          8.208155
+        ],
+        [
+          -28.583691,
+          11.10515
+        ],
+        [
+          -30.321888,
+          17.092275
+        ],
+        [
+          -35.729614,
+          22.5
+        ],
+        [
+          -62.76824,
+          22.5
+        ]
+      ],
+      "friction": 0.72,
+      "restitution": 0.015,
+      "density": 1.1
+    }
+  },
+  "overrideSpecs": {
+    "cardboard_box": {
+      "kind": "cardboard_box",
+      "width": 100,
+      "height": 100,
+      "circle": false,
+      "spriteWidth": 123.4306,
+      "spriteHeight": 122.605,
+      "outline": [
+        [
+          -50,
+          -34
+        ],
+        [
+          -18,
+          -50
+        ],
+        [
+          17,
+          -50
+        ],
+        [
+          50,
+          -29
+        ],
+        [
+          50,
+          39
+        ],
+        [
+          25,
+          50
+        ],
+        [
+          -20,
+          50
+        ],
+        [
+          -50,
+          32
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.5,
+      "contactImpactSpeed": 2.4
+    },
+    "wood_plank": {
+      "kind": "wood_plank",
+      "width": 195,
+      "height": 28,
+      "circle": false,
+      "spriteWidth": 206.7773,
+      "spriteHeight": 54.6483,
+      "spriteOffset": [
+        0,
+        7.85
+      ],
+      "outline": [
+        [
+          -83.5,
+          -14
+        ],
+        [
+          83.5,
+          -14
+        ],
+        [
+          97.5,
+          5
+        ],
+        [
+          87,
+          14
+        ],
+        [
+          -87,
+          14
+        ],
+        [
+          -97.5,
+          5
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.7,
+      "contactImpactSpeed": 2.4
+    },
+    "basketball": {
+      "kind": "basketball",
+      "width": 68,
+      "height": 68,
+      "circle": true,
+      "spriteWidth": 70.2295,
+      "spriteHeight": 70.2295,
+      "friction": 0.85,
+      "restitution": 0.03,
+      "density": 0.4,
+      "contactAngularDamping": 6,
+      "adhesion": {
+        "maxForce": 1500,
+        "maxTorque": 150,
+        "maxImpactSpeed": 2
+      },
+      "description": "别担心，有人给它贴了双面胶。"
+    },
+    "fridge": {
+      "kind": "fridge",
+      "width": 82,
+      "height": 145,
+      "circle": false,
+      "spriteWidth": 121.9219,
+      "spriteHeight": 170.203,
+      "spriteOffset": [
+        10,
+        0
+      ],
+      "outline": [
+        [
+          -41,
+          -49
+        ],
+        [
+          -12,
+          -72.5
+        ],
+        [
+          7,
+          -72.5
+        ],
+        [
+          41,
+          -55
+        ],
+        [
+          41,
+          67
+        ],
+        [
+          26,
+          72.5
+        ],
+        [
+          -12,
+          72.5
+        ],
+        [
+          -41,
+          56
+        ]
+      ],
+      "friction": 0.6,
+      "restitution": 0.01,
+      "density": 1.2,
+      "contactImpactSpeed": 2.4
+    },
+    "toilet": {
+      "kind": "toilet",
+      "width": 150.900515,
+      "height": 115,
+      "circle": false,
+      "spriteWidth": 154.64837,
+      "spriteHeight": 118.5506,
+      "spriteOffset": [
+        0.098628,
+        0
+      ],
+      "outline": [
+        [
+          -74.266724,
+          54.738422
+        ],
+        [
+          -75.450257,
+          51.582333
+        ],
+        [
+          -74.858491,
+          46.848199
+        ],
+        [
+          -72.096913,
+          44.875643
+        ],
+        [
+          -70.518868,
+          18.837907
+        ],
+        [
+          -67.165523,
+          -1.084906
+        ],
+        [
+          -63.417667,
+          -7.791595
+        ],
+        [
+          -57.697256,
+          -9.764151
+        ],
+        [
+          -52.174099,
+          -16.668096
+        ],
+        [
+          -48.031732,
+          -22.191252
+        ],
+        [
+          -46.256432,
+          -28.897942
+        ],
+        [
+          -47.637221,
+          -34.421098
+        ],
+        [
+          -50.596055,
+          -40.141509
+        ],
+        [
+          -56.119211,
+          -44.678388
+        ],
+        [
+          -63.023156,
+          -47.834477
+        ],
+        [
+          -66.573756,
+          -51.187822
+        ],
+        [
+          -67.75729,
+          -55.921955
+        ],
+        [
+          -64.601201,
+          -57.5
+        ],
+        [
+          64.009434,
+          -57.5
+        ],
+        [
+          67.362779,
+          -54.541166
+        ],
+        [
+          65.192967,
+          -49.01801
+        ],
+        [
+          59.078045,
+          -45.46741
+        ],
+        [
+          56.316467,
+          -41.127787
+        ],
+        [
+          54.738422,
+          -35.21012
+        ],
+        [
+          56.513722,
+          -32.054031
+        ],
+        [
+          63.417667,
+          -28.503431
+        ],
+        [
+          68.546312,
+          -24.163808
+        ],
+        [
+          72.294168,
+          -17.654374
+        ],
+        [
+          74.463979,
+          -9.566895
+        ],
+        [
+          75.450257,
+          -1.282161
+        ],
+        [
+          73.280446,
+          2.465695
+        ],
+        [
+          67.560034,
+          4.43825
+        ],
+        [
+          24.95283,
+          4.43825
+        ],
+        [
+          22.585763,
+          4.240995
+        ],
+        [
+          24.95283,
+          45.861921
+        ],
+        [
+          27.517153,
+          47.24271
+        ],
+        [
+          28.108919,
+          51.779588
+        ],
+        [
+          26.925386,
+          55.330189
+        ],
+        [
+          21.993997,
+          57.5
+        ],
+        [
+          -68.940823,
+          57.5
+        ]
+      ],
+      "friction": 0.62,
+      "restitution": 0.015,
+      "density": 0.401990728786,
+      "contactImpactSpeed": 2.4
+    },
+    "dumbbell": {
+      "kind": "dumbbell",
+      "width": 147.939914,
+      "height": 45,
+      "circle": false,
+      "spriteWidth": 151.416309,
+      "spriteHeight": 48.476395,
+      "spriteOffset": [
+        0,
+        0
+      ],
+      "outline": [
+        [
+          -67.982833,
+          17.285408
+        ],
+        [
+          -70.493562,
+          11.491416
+        ],
+        [
+          -73.969957,
+          9.560086
+        ],
+        [
+          -73.969957,
+          -9.946352
+        ],
+        [
+          -70.493562,
+          -11.684549
+        ],
+        [
+          -67.982833,
+          -17.478541
+        ],
+        [
+          -62.76824,
+          -22.5
+        ],
+        [
+          -35.729614,
+          -22.5
+        ],
+        [
+          -31.287554,
+          -18.05794
+        ],
+        [
+          -28.969957,
+          -11.298283
+        ],
+        [
+          -26.652361,
+          -8.401288
+        ],
+        [
+          -22.982833,
+          -7.049356
+        ],
+        [
+          22.7897,
+          -7.049356
+        ],
+        [
+          26.652361,
+          -8.401288
+        ],
+        [
+          28.390558,
+          -11.298283
+        ],
+        [
+          30.515021,
+          -17.478541
+        ],
+        [
+          35.729614,
+          -22.5
+        ],
+        [
+          62.961373,
+          -22.5
+        ],
+        [
+          68.175966,
+          -17.478541
+        ],
+        [
+          70.493562,
+          -12.070815
+        ],
+        [
+          73.969957,
+          -9.946352
+        ],
+        [
+          73.969957,
+          9.560086
+        ],
+        [
+          70.493562,
+          11.298283
+        ],
+        [
+          67.7897,
+          17.285408
+        ],
+        [
+          62.961373,
+          22.5
+        ],
+        [
+          35.729614,
+          22.5
+        ],
+        [
+          30.901288,
+          17.671674
+        ],
+        [
+          28.583691,
+          12.070815
+        ],
+        [
+          26.652361,
+          8.787554
+        ],
+        [
+          22.7897,
+          7.049356
+        ],
+        [
+          -22.982833,
+          7.049356
+        ],
+        [
+          -25.686695,
+          8.208155
+        ],
+        [
+          -28.583691,
+          11.10515
+        ],
+        [
+          -30.321888,
+          17.092275
+        ],
+        [
+          -35.729614,
+          22.5
+        ],
+        [
+          -62.76824,
+          22.5
+        ]
+      ],
+      "friction": 0.72,
+      "restitution": 0.015,
+      "density": 1.1,
+      "contactImpactSpeed": 2.4
+    }
+  },
+  "failure": "page.waitForFunction: TypeError: Cannot read properties of undefined (reading 'id')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2013:37\n    at Array.map (<anonymous>)\n    at TowerWorld.stabilizerSnapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2011:62)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:479:37)\n    at eval (eval at predicate (eval at evaluate (:311:30)), <anonymous>:1:15)\n    at predicate (eval at evaluate (:311:30), <anonymous>:7:27)\n    at next (eval at evaluate (:311:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:311:30), <anonymous>:42:13)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_difficulty_r1.cjs:35:14)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_difficulty_r1.cjs:104:13"
+}

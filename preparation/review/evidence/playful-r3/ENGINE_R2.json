@@ -1,0 +1,4277 @@
+{
+  "schema": "playful-r3-engine",
+  "createdAt": "2026-09-14T11:00:38.708Z",
+  "results": [
+    {
+      "name": "voices",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:00:44.827Z",
+      "evidence": {
+        "mode": "real audio start/end and natural cooldown wait",
+        "observations": [
+          {
+            "id": "voice_wow",
+            "state": {
+              "clock": 1.153,
+              "lastReactionAt": 0.25269999999925497,
+              "reacting": true,
+              "voices": [
+                {
+                  "clip": "claw_grip",
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.7
+                },
+                {
+                  "clip": "voice_wow",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            },
+            "otherVoiceBlocked": true
+          },
+          {
+            "id": "voice_hey",
+            "state": {
+              "clock": 13.302600000001451,
+              "lastReactionAt": 12.304300000000715,
+              "reacting": true,
+              "voices": [
+                {
+                  "clip": "voice_hey",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "clip": "voice_wow",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            },
+            "otherVoiceBlocked": true
+          },
+          {
+            "id": "voice_chuckle",
+            "state": {
+              "clock": 25.637800000000688,
+              "lastReactionAt": 24.3691999999992,
+              "reacting": true,
+              "voices": [
+                {
+                  "clip": "voice_chuckle",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "clip": "voice_wow",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            },
+            "otherVoiceBlocked": true
+          }
+        ],
+        "events": [
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 6644.099999997765,
+            "clock": 0.25269999999925497
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_wow",
+            "at": 6644.099999997765,
+            "clock": 0.25269999999925497
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 6845.099999997765,
+            "clock": 0.45280000000074505
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_wow",
+            "at": 7524.5,
+            "clock": 1.1360000000000001
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_hey",
+            "at": 18692.300000000745,
+            "clock": 12.304300000000715
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_hey",
+            "at": 19676.199999999255,
+            "clock": 13.285900000002197
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_chuckle",
+            "at": 30757.800000000745,
+            "clock": 24.3691999999992
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_chuckle",
+            "at": 32015.39999999851,
+            "clock": 25.62060000000143
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:01:10.670Z"
+    },
+    {
+      "name": "controls",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:01:10.671Z",
+      "evidence": {
+        "mode": "controlled settings and simulated visibility; audio clock advanced 12.1s between independent cases",
+        "observations": [
+          {
+            "step": "pause-resume-no-replay",
+            "audio": {
+              "clock": 0.2673999999985099,
+              "lastReactionAt": 0.24969999999925493,
+              "reacting": false,
+              "voices": [
+                {
+                  "clip": "next_handoff",
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.35
+                },
+                {
+                  "clip": "claw_grip",
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            }
+          },
+          {
+            "step": "simulated-hide-show",
+            "hidden": {
+              "audio": {
+                "clock": 12.383699999999255,
+                "lastReactionAt": 12.36739999999851,
+                "reacting": false,
+                "voices": [
+                  {
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 0.7
+                  },
+                  {
+                    "clip": "claw_grip",
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 0.7
+                  },
+                  {
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 0.7
+                  },
+                  {
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 1
+                  },
+                  {
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 1
+                  },
+                  {
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 1
+                  },
+                  {
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 1
+                  },
+                  {
+                    "playing": false,
+                    "reaction": false,
+                    "volume": 1
+                  }
+                ]
+              },
+              "music": {
+                "region": "bgm_city",
+                "fading": false,
+                "fade": 1,
+                "gain": 0.0851099999997765,
+                "paused": true,
+                "enabled": true,
+                "issues": [],
+                "sources": [
+                  {
+                    "clip": "bgm_city",
+                    "playing": false,
+                    "time": 0.24040000000223927,
+                    "volume": 0.0851099999997765
+                  },
+                  {
+                    "clip": null,
+                    "playing": false,
+                    "time": 0,
+                    "volume": 0
+                  }
+                ]
+              },
+              "paused": true
+            },
+            "returned": {
+              "clock": 12.383699999999255,
+              "lastReactionAt": 12.36739999999851,
+              "reacting": false,
+              "voices": [
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.7
+                },
+                {
+                  "clip": "claw_grip",
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 32218.89999999851,
+            "clock": 0.16629999999701978
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 32295.39999999851,
+            "clock": 0.24969999999925493
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_wow",
+            "at": 32295.39999999851,
+            "clock": 0.24969999999925493
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_hey",
+            "at": 32308.800000000745,
+            "clock": 12.36739999999851
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:01:10.969Z"
+    },
+    {
+      "name": "incidents",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:01:10.970Z",
+      "evidence": {
+        "mode": "immediate cancel plus explicit incident/failure fixture; controlled audio clock advance between cases",
+        "cancelled": {
+          "audio": {
+            "clock": 0.5676000000014901,
+            "lastReactionAt": 0.25010000000149013,
+            "reacting": false,
+            "voices": [
+              {
+                "clip": "next_handoff",
+                "playing": false,
+                "reaction": false,
+                "volume": 0.35
+              },
+              {
+                "clip": "claw_grip",
+                "playing": false,
+                "reaction": false,
+                "volume": 0.7
+              },
+              {
+                "playing": false,
+                "reaction": false,
+                "volume": 0.7
+              },
+              {
+                "playing": false,
+                "reaction": false,
+                "volume": 1
+              },
+              {
+                "playing": false,
+                "reaction": false,
+                "volume": 1
+              },
+              {
+                "playing": false,
+                "reaction": false,
+                "volume": 1
+              },
+              {
+                "playing": false,
+                "reaction": false,
+                "volume": 1
+              },
+              {
+                "playing": false,
+                "reaction": false,
+                "volume": 1
+              }
+            ]
+          },
+          "events": [
+            {
+              "type": "ENDED",
+              "clip": "next_handoff",
+              "at": 32507.39999999851,
+              "clock": 0.1661000000014901
+            },
+            {
+              "type": "STARTED",
+              "clip": "claw_grip",
+              "at": 32585.199999999255,
+              "clock": 0.25010000000149013
+            },
+            {
+              "type": "ENDED",
+              "clip": "claw_grip",
+              "at": 32785.599999997765,
+              "clock": 0.4478999999985099
+            }
+          ]
+        },
+        "incident": {
+          "clock": 12.70139999999851,
+          "lastReactionAt": 12.66760000000149,
+          "reacting": false,
+          "voices": [
+            {
+              "clip": "impact_wood_1",
+              "playing": true,
+              "reaction": false,
+              "volume": 0.8
+            },
+            {
+              "clip": "claw_grip",
+              "playing": false,
+              "reaction": false,
+              "volume": 0.7
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 0.7
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            }
+          ]
+        },
+        "defeated": {
+          "clock": 24.80139999999851,
+          "lastReactionAt": 24.80139999999851,
+          "reacting": false,
+          "voices": [
+            {
+              "clip": "impact_wood_1",
+              "playing": true,
+              "reaction": false,
+              "volume": 0.8
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 0.7
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 0.7
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            }
+          ]
+        },
+        "events": [
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 32507.39999999851,
+            "clock": 0.1661000000014901
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 32585.199999999255,
+            "clock": 0.25010000000149013
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 32785.599999997765,
+            "clock": 0.4478999999985099
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_wow",
+            "at": 32900.89999999851,
+            "clock": 12.66760000000149
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_wood_1",
+            "at": 32916.599999997765,
+            "clock": 12.68310000000149
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_hey",
+            "at": 32940.5,
+            "clock": 24.80139999999851
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:01:11.594Z"
+    },
+    {
+      "name": "duck",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:01:11.594Z",
+      "evidence": {
+        "mode": "real controller lateUpdate and AudioSource events",
+        "before": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.22,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 0.6950000000000003,
+              "volume": 0.22
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        },
+        "lowered": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.10354000000134109,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 0.7596999999992562,
+              "volume": 0.10354000000134109
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        },
+        "restored": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.21546000000089405,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 2.5116000000014935,
+              "volume": 0.21546000000089405
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        },
+        "events": [
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 33132.199999999255,
+            "clock": 0.18289999999850987
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 33203.199999999255,
+            "clock": 0.2501999999992549
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 33404.199999999255,
+            "clock": 0.4488999999985099
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_chuckle",
+            "at": 33684.099999997765,
+            "clock": 0.734800000000745
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_chuckle",
+            "at": 34941.699999999255,
+            "clock": 1.9828999999985109
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:01:14.145Z"
+    },
+    {
+      "name": "fixture",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:01:14.145Z",
+      "evidence": {
+        "mode": "controlled controller fixture; synthetic stable scores, not natural tower evidence",
+        "attempts": [
+          {
+            "name": "voice_wow",
+            "accepted": true
+          },
+          {
+            "name": "voice_wow",
+            "accepted": false
+          },
+          {
+            "name": "voice_chuckle",
+            "accepted": true
+          }
+        ],
+        "peak": 1520,
+        "playfulReactionUsed": true
+      },
+      "completedAt": "2026-09-14T11:01:14.412Z"
+    },
+    {
+      "name": "natural",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:01:14.413Z",
+      "evidence": {
+        "mode": "actual default sequence / controlled centre release / unchanged physics",
+        "observations": [
+          {
+            "step": 1,
+            "kind": "cardboard_box",
+            "peak": 1.0048273040042128,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 2,
+            "kind": "wood_plank",
+            "peak": 1.2971042128153667,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 3,
+            "kind": "fridge",
+            "peak": 2.975859361005794,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 4,
+            "kind": "wooden_crate",
+            "peak": 4.081967016668298,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 5,
+            "kind": "sofa",
+            "peak": 4.903140174227604,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 6,
+            "kind": "whale",
+            "peak": 5.875867804261626,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 7,
+            "kind": "wood_plank",
+            "peak": 6.184961860052994,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 8,
+            "kind": "burger",
+            "peak": 7.212556412702159,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 9,
+            "kind": "ice_block",
+            "peak": 7.212556412702159,
+            "placed": false,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 10,
+            "kind": "dumbbell",
+            "peak": 7.212556412702159,
+            "placed": false,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 11,
+            "kind": "wood_plank",
+            "peak": 8.782445418026917,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 12,
+            "kind": "toilet",
+            "peak": 9.9273770642319,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 13,
+            "kind": "slipper",
+            "peak": 9.9273770642319,
+            "placed": false,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          },
+          {
+            "step": 14,
+            "kind": "basketball",
+            "peak": 11.48186279296875,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "stars": 3,
+            "incidentCount": 0
+          }
+        ],
+        "events": [
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 35947.5,
+            "clock": 0.167
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 36017.699999999255,
+            "clock": 0.25030000000074504
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_hey",
+            "at": 36034.300000000745,
+            "clock": 0.26680000000074505
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 36034.300000000745,
+            "clock": 0.26680000000074505
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 36175.39999999851,
+            "clock": 0.40040000000223525
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 36217.89999999851,
+            "clock": 0.4519000000022353
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_paper_1",
+            "at": 36916.300000000745,
+            "clock": 1.1500999999977648
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_hey",
+            "at": 37017.699999999255,
+            "clock": 1.2495999999977645
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_paper_1",
+            "at": 37337.499999996275,
+            "clock": 1.5666999999992546
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 37567.599999997765,
+            "clock": 1.8001999999992544
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 37738.599999997765,
+            "clock": 1.9668000000007444
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 37817.099999997765,
+            "clock": 2.050599999997764
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 37832.900000002235,
+            "clock": 2.0669000000022346
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 37973.900000002235,
+            "clock": 2.2006999999992547
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 38017.800000000745,
+            "clock": 2.2500999999977647
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_wood_1",
+            "at": 38684.199999999255,
+            "clock": 2.916800000000746
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_wood_1",
+            "at": 38984.999999996275,
+            "clock": 3.2171999999992558
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 39333.499999996275,
+            "clock": 3.5668000000007467
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 39504.800000000745,
+            "clock": 3.734699999999257
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 39584.099999997765,
+            "clock": 3.817599999997767
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 39599.400000002235,
+            "clock": 3.833400000002237
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 39740.699999999255,
+            "clock": 3.967800000000747
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 39784.800000000745,
+            "clock": 4.017400000002237
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_metal_1",
+            "at": 40217.999999996275,
+            "clock": 4.452000000003727
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_metal_1",
+            "at": 40598.999999996275,
+            "clock": 4.8333000000007456
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 40900.400000002235,
+            "clock": 5.1334000000022355
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 41071.499999996275,
+            "clock": 5.300000000003725
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 41149.800000000745,
+            "clock": 5.383400000002235
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 41167.300000000745,
+            "clock": 5.4000000000037245
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 41308.900000002235,
+            "clock": 5.533300000000744
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 41349.699999999255,
+            "clock": 5.583000000003724
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_wood_1",
+            "at": 41702.499999996275,
+            "clock": 5.935599999997765
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_wood_1",
+            "at": 42002.999999996275,
+            "clock": 6.2336999999992555
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 42384.400000002235,
+            "clock": 6.617099999997765
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 42554.900000002235,
+            "clock": 6.783199999999256
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 42632.400000002235,
+            "clock": 6.866599999997766
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 42649.599999997765,
+            "clock": 6.883300000000746
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 42789.999999996275,
+            "clock": 7.016699999999256
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 42832.499999996275,
+            "clock": 7.066599999997766
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_soft_1",
+            "at": 43235.599999997765,
+            "clock": 7.468199999999256
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_soft_1",
+            "at": 43526.900000002235,
+            "clock": 7.750699999999258
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 43966.900000002235,
+            "clock": 8.200000000003728
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 44137.599999997765,
+            "clock": 8.367800000000749
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 44216.800000000745,
+            "clock": 8.450300000000748
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 44232.999999996275,
+            "clock": 8.466699999999259
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 44373.699999999255,
+            "clock": 8.60019999999926
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 44417.699999999255,
+            "clock": 8.64980000000075
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_heavy_1",
+            "at": 44805.300000000745,
+            "clock": 9.034099999997775
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_heavy_1",
+            "at": 45286.199999999255,
+            "clock": 9.516599999997778
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 45637.900000002235,
+            "clock": 9.86669999999927
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 45808.300000000745,
+            "clock": 10.03390000000225
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 45883.900000002235,
+            "clock": 10.11680000000076
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 45900.199999999255,
+            "clock": 10.13340000000225
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 46040.199999999255,
+            "clock": 10.267400000002253
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 46084.599999997765,
+            "clock": 10.316599999997782
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_wood_2",
+            "at": 46618.199999999255,
+            "clock": 10.850900000002252
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_wood_2",
+            "at": 46918.900000002235,
+            "clock": 11.150400000002255
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 47389.400000002235,
+            "clock": 11.616800000000769
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 47561.499999996275,
+            "clock": 11.782900000002261
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 47633.800000000745,
+            "clock": 11.866699999999282
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 47650.599999997765,
+            "clock": 11.883300000000773
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 47791.199999999255,
+            "clock": 12.016599999997794
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 47834.999999996275,
+            "clock": 12.068599999997794
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_soft_1",
+            "at": 48200.900000002235,
+            "clock": 12.433699999999284
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_soft_1",
+            "at": 48490.999999996275,
+            "clock": 12.716900000002266
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_chuckle",
+            "at": 49017.900000002235,
+            "clock": 13.25090000000227
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 49017.900000002235,
+            "clock": 13.25090000000227
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 49189.300000000745,
+            "clock": 13.416500000003763
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 49266.800000000745,
+            "clock": 13.500000000003764
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 49283.499999996275,
+            "clock": 13.516599999997803
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 49424.599999997765,
+            "clock": 13.652099999997803
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 49468.099999997765,
+            "clock": 13.700099999997805
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_ice_1",
+            "at": 49884.099999997765,
+            "clock": 14.116800000000786
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_ice_1",
+            "at": 50234.099999997765,
+            "clock": 14.466800000000788
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_chuckle",
+            "at": 50275.800000000745,
+            "clock": 14.50000000000377
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 51401.499999996275,
+            "clock": 15.634800000000798
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 51573.099999997765,
+            "clock": 15.80000000000378
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 51650.699999999255,
+            "clock": 15.883300000000801
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 51667.099999997765,
+            "clock": 15.899900000002292
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 51807.699999999255,
+            "clock": 16.03319999999931
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 51850.800000000745,
+            "clock": 16.0833000000008
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_metal_1",
+            "at": 52318.099999997765,
+            "clock": 16.5511999999993
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_metal_1",
+            "at": 52699.599999997765,
+            "clock": 16.933199999999303
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 53820.599999997765,
+            "clock": 18.051900000002284
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 53990.999999996275,
+            "clock": 18.217000000003775
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 54068.800000000745,
+            "clock": 18.300599999997814
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 54085.900000002235,
+            "clock": 18.318500000003773
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 54227.400000002235,
+            "clock": 18.450000000003772
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 54269.699999999255,
+            "clock": 18.50009999999781
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_wood_3",
+            "at": 54800.499999996275,
+            "clock": 19.033300000000782
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_wood_3",
+            "at": 55100.499999996275,
+            "clock": 19.333400000002268
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 55620.599999997765,
+            "clock": 19.850000000003753
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 55791.300000000745,
+            "clock": 20.016599999997794
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 55866.599999997765,
+            "clock": 20.099900000002265
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 55883.499999996275,
+            "clock": 20.116500000003754
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 56024.499999996275,
+            "clock": 20.250199999999285
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 56067.300000000745,
+            "clock": 20.300000000003756
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_ceramic_1",
+            "at": 56417.999999996275,
+            "clock": 20.651699999999288
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_ceramic_1",
+            "at": 56838.900000002235,
+            "clock": 21.066599999997795
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 57521.099999997765,
+            "clock": 21.750000000003762
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 57692.300000000745,
+            "clock": 21.918500000003764
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 57767.900000002235,
+            "clock": 21.999800000000782
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 57784.800000000745,
+            "clock": 22.0165999999978
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 57925.699999999255,
+            "clock": 22.149900000002273
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 57968.099999997765,
+            "clock": 22.199900000002273
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_soft_1",
+            "at": 58366.800000000745,
+            "clock": 22.599900000002275
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_soft_1",
+            "at": 58657.999999996275,
+            "clock": 22.883199999999295
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 59888.199999999255,
+            "clock": 24.115800000000792
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 60058.900000002235,
+            "clock": 24.2831999999993
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 60134.199999999255,
+            "clock": 24.36650000000377
+          },
+          {
+            "type": "STARTED",
+            "clip": "claw_open",
+            "at": 60150.800000000745,
+            "clock": 24.383199999999302
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_open",
+            "at": 60292.099999997765,
+            "clock": 24.516500000003774
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 60334.099999997765,
+            "clock": 24.566800000000793
+          },
+          {
+            "type": "STARTED",
+            "clip": "impact_rubber_1",
+            "at": 60766.900000002235,
+            "clock": 24.999800000000786
+          },
+          {
+            "type": "ENDED",
+            "clip": "impact_rubber_1",
+            "at": 61107.999999996275,
+            "clock": 25.333599999997798
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_wow",
+            "at": 61902.499999996275,
+            "clock": 26.134400000002266
+          },
+          {
+            "type": "STARTED",
+            "clip": "next_handoff",
+            "at": 61902.499999996275,
+            "clock": 26.134400000002266
+          },
+          {
+            "type": "ENDED",
+            "clip": "next_handoff",
+            "at": 62073.999999996275,
+            "clock": 26.30050000000375
+          }
+        ],
+        "funnyVoiceObserved": true,
+        "final": {
+          "phase": "planning",
+          "releases": 14,
+          "placed": 14,
+          "peakMetres": 11.48186279296875,
+          "stars": 3,
+          "incidentCount": 0,
+          "incident": null,
+          "recoverySeconds": 0,
+          "failureReason": null,
+          "normalBoundary": {
+            "top": 1491.2148507254465,
+            "bottom": 728.9291364397321,
+            "left": -214.28571428571428,
+            "right": 214.28571428571428
+          },
+          "safety": {
+            "enabled": true,
+            "boundary": {
+              "top": 1491.2148507254465,
+              "bottom": 728.9291364397321,
+              "left": -214.28571428571428,
+              "right": 214.28571428571428
+            },
+            "confirmedTop": 1148.186279296875,
+            "assistanceEnabled": true,
+            "maxAssistDamping": 8,
+            "filteredContacts": 0,
+            "pendingSupportReturns": 0,
+            "detachGraceSeconds": 0.12,
+            "fallSeconds": 0.12,
+            "fallSpeed": -0.75,
+            "collapseTrend": false,
+            "remainingStable": true,
+            "bodies": [
+              {
+                "id": 1,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0.6689211513322358,
+                "angularDamping": 6.668921151332236
+              },
+              {
+                "id": 2,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0.5425162202486895,
+                "angularDamping": 6.5425162202486895
+              },
+              {
+                "id": 3,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0.06816405459542461,
+                "angularDamping": 6.0681640545954245
+              },
+              {
+                "id": 4,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 5,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 6,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 7,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 8,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 9,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 10,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 11,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 12,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 13,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 14,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 15,
+                "lost": false,
+                "supported": false,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 1.5
+              }
+            ]
+          },
+          "sequence": [
+            "cardboard_box",
+            "wood_plank",
+            "fridge",
+            "wooden_crate",
+            "sofa",
+            "whale",
+            "wood_plank",
+            "burger",
+            "ice_block",
+            "dumbbell",
+            "wood_plank",
+            "toilet",
+            "slipper",
+            "basketball"
+          ],
+          "untimedCalibration": true,
+          "observationSeconds": null,
+          "maxObserveSeconds": 1.5,
+          "placementBlocked": false,
+          "placementTop": 1148.199951171875,
+          "stabilizers": {
+            "active": [
+              {
+                "plankId": 2,
+                "supportId": 1,
+                "distance": 0.11634588563586958,
+                "angle": 0.037434822345858265,
+                "maxForce": 210,
+                "maxTorque": 47.5
+              },
+              {
+                "plankId": 7,
+                "supportId": 6,
+                "distance": 2.2618042239278218,
+                "angle": 5.047274795443286,
+                "maxForce": 210,
+                "maxTorque": 47.5
+              },
+              {
+                "plankId": 11,
+                "supportId": 10,
+                "distance": 4.40143464204157,
+                "angle": 4.486713753101753,
+                "maxForce": 210,
+                "maxTorque": 47.5
+              }
+            ],
+            "brokenPairs": []
+          },
+          "secondsLeft": 4,
+          "tutorial": false,
+          "paused": false,
+          "boundary": {
+            "top": 1401.786279296875,
+            "left": -214.28571428571428,
+            "right": 214.28571428571428,
+            "bottom": 728.9291364397321
+          },
+          "view": {
+            "scale": 1.75,
+            "originY": -339,
+            "cameraY": 905.8713982317975,
+            "targetCameraY": 916.3577078683036,
+            "width": 750,
+            "height": 1334,
+            "heldTop": 1401.786279296875,
+            "zoom": 1,
+            "zoomTarget": 1,
+            "incidentCamera": false
+          },
+          "music": {
+            "region": "bgm_city",
+            "fading": false,
+            "fade": 1,
+            "gain": 0.09,
+            "paused": false,
+            "enabled": true,
+            "issues": [],
+            "sources": [
+              {
+                "clip": "bgm_city",
+                "playing": true,
+                "time": 12.019599999994043,
+                "volume": 0.09
+              },
+              {
+                "clip": null,
+                "playing": false,
+                "time": 0,
+                "volume": 0
+              }
+            ]
+          },
+          "audioClips": 36,
+          "currentId": 15,
+          "bodies": [
+            {
+              "id": 1,
+              "kind": "cardboard_box",
+              "position": {
+                "x": 0.07042379677295685,
+                "y": 50.44689178466797,
+                "z": 0
+              },
+              "angle": 0.01629172372551279,
+              "size": [
+                100.912779,
+                100
+              ],
+              "physicsAxis": {
+                "x": 0.9999999403953552,
+                "y": 0.0002843442198354751
+              },
+              "velocity": {
+                "x": -0.0003480332379695028,
+                "y": 5.4293195717036724e-8
+              },
+              "angularVelocity": -9.64937498793006e-8,
+              "mass": 4.389647960662842,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": -187.42857142857142
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0.6689211513322358,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -50.397296558659896,
+                "right": 50.54016282325815,
+                "bottom": 0.43341196816048466,
+                "top": 100.45823757764592
+              }
+            },
+            {
+              "id": 2,
+              "kind": "wood_plank",
+              "position": {
+                "x": -0.04456739127635956,
+                "y": 115.24653625488281,
+                "z": 0
+              },
+              "angle": 0.06068869871500949,
+              "size": [
+                260,
+                28.744805
+              ],
+              "physicsAxis": {
+                "x": 0.999999463558197,
+                "y": 0.0010592173784971237
+              },
+              "velocity": {
+                "x": -0.0007895109010860324,
+                "y": 0.000016761016013333574
+              },
+              "angularVelocity": 0.00015776578220538795,
+              "mass": 3.4859864711761475,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": -187.42857142857142
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0.5425162202486895,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -130.05353699458064,
+                "right": 129.96600468510496,
+                "bottom": 100.74170932385294,
+                "top": 129.75090533600815
+              }
+            },
+            {
+              "id": 3,
+              "kind": "fridge",
+              "position": {
+                "x": 0.03276456892490387,
+                "y": 213.82635498046875,
+                "z": 0
+              },
+              "angle": 0.07426638107326759,
+              "size": [
+                150,
+                167.554858636
+              ],
+              "physicsAxis": {
+                "x": 0.9999991655349731,
+                "y": 0.001296192524023354
+              },
+              "velocity": {
+                "x": -0.001283133402466774,
+                "y": 0.00002596798731246963
+              },
+              "angularVelocity": 0.000142007673275657,
+              "mass": 7.023437023162842,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": -187.42857142857142
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0.06816405459542461,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -74.89586297281542,
+                "right": 75.11833559979672,
+                "bottom": 129.97433223233216,
+                "top": 297.6779713987657
+              }
+            },
+            {
+              "id": 4,
+              "kind": "wooden_crate",
+              "position": {
+                "x": -0.12763039767742157,
+                "y": 353.13482666015625,
+                "z": 0
+              },
+              "angle": 0.08117699838879988,
+              "size": [
+                120,
+                110.143416
+              ],
+              "physicsAxis": {
+                "x": 0.9999989867210388,
+                "y": 0.0014168054331094027
+              },
+              "velocity": {
+                "x": -0.0018886079778894782,
+                "y": 0.00003350327824591659
+              },
+              "angularVelocity": 0.0001304053294006735,
+              "mass": 4.800000190734863,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": -121.67120675656346
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 0.9999999999999999,
+                "y": 0.9999999999999999,
+                "z": 1
+              },
+              "bounds": {
+                "left": -60.178553006889665,
+                "right": 59.9248438628327,
+                "bottom": 297.9841505487688,
+                "top": 408.1323326199721
+              }
+            },
+            {
+              "id": 5,
+              "kind": "sofa",
+              "position": {
+                "x": -0.09267216175794601,
+                "y": 449.3835144042969,
+                "z": 0
+              },
+              "angle": 0.0035166678022471964,
+              "size": [
+                180,
+                81.66884
+              ],
+              "physicsAxis": {
+                "x": 1,
+                "y": 0.00006137743184808642
+              },
+              "velocity": {
+                "x": -0.0020447552669793367,
+                "y": 0.00003348040991113521
+              },
+              "angularVelocity": 0.0000034447145935700973,
+              "mass": 4.199999809265137,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": -11.060441190312957
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 0.9999999999999999,
+                "y": 0.9999999999999999,
+                "z": 1
+              },
+              "bounds": {
+                "left": -90.09186536315131,
+                "right": 89.90791823647517,
+                "bottom": 408.54470843551155,
+                "top": 490.22039022489275
+              }
+            },
+            {
+              "id": 6,
+              "kind": "whale",
+              "position": {
+                "x": 1.4815301895141602,
+                "y": 538.5197143554688,
+                "z": 0
+              },
+              "angle": -1.6843835597067358,
+              "size": [
+                225,
+                96.512386
+              ],
+              "physicsAxis": {
+                "x": 0.9995679259300232,
+                "y": -0.02939380519092083
+              },
+              "velocity": {
+                "x": 0.00024450902128592134,
+                "y": -0.00004331915988586843
+              },
+              "angularVelocity": -0.0015180610353127122,
+              "mass": 6.799999713897705,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 71.05687456561762
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -111.21560630421904,
+                "right": 114.37698865260434,
+                "bottom": 490.28006109683037,
+                "top": 587.8285816318133
+              }
+            },
+            {
+              "id": 7,
+              "kind": "wood_plank",
+              "position": {
+                "x": 2.65733003616333,
+                "y": 600.8858032226562,
+                "z": 0
+              },
+              "angle": -5.5090265326308305,
+              "size": [
+                260,
+                28.744805
+              ],
+              "physicsAxis": {
+                "x": 0.9953810572624207,
+                "y": -0.09600257128477097
+              },
+              "velocity": {
+                "x": 0.003454460296779871,
+                "y": -0.0006097181467339396
+              },
+              "angularVelocity": -0.0017020520754158497,
+              "mass": 3.4859864711761475,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 198.72963756901973
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -127.7070249873299,
+                "right": 132.87644430943703,
+                "bottom": 574.5766719160016,
+                "top": 627.1534371309614
+              }
+            },
+            {
+              "id": 8,
+              "kind": "burger",
+              "position": {
+                "x": 8.756905555725098,
+                "y": 667.2501220703125,
+                "z": 0
+              },
+              "angle": -5.529184982192478,
+              "size": [
+                130,
+                103.636364
+              ],
+              "physicsAxis": {
+                "x": 0.995347261428833,
+                "y": -0.09635277092456818
+              },
+              "velocity": {
+                "x": 0.007292656227946281,
+                "y": -0.0009034383692778647
+              },
+              "angularVelocity": -0.0016989269061014056,
+              "mass": 3.200000047683716,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 199.23904314815653
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 0.9999999999999999,
+                "y": 0.9999999999999999,
+                "z": 1
+              },
+              "bounds": {
+                "left": -55.45930847315307,
+                "right": 74.65185769525856,
+                "bottom": 611.7313330288229,
+                "top": 722.6375210072415
+              }
+            },
+            {
+              "id": 9,
+              "kind": "ice_block",
+              "position": {
+                "x": 14.825088500976562,
+                "y": 758.0034790039062,
+                "z": 0
+              },
+              "angle": -5.424839328468545,
+              "size": [
+                119.687093,
+                77.444589
+              ],
+              "physicsAxis": {
+                "x": 0.995521068572998,
+                "y": -0.09453991055488586
+              },
+              "velocity": {
+                "x": 0.012769246473908424,
+                "y": -0.0012453728122636676
+              },
+              "angularVelocity": -0.0019719928968697786,
+              "mass": 4.5,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 301.998498413073
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -47.287099644088464,
+                "right": 76.77457431434786,
+                "bottom": 715.0246779129737,
+                "top": 800.8639511091451
+              }
+            },
+            {
+              "id": 10,
+              "kind": "dumbbell",
+              "position": {
+                "x": 3.3312888145446777,
+                "y": 819.8106689453125,
+                "z": 0
+              },
+              "angle": -3.6384703722829426,
+              "size": [
+                147.939914,
+                45
+              ],
+              "physicsAxis": {
+                "x": 0.9979843497276306,
+                "y": -0.06346061825752258
+              },
+              "velocity": {
+                "x": 0.016893533989787102,
+                "y": -0.0005300695193000138
+              },
+              "angularVelocity": -0.002179374685510993,
+              "mass": 4.844152927398682,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 381.27139229556144
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 0.9999999999999999,
+                "y": 0.9999999999999999,
+                "z": 1
+              },
+              "bounds": {
+                "left": -71.12077179359873,
+                "right": 77.75883674475013,
+                "bottom": 793.3604537555277,
+                "top": 846.2486277961283
+              }
+            },
+            {
+              "id": 11,
+              "kind": "wood_plank",
+              "position": {
+                "x": -3.8954436779022217,
+                "y": 857.6910400390625,
+                "z": 0
+              },
+              "angle": -3.6393762261216147,
+              "size": [
+                260,
+                28.744805
+              ],
+              "physicsAxis": {
+                "x": 0.9979833364486694,
+                "y": -0.06347639113664627
+              },
+              "velocity": {
+                "x": 0.019610993564128876,
+                "y": -0.0000037339411846915027
+              },
+              "angularVelocity": -0.0022698466200381517,
+              "mass": 3.4859864711761475,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 457.8157444494384
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -134.27120773357268,
+                "right": 126.38428795793763,
+                "bottom": 835.4112263360383,
+                "top": 879.9434158806451
+              }
+            },
+            {
+              "id": 12,
+              "kind": "toilet",
+              "position": {
+                "x": -1.3669772148132324,
+                "y": 930.0181884765625,
+                "z": 0
+              },
+              "angle": -3.6353161055468655,
+              "size": [
+                150.900515,
+                115
+              ],
+              "physicsAxis": {
+                "x": 0.9979878067970276,
+                "y": -0.06340567022562027
+              },
+              "velocity": {
+                "x": 0.024822378531098366,
+                "y": 0.00033160127350129187
+              },
+              "angularVelocity": -0.0022803994361311197,
+              "mass": 4.9956817626953125,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 458.9873989455489
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -73.3948033451297,
+                "right": 73.85016520303277,
+                "bottom": 868.5753266345919,
+                "top": 991.7737283598298
+              }
+            },
+            {
+              "id": 13,
+              "kind": "slipper",
+              "position": {
+                "x": -6.890686988830566,
+                "y": 1033.8140869140625,
+                "z": 0
+              },
+              "angle": 2.4491250497969785,
+              "size": [
+                165,
+                92.082153
+              ],
+              "physicsAxis": {
+                "x": 0.9990865588188171,
+                "y": 0.04273227974772453
+              },
+              "velocity": {
+                "x": 0.032362814992666245,
+                "y": 0.00023212030646391213
+              },
+              "angularVelocity": -0.0023209424689412117,
+              "mass": 2.799999952316284,
+              "awake": true,
+              "contacts": 2,
+              "contactSeconds": 1.5,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 573.4805635660471
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -88.99813816457439,
+                "right": 75.84355128678241,
+                "bottom": 988.0247938480827,
+                "top": 1080.0827562524628
+              }
+            },
+            {
+              "id": 14,
+              "kind": "basketball",
+              "position": {
+                "x": -4.146620273590088,
+                "y": 1114.199951171875,
+                "z": 0
+              },
+              "angle": 0.6069939489797144,
+              "size": [
+                68,
+                68
+              ],
+              "physicsAxis": {
+                "x": 0.9999439120292664,
+                "y": 0.010593844577670097
+              },
+              "velocity": {
+                "x": 0.038475729525089264,
+                "y": 0.00006120189209468663
+              },
+              "angularVelocity": -0.002332851989194751,
+              "mass": 1.4186254739761353,
+              "awake": true,
+              "contacts": 1,
+              "contactSeconds": 1.3832999999970197,
+              "lossBoundary": {
+                "left": -214.28571428571428,
+                "right": 214.28571428571428,
+                "bottom": 660.8160330656923
+              },
+              "lost": false,
+              "supported": true,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": true,
+              "type": 2,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -38.14662027359009,
+                "right": 29.853379726409912,
+                "bottom": 1080.199951171875,
+                "top": 1148.199951171875
+              }
+            },
+            {
+              "id": 15,
+              "kind": "cardboard_box",
+              "position": {
+                "x": 0,
+                "y": 1351.7862548828125,
+                "z": 0
+              },
+              "angle": 0,
+              "size": [
+                100.912779,
+                100
+              ],
+              "physicsAxis": {
+                "x": 1,
+                "y": 0
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "mass": 0,
+              "awake": true,
+              "contacts": 0,
+              "contactSeconds": null,
+              "lost": false,
+              "supported": false,
+              "detachedSeconds": 0,
+              "fallingSeconds": 0,
+              "assistDamping": 0,
+              "placed": false,
+              "type": 1,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 1301.7862548828125,
+                "top": 1401.7862548828125
+              }
+            }
+          ]
+        }
+      },
+      "completedAt": "2026-09-14T11:01:40.796Z"
+    },
+    {
+      "name": "loops",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:01:40.796Z",
+      "evidence": {
+        "mode": "controlled height inputs 0/60/170; actual AudioSource natural playback, no music time fast-forward; not natural tower-height evidence",
+        "durations": [
+          {
+            "id": "bgm_city",
+            "seconds": 14.367347
+          },
+          {
+            "id": "bgm_cloud",
+            "seconds": 14.367347
+          },
+          {
+            "id": "bgm_space",
+            "seconds": 14.367347
+          }
+        ],
+        "wrap": {
+          "previous": 14.323799999997021,
+          "current": 0.0001000000014954594,
+          "duration": 14.367347,
+          "elapsedMs": 14124.30000000447,
+          "playing": true
+        },
+        "transitions": [
+          {
+            "controlledHeight": 60,
+            "before": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.000799999997013856,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            },
+            "after": {
+              "region": "bgm_cloud",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 1.0335000000000036,
+                  "volume": 0.22
+                }
+              ]
+            },
+            "phaseSamples": [
+              {
+                "old": 0.03689999999851068,
+                "next": 0.03689999999851068,
+                "gap": 0
+              },
+              {
+                "old": 0.05150000000000432,
+                "next": 0.05160000000148557,
+                "gap": 0
+              },
+              {
+                "old": 0.06799999999999784,
+                "next": 0.06799999999999784,
+                "gap": 0
+              },
+              {
+                "old": 0.08460000000148682,
+                "next": 0.08460000000148682,
+                "gap": 0
+              },
+              {
+                "old": 0.10219999999553409,
+                "next": 0.10219999999553409,
+                "gap": 0
+              },
+              {
+                "old": 0.11739999999851136,
+                "next": 0.11739999999851136,
+                "gap": 0
+              },
+              {
+                "old": 0.1347999999970142,
+                "next": 0.1347999999970142,
+                "gap": 0
+              },
+              {
+                "old": 0.15179999999702432,
+                "next": 0.15179999999702432,
+                "gap": 0
+              },
+              {
+                "old": 0.1678999999985109,
+                "next": 0.1678999999985109,
+                "gap": 0
+              },
+              {
+                "old": 0.18510000000148352,
+                "next": 0.18510000000148352,
+                "gap": 0
+              },
+              {
+                "old": 0.20129999999701909,
+                "next": 0.20129999999701909,
+                "gap": 0
+              },
+              {
+                "old": 0.218299999997015,
+                "next": 0.218299999997015,
+                "gap": 0
+              },
+              {
+                "old": 0.2346000000014925,
+                "next": 0.2346000000014925,
+                "gap": 0
+              },
+              {
+                "old": 0.25319999999553033,
+                "next": 0.25319999999553033,
+                "gap": 0
+              },
+              {
+                "old": 0.26879999999701454,
+                "next": 0.26879999999701454,
+                "gap": 0
+              },
+              {
+                "old": 0.28489999999851534,
+                "next": 0.28489999999851534,
+                "gap": 0
+              },
+              {
+                "old": 0.3033999999985042,
+                "next": 0.3033999999985042,
+                "gap": 0
+              },
+              {
+                "old": 0.31989999999851193,
+                "next": 0.31989999999851193,
+                "gap": 0
+              },
+              {
+                "old": 0.3352999999970194,
+                "next": 0.3352999999970194,
+                "gap": 0
+              },
+              {
+                "old": 0.3521000000014851,
+                "next": 0.3521000000014851,
+                "gap": 0
+              },
+              {
+                "old": 0.36789999999851375,
+                "next": 0.36789999999851375,
+                "gap": 0
+              },
+              {
+                "old": 0.38450000000000273,
+                "next": 0.38450000000000273,
+                "gap": 0
+              },
+              {
+                "old": 0.40119999999552647,
+                "next": 0.40119999999552647,
+                "gap": 0
+              },
+              {
+                "old": 0.4178999999985109,
+                "next": 0.4178999999985109,
+                "gap": 0
+              },
+              {
+                "old": 0.43479999999701135,
+                "next": 0.43479999999701135,
+                "gap": 0
+              },
+              {
+                "old": 0.4511999999955236,
+                "next": 0.4511999999955236,
+                "gap": 0
+              },
+              {
+                "old": 0.4680000000000035,
+                "next": 0.4680000000000035,
+                "gap": 0
+              },
+              {
+                "old": 0.4846000000014925,
+                "next": 0.4846000000014925,
+                "gap": 0
+              },
+              {
+                "old": 0.5013999999985117,
+                "next": 0.5013999999985117,
+                "gap": 0
+              },
+              {
+                "old": 0.5181000000014819,
+                "next": 0.5181000000014819,
+                "gap": 0
+              },
+              {
+                "old": 0.5356999999955292,
+                "next": 0.5356999999955292,
+                "gap": 0
+              },
+              {
+                "old": 0.5506999999955298,
+                "next": 0.5506999999955298,
+                "gap": 0
+              },
+              {
+                "old": 0.5678999999985024,
+                "next": 0.5678999999985024,
+                "gap": 0
+              },
+              {
+                "old": 0.5849999999999937,
+                "next": 0.5849999999999937,
+                "gap": 0
+              },
+              {
+                "old": 0.6022999999970153,
+                "next": 0.6022999999970153,
+                "gap": 0
+              },
+              {
+                "old": 0.6174999999999926,
+                "next": 0.6174999999999926,
+                "gap": 0
+              },
+              {
+                "old": 0.634699999995533,
+                "next": 0.634699999995533,
+                "gap": 0
+              },
+              {
+                "old": 0.6528999999985103,
+                "next": 0.6528999999985103,
+                "gap": 0
+              },
+              {
+                "old": 0.6682999999970178,
+                "next": 0.6682999999970178,
+                "gap": 0
+              },
+              {
+                "old": 0.6846999999955301,
+                "next": 0.6846999999955301,
+                "gap": 0
+              },
+              {
+                "old": 0.7031999999955332,
+                "next": 0.7031999999955332,
+                "gap": 0
+              },
+              {
+                "old": 0.7181999999955337,
+                "next": 0.7181999999955337,
+                "gap": 0
+              },
+              {
+                "old": 0.734899999998504,
+                "next": 0.734899999998504,
+                "gap": 0
+              },
+              {
+                "old": 0.7516999999955232,
+                "next": 0.7516999999955232,
+                "gap": 0
+              },
+              {
+                "old": 0.7701999999955262,
+                "next": 0.7701999999955262,
+                "gap": 0
+              },
+              {
+                "old": 0.7831000000014825,
+                "next": 0.7831000000014825,
+                "gap": 0
+              },
+              {
+                "old": 0.8019999999999925,
+                "next": 0.8019999999999925,
+                "gap": 0
+              },
+              {
+                "old": 0.8178999999985024,
+                "next": 0.8178999999985024,
+                "gap": 0
+              },
+              {
+                "old": 0.8345000000000056,
+                "next": 0.8345000000000056,
+                "gap": 0
+              },
+              {
+                "old": 0.8512999999970248,
+                "next": 0.8512999999970248,
+                "gap": 0
+              },
+              {
+                "old": 0.8681999999955252,
+                "next": 0.8681999999955252,
+                "gap": 0
+              },
+              {
+                "old": 0.8852999999970166,
+                "next": 0.8852999999970166,
+                "gap": 0
+              },
+              {
+                "old": 0.9012999999970219,
+                "next": 0.9012999999970219,
+                "gap": 0
+              },
+              {
+                "old": 0.9192999999970226,
+                "next": 0.9192999999970226,
+                "gap": 0
+              },
+              {
+                "old": 0.9356000000014859,
+                "next": 0.9356000000014859,
+                "gap": 0
+              },
+              {
+                "old": 0.9516000000014913,
+                "next": 0.9516000000014913,
+                "gap": 0
+              },
+              {
+                "old": 0.9676000000014824,
+                "next": 0.9676000000014824,
+                "gap": 0
+              },
+              {
+                "old": 0.9846999999955273,
+                "next": 0.9846999999955273,
+                "gap": 0
+              },
+              {
+                "old": 1.0013999999985117,
+                "next": 1.0013999999985117,
+                "gap": 0
+              },
+              {
+                "old": 1.018100000001482,
+                "next": 1.018100000001482,
+                "gap": 0
+              }
+            ],
+            "continuity": {
+              "actual": 1.0336000000014849,
+              "expected": 1.0336000000014895,
+              "gap": 4.6629367034256575e-15
+            }
+          },
+          {
+            "controlledHeight": 170,
+            "before": {
+              "region": "bgm_cloud",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 1.0336000000014849,
+                  "volume": 0.22
+                }
+              ]
+            },
+            "after": {
+              "region": "bgm_space",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_space",
+                  "playing": true,
+                  "time": 2.0586000000014906,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0.019899999998514772,
+                  "volume": 0
+                }
+              ]
+            },
+            "phaseSamples": [
+              {
+                "old": 1.0681000000014933,
+                "next": 1.0681000000014933,
+                "gap": 0
+              },
+              {
+                "old": 1.0843999999985101,
+                "next": 1.0843999999985101,
+                "gap": 0
+              },
+              {
+                "old": 1.1015000000000015,
+                "next": 1.1015000000000015,
+                "gap": 0
+              },
+              {
+                "old": 1.1188999999985043,
+                "next": 1.1188999999985043,
+                "gap": 0
+              },
+              {
+                "old": 1.134600000001484,
+                "next": 1.134600000001484,
+                "gap": 0
+              },
+              {
+                "old": 1.1513999999985032,
+                "next": 1.1513999999985032,
+                "gap": 0
+              },
+              {
+                "old": 1.1682999999970178,
+                "next": 1.1682999999970178,
+                "gap": 0
+              },
+              {
+                "old": 1.1846000000014953,
+                "next": 1.1846000000014953,
+                "gap": 0
+              },
+              {
+                "old": 1.2014999999999958,
+                "next": 1.2014999999999958,
+                "gap": 0
+              },
+              {
+                "old": 1.218699999995522,
+                "next": 1.218699999995522,
+                "gap": 0
+              },
+              {
+                "old": 1.2346000000014925,
+                "next": 1.2346000000014925,
+                "gap": 0
+              },
+              {
+                "old": 1.2521000000014908,
+                "next": 1.2521000000014908,
+                "gap": 0
+              },
+              {
+                "old": 1.269999999999996,
+                "next": 1.269999999999996,
+                "gap": 0
+              },
+              {
+                "old": 1.2861000000014826,
+                "next": 1.2861000000014826,
+                "gap": 0
+              },
+              {
+                "old": 1.3034999999999997,
+                "next": 1.3034999999999997,
+                "gap": 0
+              },
+              {
+                "old": 1.3166000000014861,
+                "next": 1.3166000000014861,
+                "gap": 0
+              },
+              {
+                "old": 1.3346000000014868,
+                "next": 1.3346000000014868,
+                "gap": 0
+              },
+              {
+                "old": 1.3518999999985084,
+                "next": 1.3518999999985084,
+                "gap": 0
+              },
+              {
+                "old": 1.3700000000000045,
+                "next": 1.3700000000000045,
+                "gap": 0
+              },
+              {
+                "old": 1.3858999999985144,
+                "next": 1.3858999999985144,
+                "gap": 0
+              },
+              {
+                "old": 1.4013999999985032,
+                "next": 1.4013999999985032,
+                "gap": 0
+              },
+              {
+                "old": 1.417299999997013,
+                "next": 1.417299999997013,
+                "gap": 0
+              },
+              {
+                "old": 1.4356999999955349,
+                "next": 1.4356999999955349,
+                "gap": 0
+              },
+              {
+                "old": 1.4514999999999958,
+                "next": 1.4514999999999958,
+                "gap": 0
+              },
+              {
+                "old": 1.4668999999985033,
+                "next": 1.4668999999985033,
+                "gap": 0
+              },
+              {
+                "old": 1.4849999999999994,
+                "next": 1.4849999999999994,
+                "gap": 0
+              },
+              {
+                "old": 1.5031000000014956,
+                "next": 1.5031000000014956,
+                "gap": 0
+              },
+              {
+                "old": 1.518100000001482,
+                "next": 1.518100000001482,
+                "gap": 0
+              },
+              {
+                "old": 1.536600000001485,
+                "next": 1.536600000001485,
+                "gap": 0
+              },
+              {
+                "old": 1.5541000000014833,
+                "next": 1.5541000000014833,
+                "gap": 0
+              },
+              {
+                "old": 1.5725000000000051,
+                "next": 1.5725000000000051,
+                "gap": 0
+              },
+              {
+                "old": 1.5897999999970125,
+                "next": 1.5897999999970125,
+                "gap": 0
+              },
+              {
+                "old": 1.6063999999985015,
+                "next": 1.6063999999985015,
+                "gap": 0
+              },
+              {
+                "old": 1.6230000000000047,
+                "next": 1.6230000000000047,
+                "gap": 0
+              },
+              {
+                "old": 1.641600000001489,
+                "next": 1.641600000001489,
+                "gap": 0
+              },
+              {
+                "old": 1.6578999999985058,
+                "next": 1.6578999999985058,
+                "gap": 0
+              },
+              {
+                "old": 1.6713999999985134,
+                "next": 1.6713999999985134,
+                "gap": 0
+              },
+              {
+                "old": 1.6911999999955327,
+                "next": 1.6911999999955327,
+                "gap": 0
+              },
+              {
+                "old": 1.7061999999955333,
+                "next": 1.7061999999955333,
+                "gap": 0
+              },
+              {
+                "old": 1.7231000000014944,
+                "next": 1.7231000000014944,
+                "gap": 0
+              },
+              {
+                "old": 1.7394999999999925,
+                "next": 1.7394999999999925,
+                "gap": 0
+              },
+              {
+                "old": 1.7561000000014957,
+                "next": 1.7561000000014957,
+                "gap": 0
+              },
+              {
+                "old": 1.7746999999955335,
+                "next": 1.7746999999955335,
+                "gap": 0.00009999999404897153
+              },
+              {
+                "old": 1.7918999999985061,
+                "next": 1.7918999999985061,
+                "gap": 0
+              },
+              {
+                "old": 1.8061999999955276,
+                "next": 1.8061999999955276,
+                "gap": 0
+              },
+              {
+                "old": 1.8246999999955307,
+                "next": 1.8246999999955307,
+                "gap": 0
+              },
+              {
+                "old": 1.838399999998515,
+                "next": 1.838399999998515,
+                "gap": 0
+              },
+              {
+                "old": 1.8559999999999945,
+                "next": 1.8559999999999945,
+                "gap": 0
+              },
+              {
+                "old": 1.873100000001486,
+                "next": 1.873100000001486,
+                "gap": 0
+              },
+              {
+                "old": 1.8893999999985027,
+                "next": 1.8893999999985027,
+                "gap": 0
+              },
+              {
+                "old": 1.9061000000014872,
+                "next": 1.9061000000014872,
+                "gap": 0
+              },
+              {
+                "old": 1.9216000000014901,
+                "next": 1.9216000000014901,
+                "gap": 0
+              },
+              {
+                "old": 1.9411999999955327,
+                "next": 1.9411999999955327,
+                "gap": 0
+              },
+              {
+                "old": 1.9581999999955286,
+                "next": 1.9581999999955286,
+                "gap": 0
+              },
+              {
+                "old": 1.9714999999999918,
+                "next": 1.9714999999999918,
+                "gap": 0
+              },
+              {
+                "old": 1.9917999999970135,
+                "next": 1.9917999999970135,
+                "gap": 0
+              },
+              {
+                "old": 2.005699999995528,
+                "next": 2.005699999995528,
+                "gap": 0
+              },
+              {
+                "old": 2.0216999999955334,
+                "next": 2.0216999999955334,
+                "gap": 0
+              },
+              {
+                "old": 2.0412999999970225,
+                "next": 2.0412999999970225,
+                "gap": 0
+              }
+            ],
+            "continuity": {
+              "actual": 2.0586000000014906,
+              "expected": 2.058600000001485,
+              "gap": 5.773159728050814e-15
+            }
+          }
+        ],
+        "observations": [
+          {
+            "elapsedMs": 13.200000002980232,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.07965,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.2281000000014899,
+                  "volume": 0.07965
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 529.6000000014901,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.7446000000014905,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 1042,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.2568999999985095,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 1542.2000000029802,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.7571000000014934,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 2044.3000000044703,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 2.259200000002977,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 2558.8000000044703,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 2.7737000000029894,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 3059.3000000044703,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 3.2742000000029776,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 3575.60000000149,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 3.7905000000000086,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 4076.60000000149,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 4.291499999999999,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 4592.80000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 4.807700000002981,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 5108.80000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 5.323700000002987,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 5609.60000000149,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 5.8245000000000005,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 6125.60000000149,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 6.340500000000006,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 6642.20000000298,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 6.857100000001495,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 7143.30000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 7.358200000002981,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 7659.30000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 7.874200000002986,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 8176.80000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 8.391700000002984,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 8691.70000000298,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 8.90660000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 9192.30000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 9.407200000002987,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 9693.39999999851,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 9.908299999997027,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 10208.60000000149,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 10.423500000000004,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 10709.30000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 10.924200000002983,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 11225.30000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 11.440200000002989,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 11725.70000000298,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 11.940600000001496,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 12227.60000000149,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 12.44250000000001,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 12742.30000000447,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 12.957200000002985,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 13260.70000000298,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 13.475600000001492,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 13773.89999999851,
+            "height": 0,
+            "music": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 13.988899999998509,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 14275.89999999851,
+            "height": 60,
+            "music": {
+              "region": "bgm_cloud",
+              "fading": true,
+              "fade": 0.1326000000014901,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.15169999999552886,
+                  "volume": 0.19082799999967218
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 0.15169999999552886,
+                  "volume": 0.029172000000327825
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 14777,
+            "height": 60,
+            "music": {
+              "region": "bgm_cloud",
+              "fading": true,
+              "fade": 0.6336999999955297,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.6527999999970149,
+                  "volume": 0.08058600000098345
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 0.6527999999970149,
+                  "volume": 0.13941399999901655
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 15292.30000000447,
+            "height": 170,
+            "music": {
+              "region": "bgm_space",
+              "fading": true,
+              "fade": 0.115,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_space",
+                  "playing": true,
+                  "time": 1.1681999999955224,
+                  "volume": 0.0253
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 1.1681999999955224,
+                  "volume": 0.1947
+                }
+              ]
+            }
+          },
+          {
+            "elapsedMs": 15795.5,
+            "height": 170,
+            "music": {
+              "region": "bgm_space",
+              "fading": true,
+              "fade": 0.6181999999955295,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_space",
+                  "playing": true,
+                  "time": 1.671299999997018,
+                  "volume": 0.1360039999990165
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 1.671299999997018,
+                  "volume": 0.0839960000009835
+                }
+              ]
+            }
+          }
+        ],
+        "elapsedMs": 16182.80000000447
+      },
+      "completedAt": "2026-09-14T11:01:57.246Z"
+    }
+  ],
+  "errors": [],
+  "ready": true,
+  "busy": false
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head><base href="evidence/difficulty-r1/before/web-desktop/">
+    <meta charset="utf-8">
+
+    <title>Cocos Creator | zhe-ye-neng-die</title>
+
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="icon" href="favicon.ico"/>
+  <style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden}.header,.footer{display:none}
+#GameDiv{border:0;border-radius:0;box-shadow:none}
+</style></head>
+  <body>
+    <h1 class="header">zhe-ye-neng-die</h1>
+
+    <div id="GameDiv" cc_exact_fit_screen="false" style="width: 375px; height: 667px;">
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas" width="375" height="667" tabindex="99"></canvas>
+      </div>
+    </div>
+    <p class="footer">
+      Created with <a href="https://www.cocos.com/products" title="Cocos Creator">Cocos Creator</a>
+    </p>
+    <!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>    
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+    System.import('./index.js').catch(function(err) { console.error(err); })
+</script>
+  <script>
+(async()=>{
+ const cc=await System.import('cc');window.qaCC=cc;
+ const deadline=Date.now()+30000;
+ while(!cc.director.getScene()){if(Date.now()>deadline)throw Error('场景加载超时');await new Promise(r=>setTimeout(r,50))}
+ // The web-desktop build owns a fixed subframe. This QA host must report its size
+ // through the public API; CSS alone does not trigger Cocos's resize event.
+ const resizeFrame=()=>{const dpr=cc.screen.devicePixelRatio;cc.screen.windowSize=new cc.Size(innerWidth*dpr,innerHeight*dpr)};
+ resizeFrame();window.addEventListener('resize',resizeFrame);
+ cc.profiler.hideStats();
+ window.qaGame=()=>cc.director.getScene()?.getChildByName('Canvas')?.getComponent('StackGameController');
+ window.qaLoad=name=>new Promise((resolve,reject)=>cc.director.loadScene(name,e=>e?reject(e):resolve()));
+ window.qaSnapshot=()=>({scene:cc.director.getScene()?.name,engine:cc.VERSION,
+  physics:{gravity:cc.PhysicsSystem2D.instance.gravity,fixedTimeStep:cc.PhysicsSystem2D.instance.fixedTimeStep,
+  maxSubSteps:cc.PhysicsSystem2D.instance.maxSubSteps,auto:cc.PhysicsSystem2D.instance.autoSimulation},
+  game:window.qaGame()?.snapshot()});
+ parent.postMessage({type:'play-ready'},location.origin);
+})().catch(error=>parent.postMessage({type:'play-error',error:String(error)},location.origin));
+</script></body>
+</html>

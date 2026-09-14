@@ -1,0 +1,37 @@
+{
+  "mode": "authorized_local_alpha_cleanup_only",
+  "assets": [
+    {
+      "slug": "fridge",
+      "generated": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/generated/fridge.png",
+      "generated_sha256": "8535bf389a4be06f2e7e15b7c938f4b48ce1fe4f7b9b493aa12fa64541d2c6da",
+      "input_size": [
+        1254,
+        1254
+      ],
+      "crop_box": [
+        141,
+        82,
+        1115,
+        1168
+      ],
+      "output_size": [
+        974,
+        1086
+      ],
+      "removed_nonzero_alpha_pixels": 9723,
+      "strong_alpha_removed_pixels": 0,
+      "alpha_increased_pixels": 0,
+      "rgb_changed_pixels": 0,
+      "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/assets/object_fridge.png",
+      "output_sha256": "f8d8b26d64af8ba6e36163bfcb2533f1b60f0c429871b773613406d799ca37d0",
+      "next_sha256": "c9e8cc38532c5032cc53406e601c1e651bf7b898adeb322cacd63b6223afa977",
+      "operations": [
+        "Keep connected strong-alpha subject plus original two-pixel antialias fringe",
+        "Remove disconnected exterior alpha pixels",
+        "Crop with six-pixel transparent margin",
+        "Make NEXT from identical final alpha; no body repainting or resizing"
+      ]
+    }
+  ]
+}

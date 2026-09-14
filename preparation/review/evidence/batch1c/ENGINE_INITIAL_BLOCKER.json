@@ -1,0 +1,610 @@
+{
+  "capturedAt": "2026-09-14T06:46:20.722Z",
+  "status": "failed_scene_teardown",
+  "domPre": [
+    "[\n  {\n    \"id\": \"shapes\",\n    \"name\": \"十二种轮廓 / NEXT / 旋转\",\n    \"status\": \"running\",\n    \"startedAt\": \"2026-09-14T06:44:44.973Z\"\n  }\n]",
+    "{\n  \"engine\": \"3.8.8\",\n  \"viewport\": {\n    \"width\": 375,\n    \"height\": 667\n  },\n  \"game\": null\n}"
+  ],
+  "console": [
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of null (reading 'off')\n    at GameMusic.dispose (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:894:31)\n    at StackGameController.onDestroy (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:681:61)\n    at NodeActivator.destroyComp (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:46258:18)\n    at StackGameController._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:24201:44)\n    at StackGameController._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Node._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28362:24)\n    at Node._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)\n    at Node._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Scene._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28358:25)\n    at Scene._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)",
+      "timestamp": "2026-09-14T06:46:20.661Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/assets/main/index.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.675Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.676Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.677Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of null (reading 'off')\n    at GameMusic.dispose (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:894:31)\n    at StackGameController.onDestroy (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:681:61)\n    at NodeActivator.destroyComp (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:46258:18)\n    at StackGameController._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:24201:44)\n    at StackGameController._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Node._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28362:24)\n    at Node._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)\n    at Node._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Scene._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28358:25)\n    at Scene._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)",
+      "timestamp": "2026-09-14T06:46:20.678Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/assets/main/index.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.693Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.693Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.693Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.693Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.693Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.693Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.694Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.694Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.695Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.695Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.695Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.695Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.700Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.700Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.700Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of null (reading 'off')\n    at GameMusic.dispose (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:894:31)\n    at StackGameController.onDestroy (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:681:61)\n    at NodeActivator.destroyComp (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:46258:18)\n    at StackGameController._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:24201:44)\n    at StackGameController._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Node._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28362:24)\n    at Node._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)\n    at Node._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Scene._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28358:25)\n    at Scene._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)",
+      "timestamp": "2026-09-14T06:46:20.702Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/assets/main/index.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.708Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.709Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.710Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.710Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.710Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.710Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.710Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "You are trying to destroy a object twice or more.",
+      "timestamp": "2026-09-14T06:46:20.711Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of null (reading 'off')\n    at GameMusic.dispose (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:894:31)\n    at StackGameController.onDestroy (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:681:61)\n    at NodeActivator.destroyComp (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:46258:18)\n    at StackGameController._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:24201:44)\n    at StackGameController._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Node._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28362:24)\n    at Node._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)\n    at Node._destroyImmediate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11557:93)\n    at Scene._onPreDestroyBase (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28358:25)\n    at Scene._onPreDestroy (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:28404:23)",
+      "timestamp": "2026-09-14T06:46:20.712Z",
+      "url": "http://127.0.0.1:8767/build/web-desktop/assets/main/index.js"
+    }
+  ]
+}

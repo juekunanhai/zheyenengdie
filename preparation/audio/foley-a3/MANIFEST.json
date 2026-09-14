@@ -1,0 +1,642 @@
+{
+  "revision": "2026-09-14-A3",
+  "status": "authorized_for_current_use",
+  "listening_status": "not_reviewed",
+  "authorization": "用户要求移除电子音，允许从音效网站收集适合的免费素材并直接采用；不等于已试听通过。",
+  "scope": "7项操作/事件声音与3项盘器碰撞；12项现有纸/木/橡胶/金属实录材质保持原字节。",
+  "source_manifests": [
+    "audio/sources/foley-a3/SOURCES.json",
+    "audio/sources/kenney/SOURCES.json"
+  ],
+  "license_files": [
+    {
+      "file": "audio/sources/kenney/impact/License.txt",
+      "sha256": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db"
+    }
+  ],
+  "source_note": "仅使用棘轮/吸盘实录和Kenney Impact Sounds foley。Freesound是公开HQ MP3预览，非原始无损WAV。未使用Interface、pluck或合成器；所有样本保持原速度。",
+  "script_sha256": "77407ada1cc674a3f6417f674b4625a176a026bfa79a42330b8f6ca9abfd462f",
+  "entries": [
+    {
+      "id": "claw_grip",
+      "title": "抓手合拢",
+      "description": "棘轮工具实录的一小段卡扣动作；不使用电子开关音。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/claw_grip.wav",
+      "master_sha256": "8f443d789d29a7aa7684aa26a37ab6216a3a2503148a180d69f7152a8d3975bc",
+      "file": "audio/foley-a3/encoded/claw_grip.mp3",
+      "sha256": "1196d41e94403b39bf8420c74ecde37469ee54a6a8b5394410df6b5bc9abe11c",
+      "bytes": 3178,
+      "duration_s": 0.2,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -11.53,
+      "decode_rms_dbfs": -29.67,
+      "dc_removed": -1.1989999071118834e-07,
+      "final_gain": 1.1898207383886716,
+      "target_peak": 0.28,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/foley-a3/ratchet-hq.mp3",
+          "sha256": "164ed7ed77b94810e85ecc29cdfd54898ae20780e3dca5c38d3e42c1923129c3",
+          "start_s": 4.41,
+          "duration_s": 0.185011,
+          "requested_duration_s": 0.185,
+          "rate": 1,
+          "highpass_hz": 110,
+          "lowpass_hz": 5400,
+          "pre_filter_gain": 0.9014665232033163,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "CapsLok",
+          "page_url": "https://freesound.org/people/CapsLok/sounds/181634/",
+          "license": "CC0-1.0",
+          "source_quality": "author-page public HQ MP3 preview; not original lossless WAV",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 8159
+        }
+      ]
+    },
+    {
+      "id": "claw_open",
+      "title": "抓手松开",
+      "description": "从棘轮录音提取单次机械卡嗒，保留短促实体动作。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/claw_open.wav",
+      "master_sha256": "db994807d36274c70058f40fd2c8ec743f24392f589d38d39186262d8e03735e",
+      "file": "audio/foley-a3/encoded/claw_open.mp3",
+      "sha256": "c4eca31a89d547df305aba4da08e430d2eeac25cc0264241864dd95c7dbf3bbe",
+      "bytes": 2551,
+      "duration_s": 0.14,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -13.14,
+      "decode_rms_dbfs": -37.73,
+      "dc_removed": 1.0153931895102831e-07,
+      "final_gain": 1.9466310502646968,
+      "target_peak": 0.26,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/foley-a3/ratchet-hq.mp3",
+          "sha256": "164ed7ed77b94810e85ecc29cdfd54898ae20780e3dca5c38d3e42c1923129c3",
+          "start_s": 9.96,
+          "duration_s": 0.115011,
+          "requested_duration_s": 0.115,
+          "rate": 1,
+          "highpass_hz": 100,
+          "lowpass_hz": 5200,
+          "pre_filter_gain": 1.1027296759750391,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "CapsLok",
+          "page_url": "https://freesound.org/people/CapsLok/sounds/181634/",
+          "license": "CC0-1.0",
+          "source_quality": "author-page public HQ MP3 preview; not original lossless WAV",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 5072
+        }
+      ]
+    },
+    {
+      "id": "rotate_90",
+      "title": "旋转到位",
+      "description": "短棘轮转动与最后的自然卡扣，保持原录音速度。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/rotate_90.wav",
+      "master_sha256": "f55fb0af91f718c369c5cc27f9a432ab44fc6ea7955fefebe2c25ce61ba652a0",
+      "file": "audio/foley-a3/encoded/rotate_90.mp3",
+      "sha256": "a2494f9a3abe699cfb4a197a401afbd9a4b1cc16700e725bf261c99d450bb7fc",
+      "bytes": 3805,
+      "duration_s": 0.26,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -11.7,
+      "decode_rms_dbfs": -30.76,
+      "dc_removed": 2.209644320637905e-07,
+      "final_gain": 1.027843840794049,
+      "target_peak": 0.27,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/foley-a3/ratchet-hq.mp3",
+          "sha256": "164ed7ed77b94810e85ecc29cdfd54898ae20780e3dca5c38d3e42c1923129c3",
+          "start_s": 3.27,
+          "duration_s": 0.245011,
+          "requested_duration_s": 0.245,
+          "rate": 1,
+          "highpass_hz": 100,
+          "lowpass_hz": 5600,
+          "pre_filter_gain": 0.9982169925359295,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "CapsLok",
+          "page_url": "https://freesound.org/people/CapsLok/sounds/181634/",
+          "license": "CC0-1.0",
+          "source_quality": "author-page public HQ MP3 preview; not original lossless WAV",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 10805
+        }
+      ]
+    },
+    {
+      "id": "next_handoff",
+      "title": "下一件交接",
+      "description": "单次轻木敲，短而低存在感。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/next_handoff.wav",
+      "master_sha256": "3fcad8b9fd184eba206542e833a86715b99e37076448d98abe897c8b0e067826",
+      "file": "audio/foley-a3/encoded/next_handoff.mp3",
+      "sha256": "104d856d1b33b47de34b1414f2a501a759cbb789c707076b71d8d238db641ec4",
+      "bytes": 2865,
+      "duration_s": 0.17,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -14.44,
+      "decode_rms_dbfs": -31.57,
+      "dc_removed": -0.00020711769884306983,
+      "final_gain": 0.4379535557717022,
+      "target_peak": 0.2,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactWood_light_000.ogg",
+          "sha256": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3",
+          "start_s": 0,
+          "duration_s": 0.155011,
+          "requested_duration_s": 0.155,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5100,
+          "pre_filter_gain": 0.4825490179159512,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 6836
+        }
+      ]
+    },
+    {
+      "id": "stable",
+      "title": "稳固提示",
+      "description": "两次轻木敲组成短节奏；没有合成音符，不逐件自动播放。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/stable.wav",
+      "master_sha256": "241d92e00f3144a2a8282c85d81840cefcec8160181f87ebab051a2651e3e1d0",
+      "file": "audio/foley-a3/encoded/stable.mp3",
+      "sha256": "1cb7be61901bbe7554a7193bff0500c7622e10a2d2751ee572922476e9aa7929",
+      "bytes": 4432,
+      "duration_s": 0.29,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -13.21,
+      "decode_rms_dbfs": -31.41,
+      "dc_removed": -0.00014030233107018995,
+      "final_gain": 0.6994903828599296,
+      "target_peak": 0.23,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactWood_light_000.ogg",
+          "sha256": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3",
+          "start_s": 0,
+          "duration_s": 0.15,
+          "requested_duration_s": 0.15,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5100,
+          "pre_filter_gain": 0.4825490179159512,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0,
+          "gain": 0.72,
+          "used_samples": 6615
+        },
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactWood_light_001.ogg",
+          "sha256": "4b76bf3ccc8e60d19188f3165b778a7817786faa6887c55d9049bcbeef3b425f",
+          "start_s": 0,
+          "duration_s": 0.16,
+          "requested_duration_s": 0.16,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 4900,
+          "pre_filter_gain": 0.4726406374439139,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0.11,
+          "gain": 0.55,
+          "used_samples": 7056
+        }
+      ]
+    },
+    {
+      "id": "run_end",
+      "title": "本轮结束",
+      "description": "真实吸盘脱落后接一次软物落地，用短动作收尾；不含电子旋律。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/run_end.wav",
+      "master_sha256": "92f33d08af311547afeb5cb58704e88b7f356041800fc46e7ab577628346b18d",
+      "file": "audio/foley-a3/encoded/run_end.mp3",
+      "sha256": "ad8690e6d85244556733353d0462abf3ba191d320e3aedeadd7af373983a120f",
+      "bytes": 5686,
+      "duration_s": 0.4,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -10.9,
+      "decode_rms_dbfs": -28.81,
+      "dc_removed": 7.769875110407089e-07,
+      "final_gain": 0.635314104015306,
+      "target_peak": 0.3,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/foley-a3/suction-hq.mp3",
+          "sha256": "aa612cc000f53ddc0009b90211b8e5e24086eb469d4025f852258c62b557bcec",
+          "start_s": 0.205,
+          "duration_s": 0.235011,
+          "requested_duration_s": 0.235,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5900,
+          "pre_filter_gain": 0.862102287408092,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "michorvath",
+          "page_url": "https://freesound.org/people/michorvath/sounds/386885/",
+          "license": "CC0-1.0",
+          "source_quality": "author-page public HQ MP3 preview; not original lossless WAV",
+          "at_s": 0,
+          "gain": 0.8,
+          "used_samples": 10364
+        },
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactSoft_medium_000.ogg",
+          "sha256": "7d3ba0bb5e60a11b5d3e558c141303dcf494256675fbf753c0d252d2cf0481e3",
+          "start_s": 0,
+          "duration_s": 0.115011,
+          "requested_duration_s": 0.115,
+          "rate": 1,
+          "highpass_hz": 55,
+          "lowpass_hz": 3500,
+          "pre_filter_gain": 0.4739064164808954,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0.24,
+          "gain": 0.85,
+          "used_samples": 5072
+        }
+      ]
+    },
+    {
+      "id": "star_lost",
+      "title": "掉星提示",
+      "description": "吸盘松脱叠一声轻软落物，作为单次事故提示；没有警报或音符。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/star_lost.wav",
+      "master_sha256": "2789847dca9ed1e2f151d747e952d3c982958b5f2af3292b464fba76dc372e4d",
+      "file": "audio/foley-a3/encoded/star_lost.mp3",
+      "sha256": "1e8860ea65700f56a63149f7c886f3834e1465a4cf0022cbf487c9e84f1b8d64",
+      "bytes": 4432,
+      "duration_s": 0.29,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -11.5,
+      "decode_rms_dbfs": -30.47,
+      "dc_removed": 7.579049906615701e-07,
+      "final_gain": 0.6231774420621714,
+      "target_peak": 0.28,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/foley-a3/suction-hq.mp3",
+          "sha256": "aa612cc000f53ddc0009b90211b8e5e24086eb469d4025f852258c62b557bcec",
+          "start_s": 0.205,
+          "duration_s": 0.235011,
+          "requested_duration_s": 0.235,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5900,
+          "pre_filter_gain": 0.862102287408092,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "michorvath",
+          "page_url": "https://freesound.org/people/michorvath/sounds/386885/",
+          "license": "CC0-1.0",
+          "source_quality": "author-page public HQ MP3 preview; not original lossless WAV",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 10364
+        },
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactSoft_medium_000.ogg",
+          "sha256": "7d3ba0bb5e60a11b5d3e558c141303dcf494256675fbf753c0d252d2cf0481e3",
+          "start_s": 0,
+          "duration_s": 0.115011,
+          "requested_duration_s": 0.115,
+          "rate": 1,
+          "highpass_hz": 55,
+          "lowpass_hz": 3500,
+          "pre_filter_gain": 0.4739064164808954,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0.14,
+          "gain": 0.32,
+          "used_samples": 5072
+        }
+      ]
+    },
+    {
+      "id": "impact_ceramic_1",
+      "title": "盘器碰撞 1",
+      "description": "Kenney 盘器敲击变体，保留硬质短共鸣；用作陶瓷材质代理，并非马桶专门实录，也非破碎音。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/impact_ceramic_1.wav",
+      "master_sha256": "7e8773f73cc08a470798e45efb23b1681e6c417305171e0a0b04c49860954d4b",
+      "file": "audio/foley-a3/encoded/impact_ceramic_1.mp3",
+      "sha256": "e57d174f0ac0cf0e2bf381c2576295da4337388cde49912518284548d3c8e65f",
+      "bytes": 5999,
+      "duration_s": 0.42,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -10.11,
+      "decode_rms_dbfs": -32.91,
+      "dc_removed": -2.9836656221112355e-05,
+      "final_gain": 0.748044403862264,
+      "target_peak": 0.33,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactPlate_light_000.ogg",
+          "sha256": "6e797cf8a5bfc52d7ed5eb47c227974c1cf2a674954fec5b539cea7d62c7282c",
+          "start_s": 0,
+          "duration_s": 0.4,
+          "requested_duration_s": 0.4,
+          "rate": 1,
+          "highpass_hz": 85,
+          "lowpass_hz": 5700,
+          "pre_filter_gain": 0.4763030028250761,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 17640
+        }
+      ]
+    },
+    {
+      "id": "impact_ceramic_2",
+      "title": "盘器碰撞 2",
+      "description": "Kenney 盘器敲击变体，保留硬质短共鸣；用作陶瓷材质代理，并非马桶专门实录，也非破碎音。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/impact_ceramic_2.wav",
+      "master_sha256": "42affec61c966f62b59e74066f863ac87c2d3f13b3f77b860f6ae2209d827c32",
+      "file": "audio/foley-a3/encoded/impact_ceramic_2.mp3",
+      "sha256": "85c6d04623c6435be513e65dbb2e98a85a6261ad95fb54191efc92389fb7d294",
+      "bytes": 5999,
+      "duration_s": 0.42,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.99,
+      "decode_rms_dbfs": -33.54,
+      "dc_removed": -4.4135907762036956e-05,
+      "final_gain": 0.6824845584960029,
+      "target_peak": 0.33,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactPlate_light_001.ogg",
+          "sha256": "947915c2eb6ac57ee08fd3a48b297fd108d69abc72076e79882c21cad0eef56e",
+          "start_s": 0,
+          "duration_s": 0.4,
+          "requested_duration_s": 0.4,
+          "rate": 1,
+          "highpass_hz": 85,
+          "lowpass_hz": 5700,
+          "pre_filter_gain": 0.4937474083524258,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 17640
+        }
+      ]
+    },
+    {
+      "id": "impact_ceramic_3",
+      "title": "盘器碰撞 3",
+      "description": "Kenney 盘器敲击变体，保留硬质短共鸣；用作陶瓷材质代理，并非马桶专门实录，也非破碎音。",
+      "status": "authorized_for_current_use",
+      "listening_status": "not_reviewed",
+      "master": "audio/foley-a3/masters/impact_ceramic_3.wav",
+      "master_sha256": "d325efc215a7ab5a9d387e3eeb4d7310e9cf73f6a8d23a9e95c8b79d711b61d6",
+      "file": "audio/foley-a3/encoded/impact_ceramic_3.mp3",
+      "sha256": "9048c340b53d43a88346ce075ab535f1588b9d49fb672307247a03d335b91595",
+      "bytes": 5999,
+      "duration_s": 0.42,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.92,
+      "decode_rms_dbfs": -33.5,
+      "dc_removed": -3.1815747063652665e-05,
+      "final_gain": 0.6583880723522668,
+      "target_peak": 0.33,
+      "final_attack_fade_s": 0.0004988662131519275,
+      "final_tail_fade_s": 0.01,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactPlate_light_002.ogg",
+          "sha256": "8ac5869ea434cf0d364872774efe70b2d666a4f02ba35ddfc1e051d336721be8",
+          "start_s": 0,
+          "duration_s": 0.4,
+          "requested_duration_s": 0.4,
+          "rate": 1,
+          "highpass_hz": 85,
+          "lowpass_hz": 5700,
+          "pre_filter_gain": 0.4721089899158833,
+          "attack_fade_s": 0.0004988662131519275,
+          "tail_fade_s": 0.024988662131519273,
+          "author": "Kenney",
+          "page_url": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "source_quality": "OGG file from Kenney Impact Sounds 1.0 CC0 pack",
+          "at_s": 0,
+          "gain": 1,
+          "used_samples": 17640
+        }
+      ]
+    }
+  ],
+  "unchanged_materials": [
+    {
+      "file": "assets/batch1/audio/impact_rubber_2.mp3",
+      "sha256": "943e30eda154470fbd86fc013a6f313b684e00490c7bd5e6093e81ea9d46d974"
+    },
+    {
+      "file": "assets/batch1/audio/impact_rubber_3.mp3",
+      "sha256": "c3e3daa26cbb66ea469268601306a8bf83933846e9a1e63c44fb27d4a6af75ad"
+    },
+    {
+      "file": "assets/batch1/audio/impact_paper_1.mp3",
+      "sha256": "1723d08854f14a15bafd72bfa9751a88aaaa542519c535c258c503b76c79b7e2"
+    },
+    {
+      "file": "assets/batch1/audio/impact_paper_3.mp3",
+      "sha256": "490a3e046c1c399e54311dfc1fb35c64d7f3a9588fb4bea35f9576b468fb75f4"
+    },
+    {
+      "file": "assets/batch1/audio/impact_rubber_1.mp3",
+      "sha256": "63996454af2c241c5bbf4e79225c32186edf8768ecc791c4dfaf578c1c83464a"
+    },
+    {
+      "file": "assets/batch1/audio/impact_paper_2.mp3",
+      "sha256": "3150afb53987a5a20bf97d5e4422ee6183af31185e76ff109198ed8b3e08dda8"
+    },
+    {
+      "file": "assets/batch1/audio/impact_wood_2.mp3",
+      "sha256": "b0c60355de07522b7f047b28efbc1f05c474452954633c49df17580c3ade5eb9"
+    },
+    {
+      "file": "assets/batch1/audio/impact_wood_3.mp3",
+      "sha256": "d2b9f2e4c5b5eb4ebbabd6fadd800744d683d08eca419ba370f39b5ec4c8dc4a"
+    },
+    {
+      "file": "assets/batch1/audio/impact_wood_1.mp3",
+      "sha256": "dec6962d80dc980910c3dbf24359807ef8c3541d96bd72e516402d04ba23add5"
+    },
+    {
+      "file": "assets/batch1/audio/impact_metal_1.mp3",
+      "sha256": "a8cb0442ef13d00302e408207b41ce34da1adbabbeab473b5f9415aed5fbc56c"
+    },
+    {
+      "file": "assets/batch1/audio/impact_metal_3.mp3",
+      "sha256": "67ef3d60f6b25036c0f9d7a2f3d0038dcbe6a2a881be06ae2f6368dfa1f05776"
+    },
+    {
+      "file": "assets/batch1/audio/impact_metal_2.mp3",
+      "sha256": "9bc35d647791b118f75a30419ee9d1a515a0dd1351a27e8a05f9b0ad3e1d661f"
+    }
+  ],
+  "quick_listen": {
+    "file": "audio/foley-a3/quick-listen.wav",
+    "sha256": "16d5ad48cfe80800260de059de929515315a364885b176e3474228c4cf2e0cc8",
+    "timeline": [
+      {
+        "id": "claw_grip",
+        "start_s": 0.0,
+        "duration_s": 0.2
+      },
+      {
+        "id": "claw_open",
+        "start_s": 0.85,
+        "duration_s": 0.14
+      },
+      {
+        "id": "rotate_90",
+        "start_s": 1.64,
+        "duration_s": 0.26
+      },
+      {
+        "id": "next_handoff",
+        "start_s": 2.55,
+        "duration_s": 0.17
+      },
+      {
+        "id": "stable",
+        "start_s": 3.37,
+        "duration_s": 0.29
+      },
+      {
+        "id": "run_end",
+        "start_s": 4.31,
+        "duration_s": 0.4
+      },
+      {
+        "id": "star_lost",
+        "start_s": 5.36,
+        "duration_s": 0.29
+      },
+      {
+        "id": "impact_ceramic_1",
+        "start_s": 6.3,
+        "duration_s": 0.42
+      },
+      {
+        "id": "impact_ceramic_2",
+        "start_s": 7.37,
+        "duration_s": 0.42
+      },
+      {
+        "id": "impact_ceramic_3",
+        "start_s": 8.44,
+        "duration_s": 0.42
+      }
+    ]
+  },
+  "verified": [
+    "10个MP3完整解码通过",
+    "浮点采样全有限、解码峰值低于-1.94dBFS",
+    "母版与解码时长误差小于2ms",
+    "源文件与编辑配方逐项可追溯",
+    "12个现有材质音频字节未变"
+  ],
+  "not_proven": [
+    "助理未实际试听",
+    "用户听感未单独验收",
+    "引擎混音和触发时序",
+    "手机扬声器和微信真机"
+  ],
+  "imported_into_game": true,
+  "import_manifest": "audio/BATCH1B_AUDIO_IMPORT_MANIFEST.json"
+}

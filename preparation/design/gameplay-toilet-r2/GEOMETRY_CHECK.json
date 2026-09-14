@@ -1,0 +1,101 @@
+{
+  "slug": "toilet",
+  "outline_vertices": 40,
+  "simple_polygon": true,
+  "self_intersections": [],
+  "concave_vertices": 13,
+  "minimum_edge_world": 2.27200659840592,
+  "polygon_pixels": 352912,
+  "polygon_outside_alpha128_pixels": 673,
+  "outside_percentage": 0.1907,
+  "visible_alpha_not_in_polygon_pixels": 2190,
+  "alpha_boundary_to_polygon_world": {
+    "max": 1.375818,
+    "p95": 0.489362
+  },
+  "high_plateau_alpha_deviation_world_max": 0.489362,
+  "visual_alpha_height_world": 115.652482,
+  "bearing_outline_height_world": 115,
+  "measurements": {
+    "high_plateau": {
+      "pixel_segment": [
+        [
+          31,
+          12
+        ],
+        [
+          275,
+          12
+        ]
+      ],
+      "width_world": 39.801418,
+      "x_world": [
+        -58.804965,
+        -19.003546
+      ],
+      "y_world": 57.5
+    },
+    "low_plateau": {
+      "pixel_segment": [
+        [
+          310,
+          276
+        ],
+        [
+          690,
+          276
+        ]
+      ],
+      "width_world": 61.985816,
+      "x_world": [
+        -13.294326,
+        48.691489
+      ],
+      "y_world": 14.43617
+    },
+    "foot": {
+      "pixel_segment": [
+        [
+          54,
+          717
+        ],
+        [
+          679,
+          717
+        ]
+      ],
+      "width_world": 101.950355,
+      "x_world": [
+        -55.053191,
+        46.897163
+      ],
+      "y_world": -57.5
+    },
+    "step_height_world": 43.06383
+  },
+  "target_comparison": {
+    "width_target": 125,
+    "width_actual": 124.787234,
+    "high_width_target": [
+      40,
+      46
+    ],
+    "high_width_actual": 39.801418,
+    "low_width_target": [
+      55,
+      65
+    ],
+    "low_width_actual": 61.985816,
+    "foot_width_target": [
+      96,
+      108
+    ],
+    "foot_width_actual": 101.950355,
+    "step_height_target": [
+      35,
+      40
+    ],
+    "step_actual": 43.06383
+  },
+  "notes": "Raster metrics are visual diagnostics, not Cocos physics acceptance. The high plateau is slightly narrower and the step 3.1 units taller than nominal target. Flattening 1-3 pixels follows the nearly horizontal visible lips; it does not invent a broad invisible platform."
+}

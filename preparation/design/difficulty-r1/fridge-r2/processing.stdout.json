@@ -1,0 +1,91 @@
+{
+  "assets": [
+    {
+      "slug": "fridge",
+      "width": 110.0,
+      "height": 122.873563,
+      "spriteWidth": 111.954023,
+      "spriteHeight": 124.827586,
+      "spriteOffset": [
+        0.057471,
+        -0.057471
+      ],
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              119,
+              8
+            ],
+            [
+              852,
+              8
+            ]
+          ],
+          "width_world": 84.252874,
+          "y_world": 61.436782
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              119,
+              1077
+            ],
+            [
+              853,
+              1077
+            ]
+          ],
+          "width_world": 84.367816,
+          "y_world": -61.436782
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "slug": "fridge",
+      "simple_polygon": true,
+      "self_intersections": [],
+      "vertices": 8,
+      "polygon_outside_alpha128_percent": 0.060303,
+      "alpha_outside_polygon_percent": 0.316428,
+      "boundary_distance_world": {
+        "max": 0.867369,
+        "p95": 0.639116
+      },
+      "next_alpha_identical": true,
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              119,
+              8
+            ],
+            [
+              852,
+              8
+            ]
+          ],
+          "width_world": 84.252874,
+          "y_world": 61.436782
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              119,
+              1077
+            ],
+            [
+              853,
+              1077
+            ]
+          ],
+          "width_world": 84.367816,
+          "y_world": -61.436782
+        }
+      },
+      "validation_boundary": "Geometry and raster checks only; engine balance must be verified separately."
+    }
+  ]
+}

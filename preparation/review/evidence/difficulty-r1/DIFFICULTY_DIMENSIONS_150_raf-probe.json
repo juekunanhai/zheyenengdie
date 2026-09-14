@@ -1,0 +1,2665 @@
+{
+  "status": "failed_or_incomplete",
+  "createdAt": "2026-09-13T11:32:25.729Z",
+  "method": "Actual compiled Cocos HUD, automatic native Box2D, configureCalibration([paper, plank, fridge, paper], true), controller.rotate/moveTo/release. No body pose, velocity, type, scale, contacts, stepping, score, or camera mutation. Measurements after normal UI animation settles. World-coordinate area-density products are not engine mass; snapshot mass is native kg.",
+  "views": [
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "objects": [
+        {
+          "kind": "fridge",
+          "poses": [
+            {
+              "rotation": 0,
+              "center": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 0,
+                "releases": 2,
+                "position": {
+                  "x": 0,
+                  "y": 401.6511535644531
+                },
+                "physicsScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -75,
+                  "right": 75,
+                  "bottom": 317.87372356445314,
+                  "top": 485.4285835644531
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 188.15917471659685,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 187.5,
+                  "y": 78.24998938110357
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 120.777820994,
+                    "right": 254.35932570974998,
+                    "top": 77.15281097141602,
+                    "bottom": 226.09481699454105
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 155.5104961832061,
+                    "right": 219.4895038167939,
+                    "top": 21.749989381103518,
+                    "bottom": 96.24998938110352
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "left": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 0,
+                "releases": 2,
+                "position": {
+                  "x": -135.2857208251953,
+                  "y": 401.6511535644531
+                },
+                "physicsScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -210.2857208251953,
+                  "right": -60.28572082519531,
+                  "bottom": 317.87372356445314,
+                  "top": 485.4285835644531
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 188.15917471659685,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 69.12499427795409,
+                  "y": 78.24998938110357
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 2.4028209939999865,
+                    "right": 135.98432570974998,
+                    "top": 77.15281097141602,
+                    "bottom": 226.09481699454105
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 37.1354961832061,
+                    "right": 101.11450381679388,
+                    "top": 21.749989381103518,
+                    "bottom": 96.24998938110352
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "right": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 0,
+                "releases": 2,
+                "position": {
+                  "x": 135.2857208251953,
+                  "y": 401.6511535644531
+                },
+                "physicsScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": 60.28572082519531,
+                  "right": 210.2857208251953,
+                  "bottom": 317.87372356445314,
+                  "top": 485.4285835644531
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 188.15917471659685,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 305.8750057220459,
+                  "y": 78.24998938110357
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 239.152820994,
+                    "right": 372.73432570975,
+                    "top": 77.15281097141602,
+                    "bottom": 226.09481699454105
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 273.8854961832061,
+                    "right": 337.8645038167939,
+                    "top": 21.749989381103518,
+                    "bottom": 96.24998938110352
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "movableWidth": 270.5714416503906
+            },
+            {
+              "rotation": 1,
+              "center": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": -90.00000250447816,
+                "releases": 2,
+                "position": {
+                  "x": 0,
+                  "y": 410.4285583496094
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -83.7774325110069,
+                  "right": 83.77743251785817,
+                  "bottom": 335.42856123743877,
+                  "top": 485.42856119633075
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 205.71401238958248,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 187.5,
+                  "y": 78.25000895321057
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 112.96042071404851,
+                    "right": 261.90243257620665,
+                    "top": 77.15282917986336,
+                    "bottom": 210.73434040607535
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 155.5104961832061,
+                    "right": 219.4895038167939,
+                    "top": 21.75000895321059,
+                    "bottom": 96.2500089532106
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "left": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": -90.00000250447816,
+                "releases": 2,
+                "position": {
+                  "x": -126.50828552246094,
+                  "y": 410.4285583496094
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -210.28571803346784,
+                  "right": -42.730853004602764,
+                  "bottom": 335.42856123743877,
+                  "top": 485.42856119633075
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 205.71401238958248,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 76.80525016784668,
+                  "y": 78.25000895321057
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 2.265674161179544,
+                    "right": 151.20768602333766,
+                    "top": 77.15282917986336,
+                    "bottom": 210.73434040607535
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 44.81574963033715,
+                    "right": 108.79475726392492,
+                    "top": 21.75000895321059,
+                    "bottom": 96.2500089532106
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "right": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": -90.00000250447816,
+                "releases": 2,
+                "position": {
+                  "x": 126.50828552246094,
+                  "y": 410.4285583496094
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": 42.730853011454045,
+                  "right": 210.28571804031913,
+                  "bottom": 335.42856123743877,
+                  "top": 485.42856119633075
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 205.71401238958248,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 298.1947498321533,
+                  "y": 78.25000895321057
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 223.6551672609226,
+                    "right": 372.5971791230807,
+                    "top": 77.15282917986336,
+                    "bottom": 210.73434040607535
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 266.20524273008016,
+                    "right": 330.18425036366796,
+                    "top": 21.75000895321059,
+                    "bottom": 96.2500089532106
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "movableWidth": 253.01657104492188
+            },
+            {
+              "rotation": 2,
+              "center": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 179.99999499104368,
+                "releases": 2,
+                "position": {
+                  "x": 0,
+                  "y": 401.6511535644531
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999998,
+                  "y": 0.9999999999999998,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -74.9999942243411,
+                  "right": 75.00000569344257,
+                  "bottom": 317.8737185287369,
+                  "top": 485.4285885864668
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 188.1591696808806,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 187.5,
+                  "y": 78.24998498684157
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 120.64066778578301,
+                    "right": 254.2221855224567,
+                    "top": 77.01565842263823,
+                    "bottom": 225.95767612382923
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 155.5104961832061,
+                    "right": 219.4895038167939,
+                    "top": 21.74998498684159,
+                    "bottom": 96.2499849868416
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "left": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 179.99999499104368,
+                "releases": 2,
+                "position": {
+                  "x": -135.2857208251953,
+                  "y": 401.6511535644531
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999998,
+                  "y": 0.9999999999999998,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -210.2857150495364,
+                  "right": -60.28571513175274,
+                  "bottom": 317.8737185287369,
+                  "top": 485.4285885864668
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 188.1591696808806,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 69.12499427795409,
+                  "y": 78.24998498684157
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 2.265662732081501,
+                    "right": 135.8471804687552,
+                    "top": 77.01565842263823,
+                    "bottom": 225.95767612382923
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 37.13549112950458,
+                    "right": 101.11449876309237,
+                    "top": 21.74998498684159,
+                    "bottom": 96.2499849868416
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "right": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 179.99999499104368,
+                "releases": 2,
+                "position": {
+                  "x": 135.28570556640625,
+                  "y": 401.6511535644531
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999998,
+                  "y": 0.9999999999999998,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": 60.285711342065156,
+                  "right": 210.28571125984882,
+                  "bottom": 317.8737185287369,
+                  "top": 485.4285885864668
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 188.1591696808806,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 305.87499237060547,
+                  "y": 78.24998498684157
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 239.01566280402076,
+                    "right": 372.59718054069447,
+                    "top": 77.01565842263823,
+                    "bottom": 225.95767612382923
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 273.88549120144387,
+                    "right": 337.86449883503167,
+                    "top": 21.74998498684159,
+                    "bottom": 96.2499849868416
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "movableWidth": 270.57142639160156
+            },
+            {
+              "rotation": 3,
+              "center": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 90.00000250447816,
+                "releases": 2,
+                "position": {
+                  "x": 0,
+                  "y": 410.4285583496094
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -83.77743250415554,
+                  "right": 83.77743251785817,
+                  "bottom": 335.42856119633086,
+                  "top": 485.4285612374386
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 205.71401234847457,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 187.5,
+                  "y": 78.25000891724127
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 113.09756741779849,
+                    "right": 262.0395792799566,
+                    "top": 77.01568247611341,
+                    "bottom": 210.59719370232534
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 155.5104961832061,
+                    "right": 219.4895038167939,
+                    "top": 21.750008917241296,
+                    "bottom": 96.2500089172413
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "left": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 90.00000250447816,
+                "releases": 2,
+                "position": {
+                  "x": -126.50828552246094,
+                  "y": 410.4285583496094
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -210.28571802661648,
+                  "right": -42.730853004602764,
+                  "bottom": 335.42856119633086,
+                  "top": 485.4285612374386
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 205.71401234847457,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 76.80525016784668,
+                  "y": 78.25000891724127
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 2.4028208589346107,
+                    "right": 151.34483272109273,
+                    "top": 77.01568247611341,
+                    "bottom": 210.59719370232534
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 44.81574962434222,
+                    "right": 108.79475725792999,
+                    "top": 21.750008917241296,
+                    "bottom": 96.2500089172413
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "right": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 90.00000250447816,
+                "releases": 2,
+                "position": {
+                  "x": 126.50828552246094,
+                  "y": 410.4285583496094
+                },
+                "physicsScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": 42.730853018305396,
+                  "right": 210.28571804031913,
+                  "bottom": 335.42856119633086,
+                  "top": 485.4285612374386
+                },
+                "supportTop": 129.7145488478563,
+                "gap": 205.71401234847457,
+                "boundary": {
+                  "top": 485.42857142857144,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -339,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1334,
+                  "heldTop": 485.42857142857144
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 667
+                },
+                "attachment": {
+                  "x": 298.1947498321533,
+                  "y": 78.25000891724127
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 223.7923139646726,
+                    "right": 372.7343258268306,
+                    "top": 77.01568247611341,
+                    "bottom": 210.59719370232534
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 266.20524273008016,
+                    "right": 330.18425036366796,
+                    "top": 21.750008917241296,
+                    "bottom": 96.2500089172413
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173488
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.007302240118767261,
+                    "position": {
+                      "x": -0.0012453235685825348,
+                      "y": 50.45843505859375,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.02505697752454156,
+                    "position": {
+                      "x": 0.011557435616850853,
+                      "y": 115.28765869140625,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "movableWidth": 253.01657104492188
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "objects": [
+        {
+          "kind": "fridge",
+          "poses": [
+            {
+              "rotation": 0,
+              "center": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 0,
+                "releases": 2,
+                "position": {
+                  "x": 0,
+                  "y": 567.3654174804688
+                },
+                "physicsScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -75,
+                  "right": 75,
+                  "bottom": 483.58798748046877,
+                  "top": 651.1428474804687
+                },
+                "supportTop": 129.7251603608559,
+                "gap": 353.86282711961286,
+                "boundary": {
+                  "top": 651.1428571428571,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -484,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1624,
+                  "heldTop": 651.1428571428571
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 812
+                },
+                "attachment": {
+                  "x": 187.5,
+                  "y": 78.25000845458987
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 120.777820994,
+                    "right": 254.35932570974998,
+                    "top": 77.15283004490232,
+                    "bottom": 226.09483606802738
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 155.5104961832061,
+                    "right": 219.4895038167939,
+                    "top": 21.750008454589842,
+                    "bottom": 96.2500084545899
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173494
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.010470552431840608,
+                    "position": {
+                      "x": 0.010677143931388855,
+                      "y": 50.451717376708984,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.036062971930844206,
+                    "position": {
+                      "x": -0.02568884752690792,
+                      "y": 115.27433776855469,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "left": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 0,
+                "releases": 2,
+                "position": {
+                  "x": -135.2857208251953,
+                  "y": 567.3654174804688
+                },
+                "physicsScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -210.2857208251953,
+                  "right": -60.28572082519531,
+                  "bottom": 483.58798748046877,
+                  "top": 651.1428474804687
+                },
+                "supportTop": 129.7251603608559,
+                "gap": 353.86282711961286,
+                "boundary": {
+                  "top": 651.1428571428571,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -484,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1624,
+                  "heldTop": 651.1428571428571
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 812
+                },
+                "attachment": {
+                  "x": 69.12499427795409,
+                  "y": 78.25000845458987
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 2.4028209939999865,
+                    "right": 135.98432570974998,
+                    "top": 77.15283004490232,
+                    "bottom": 226.09483606802738
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 37.1354961832061,
+                    "right": 101.11450381679388,
+                    "top": 21.750008454589842,
+                    "bottom": 96.2500084545899
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173494
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.010470552431840608,
+                    "position": {
+                      "x": 0.010677143931388855,
+                      "y": 50.451717376708984,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.036062971930844206,
+                    "position": {
+                      "x": -0.02568884752690792,
+                      "y": 115.27433776855469,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "right": {
+                "scene": "HUD",
+                "phase": "planning",
+                "currentId": 3,
+                "kind": "fridge",
+                "angle": 0,
+                "releases": 2,
+                "position": {
+                  "x": 135.2857208251953,
+                  "y": 567.3654174804688
+                },
+                "physicsScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": 60.28572082519531,
+                  "right": 210.2857208251953,
+                  "bottom": 483.58798748046877,
+                  "top": 651.1428474804687
+                },
+                "supportTop": 129.7251603608559,
+                "gap": 353.86282711961286,
+                "boundary": {
+                  "top": 651.1428571428571,
+                  "left": -214.28571428571428,
+                  "right": 214.28571428571428,
+                  "bottom": -187.42857142857142
+                },
+                "view": {
+                  "scale": 1.75,
+                  "originY": -484,
+                  "cameraY": 0,
+                  "targetCameraY": 0,
+                  "width": 750,
+                  "height": 1624,
+                  "heldTop": 651.1428571428571
+                },
+                "canvas": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 375,
+                  "bottom": 812
+                },
+                "attachment": {
+                  "x": 305.8750057220459,
+                  "y": 78.25000845458987
+                },
+                "sprite": {
+                  "active": true,
+                  "frame": "object_fridge",
+                  "rect": {
+                    "left": 239.152820994,
+                    "right": 372.73432570975,
+                    "top": 77.15283004490232,
+                    "bottom": 226.09483606802738
+                  },
+                  "size": {
+                    "width": 267.1630094315,
+                    "height": 297.88401204625
+                  }
+                },
+                "claw": {
+                  "active": true,
+                  "frame": "claw_open_narrow",
+                  "rect": {
+                    "left": 273.8854961832061,
+                    "right": 337.8645038167939,
+                    "top": 21.750008454589842,
+                    "bottom": 96.2500084545899
+                  }
+                },
+                "next": {
+                  "expected": "next_cardboard_box",
+                  "frame": "next_cardboard_box",
+                  "active": true,
+                  "rect": {
+                    "left": 329.9840458673077,
+                    "right": 342.01595413269223,
+                    "top": 128.0256581982651,
+                    "bottom": 139.97434180173494
+                  },
+                  "size": {
+                    "width": 24.06381653076923,
+                    "height": 23.897367206939798
+                  },
+                  "originalSize": {
+                    "width": 1012,
+                    "height": 1005
+                  }
+                },
+                "releasedBodies": [
+                  {
+                    "id": 1,
+                    "kind": "cardboard_box",
+                    "mass": 4.389647960662842,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.010470552431840608,
+                    "position": {
+                      "x": 0.010677143931388855,
+                      "y": 50.451717376708984,
+                      "z": 0
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "kind": "wood_plank",
+                    "mass": 3.4859864711761475,
+                    "scale": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "angle": 0.036062971930844206,
+                    "position": {
+                      "x": -0.02568884752690792,
+                      "y": 115.27433776855469,
+                      "z": 0
+                    }
+                  }
+                ],
+                "autoSimulation": true,
+                "clawClippedAtScreenEdge": false
+              },
+              "movableWidth": 270.5714416503906
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "sources": {
+    "assets/batch1/object-data.ts": "39df5eadccb4496042e12bd74a0809e6bce818ae6b3b3ced77af21b03b8a292b",
+    "assets/batch1/tower-world.ts": "23d7b5fa6d99103d77d3afb2191f206c98b1c6cfe85c2b841002ef26a0877114",
+    "assets/batch1/game-controller.ts": "390bcca0e86048a39e24f559d85259de5e7f0eb415faeb44dd92c93953e1d534",
+    "assets/batch1/play-view.ts": "91b648d0e2bafa214ca9b1f0acdecd50e0aee121064aed536cac65902c93903f",
+    "preparation/review/play-player.html": "bd7696f6f5bd63cc3c1c651c0d7b172e81f55b1f45810c366361a7364870dad0",
+    "build/web-desktop/assets/main/index.js": "6d102717a6c074990a1e9dbe7910f68b4d20607a8a3b0c10237d5416e675334e"
+  },
+  "captures": [
+    "difficulty_dimensions_150-375x667-fridge.png"
+  ],
+  "kindFilter": "fridge",
+  "engine": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    }
+  },
+  "compiledSpecs": {
+    "cardboard_box": {
+      "kind": "cardboard_box",
+      "width": 100.912779,
+      "height": 100,
+      "circle": false,
+      "spriteWidth": 102.636917,
+      "spriteHeight": 101.926978,
+      "spriteOffset": [
+        0.05071,
+        -0.05071
+      ],
+      "outline": [
+        [
+          -50.456389,
+          39.858012
+        ],
+        [
+          -50.456389,
+          -46.957404
+        ],
+        [
+          -47.413793,
+          -50
+        ],
+        [
+          47.413793,
+          -50
+        ],
+        [
+          50.456389,
+          -46.957404
+        ],
+        [
+          50.456389,
+          39.858012
+        ],
+        [
+          39.908722,
+          50
+        ],
+        [
+          -37.576065,
+          50
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.45115949058,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    },
+    "wood_plank": {
+      "kind": "wood_plank",
+      "width": 260,
+      "height": 28.744805,
+      "circle": false,
+      "spriteWidth": 263.674148,
+      "spriteHeight": 32.851205,
+      "spriteOffset": [
+        0.108063,
+        -0.108063
+      ],
+      "outline": [
+        [
+          -130,
+          8.536991
+        ],
+        [
+          -130,
+          -10.049875
+        ],
+        [
+          -125.029094,
+          -14.372402
+        ],
+        [
+          125.029094,
+          -14.372402
+        ],
+        [
+          130,
+          -10.049875
+        ],
+        [
+          130,
+          8.536991
+        ],
+        [
+          124.596841,
+          14.372402
+        ],
+        [
+          -124.596841,
+          14.372402
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.481043899512,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4,
+      "stabilizer": {
+        "maxForce": 420,
+        "maxTorque": 95,
+        "maxImpactSpeed": 1.8,
+        "maxAngleError": 12
+      },
+      "description": "搭上一块稳固板，上下都踏实一点。"
+    },
+    "basketball": {
+      "kind": "basketball",
+      "width": 68,
+      "height": 68,
+      "circle": true,
+      "spriteWidth": 70.2295,
+      "spriteHeight": 70.2295,
+      "friction": 0.85,
+      "restitution": 0.03,
+      "density": 0.4,
+      "contactAngularDamping": 6,
+      "adhesion": {
+        "maxForce": 1500,
+        "maxTorque": 150,
+        "maxImpactSpeed": 2
+      },
+      "description": "别担心，有人给它贴了双面胶。"
+    },
+    "fridge": {
+      "kind": "fridge",
+      "width": 150,
+      "height": 167.554858636,
+      "circle": false,
+      "spriteWidth": 152.664576818,
+      "spriteHeight": 170.219435455,
+      "spriteOffset": [
+        0.078369545,
+        -0.078369545
+      ],
+      "outline": [
+        [
+          -74.843259545,
+          65.909090455
+        ],
+        [
+          -75,
+          -65.125392273
+        ],
+        [
+          -57.601880455,
+          -83.77743
+        ],
+        [
+          57.445141364,
+          -83.77743
+        ],
+        [
+          75,
+          -66.065830909
+        ],
+        [
+          74.843259545,
+          66.22257
+        ],
+        [
+          57.288400909,
+          83.77743
+        ],
+        [
+          -57.601880455,
+          83.77743
+        ]
+      ],
+      "friction": 0.6,
+      "restitution": 0.01,
+      "density": 0.293776465351,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    },
+    "toilet": {
+      "kind": "toilet",
+      "width": 150.900515,
+      "height": 115,
+      "circle": false,
+      "spriteWidth": 154.64837,
+      "spriteHeight": 118.5506,
+      "spriteOffset": [
+        0.098628,
+        0
+      ],
+      "outline": [
+        [
+          -74.266724,
+          54.738422
+        ],
+        [
+          -75.450257,
+          51.582333
+        ],
+        [
+          -74.858491,
+          46.848199
+        ],
+        [
+          -72.096913,
+          44.875643
+        ],
+        [
+          -70.518868,
+          18.837907
+        ],
+        [
+          -67.165523,
+          -1.084906
+        ],
+        [
+          -63.417667,
+          -7.791595
+        ],
+        [
+          -57.697256,
+          -9.764151
+        ],
+        [
+          -52.174099,
+          -16.668096
+        ],
+        [
+          -48.031732,
+          -22.191252
+        ],
+        [
+          -46.256432,
+          -28.897942
+        ],
+        [
+          -47.637221,
+          -34.421098
+        ],
+        [
+          -50.596055,
+          -40.141509
+        ],
+        [
+          -56.119211,
+          -44.678388
+        ],
+        [
+          -63.023156,
+          -47.834477
+        ],
+        [
+          -66.573756,
+          -51.187822
+        ],
+        [
+          -67.75729,
+          -55.921955
+        ],
+        [
+          -64.601201,
+          -57.5
+        ],
+        [
+          64.009434,
+          -57.5
+        ],
+        [
+          67.362779,
+          -54.541166
+        ],
+        [
+          65.192967,
+          -49.01801
+        ],
+        [
+          59.078045,
+          -45.46741
+        ],
+        [
+          56.316467,
+          -41.127787
+        ],
+        [
+          54.738422,
+          -35.21012
+        ],
+        [
+          56.513722,
+          -32.054031
+        ],
+        [
+          63.417667,
+          -28.503431
+        ],
+        [
+          68.546312,
+          -24.163808
+        ],
+        [
+          72.294168,
+          -17.654374
+        ],
+        [
+          74.463979,
+          -9.566895
+        ],
+        [
+          75.450257,
+          -1.282161
+        ],
+        [
+          73.280446,
+          2.465695
+        ],
+        [
+          67.560034,
+          4.43825
+        ],
+        [
+          24.95283,
+          4.43825
+        ],
+        [
+          22.585763,
+          4.240995
+        ],
+        [
+          24.95283,
+          45.861921
+        ],
+        [
+          27.517153,
+          47.24271
+        ],
+        [
+          28.108919,
+          51.779588
+        ],
+        [
+          26.925386,
+          55.330189
+        ],
+        [
+          21.993997,
+          57.5
+        ],
+        [
+          -68.940823,
+          57.5
+        ]
+      ],
+      "friction": 0.62,
+      "restitution": 0.015,
+      "density": 0.401990728786,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    },
+    "dumbbell": {
+      "kind": "dumbbell",
+      "width": 147.939914,
+      "height": 45,
+      "circle": false,
+      "spriteWidth": 151.416309,
+      "spriteHeight": 48.476395,
+      "spriteOffset": [
+        0,
+        0
+      ],
+      "outline": [
+        [
+          -67.982833,
+          17.285408
+        ],
+        [
+          -70.493562,
+          11.491416
+        ],
+        [
+          -73.969957,
+          9.560086
+        ],
+        [
+          -73.969957,
+          -9.946352
+        ],
+        [
+          -70.493562,
+          -11.684549
+        ],
+        [
+          -67.982833,
+          -17.478541
+        ],
+        [
+          -62.76824,
+          -22.5
+        ],
+        [
+          -35.729614,
+          -22.5
+        ],
+        [
+          -31.287554,
+          -18.05794
+        ],
+        [
+          -28.969957,
+          -11.298283
+        ],
+        [
+          -26.652361,
+          -8.401288
+        ],
+        [
+          -22.982833,
+          -7.049356
+        ],
+        [
+          22.7897,
+          -7.049356
+        ],
+        [
+          26.652361,
+          -8.401288
+        ],
+        [
+          28.390558,
+          -11.298283
+        ],
+        [
+          30.515021,
+          -17.478541
+        ],
+        [
+          35.729614,
+          -22.5
+        ],
+        [
+          62.961373,
+          -22.5
+        ],
+        [
+          68.175966,
+          -17.478541
+        ],
+        [
+          70.493562,
+          -12.070815
+        ],
+        [
+          73.969957,
+          -9.946352
+        ],
+        [
+          73.969957,
+          9.560086
+        ],
+        [
+          70.493562,
+          11.298283
+        ],
+        [
+          67.7897,
+          17.285408
+        ],
+        [
+          62.961373,
+          22.5
+        ],
+        [
+          35.729614,
+          22.5
+        ],
+        [
+          30.901288,
+          17.671674
+        ],
+        [
+          28.583691,
+          12.070815
+        ],
+        [
+          26.652361,
+          8.787554
+        ],
+        [
+          22.7897,
+          7.049356
+        ],
+        [
+          -22.982833,
+          7.049356
+        ],
+        [
+          -25.686695,
+          8.208155
+        ],
+        [
+          -28.583691,
+          11.10515
+        ],
+        [
+          -30.321888,
+          17.092275
+        ],
+        [
+          -35.729614,
+          22.5
+        ],
+        [
+          -62.76824,
+          22.5
+        ]
+      ],
+      "friction": 0.72,
+      "restitution": 0.015,
+      "density": 1.1,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    }
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: Claw overlaps actual body attachment\n    at validatePose (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_difficulty_dimensions.cjs:32:9)\n    at /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_difficulty_dimensions.cjs:55:97",
+  "failureState": {
+    "scene": "HUD",
+    "phase": "planning",
+    "currentId": 3,
+    "kind": "fridge",
+    "angle": -90.00000250447816,
+    "releases": 2,
+    "position": {
+      "x": -126.50828177470737,
+      "y": 576.1428833007812
+    },
+    "physicsScale": {
+      "x": 0.9999999999999999,
+      "y": 0.9999999999999999,
+      "z": 1
+    },
+    "bounds": {
+      "left": -210.28571428571428,
+      "right": -42.7308492568492,
+      "bottom": 501.14288618861065,
+      "top": 651.1428861475026
+    },
+    "supportTop": 129.7251603608559,
+    "gap": 371.41772582775474,
+    "boundary": {
+      "top": 651.1428571428571,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428,
+      "bottom": -187.42857142857142
+    },
+    "view": {
+      "scale": 1.75,
+      "originY": -484,
+      "cameraY": 0,
+      "targetCameraY": 0,
+      "width": 750,
+      "height": 1624,
+      "heldTop": 651.1428571428571
+    },
+    "canvas": {
+      "left": 0,
+      "top": 0,
+      "right": 375,
+      "bottom": 812
+    },
+    "attachment": {
+      "x": 76.80525344713107,
+      "y": 78.24997462093515
+    },
+    "sprite": {
+      "active": true,
+      "frame": "object_fridge",
+      "rect": {
+        "left": 112.96042071404851,
+        "right": 261.90243257620665,
+        "top": 77.15279484758808,
+        "bottom": 210.73430607379998
+      },
+      "size": {
+        "width": 267.1630094315,
+        "height": 297.88401204625
+      }
+    },
+    "claw": {
+      "active": true,
+      "frame": "claw_open_narrow",
+      "rect": {
+        "left": 155.5104961832061,
+        "right": 219.4895038167939,
+        "top": 21.74997462093521,
+        "bottom": 96.24997462093518
+      }
+    },
+    "next": {
+      "expected": "next_cardboard_box",
+      "frame": "next_cardboard_box",
+      "active": true,
+      "rect": {
+        "left": 329.9840458673077,
+        "right": 342.01595413269223,
+        "top": 128.0256581982651,
+        "bottom": 139.97434180173494
+      },
+      "size": {
+        "width": 24.06381653076923,
+        "height": 23.897367206939798
+      },
+      "originalSize": {
+        "width": 1012,
+        "height": 1005
+      }
+    },
+    "releasedBodies": [
+      {
+        "id": 1,
+        "kind": "cardboard_box",
+        "mass": 4.389647960662842,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "angle": 0.010470552431840608,
+        "position": {
+          "x": 0.010677143931388855,
+          "y": 50.451717376708984,
+          "z": 0
+        }
+      },
+      {
+        "id": 2,
+        "kind": "wood_plank",
+        "mass": 3.4859864711761475,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "angle": 0.036062971930844206,
+        "position": {
+          "x": -0.02568884752690792,
+          "y": 115.27433776855469,
+          "z": 0
+        }
+      }
+    ],
+    "autoSimulation": true
+  }
+}

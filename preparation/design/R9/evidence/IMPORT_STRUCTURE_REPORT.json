@@ -1,0 +1,20 @@
+{
+  "status": "passed_serialized_structure_and_source_integrity_only",
+  "scene_uuid": "b35d6350-0c9c-52a9-8eab-897e6f0d1d60",
+  "scene_records": 65,
+  "nodes": 17,
+  "sprite_components": 11,
+  "added_image_files": 5,
+  "preserved_existing_ids": 8,
+  "protected_hashes_unchanged": 19,
+  "remaining_widgets": [
+    "Canvas",
+    "SafeArea"
+  ],
+  "home_scene_sha256": "e453aac2f4eb4b2350e0148c1b4970a7b688d25b3296ef03e5ced411c2d211c4",
+  "home_presentation_component_type": "9e6bcqTByhbOYGDUdHYtcTR",
+  "limitations": [
+    "Creator resource import and runtime not executed by this subtask",
+    "HomePresentation.ts/meta supplied separately by parent agent"
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "logical_runtime_path": "assets/batch0/scenes/Home.scene",
+    "snapshot_file": "runtime-r1/assets/batch0/scenes/Home.scene",
+    "sha256": "c5fd7e61a7b3a44b7c26b3ef3bbd7319191ba44e40d64f14317c11d0db602a93"
+  },
+  {
+    "logical_runtime_path": "assets/batch1/game-music.ts",
+    "snapshot_file": "runtime-r1/assets/batch1/game-music.ts.txt",
+    "sha256": "9d3ef9be02ebfa0481a91742a242a4cbf3fefe48691fc5a938c02f7600b3c2a0"
+  },
+  {
+    "logical_runtime_path": "assets/batch1/scene-actions.ts",
+    "snapshot_file": "runtime-r1/assets/batch1/scene-actions.ts.txt",
+    "sha256": "4bc106e96e06986450ba257d339130a961f25988c172f9ab22b93f43e4d09753"
+  }
+]

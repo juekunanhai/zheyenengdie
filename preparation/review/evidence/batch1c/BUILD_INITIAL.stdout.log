@@ -1,0 +1,18 @@
+init **** success
+Arguments:
+  /Applications/CocosCreator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator: true
+  project: /Users/admin/Desktop/douchao/my-project/wechatgames/die
+  build: platform=web-desktop;debug=true
+  dev: false
+  home: /Users/admin/.CocosCreator
+ 
+[Package] metrics@1.0.0 enable
+[Package] menu@1.0.0 enable
+[Package] profile@1.0.0 enable
+[Package] project@1.0.6 enable
+[Package] messages@1.0.0 enable
+[Package] utils@1.0.0 enable
+[Package] program@1.0.4 enable
+[Package] tester@1.0.0 enable
+[Package] information@1.0.1 enable
+[Package] preferences@1.0.0 enable

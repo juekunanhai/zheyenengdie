@@ -1,0 +1,328 @@
+{
+  "revision": "2026-09-12-P1",
+  "method": "five contact sheets plus selected full-resolution PNGs",
+  "not_proven": [
+    "Cocos rendering",
+    "user art approval"
+  ],
+  "entries": [
+    {
+      "id": "object_cardboard_box",
+      "output_sha256": "d89198990ae80fcd658f29ca40e15d46bac2b90ef3a0698bd3e2267c62346265",
+      "review": "blocked_source_incomplete",
+      "note": "底部箱角缺失"
+    },
+    {
+      "id": "object_wooden_crate",
+      "output_sha256": "a94072ab4f796b16871d6bcf7da5db9bb7291e0dd8eda46fc887a9e5dfa8ad25",
+      "review": "blocked_source_incomplete",
+      "note": "底部箱角缺失"
+    },
+    {
+      "id": "object_sofa",
+      "output_sha256": "3f26cbe4e65ea958f9785783da43fc456f6028e1e75200f8ea9e70196c25266f",
+      "review": "blocked_source_incomplete",
+      "note": "左右扶手和底部缺失"
+    },
+    {
+      "id": "object_toilet",
+      "output_sha256": "71f7ceb926f847f105720d688d400d5e17371571068e580e0e4e98a1ddc34dc3",
+      "review": "blocked_source_incomplete",
+      "note": "底座下边界缺失"
+    },
+    {
+      "id": "object_burger",
+      "output_sha256": "cd65a730bd6a0a70578615aebb8fb999e8797f9dc1b4abe749950c5288ea282b",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "object_basketball",
+      "output_sha256": "bcd896e6cb989523ad4b857efa61a35e040a71b8b620ba557c90e39237d50784",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "object_ice_block",
+      "output_sha256": "726c02ca4eae0d185e51261c905aadc6a912dd1555256357bbafb6f3b0bee2cd",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "object_wood_plank",
+      "output_sha256": "7181c81188776ba774e00f819cdf6e315140ea3cbef722f6535de9640e358719",
+      "review": "blocked_source_incomplete",
+      "note": "左端缺失"
+    },
+    {
+      "id": "object_fridge",
+      "output_sha256": "4d8dc2485b27fec55ab69d8ea0a00fb1706a8d18f56d129013439da32523111c",
+      "review": "blocked_source_incomplete",
+      "note": "顶部缺失"
+    },
+    {
+      "id": "object_dumbbell",
+      "output_sha256": "05070d3424b4e1422606eea5c3254aedec6f9af1ad65f536ed03f19203ac0f7a",
+      "review": "blocked_source_incomplete",
+      "note": "左端面缺失"
+    },
+    {
+      "id": "object_slipper",
+      "output_sha256": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "object_whale",
+      "output_sha256": "819126b249ae9db8adf7e7fe082c6dc53c02f3c7c72135f3d182ba4b1339ef98",
+      "review": "blocked_source_incomplete",
+      "note": "喷水上端缺失"
+    },
+    {
+      "id": "hud_height_sign",
+      "output_sha256": "2f6bdd3d6685c4ada45a1c2322495b40f3cebdcb7af77906dce151130b48e3a4",
+      "review": "needs_fullsize_or_composition_review",
+      "note": "挂牌下边缘可能截断；绳子顶部是拼接边界"
+    },
+    {
+      "id": "hud_region_sign",
+      "output_sha256": "6773ba0c6463d7666e55fdee425eace7b87660aa1bda24c6acd8ebb0738d7eb6",
+      "review": "needs_fullsize_or_composition_review",
+      "note": "挂牌下边缘需复核；绳子顶部是拼接边界"
+    },
+    {
+      "id": "hud_pause",
+      "output_sha256": "347e14d4690f2a5ed28790d9dbfef286bca35aa207c7316a7e7ae625e6af0e08",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "hud_star_full",
+      "output_sha256": "ead7a7aa35baededa46ee2e167ab06e92da602b8f19171b116d682c4ace7d1c6",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "hud_star_empty",
+      "output_sha256": "f5bca02fd9fc08fa47150189b3952eedb9fe4f21c39c708a889c31f29b555e1c",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "hud_next_frame",
+      "output_sha256": "2eade8e39d2b846ef6c58c98bde3eb1741e0c39578f22902fdaca208e7da33b8",
+      "review": "needs_fullsize_or_composition_review",
+      "note": "仅在框内灰色虚线遮罩中用邻近原图颜色扩散修复，保留原框和渐变；需组合验收"
+    },
+    {
+      "id": "hud_rotate_90",
+      "output_sha256": "05b12a647bb769ee7234f0751592034fefd2477d21f5c1483607307dc690b7ec",
+      "review": "blocked_source_incomplete",
+      "note": "右侧底座缺失"
+    },
+    {
+      "id": "logo_main",
+      "output_sha256": "971d0dc04435cb2de7b31843f2f7ea83c1cf6dd37a8ad0edefd4d40d22b36374",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "btn_start",
+      "output_sha256": "c65333be7c8a98848d7f5552e347dfcaf8fd95b98b153c4a36ef82b98b762a5a",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "bubble_plain",
+      "output_sha256": "8c67e2d08e299377b7c70c4c29cd4e497d4a945030c317ed1d9429de725ab461",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "claw_cable_straight",
+      "output_sha256": "3c951db1fd8e91e578f3e0fb562a0ba235707ac71d4ac140fd31670f5439016e",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "claw_cable_flex",
+      "output_sha256": "635baa400d214c3b8c321cd1250726c0eabcc5f45041d7c3972a35e69994815c",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "claw_open_wide",
+      "output_sha256": "dd6808cc08b0d151bd0e38d5a4895b59d6d2a2953bdd4f2f7af828b89d4c49d6",
+      "review": "needs_fullsize_or_composition_review",
+      "note": "爪体完整；移除顶部原柔性索缆残段，挂点接缝待引擎验证"
+    },
+    {
+      "id": "claw_open_mid",
+      "output_sha256": "f2cdfb7955d3a594dadea8d9b1bb938885b45952c074dbe7e82071d3090eb9ab",
+      "review": "blocked_source_incomplete",
+      "note": "左侧外缘缺边"
+    },
+    {
+      "id": "claw_open_narrow",
+      "output_sha256": "9451c9922b6d82ca9d490f9c64a01a5e06eb609693f4cd4a579f27c5167d75ef",
+      "review": "blocked_source_incomplete",
+      "note": "左侧爪臂缺边；已排除右边带红方块的另一只抓手"
+    },
+    {
+      "id": "claw_rail",
+      "output_sha256": "be76d1d7f77f918add2dcda28ab1da44a204e1f84da60511c8b96d206256f71c",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": "正式导轨主体保留；附带索缆移除，独立索缆运行时接入"
+    },
+    {
+      "id": "platform_city_base",
+      "output_sha256": "0d2ffbe45aaac6d2a1f611790924c1866b6aa468226bd393b0d51763494bc28a",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "platform_cloud_base",
+      "output_sha256": "458f2fac5e09cf8524f0e8dd8bc7a6aa55af1aadb7719ce8ca1db778f37339ab",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "platform_space_base",
+      "output_sha256": "a8139a4521f9fae4abe7d70dd3be094ce4f6672f6d2f76ff8b6b35f0803ef65d",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "itembar_empty",
+      "output_sha256": "ac238ec0c57aa46348df4ac82fe9f803ff19dbf12991ba064223ff3849e6f4c4",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "bg_sky_panel",
+      "output_sha256": "c6bb29306b8a2c74d4cfcf209fde87fc312b8e8826059b400c40fe31ee3099d1",
+      "review": "needs_fullsize_or_composition_review",
+      "note": "保留原背景；运行时覆盖比例另验收"
+    },
+    {
+      "id": "bg_city_far",
+      "output_sha256": "720b52edf9ed80423ae12e5b5f66cbac65b3d516d41c6f59466a8f7c58b0b033",
+      "review": "needs_fullsize_or_composition_review",
+      "note": "建筑横带，边缘与杂点需复核"
+    },
+    {
+      "id": "city_roof_near",
+      "output_sha256": "9293a23a452824f10e617a59851a823ae1b3da92c3b092930d43a8e7459f1c94",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "cloud_large_01",
+      "output_sha256": "343c86d95aede741264bc482bf02e75c504bae367d1c30455a72b770fae26162",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "airplane_clean",
+      "output_sha256": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "airship_clean",
+      "output_sha256": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "balloon_clean",
+      "output_sha256": "b2688b19720b7b1d0364d097c6791a18acb3cd8059c4d6cca12a8be7c1bc67e6",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "floating_island_large",
+      "output_sha256": "68b95e023a4053c259a842dbcea3098a7d6737cc1c4cc1ca6899222136914036",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "earth_curve",
+      "output_sha256": "c65a1f551917dc5cafe9145a60e7ab372335ecb6444b3f86d4b4302e1bce67aa",
+      "review": "needs_fullsize_or_composition_review",
+      "note": "地平线用途，非完整球体"
+    },
+    {
+      "id": "death_reason_collapse",
+      "output_sha256": "99dcbbf58697866d5327f6ef89f7a875b57e4df0374919a845dfda1d5e761551",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "death_reason_drop",
+      "output_sha256": "bba1fac9fff82ebcdd1b26310e93a3d49350c40030ce9cac99351cc22ea1f36d",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "death_reason_imbalance",
+      "output_sha256": "56f912ed7465553c49df78fc3b3c64ace943eb63172001c0527e94467e026261",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "death_reason_slide",
+      "output_sha256": "4eea9a82b1e3af04aece613d4c7c82a9d24e470ef7f281bfc32869a1befb3fc3",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "death_reason_unknown",
+      "output_sha256": "f9c2618e0986884b5d653e4df6362af82f161ee9a7e59a5aa278e573c856e745",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "result_btn_retry",
+      "output_sha256": "8b9f81c94cf17bdc975120ec9c0bba4e74cac7fbd6c4f17971074e4d8452d7b4",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "result_btn_share",
+      "output_sha256": "e48b4ac99484f71d2ddde4c794c737b856bb2868179175352865515b7cfbcb1f",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "result_clutch_save_label",
+      "output_sha256": "6682eff3b68f9646c4bf07a83ca4c5d287f8c7a60ab908ffeda4b2da2240e4a9",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "result_collection_new_badge",
+      "output_sha256": "8f915c2269394d7084c2940e7479555d2fcf281be4bd9af6b107f7ffb601d01b",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "result_death_reason_header",
+      "output_sha256": "38f6df8d58d1b41041d849787016f89601741f1ed9210788be90135a899856a7",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "result_final_height_badge",
+      "output_sha256": "417462f946a3b98e769ddb0d9cc9a52d95e6deefa4a68d385778688d88c2b47a",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    },
+    {
+      "id": "result_tech_score_label",
+      "output_sha256": "7c4bfbd87bffa1c6115693f00e1220f4b998ff6f3bf1e438d8ce3f0245b23bb2",
+      "review": "contact_sheet_checked_pending_runtime",
+      "note": ""
+    }
+  ]
+}

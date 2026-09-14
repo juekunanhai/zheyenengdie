@@ -1,0 +1,3863 @@
+{
+  "capturedAt": "2026-09-14T07:10:23.853Z",
+  "results": [
+    {
+      "id": "burger-left",
+      "name": "汉堡左偏 10 单位自然承托",
+      "status": "failed",
+      "startedAt": "2026-09-14T07:09:36.079Z",
+      "error": "Error: 纸箱由汉堡承托：物体实际掉落\n    at assert (http://127.0.0.1:8767/preparation/review/batch1c-checks.js:13:81)\n    at http://127.0.0.1:8767/preparation/review/batch1c-checks.js:130:13\n    at tick (http://127.0.0.1:8767/preparation/review/batch1c-checks.js:46:25)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at PhysicsSystem2D.postUpdate (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:97700:20)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47533:35)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at Pacer.updateCallback [as _callback] (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47731:22)\n    at Pacer._handleRAF (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47712:23)",
+      "evidence": {
+        "kind": "burger",
+        "requestedOffsetX": -10,
+        "initialUpper": {
+          "position": {
+            "x": -10,
+            "y": 196.78949161745075,
+            "z": 0
+          },
+          "actualOffsetFromLower": -11.249473214149475
+        },
+        "grounded": {
+          "id": 1,
+          "kind": "burger",
+          "angle": -1.3172973906419276,
+          "bounds": {
+            "left": -63.456433433397095,
+            "right": 66.2688683068859,
+            "bottom": 0.5177183664304579,
+            "top": 111.78949161745075
+          },
+          "mass": 3.1999998092651367,
+          "bullet": true,
+          "fixtures": 16,
+          "supported": true,
+          "lost": false,
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0
+        },
+        "loaded": null,
+        "current": {
+          "lower": {
+            "id": 1,
+            "kind": "burger",
+            "angle": 110.21926807049437,
+            "bounds": {
+              "left": -185.43757649699558,
+              "right": -59.865364449327096,
+              "bottom": -18.445277346278957,
+              "top": 117.74734889587539
+            },
+            "mass": 3.1999998092651367,
+            "bullet": true,
+            "fixtures": 16,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": -2.8916914463043213,
+              "y": -2.225048780441284
+            },
+            "angularVelocity": 1.7918376922607422
+          },
+          "upper": {
+            "id": 2,
+            "kind": "cardboard_box",
+            "angle": 91.55923906934372,
+            "bounds": {
+              "left": -329.54364922566714,
+              "right": -227.20458768249435,
+              "bottom": -315.938919079884,
+              "top": -212.70121593012186
+            },
+            "mass": 0,
+            "bullet": true,
+            "fixtures": 0,
+            "supported": false,
+            "lost": true,
+            "velocity": {
+              "x": -4.898899078369141,
+              "y": -26.814056396484375
+            },
+            "angularVelocity": 0.4497121274471283
+          },
+          "touchesLower": false
+        },
+        "contacts": [
+          {
+            "seconds": 0.317,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7272729873657227,
+                "y": 0.07999992370605469
+              },
+              {
+                "x": 13.181818008422852,
+                "y": 0.30727195739746094
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.518,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7497541904449463,
+                "y": 0.2394428253173828
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.734,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7467076778411865,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.168627738952637,
+                "y": 0.3032054901123047
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.951,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.746706962585449,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.168628692626953,
+                "y": 0.3032035827636719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.167,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7467074394226074,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.16862964630127,
+                "y": 0.3032035827636719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.551,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7467074394226074,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.16862964630127,
+                "y": 0.3032035827636719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.551,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -37.01590347290039,
+                "y": 111.86949157714844
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.551,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -37.01590347290039,
+                "y": 111.86949157714844
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.767,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.0035565122961997986,
+              "y": 0.9999936819076538
+            },
+            "points": [
+              {
+                "x": 35.879215240478516,
+                "y": 110.83219909667969
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.767,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.0035565122961997986,
+              "y": 0.9999936819076538
+            },
+            "points": [
+              {
+                "x": 35.879215240478516,
+                "y": 110.83219909667969
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.767,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7039108276367188,
+                "y": 0.23403358459472656
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.967,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.017278730869293213,
+              "y": 0.9998506903648376
+            },
+            "points": [
+              {
+                "x": 34.36610412597656,
+                "y": 111.36070251464844
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.967,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.017278730869293213,
+              "y": 0.9998506903648376
+            },
+            "points": [
+              {
+                "x": 34.36610412597656,
+                "y": 111.36070251464844
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.967,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.703094482421875,
+                "y": 0.23715782165527344
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.184,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.04267601668834686,
+              "y": 0.9990889430046082
+            },
+            "points": [
+              {
+                "x": 31.534168243408203,
+                "y": 112.27345275878906
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.184,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.04267601668834686,
+              "y": 0.9990889430046082
+            },
+            "points": [
+              {
+                "x": 31.534168243408203,
+                "y": 112.27345275878906
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.184,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7072913646698,
+                "y": 0.23924827575683594
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.401,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.0849648267030716,
+              "y": 0.9963839054107666
+            },
+            "points": [
+              {
+                "x": 26.756202697753906,
+                "y": 113.63163757324219
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.401,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.0849648267030716,
+              "y": 0.9963839054107666
+            },
+            "points": [
+              {
+                "x": 26.756202697753906,
+                "y": 113.63163757324219
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.401,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.717287540435791,
+                "y": 0.24141693115234375
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.617,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.13300298154354095,
+              "y": 0.9911156892776489
+            },
+            "points": [
+              {
+                "x": 21.228214263916016,
+                "y": 115.76678466796875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.617,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.13300298154354095,
+              "y": 0.9911156892776489
+            },
+            "points": [
+              {
+                "x": 21.228214263916016,
+                "y": 115.76678466796875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.617,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -23.717844009399414,
+                "y": 0.2946643829345703
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.817,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.1665584146976471,
+              "y": 0.9860315918922424
+            },
+            "points": [
+              {
+                "x": 17.28369903564453,
+                "y": 117.23072814941406
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.817,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.1665584146976471,
+              "y": 0.9860315918922424
+            },
+            "points": [
+              {
+                "x": 17.28369903564453,
+                "y": 117.23072814941406
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.817,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -23.727142333984375,
+                "y": 0.2960491180419922
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.034,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.20235157012939453,
+              "y": 0.9793128967285156
+            },
+            "points": [
+              {
+                "x": 12.998193740844727,
+                "y": 118.65211486816406
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.034,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.20235157012939453,
+              "y": 0.9793128967285156
+            },
+            "points": [
+              {
+                "x": 12.998193740844727,
+                "y": 118.65211486816406
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.034,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -23.73727798461914,
+                "y": 0.29753875732421875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.234,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.24357499182224274,
+              "y": 0.969882071018219
+            },
+            "points": [
+              {
+                "x": 7.9604620933532715,
+                "y": 120.10765075683594
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.234,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.24357499182224274,
+              "y": 0.969882071018219
+            },
+            "points": [
+              {
+                "x": 7.9604620933532715,
+                "y": 120.10765075683594
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.234,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -23.749059677124023,
+                "y": 0.2997474670410156
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.45,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.2904497981071472,
+              "y": 0.9568902254104614
+            },
+            "points": [
+              {
+                "x": 1.9589831829071045,
+                "y": 121.95481872558594
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.45,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.2904497981071472,
+              "y": 0.9568902254104614
+            },
+            "points": [
+              {
+                "x": 1.9589831829071045,
+                "y": 121.95481872558594
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.45,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -40.683067321777344,
+                "y": 0.21756744384765625
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.651,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.3275957703590393,
+              "y": 0.9448179602622986
+            },
+            "points": [
+              {
+                "x": -2.855339527130127,
+                "y": 123.54298400878906
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.651,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.3275957703590393,
+              "y": 0.9448179602622986
+            },
+            "points": [
+              {
+                "x": -2.855339527130127,
+                "y": 123.54298400878906
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.651,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -40.68659973144531,
+                "y": 0.23372268676757812
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.867,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.3720843493938446,
+              "y": 0.9281988739967346
+            },
+            "points": [
+              {
+                "x": -8.7547025680542,
+                "y": 125.2087631225586
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.867,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.3720843493938446,
+              "y": 0.9281988739967346
+            },
+            "points": [
+              {
+                "x": -8.7547025680542,
+                "y": 125.2087631225586
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.867,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -40.68896484375,
+                "y": 0.23897552490234375
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.067,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.42672768235206604,
+              "y": 0.9043801426887512
+            },
+            "points": [
+              {
+                "x": -16.2598819732666,
+                "y": 126.90536499023438
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.067,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.42672768235206604,
+              "y": 0.9043801426887512
+            },
+            "points": [
+              {
+                "x": -16.2598819732666,
+                "y": 126.90536499023438
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.067,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -40.70050048828125,
+                "y": 0.2436847686767578
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.267,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.5001431107521057,
+              "y": 0.8659427762031555
+            },
+            "points": [
+              {
+                "x": -26.852130889892578,
+                "y": 129.10745239257812
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.267,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.5001431107521057,
+              "y": 0.8659427762031555
+            },
+            "points": [
+              {
+                "x": -26.852130889892578,
+                "y": 129.10745239257812
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.267,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -50.88261413574219,
+                "y": 0.29908180236816406
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.467,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.5910463929176331,
+              "y": 0.8066375255584717
+            },
+            "points": [
+              {
+                "x": -40.96631622314453,
+                "y": 131.00469970703125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.467,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.5910463929176331,
+              "y": 0.8066375255584717
+            },
+            "points": [
+              {
+                "x": -40.96631622314453,
+                "y": 131.00469970703125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.467,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -50.90788269042969,
+                "y": 0.3153190612792969
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.667,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.7059685587882996,
+              "y": 0.708243191242218
+            },
+            "points": [
+              {
+                "x": -61.2821044921875,
+                "y": 130.67079162597656
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.667,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.7059685587882996,
+              "y": 0.708243191242218
+            },
+            "points": [
+              {
+                "x": -61.2821044921875,
+                "y": 130.67079162597656
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.667,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -55.932403564453125,
+                "y": 0.1966552734375
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.884,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -62.12098693847656,
+                "y": 0.31139373779296875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.884,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": -0.8576488494873047,
+              "y": 0.5142357349395752
+            },
+            "points": [
+              {
+                "x": -93.834228515625,
+                "y": 124.74285888671875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.884,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": -0.8576488494873047,
+              "y": 0.5142357349395752
+            },
+            "points": [
+              {
+                "x": -93.834228515625,
+                "y": 124.74285888671875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 5.084,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -62.226593017578125,
+                "y": 0.27690887451171875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 5.3,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -79.8635482788086,
+                "y": 0.3054046630859375
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 5.5,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -80.00272369384766,
+                "y": 0.2743358612060547
+              }
+            ],
+            "disabled": false
+          }
+        ],
+        "trajectory": [
+          {
+            "seconds": 0,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 0,
+              "bounds": {
+                "left": -65,
+                "right": 65,
+                "bottom": 59.99999903369141,
+                "top": 170.4545450336914
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.2,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 0,
+              "bounds": {
+                "left": -65,
+                "right": 65,
+                "bottom": 38.41731928515625,
+                "top": 148.87186528515625
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": -6.2162766456604
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.4,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -0.0727359251112955,
+              "bounds": {
+                "left": -64.93824228530336,
+                "right": 65.04838111362473,
+                "bottom": 0.4742050670885334,
+                "top": 110.97540204865449
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.0453263483941555,
+                "y": -0.002259984612464905
+              },
+              "angularVelocity": -0.02541380003094673
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.6,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -0.9376915915501918,
+              "bounds": {
+                "left": -63.91121745659325,
+                "right": 65.90028392001004,
+                "bottom": 0.47986429539069775,
+                "top": 111.52215091052815
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.20780716836452484,
+                "y": -0.013179607689380646
+              },
+              "angularVelocity": -0.11659687757492065
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.818,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172994183543378,
+              "bounds": {
+                "left": -63.45643080869388,
+                "right": 66.2688704560565,
+                "bottom": 0.5177185078189694,
+                "top": 111.78949297131433
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.695007085800171e-7,
+                "y": 1.0430815677864302e-7
+              },
+              "angularVelocity": 9.339333928437554e-8
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.034,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172980309721622,
+              "bounds": {
+                "left": -63.456432566898414,
+                "right": 66.2688690232164,
+                "bottom": 0.5177184110794499,
+                "top": 111.78949204498662
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.5459954738616943e-7,
+                "y": -2.533196834519913e-7
+              },
+              "angularVelocity": 8.933734818583616e-8
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.234,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172973906419276,
+              "bounds": {
+                "left": -63.456433433397095,
+                "right": 66.2688683068859,
+                "bottom": 0.5177183664304579,
+                "top": 111.78949161745075
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.301,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172973906419276,
+              "bounds": {
+                "left": -63.456433433397095,
+                "right": 66.2688683068859,
+                "bottom": 0.5177183664304579,
+                "top": 111.78949161745075
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 0,
+              "bounds": {
+                "left": -60.456389,
+                "right": 40.456389,
+                "bottom": 146.78948974609375,
+                "top": 246.78948974609375
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.517,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172973906419276,
+              "bounds": {
+                "left": -63.456433433397095,
+                "right": 66.2688683068859,
+                "bottom": 0.5177183664304579,
+                "top": 111.78949161745075
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 0,
+              "bounds": {
+                "left": -60.456389,
+                "right": 40.456389,
+                "bottom": 121.61671447753906,
+                "top": 221.61671447753906
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": -6.731500148773193
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.717,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -0.6047118120232837,
+              "bounds": {
+                "left": -64.2645248548987,
+                "right": 65.61789732256165,
+                "bottom": 0.46597497391198317,
+                "top": 111.30294888129256
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.07328173518180847,
+                "y": 0.004416170995682478
+              },
+              "angularVelocity": 0.041114192456007004
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -0.5971592769876892,
+              "bounds": {
+                "left": -61.69845375909267,
+                "right": 40.1136515786584,
+                "bottom": 110.98197848834796,
+                "top": 211.86232905932718
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.2065131962299347,
+                "y": -0.010142821818590164
+              },
+              "angularVelocity": 0.041114237159490585
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 1.934,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 0.2330858616770915,
+              "bounds": {
+                "left": -65.24885684000517,
+                "right": 64.80923987194979,
+                "bottom": 0.4739154857247456,
+                "top": 111.08842254665069
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.1479528695344925,
+                "y": 0.006856249645352364
+              },
+              "angularVelocity": 0.08294030278921127
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 0.23489303368194173,
+              "bounds": {
+                "left": -63.715220590997305,
+                "right": 37.55262178286807,
+                "bottom": 111.16491191062958,
+                "top": 211.5220628810742
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.41632187366485596,
+                "y": -0.026226097717881203
+              },
+              "angularVelocity": 0.08294042199850082
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.151,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 1.6310090464376714,
+              "bounds": {
+                "left": -66.86904077713365,
+                "right": 63.49229260739834,
+                "bottom": 0.4782111198957608,
+                "top": 112.01357503479221
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.2530258297920227,
+                "y": 0.005816143937408924
+              },
+              "angularVelocity": 0.1417221873998642
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 1.631495377250917,
+              "bounds": {
+                "left": -68.58953382758213,
+                "right": 34.75406760957015,
+                "bottom": 109.73835397468167,
+                "top": 212.18398511301984
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.7101737260818481,
+                "y": -0.06142249330878258
+              },
+              "angularVelocity": 0.14172235131263733
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.367,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 3.7430222123424435,
+              "bounds": {
+                "left": -69.24691085677466,
+                "right": 61.42533432943763,
+                "bottom": 0.481924661248641,
+                "top": 113.28244883150877
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.4033464789390564,
+                "y": -0.004973349627107382
+              },
+              "angularVelocity": 0.22586846351623535
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 3.7432514505664614,
+              "bounds": {
+                "left": -75.88748475641529,
+                "right": 30.47780382480692,
+                "bottom": 107.45256138113376,
+                "top": 212.94012552335772
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.1277059316635132,
+                "y": -0.13789954781532288
+              },
+              "angularVelocity": 0.22586867213249207
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.567,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 6.417259838455876,
+              "bounds": {
+                "left": -72.13546501974304,
+                "right": 58.67571398194674,
+                "bottom": 0.588442302698688,
+                "top": 115.30102413101636
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.3645190894603729,
+                "y": 0.11146736890077591
+              },
+              "angularVelocity": 0.20264290273189545
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 6.418338581457914,
+              "bounds": {
+                "left": -84.99518428713392,
+                "right": 24.989926277784186,
+                "bottom": 104.98220012547264,
+                "top": 214.11694088253296
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.0081301927566528,
+                "y": -0.03827289491891861
+              },
+              "angularVelocity": 0.20264750719070435
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.767,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 8.449727767513032,
+              "bounds": {
+                "left": -74.81473043655853,
+                "right": 56.50945316808672,
+                "bottom": 0.5914728248799577,
+                "top": 116.93189408245024
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.2975834608078003,
+                "y": 0.07942087203264236
+              },
+              "angularVelocity": 0.16372719407081604
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 8.450850479857852,
+              "bounds": {
+                "left": -91.82504941106431,
+                "right": 20.750523974359673,
+                "bottom": 103.21480145790596,
+                "top": 214.96203127382222
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.8129131197929382,
+                "y": -0.060268208384513855
+              },
+              "angularVelocity": 0.16373056173324585
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.984,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 10.490298008473117,
+              "bounds": {
+                "left": -77.56543855417623,
+                "right": 54.86252544644162,
+                "bottom": 0.5943097328340556,
+                "top": 118.47140274112488
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.3160940408706665,
+                "y": 0.0725133940577507
+              },
+              "angularVelocity": 0.1723848581314087
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 10.491462555726606,
+              "bounds": {
+                "left": -98.59637510424777,
+                "right": 16.437482052907775,
+                "bottom": 101.30984935308443,
+                "top": 215.53852544733112
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.8531411290168762,
+                "y": -0.093715600669384
+              },
+              "angularVelocity": 0.17238785326480865
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.184,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 12.744190425138331,
+              "bounds": {
+                "left": -80.52425275797759,
+                "right": 52.927621230512685,
+                "bottom": 0.5981125202674775,
+                "top": 120.05265507189786
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.41401126980781555,
+                "y": 0.07842367142438889
+              },
+              "angularVelocity": 0.22396746277809143
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 12.7453933922059,
+              "bounds": {
+                "left": -105.9656850439487,
+                "right": 11.613740745473159,
+                "bottom": 99.05899616143756,
+                "top": 215.86001043553523
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.1029754877090454,
+                "y": -0.16423939168453217
+              },
+              "angularVelocity": 0.22397096455097198
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.401,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 15.635961038580207,
+              "bounds": {
+                "left": -84.23650657706128,
+                "right": 50.22646189316414,
+                "bottom": 0.39635733494470315,
+                "top": 122.17930613574165
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.3997085392475128,
+                "y": 0.1705467849969864
+              },
+              "angularVelocity": 0.20491096377372742
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 15.660942455469531,
+              "bounds": {
+                "left": -115.35195928358348,
+                "right": 5.249843848079159,
+                "bottom": 96.15226383081068,
+                "top": 216.01206334894437
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.0419501066207886,
+                "y": -0.11218181252479553
+              },
+              "angularVelocity": 0.21650952100753784
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.601,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 17.887083813536982,
+              "bounds": {
+                "left": -87.02712251905463,
+                "right": 48.29486705689499,
+                "bottom": 0.4637257882188308,
+                "top": 124.20675000595712
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.3691179156303406,
+                "y": 0.13742589950561523
+              },
+              "angularVelocity": 0.19383594393730164
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 17.916042108070545,
+              "bounds": {
+                "left": -122.49469018235472,
+                "right": 0.23107880287886928,
+                "bottom": 94.23624145264613,
+                "top": 216.2494899192343
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.9435535669326782,
+                "y": -0.12620136141777039
+              },
+              "angularVelocity": 0.19384776055812836
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.817,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 20.47930111300232,
+              "bounds": {
+                "left": -90.126845316565,
+                "right": 46.14889771134507,
+                "bottom": 0.47598600779915046,
+                "top": 126.23931114468283
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.44495877623558044,
+                "y": 0.14346256852149963
+              },
+              "angularVelocity": 0.2300480157136917
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 20.493606944218914,
+              "bounds": {
+                "left": -130.47842787857266,
+                "right": -5.557966203717726,
+                "bottom": 91.85268061490126,
+                "top": 216.09566967950218
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.112148642539978,
+                "y": -0.1995692104101181
+              },
+              "angularVelocity": 0.23005974292755127
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.017,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 23.612010064510983,
+              "bounds": {
+                "left": -93.7469921779587,
+                "right": 43.309042268045914,
+                "bottom": 0.48434208834056847,
+                "top": 128.34539076227324
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.6266113519668579,
+                "y": 0.16593550145626068
+              },
+              "angularVelocity": 0.318928986787796
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 23.624710801272617,
+              "bounds": {
+                "left": -139.89558142974312,
+                "right": -12.649530342440102,
+                "bottom": 88.70506373652155,
+                "top": 215.31805375082098
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.525091528892517,
+                "y": -0.358193039894104
+              },
+              "angularVelocity": 0.3189430832862854
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.234,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 28.467931347384255,
+              "bounds": {
+                "left": -99.08926816957904,
+                "right": 38.42498852727648,
+                "bottom": 0.5944808089027518,
+                "top": 131.28747967264871
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.886551022529602,
+                "y": 0.2972722351551056
+              },
+              "angularVelocity": 0.4408482313156128
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 28.4820408106622,
+              "bounds": {
+                "left": -153.91539775366385,
+                "right": -23.815613404660155,
+                "bottom": 83.74371059144484,
+                "top": 213.28302055866178
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -2.064704656600952,
+                "y": -0.5276494026184082
+              },
+              "angularVelocity": 0.4408847391605377
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.434,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 34.36886986572218,
+              "bounds": {
+                "left": -106.42959266989163,
+                "right": 32.31189401986218,
+                "bottom": 0.6235126655180778,
+                "top": 134.44449350540856
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.2303398847579956,
+                "y": 0.2796432673931122
+              },
+              "angularVelocity": 0.5946822762489319
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 34.38339084789763,
+              "bounds": {
+                "left": -169.94326741896248,
+                "right": -37.63517030024411,
+                "bottom": 77.45381211518755,
+                "top": 209.29498723379805
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -2.700627088546753,
+                "y": -0.987345278263092
+              },
+              "angularVelocity": 0.594717264175415
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.634,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 42.710166672613965,
+              "bounds": {
+                "left": -116.50311294976672,
+                "right": 22.107437220112104,
+                "bottom": 0.6458621879159239,
+                "top": 136.91864956430305
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.9004392623901367,
+                "y": 0.294657438993454
+              },
+              "angularVelocity": 0.8978867530822754
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 42.64967510222974,
+              "bounds": {
+                "left": -190.53116853074442,
+                "right": -57.49016310633749,
+                "bottom": 67.20011882387826,
+                "top": 199.91333353375205
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -3.6538267135620117,
+                "y": -1.8752461671829224
+              },
+              "angularVelocity": 0.7971428632736206
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.851,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 55.989300928642294,
+              "bounds": {
+                "left": -130.98653298719438,
+                "right": 4.036987643466318,
+                "bottom": 0.5931414252492999,
+                "top": 137.27717848650732
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -2.7277848720550537,
+                "y": 0.053744226694107056
+              },
+              "angularVelocity": 1.2759143114089966
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 56.01595232678368,
+              "bounds": {
+                "left": -218.72892702068944,
+                "right": -88.3034979232566,
+                "bottom": 47.566458885194606,
+                "top": 179.76917497031354
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -4.891129970550537,
+                "y": -3.9143266677856445
+              },
+              "angularVelocity": 1.2672864198684692
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 5.051,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 69.33409720825652,
+              "bounds": {
+                "left": -142.9944240789068,
+                "right": -16.140495141797167,
+                "bottom": 0.5298683639097845,
+                "top": 135.0504265494343
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -2.36045241355896,
+                "y": -0.5148420333862305
+              },
+              "angularVelocity": 1.1302376985549927
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 68.9649801251307,
+              "bounds": {
+                "left": -248.53502750855256,
+                "right": -124.6927750001817,
+                "bottom": 7.449787449041452,
+                "top": 132.79925456003633
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": -5.0405659675598145,
+                "y": -9.622984886169434
+              },
+              "angularVelocity": 1.0412275791168213
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 5.267,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 83.27249839844738,
+              "bounds": {
+                "left": -151.77537921131852,
+                "right": -36.355915496622664,
+                "bottom": 0.2497143373601176,
+                "top": 130.4522022341401
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -2.169503688812256,
+                "y": -0.4366413652896881
+              },
+              "angularVelocity": 1.083918809890747
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 79.88556468338898,
+              "bounds": {
+                "left": -278.96303415973387,
+                "right": -165.59166426637177,
+                "bottom": -78.12071834981762,
+                "top": 36.46983895389366
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": -4.986274242401123,
+                "y": -16.250831604003906
+              },
+              "angularVelocity": 0.7553279399871826
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 5.468,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 96.92144983199144,
+              "bounds": {
+                "left": -166.25951450463762,
+                "right": -51.129574084094,
+                "bottom": -6.984398200381122,
+                "top": 123.87852341972219
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -2.488595962524414,
+                "y": -1.146657109260559
+              },
+              "angularVelocity": 1.343214988708496
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 87.2843397810486,
+              "bounds": {
+                "left": -306.6061858164719,
+                "right": -202.69171544882082,
+                "bottom": -197.9196157889936,
+                "top": -93.00689854139537
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": -4.936678409576416,
+                "y": -22.305477142333984
+              },
+              "angularVelocity": 0.5616286993026733
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 5.617,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 110.21926807049437,
+              "bounds": {
+                "left": -185.43757649699558,
+                "right": -59.865364449327096,
+                "bottom": -18.445277346278957,
+                "top": 117.74734889587539
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -2.8916914463043213,
+                "y": -2.225048780441284
+              },
+              "angularVelocity": 1.7918376922607422
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 91.55923906934372,
+              "bounds": {
+                "left": -329.54364922566714,
+                "right": -227.20458768249435,
+                "bottom": -315.938919079884,
+                "top": -212.70121593012186
+              },
+              "mass": 0,
+              "bullet": true,
+              "fixtures": 0,
+              "supported": false,
+              "lost": true,
+              "velocity": {
+                "x": -4.898899078369141,
+                "y": -26.814056396484375
+              },
+              "angularVelocity": 0.4497121274471283
+            },
+            "touchesLower": false
+          }
+        ],
+        "failure": {
+          "kind": "cardboard_box",
+          "angle": 91.55923906934372,
+          "bounds": {
+            "left": -329.54364922566714,
+            "right": -227.20458768249435,
+            "bottom": -315.938919079884,
+            "top": -212.70121593012186
+          },
+          "mass": 0,
+          "bullet": true,
+          "fixtures": 0,
+          "supported": false,
+          "lost": true,
+          "velocity": {
+            "x": -4.898899078369141,
+            "y": -26.814056396484375
+          },
+          "angularVelocity": 0.4497121274471283
+        }
+      },
+      "finishedAt": "2026-09-14T07:09:41.983Z",
+      "engineErrors": []
+    },
+    {
+      "id": "burger-right",
+      "name": "汉堡右偏 10 单位自然承托",
+      "status": "passed",
+      "startedAt": "2026-09-14T07:09:41.984Z",
+      "evidence": {
+        "method": "独立世界；原始参数物体从台面上方60单位自然下落，稳定后标记fixture placed；纸箱从其最高点上方35单位自然下落，真实稳定后同样标记，并继续自然模拟两秒。无速度/姿态/隐藏支撑注入。",
+        "kind": "burger",
+        "requestedOffsetX": 10,
+        "initialUpper": {
+          "position": {
+            "x": 10,
+            "y": 196.78949161745075,
+            "z": 0
+          },
+          "actualOffsetFromLower": 8.750526785850525
+        },
+        "grounded": {
+          "id": 1,
+          "kind": "burger",
+          "angle": -1.3172973906419276,
+          "bounds": {
+            "left": -63.456433433397095,
+            "right": 66.2688683068859,
+            "bottom": 0.5177183664304579,
+            "top": 111.78949161745075
+          },
+          "mass": 3.1999998092651367,
+          "bullet": true,
+          "fixtures": 16,
+          "supported": true,
+          "lost": false,
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0
+        },
+        "loaded": {
+          "lower": {
+            "id": 1,
+            "kind": "burger",
+            "angle": -1.2365011619591428,
+            "bounds": {
+              "left": -63.57484558183177,
+              "right": 66.16928024634423,
+              "bottom": 0.5053973785221331,
+              "top": 111.72873496053009
+            },
+            "mass": 3.1999998092651367,
+            "bullet": true,
+            "fixtures": 16,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0
+          },
+          "upper": {
+            "id": 2,
+            "kind": "cardboard_box",
+            "angle": -1.230670528285479,
+            "bounds": {
+              "left": -40.6180593794659,
+              "right": 62.13602786979247,
+              "bottom": 110.18181289818716,
+              "top": 211.98412409267974
+            },
+            "mass": 4.389647960662842,
+            "bullet": true,
+            "fixtures": 1,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0
+          },
+          "touchesLower": true
+        },
+        "retained": {
+          "lower": {
+            "id": 1,
+            "kind": "burger",
+            "angle": -1.2365011619591428,
+            "bounds": {
+              "left": -63.57484558183177,
+              "right": 66.16928024634423,
+              "bottom": 0.5053973785221331,
+              "top": 111.72873496053009
+            },
+            "mass": 3.1999998092651367,
+            "bullet": true,
+            "fixtures": 16,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0
+          },
+          "upper": {
+            "id": 2,
+            "kind": "cardboard_box",
+            "angle": -1.230670528285479,
+            "bounds": {
+              "left": -40.6180593794659,
+              "right": 62.13602786979247,
+              "bottom": 110.18181289818716,
+              "top": 211.98412409267974
+            },
+            "mass": 4.389647960662842,
+            "bullet": true,
+            "fixtures": 1,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0
+          },
+          "touchesLower": true
+        },
+        "holdSeconds": 2,
+        "contacts": [
+          {
+            "seconds": 0.334,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7272729873657227,
+                "y": 0.07999992370605469
+              },
+              {
+                "x": 13.181818008422852,
+                "y": 0.30727195739746094
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.55,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.749058723449707,
+                "y": 0.23969268798828125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.751,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.746706962585449,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.168628692626953,
+                "y": 0.3032054901123047
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.967,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.746706962585449,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.16862964630127,
+                "y": 0.3032035827636719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.167,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7467074394226074,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.16862964630127,
+                "y": 0.3032035827636719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.533,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7467074394226074,
+                "y": 0.25885963439941406
+              },
+              {
+                "x": 13.16862964630127,
+                "y": 0.3032035827636719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.533,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.022989151999354362,
+              "y": 0.9997357130050659
+            },
+            "points": [
+              {
+                "x": -37.415523529052734,
+                "y": 111.87410736083984
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.533,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": 0.022989151999354362,
+              "y": 0.9997357130050659
+            },
+            "points": [
+              {
+                "x": -37.415523529052734,
+                "y": 111.87410736083984
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.733,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.02149101346731186,
+              "y": 0.9997690320014954
+            },
+            "points": [
+              {
+                "x": 39.16649627685547,
+                "y": 110.3235092163086
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.733,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": 0.02149101346731186,
+              "y": 0.9997690320014954
+            },
+            "points": [
+              {
+                "x": 39.16649627685547,
+                "y": 110.3235092163086
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.733,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.764608383178711,
+                "y": 0.2542266845703125
+              },
+              {
+                "x": 13.150593757629395,
+                "y": 0.30934906005859375
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.933,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.021471550688147545,
+              "y": 0.9997694492340088
+            },
+            "points": [
+              {
+                "x": 39.15671157836914,
+                "y": 110.32476806640625
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.933,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": 0.021471550688147545,
+              "y": 0.9997694492340088
+            },
+            "points": [
+              {
+                "x": 39.15671157836914,
+                "y": 110.32476806640625
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.933,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.768725872039795,
+                "y": 0.25279998779296875
+              },
+              {
+                "x": 13.146469116210938,
+                "y": 0.3083362579345703
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.15,
+            "self": "Body:1:burger",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.021477380767464638,
+              "y": 0.9997693300247192
+            },
+            "points": [
+              {
+                "x": 39.156715393066406,
+                "y": 110.32470703125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.15,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:burger",
+            "normal": {
+              "x": 0.021477380767464638,
+              "y": 0.9997693300247192
+            },
+            "points": [
+              {
+                "x": 39.156715393066406,
+                "y": 110.32470703125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.15,
+            "self": "Body:1:burger",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -2.7683303356170654,
+                "y": 0.2527027130126953
+              },
+              {
+                "x": 13.146864891052246,
+                "y": 0.30826759338378906
+              }
+            ],
+            "disabled": false
+          }
+        ],
+        "trajectory": [
+          {
+            "seconds": 0,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 0,
+              "bounds": {
+                "left": -65,
+                "right": 65,
+                "bottom": 59.99999903369141,
+                "top": 170.4545450336914
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.217,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": 0,
+              "bounds": {
+                "left": -65,
+                "right": 65,
+                "bottom": 34.827185618164066,
+                "top": 145.28173161816406
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": -6.731500148773193
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.417,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -0.10486089944933727,
+              "bounds": {
+                "left": -64.90042994509629,
+                "right": 65.08021877253886,
+                "bottom": 0.4753702136965927,
+                "top": 110.99711464696972
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.05982334539294243,
+                "y": -0.0030081719160079956
+              },
+              "angularVelocity": -0.033542338758707047
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.634,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2644795377902192,
+              "bounds": {
+                "left": -63.51947234161486,
+                "right": 66.21816423108416,
+                "bottom": 0.5030258326045285,
+                "top": 111.74316088680345
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.15323655307292938,
+                "y": 0.03214341774582863
+              },
+              "angularVelocity": -0.08610881865024567
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.85,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172992049109262,
+              "bounds": {
+                "left": -63.456430978317485,
+                "right": 66.26887033648896,
+                "bottom": 0.5177184929359697,
+                "top": 111.78949282880237
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.257285475730896e-7,
+                "y": -4.3213370304329146e-7
+              },
+              "angularVelocity": 7.378184818662703e-8
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.067,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.317297817528751,
+              "bounds": {
+                "left": -63.45643285573131,
+                "right": 66.26886878443958,
+                "bottom": 0.5177183961964502,
+                "top": 111.78949190247467
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -1.909211277961731e-7,
+                "y": 1.043081283569336e-7
+              },
+              "angularVelocity": 1.0384525950257739e-7
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.284,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172973906419276,
+              "bounds": {
+                "left": -63.456433433397095,
+                "right": 66.2688683068859,
+                "bottom": 0.5177183664304579,
+                "top": 111.78949161745075
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.284,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172973906419276,
+              "bounds": {
+                "left": -63.456433433397095,
+                "right": 66.2688683068859,
+                "bottom": 0.5177183664304579,
+                "top": 111.78949161745075
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 0,
+              "bounds": {
+                "left": -40.456389,
+                "right": 60.456389,
+                "bottom": 146.78948974609375,
+                "top": 246.78948974609375
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.5,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.3172973906419276,
+              "bounds": {
+                "left": -63.456433433397095,
+                "right": 66.2688683068859,
+                "bottom": 0.5177183664304579,
+                "top": 111.78949161745075
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 0,
+              "bounds": {
+                "left": -40.456389,
+                "right": 60.456389,
+                "bottom": 121.61671447753906,
+                "top": 221.61671447753906
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": -6.731500148773193
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.717,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2402707860507551,
+              "bounds": {
+                "left": -63.56502326234536,
+                "right": 66.17823006382689,
+                "bottom": 0.5089931544170128,
+                "top": 111.7345954263242
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.004753021989017725,
+                "y": 0.0009919655276462436
+              },
+              "angularVelocity": -0.0026697348803281784
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.2321261056306323,
+              "bounds": {
+                "left": -40.59831423238474,
+                "right": 62.15792293262183,
+                "bottom": 110.17720271375596,
+                "top": 211.9816179553044
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.013380280695855618,
+                "y": 0.0001871824642876163
+              },
+              "angularVelocity": -0.0026699232403188944
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 1.933,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2367151389792346,
+              "bounds": {
+                "left": -63.57499470585796,
+                "right": 66.16908162934955,
+                "bottom": 0.5055989271012464,
+                "top": 111.729065026296
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.00013205521099735051,
+                "y": 9.932034572557313e-8
+              },
+              "angularVelocity": 4.1109160520136356e-8
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.2303237894633952,
+              "bounds": {
+                "left": -40.618243438879354,
+                "right": 62.135331721239936,
+                "bottom": 110.18201694349186,
+                "top": 211.98382697420618
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.0003074368869420141,
+                "y": 0.000014603620911657345
+              },
+              "angularVelocity": 0.000044421485654311255
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.15,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365150357808943,
+              "bounds": {
+                "left": -63.574838750610525,
+                "right": 66.16928386810471,
+                "bottom": 0.5054059565153679,
+                "top": 111.7287518726413
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.0000029169341360102408,
+                "y": -0.0000012682114629569696
+              },
+              "angularVelocity": -1.4121724234428257e-7
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.2306579351241969,
+              "bounds": {
+                "left": -40.61803881107015,
+                "right": 62.136029841902385,
+                "bottom": 110.18182307858379,
+                "top": 211.98411607354086
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.000006890595159347868,
+                "y": -0.0000015435441582667409
+              },
+              "angularVelocity": -0.0000010305769819751731
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.367,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.567,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.767,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.967,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.167,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.384,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.584,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.8,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.001,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.217,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.317,
+            "lower": {
+              "id": 1,
+              "kind": "burger",
+              "angle": -1.2365011619591428,
+              "bounds": {
+                "left": -63.57484558183177,
+                "right": 66.16928024634423,
+                "bottom": 0.5053973785221331,
+                "top": 111.72873496053009
+              },
+              "mass": 3.1999998092651367,
+              "bullet": true,
+              "fixtures": 16,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.230670528285479,
+              "bounds": {
+                "left": -40.6180593794659,
+                "right": 62.13602786979247,
+                "bottom": 110.18181289818716,
+                "top": 211.98412409267974
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          }
+        ]
+      },
+      "finishedAt": "2026-09-14T07:09:46.581Z",
+      "engineErrors": []
+    }
+  ],
+  "state": {
+    "scene": "HUD",
+    "engine": "3.8.8",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "game": {
+      "phase": "planning",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "stars": 3,
+      "incidentCount": 0,
+      "incident": null,
+      "recoverySeconds": 0,
+      "failureReason": null,
+      "normalBoundary": {
+        "top": 574.8571428571429,
+        "bottom": -187.42857142857142,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "safety": {
+        "enabled": true,
+        "boundary": {
+          "left": -400,
+          "right": 400,
+          "bottom": -200,
+          "top": 1200
+        },
+        "confirmedTop": 0,
+        "assistanceEnabled": true,
+        "maxAssistDamping": 8,
+        "filteredContacts": 0,
+        "pendingSupportReturns": 0,
+        "detachGraceSeconds": 0.12,
+        "fallSeconds": 0.12,
+        "fallSpeed": -0.75,
+        "collapseTrend": false,
+        "remainingStable": true,
+        "bodies": [
+          {
+            "id": 1,
+            "lost": false,
+            "supported": true,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 6
+          },
+          {
+            "id": 2,
+            "lost": false,
+            "supported": true,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 6
+          }
+        ]
+      },
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball",
+        "wood_plank",
+        "wooden_crate",
+        "sofa",
+        "wood_plank",
+        "slipper",
+        "burger",
+        "wood_plank",
+        "whale",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "ice_block",
+        "wood_plank"
+      ],
+      "untimedCalibration": true,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 211.98412411477693,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144,
+        "zoom": 1,
+        "zoomTarget": 1,
+        "incidentCamera": false
+      },
+      "music": {
+        "region": "bgm_city",
+        "fading": false,
+        "fade": 1,
+        "gain": 0.07496999999955298,
+        "paused": true,
+        "enabled": true,
+        "issues": [],
+        "sources": [
+          {
+            "clip": "bgm_city",
+            "playing": false,
+            "time": 0.2154999999999987,
+            "volume": 0.07496999999955298
+          },
+          {
+            "clip": null,
+            "playing": false,
+            "time": 0,
+            "volume": 0
+          }
+        ]
+      },
+      "audioClips": 33,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "burger",
+          "position": {
+            "x": 1.15008544921875,
+            "y": 55.66095733642578,
+            "z": 0
+          },
+          "angle": -1.2365011619591428,
+          "size": [
+            130,
+            110.454545
+          ],
+          "physicsAxis": {
+            "x": 0.9997671246528625,
+            "y": -0.02157934196293354
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 3.1999998092651367,
+          "awake": false,
+          "contacts": 2,
+          "contactSeconds": 0,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -63.574845594493894,
+            "right": 66.16928024616729,
+            "bottom": 0.5053973748319649,
+            "top": 111.72873492441914
+          }
+        },
+        {
+          "id": 2,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 10.835223197937012,
+            "y": 161.18861389160156,
+            "z": 0
+          },
+          "angle": -1.230670528285479,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 0.9997693300247192,
+            "y": -0.021477600559592247
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 4.389647960662842,
+          "awake": false,
+          "contacts": 1,
+          "contactSeconds": 0,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -40.61805940723636,
+            "right": 62.136027893265165,
+            "bottom": 110.1818128701345,
+            "top": 211.98412411477693
+          }
+        }
+      ]
+    }
+  }
+}

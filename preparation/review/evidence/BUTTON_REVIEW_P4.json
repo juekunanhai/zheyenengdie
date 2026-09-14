@@ -1,0 +1,33 @@
+{
+  "revision": "2026-09-12-P4",
+  "scope": "Same-size source-pixel button replacement only",
+  "method": "CUA visual inspection of actual Cocos web build; checked Home and Settings at 375x667 CSS viewport",
+  "checks": [
+    {
+      "scene": "Home",
+      "loaded": true,
+      "button_border_and_native_gloss_visible": true,
+      "no_share_icon_or_source_text_residue_visible": true,
+      "whole_sprite_proportional": true
+    },
+    {
+      "scene": "Settings",
+      "loaded": true,
+      "button_border_and_native_gloss_visible": true,
+      "no_share_icon_or_source_text_residue_visible": true,
+      "whole_sprite_proportional": true
+    }
+  ],
+  "source": "02_ASSETS/result_ui/result_btn_share.png",
+  "output_sha256": "4c35f35602d93e5a413e8fa5fe531ab3badbe1cdadbdfc1657b19e289b9745a5",
+  "build_native_png": "assets/main/native/9a/9a223153-887d-5751-8adc-a7440d0ce9e0.png",
+  "build_png_hash_equals_output": true,
+  "pixel_checks": {
+    "changed_source_pixels": 6300,
+    "outside_repair_mask_unchanged": true,
+    "source_alpha_unchanged": true
+  },
+  "user_visual_acceptance": "pending; user authorized this repair method, not yet reviewed resulting pixels",
+  "prior_evidence": "RUNTIME_REVIEW.json remains the P3 12-case initial viewport record; not re-run or relabeled as P4",
+  "gameplay_implemented": false
+}

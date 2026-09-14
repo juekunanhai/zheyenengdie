@@ -1,0 +1,70 @@
+{
+  "recorded_at": "2026-09-14T16:05:16.004620+08:00",
+  "status": "passed_existing_build_revalidation",
+  "verification": {
+    "status": "passed_existing_build_integrity",
+    "new_build_recorded": false,
+    "original_recorded_at": "2026-09-14T15:45:51.299229+08:00",
+    "current_recorder_sha256": "c62ae10777c09c1d433904c3ff210edb980e6220a87dfe66d29e857a2a6c154e",
+    "archived_recorder": "preparation/review/evidence/batch1c/record_batch1c_build_R7.py",
+    "original_recorder_sha256": "9aedad64678ddae73e250496fda7f15784abc0f2f32c88c0ffa91117502ff315",
+    "identical_settings_rewritten": {
+      "settings/v2/packages/engine.json": {
+        "sha256": "4f929e78c45c0065fc05f4d0c089ea33875eb686c63adeb496f33a1e56b44b11",
+        "observed_mtime": 1789372219.413496
+      }
+    },
+    "input_hashes_checked": 306,
+    "output_hashes_checked": 210,
+    "boundary": "Original exits, log, all input/output/provenance hashes and scope retained; only byte-identical settings mtime may advance. Profiles remain excluded as before."
+  },
+  "negative_checks": [
+    {
+      "check": "New build recording still rejects later settings timestamp",
+      "status": "rejected_as_required",
+      "reason": "Build predates current input: settings/v2/packages/engine.json"
+    },
+    {
+      "check": "Changed runtime content hash invalidates frozen input",
+      "status": "rejected_as_required",
+      "reason": "Frozen build input content changed"
+    },
+    {
+      "check": "Byte-identical runtime source with later timestamp is not exempt",
+      "status": "rejected_as_required",
+      "reason": "Build predates runtime source: assets/batch1/game-controller.ts"
+    },
+    {
+      "check": "Changed build output hash invalidates existing report",
+      "status": "rejected_as_required",
+      "reason": "1C build evidence no longer matches current files: output_sha256"
+    },
+    {
+      "check": "Creator failure exit remains rejected",
+      "status": "rejected_as_required",
+      "reason": "Actual Creator process failed"
+    },
+    {
+      "check": "TypeScript failure exit remains rejected",
+      "status": "rejected_as_required",
+      "reason": "Actual TypeScript process failed"
+    }
+  ],
+  "test_method": "Read-only current-file verification plus in-memory changed-hash/stat/output evidence injections; no runtime source, settings, original report or build output was modified.",
+  "frozen_r7_report_sha256": "ba20af459cde4f99a8bb872eb5dae3e4d67cfcef311356ca629d2a97ffe3f260",
+  "current_build_report_sha256": "ba20af459cde4f99a8bb872eb5dae3e4d67cfcef311356ca629d2a97ffe3f260",
+  "legacy_recorder_sha256": "9aedad64678ddae73e250496fda7f15784abc0f2f32c88c0ffa91117502ff315",
+  "current_recorder_sha256": "c62ae10777c09c1d433904c3ff210edb980e6220a87dfe66d29e857a2a6c154e",
+  "wechat_process_evidence_sha256": "269d7c22a717011cc9efeb76f35d87b881a81c83232654266a2097f03e09d019",
+  "new_web_build": false,
+  "limitations": [
+    "This verifies prior build integrity after a byte-identical settings rewrite; no new game/WeChat/device behavior is claimed."
+  ],
+  "integrity_report": {
+    "path": "preparation/review/evidence/batch1c/INTEGRITY_POST_WECHAT.json",
+    "sha256": "e111671edbb0d23ddb0e63319d7d033672e43ccb490a943d047b511e290dc674",
+    "status": "passed_integrity_only",
+    "command": "python3 preparation/tools/verify_preparation.py",
+    "actual_exit_code": 0
+  }
+}

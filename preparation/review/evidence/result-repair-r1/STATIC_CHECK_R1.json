@@ -1,0 +1,77 @@
+{
+  "status": "passed_static_only_pending_engine_visual_and_interaction",
+  "records": 113,
+  "reachable_records": 113,
+  "asset_references": 19,
+  "unique_art": [
+    "assets/batch0/art/bubble_plain.png",
+    "assets/batch0/art/home_r10_airplane.png",
+    "assets/batch0/art/home_r10_airship.png",
+    "assets/batch0/art/home_r10_background.png",
+    "assets/batch0/art/home_r10_logo.png",
+    "assets/batch0/art/home_r9_cloud.png",
+    "assets/batch0/art/home_r9_hero.png",
+    "assets/batch0/art/home_r9_sign.png",
+    "assets/batch0/art/home_r9_slipper.png",
+    "assets/batch0/art/panel_9slice_light.png",
+    "assets/batch0/art/result_btn_retry.png",
+    "assets/batch0/art/result_close.png",
+    "assets/batch0/art/result_confetti.png",
+    "assets/batch0/art/result_title_sticker.png"
+  ],
+  "new_sprite_aspect_checks": [
+    {
+      "node": "ResultTitleSticker",
+      "width": 344,
+      "height": 126.89777777777778,
+      "aspect_error": 0.0
+    },
+    {
+      "node": "ResultConfetti",
+      "width": 616,
+      "height": 461.82237600922724,
+      "aspect_error": 2.220446049250313e-16
+    },
+    {
+      "node": "result_btn_close",
+      "width": 84,
+      "height": 84,
+      "aspect_error": 0.0
+    },
+    {
+      "node": "result_btn_retry",
+      "width": 468,
+      "height": 153.67164179104478,
+      "aspect_error": 0.0
+    },
+    {
+      "node": "ResultBubble",
+      "width": 180,
+      "height": 152.75229357798165,
+      "aspect_error": 0.0
+    }
+  ],
+  "typescript": "passed --noEmit --skipLibCheck",
+  "files": [
+    {
+      "path": "assets/batch0/scenes/Result.scene",
+      "sha256": "e2a14f7b40f1dcd0d59bbd374a4f16e0fed256f11e7619f97cd8b655a5b4a893"
+    },
+    {
+      "path": "assets/batch1/scene-actions.ts",
+      "sha256": "aa0edaf621696779d9348b8c5c43cac46c137869d3a7289502883aa26675fbac"
+    },
+    {
+      "path": "assets/batch0/presentation/ResultPresentation.ts",
+      "sha256": "4cb15ddd9e790d5d5ad1cbb7a5ce482eeb6b81bbc5acd0d5f3bcdf281de4028b"
+    },
+    {
+      "path": "assets/batch0/presentation/ResultPresentation.ts.meta",
+      "sha256": "b15f4fc6f4e9b41594b621a7bde0692d2453562ae9a31c723430f16620e090b9"
+    },
+    {
+      "path": "preparation/tools/repair_result_scene.py",
+      "sha256": "e1c4e79ba607546f64570844129eb6d2b25dc388c57c9e8bacb4b4095b2dc9e4"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "passed_review_and_current_build_loading",
+  "review": {
+    "images": [
+      {
+        "src": "evidence/batch1a-before-contact-fix/03-two-landings.png",
+        "width": 375,
+        "height": 667
+      },
+      {
+        "src": "evidence/batch1a/03-two-landings.png",
+        "width": 375,
+        "height": 667
+      },
+      {
+        "src": "evidence/batch1a/10-contact-stack.png",
+        "width": 375,
+        "height": 667
+      },
+      {
+        "src": "evidence/batch1a/11-contact-overlay.png",
+        "width": 375,
+        "height": 667
+      },
+      {
+        "src": "evidence/batch1a/14-tower-1-boxes.png",
+        "width": 375,
+        "height": 667
+      },
+      {
+        "src": "evidence/batch1a/14-tower-6-boxes.png",
+        "width": 375,
+        "height": 667
+      }
+    ],
+    "videoDuration": 15.76
+  },
+  "mobile": {
+    "width": 375,
+    "documentWidth": 375
+  },
+  "runtime": {
+    "version": "3.8.8",
+    "phase": "planning",
+    "ball": {
+      "kind": "basketball",
+      "width": 68,
+      "height": 68,
+      "circle": true,
+      "spriteWidth": 70.2295,
+      "spriteHeight": 70.2295,
+      "friction": 0.85,
+      "restitution": 0.28,
+      "density": 0.4,
+      "contactAngularDamping": 6,
+      "description": "别担心，有人给它贴了双面胶。"
+    }
+  },
+  "errors": [],
+  "badResponses": []
+}

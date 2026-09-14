@@ -1,0 +1,237 @@
+{
+  "revision": "result-r13-fixed-labels",
+  "scope": "Independent art components only; no runtime import or code change",
+  "tool": "built-in image_gen",
+  "reference": {
+    "path": "preparation/design/result-r12/reference-only/result-card.png",
+    "role": "User-approved R12 full result-card design; used for generation reference only",
+    "pixels_copied_to_deliverables": false,
+    "sha256": "0ac7cf0018b7e958f5e8743a1226bf2f9d7b6ad6184367b887b98783852b5955"
+  },
+  "calls": [
+    {
+      "id": "result_title-first",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent PNG component for a premium playful stacking-game result card. Image 1 is the user's approved full result-card design, used as a visual reference only. Independently redraw ONLY the small light WHITE PAPER TITLE STICKER near the top-left of Image 1, which reads 本次叠到了. Match that exact component's design: thin softly rounded white paper, very pale blue subtle shading and restrained soft shadow, five bold friendly deep navy Chinese characters. Preserve its modest counterclockwise/upward-to-right tilt, paper perspective, slight material highlight and thin edge. The original component occupies about 116 by 45 design pixels INCLUDING the tilted silhouette. Redraw it at high resolution with about 900 pixels across the complete asset, retaining these proportions. Text (verbatim, exactly five characters): 本次叠到了 . Render the same text, with no punctuation, extra characters or duplicated strokes. Keep the whole sticker and shadow visible, centered with a small transparent margin. TRUE TRANSPARENT RGBA BACKGROUND outside the sticker, no opaque backdrop and no printed checkerboard. This is a NEW clean independent full-resolution illustration matching the reference, not a crop of the low-resolution source. Do not include any other card contents: no 42.7m score, red record sticker, duck, tower, confetti, city, big panel or button. Critically this is LIGHT THIN WHITE PAPER, not a thick glossy blue button, blue plaque, inflated cushion or heavy blue outline.",
+      "referenced_image_paths": [
+        "preparation/design/result-r12/reference-only/result-card.png"
+      ],
+      "source_path": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-304a778d-7c1d-4261-a2e2-a132d60b0d0f.png",
+      "selected": false,
+      "reason": "Unwanted speech-bubble tail; requested exact simplified Chinese glyph refinement",
+      "source_sha256": "91cbc3db25bd4fbe94627b2b0de256b223ab27ea7693e80f790d3d7e0dde071f"
+    },
+    {
+      "id": "result_title",
+      "prompt": "Use case: stylized-concept. Image 1 is the approved result-card reference. Image 2 is a generated title component that has TWO errors; independently redraw the title fixing ONLY these errors while following Image 1 more faithfully. Error 1: title must be a thin WHITE ROUNDED-RECTANGULAR PAPER STICKER with absolutely NO speech-bubble tail or protruding point. The original title at the upper-left of Image 1 is plain rounded rectangular paper. Error 2: the third character must be the correct SIMPLIFIED CHINESE 叠, whose upper part is THREE 又 shapes, above 冖 and 且. Do not use traditional 疊 or an invented character. Exact complete text: 本次叠到了 (five characters: 本 / 次 / 叠 / 到 / 了). Use clearly legible bold Chinese glyphs matching the navy title font in Image 1. Preserve the small upward-to-right counterclockwise tilt, light thin white paper, very pale blue shading, slight subtle highlight, soft restrained drop shadow and no thick blue rim. Overall complete tilted sticker proportions approximately 116:45, high-resolution asset about 900 pixels wide. Center just this ONE title sticker with a small genuinely transparent margin, all edges complete. NO tail, no point, no extra decorative corner, no balloon thickness, no heavy 3D button depth. No other result-card components. Finish as independent high-resolution production PNG with true transparent RGBA background; not a crop of either source.",
+      "referenced_image_paths": [
+        "preparation/design/result-r12/reference-only/result-card.png",
+        "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-304a778d-7c1d-4261-a2e2-a132d60b0d0f.png"
+      ],
+      "source_path": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-74bd9e30-2e03-4a23-b616-2ee0bff7818f.png",
+      "selected": true,
+      "source_sha256": "8058ac978730e2ed73937f35ab9dcec7c0101a6bd25b0252670e0173261120cb"
+    },
+    {
+      "id": "result_record",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent PNG component for a premium playful stacking-game result card. Image 1 is the user's approved full result-card design, visual reference only. Independently redraw ONLY the bright RED TILTED NEW-RECORD STICKER below the big 42.7m score at the left of Image 1. Match that exact red sticker: slightly irregular rounded rectangle in a jaunty counterclockwise tilt, upward-to-right baseline, scarlet red face with warm red highlight, thin white paper outline/backing and restrained subtle depth/shadow; bold clean white Chinese lettering. Preserve the reference silhouette, red material, tilt and lettering weight. Original component occupies approximately 95 by 53 design pixels INCLUDING its tilted shape and white backing. Produce a high-resolution complete standalone asset about 900 pixels across, with the same proportions, centered in a small transparent margin. Text (verbatim): 新纪录！ . Correct characters 新 / 纪 / 录 followed by ONE exclamation mark, no additional text. Genuine transparent RGBA outside the sticker and its soft shadow, no solid backdrop or checkerboard. Redraw cleanly in high resolution, do not crop the low-resolution reference. Include no score, no white title, no other paper label, no tower or characters, no confetti, no panel, no button. Keep its thin playful label feel; no blue border, no heavy inflated 3D capsule, no new ornament.",
+      "referenced_image_paths": [
+        "preparation/design/result-r12/reference-only/result-card.png"
+      ],
+      "source_path": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-5e91d5c8-543d-4801-b9d6-7e1bf898c711.png",
+      "selected": true,
+      "source_sha256": "6b14c48c049870c93c05f4fc8f48e311fc427386ab94d567a9678b7962f61999"
+    },
+    {
+      "id": "result_bubble",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent PNG component for a premium playful stacking-game result card. Image 1 is the user's approved full result card, used ONLY as visual reference. Independently redraw ONLY the small LIGHT WHITE SPEECH BUBBLE on the right of the character tower, reading 太棒了！. Follow this exact component's appearance: small softly rounded white paper-like speech bubble, gently tilted counterclockwise/upward to the right, very thin pale-blue edge and slight pale-blue underside shading, restrained soft shadow, a small pointed speech tail at the lower-left edge as visible in the reference. Bold playful dark navy-blue Chinese characters centered inside. Keep the light thin material and original proportions (approximately 64 by 39 design pixels including tilt/tail), at a finished high resolution of about 900 pixels across the standalone asset. Text (verbatim): 太棒了！ . Exactly 太 / 棒 / 了 and one exclamation mark. Full complete shape and soft shadow visible, small clean transparent margin. TRUE TRANSPARENT RGBA background, not a solid white/blue rectangle and not a checkerboard. This must be independently redrawn in high resolution, never a crop of the small original. No heavy thick blue rim, no glossy raised blue game button, no balloon-like thick pillow, no tower, no duck, no score, no card, no confetti, no other labels. Preserve the reference's modest tilt, subtle highlight and readable text.",
+      "referenced_image_paths": [
+        "preparation/design/result-r12/reference-only/result-card.png"
+      ],
+      "source_path": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-bcbb1336-c8fc-4902-a80a-c13ff2a89883.png",
+      "selected": true,
+      "source_sha256": "57d1cf4f7a63be80aeeb093dad788b8a5927f1dc2b95659761e24d265467cb38"
+    },
+    {
+      "id": "result_share",
+      "prompt": "Use case: stylized-concept. Asset type: ONE finished standalone transparent PNG share-button card for a polished playful stacking-game result screen. Image 1 is the approved R12 result-card master, Image 2 is its current full high-resolution redraw. Both are design references only. Independently redraw ONLY the small BLUE VERTICAL SHARE CARD at lower-right in these references, with a dark camera icon above the white Chinese word 分享. Faithfully match the referenced color, shape and finish: upright rounded rectangular cyan-blue card, thin bright white/cyan inset outline, subtle deeper-blue lower edge and soft restrained shadow, glossy small top-left highlight. The camera is a chunky dark navy/purple-black front-view camera housing with a small centered top bump, rounded corners, thin light outline, a luminous cyan-blue circular glass lens and restrained specular detail, matching the reference camera rather than a generic upload/share-arrow symbol. Camera centered in upper portion, width about 56 percent of the card, with generous spacing from the border. Text beneath it is exactly 分享, two crisp bold WHITE simplified Chinese characters, centered, with slight blue depth as in the references. Preserve the original 51:60 width-to-height proportion of the COMPLETE visible card, approximately 900 pixels wide at finished high resolution, no additional rotation. Small transparent outer margin, every edge and shadow complete. Genuine transparent RGBA outside the button, no opaque colored rectangle or printed checkerboard. This is a clean independent redraw, never a crop of the source. NO character tower, duck, score, percentage, other words, arrows, extra badges, confetti, large result panel, retry button or other UI. Deliver only this camera-and-分享 vertical card, accurately matching the references.",
+      "referenced_image_paths": [
+        "preparation/design/result-r12/reference-only/result-card.png",
+        "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-b9ee8c6c-f5cb-4195-af55-278791b85368.png"
+      ],
+      "source_path": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-26a69b99-2114-4c72-b856-7920294da773.png",
+      "selected": true,
+      "source_sha256": "dce905fe31447df4143e5bf54cd3637f946fb4b4992668eaabc6c92c907b7f00"
+    }
+  ],
+  "status": "self_checked_art_only_pending_parent_composition_review",
+  "deliverables": [
+    {
+      "id": "result_title",
+      "file": "preparation/design/result-r13/assets/result_title.png",
+      "sha256": "1b7d7859b5aabbc15a9f5f3cd87ea7af76a8adc454e9522245e618e415123b14",
+      "source_sha256": "8058ac978730e2ed73937f35ab9dcec7c0101a6bd25b0252670e0173261120cb",
+      "size": [
+        900,
+        357
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.3032617491441021,
+      "partial_alpha_pixels": 6612,
+      "alpha_bbox": [
+        8,
+        8,
+        892,
+        349
+      ],
+      "source_crop_bbox": [
+        300,
+        85,
+        1730,
+        653
+      ],
+      "text": "本次叠到了",
+      "self_check": "passed: visually inspected final RGBA on contrasting dark background; exact Chinese text, complete silhouette, no opaque/checkerboard backdrop, no detached neighbor fragments, original upward-right tilt retained",
+      "reference_design_size_approx": [
+        116,
+        45
+      ],
+      "rotation_baked_in_pixels": true,
+      "additional_rotation_degrees": 0
+    },
+    {
+      "id": "result_record",
+      "file": "preparation/design/result-r13/assets/result_record.png",
+      "sha256": "d1862769c38ea192bf8781643674d02992470a4fbb2b0507ce25af6e73b7bd75",
+      "source_sha256": "6b14c48c049870c93c05f4fc8f48e311fc427386ab94d567a9678b7962f61999",
+      "size": [
+        900,
+        500
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.3302977777777778,
+      "partial_alpha_pixels": 7052,
+      "alpha_bbox": [
+        8,
+        8,
+        892,
+        492
+      ],
+      "source_crop_bbox": [
+        178,
+        96,
+        1490,
+        825
+      ],
+      "text": "新纪录！",
+      "self_check": "passed: visually inspected final RGBA on contrasting dark background; exact Chinese text, complete silhouette, no opaque/checkerboard backdrop, no detached neighbor fragments, original upward-right tilt retained",
+      "reference_design_size_approx": [
+        95,
+        53
+      ],
+      "rotation_baked_in_pixels": true,
+      "additional_rotation_degrees": 0
+    },
+    {
+      "id": "result_bubble",
+      "file": "preparation/design/result-r13/assets/result_bubble.png",
+      "sha256": "2aaaf0bf8d7cf83bf560cda75e31b36455e8ef57ffcf0ec42920c462384179f1",
+      "source_sha256": "57d1cf4f7a63be80aeeb093dad788b8a5927f1dc2b95659761e24d265467cb38",
+      "size": [
+        900,
+        534
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.36423845193508114,
+      "partial_alpha_pixels": 6776,
+      "alpha_bbox": [
+        11,
+        11,
+        889,
+        523
+      ],
+      "source_crop_bbox": [
+        262,
+        183,
+        1370,
+        840
+      ],
+      "text": "太棒了！",
+      "self_check": "passed: visually inspected final RGBA on contrasting dark background; exact Chinese text, complete silhouette, no opaque/checkerboard backdrop, no detached neighbor fragments, original upward-right tilt retained",
+      "reference_design_size_approx": [
+        64,
+        39
+      ],
+      "rotation_baked_in_pixels": true,
+      "additional_rotation_degrees": 0
+    },
+    {
+      "id": "result_share",
+      "file": "preparation/design/result-r13/assets/result_share.png",
+      "sha256": "e55634edae448d6d1aa06cfdee3b4b2df940be829310741d2f09465f3cf4737b",
+      "source_sha256": "dce905fe31447df4143e5bf54cd3637f946fb4b4992668eaabc6c92c907b7f00",
+      "size": [
+        900,
+        1059
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.11895289056762144,
+      "partial_alpha_pixels": 10604,
+      "alpha_bbox": [
+        12,
+        23,
+        888,
+        1036
+      ],
+      "source_crop_bbox": [
+        93,
+        120,
+        1063,
+        1238
+      ],
+      "text": "分享",
+      "reference_design_size_approx": [
+        51,
+        60
+      ],
+      "additional_rotation_degrees": 0,
+      "self_check": "passed: final RGBA visually inspected on contrasting dark background; camera and exact 分享 lettering complete, 51:60 nominal canvas, no baked checkerboard, no opaque backdrop, no detached residues or clipped edges"
+    }
+  ],
+  "local_processing": {
+    "reason": "Built-in output was RGB with baked neutral checkerboard despite true-alpha prompts; user expressly allowed local cleanup.",
+    "recipe": "On generated RGB only, eligible backdrop pixels have max(R,G,B)-min(R,G,B)<=18 and max(R,G,B)<235. Flood only background connected to image corner (0,0); remove it from alpha. Apply one-source-pixel alpha erosion to remove grey edge contamination, then retain only the foreground component connected to the center of the sticker/bubble, removing isolated backdrop remnants. Crop generated output to retained alpha bbox plus 16-source-pixel margin and Lanczos resize width to 900. Clear RGB under alpha=0. Masks are copied before floodfill to avoid readonly no-op. No reference pixels cropped/copied, no text repaint or subject geometry editing.",
+    "preserved": "White paper, all lettering inside its boundary, red body, original tilted silhouettes, colored thin edges and interior highlights/shading. Neutral external shadow may be removed with the baked backdrop.",
+    "output_width_px": 900,
+    "title_specific_refinement": "Title alone had blue-tinted checker shadow surviving neutral-only extraction. Its eligible background was changed to min(R,G,B)<215, still removed only by edge-connected flood, preserving all dark navy lettering enclosed inside the opaque white paper. Retained main foreground connected to the sticker center; same 1px erosion/padding/900px Lanczos. This removes the contaminated exterior shadow, not the interior highlight or paper lettering."
+  },
+  "delivery_boundary": "Four independent full-resolution generated components only. R12 was passed as a generation reference, never cropped as production art. Not imported into root assets/, scenes, UI or any runtime. Parent will compose and review the complete R13 visual before user approval.",
+  "visual_notes": [
+    "Title iteration removes erroneous speech tail; simplified 本次叠到了 checked character by character.",
+    "Red record preserves 新纪录！ in white on an inclined red sticker; small original-style highlight/white backing remain.",
+    "Speech bubble preserves 太棒了！ in navy, light white material and lower-left tail; thin blue edge only.",
+    "Local cleanup removes contaminated exterior neutral/checker shadows. Interior paper/red shading and highlights are retained; no subject or text was painted locally.",
+    "Share card: independently redrawn from R12 master and current full redraw; camera above exact 分享, nominal 51:60 export canvas, no extra characters/data. Final PNG alpha 0–255 with transparent margins verified."
+  ],
+  "share_local_processing": {
+    "reason": "Generated RGB had baked checkerboard; clean only the generated component, no R12 pixels copied.",
+    "recipe": "Backdrop eligibility: B-R<50 AND G-R<50 AND max(R,G,B)<239. Flood only from exterior (0,0) on a writable mask, erode alpha by one source pixel and retain the component containing center. Camera housing and white text remain enclosed by blue card and are preserved. Crop generated alpha bbox with16px padding, uniformly fit to 900x1059 transparent canvas (51:60 nominal aspect), center without stretching and clear RGB under alpha0.",
+    "reference_redraw_sha256": "2091d66b5a8b1a80a00dd89a72e9e2cfe736d951f3dbdcb1667dd366424e2f18",
+    "preserved": "Camera details, exact white 分享 text, blue card silhouette, thin inset rim, internal shadows and highlights; contaminated exterior checker shadow removed."
+  }
+}

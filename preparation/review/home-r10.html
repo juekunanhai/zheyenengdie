@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R10.1 首页 · Cocos 对照</title>
+<style>
+body{margin:0;background:#edf3f8;font:15px/1.7 system-ui;color:#173047}header{max-width:950px;margin:auto;padding:20px}h1{font-size:23px;margin:0}p{margin:8px 0}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center}button,select{font:inherit;padding:6px 10px}main{display:flex;flex-wrap:wrap;gap:36px;justify-content:center;padding:0 20px 28px}figure{margin:0;width:375px;max-width:100%}figcaption{margin-bottom:10px}iframe{display:block;border:0;box-shadow:0 3px 24px #20364d33;max-width:100%}.reference{display:block;width:375px;max-width:100%;height:auto}a{color:#197bc1}pre{white-space:pre-wrap;font-size:12px}details{margin-top:10px}
+</style>
+<header><h1>R10.1 首页 · Cocos 实际画面</h1>
+<p>首页已按认可稿接入。开始进入现有四物体试放，设置沿用现有页面；未开发入口暂不展示。</p>
+<div class="controls"><label>画幅 <select id="size"><option value="375,667">375 × 667</option><option value="375,812">375 × 812</option><option value="600,800">600 × 800 · 宽屏适配</option></select></label><button id="home" disabled>回到首页</button><button id="motion" disabled>暂停画面</button><button id="inspect" disabled>读取运行数据</button><span id="status">引擎加载中…</span><a href="../design/R10/index.html">已认可的首页稿</a></div>
+<details><summary>运行诊断</summary><pre id="diagnostics"></pre></details></header>
+<main><figure><figcaption>Cocos 实际运行</figcaption><iframe id="player" title="R10.1 首页 Cocos 运行" src="play-player.html?revision=home-r10-1" width="375" height="667"></iframe></figure><figure><figcaption>已认可的 R10.1 · 同画幅</figcaption><img class="reference" id="reference" src="../design/R10/evidence/self-audit-after-667.png" alt="已认可的375×667首页设计稿"></figure></main>
+<script>
+const frame=document.querySelector('#player'),status=document.querySelector('#status');
+let paused=false;
+window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==frame.contentWindow)return;
+ if(e.data.type==='play-ready'){status.textContent='引擎已就绪';for(const id of ['home','motion','inspect'])document.getElementById(id).disabled=false}
+ if(e.data.type==='play-error')status.textContent=e.data.error});
+function resume(){frame.contentWindow.qaCC?.game.resume();paused=false;document.querySelector('#motion').textContent='暂停画面'}
+document.querySelector('#home').onclick=()=>{resume();frame.contentWindow.qaLoad('Home')};
+document.querySelector('#motion').onclick=()=>{paused=!paused;const game=frame.contentWindow.qaCC.game;if(paused)game.pause();else game.resume();document.querySelector('#motion').textContent=paused?'恢复画面':'暂停画面'};
+document.querySelector('#size').onchange=e=>{resume();const [w,h]=e.target.value.split(',');frame.width=w;frame.height=h;frame.parentElement.style.width=w+'px';const ref=document.querySelector('#reference');const referenceHeight=w==='600'?'667':h;ref.src=`../design/R10/evidence/self-audit-after-${referenceHeight}.png`;ref.alt=`已认可的375×${referenceHeight}首页设计稿`;ref.previousElementSibling.textContent=w==='600'?'已认可的短屏稿 · 仅作风格参照':'已认可的 R10.1 · 同画幅'};
+document.querySelector('#inspect').onclick=()=>{
+ const host=frame.contentWindow,cc=host.qaCC,canvas=cc.director.getScene()?.getChildByName('Canvas');
+ const content=canvas?.getChildByName('SafeArea')?.getChildByName('Content_1230');
+ const nodes=content?.children.map(n=>{const sprite=n.getComponent(cc.Sprite);return{name:n.name,position:{x:n.position.x,y:n.position.y},size:n.getComponent(cc.UITransform)?.contentSize,rotation:n.eulerAngles.z,spriteFrame:sprite?.spriteFrame?.uuid,opacity:sprite?.color.a}});
+ document.querySelector('#diagnostics').textContent=JSON.stringify({...host.qaSnapshot(),homePresentation:!!canvas?.getComponent('HomePresentation'),canvasSize:canvas?.getComponent(cc.UITransform)?.contentSize,contentScale:content?.scale,nodes},null,2);
+ document.querySelector('details').open=true;
+};
+</script></html>

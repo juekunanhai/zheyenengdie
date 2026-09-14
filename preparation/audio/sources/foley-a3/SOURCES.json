@@ -1,0 +1,28 @@
+[
+  {
+    "id": "ratchet",
+    "author": "CapsLok",
+    "title": "Tools Ratchet.wav",
+    "page_url": "https://freesound.org/people/CapsLok/sounds/181634/",
+    "download_url": "https://cdn.freesound.org/previews/181/181634_850742-hq.mp3",
+    "license": "CC0-1.0",
+    "downloaded_at": "2026-09-14",
+    "quality": "author-page public HQ MP3 preview; not original lossless WAV",
+    "file": "preparation/audio/sources/foley-a3/ratchet-hq.mp3",
+    "sha256": "164ed7ed77b94810e85ecc29cdfd54898ae20780e3dca5c38d3e42c1923129c3",
+    "page_sha256": "1d1537f55b2eac18df5111a01b68fff04cb062bd076371528b6cd2965c379fdb"
+  },
+  {
+    "id": "suction",
+    "author": "michorvath",
+    "title": "Suction Cup",
+    "page_url": "https://freesound.org/people/michorvath/sounds/386885/",
+    "download_url": "https://cdn.freesound.org/previews/386/386885_3094998-hq.mp3",
+    "license": "CC0-1.0",
+    "downloaded_at": "2026-09-14",
+    "quality": "author-page public HQ MP3 preview; not original lossless WAV",
+    "file": "preparation/audio/sources/foley-a3/suction-hq.mp3",
+    "sha256": "aa612cc000f53ddc0009b90211b8e5e24086eb469d4025f852258c62b557bcec",
+    "page_sha256": "e3c5655529a0b7c8c10b2babc26c67c1165fb8db63e731f8b720651d346df874"
+  }
+]

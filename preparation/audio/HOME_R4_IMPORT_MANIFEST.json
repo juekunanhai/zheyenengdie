@@ -1,0 +1,25 @@
+{
+  "revision": "home-r4",
+  "status": "approved_for_current_use",
+  "listening_status": "user_approved",
+  "approval": {
+    "user_text": "确认",
+    "proposal": "对局正常配乐从0.22到0.28；首页采用候选A Carefree，独立播放并在开始游戏时切换B，沿用原音乐开关。"
+  },
+  "entries": [
+    {
+      "id": "bgm_home",
+      "kind": "new",
+      "candidate": "audio/home-r4/encoded/bgm_home.mp3",
+      "import_path": "assets/batch1/audio/bgm_home.mp3",
+      "sha256": "b4376030dd8b1432462507700629d5aa0eabc10f6049080c97c9952efbca8194",
+      "uuid": "8420f40b-9d91-5feb-88a6-7d934b37bbcf",
+      "meta_sha256": "54c9f9e495c156f603fb7e3c48fac3929b9f7cc0dd904ccfe00944efdcbad58a",
+      "source_manifest": "audio/home-r4/MANIFEST.json",
+      "source_manifest_sha256": "764c5e809c81ed2b17aec226b14384ddc6b72f2a705647969f1008a3b26cff1a"
+    }
+  ],
+  "importer_sha256": "69bd80e8d8e4107915226edf8be6e836bca2e474536078ca50621afde0a261e6",
+  "runtime_credits": "assets/batch1/scene-actions.ts / Settings MusicCredits",
+  "validation_boundary": "User selected the existing Carefree audition. Loop edit, scene transitions and engine mix are verified separately."
+}

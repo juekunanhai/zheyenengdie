@@ -1,0 +1,84 @@
+{
+  "generated_with": "built-in image_gen",
+  "input_images": [],
+  "source_path": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-3928d5a2-27d0-4e6c-9a7b-ed1d973a6be4.png",
+  "prompt": "Use case: stylized-concept. Asset type: production-quality mobile casual stacking game UI sprite. Create one single vertical two-slot inventory tray isolated on a genuinely transparent RGBA background. Front facing orthographic view, no perspective tilt, centered with generous clear margins. One seamless upright rounded royal-blue plastic frame containing exactly TWO equal square rounded-corner pale blue empty recesses, arranged vertically, upper slot then lower slot, with a compact divider. Overall tray silhouette about 1 wide : 1.85 tall. Gentle small golden-yellow support lip only across the bottom, plus tiny matching side grip accents if structurally sensible. Maintain a friendly blue-and-yellow premium toy identity. All light comes consistently from upper left, giving warm controlled highlights across top-left bevels, cool soft contact shade under the right and lower rim, delicate ambient occlusion inside recesses. Material is premium slightly micro-matte molded soft plastic, high-quality subtle roughness, precise seams, dimensional rounded chamfers, soft compact external shadow. Refined 3D illustrated game asset, crisp silhouette suitable for small mobile HUD, restrained highlights, excellent material tactility. Recess interiors must remain completely blank and smooth enough for future icons. No plus sign, no lock, no numbers, no typography, no icons, no items, no patterned checkerboard, no background rectangle, no surrounding scene. Do not add screws or chrome or glass or neon. Do not make a flat vector drawing. Two slots only. Transparent outside the complete tray and soft alpha shadow.",
+  "iterations": 1,
+  "status": "r7_review_candidate_not_runtime_approved",
+  "file": "inventory-vertical-r7.png",
+  "sha256": "203350e401e50bd924cec7a3eda0da49b2adfef0da741b5c601b4d9d29924bc6",
+  "size": [
+    922,
+    1706
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "extrema": [
+      0,
+      255
+    ],
+    "transparent_pixel_count": 516852,
+    "opaque_pixel_count": 478,
+    "partial_pixel_count": 1055602,
+    "nonzero_bbox": [
+      25,
+      57,
+      843,
+      1706
+    ],
+    "body_alpha_typical": 253
+  },
+  "processing": "Byte-for-byte copy of generated output; no source images uploaded, no postprocessing",
+  "quality_risks": [
+    "Fine alpha fringe and isolated very-low-alpha specks visible at native resolution; inspect and clean before engine promotion.",
+    "Generated body pixels are typically alpha 253, close to opaque but not perfectly opaque."
+  ],
+  "derived": {
+    "file": "inventory-vertical-r7-clean.png",
+    "path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/assets/inventory-vertical-r7-clean.png",
+    "sha256": "d133769d446af49c2aef5055da8336e062ce1daccf8c6afa1f582170cfe01011",
+    "size": [
+      922,
+      1706
+    ],
+    "mode": "RGBA",
+    "method": "Edge cleanup: seed-connected alpha>=32 identifies the complete material; preserve all RGBA there and original soft shadows within a 32px dilation; remove disconnected exterior residue and near-white alpha<=7 fringe. All visible RGB unchanged, original alpha levels retained everywhere else. Zero hidden RGB only at fully transparent pixels to remove white matte residues. No crop, no resize, no opaque backdrop.",
+    "script": "../clean_candidate_edges.py",
+    "statistics": {
+      "changed_pixel_count": 4679,
+      "removed_near_white_low_alpha_pixel_count": 59,
+      "changed_pixel_fraction": 0.0029746994784262764,
+      "changed_alpha_max": 2,
+      "preserved_core_pixel_count": 1014834,
+      "preserved_core_rgba_identical": true,
+      "all_visible_rgb_identical": true,
+      "hidden_rgb_zeroed_pixel_count": 82,
+      "original_alpha_bbox": [
+        25,
+        57,
+        843,
+        1706
+      ],
+      "clean_alpha_bbox": [
+        76,
+        127,
+        843,
+        1584
+      ],
+      "original_alpha_mass": 254845504,
+      "clean_alpha_mass": 254840794,
+      "remaining_partial_alpha_pixel_count": 1050923
+    },
+    "qa_files": [
+      "qa/inventory-vertical-r7-light-blue-edges.png",
+      "qa/inventory-vertical-r7-dark-blue-edges.png"
+    ],
+    "status": "edge_cleaned_candidate_pending_visual_direction_approval_and_engine_import",
+    "script_sha256": "90b9bc35313351f0d71ec0c0bedf2909ccfb3795ae52a37530b26c206015de33",
+    "visual_qa": "Viewed light-blue and dark-blue original/cleaned composites. Both have clean silhouettes at intended UI size; original molding/bevel/light/shadow remain. Also viewed cleaned transparent output: large white fringe removed.",
+    "remaining_limits": [
+      "Direction candidate only; pending user approval and engine import validation.",
+      "Original body alpha around253 intentionally retained; no forced opaque body."
+    ]
+  }
+}

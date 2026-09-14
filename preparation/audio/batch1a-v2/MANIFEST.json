@@ -1,0 +1,644 @@
+{
+  "revision": "2026-09-13-A2",
+  "status": "approved_for_current_use",
+  "feedback": "缺少材质感；抓手和结束提示不合适；希望轻松、有趣。",
+  "scope": "Batch 1A 四材质碰撞与基础操作；不含背景音乐和事故音效。",
+  "source_manifests": [
+    "audio/sources/kenney/SOURCES.json",
+    "audio/sources/freesound/SOURCES.json"
+  ],
+  "source_note": "CC0 素材下载后本地剪辑、滤波、调速和混音。Freesound 使用页面公开链接的 HQ MP3，不称无损母源。",
+  "script_sha256": "f23a198a08340ffd911f03040fdcff22da37fedb80222ad6d61be3cd902fa734",
+  "entries": [
+    {
+      "id": "impact_paper_1",
+      "title": "纸箱碰撞 1",
+      "description": "真实纸箱落地：短闷响与纸壳摩擦，去除录音前后空白。",
+      "master": "audio/batch1a-v2/masters/impact_paper_1.wav",
+      "master_sha256": "a3cb82cfa77340ba0050e287c52b6f97f1f7fb6a823b0fd3dc02c500fdba7015",
+      "file": "audio/batch1a-v2/encoded/impact_paper_1.mp3",
+      "sha256": "1723d08854f14a15bafd72bfa9751a88aaaa542519c535c258c503b76c79b7e2",
+      "bytes": 5999,
+      "duration_s": 0.42,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -10.17,
+      "decode_rms_dbfs": -31.1,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/freesound/box-465451-hq.mp3",
+          "sha256": "16fe9b1a3afbaece11beeb1499f8900920dcdd53523f84b5f6d9a0fd810219e7",
+          "start_s": 0.978,
+          "duration_s": 0.4,
+          "rate": 1,
+          "highpass_hz": 85,
+          "lowpass_hz": 4600,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_paper_2",
+      "title": "纸箱碰撞 2",
+      "description": "真实纸箱落地：短闷响与纸壳摩擦，去除录音前后空白。",
+      "master": "audio/batch1a-v2/masters/impact_paper_2.wav",
+      "master_sha256": "fc3eedac0e95bf84186a78de458e0c568c64e80df9bd9bad766d30091fd59e65",
+      "file": "audio/batch1a-v2/encoded/impact_paper_2.mp3",
+      "sha256": "3150afb53987a5a20bf97d5e4422ee6183af31185e76ff109198ed8b3e08dda8",
+      "bytes": 5999,
+      "duration_s": 0.42,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -10.15,
+      "decode_rms_dbfs": -32.0,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/freesound/box-465451-hq.mp3",
+          "sha256": "16fe9b1a3afbaece11beeb1499f8900920dcdd53523f84b5f6d9a0fd810219e7",
+          "start_s": 5.908,
+          "duration_s": 0.4,
+          "rate": 1,
+          "highpass_hz": 85,
+          "lowpass_hz": 4600,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_paper_3",
+      "title": "纸箱碰撞 3",
+      "description": "真实纸箱落地：短闷响与纸壳摩擦，去除录音前后空白。",
+      "master": "audio/batch1a-v2/masters/impact_paper_3.wav",
+      "master_sha256": "387aa464e92ca01f2819a6c24da33c52af418e176f7e0927f8f4ae0facf5433f",
+      "file": "audio/batch1a-v2/encoded/impact_paper_3.mp3",
+      "sha256": "490a3e046c1c399e54311dfc1fb35c64d7f3a9588fb4bea35f9576b468fb75f4",
+      "bytes": 5999,
+      "duration_s": 0.42,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -10.28,
+      "decode_rms_dbfs": -31.03,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/freesound/box-465451-hq.mp3",
+          "sha256": "16fe9b1a3afbaece11beeb1499f8900920dcdd53523f84b5f6d9a0fd810219e7",
+          "start_s": 11.958,
+          "duration_s": 0.4,
+          "rate": 1,
+          "highpass_hz": 85,
+          "lowpass_hz": 4600,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_wood_1",
+      "title": "木板碰撞 1",
+      "description": "木板敲击的干脆起音，保留木质共鸣，缩短空尾。",
+      "master": "audio/batch1a-v2/masters/impact_wood_1.wav",
+      "master_sha256": "d03909ff937fba9a3dfd8adf042d3f57e570dadc74e3fc882fa70f7eab54a682",
+      "file": "audio/batch1a-v2/encoded/impact_wood_1.mp3",
+      "sha256": "dec6962d80dc980910c3dbf24359807ef8c3541d96bd72e516402d04ba23add5",
+      "bytes": 4432,
+      "duration_s": 0.3,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.72,
+      "decode_rms_dbfs": -28.49,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactPlank_medium_000.ogg",
+          "sha256": "8403cd7a043f0391574c88c55dd205743725b5363d2407f6de145f201690b68f",
+          "start_s": 0,
+          "duration_s": 0.26,
+          "rate": 0.95,
+          "highpass_hz": 65,
+          "lowpass_hz": 5400,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_wood_2",
+      "title": "木板碰撞 2",
+      "description": "木板敲击的干脆起音，保留木质共鸣，缩短空尾。",
+      "master": "audio/batch1a-v2/masters/impact_wood_2.wav",
+      "master_sha256": "9ce9d1a851c12f8f8607e69da670bef431d6e668c1efe1be62e2bac0d2b5276b",
+      "file": "audio/batch1a-v2/encoded/impact_wood_2.mp3",
+      "sha256": "b0c60355de07522b7f047b28efbc1f05c474452954633c49df17580c3ade5eb9",
+      "bytes": 4432,
+      "duration_s": 0.3,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.8,
+      "decode_rms_dbfs": -25.92,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactPlank_medium_001.ogg",
+          "sha256": "d7c304319f8beac616231b62041fa8da74045b62d7155965516efb9b19303df4",
+          "start_s": 0,
+          "duration_s": 0.26,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5400,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_wood_3",
+      "title": "木板碰撞 3",
+      "description": "木板敲击的干脆起音，保留木质共鸣，缩短空尾。",
+      "master": "audio/batch1a-v2/masters/impact_wood_3.wav",
+      "master_sha256": "8c99338baed37097224ed6c5ce9dbcb5cf7d2bfda9edf27f7c636be86d54d9d6",
+      "file": "audio/batch1a-v2/encoded/impact_wood_3.mp3",
+      "sha256": "d2b9f2e4c5b5eb4ebbabd6fadd800744d683d08eca419ba370f39b5ec4c8dc4a",
+      "bytes": 4432,
+      "duration_s": 0.3,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.89,
+      "decode_rms_dbfs": -26.5,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactPlank_medium_002.ogg",
+          "sha256": "f6a14da45994229676b4f29e6a35f504b5c2ec2b8166fb1a3b1aa004bc6911ef",
+          "start_s": 0,
+          "duration_s": 0.26,
+          "rate": 1.04,
+          "highpass_hz": 65,
+          "lowpass_hz": 5400,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_rubber_1",
+      "title": "篮球碰撞 1",
+      "description": "真实篮球单次反弹，保留空腔感与皮面撞击，不添加音符。",
+      "master": "audio/batch1a-v2/masters/impact_rubber_1.wav",
+      "master_sha256": "476aadba4123a913df2c5322eecc90da7622665bb1950d78eeb58311c9a95405",
+      "file": "audio/batch1a-v2/encoded/impact_rubber_1.mp3",
+      "sha256": "63996454af2c241c5bbf4e79225c32186edf8768ecc791c4dfaf578c1c83464a",
+      "bytes": 5059,
+      "duration_s": 0.34,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.82,
+      "decode_rms_dbfs": -27.73,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/freesound/ball-451642-hq.mp3",
+          "sha256": "a929399f009bb826386616e0d33ce5762005ab2d19a8c393ac7ca937f9022ae9",
+          "start_s": 4.055,
+          "duration_s": 0.32,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5400,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_rubber_2",
+      "title": "篮球碰撞 2",
+      "description": "真实篮球单次反弹，保留空腔感与皮面撞击，不添加音符。",
+      "master": "audio/batch1a-v2/masters/impact_rubber_2.wav",
+      "master_sha256": "f11f6020f7f033e56a8cc04e92a55a8a6f3df40eb65f31d0414f3e5d9397ef6a",
+      "file": "audio/batch1a-v2/encoded/impact_rubber_2.mp3",
+      "sha256": "943e30eda154470fbd86fc013a6f313b684e00490c7bd5e6093e81ea9d46d974",
+      "bytes": 5059,
+      "duration_s": 0.34,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.81,
+      "decode_rms_dbfs": -27.46,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/freesound/ball-451642-hq.mp3",
+          "sha256": "a929399f009bb826386616e0d33ce5762005ab2d19a8c393ac7ca937f9022ae9",
+          "start_s": 6.262,
+          "duration_s": 0.32,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5400,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_rubber_3",
+      "title": "篮球碰撞 3",
+      "description": "真实篮球单次反弹，保留空腔感与皮面撞击，不添加音符。",
+      "master": "audio/batch1a-v2/masters/impact_rubber_3.wav",
+      "master_sha256": "48b90afce11754f0db5daa993972dfe0c82f037015da759265d2dfe3fae81e96",
+      "file": "audio/batch1a-v2/encoded/impact_rubber_3.mp3",
+      "sha256": "c3e3daa26cbb66ea469268601306a8bf83933846e9a1e63c44fb27d4a6af75ad",
+      "bytes": 5059,
+      "duration_s": 0.34,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.82,
+      "decode_rms_dbfs": -27.87,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/freesound/ball-451642-hq.mp3",
+          "sha256": "a929399f009bb826386616e0d33ce5762005ab2d19a8c393ac7ca937f9022ae9",
+          "start_s": 8.475,
+          "duration_s": 0.32,
+          "rate": 1,
+          "highpass_hz": 65,
+          "lowpass_hz": 5400,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_metal_1",
+      "title": "冰箱碰撞 1",
+      "description": "偏沉的金属撞击叠加薄板余振，削弱刺耳高频。",
+      "master": "audio/batch1a-v2/masters/impact_metal_1.wav",
+      "master_sha256": "983f6d87a84811e09adb0d5bd42864468c15ae1bc6f7aa116ba93c607801a305",
+      "file": "audio/batch1a-v2/encoded/impact_metal_1.mp3",
+      "sha256": "a8cb0442ef13d00302e408207b41ce34da1adbabbeab473b5f9415aed5fbc56c",
+      "bytes": 5373,
+      "duration_s": 0.38,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.36,
+      "decode_rms_dbfs": -29.19,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactMetal_heavy_000.ogg",
+          "sha256": "e07045693e4a2b3d165c424e3dab4c781d9ff8880a386880ac89a51315d7f831",
+          "start_s": 0,
+          "duration_s": 0.22,
+          "rate": 0.82,
+          "highpass_hz": 65,
+          "lowpass_hz": 2800,
+          "at_s": 0,
+          "gain": 1
+        },
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactTin_medium_000.ogg",
+          "sha256": "f4bbee66ca191ec744b84fc07ac9ed2a6fda955d51cfed8360f12b62815d3cbd",
+          "start_s": 0,
+          "duration_s": 0.32,
+          "rate": 0.85,
+          "highpass_hz": 65,
+          "lowpass_hz": 4200,
+          "at_s": 0.015,
+          "gain": 0.24
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_metal_2",
+      "title": "冰箱碰撞 2",
+      "description": "偏沉的金属撞击叠加薄板余振，削弱刺耳高频。",
+      "master": "audio/batch1a-v2/masters/impact_metal_2.wav",
+      "master_sha256": "cc058fc15a73046ae73d4a99d5374ff2bd200521017e774a28fb2416796a5a03",
+      "file": "audio/batch1a-v2/encoded/impact_metal_2.mp3",
+      "sha256": "9bc35d647791b118f75a30419ee9d1a515a0dd1351a27e8a05f9b0ad3e1d661f",
+      "bytes": 5373,
+      "duration_s": 0.38,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.32,
+      "decode_rms_dbfs": -28.57,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactMetal_heavy_001.ogg",
+          "sha256": "83554049f81f4db9209379e103c30bfa63f65c42189a03f300b045c2c82e23ae",
+          "start_s": 0,
+          "duration_s": 0.22,
+          "rate": 0.82,
+          "highpass_hz": 65,
+          "lowpass_hz": 2800,
+          "at_s": 0,
+          "gain": 1
+        },
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactTin_medium_001.ogg",
+          "sha256": "84253095543c094d83cd749f42ecfbc96e356b60385f18a192c18eafb25b3cc6",
+          "start_s": 0,
+          "duration_s": 0.32,
+          "rate": 0.85,
+          "highpass_hz": 65,
+          "lowpass_hz": 4200,
+          "at_s": 0.015,
+          "gain": 0.24
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "impact_metal_3",
+      "title": "冰箱碰撞 3",
+      "description": "偏沉的金属撞击叠加薄板余振，削弱刺耳高频。",
+      "master": "audio/batch1a-v2/masters/impact_metal_3.wav",
+      "master_sha256": "c195a5aa75e315ab0edf2b2083c31580d5d0a96a3f558bb0c905e2aa08e8e96d",
+      "file": "audio/batch1a-v2/encoded/impact_metal_3.mp3",
+      "sha256": "67ef3d60f6b25036c0f9d7a2f3d0038dcbe6a2a881be06ae2f6368dfa1f05776",
+      "bytes": 5373,
+      "duration_s": 0.38,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -9.3,
+      "decode_rms_dbfs": -29.27,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactMetal_heavy_002.ogg",
+          "sha256": "b914c8f1eb7c0f34bb165d7c77f4be0351f6be0660c13c53e65424e262e2c093",
+          "start_s": 0,
+          "duration_s": 0.22,
+          "rate": 0.82,
+          "highpass_hz": 65,
+          "lowpass_hz": 2800,
+          "at_s": 0,
+          "gain": 1
+        },
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactTin_medium_002.ogg",
+          "sha256": "c1d2c4f9910d4529581ae56a9a9a01454c4619fbb7d6da7616221d8ec58cc0c4",
+          "start_s": 0,
+          "duration_s": 0.32,
+          "rate": 0.85,
+          "highpass_hz": 65,
+          "lowpass_hz": 4200,
+          "at_s": 0.015,
+          "gain": 0.24
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "claw_grip",
+      "title": "抓手合拢",
+      "description": "短促柔和的机械咔哒，去掉上一版双音符尾巴。",
+      "master": "audio/batch1a-v2/masters/claw_grip.wav",
+      "master_sha256": "88f01e1221c10f09009bd4888bf4adc666da2a2becf67045a2457f7f0cc26953",
+      "file": "audio/batch1a-v2/encoded/claw_grip.mp3",
+      "sha256": "853e53ac7af9d7efe6f0708b8e4b22f61c5170f7839ba35af5e51ab17fe0a503",
+      "bytes": 3492,
+      "duration_s": 0.21,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -11.2,
+      "decode_rms_dbfs": -29.02,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/interface/Audio/switch_006.ogg",
+          "sha256": "2676ddc4e341ee557b4d1dc8767ef8655540d66fb3ded6a1614080dbc4dc6f18",
+          "start_s": 0,
+          "duration_s": 0.17,
+          "rate": 1.12,
+          "highpass_hz": 65,
+          "lowpass_hz": 3700,
+          "at_s": 0,
+          "gain": 1
+        },
+        {
+          "file": "audio/sources/kenney/interface/Audio/click_001.ogg",
+          "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+          "start_s": 0,
+          "duration_s": 0.065,
+          "rate": 0.9,
+          "highpass_hz": 65,
+          "lowpass_hz": 3200,
+          "at_s": 0.09,
+          "gain": 0.26
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "claw_open",
+      "title": "抓手松开",
+      "description": "轻巧的卡扣松脱，辅以很轻的弹性回位。",
+      "master": "audio/batch1a-v2/masters/claw_open.wav",
+      "master_sha256": "01573d7ab720b0e1b1a4e59bbdd5a80c93ed59c9a13a92bc778efd87f2628fb8",
+      "file": "audio/batch1a-v2/encoded/claw_open.mp3",
+      "sha256": "55decb88a476e76aaad14ed5d8594084c97f870f4364a05a6a341c916d737290",
+      "bytes": 3178,
+      "duration_s": 0.19,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -11.76,
+      "decode_rms_dbfs": -37.1,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/interface/Audio/click_001.ogg",
+          "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+          "start_s": 0,
+          "duration_s": 0.065,
+          "rate": 0.9,
+          "highpass_hz": 65,
+          "lowpass_hz": 3200,
+          "at_s": 0,
+          "gain": 1
+        },
+        {
+          "file": "audio/sources/kenney/interface/Audio/pluck_001.ogg",
+          "sha256": "be97ec4893a02d6eccfb678daa76c83e34cb2583b834ec2593d2641def739fa4",
+          "start_s": 0,
+          "duration_s": 0.1,
+          "rate": 0.92,
+          "highpass_hz": 65,
+          "lowpass_hz": 3200,
+          "at_s": 0.055,
+          "gain": 0.2
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "rotate_90",
+      "title": "旋转",
+      "description": "短滑动加到位咔哒，操作响应清楚，尾音不过长。",
+      "master": "audio/batch1a-v2/masters/rotate_90.wav",
+      "master_sha256": "d1eda0a06a2101bd0207a3015842588726160e159d7aa3baad8205aa3d060ad5",
+      "file": "audio/batch1a-v2/encoded/rotate_90.mp3",
+      "sha256": "801db367f5dc91667bc5bb3aec6aa2d3dd72c5c861bf299404d98be5ebf7f86a",
+      "bytes": 3492,
+      "duration_s": 0.21,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -11.51,
+      "decode_rms_dbfs": -32.68,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/interface/Audio/scratch_001.ogg",
+          "sha256": "5c294d2e1a6b6d07ee2d75b17105a55ad3527e5482dd60652dc49c2ea4c70096",
+          "start_s": 0,
+          "duration_s": 0.13,
+          "rate": 1.2,
+          "highpass_hz": 180,
+          "lowpass_hz": 3500,
+          "at_s": 0,
+          "gain": 0.35
+        },
+        {
+          "file": "audio/sources/kenney/interface/Audio/click_001.ogg",
+          "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+          "start_s": 0,
+          "duration_s": 0.065,
+          "rate": 0.9,
+          "highpass_hz": 65,
+          "lowpass_hz": 3200,
+          "at_s": 0.09,
+          "gain": 0.85
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "next_handoff",
+      "title": "下一件交接",
+      "description": "轻弹一下，低存在感。",
+      "master": "audio/batch1a-v2/masters/next_handoff.wav",
+      "master_sha256": "d76eea3ebbbcd74fc5f99dabbb61579f2daeea408e586476f25d9ef505f5d025",
+      "file": "audio/batch1a-v2/encoded/next_handoff.mp3",
+      "sha256": "7cd6981bd966f1217836abbf24c29d3f0de518b9da5633fbc5a03af16a8c9e44",
+      "bytes": 2551,
+      "duration_s": 0.14,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -15.07,
+      "decode_rms_dbfs": -33.26,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/interface/Audio/pluck_001.ogg",
+          "sha256": "be97ec4893a02d6eccfb678daa76c83e34cb2583b834ec2593d2641def739fa4",
+          "start_s": 0,
+          "duration_s": 0.1,
+          "rate": 0.92,
+          "highpass_hz": 65,
+          "lowpass_hz": 3200,
+          "at_s": 0,
+          "gain": 1
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "stable",
+      "title": "稳定落好",
+      "description": "两次轻木点音，提示放稳，避免每件都响一段旋律。",
+      "master": "audio/batch1a-v2/masters/stable.wav",
+      "master_sha256": "199d84433a6202d71b6b3ec9518f487949b072efc809d9cfbb240a8a54c8585d",
+      "file": "audio/batch1a-v2/encoded/stable.mp3",
+      "sha256": "24aea0fa701aeea0a52632dbd46369ab9dab22a842b0b2132e9c728fb6001545",
+      "bytes": 3805,
+      "duration_s": 0.24,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -13.6,
+      "decode_rms_dbfs": -32.97,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactWood_light_000.ogg",
+          "sha256": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3",
+          "start_s": 0,
+          "duration_s": 0.15,
+          "rate": 1.3,
+          "highpass_hz": 65,
+          "lowpass_hz": 4200,
+          "at_s": 0,
+          "gain": 0.7
+        },
+        {
+          "file": "audio/sources/kenney/interface/Audio/pluck_001.ogg",
+          "sha256": "be97ec4893a02d6eccfb678daa76c83e34cb2583b834ec2593d2641def739fa4",
+          "start_s": 0,
+          "duration_s": 0.1,
+          "rate": 0.92,
+          "highpass_hz": 65,
+          "lowpass_hz": 3200,
+          "at_s": 0.085,
+          "gain": 0.45
+        }
+      ],
+      "status": "approved_for_current_use"
+    },
+    {
+      "id": "run_end",
+      "title": "本轮结束",
+      "description": "短促的“咚、啵啵”收尾，轻松俏皮，替换下行失败旋律。",
+      "master": "audio/batch1a-v2/masters/run_end.wav",
+      "master_sha256": "1978b0c4bfc38a2c87c5d741b8cd635ba007bda8890a88caec26b6f7de6cf5c8",
+      "file": "audio/batch1a-v2/encoded/run_end.mp3",
+      "sha256": "0aafc01b7163b807ceff8df3aead2d5100c4d04f9455588ece3b70a15279acd8",
+      "bytes": 7567,
+      "duration_s": 0.57,
+      "channels": 1,
+      "sample_rate": 44100,
+      "decode_peak_dbfs": -11.52,
+      "decode_rms_dbfs": -32.21,
+      "sources_and_edits": [
+        {
+          "file": "audio/sources/kenney/impact/Audio/impactWood_light_000.ogg",
+          "sha256": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3",
+          "start_s": 0,
+          "duration_s": 0.15,
+          "rate": 1.3,
+          "highpass_hz": 65,
+          "lowpass_hz": 4200,
+          "at_s": 0,
+          "gain": 0.75
+        },
+        {
+          "file": "audio/sources/kenney/interface/Audio/pluck_002.ogg",
+          "sha256": "c977fe249ff42d1c93a552b33abc13a8399df3879fa510475426e5c4bbac1da9",
+          "start_s": 0,
+          "duration_s": 0.16,
+          "rate": 0.76,
+          "highpass_hz": 65,
+          "lowpass_hz": 3300,
+          "at_s": 0.14,
+          "gain": 0.85
+        },
+        {
+          "file": "audio/sources/kenney/interface/Audio/pluck_001.ogg",
+          "sha256": "be97ec4893a02d6eccfb678daa76c83e34cb2583b834ec2593d2641def739fa4",
+          "start_s": 0,
+          "duration_s": 0.1,
+          "rate": 1.16,
+          "highpass_hz": 65,
+          "lowpass_hz": 3600,
+          "at_s": 0.32,
+          "gain": 0.6
+        }
+      ],
+      "status": "approved_for_current_use"
+    }
+  ],
+  "verified": "18 个 MP3 本地解码、有限采样、峰值与时长；来源和编辑配方逐项记录。",
+  "not_proven": [
+    "用户听感验收",
+    "游戏混音和场景切换播放",
+    "微信和手机扬声器实测"
+  ],
+  "imported_into_game": true,
+  "approval_date": "2026-09-13",
+  "approval_text": "音频先按照这版使用，后续如果不合适再换"
+}

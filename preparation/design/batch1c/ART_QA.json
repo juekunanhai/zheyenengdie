@@ -1,0 +1,100 @@
+{
+  "status": "passed_static_art_checks_only",
+  "source_alpha_note": "Generated outputs were RGB; locally removed only boundary-connected neutral background. Originals preserved.",
+  "subjective_user_signoff": "not_obtained_for_new_batch1c_art",
+  "checks": [
+    {
+      "slug": "wooden_crate",
+      "self_intersections": [],
+      "clear_margin": true,
+      "pixel_size": [
+        784,
+        721
+      ],
+      "opaque_pixels": 521675,
+      "transparent_pixels": 36868,
+      "visual_review": "complete_sprite_and_geometry_overlay_viewed",
+      "native_physics": "pending"
+    },
+    {
+      "slug": "ice_block",
+      "self_intersections": [],
+      "clear_margin": true,
+      "pixel_size": [
+        784,
+        514
+      ],
+      "opaque_pixels": 369376,
+      "transparent_pixels": 28953,
+      "visual_review": "complete_sprite_and_geometry_overlay_viewed",
+      "native_physics": "pending"
+    },
+    {
+      "slug": "sofa",
+      "self_intersections": [],
+      "clear_margin": true,
+      "pixel_size": [
+        784,
+        365
+      ],
+      "opaque_pixels": 235845,
+      "transparent_pixels": 46554,
+      "visual_review": "complete_sprite_and_geometry_overlay_viewed",
+      "native_physics": "pending"
+    },
+    {
+      "slug": "whale",
+      "self_intersections": [],
+      "clear_margin": true,
+      "pixel_size": [
+        784,
+        346
+      ],
+      "opaque_pixels": 190198,
+      "transparent_pixels": 75279,
+      "visual_review": "complete_sprite_and_geometry_overlay_viewed",
+      "native_physics": "pending"
+    },
+    {
+      "slug": "burger",
+      "self_intersections": [],
+      "clear_margin": true,
+      "pixel_size": [
+        304,
+        245
+      ],
+      "opaque_pixels": 24263,
+      "transparent_pixels": 14982,
+      "visual_review": "R2 upper-bun and R3 lower-bun partial redraws; all R2 upper/ingredient pixels through row 219 preserved; seam-free final comparison and geometry overlay reviewed",
+      "native_physics": "R6 left/right 10-unit natural support passed in current root run; full 10-check/19-release sequence verification still in progress",
+      "revision_manifest": "preparation/design/batch1c/burger-r3/GEOMETRY.json",
+      "revision": "burger-r3",
+      "sprite_sha256": "5c072d91000b01eb1e16af9a01bbd3cafa8922e1a94fcedd4abb109c97937d89",
+      "next_sha256": "8332ef5048e449555016b1e0a481bd9be35a5e0e350919871f86d86695f764a2",
+      "next_alpha_matches": true,
+      "flat_top_width_world": 76.363637,
+      "flat_bottom_width_world": 80.909091,
+      "detailed_art_checks": "preparation/design/batch1c/burger-r3/ART_QA.json"
+    },
+    {
+      "slug": "slipper",
+      "self_intersections": [],
+      "clear_margin": true,
+      "pixel_size": [
+        373,
+        218
+      ],
+      "opaque_pixels": 520,
+      "transparent_pixels": 26604,
+      "visual_review": "complete_sprite_and_geometry_overlay_viewed",
+      "native_physics": "pending"
+    }
+  ],
+  "composition": "Five necessary object redraws; burger upper/lower buns locally redrawn in R2/R3 while ingredient pixels remain preserved; slipper reuses formal source pixels.",
+  "review_geometry_sha256": "cacc91747bab060e6e53814ff15a207e454e3b9de3ac2d28f969c0966775844e",
+  "review_images": {
+    "contact_sheet_sha256": "1bbaaccba3bcc5134f2250440dd0ed4b12823b27468f5d57b3108a28f66baf95",
+    "burger_overlay_sha256": "836d6ad7951272f97208b2a6da8e461cded1470587ce9f54014ccf924de0bb1d",
+    "prior_r2_images": "review/history-burger-r2/"
+  }
+}

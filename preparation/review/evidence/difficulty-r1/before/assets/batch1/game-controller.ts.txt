@@ -1,0 +1,249 @@
+import { _decorator, AudioClip, Component, director, SpriteFrame, Vec2 } from 'cc';
+import { GameAudio } from './game-audio';
+import { bindAction, readSettings, RunLifecycle, TouchBinding, writeSettings } from './local-platform';
+import { CALIBRATION_SEQUENCE, ENTER_SECONDS, localBounds, MAX_OBSERVE_SECONDS, ObjectKind, OBJECTS, planarAngle, PLANNING_SECONDS,
+    runResult, RunPhase, STABLE_SECONDS } from './object-data';
+import { PlayView } from './play-view';
+import { TowerBody, TowerWorld } from './tower-world';
+const { ccclass, property } = _decorator;
+
+@ccclass('StackGameController')
+export class StackGameController extends Component {
+    @property([SpriteFrame]) frames: SpriteFrame[] = [];
+    @property([AudioClip]) approvedSounds: AudioClip[] = [];
+    private phase: RunPhase = 'entering';
+    private world!: TowerWorld;
+    private display!: PlayView;
+    private lifecycle!: RunLifecycle;
+    private touches!: TouchBinding;
+    private audio!: GameAudio;
+    private current: TowerBody | null = null;
+    private boundary = { top: 0, bottom: 0, left: 0, right: 0 };
+    private clock = 0;
+    private stableFor = 0;
+    private planningLeft = PLANNING_SECONDS;
+    private releaseCount = 0;
+    private placedCount = 0;
+    private peak = 0;
+    private finger: number | null = null;
+    private dragOffset = 0;
+    private tutorial = false;
+    private rotations = 0;
+    private sequence: readonly ObjectKind[] = CALIBRATION_SEQUENCE;
+    private untimedCalibration = false;
+
+    onLoad(): void {
+        this.world = new TowerWorld(this.node.scene!, (record, pair, speed) => this.impact(record, pair, speed));
+        this.display = new PlayView(this.node, new Map(this.frames.map(frame => [frame.name, frame])));
+        this.audio = new GameAudio(this.node, new Map(this.approvedSounds.map(clip => [clip.name, clip])));
+        this.tutorial = !readSettings().tutorialDone;
+        this.lifecycle = new RunLifecycle(paused => {
+            this.finger = null;
+            this.audio.pause(paused);
+            this.display.setHint(paused ? '已暂停 · 点击暂停按钮继续' : '');
+        });
+        this.touches = new TouchBinding(this.display.input, {
+            start: (id, point) => this.touchStart(id, point), move: (id, point) => this.touchMove(id, point),
+            end: id => this.touchEnd(id), cancel: id => { if (id === this.finger) this.finger = null; },
+        });
+        bindAction(this.display.rotate, () => { this.audio.interact(); this.rotate(); });
+        bindAction(this.display.pause, () => this.lifecycle.togglePause());
+        // Inventory is visually preserved, but its events cannot release a held object.
+        bindAction(this.display.safe.getChildByName('InventoryColumn')!, () => {});
+        this.spawn();
+    }
+
+    private spawn(): void {
+        const index = this.releaseCount % this.sequence.length;
+        const spec = OBJECTS[this.sequence[index]];
+        this.boundary = this.display.beginPlacement(this.world.placementTop(), Math.max(spec.width, spec.height));
+        this.current = this.world.create(spec, 0, this.boundary.top - localBounds(spec, 0).top + 55);
+        this.display.setNext(this.sequence[(index + 1) % this.sequence.length]);
+        this.audio.play('next_handoff', .35);
+        this.phase = 'entering'; this.clock = 0;
+        this.planningLeft = PLANNING_SECONDS; this.rotations = 0;
+    }
+
+    update(delta: number): void {
+        this.lifecycle.update(delta);
+        if (this.lifecycle.paused || this.phase === 'ended') return;
+        const dt = Math.min(delta, .067);
+        this.clock += delta; this.audio.update(dt);
+        for (const record of this.world.bodies) {
+            if (!record.collider.enabled) continue;
+            if (record.contactSeconds !== null)
+                record.contactSeconds = Math.min(MAX_OBSERVE_SECONDS, record.contactSeconds + delta);
+            const edge = record.lossBoundary;
+            if (!edge) continue;
+            const bounds = this.world.bounds(record);
+            if (bounds.top < edge.bottom || bounds.right < edge.left || bounds.left > edge.right) {
+                this.finish('calibration_drop'); return;
+            }
+        }
+        this.confirmStable(dt);
+        if (this.phase === 'entering') this.enter();
+        else if (this.phase === 'planning') this.plan(dt);
+        else if (this.phase === 'falling' || this.phase === 'observing') this.observe();
+    }
+
+    lateUpdate(dt: number): void {
+        if (!this.display || this.lifecycle.paused) return;
+        const held = this.phase === 'planning' || this.phase === 'entering' ? this.current : null;
+        if (this.display.fit()) {
+            this.boundary = this.display.beginPlacement(this.world.placementTop(),
+                held ? Math.max(held.spec.width, held.spec.height) : 0);
+            if (held && this.phase === 'planning') {
+                const bounds = localBounds(held.spec, planarAngle(held.node.rotation));
+                held.node.setPosition(held.node.position.x, this.boundary.top - bounds.top, 0);
+                this.moveTo(held.node.position.x);
+                this.finger = null;
+            }
+        }
+        this.display.update(Math.min(dt, .067), this.world.bodies, held, Math.min(1, this.clock / .24), this.phase === 'entering');
+    }
+
+    private enter(): void {
+        const current = this.current!;
+        const t = Math.min(1, this.clock / ENTER_SECONDS);
+        current.node.setPosition(current.node.position.x, this.boundary.top - localBounds(current.spec, 0).top + 55 * (1 - t) ** 3, 0);
+        if (t === 1) { this.phase = 'planning'; this.clock = 0; this.audio.play('claw_grip'); this.plan(0); }
+    }
+
+    private plan(dt: number): void {
+        if (this.world.hasPlacementHazard()) {
+            this.finger = null;
+            this.display.setHint('等待掉落结束');
+            return;
+        }
+        const exempt = this.untimedCalibration || (this.tutorial && this.releaseCount < 2);
+        if (!exempt) this.planningLeft = Math.max(0, this.planningLeft - dt);
+        const text = this.untimedCalibration ? '观察 NEXT · 松手释放' : exempt ? (this.releaseCount === 1 && this.rotations === 0 ? '试试右下旋转按钮，再松手释放' : '左右拖动，松手释放')
+            : `${Math.ceil(this.planningLeft)} 秒后释放`;
+        this.display.setHint(text);
+        if (!exempt && this.planningLeft === 0) this.release();
+    }
+
+    private touchStart(id: number, point: Vec2): void {
+        this.audio.interact();
+        if (this.phase !== 'planning' || this.lifecycle.paused || this.finger !== null) return;
+        this.finger = id;
+        this.dragOffset = this.current!.node.position.x - this.display.pointerX(point);
+    }
+    private touchMove(id: number, point: Vec2): void {
+        if (id !== this.finger || this.phase !== 'planning' || this.lifecycle.paused) return;
+        this.moveTo(this.display.pointerX(point) + this.dragOffset);
+    }
+    private touchEnd(id: number): void {
+        if (id !== this.finger) return;
+        this.finger = null;
+        this.release();
+    }
+
+    moveTo(x: number): void {
+        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused) return;
+        const bounds = localBounds(this.current.spec, planarAngle(this.current.node.rotation));
+        const clamped = Math.max(this.boundary.left - bounds.left + 4, Math.min(this.boundary.right - bounds.right - 4, x));
+        this.current.node.setPosition(clamped, this.current.node.position.y, 0);
+    }
+
+    rotate(): void {
+        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused) return;
+        const current = this.current;
+        this.rotations++;
+        current.node.setRotationFromEuler(0, 0, -(this.rotations % 4) * 90);
+        const bounds = localBounds(current.spec, -(this.rotations % 4) * 90);
+        current.node.setPosition(current.node.position.x, this.boundary.top - bounds.top, 0);
+        this.moveTo(current.node.position.x);
+        this.audio.play('skill_rotate_90');
+    }
+
+    release(): void {
+        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || this.world.hasPlacementHazard()) return;
+        this.phase = 'falling'; this.clock = 0; this.finger = null;
+        this.stableFor = 0;
+        this.current.lossBoundary = { left: this.boundary.left, right: this.boundary.right, bottom: this.boundary.bottom };
+        this.world.release(this.current); this.releaseCount++;
+        this.display.setHint(''); this.audio.play('claw_release');
+    }
+
+    /** Local experiment host may select a sequence before the first release.
+     * No mid-run NEXT replacement, persistent setting, or production director. */
+    configureCalibration(sequence: readonly ObjectKind[], untimed = false): boolean {
+        if (this.releaseCount !== 0 || !this.current || this.phase === 'ended'
+            || sequence.length < 2 || sequence[0] !== this.current.spec.kind
+            || sequence.some(kind => !OBJECTS[kind] || !this.frames.some(frame => frame.name === `object_${kind}`)
+                || !this.frames.some(frame => frame.name === `next_${kind}`))) return false;
+        this.sequence = [...sequence]; this.untimedCalibration = untimed;
+        this.display.setNext(this.sequence[1]);
+        return true;
+    }
+
+    private observe(): void {
+        const current = this.current!;
+        if (current.contactSeconds !== null && this.phase === 'falling') {
+            this.phase = 'observing';
+        }
+        if (this.phase !== 'observing' || this.world.hasPlacementHazard()) return;
+        if (!current.placed && current.contactSeconds! < MAX_OBSERVE_SECONDS) return;
+        // Handoff does not mark an unsettled piece as placed or award its height.
+        // The first-run exemption concerns the first two releases, even if settling is delayed.
+        if (this.tutorial && this.releaseCount >= 2) {
+            const settings = readSettings(); settings.tutorialDone = true; writeSettings(settings);
+        }
+        this.spawn();
+    }
+
+    private confirmStable(dt: number): void {
+        this.stableFor = this.world.isStable() ? this.stableFor + dt : 0;
+        if (this.stableFor < STABLE_SECONDS) return;
+        let confirmed = 0;
+        for (const record of this.world.bodies) {
+            if (!record.collider.enabled || record.placed) continue;
+            record.placed = true; confirmed++;
+        }
+        if (!confirmed) return;
+        this.placedCount += confirmed;
+        this.peak = Math.max(this.peak, this.world.confirmedTop());
+        this.display.setHeight(this.peak);
+        // Camera room is selected at handoff, independently of delayed score confirmation.
+        // The approved stable cue is reserved for qualified highlights in Batch 2.
+    }
+
+    /** Internal 1A end/retry path; the official incident failure rules belong to 1B. */
+    finish(reason = 'calibration_end'): void {
+        if (this.phase === 'ended') return;
+        this.phase = 'ended'; this.clock = 0; this.finger = null;
+        runResult.height = this.peak / 100; runResult.placed = this.placedCount; runResult.reason = reason;
+        const settings = readSettings(); settings.tutorialDone = true; writeSettings(settings);
+        this.audio.pause(true);
+        director.loadScene('Result');
+    }
+
+    private impact(record: TowerBody, pair: string, speed: number): void {
+        if (speed < .6 || this.phase === 'ended') return;
+        const bounds = this.world.bounds(record);
+        if (bounds.top < this.boundary.bottom || bounds.right < this.boundary.left || bounds.left > this.boundary.right) return;
+        this.audio.play(`impact_${record.spec.kind}`, Math.min(.85, .25 + speed * .035), pair);
+    }
+
+    /** Read-only diagnostics used by the local calibration page. */
+    snapshot(): object {
+        return { phase: this.phase, releases: this.releaseCount, placed: this.placedCount, peakMetres: this.peak / 100,
+            sequence: [...this.sequence], untimedCalibration: this.untimedCalibration,
+            observationSeconds: this.current?.contactSeconds, maxObserveSeconds: MAX_OBSERVE_SECONDS,
+            placementBlocked: this.world.hasPlacementHazard(), placementTop: this.world.placementTop(),
+            secondsLeft: this.planningLeft, tutorial: this.tutorial, paused: this.lifecycle.paused,
+            boundary: this.boundary, view: this.display.snapshot(), audioClips: this.approvedSounds.length,
+            currentId: this.current?.id, bodies: this.world.bodies.map(r => ({ id: r.id, kind: r.spec.kind,
+                position: r.node.position.clone(), angle: planarAngle(r.node.rotation), size: [r.spec.width, r.spec.height],
+                physicsAxis: r.body.getWorldVector(new Vec2(1, 0), new Vec2()),
+                velocity: r.body.linearVelocity.clone(), angularVelocity: r.body.angularVelocity,
+                mass: r.body.getMass(), awake: r.body.isAwake(), contacts: r.contacts.size,
+                contactSeconds: r.contactSeconds, lossBoundary: r.lossBoundary,
+                placed: r.placed, type: r.body.type, scale: r.node.worldScale.clone(), bounds: this.world.bounds(r) })) };
+    }
+
+    onDestroy(): void {
+        this.audio?.dispose(); this.touches?.dispose(); this.lifecycle?.dispose(); this.world?.dispose(); this.display?.dispose();
+    }
+}

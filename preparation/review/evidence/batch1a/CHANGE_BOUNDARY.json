@@ -1,0 +1,65 @@
+{
+  "status": "passed_original_files_preserved_except_scene_bindings",
+  "compared_original_files": 116,
+  "changed_original_files": [
+    "assets/batch0/scenes/Home.scene",
+    "assets/batch0/scenes/Result.scene",
+    "assets/batch0/scenes/Settings.scene",
+    "assets/batch0/scenes/HUD.scene"
+  ],
+  "settings_unchanged": true,
+  "original_art_and_existing_meta_unchanged": true,
+  "added_runtime_ts": 7,
+  "added_next_images": 3,
+  "added_approved_audio": 18,
+  "contact_r1": {
+    "baseline": "temp/contact-fix-baseline",
+    "changed_runtime_files": [
+      "assets/batch0/presentation/HeightBackdrop.ts",
+      "assets/batch1/play-view.ts",
+      "assets/batch1/object-data.ts",
+      "assets/batch1/tower-world.ts"
+    ],
+    "project_settings_changed": false,
+    "formal_pngs_changed": false,
+    "formal_scales_changed": false,
+    "imported_pngs_changed": false,
+    "audio_files_changed": false,
+    "new_runtime_scripts": 0,
+    "new_dependencies": 0
+  },
+  "basketball_tape_r1": {
+    "baseline": "temp/basketball-tape-baseline",
+    "changed_runtime_files": [
+      "assets/batch1/object-data.ts",
+      "assets/batch1/tower-world.ts"
+    ],
+    "project_settings_changed": false,
+    "sprite_or_collider_geometry_changed": false,
+    "audio_files_changed": false,
+    "new_runtime_scripts": 0,
+    "new_dependencies": 0,
+    "new_gameplay_ui": false,
+    "approved_parameters": {
+      "friction": 0.85,
+      "contact_angular_damping": 6,
+      "air_angular_damping": 0.1
+    }
+  },
+  "adhesion_r2": {
+    "baseline": "temp/adhesion-r2-baseline",
+    "changed_runtime_files": [
+      "assets/batch1/object-data.ts",
+      "assets/batch1/tower-world.ts",
+      "assets/batch1/play-view.ts"
+    ],
+    "project_settings_changed": false,
+    "formal_pngs_changed": false,
+    "formal_scales_changed": false,
+    "collider_geometry_changed": false,
+    "audio_files_changed": false,
+    "new_runtime_scripts": 0,
+    "new_dependencies": 0,
+    "mechanics": "Approved upper/lower contact adhesion and contact cushioning; all existing bodies remain physical."
+  }
+}

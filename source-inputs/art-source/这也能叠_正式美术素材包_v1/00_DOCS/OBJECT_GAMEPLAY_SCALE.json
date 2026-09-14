@@ -1,0 +1,276 @@
+{
+  "baseline": "cardboard_box width_u=1.0",
+  "objects": [
+    {
+      "id": 1,
+      "slug": "cardboard_box",
+      "name": "纸箱",
+      "sprite": "02_ASSETS/objects/object_cardboard_box.png",
+      "next": "02_ASSETS/next/next_cardboard_box.png",
+      "gameplay_scale": {
+        "width_u": 1.0,
+        "height_u": 1.0
+      }
+    },
+    {
+      "id": 2,
+      "slug": "wooden_crate",
+      "name": "木箱",
+      "sprite": "02_ASSETS/objects/object_wooden_crate.png",
+      "next": "02_ASSETS/next/next_wooden_crate.png",
+      "gameplay_scale": {
+        "width_u": 1.0,
+        "height_u": 1.0
+      }
+    },
+    {
+      "id": 3,
+      "slug": "sofa",
+      "name": "沙发",
+      "sprite": "02_ASSETS/objects/object_sofa.png",
+      "next": "02_ASSETS/next/next_sofa.png",
+      "gameplay_scale": {
+        "width_u": 1.75,
+        "height_u": 0.9
+      }
+    },
+    {
+      "id": 4,
+      "slug": "toilet",
+      "name": "马桶",
+      "sprite": "02_ASSETS/objects/object_toilet.png",
+      "next": "02_ASSETS/next/next_toilet.png",
+      "gameplay_scale": {
+        "width_u": 0.85,
+        "height_u": 1.15
+      }
+    },
+    {
+      "id": 5,
+      "slug": "burger",
+      "name": "巨型汉堡",
+      "sprite": "02_ASSETS/objects/object_burger.png",
+      "next": "02_ASSETS/next/next_burger.png",
+      "gameplay_scale": {
+        "width_u": 1.0,
+        "height_u": 0.85
+      }
+    },
+    {
+      "id": 6,
+      "slug": "basketball",
+      "name": "篮球",
+      "sprite": "02_ASSETS/objects/object_basketball.png",
+      "next": "02_ASSETS/next/next_basketball.png",
+      "gameplay_scale": {
+        "width_u": 0.68,
+        "height_u": 0.68
+      }
+    },
+    {
+      "id": 7,
+      "slug": "ice_block",
+      "name": "冰块",
+      "sprite": "02_ASSETS/objects/object_ice_block.png",
+      "next": "02_ASSETS/next/next_ice_block.png",
+      "gameplay_scale": {
+        "width_u": 0.88,
+        "height_u": 0.88
+      }
+    },
+    {
+      "id": 8,
+      "slug": "wood_plank",
+      "name": "长木板",
+      "sprite": "02_ASSETS/objects/object_wood_plank.png",
+      "next": "02_ASSETS/next/next_wood_plank.png",
+      "gameplay_scale": {
+        "width_u": 1.95,
+        "height_u": 0.28
+      }
+    },
+    {
+      "id": 9,
+      "slug": "fridge",
+      "name": "冰箱",
+      "sprite": "02_ASSETS/objects/object_fridge.png",
+      "next": "02_ASSETS/next/next_fridge.png",
+      "gameplay_scale": {
+        "width_u": 0.82,
+        "height_u": 1.45
+      }
+    },
+    {
+      "id": 10,
+      "slug": "dumbbell",
+      "name": "哑铃",
+      "sprite": "02_ASSETS/objects/object_dumbbell.png",
+      "next": "02_ASSETS/next/next_dumbbell.png",
+      "gameplay_scale": {
+        "width_u": 1.15,
+        "height_u": 0.45
+      }
+    },
+    {
+      "id": 11,
+      "slug": "slipper",
+      "name": "巨型拖鞋",
+      "sprite": "02_ASSETS/objects/object_slipper.png",
+      "next": "02_ASSETS/next/next_slipper.png",
+      "gameplay_scale": {
+        "width_u": 1.1,
+        "height_u": 0.45
+      }
+    },
+    {
+      "id": 12,
+      "slug": "whale",
+      "name": "鲸鱼",
+      "sprite": "02_ASSETS/objects/object_whale.png",
+      "next": "02_ASSETS/next/next_whale.png",
+      "gameplay_scale": {
+        "width_u": 2.25,
+        "height_u": 1.0
+      }
+    },
+    {
+      "id": 13,
+      "slug": "television",
+      "name": "电视机",
+      "sprite": "02_ASSETS/objects/object_television.png",
+      "next": "02_ASSETS/next/next_television.png",
+      "gameplay_scale": {
+        "width_u": 1.05,
+        "height_u": 0.9
+      }
+    },
+    {
+      "id": 14,
+      "slug": "bathtub",
+      "name": "浴缸",
+      "sprite": "02_ASSETS/objects/object_bathtub.png",
+      "next": "02_ASSETS/next/next_bathtub.png",
+      "gameplay_scale": {
+        "width_u": 1.55,
+        "height_u": 0.72
+      }
+    },
+    {
+      "id": 15,
+      "slug": "piano",
+      "name": "钢琴",
+      "sprite": "02_ASSETS/objects/object_piano.png",
+      "next": "02_ASSETS/next/next_piano.png",
+      "gameplay_scale": {
+        "width_u": 1.65,
+        "height_u": 1.1
+      }
+    },
+    {
+      "id": 16,
+      "slug": "tire",
+      "name": "轮胎",
+      "sprite": "02_ASSETS/objects/object_tire.png",
+      "next": "02_ASSETS/next/next_tire.png",
+      "gameplay_scale": {
+        "width_u": 0.95,
+        "height_u": 0.95
+      }
+    },
+    {
+      "id": 17,
+      "slug": "bowling_ball",
+      "name": "保龄球",
+      "sprite": "02_ASSETS/objects/object_bowling_ball.png",
+      "next": "02_ASSETS/next/next_bowling_ball.png",
+      "gameplay_scale": {
+        "width_u": 0.62,
+        "height_u": 0.62
+      }
+    },
+    {
+      "id": 18,
+      "slug": "oil_drum",
+      "name": "油桶",
+      "sprite": "02_ASSETS/objects/object_oil_drum.png",
+      "next": "02_ASSETS/next/next_oil_drum.png",
+      "gameplay_scale": {
+        "width_u": 0.72,
+        "height_u": 1.12
+      }
+    },
+    {
+      "id": 19,
+      "slug": "spring_pad",
+      "name": "弹簧垫",
+      "sprite": "02_ASSETS/objects/object_spring_pad.png",
+      "next": "02_ASSETS/next/next_spring_pad.png",
+      "gameplay_scale": {
+        "width_u": 0.9,
+        "height_u": 0.72
+      }
+    },
+    {
+      "id": 20,
+      "slug": "cat_bed",
+      "name": "猫窝",
+      "sprite": "02_ASSETS/objects/object_cat_bed.png",
+      "next": "02_ASSETS/next/next_cat_bed.png",
+      "gameplay_scale": {
+        "width_u": 1.2,
+        "height_u": 0.55
+      }
+    },
+    {
+      "id": 21,
+      "slug": "giraffe",
+      "name": "长颈鹿",
+      "sprite": "02_ASSETS/objects/object_giraffe.png",
+      "next": "02_ASSETS/next/next_giraffe.png",
+      "gameplay_scale": {
+        "width_u": 0.75,
+        "height_u": 2.05
+      }
+    },
+    {
+      "id": 22,
+      "slug": "ufo",
+      "name": "UFO",
+      "sprite": "02_ASSETS/objects/object_ufo.png",
+      "next": "02_ASSETS/next/next_ufo.png",
+      "gameplay_scale": {
+        "width_u": 1.7,
+        "height_u": 0.62
+      }
+    },
+    {
+      "id": 23,
+      "slug": "rocket",
+      "name": "火箭",
+      "sprite": "02_ASSETS/objects/object_rocket.png",
+      "next": "02_ASSETS/next/next_rocket.png",
+      "gameplay_scale": {
+        "width_u": 0.78,
+        "height_u": 1.75
+      }
+    },
+    {
+      "id": 24,
+      "slug": "vending_machine",
+      "name": "自动贩卖机",
+      "sprite": "02_ASSETS/objects/object_vending_machine.png",
+      "next": "02_ASSETS/next/next_vending_machine.png",
+      "gameplay_scale": {
+        "width_u": 0.92,
+        "height_u": 1.55
+      }
+    }
+  ],
+  "document_revision": "2026-09-12-R1",
+  "path_base": "正式美术包根目录",
+  "usage_notes": [
+    "游戏比例沿用原始 24 个 width_u/height_u；本轮不改变任何物体尺度。",
+    "显示锚点、初始方向、抓手挂点与 Collider 须分别校准；不能把带残片的透明画布或 PNG 像素直接当物理尺寸。",
+    "不能为凑物理宽高强行非等比拉伸图片；现有切图按 Manifest 工程状态处理。"
+  ]
+}

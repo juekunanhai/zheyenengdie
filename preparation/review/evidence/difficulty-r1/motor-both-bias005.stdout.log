@@ -1,0 +1,3 @@
+{"profile":"motor-both-bias005","id":"center10","outcome":"ended","released":10,"entered":10,"placed":9,"time":20.183499999999846,"peak":7.277671465751023,"firstHazard":19.19980000000061}
+{"profile":"motor-both-bias005","id":"alternating10","outcome":"ended","released":10,"entered":9,"placed":4,"time":24.124899999998426,"peak":3.856284054245846,"firstHazard":8.26659999999777}
+{"status":"completed_diagnostic_not_human_playtest","errors":[]}

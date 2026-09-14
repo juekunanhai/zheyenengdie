@@ -1,0 +1,9 @@
+{"profile":"baseline","id":"center10","outcome":"ended","released":10,"entered":9,"placed":5,"time":21.14979999999876,"peak":4.356227831678366,"firstHazard":4.8498999999985095}
+{"profile":"baseline","id":"alternating10","outcome":"ended","released":4,"entered":3,"placed":3,"time":9.533400000000347,"peak":2.446072501003374,"firstHazard":5.683300000000746}
+{"profile":"baseline","id":"all_plus10","outcome":"ended","released":10,"entered":9,"placed":5,"time":20.99990000000023,"peak":4.356324542658683,"firstHazard":4.850800000000744}
+{"profile":"baseline","id":"all_minus10","outcome":"ended","released":9,"entered":9,"placed":5,"time":20.874300000000655,"peak":4.356312498091927,"firstHazard":4.832400000000373}
+{"profile":"baseline","id":"fridge_plus15","outcome":"ended","released":5,"entered":4,"placed":3,"time":9.866099999999602,"peak":2.4455515134412904,"firstHazard":4.849699999999256}
+{"profile":"baseline","id":"fridge_minus15","outcome":"ended","released":5,"entered":4,"placed":3,"time":10.299999999999963,"peak":2.4455920638145567,"firstHazard":4.833400000000372}
+{"profile":"baseline","id":"paper_plus10","outcome":"ended","released":7,"entered":6,"placed":5,"time":14.583300000000708,"peak":4.340587742510561,"firstHazard":4.916699999999255}
+{"profile":"baseline","id":"paper_minus10","outcome":"ended","released":9,"entered":8,"placed":3,"time":20.51670000000105,"peak":2.443414061755809,"firstHazard":5.116700000001115}
+{"status":"completed_diagnostic_not_human_playtest","errors":[]}

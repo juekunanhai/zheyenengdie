@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · 欢快配乐与人声试听</title>
+<style>
+:root{color-scheme:light;--ink:#253d4a;--muted:#586d76;--accent:#11696a;--line:#dce5df}
+*{box-sizing:border-box}body{margin:0;background:#f7f6ef;color:var(--ink);font:16px/1.65 system-ui,-apple-system,sans-serif}
+main{max-width:1080px;margin:auto;padding:40px 24px 64px}header{max-width:800px;margin-bottom:30px}.eyebrow{font-size:13px;letter-spacing:.12em;color:var(--accent);font-weight:700}h1{font-size:clamp(28px,4vw,40px);line-height:1.25;margin:10px 0 16px;letter-spacing:-.03em}h2{font-size:23px;margin:0}h3{font-size:20px;margin:10px 0 8px;line-height:1.4}p{margin:10px 0}.muted,small{color:var(--muted)}small{font-size:13px}a{color:var(--accent);text-underline-offset:3px}a,button{touch-action:manipulation}button{font:inherit;font-weight:650;border:1px solid var(--accent);background:var(--accent);color:white;border-radius:9px;padding:9px 17px;min-height:44px;cursor:pointer}button:hover{background:#0b5354}button:focus-visible,a:focus-visible,audio:focus-visible,summary:focus-visible{outline:3px solid #db9026;outline-offset:3px}.toolbar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:20px 0}.toolbar button{background:white;color:var(--accent)}#status{font-size:14px;color:var(--muted);margin:0}section{margin-top:34px}.intro{margin:7px 0 16px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.voices{grid-template-columns:repeat(3,minmax(0,1fr))}article,.reference{padding:22px;background:white;border:1px solid var(--line);border-radius:16px;min-width:0}article{display:flex;flex-direction:column}article.music{border-top:4px solid #d69d44}article.voice{border-top:4px solid #66aaa0}.tag{align-self:flex-start;font-size:12px;font-weight:700;color:#755112;background:#fff4d8;border-radius:6px;padding:3px 8px}.voice .tag{background:#eaf6f0;color:#21665b}.description{flex:1;margin:0 0 12px;color:var(--muted)}audio{display:block;width:100%;margin:12px 0 4px}.play{align-self:flex-start;margin-top:10px}.source{font-size:13px;margin:12px 0 0;color:var(--muted)}.note{font-size:13px;color:var(--muted);margin:8px 0 0}.reference{margin-top:20px}.reference audio{max-width:500px}details{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}summary{cursor:pointer;font-weight:700}.credits{white-space:pre-line;font-size:13px;overflow-wrap:anywhere}footer{margin-top:28px;font-size:14px;color:var(--muted)}@media(max-width:720px){main{padding:26px 16px 44px}.grid,.voices{grid-template-columns:1fr}article{padding:20px}header{margin-bottom:20px}}
+</style>
+</head>
+<body><main>
+<header><span class="eyebrow">这也能叠 / 音频候选 R2</span><h1>让叠起来的那一刻，更开心。</h1><p>两套配乐、三个人声短音。先比较音乐的欢乐感，再听“wow”放进音乐里是否自然。</p><p class="muted">已确认首页采用 A、对局采用 B，并采用 V1–V3；循环版均已接入游戏。<a href="home-music-r4.html">进入新版试玩</a>。本页保留原试听段供对照，所有播放器默认关闭，播放一项会暂停其他项。</p></header>
+<div class="toolbar"><button id="stop" type="button">停止全部播放</button><p id="status" role="status" aria-live="polite">正在加载候选…</p></div>
+<section aria-labelledby="music-title"><h2 id="music-title">01 / 两种配乐方向</h2><p class="intro">A 看持续游玩的轻快感，B 看更夸张的喜剧感。两首保留原曲速度；当前试听片段尚未制作成游戏无缝循环。</p><div class="grid" id="music"></div></section>
+<section aria-labelledby="voice-title"><h2 id="voice-title">02 / 三种惊喜反应</h2><p class="intro">人声保留原来的音高和语气。已接入首次有效触碰 Hey、稳定成绩里程碑 Wow，以及趣味物体放稳后的短笑；共同冷却 12 秒，详细规则见新版试玩。</p><div class="grid voices" id="voice"></div></section>
+<section aria-labelledby="mix-title"><h2 id="mix-title">03 / 放在一起听</h2><p class="intro">每段 20 秒：第 5 秒 V1、第 10 秒 V2、第 15 秒 V3。音乐在人声出现时短暂降低，便于判断搭配感；这是离线试听示范，间隔不代表游戏触发频率。</p><div class="grid" id="mix"></div></section>
+<section class="reference" aria-labelledby="old-title"><h2 id="old-title">上一版 · 等响度对照</h2><p class="intro">此前使用的“城市 · 轻木节奏”，制作约增加 2 dB 的试听副本，使平均响度接近候选，方便比较音乐本身。历史源文件保留；当前游戏已改用 B。</p><audio controls preload="metadata" aria-label="上一版城市音乐" src="../audio/cheerful-r2/mix/previous_level_matched.mp3"></audio></section>
+<details><summary>查看来源、署名与检查记录</summary><p>配乐使用原声乐器音色的编配；来源未证明每件乐器都为现场实录。本轮没有添加合成器旋律，也没有对录音变速或变调。</p><div id="credits" class="credits"></div><p><a href="../audio/cheerful-r2/MANIFEST.json">候选总清单</a> · <a href="../audio/cheerful-r2/REVIEW.md">检查记录</a> · <a href="audio-1c.html">上一批完整试听</a></p><p class="note">文件解码、电平和浏览器播放检查与主观听感分开记录。游戏循环版及七项 Web 引擎回归已完成，记录见新版试玩；手机扬声器和微信真机仍未复验。</p></details>
+<footer>已采用首页 A、对局 B 和 V1–V3。后续可结合游戏体验反馈人声出现时机、频率与音乐音量。</footer>
+</main>
+<template id="card"><article><span class="tag"></span><h3></h3><p class="description"></p><small class="duration"></small><button class="play" type="button"></button><audio controls preload="metadata"></audio><p class="source"></p><p class="note"></p></article></template>
+<script>
+const status = document.querySelector('#status');
+const players = () => [...document.querySelectorAll('audio')];
+function connect(audio, button, label) {
+  const reset = () => { if (button) button.textContent = '播放 ' + label; };
+  audio.addEventListener('play', () => {
+    players().forEach(other => { if (other !== audio) other.pause(); });
+    if (button) button.textContent = '暂停 ' + label;
+    status.textContent = '正在播放：' + label;
+  });
+  audio.addEventListener('pause', () => { reset(); if (players().every(a => a.paused)) status.textContent = '已暂停'; });
+  audio.addEventListener('ended', () => { reset(); status.textContent = '播放完成：' + label; });
+  audio.addEventListener('error', () => { reset(); status.textContent = '音频加载失败：' + label + '，请刷新页面重试。'; });
+  if (button) button.addEventListener('click', async () => {
+    if (!audio.paused) { audio.pause(); return; }
+    try { await audio.play(); } catch { status.textContent = '未能播放，请点击音频播放器重试。'; }
+  });
+}
+document.querySelector('#stop').addEventListener('click', () => {
+  players().forEach(a => { a.pause(); a.currentTime = 0; });
+  status.textContent = '已停止全部播放';
+});
+connect(document.querySelector('.reference audio'), null, '上一版城市音乐');
+fetch('../audio/cheerful-r2/MANIFEST.json').then(response => {
+  if (!response.ok) throw new Error('manifest unavailable');
+  return response.json();
+}).then(data => {
+  for (const kind of ['music', 'voice', 'mix']) {
+    for (const row of data[kind]) {
+      const card = document.querySelector('#card').content.cloneNode(true);
+      const article = card.querySelector('article'); article.className = kind;
+      card.querySelector('.tag').textContent = row.label;
+      card.querySelector('h3').textContent = row.title;
+      card.querySelector('.description').textContent = row.description;
+      card.querySelector('.duration').textContent = row.duration_s.toFixed(2) + ' 秒';
+      const audio = card.querySelector('audio'); audio.src = '../' + row.file;
+      audio.setAttribute('aria-label', row.label + ' ' + row.title);
+      const button = card.querySelector('button'); button.textContent = '播放 ' + row.label;
+      if (row.source_page) {
+        const a = document.createElement('a'); a.href = row.source_page; a.textContent = row.author;
+        const license = document.createElement('a'); license.href = row.license_url; license.textContent = row.license;
+        card.querySelector('.source').append(a, ' · ', license);
+      } else card.querySelector('.source').textContent = '使用本页候选制作的离线混音';
+      card.querySelector('.note').textContent = row.note || '';
+      connect(audio, button, row.label);
+      document.querySelector('#' + kind).append(card);
+    }
+  }
+  document.querySelector('#credits').textContent = data.credits;
+  status.textContent = '已准备好 · 2 套配乐 / 3 个人声 / 2 段组合示范';
+}).catch(() => { status.textContent = '候选清单未加载，请刷新页面重试。'; });
+</script></body></html>

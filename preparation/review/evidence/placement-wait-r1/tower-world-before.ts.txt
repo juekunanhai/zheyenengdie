@@ -1,0 +1,210 @@
+import { BoxCollider2D, CircleCollider2D, Collider2D, Contact2DType, director, Director, ERigidBody2DType,
+    IPhysics2DContact, isValid, Node, PolygonCollider2D, RelativeJoint2D, RigidBody2D, Size, Vec2 } from 'cc';
+import { localBounds, ObjectSpec, planarAngle, PLATFORM_WIDTH } from './object-data';
+
+// Creator 3.8.8 point-velocity uses world units; linearVelocity uses Box2D metres.
+const COCOS_PTM_RATIO = 32;
+
+export interface TowerBody {
+    id: number;
+    spec: ObjectSpec;
+    node: Node;
+    body: RigidBody2D;
+    collider: Collider2D;
+    contacts: Set<Collider2D>;
+    placed: boolean;
+}
+
+interface AdhesionContact { ball: TowerBody; other: Collider2D; side: number }
+interface AdhesionBond extends AdhesionContact {
+    joint: RelativeJoint2D;
+    base: RigidBody2D;
+    attached: RigidBody2D;
+    offset: Vec2;
+}
+
+/** Physics nodes never inherit a screen, Canvas or presentation scale. */
+export class TowerWorld {
+    readonly root: Node;
+    readonly bodies: TowerBody[] = [];
+    readonly platform: BoxCollider2D;
+    private nextId = 1;
+    private readonly pendingAdhesion = new Map<string, AdhesionContact & { contact: IPhysics2DContact }>();
+    private readonly bonds = new Map<string, AdhesionBond>();
+
+    constructor(scene: Node, private readonly impact?: (record: TowerBody, pair: string, speed: number) => void) {
+        this.root = new Node('TowerPhysics');
+        scene.addChild(this.root);
+        const node = new Node('GroundSupport');
+        this.root.addChild(node);
+        node.setPosition(0, -12, 0);
+        node.addComponent(RigidBody2D).type = ERigidBody2DType.Static;
+        this.platform = node.addComponent(BoxCollider2D);
+        this.platform.size = new Size(PLATFORM_WIDTH, 24);
+        this.platform.friction = .65;
+        this.platform.restitution = 0;
+        this.platform.apply();
+        director.on(Director.EVENT_AFTER_PHYSICS, this.afterPhysics, this);
+    }
+
+    create(spec: ObjectSpec, x: number, y: number): TowerBody {
+        const node = new Node(`Body:${this.nextId}:${spec.kind}`);
+        this.root.addChild(node);
+        node.setPosition(x, y, 0);
+        const body = node.addComponent(RigidBody2D);
+        body.type = ERigidBody2DType.Kinematic;
+        body.allowSleep = true;
+        body.enabledContactListener = true;
+        body.linearDamping = .05;
+        // Modest rotational drag damps impact chatter; unsupported bodies still tip and fall.
+        const freeAngularDamping = spec.circle ? .1 : 1.5;
+        body.angularDamping = freeAngularDamping;
+        body.bullet = true;
+        const collider = spec.circle ? node.addComponent(CircleCollider2D) :
+            spec.outline ? node.addComponent(PolygonCollider2D) : node.addComponent(BoxCollider2D);
+        collider.enabled = false;
+        if (collider instanceof CircleCollider2D) collider.radius = spec.width / 2;
+        else if (collider instanceof PolygonCollider2D) collider.points = spec.outline!.map(([x, y]) => new Vec2(x, y));
+        else collider.size = new Size(spec.width, spec.height);
+        collider.density = spec.density;
+        collider.friction = spec.friction;
+        collider.restitution = spec.restitution;
+        const record: TowerBody = { id: this.nextId++, spec, node, body, collider, contacts: new Set(), placed: false };
+        // A concave PolygonCollider is partitioned into native fixtures. Keep public contacts
+        // at object level, but retain each live native contact until its matching END event.
+        const fixtureContacts = new Map<Collider2D, Set<IPhysics2DContact>>();
+        collider.on(Contact2DType.BEGIN_CONTACT, (_self: Collider2D, other: Collider2D, contact: IPhysics2DContact) => {
+            let active = fixtureContacts.get(other);
+            if (active?.has(contact)) return;
+            if (!active) { active = new Set(); fixtureContacts.set(other, active); }
+            active.add(contact);
+            if (active.size > 1) return;
+            record.contacts.add(other);
+            if (spec.contactAngularDamping !== undefined) body.angularDamping = spec.contactAngularDamping;
+            const peer = this.bodies.find(r => r.collider === other);
+            if (peer && peer.id > record.id) return;
+            const velocity = body.linearVelocity.clone();
+            if (other.body) velocity.subtract(other.body.linearVelocity);
+            this.impact?.(record, `${record.id}:${peer?.id ?? 0}`, velocity.length());
+        });
+        collider.on(Contact2DType.END_CONTACT, (_self: Collider2D, other: Collider2D, contact: IPhysics2DContact) => {
+            const active = fixtureContacts.get(other);
+            if (!active?.delete(contact)) return;
+            // A side graze on the same object must not keep an ended support contact eligible
+            // for glue. Cocos recycles the contact object immediately after this END callback.
+            for (const [key, pending] of this.pendingAdhesion) {
+                if (pending.ball === record && pending.contact === contact) this.pendingAdhesion.delete(key);
+            }
+            if (active.size > 0) return;
+            fixtureContacts.delete(other);
+            record.contacts.delete(other);
+            if (record.contacts.size === 0) body.angularDamping = freeAngularDamping;
+        });
+        if (spec.adhesion) collider.on(Contact2DType.PRE_SOLVE,
+            (_self: Collider2D, other: Collider2D, contact: IPhysics2DContact) => this.prepareAdhesion(record, other, contact));
+        this.bodies.push(record);
+        return record;
+    }
+
+    private prepareAdhesion(ball: TowerBody, other: Collider2D, contact: IPhysics2DContact): void {
+        if (!other.body || other.sensor) return;
+        const manifold = contact.getWorldManifold();
+        const normal = new Vec2(manifold.normal.x, manifold.normal.y);
+        normal.multiplyScalar(contact.colliderA === ball.collider ? 1 : -1);
+        if (Math.abs(normal.y) < .7 || !manifold.points.length) return;
+        const side = Math.sign(normal.y), key = `${ball.id}:${side}`;
+        if (this.bonds.has(key) || this.pendingAdhesion.has(key)) return;
+        const peer = this.bodies.find(record => record.collider === other);
+        // A settled object brushing the top of a loose ball is not a new placement.
+        if (side > 0 && (!peer || peer.placed || peer.id < ball.id)) return;
+        this.pendingAdhesion.set(key, { ball, other, side, contact });
+        const incoming = peer && peer.id > ball.id ? peer : ball;
+        if (incoming.placed) return;
+        const support = incoming === ball ? other.body : ball.body;
+        if (incoming !== ball) normal.multiplyScalar(-1);
+        this.cushionImpact(incoming.body, support, manifold.points[0], normal, ball.spec.adhesion!.maxImpactSpeed);
+    }
+
+    private cushionImpact(body: RigidBody2D, support: RigidBody2D, point: Vec2, toward: Vec2, limit: number): void {
+        const relative = body.getLinearVelocityFromWorldPoint(point, new Vec2());
+        relative.subtract(support.getLinearVelocityFromWorldPoint(point, new Vec2()));
+        const closing = body.linearVelocity.clone().subtract(support.linearVelocity).dot(toward);
+        // Angular motion at an off-center contact must not reverse the body's translation.
+        const excess = Math.min(relative.dot(toward) / COCOS_PTM_RATIO - limit, Math.max(0, closing));
+        if (excess <= 0) return;
+        // Local glue cushioning removes closing energy only at a real new contact.
+        // Gravity, tangential motion, older bodies and free flight remain simulated.
+        body.linearVelocity = body.linearVelocity.clone().subtract(toward.multiplyScalar(excess));
+    }
+
+    private afterPhysics(): void {
+        for (const [key, bond] of this.bonds) {
+            if (!this.bondIntact(bond)) { this.removeBond(bond); this.bonds.delete(key); }
+        }
+        for (const [key, pending] of this.pendingAdhesion) {
+            if (pending.ball.contacts.has(pending.other) && pending.other.enabledInHierarchy) {
+                this.bonds.set(key, this.attach(pending));
+            }
+        }
+        this.pendingAdhesion.clear();
+    }
+
+    private attach(contact: AdhesionContact): AdhesionBond {
+        const { ball, other, side } = contact;
+        const base = side < 0 ? other.body! : ball.body;
+        const attached = side < 0 ? ball.body : other.body!;
+        const offset = base.getLocalPoint(attached.getWorldPoint(new Vec2(), new Vec2()), new Vec2());
+        const joint = base.node.addComponent(RelativeJoint2D);
+        joint.connectedBody = attached; joint.autoCalcOffset = false;
+        // Cocos auto offsets use world deltas. Explicit local offsets preserve rotated supports.
+        joint.linearOffset = offset;
+        joint.angularOffset = planarAngle(attached.node.rotation) - planarAngle(base.node.rotation);
+        joint.maxForce = ball.spec.adhesion!.maxForce; joint.maxTorque = ball.spec.adhesion!.maxTorque;
+        joint.correctionFactor = .4; joint.collideConnected = true; joint.apply();
+        return { ball, other, side, base, attached, offset, joint };
+    }
+
+    private bondIntact(bond: AdhesionBond): boolean {
+        if (!isValid(bond.other, true) || !isValid(bond.ball.collider, true)) return false;
+        if (!bond.other.enabledInHierarchy || !bond.ball.collider.enabledInHierarchy) return false;
+        const offset = bond.base.getLocalPoint(bond.attached.getWorldPoint(new Vec2(), new Vec2()), new Vec2());
+        return Vec2.distance(offset, bond.offset) <= bond.ball.spec.width * .12;
+    }
+
+    private removeBond(bond: AdhesionBond): void {
+        if (!isValid(bond.joint, true)) return;
+        // Disable while bodies still exist so Box2D removes the native joint before body teardown.
+        bond.joint.enabled = false; bond.joint.destroy();
+    }
+
+    release(record: TowerBody): void {
+        record.body.type = ERigidBody2DType.Dynamic;
+        record.body.linearVelocity = new Vec2();
+        record.body.angularVelocity = 0;
+        record.collider.enabled = true;
+        record.collider.apply();
+        record.body.wakeUp();
+    }
+
+    isStable(): boolean {
+        return this.bodies.every(({ body, collider, contacts }) => !collider.enabled ||
+            (contacts.size > 0 && body.linearVelocity.length() < .12 && Math.abs(body.angularVelocity) < .12));
+    }
+
+    bounds(record: TowerBody): { left: number; right: number; bottom: number; top: number } {
+        const bounds = localBounds(record.spec, planarAngle(record.node.rotation)), p = record.node.position;
+        return { left: p.x + bounds.left, right: p.x + bounds.right, bottom: p.y + bounds.bottom, top: p.y + bounds.top };
+    }
+
+    confirmedTop(): number {
+        return Math.max(0, ...this.bodies.filter(r => r.placed).map(r => this.bounds(r).top));
+    }
+
+    dispose(): void {
+        director.off(Director.EVENT_AFTER_PHYSICS, this.afterPhysics, this);
+        this.pendingAdhesion.clear();
+        for (const bond of this.bonds.values()) this.removeBond(bond);
+        this.bonds.clear();
+        if (isValid(this.root, true)) this.root.destroy();
+    }
+}

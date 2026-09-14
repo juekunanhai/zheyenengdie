@@ -1,0 +1,110 @@
+{
+  "status": "local_corrections_verified_pending_user_playtest",
+  "date": "2026-09-13",
+  "batch": "1A",
+  "checks": 43,
+  "reports": {
+    "INTEGRATION": {
+      "file": "INTEGRATION.json",
+      "sha256": "1bf2c23a233466604dfa86026d93acff2123a529af3f0c7007ccea3ce087b193",
+      "checks": 16
+    },
+    "PHYSICS": {
+      "file": "PHYSICS.json",
+      "sha256": "32c8a39084eba01c77aa6a17641259494ba608ed9ea9d15a019401fd57205c98",
+      "checks": 7
+    },
+    "AUDIO_RUNTIME": {
+      "file": "AUDIO_RUNTIME.json",
+      "sha256": "46c0820410e229aaef2e0f5757a272663d3af9dc6aa5b8c500f9b68eb89e582a",
+      "checks": 8
+    },
+    "CONTACT_CAMERA": {
+      "file": "CONTACT_CAMERA.json",
+      "sha256": "1ff46cb07526c5a81d67c1649ebaf50ac015995124713ff50b496dcc19fe8e12",
+      "checks": 6
+    },
+    "CONTACT_PIXELS": {
+      "file": "CONTACT_PIXELS.json",
+      "sha256": "50d2a7c0f483e955cf5cb94adee6e2d2e1df99b0bddb827f4dd8a732273c862f",
+      "checks": 1
+    },
+    "CAMERA_RISE": {
+      "file": "CAMERA_RISE.json",
+      "sha256": "ca168f57de82de5c04f6bf3308ca5a793f75d59bb839418a44a64f82acd5f514",
+      "checks": 1
+    },
+    "BASKETBALL_TAPE": {
+      "file": "BASKETBALL_TAPE.json",
+      "sha256": "6ca47e465cd1cb0b1273689e6dae9a44e724d29816606c755d3d96b404f6e9d7",
+      "checks": 4
+    }
+  },
+  "build_report_sha256": "925c136235eb4dbc1ab6e022a018db4b1ba147e1e1eeeb65fe34412122b2486c",
+  "test_tools_sha256": {
+    "check_batch1a.cjs": "12c60fe64e91cd8c3ae7cc933af5342b025b54ad4e266c8f1edb3d3c914a59e6",
+    "check_batch1a_physics.cjs": "6b6642426f93e1cb7d39db4fb1f4a1d64202ee469556c5cb4c5e95c2f080f8c3",
+    "check_batch1a_audio.cjs": "136c74942c38c200675cc08a2694cd3f1021d7d7e5781f3870192244a5a90e73",
+    "check_batch1a_contact.cjs": "afcbe8212ab75685841973ad8510b378dbdcfbd87613cd1b4caee2226fe2d050",
+    "check_contact_pixels.py": "34193a5e481bc9c87958fa8ee4d3f7582728c1a9a5d2a7232f07d9b995d28ad9",
+    "record_camera_rise.cjs": "873b28fe1ad644d48bb233def73af2d047695ef96df41d8376d075437ba25b80",
+    "check_batch1a_basketball.cjs": "ba3fdef302baff68ffbc995d7d6a76a537dad945c46934092920f07c50a83b8d"
+  },
+  "review_shell_sha256": {
+    "play.html": "28302eabe0c392355ae7188e8f65c02fb5b68298231c2560660ee18ee1372235",
+    "play-player.html": "bd7696f6f5bd63cc3c1c651c0d7b172e81f55b1f45810c366361a7364870dad0",
+    "contact-review.html": "b567ba10f35b3c4eabd515d905883e95fb45cd1a2629cfe497b221954c26b89b",
+    "audio-1a.html": "3101007652f624a4a10d462a92609277dceafee71e4669dc0ec993a749f5ac5f"
+  },
+  "audio_approval_text": "音频先按照这版使用，后续如果不合适再换",
+  "next_batch_started": false,
+  "not_proven": [
+    "WeChat build and real-device behavior",
+    "Long-session difficulty balance",
+    "Full incidents, stars, deep assistance",
+    "Music and publication"
+  ],
+  "revision": "20260913-contact-tape-r1",
+  "evidence_sha256": {
+    "01-ground-planning.png": "fbd6ce083b7b082d89126629beb4d7d0df7af3b50b7d302479d6dbd08d741e29",
+    "02-plank-rotated.png": "791414f40e0dc74e2dba2faa8219305e6b7c55437c2c084619b8aea2dcafc158",
+    "03-two-landings.png": "b806d027a76984ec748f8091c8c48952abbfc4313de491387044320f414c982b",
+    "04-fridge-landed-ball-held.png": "2c67cd03292a909760c0b7a9cb02a0f6fdd3170ae52fa4d9865883b2f42599b0",
+    "05-result.png": "7dcc4531a84e433511bd7d6c4d5cd4a7201a8152052ed72244b7c5d015d25145",
+    "06-size-375-667.png": "adc4f295dae01cdb9ad4cd2475f981dd1dca7aaefa8c34f9f44a28474898badf",
+    "06-size-375-812.png": "261fe9c8bbe5ef528754080517cfb3a818c349dbb2a4060295b1aab7ff991e88",
+    "06-size-600-800.png": "63c09c5eafd02f06e695e0f34743e8afd80e55667cb933258fe161ce9a079363",
+    "07-bridge.png": "fa1a8ce2add610070aec821be6257fc48259e9e1ad12b9b436078713b77fe0f7",
+    "08-offscreen-support.png": "ecff50678ff5171d88c14a09a056df9ebe8d986010e272a1fecf9d61fcd844a7",
+    "09-audio-review.png": "7998d7de1f041019076255876cba265c249af4a58d6adcd4aed4c0052ce3eb53",
+    "10-contact-stack.png": "4ea93ab792ba169e967bf0309817aed4667aeef5dce27c2d974fb1cf05fa9bd8",
+    "11-contact-overlay.png": "ded81b934dcfa84032ecaa703719e43a3e3e9a24ce5e67a1b472de483d3db1b9",
+    "12-camera-one-metre.png": "93a8c425cb40d1af64b0da4ea491e2ea67b63b05fcedff5df8cc45fa8685a9a8",
+    "13-altitude-160m.png": "27e596e27f54cbe36731f7c192733bdc45293394b70ff2c942a2adc81c3f1f07",
+    "13-altitude-55m.png": "638b25b45fd40f8342c3b7b60940fcfb109646e3d6c959f704cb81970d018f67",
+    "13-altitude-8m.png": "e2c777be99ae3bfe2ff02b1d23515bccfb80209d14a69bc17b721c0ee129f8a1",
+    "14-tower-1-boxes.png": "28dcba457b662341875611419274d1f50424b795228b05aae1126e4795f3f685",
+    "14-tower-6-boxes.png": "c0cabe0f966c0007d9ec12204ae6c17a7d6688baa235a0157619c5ec17c90a57",
+    "15-contact-review.png": "a0ee05427177c2b774652d9e9dea5101520ab5f2f9d6005cd55eb30884b122ce",
+    "16-current-play.png": "be5d0474e5a7ed960d3ccca38e6270ea371d9038f1984bd605284d177c7873ee",
+    "camera-rise.mp4": "20e2fb3faa76d66f1af5311476a2ae00bfb2870566bb46548624aedc465f3cce"
+  },
+  "correction_scope": [
+    "Shared camera displacement and parallax",
+    "Four object contact outlines and visual anchors",
+    "Approved basketball friction and contact rolling resistance with introduction copy"
+  ],
+  "user_confirmation": "确认。",
+  "pixel_summary": {
+    "contact_samples": 40,
+    "max_distance_world": 0.9205272675582351,
+    "max_distance_css_pixels_at_375x667": 0.8054613591134557
+  },
+  "prior_evidence": "../batch1a-before-contact-fix",
+  "historical_note": "failure.png is a retained earlier diagnostic image, not evidence of the current successful run.",
+  "basketball_confirmation": "采用摩擦＋滚动阻力（推荐）",
+  "delivery_pages": {
+    "file": "DELIVERY_PAGES.json",
+    "sha256": "4388061f5d1f6947cea9d6cecf0a02c2d1fedf72c26f547d0b0a178aa2950eb5"
+  }
+}

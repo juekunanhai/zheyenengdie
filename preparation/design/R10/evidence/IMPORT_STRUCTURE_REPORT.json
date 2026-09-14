@@ -1,0 +1,95 @@
+{
+  "status": "passed_serialized_structure_and_source_integrity_only",
+  "visual_baseline": "R10.1 approved homepage",
+  "scene_uuid": "b35d6350-0c9c-52a9-8eab-897e6f0d1d60",
+  "scene_records": 70,
+  "nodes": 18,
+  "sprite_components": 13,
+  "added_image_files": 4,
+  "image_uuids": {
+    "home_r10_background": "fee960c0-7cb9-5aa1-9aa7-9b48d736854e",
+    "home_r10_logo": "2a967c38-21e7-5ab5-8f8c-70f49d9e9e74",
+    "home_r10_airship": "7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371",
+    "home_r10_airplane": "5e2578a8-4a8b-5612-9b1f-15da9ed36867"
+  },
+  "image_dimensions": {
+    "home_r10_background": [
+      941,
+      1672
+    ],
+    "home_r10_logo": [
+      1381,
+      732
+    ],
+    "home_r10_airship": [
+      168,
+      96
+    ],
+    "home_r10_airplane": [
+      159,
+      94
+    ]
+  },
+  "home_scene_sha256": "20f8ae9b1e031cf5f95410b9f699c4a265abb30635f7e626d0ddaed08f7ff350",
+  "before_scene_sha256": "e453aac2f4eb4b2350e0148c1b4970a7b688d25b3296ef03e5ced411c2d211c4",
+  "backup": "preparation/design/R10/evidence/Home-before-R10.scene.json",
+  "all_local_references_valid": true,
+  "all_node_parent_and_component_links_valid": true,
+  "asset_root_uuids_unique": true,
+  "existing_meta_files_unchanged": 92,
+  "other_scene_source_hashes_unchanged": {
+    "assets/batch0/scenes/Result.scene": "1fe06c897a8c03685f0d00557d27f07a77374fed2f1a47cbbf480eedb05f123d",
+    "assets/batch0/scenes/Settings.scene": "19c272b89a13dd8cf1fd7f2353dde5b812b144ad7f401deffbb3f0caeae575ff",
+    "assets/batch0/scenes/HUD.scene": "ac799c69736092150c9b2da073e5b89ac9e5458416b637e987883af26c5d5f59"
+  },
+  "source_hashes_unchanged": {
+    "design/R10/assets/bg-home-r10.png": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+    "design/R10/assets/logo-home-r10-clean-r2.png": "9079e248bbcd4bfc47f2704ae7a967398dab77b0501bdc0ce18f7bd8eba8a254",
+    "art/candidates/backgrounds/airship_clean.png": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289",
+    "art/candidates/backgrounds/airplane_clean.png": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600"
+  },
+  "content_child_order": [
+    "R9Cloud0",
+    "R9Cloud1",
+    "R9Cloud2",
+    "HomeAirship",
+    "HomeAirplane",
+    "R9WoodBoard",
+    "R9Hero",
+    "R9SlipperBack",
+    "R9SlipperFront",
+    "logo_main",
+    "btn_settings_icon",
+    "btn_start"
+  ],
+  "removed_nodes": [
+    "Text:把乱七八糟的东西叠上天"
+  ],
+  "renamed_nodes": {
+    "R9Backdrop": "HomeBackdrop"
+  },
+  "short_screen_reference": {
+    "height": 1334,
+    "logo_width": 560,
+    "logo_height": 296.82838522809556,
+    "logo_top": 52.482161646904444,
+    "airship": {
+      "left": 9,
+      "top": 154.48216164690444,
+      "width": 112,
+      "angle": 10,
+      "opacity": 204
+    },
+    "airplane": {
+      "left": 645,
+      "top": 348.48216164690444,
+      "width": 99,
+      "angle": -22,
+      "opacity": 204
+    }
+  },
+  "limitations": [
+    "Creator import/build/runtime are handled separately by root agent",
+    "HomePresentation.ts must reference HomeBackdrop and the R10.1 layout formula; this subtask does not edit TS"
+  ]
+}

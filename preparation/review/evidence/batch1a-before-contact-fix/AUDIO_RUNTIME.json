@@ -1,0 +1,628 @@
+{
+  "status": "passed_real_browser_audio_events",
+  "checks": [
+    {
+      "name": "home_gesture_unlocks_real_handoff_and_claw_playback",
+      "status": "passed",
+      "evidence": [
+        {
+          "type": "started",
+          "clip": "next_handoff",
+          "at": 2649.5,
+          "volume": 0.35,
+          "scene": "HUD"
+        },
+        {
+          "type": "ended",
+          "clip": "next_handoff",
+          "at": 2789.699999999255,
+          "volume": 0.35,
+          "scene": "HUD"
+        },
+        {
+          "type": "started",
+          "clip": "claw_grip",
+          "at": 2899,
+          "volume": 0.7,
+          "scene": "HUD"
+        }
+      ]
+    },
+    {
+      "name": "four_materials_are_triggered_by_real_collisions",
+      "status": "passed",
+      "evidence": [
+        {
+          "type": "started",
+          "clip": "impact_paper_1",
+          "at": 4276.699999999255,
+          "volume": 0.85,
+          "scene": "HUD"
+        },
+        {
+          "type": "started",
+          "clip": "impact_wood_1",
+          "at": 6060.60000000149,
+          "volume": 0.85,
+          "scene": "HUD"
+        },
+        {
+          "type": "started",
+          "clip": "impact_metal_1",
+          "at": 7660.5,
+          "volume": 0.85,
+          "scene": "HUD"
+        },
+        {
+          "type": "started",
+          "clip": "impact_metal_2",
+          "at": 7861.10000000149,
+          "volume": 0.3206510922352249,
+          "scene": "HUD"
+        },
+        {
+          "type": "started",
+          "clip": "impact_rubber_1",
+          "at": 9460.199999999255,
+          "volume": 0.85,
+          "scene": "HUD"
+        },
+        {
+          "type": "started",
+          "clip": "impact_rubber_2",
+          "at": 9727.5,
+          "volume": 0.38152674821751903,
+          "scene": "HUD"
+        }
+      ]
+    },
+    {
+      "name": "pair_cooldown_and_pause_stop_without_replay",
+      "status": "passed",
+      "evidence": [
+        true,
+        false
+      ]
+    },
+    {
+      "name": "collision_cap_preserves_action_and_background_stops_all",
+      "status": "passed",
+      "evidence": {
+        "collisions": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "action": true,
+        "active": [
+          {
+            "clip": "impact_metal_3",
+            "time": 0.06360000000149135,
+            "volume": 0.65
+          },
+          {
+            "clip": "impact_metal_1",
+            "time": 0.06360000000149135,
+            "volume": 0.65
+          },
+          {
+            "clip": "impact_metal_2",
+            "time": 0.06360000000149135,
+            "volume": 0.65
+          },
+          {
+            "clip": "impact_metal_3",
+            "time": 0.06360000000149135,
+            "volume": 0.65
+          },
+          {
+            "clip": "rotate_90",
+            "time": 0.06360000000149135,
+            "volume": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "name": "menu_entry_has_short_actual_click_feedback",
+      "status": "passed",
+      "evidence": true
+    },
+    {
+      "name": "sound_toggle_persists_and_mutes_without_muting_music_setting",
+      "status": "passed",
+      "evidence": {
+        "tutorialDone": true,
+        "music": true,
+        "sound": false,
+        "vibration": false
+      }
+    },
+    {
+      "name": "result_plays_ending_once_to_completion_after_scene_change",
+      "status": "passed",
+      "evidence": [
+        {
+          "type": "started",
+          "clip": "run_end",
+          "at": 13351.89999999851,
+          "volume": 0.75,
+          "scene": "Result"
+        },
+        {
+          "type": "ended",
+          "clip": "run_end",
+          "at": 13922.199999999255,
+          "volume": 0.75,
+          "scene": "Result"
+        }
+      ]
+    },
+    {
+      "name": "retry_uses_new_audio_sources_and_world",
+      "status": "passed",
+      "evidence": true
+    }
+  ],
+  "errors": [],
+  "events": [
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 2649.5,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "next_handoff",
+      "at": 2789.699999999255,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_grip",
+      "at": 2899,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "rotate_90",
+      "at": 2916.89999999851,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "rotate_90",
+      "at": 3062.5,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_grip",
+      "at": 3114.60000000149,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "rotate_90",
+      "at": 3131,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "rotate_90",
+      "at": 3216.199999999255,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "rotate_90",
+      "at": 3272.89999999851,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "rotate_90",
+      "at": 3367,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_open",
+      "at": 3404.300000000745,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "rotate_90",
+      "at": 3426.300000000745,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "rotate_90",
+      "at": 3579.89999999851,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_open",
+      "at": 3597.199999999255,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_paper_1",
+      "at": 4276.699999999255,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "impact_paper_1",
+      "at": 4697.39999999851,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 4963.5,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "next_handoff",
+      "at": 5104.300000000745,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_grip",
+      "at": 5209,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_open",
+      "at": 5213.60000000149,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_open",
+      "at": 5405,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_grip",
+      "at": 5419.89999999851,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_wood_1",
+      "at": 6060.60000000149,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "impact_wood_1",
+      "at": 6364.60000000149,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 6732.300000000745,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "next_handoff",
+      "at": 6872.800000000745,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_grip",
+      "at": 6976.89999999851,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_open",
+      "at": 6981.699999999255,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_open",
+      "at": 7172.699999999255,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_grip",
+      "at": 7187.5,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_metal_1",
+      "at": 7660.5,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_metal_2",
+      "at": 7861.10000000149,
+      "volume": 0.3206510922352249,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "impact_metal_1",
+      "at": 8040.800000000745,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "impact_metal_2",
+      "at": 8241.699999999255,
+      "volume": 0.3206510922352249,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 8564.699999999255,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "next_handoff",
+      "at": 8735.199999999255,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_grip",
+      "at": 8810.300000000745,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_open",
+      "at": 8815.300000000745,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_open",
+      "at": 9006.10000000149,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_grip",
+      "at": 9020.89999999851,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_rubber_1",
+      "at": 9460.199999999255,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_rubber_2",
+      "at": 9727.5,
+      "volume": 0.38152674821751903,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "impact_rubber_1",
+      "at": 9801.39999999851,
+      "volume": 0.85,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "impact_rubber_2",
+      "at": 10068.60000000149,
+      "volume": 0.38152674821751903,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 10493.699999999255,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "next_handoff",
+      "at": 10634.5,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_grip",
+      "at": 10743,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "claw_grip",
+      "at": 10954,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_paper_2",
+      "at": 11652.10000000149,
+      "volume": 0.65,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_metal_3",
+      "at": 12018.5,
+      "volume": 0.65,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_metal_1",
+      "at": 12018.5,
+      "volume": 0.65,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_metal_2",
+      "at": 12018.5,
+      "volume": 0.65,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "impact_metal_3",
+      "at": 12018.5,
+      "volume": 0.65,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "rotate_90",
+      "at": 12018.5,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 12353.10000000149,
+      "volume": 0.5,
+      "scene": "Settings"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 13049.699999999255,
+      "volume": 0.5,
+      "scene": "Settings"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 13091.89999999851,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "next_handoff",
+      "at": 13231.199999999255,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_grip",
+      "at": 13335.800000000745,
+      "volume": 0.7,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "run_end",
+      "at": 13351.89999999851,
+      "volume": 0.75,
+      "scene": "Result"
+    },
+    {
+      "type": "ended",
+      "clip": "run_end",
+      "at": 13922.199999999255,
+      "volume": 0.75,
+      "scene": "Result"
+    },
+    {
+      "type": "started",
+      "clip": "next_handoff",
+      "at": 13951.199999999255,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "ended",
+      "clip": "next_handoff",
+      "at": 14091.60000000149,
+      "volume": 0.35,
+      "scene": "HUD"
+    },
+    {
+      "type": "started",
+      "clip": "claw_grip",
+      "at": 14185.699999999255,
+      "volume": 0.7,
+      "scene": "HUD"
+    }
+  ],
+  "not_proven": [
+    "Speaker output judged by a human in-game",
+    "WeChat/iOS/Android audio interruptions",
+    "Music playback or crossfade"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": "fridge-r2-uniform-125-source",
+  "date": "2026-09-13",
+  "new_image_generation_calls": 0,
+  "raster_operations": [],
+  "frozen_110_files_unchanged": {
+    "GEOMETRY.json": true,
+    "GEOMETRY_CHECK.json": true,
+    "PHYSICS_CHECK.json": true,
+    "PROCESSING_AUDIT.json": true,
+    "assets/next_fridge.png": true,
+    "assets/object_fridge.png": true
+  },
+  "reason": "Current native-engine QA reports dumbbell inner foot spacing about 71.46 world units. Previous fridge top 84.25 leaves only about 6.4 units of tolerance per side. Choose actual world width 125 to provide a visible 95.74-unit top, about 12.14 units tolerance per side before other dynamics. This does not claim every +/-10 placement succeeds.",
+  "uniform_world_scale": 1.1363636363636365,
+  "original_image_source_manifest": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/SOURCE.json",
+  "no_pixels_used_as_direct_physics_units": true,
+  "no_anisotropic_stretching": true,
+  "no_new_invisible_support": true,
+  "same_eight_source_vertices": [
+    [
+      119,
+      8
+    ],
+    [
+      852,
+      8
+    ],
+    [
+      964,
+      120
+    ],
+    [
+      965,
+      964
+    ],
+    [
+      853,
+      1077
+    ],
+    [
+      119,
+      1077
+    ],
+    [
+      8,
+      958
+    ],
+    [
+      9,
+      122
+    ]
+  ],
+  "outputs": {
+    "GEOMETRY_125.json": "d63ce7ea8d5bf4e2732782205b3c9a9e02c73e6c5324341b54891a3d493fe06f",
+    "PHYSICS_CHECK_125.json": "a1a77bcc76591b8c29f7fb08ff8dd0a37c36e5fdc48cf7997b0e0fc6a2c30a2a",
+    "fridge-geometry-125.png": "87af6ae9125086c248983932618278e95b749ce8091555878770b20d67a9e367"
+  }
+}

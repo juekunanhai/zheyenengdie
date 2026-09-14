@@ -1,0 +1,1269 @@
+{
+  "schema": "home-music-r4-engine",
+  "createdAt": "2026-09-14T11:43:27.485Z",
+  "results": [
+    {
+      "name": "loop",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:44:08.156Z",
+      "evidence": {
+        "mode": "actual A AudioSource / natural wrap / no currentTime changes",
+        "before": {
+          "valid": true,
+          "clip": "bgm_home",
+          "playing": true,
+          "time": 0.7876000000014898,
+          "volume": 0.28
+        },
+        "wrap": {
+          "previous": 39.98560000000149,
+          "current": 0.0025000000000048317,
+          "elapsed": 39.21680000000428,
+          "duration": 40.045714,
+          "playing": true
+        },
+        "after": {
+          "valid": true,
+          "clip": "bgm_home",
+          "playing": true,
+          "time": 0.0008000000044603439,
+          "volume": 0.28
+        },
+        "events": [
+          {
+            "id": 2,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 41464.29999999702,
+            "clip": "bgm_home"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:44:48.245Z"
+    },
+    {
+      "name": "navigation",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:44:48.245Z",
+      "evidence": {
+        "mode": "actual bound start-button handler; interaction marker set explicitly",
+        "normal": {
+          "old": {
+            "valid": false,
+            "clip": null,
+            "playing": false,
+            "time": null,
+            "volume": null
+          },
+          "music": {
+            "region": "bgm_city",
+            "fading": false,
+            "fade": 1,
+            "gain": 0.28,
+            "paused": false,
+            "enabled": true,
+            "issues": [],
+            "sources": [
+              {
+                "clip": "bgm_city",
+                "playing": true,
+                "time": 1.1931000000014933,
+                "volume": 0.28
+              },
+              {
+                "clip": null,
+                "playing": false,
+                "time": 0,
+                "volume": 0
+              }
+            ]
+          }
+        },
+        "immediate": {
+          "valid": true,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        },
+        "cancelled": {
+          "valid": false,
+          "clip": null,
+          "playing": false,
+          "time": null,
+          "volume": null
+        },
+        "events": [
+          {
+            "id": 2,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 81487.60000000149,
+            "clip": "bgm_home"
+          },
+          {
+            "id": 3,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 82558.29999999702,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 5,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 82698.19999999553,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 6,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 82774.60000000149,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 6,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 82975.10000000149,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 14,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 83805.29999999702,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 16,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 83948.89999999851,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 17,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 84018.29999999702,
+            "clip": "claw_grip"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:44:50.960Z"
+    },
+    {
+      "name": "settings",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:44:50.961Z",
+      "evidence": {
+        "mode": "synthetic touch events through existing Settings handlers; no Settings BGM",
+        "observations": [
+          {
+            "enabled": false,
+            "home": {
+              "suspended": false,
+              "gain": 0,
+              "music": {
+                "valid": false,
+                "clip": null,
+                "playing": false,
+                "time": null,
+                "volume": null
+              }
+            },
+            "playing": 0
+          },
+          {
+            "enabled": true,
+            "home": {
+              "suspended": false,
+              "gain": 0.2798600000005216,
+              "music": {
+                "valid": true,
+                "clip": "bgm_home",
+                "playing": true,
+                "time": 0.7975000000000136,
+                "volume": 0.2798600000005216
+              }
+            },
+            "playing": 1
+          }
+        ],
+        "events": [
+          {
+            "id": 1,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 84192.29999999702,
+            "clip": "bgm_home"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:44:53.027Z"
+    },
+    {
+      "name": "visibility",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:44:53.027Z",
+      "evidence": {
+        "mode": "simulated Game hide/show including immediate pending-play cancellation",
+        "hidden": {
+          "suspended": true,
+          "music": {
+            "valid": true,
+            "playing": false,
+            "time": 0,
+            "volume": 0
+          }
+        },
+        "returned": {
+          "valid": true,
+          "clip": "bgm_home",
+          "playing": true,
+          "time": 0.016299999997016812,
+          "volume": 0.005740000002086163
+        },
+        "rapidReturned": {
+          "valid": true,
+          "clip": "bgm_home",
+          "playing": true,
+          "time": 0.42410000000148784,
+          "volume": 0.15161999999843537
+        },
+        "events": [
+          {
+            "id": 1,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 86258.29999999702,
+            "clip": "bgm_home"
+          },
+          {
+            "id": 4,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 87075.79999999702,
+            "clip": "bgm_home"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:44:54.277Z"
+    },
+    {
+      "name": "mix",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:44:54.278Z",
+      "evidence": {
+        "mode": "actual HUD ducking; controlled height 60/170, not natural tower-height evidence",
+        "before": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.2799600000008941,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 0.8990000000000009,
+              "volume": 0.2799600000008941
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        },
+        "ducked": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.09,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 1.0156999999955332,
+              "volume": 0.09
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        },
+        "restored": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.28,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 2.9328999999985115,
+              "volume": 0.28
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        },
+        "transitions": [
+          {
+            "height": 60,
+            "samples": [
+              {
+                "old": 2.9651999999955336,
+                "current": 2.9651999999955336,
+                "gap": 0
+              },
+              {
+                "old": 2.9819999999999993,
+                "current": 2.9819999999999993,
+                "gap": 0
+              },
+              {
+                "old": 2.9987999999970185,
+                "current": 2.9987999999970185,
+                "gap": 0
+              },
+              {
+                "old": 3.015299999997012,
+                "current": 3.015299999997012,
+                "gap": 0
+              },
+              {
+                "old": 3.031899999998501,
+                "current": 3.031899999998501,
+                "gap": 0
+              },
+              {
+                "old": 3.048599999994039,
+                "current": 3.0486999999955344,
+                "gap": 0
+              },
+              {
+                "old": 3.0648999999985023,
+                "current": 3.0648999999985023,
+                "gap": 0
+              },
+              {
+                "old": 3.0816999999955215,
+                "current": 3.081799999997017,
+                "gap": 0
+              },
+              {
+                "old": 3.0985000000000014,
+                "current": 3.0985000000000014,
+                "gap": 0
+              },
+              {
+                "old": 3.114999999999995,
+                "current": 3.114999999999995,
+                "gap": 0
+              },
+              {
+                "old": 3.132000000000005,
+                "current": 3.132000000000005,
+                "gap": 0
+              },
+              {
+                "old": 3.1488999999985055,
+                "current": 3.1488999999985055,
+                "gap": 0
+              },
+              {
+                "old": 3.167699999995534,
+                "current": 3.167699999995534,
+                "gap": 0
+              },
+              {
+                "old": 3.1825000000000045,
+                "current": 3.1825000000000045,
+                "gap": 0.0001000000014954594
+              },
+              {
+                "old": 3.198699999995526,
+                "current": 3.198699999995526,
+                "gap": 0
+              },
+              {
+                "old": 3.2158999999985127,
+                "current": 3.2158999999985127,
+                "gap": 0
+              },
+              {
+                "old": 3.231899999998504,
+                "current": 3.231899999998504,
+                "gap": 0
+              },
+              {
+                "old": 3.2487999999970185,
+                "current": 3.2487999999970185,
+                "gap": 0
+              },
+              {
+                "old": 3.264199999995526,
+                "current": 3.264199999995526,
+                "gap": 0
+              },
+              {
+                "old": 3.2820999999940312,
+                "current": 3.2820999999940312,
+                "gap": 0
+              },
+              {
+                "old": 3.298500000000004,
+                "current": 3.298500000000004,
+                "gap": 0
+              },
+              {
+                "old": 3.3150999999940325,
+                "current": 3.3150999999940325,
+                "gap": 0
+              },
+              {
+                "old": 3.331799999997017,
+                "current": 3.331799999997017,
+                "gap": 0
+              },
+              {
+                "old": 3.3485000000000014,
+                "current": 3.3485000000000014,
+                "gap": 0
+              },
+              {
+                "old": 3.3652999999970206,
+                "current": 3.3652999999970206,
+                "gap": 0
+              },
+              {
+                "old": 3.381799999997014,
+                "current": 3.381799999997014,
+                "gap": 0
+              },
+              {
+                "old": 3.3985999999940333,
+                "current": 3.3985999999940333,
+                "gap": 0
+              },
+              {
+                "old": 3.414999999999992,
+                "current": 3.414999999999992,
+                "gap": 0
+              },
+              {
+                "old": 3.4317999999970112,
+                "current": 3.4317999999970112,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 3.4487999999970214,
+                "current": 3.4487999999970214,
+                "gap": 0
+              },
+              {
+                "old": 3.4653999999985103,
+                "current": 3.4653999999985103,
+                "gap": 0
+              },
+              {
+                "old": 3.4819999999999993,
+                "current": 3.4819999999999993,
+                "gap": 0
+              },
+              {
+                "old": 3.498499999999993,
+                "current": 3.498499999999993,
+                "gap": 0
+              },
+              {
+                "old": 3.5150999999940353,
+                "current": 3.5150999999940353,
+                "gap": 0
+              },
+              {
+                "old": 3.5317999999970198,
+                "current": 3.5317999999970198,
+                "gap": 0
+              },
+              {
+                "old": 3.5487999999970157,
+                "current": 3.5487999999970157,
+                "gap": 0
+              },
+              {
+                "old": 3.5649999999999977,
+                "current": 3.5649999999999977,
+                "gap": 0
+              },
+              {
+                "old": 3.581799999997017,
+                "current": 3.581799999997017,
+                "gap": 0
+              },
+              {
+                "old": 3.599299999997015,
+                "current": 3.599299999997015,
+                "gap": 0
+              },
+              {
+                "old": 3.615899999998504,
+                "current": 3.615899999998504,
+                "gap": 0
+              },
+              {
+                "old": 3.632000000000005,
+                "current": 3.632000000000005,
+                "gap": 0
+              },
+              {
+                "old": 3.6485999999940333,
+                "current": 3.6485999999940333,
+                "gap": 0
+              },
+              {
+                "old": 3.6652999999970177,
+                "current": 3.6652999999970177,
+                "gap": 0
+              },
+              {
+                "old": 3.682000000000002,
+                "current": 3.682000000000002,
+                "gap": 0
+              },
+              {
+                "old": 3.6985999999940447,
+                "current": 3.6985999999940447,
+                "gap": 0
+              },
+              {
+                "old": 3.715099999994038,
+                "current": 3.715099999994038,
+                "gap": 0
+              },
+              {
+                "old": 3.731899999998504,
+                "current": 3.731899999998504,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 3.748699999995523,
+                "current": 3.748699999995523,
+                "gap": 0
+              },
+              {
+                "old": 3.7650999999940353,
+                "current": 3.7650999999940353,
+                "gap": 0
+              },
+              {
+                "old": 3.7817999999970198,
+                "current": 3.7817999999970198,
+                "gap": 0
+              },
+              {
+                "old": 3.7974999999999994,
+                "current": 3.7974999999999994,
+                "gap": 0
+              },
+              {
+                "old": 3.8152999999970234,
+                "current": 3.8152999999970234,
+                "gap": 0
+              },
+              {
+                "old": 3.8312999999970145,
+                "current": 3.8312999999970145,
+                "gap": 0
+              },
+              {
+                "old": 3.8485000000000014,
+                "current": 3.8485000000000014,
+                "gap": 0
+              },
+              {
+                "old": 3.8654999999999973,
+                "current": 3.8654999999999973,
+                "gap": 0
+              },
+              {
+                "old": 3.882499999999993,
+                "current": 3.882499999999993,
+                "gap": 0
+              },
+              {
+                "old": 3.898399999998503,
+                "current": 3.898399999998503,
+                "gap": 0
+              },
+              {
+                "old": 3.916199999995527,
+                "current": 3.916199999995527,
+                "gap": 0
+              },
+              {
+                "old": 3.9318999999985067,
+                "current": 3.9318999999985067,
+                "gap": 0
+              }
+            ],
+            "snapshot": {
+              "region": "bgm_cloud",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.28,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 3.9496999999955307,
+                  "volume": 0.28
+                }
+              ]
+            }
+          },
+          {
+            "height": 170,
+            "samples": [
+              {
+                "old": 3.9817999999970226,
+                "current": 3.9816999999955414,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 3.998699999995523,
+                "current": 3.998599999994042,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.015099999994035,
+                "current": 4.014999999992554,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.032099999994031,
+                "current": 4.03199999999255,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.048399999998509,
+                "current": 4.0482999999970275,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.065199999995528,
+                "current": 4.065099999994047,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.081899999998512,
+                "current": 4.081799999997031,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.098199999995529,
+                "current": 4.098099999994048,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.115099999994044,
+                "current": 4.114999999992563,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.131799999997014,
+                "current": 4.131699999995533,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.148399999998503,
+                "current": 4.148299999997022,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.167999999999992,
+                "current": 4.167899999998511,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.181799999997011,
+                "current": 4.18169999999553,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.198999999999998,
+                "current": 4.198899999998517,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.2147999999970125,
+                "current": 4.214699999995531,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.231699999995527,
+                "current": 4.231599999994046,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.248000000000005,
+                "current": 4.247899999998523,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.265199999995531,
+                "current": 4.2650999999940495,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.2819999999999965,
+                "current": 4.281899999998515,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.298699999995534,
+                "current": 4.298599999994053,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.314699999995526,
+                "current": 4.314599999994044,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.331799999997017,
+                "current": 4.331699999995536,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.348399999998506,
+                "current": 4.348299999997025,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.365299999997021,
+                "current": 4.365199999995539,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.3818999999985095,
+                "current": 4.381799999997028,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.398299999997022,
+                "current": 4.398199999995541,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.414999999999992,
+                "current": 4.414899999998511,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.431899999998507,
+                "current": 4.4317999999970255,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.448399999998514,
+                "current": 4.448299999997033,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.46539999999851,
+                "current": 4.465299999997029,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.481899999998504,
+                "current": 4.481799999997023,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.498499999999993,
+                "current": 4.498399999998512,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.515099999994035,
+                "current": 4.514999999992554,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.532599999994034,
+                "current": 4.532499999992552,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.548399999998509,
+                "current": 4.5482999999970275,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.564899999998502,
+                "current": 4.564799999997021,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.581499999999991,
+                "current": 4.58139999999851,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.598299999997025,
+                "current": 4.598199999995543,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.615599999994032,
+                "current": 4.615499999992551,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.631799999997014,
+                "current": 4.631699999995533,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.647499999999994,
+                "current": 4.6473999999985125,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.665899999998501,
+                "current": 4.66579999999702,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.681799999997011,
+                "current": 4.68169999999553,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.698299999997019,
+                "current": 4.698199999995538,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.714899999998508,
+                "current": 4.714799999997027,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.731599999994032,
+                "current": 4.73149999999255,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.748199999995521,
+                "current": 4.748099999994039,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.764899999998505,
+                "current": 4.764799999997024,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.781599999994043,
+                "current": 4.781499999992562,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.798299999997013,
+                "current": 4.798199999995532,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.814899999998502,
+                "current": 4.814799999997021,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.83159999999404,
+                "current": 4.831499999992559,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.848199999995529,
+                "current": 4.848099999994048,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.865899999998504,
+                "current": 4.865799999997023,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.882499999999993,
+                "current": 4.882399999998512,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.899099999994036,
+                "current": 4.898999999992554,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.914899999998511,
+                "current": 4.9147999999970295,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.9315,
+                "current": 4.9313999999985185,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.948599999994045,
+                "current": 4.948499999992563,
+                "gap": 0.00010000000148124855
+              },
+              {
+                "old": 4.964899999998508,
+                "current": 4.964799999997027,
+                "gap": 0.00010000000148124855
+              }
+            ],
+            "snapshot": {
+              "region": "bgm_space",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.28,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_space",
+                  "playing": true,
+                  "time": 4.982499999992555,
+                  "volume": 0.28
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 2.95059999999404,
+                  "volume": 0
+                }
+              ]
+            }
+          }
+        ],
+        "events": [
+          {
+            "id": 2,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 87551.19999999553,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 4,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 87696.79999999702,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 5,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 87770.10000000149,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 5,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 87970.10000000149,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 4,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 88450.39999999851,
+            "clip": "voice_chuckle"
+          },
+          {
+            "id": 4,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 89707.79999999702,
+            "clip": "voice_chuckle"
+          },
+          {
+            "id": 3,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 90501.69999999553,
+            "clip": "bgm_cloud"
+          },
+          {
+            "id": 2,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 91517.29999999702,
+            "clip": "bgm_space"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:44:59.311Z"
+    },
+    {
+      "name": "rapid",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:44:59.312Z",
+      "evidence": {
+        "mode": "3 lifecycle stress rounds; Home start uses bound handler, HUD-to-Home uses explicit QA scene load",
+        "observations": [
+          {
+            "round": 1,
+            "oldA": {
+              "valid": false,
+              "clip": null,
+              "playing": false,
+              "time": null,
+              "volume": null
+            },
+            "oldB": [
+              {
+                "valid": false,
+                "clip": null,
+                "playing": false,
+                "time": null,
+                "volume": null
+              },
+              {
+                "valid": false,
+                "clip": null,
+                "playing": false,
+                "time": null,
+                "volume": null
+              }
+            ],
+            "home": {
+              "suspended": false,
+              "gain": 0.07525000000000001,
+              "music": {
+                "valid": true,
+                "clip": "bgm_home",
+                "playing": true,
+                "time": 0.20670000000298216,
+                "volume": 0.07525000000000001
+              }
+            }
+          },
+          {
+            "round": 2,
+            "oldA": {
+              "valid": false,
+              "clip": null,
+              "playing": false,
+              "time": null,
+              "volume": null
+            },
+            "oldB": [
+              {
+                "valid": false,
+                "clip": null,
+                "playing": false,
+                "time": null,
+                "volume": null
+              },
+              {
+                "valid": false,
+                "clip": null,
+                "playing": false,
+                "time": null,
+                "volume": null
+              }
+            ],
+            "home": {
+              "suspended": false,
+              "gain": 0.08158499999791384,
+              "music": {
+                "valid": true,
+                "clip": "bgm_home",
+                "playing": true,
+                "time": 0.22160000000150148,
+                "volume": 0.08158499999791384
+              }
+            }
+          },
+          {
+            "round": 3,
+            "oldA": {
+              "valid": false,
+              "clip": null,
+              "playing": false,
+              "time": null,
+              "volume": null
+            },
+            "oldB": [
+              {
+                "valid": false,
+                "clip": null,
+                "playing": false,
+                "time": null,
+                "volume": null
+              },
+              {
+                "valid": false,
+                "clip": null,
+                "playing": false,
+                "time": null,
+                "volume": null
+              }
+            ],
+            "home": {
+              "suspended": false,
+              "gain": 0.0760549999989569,
+              "music": {
+                "valid": true,
+                "clip": "bgm_home",
+                "playing": true,
+                "time": 0.20739999999850056,
+                "volume": 0.0760549999989569
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "id": 1,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 92547.10000000149,
+            "clip": "bgm_home"
+          },
+          {
+            "id": 2,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 92610,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 4,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 92739.19999999553,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 5,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 92818.69999999553,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 5,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 93018.89999999851,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 14,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 93999.19999999553,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 16,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 94137.29999999702,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 17,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 94201.79999999702,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 17,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 94402.10000000149,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 25,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 95342.29999999702,
+            "clip": "bgm_home"
+          },
+          {
+            "id": 26,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 95405.79999999702,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 28,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 95537.79999999702,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 29,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 95621.60000000149,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 29,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 95822.10000000149,
+            "clip": "claw_grip"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:45:03.495Z"
+    }
+  ],
+  "errors": [],
+  "ready": true,
+  "busy": false
+}

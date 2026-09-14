@@ -1,0 +1,522 @@
+[
+  {
+    "scene": "HUD",
+    "game": {
+      "phase": "entering",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball"
+      ],
+      "untimedCalibration": false,
+      "observationSeconds": null,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 0,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144
+      },
+      "audioClips": 17,
+      "currentId": 1,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0,
+            "y": 466.3587341308594,
+            "z": 0
+          },
+          "angle": 0,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 0,
+          "awake": true,
+          "contacts": 0,
+          "contactSeconds": null,
+          "placed": false,
+          "type": 1,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456389,
+            "right": 50.456389,
+            "bottom": 416.3587341308594,
+            "top": 516.3587341308594
+          }
+        }
+      ]
+    },
+    "backdrop": 15,
+    "clouds": [
+      {
+        "name": "BackdropCloud0",
+        "x": -320.6179644977727,
+        "y": 178.20379094041934
+      },
+      {
+        "name": "BackdropCloud1",
+        "x": 387.74899344521833,
+        "y": 27.124019851152564
+      },
+      {
+        "name": "BackdropCloud2",
+        "x": -358.74386766419923,
+        "y": -218.34871866138096
+      }
+    ]
+  },
+  {
+    "scene": "HUD",
+    "game": {
+      "phase": "entering",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball"
+      ],
+      "untimedCalibration": false,
+      "observationSeconds": null,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 0,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144
+      },
+      "audioClips": 17,
+      "currentId": 1,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0,
+            "y": 468.5148010253906,
+            "z": 0
+          },
+          "angle": 0,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 0,
+          "awake": true,
+          "contacts": 0,
+          "contactSeconds": null,
+          "placed": false,
+          "type": 1,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456389,
+            "right": 50.456389,
+            "bottom": 418.5148010253906,
+            "top": 518.5148010253906
+          }
+        }
+      ]
+    },
+    "backdrop": 55,
+    "clouds": [
+      {
+        "name": "BackdropCloud0",
+        "x": -321.12915522093664,
+        "y": 178.2173622095208
+      },
+      {
+        "name": "BackdropCloud1",
+        "x": 387.9744078488471,
+        "y": 27.16100770299491
+      },
+      {
+        "name": "BackdropCloud2",
+        "x": -358.56248148814575,
+        "y": -218.3425386004376
+      }
+    ]
+  },
+  {
+    "scene": "HUD",
+    "game": {
+      "phase": "entering",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball"
+      ],
+      "untimedCalibration": false,
+      "observationSeconds": null,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 0,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144
+      },
+      "audioClips": 17,
+      "currentId": 1,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0,
+            "y": 469.45440673828125,
+            "z": 0
+          },
+          "angle": 0,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 0,
+          "awake": true,
+          "contacts": 0,
+          "contactSeconds": null,
+          "placed": false,
+          "type": 1,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456389,
+            "right": 50.456389,
+            "bottom": 419.45440673828125,
+            "top": 519.4544067382812
+          }
+        }
+      ]
+    },
+    "backdrop": 85,
+    "clouds": [
+      {
+        "name": "BackdropCloud0",
+        "x": -320.89321992823506,
+        "y": 178.21116204486944
+      },
+      {
+        "name": "BackdropCloud1",
+        "x": 387.87103179807775,
+        "y": 27.14396687573334
+      },
+      {
+        "name": "BackdropCloud2",
+        "x": -358.6464388114858,
+        "y": -218.3454112783298
+      }
+    ]
+  },
+  {
+    "scene": "HUD",
+    "game": {
+      "phase": "entering",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball"
+      ],
+      "untimedCalibration": false,
+      "observationSeconds": null,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 0,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144
+      },
+      "audioClips": 17,
+      "currentId": 1,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0,
+            "y": 469.5043640136719,
+            "z": 0
+          },
+          "angle": 0,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 0,
+          "awake": true,
+          "contacts": 0,
+          "contactSeconds": null,
+          "placed": false,
+          "type": 1,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456389,
+            "right": 50.456389,
+            "bottom": 419.5043640136719,
+            "top": 519.5043640136719
+          }
+        }
+      ]
+    },
+    "backdrop": 160,
+    "clouds": [
+      {
+        "name": "BackdropCloud0",
+        "x": -320.75507223724173,
+        "y": 178.20748118896313
+      },
+      {
+        "name": "BackdropCloud1",
+        "x": 387.80997610677036,
+        "y": 27.133964679116616
+      },
+      {
+        "name": "BackdropCloud2",
+        "x": -358.6954074996987,
+        "y": -218.34707716493557
+      }
+    ]
+  },
+  {
+    "scene": "HUD",
+    "game": {
+      "phase": "entering",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball"
+      ],
+      "untimedCalibration": false,
+      "observationSeconds": null,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 0,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144
+      },
+      "audioClips": 17,
+      "currentId": 1,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0,
+            "y": 467.6407470703125,
+            "z": 0
+          },
+          "angle": 0,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 0,
+          "awake": true,
+          "contacts": 0,
+          "contactSeconds": null,
+          "placed": false,
+          "type": 1,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456389,
+            "right": 50.456389,
+            "bottom": 417.6407470703125,
+            "top": 517.6407470703125
+          }
+        }
+      ]
+    },
+    "backdrop": 200,
+    "clouds": [
+      {
+        "name": "BackdropCloud0",
+        "x": -320.7542554616134,
+        "y": 178.2074593151251
+      },
+      {
+        "name": "BackdropCloud1",
+        "x": 387.809613964491,
+        "y": 27.1339054890303
+      },
+      {
+        "name": "BackdropCloud2",
+        "x": -358.695696598644,
+        "y": -218.34708697861987
+      }
+    ]
+  }
+]

@@ -1,0 +1,108 @@
+import { AudioClip, AudioSource, game, Game, isValid, Node } from 'cc';
+import { hasUserInteraction, markUserInteraction, readSettings } from './local-platform';
+
+const CLIP_IDS: Record<string, readonly string[]> = {
+    impact_cardboard_box: ['impact_paper_1', 'impact_paper_2', 'impact_paper_3'],
+    impact_wood_plank: ['impact_wood_1', 'impact_wood_2', 'impact_wood_3'],
+    impact_basketball: ['impact_rubber_1', 'impact_rubber_2', 'impact_rubber_3'],
+    impact_fridge: ['impact_metal_1', 'impact_metal_2', 'impact_metal_3'],
+    impact_dumbbell: ['impact_metal_1', 'impact_metal_2', 'impact_metal_3'],
+    impact_toilet: ['impact_ceramic_1', 'impact_ceramic_2', 'impact_ceramic_3'],
+    impact_wooden_crate: ['impact_wood_1', 'impact_wood_2', 'impact_wood_3'],
+    impact_sofa: ['impact_soft_1', 'impact_soft_2', 'impact_soft_3'],
+    impact_burger: ['impact_soft_1', 'impact_soft_2', 'impact_soft_3'],
+    impact_slipper: ['impact_soft_1', 'impact_soft_2', 'impact_soft_3'],
+    impact_ice_block: ['impact_ice_1', 'impact_ice_2', 'impact_ice_3'],
+    impact_whale: ['impact_heavy_1', 'impact_heavy_2', 'impact_heavy_3'],
+    skill_rotate_90: ['rotate_90'], claw_release: ['claw_open'], ui_tap: ['next_handoff'],
+};
+
+interface Voice { source: AudioSource; availableAt: number; collision: boolean; reaction: boolean; pairKey: string }
+
+/** Eight interruptible sources: the agreed cap, with at most four concurrent impacts. */
+export class GameAudio {
+    private readonly voices: Voice[] = [];
+    private suspended = false;
+    private hidden = false;
+    private readonly playedAt = new Map<string, number>();
+    private readonly variants = new Map<string, number>();
+    private clock = 0;
+    private lastReactionAt = Number.NEGATIVE_INFINITY;
+    private readonly hide = () => { this.hidden = true; this.stop(); };
+    private readonly show = () => { this.hidden = false; };
+    constructor(node: Node, private readonly clips: Map<string, AudioClip>) {
+        for (let i = 0; i < 8; i++) {
+            const child = new Node(`Sfx:${i}`); node.addChild(child);
+            const source = child.addComponent(AudioSource);
+            source.playOnAwake = false; source.loop = false;
+            this.voices.push({ source, availableAt: 0, collision: false, reaction: false, pairKey: '' });
+        }
+        game.on(Game.EVENT_HIDE, this.hide); game.on(Game.EVENT_SHOW, this.show);
+    }
+    interact(): void { markUserInteraction(); }
+    update(dt: number): void {
+        if (this.suspended || this.hidden) return;
+        this.clock += dt;
+        for (const [key, time] of this.playedAt) if (this.clock - time > 1) this.playedAt.delete(key);
+    }
+    pause(value: boolean): void { this.suspended = value; if (value) this.stop(); }
+    private stop(): void {
+        this.stopReactions();
+        for (const voice of this.voices) {
+            if (isValid(voice.source, true)) voice.source.stop();
+            voice.availableAt = 0;
+        }
+    }
+    isReacting(): boolean {
+        return this.voices.some(v => v.reaction && (v.source.playing || v.availableAt > this.clock));
+    }
+    /** Accidents interrupt comments without suppressing impact or star-loss feedback. */
+    stopReactions(): void {
+        for (const voice of this.voices) {
+            if (!voice.reaction) continue;
+            if (isValid(voice.source, true)) {
+                voice.source.stop();
+                // Cocos queues stop() until AudioPlayer.load resolves. Detach this clip
+                // as well so an in-flight load cannot briefly start the cancelled voice.
+                voice.source.clip = null;
+            }
+            voice.availableAt = 0;
+            voice.reaction = false;
+        }
+    }
+    play(name: string, volume = .7, pairKey = name): boolean {
+        const ids = CLIP_IDS[name] ?? [name];
+        const index = this.variants.get(name) ?? 0;
+        const clip = this.clips.get(ids[index % ids.length]);
+        if (!clip || !hasUserInteraction() || this.suspended || this.hidden || !readSettings().sound) return false;
+        const busy = (v: Voice) => v.source.playing || v.availableAt > this.clock;
+        const collision = name.startsWith('impact_');
+        const reaction = name.startsWith('voice_');
+        // One shared clock survives placement phases; rejected reactions are never queued.
+        if (reaction && (this.clock - this.lastReactionAt < 12 || this.isReacting())) return false;
+        const level = Math.max(0, Math.min(.9, volume));
+        const samePair = this.voices.filter(v => v.collision && v.pairKey === pairKey && busy(v))
+            .reduce<Voice | undefined>((a, v) => !a || v.source.volume > a.source.volume ? v : a, undefined);
+        const cooling = this.clock - (this.playedAt.get(pairKey) ?? -1) < .12;
+        // Keep a stronger hit from the same pair; weaker contact chatter stays in cooldown.
+        if (cooling && (!collision || !samePair || samePair.source.volume >= level)) return false;
+        const impacts = this.voices.filter(v => v.collision && busy(v));
+        const weakest = impacts.reduce<Voice | undefined>((a, v) => !a || v.source.volume < a.source.volume ? v : a, undefined);
+        // No deferred queue: when collapse fills the four impact slots, a stronger hit replaces
+        // the quietest one immediately. Operation/star cues retain their reserved capacity.
+        const voice = cooling ? samePair : collision && impacts.length >= 4
+            ? (weakest && level > weakest.source.volume ? weakest : undefined)
+            : this.voices.find(v => !busy(v)) ?? (!collision ? weakest : undefined);
+        if (!voice) return false;
+        voice.source.stop(); voice.source.clip = clip;
+        voice.source.volume = level;
+        voice.availableAt = this.clock + clip.getDuration() + .1;
+        voice.collision = collision; voice.reaction = reaction; voice.pairKey = pairKey;
+        if (reaction) this.lastReactionAt = this.clock;
+        this.playedAt.set(pairKey, this.clock);
+        this.variants.set(name, index + 1);
+        voice.source.play();
+        return true;
+    }
+    dispose(): void { game.off(Game.EVENT_HIDE, this.hide); game.off(Game.EVENT_SHOW, this.show); this.stop(); }
+}

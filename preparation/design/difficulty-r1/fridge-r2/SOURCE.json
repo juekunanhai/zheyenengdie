@@ -1,0 +1,39 @@
+{
+  "version": "difficulty-r1-fridge-r2-frozen",
+  "date": "2026-09-13",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "pure text; one asset per call",
+  "submitted_images": [],
+  "local_files_uploaded": false,
+  "purpose": "Replace rounded many-vertex fridge with an actual eight-sided body, avoiding Cocos fan decomposition without invisible collision geometry. Original R1 art remains frozen.",
+  "calls": [
+    {
+      "id": "fridge-first",
+      "selected": false,
+      "reason": "Eight-sided physical silhouette succeeded, but 110 width maps to 147.33 height; rejected in favor of a shorter wider candidate.",
+      "original_tool_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-49c0fcb4-8152-4c4f-bf02-bcf13b311c0b.png",
+      "saved_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/generated/fridge-first.png",
+      "sha256": "54fdf7d1f311fc8aa6993cedd8db2766fc0964ac39bd1b1f9b3e01ed28d999ac",
+      "prompt_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/prompts/fridge-first.txt",
+      "prompt": "Use case: stylized-concept.\nCreate ONE final production transparent PNG sprite for a high quality playful mobile stacking game.\nA wide stocky toy refrigerator character: complete body silhouette width 110 and height 133 proportionally. White enamel upper freezer and larger lower door, ice-blue casing, two friendly googly eyes INSIDE the upper door, short glossy blue handles inside the left edges, one yellow-gold star magnet INSIDE the lower door. Lovely entertainment character, crisp dimensional casually painted 3D toy-like materials and highlights, not photograph, not flat clipart.\nCRITICAL OUTER SILHOUETTE: exactly an EIGHT-SIDED RECTANGLE WITH VERY SMALL STRAIGHT CHAMFERED CORNERS. Imagine a perfect rectangle whose four corners each have a tiny 45-degree straight cut only 3% of total width. Long perfectly straight HORIZONTAL top edge, long perfectly straight HORIZONTAL bottom edge, long perfectly straight VERTICAL left and right edges, four tiny STRAIGHT 45-degree diagonal bevels at corners. No large rounded outer corners. No curves or humps on the outside contour. No external rounded roof cap. No separate plinth, feet or indentation. It must have the outline of a wide rectangular storage box with 8 straight edges. This shape is essential for one simple physical collider.\nCreate all appealing roundness, gloss, enamel shading and bevel lighting INSIDE that simple octagonal body outline. Interior door panels can have rounded corners, the eyes can be rounded and juicy, but exterior silhouette MUST have only straight edges and tiny diagonal corners. Straight-on ORTHOGRAPHIC front view, no isometric angle and no deep perspective.\nComposition: centered, complete uncropped single object, body ratio 110 wide to 133 tall, transparent 6% margin. Genuine transparent alpha background. No cast shadow, no floor, no glow, no background, no extra objects, no text, no watermark. Blue outline belongs to the body, no sticking-out details. Broad real flat top and broad real flat bottom each span 94% of body width.\n"
+    },
+    {
+      "id": "fridge",
+      "selected": true,
+      "reason": "Eight visible straight exterior sides; playful enamel inside simple physical shell. Uniform scale gives 110 x 122.873563; no anisotropic stretching.",
+      "original_tool_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-d2a8e094-fc3c-4479-85c2-71fd4e3f2491.png",
+      "saved_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/generated/fridge.png",
+      "sha256": "8535bf389a4be06f2e7e15b7c938f4b48ce1fe4f7b9b493aa12fa64541d2c6da",
+      "prompt_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/prompts/fridge.txt",
+      "prompt": "Use case: stylized-concept.\nONE finished transparent game sprite: a WIDE, CHUBBY, SHORT refrigerator character, almost square. CRITICAL shape ratio: width 5, height 6. NOT A TALL NARROW REFRIGERATOR. Make the whole body as wide and squat as a small cabinet. Width 5 units, height 6 units.\nONE continuous body whose OUTER SILHOUETTE is exactly 8 straight edges: long horizontal top and bottom, long vertical left/right, and four SHORT STRAIGHT 45-degree corner chamfers, each 4% of width. Do not round the outside contour. Flat top and bottom each occupy 92% of overall width. No separate top cap or bottom base; no feet; no notches. An eight-sided clipped rectangle, not an elongated octagon and not a rounded rectangle.\nBeautiful playful premium mobile game illustrative 3D toy rendering. Warm white enamel upper freezer door (one-third of body height) and lower refrigerator door (two-thirds of body height), light ice-blue glossy casing. Friendly two large glossy googly eyes INSIDE upper door, simple blue eyebrows, little blue vertical handle inside each left door edge, one yellow star magnet inside lower door. All the fun rounded shapes, rounded interior door corners and highlights are INSIDE the simple straight-edge outer silhouette. Clear tactile polished enamel, controlled highlights and dimensional blue bevel lighting. No photorealism, no flat clipart.\nExact straight-on orthographic front view, no perspective. A broad squat cabinet: outer body WIDTH is 83% of HEIGHT.\nSquare canvas. Place full body centrally, occupying 75% of canvas WIDTH and 90% of canvas HEIGHT. Transparent margin, genuinely transparent alpha background. No shadow on floor, no floor, no scenery, no glow, no writing or logo, no other items. All handles/eyes/star stay inside the eight straight outside edges.\n"
+    }
+  ],
+  "frozen_files": {
+    "GEOMETRY.json": "09236e37e716a6ba8cd11d4ad73756c03830dd8b462c931bb5fd053fa601afe9",
+    "GEOMETRY_CHECK.json": "3b3f13580949360e0e334af784312f8b18162f52c10e0ef8cfeba9149536aa54",
+    "PHYSICS_CHECK.json": "33762057fbdc48cae380ae1f127b871dbc934bf4e83a56161d057e757f9bf138",
+    "PROCESSING_AUDIT.json": "4cacb61a2195fe3ae8f68ae3e8f2a6e96e80ce0f8f8cc6515ccc20e757e2c18c",
+    "assets/next_fridge.png": "c9e8cc38532c5032cc53406e601c1e651bf7b898adeb322cacd63b6223afa977",
+    "assets/object_fridge.png": "f8d8b26d64af8ba6e36163bfcb2533f1b60f0c429871b773613406d799ca37d0"
+  }
+}

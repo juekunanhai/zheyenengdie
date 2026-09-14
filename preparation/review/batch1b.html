@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · Batch 1B 事故与全塔验证</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#edf3f8;color:#173047;font:15px/1.7 system-ui}main{max-width:1220px;margin:auto;padding:22px}h1{font-size:25px;margin:0}h2{font-size:18px;margin:0 0 10px}p{margin:8px 0}a{color:#126bb2}.notice{padding:12px 16px;background:#fff3d7;border-left:3px solid #d69b18}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:16px 0}button,select{font:inherit;padding:7px 11px;border:1px solid #bacbd9;border-radius:8px;background:white;color:inherit}button{cursor:pointer}button:disabled,select:disabled{opacity:.45;cursor:wait}.workspace{display:flex;gap:24px;align-items:flex-start}.phone{flex:none;max-width:100%;overflow:auto}iframe{display:block;border:0;box-shadow:0 8px 28px #20364d25}.note{flex:1;min-width:280px;background:white;padding:18px;border-radius:12px}.small{font-size:13px;color:#506778}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;max-height:440px;overflow:auto;background:#f3f6f9;padding:12px}.tests{border-top:1px solid #d5e1ea;margin-top:18px;padding-top:18px}.tests button{border-color:#d4aa75;background:#fffaf2}#modeLabel{margin:0;background:#173f66;color:#fff;padding:5px 12px}#status{min-height:26px}details{margin-top:12px}@media(max-width:780px){main{padding:14px}.workspace{flex-direction:column}.note{min-width:0;width:100%}}
+</style>
+<main><h1>Batch 1B · 事故与全塔支撑</h1>
+<p>真实 Cocos 3.8.8 / Box2D 构建。普通事故扣一星，第三次有效普通事故失败；连续倒塌按事故开始时固定的旧塔集合判断。</p>
+<p class="notice">下方“定向故障检查”会创建受控物理场景、移除支撑或注入速度，只用于复现边界问题，不能作为自然游玩难度或玩家胜率的证据。检查结果由本机本次运行产生，页面不预填通过。</p>
+<div class="controls"><button id="start" disabled>六物体试玩 · 4 秒</button><button id="untimed" disabled>六物体试玩 · 无计时</button><button id="finish" disabled>结束本轮</button><label>画幅 <select id="size"><option value="375,667">9:16</option><option value="375,812">长屏</option><option value="600,800">3:4</option></select></label></div>
+<div class="controls"><button id="release-center" disabled>居中释放当前件</button><button id="rotate-current" disabled>旋转当前件</button><button id="checkpoint" disabled>记录当前检查点</button><span class="small">调用真实控制器操作，无物理注入。</span></div><p id="manualSummary" class="small">尚无真实试玩操作记录。</p>
+<p id="status" role="status" aria-live="polite">正在加载引擎…</p>
+<div class="workspace"><div class="phone"><p id="modeLabel">尚未开始</p><iframe id="player" title="Batch 1B 真实引擎" src="play-player.html?revision=batch1b-r1" width="375" height="667"></iframe></div>
+<aside class="note"><h2>试玩说明</h2><p>纸箱 → 木板 → 马桶 → 冰箱 → 哑铃 → 篮球，循环出现。左右拖动，松手释放；使用右下旋转按钮。事故处理中不会强制刷出下一件。</p><p class="small">4 秒模式保留新玩家首局前两件免自动释放；无计时只用于观察物理。背景与 R13 结算保持；声音已按要求换为网站实录／拟音，22 项运行库，仍可试听调整。</p>
+<p><a href="audio-1b.html">A3 实录音效与来源</a> · <a href="../docs/BATCH1B_IMPLEMENTATION.md">本批规则与实施范围</a></p>
+<section class="tests"><h2>定向故障检查</h2><p class="small">检查会重建当前局。先验收真实释放、碰撞、支撑与控制器流转，再断言星数和事故快照。测试期间互斥，最长等待有明确超时。</p>
+<div class="controls"><button id="check-three-stars" disabled>三次分离掉落</button><button id="check-chain" disabled>同事故多件掉落</button><button id="check-collapse" disabled>旧塔数量型失败</button><button id="check-resume" disabled>规划恢复 / NEXT</button><button id="check-frozen" disabled>缩放与画幅冻结</button><button id="check-support" disabled>屏下有效支撑</button><button id="check-presolve" disabled>同子步碰撞过滤</button><button id="check-motor" disabled>已有连接失效隔离</button><button id="check-toilet" disabled>凹形物体失效过滤</button><button id="check-assist" disabled>深层辅助开关</button><button id="check-audio" disabled>A3 真实音源与优先级</button><button id="check-all" disabled>依次运行全部</button></div>
+<p id="checkSummary" aria-live="polite">尚未运行。本页通过只证明列出的受控场景。</p><button id="export" disabled>导出本次 JSON</button><details><summary>查看完整逐项结果（JSON）</summary><pre id="qaResults">[]</pre></details></section>
+<details open><summary>当前真实运行状态</summary><pre id="state">{}</pre></details></aside></div></main>
+<script src="batch1b-checks.js"></script></html>

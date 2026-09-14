@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-14T18:38:50.897458",
+  "page": "http://127.0.0.1:8767/preparation/review/audio-cheerful-r2.html",
+  "method": "CUA real browser buttons and DOM media state; not subjective listening",
+  "five_candidates_started": true,
+  "voice_ended": [
+    "V1",
+    "V2",
+    "V3"
+  ],
+  "twenty_second_mixes_started_and_ended": [
+    "A",
+    "B"
+  ],
+  "music_switch_only_b_remained_playing": true,
+  "stop_all_paused_and_reset": true,
+  "after_reload": {
+    "players": 8,
+    "all_paused": true,
+    "all_ready": true,
+    "media_errors": []
+  },
+  "console_errors_or_warnings": [],
+  "layout": "Desktop screenshot inspected; mobile not tested this batch",
+  "page_sha256": "38420dc25cd583b3f2395b1bad3881e6a15b360d856ce79abb1c4f153111624a",
+  "manifest_sha256": "c46f259d93f4bd0b99b39bf16803a8ec3575148b61037251332d41bd2c0bcad8"
+}

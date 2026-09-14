@@ -1,0 +1,22 @@
+{
+  "status": "adopted_for_bounded_trial_pending_user_review",
+  "generation": "single_convex_r2",
+  "baselineMass": {
+    "cardboard_box": 4.3896484375,
+    "wood_plank": 3.4859863281249996,
+    "basketball": 1.418625432636641,
+    "fridge": 12.85693359375,
+    "toilet": 4.995681930117069,
+    "dumbbell": 4.844152909878345
+  },
+  "candidateMass": {
+    "cardboard_box": 4.389648437503322,
+    "wood_plank": 3.4859863281278893,
+    "basketball": 1.418625432636641,
+    "fridge": 7.023437500005776,
+    "toilet": 4.995681930117069,
+    "dumbbell": 4.844152909878345
+  },
+  "control": "Geometry-only preserves each original mass; lighter changes only fridge to 1.6 paper mass; cushioning, stabilizer and contact angular damping are separate stages. Compiled current connections use correctionFactor=0; original positive-feedback evidence remains archived.225 is a same-height/mass collision diagnostic, not approved stretched artwork.",
+  "selected_profile": "profiles/contact-damped.json"
+}

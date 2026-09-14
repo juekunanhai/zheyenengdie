@@ -1,0 +1,103 @@
+{
+  "status": "authorized_for_current_use",
+  "listening_status": "not_reviewed",
+  "candidate_manifest": "audio/batch1c/MANIFEST.json",
+  "entries": [
+    {
+      "id": "bgm_city",
+      "candidate": "audio/batch1c/encoded/bgm_city.mp3",
+      "import_path": "assets/batch1/audio/bgm_city.mp3",
+      "sha256": "b7d43a8c0cc7b07fce8f15a1b01f88a3334a0cdad5436259f2dd9e4d9fd4eeb5",
+      "uuid": "f533f0ab-55a9-5184-8ad3-26ed9eb42a13",
+      "meta_sha256": "52c3f70cd938225066e72b652be4c9772324158d24eea194c5a1dde3857bc92e"
+    },
+    {
+      "id": "bgm_cloud",
+      "candidate": "audio/batch1c/encoded/bgm_cloud.mp3",
+      "import_path": "assets/batch1/audio/bgm_cloud.mp3",
+      "sha256": "0f8bfbc3ed983b1a669c440e016bb35f5527a2d17fc1030b48ed2f44049c0aef",
+      "uuid": "489d544b-86ed-55d5-a99d-230deb1d738b",
+      "meta_sha256": "08f8caf0f3cb13647f434f63e364b1295bddb2deed4c4f68a5c154c017731338"
+    },
+    {
+      "id": "bgm_space",
+      "candidate": "audio/batch1c/encoded/bgm_space.mp3",
+      "import_path": "assets/batch1/audio/bgm_space.mp3",
+      "sha256": "16f21a4828d4270c8313f0a0bfbb80debf42c056a479c4a34fc241a9eefe3dde",
+      "uuid": "31d3bb54-7d7f-5f29-914a-34d21260be84",
+      "meta_sha256": "df4f0cd22dda4cfe345e71db3c06e6644323a1e52bd85ccd6d55f8e94fa3cbc1"
+    },
+    {
+      "id": "impact_soft_1",
+      "candidate": "audio/batch1c/encoded/impact_soft_1.mp3",
+      "import_path": "assets/batch1/audio/impact_soft_1.mp3",
+      "sha256": "98ad2fd2b40f53fafa2e2f3856d18fb5fff7b5d665ab6e7d090698e423c65348",
+      "uuid": "388f5d53-f5d4-539b-a43c-b35edb93f43d",
+      "meta_sha256": "dd6d078ebefa89cccdd3cafb019d1212ec1352475f0090e20f92feb36426ed59"
+    },
+    {
+      "id": "impact_ice_1",
+      "candidate": "audio/batch1c/encoded/impact_ice_1.mp3",
+      "import_path": "assets/batch1/audio/impact_ice_1.mp3",
+      "sha256": "79bef0d269ddfe7f5399626346230a9331d1a05f20314ee1827735f3e6cfcd58",
+      "uuid": "eaf54498-57d3-5772-989b-4e07cbf25800",
+      "meta_sha256": "205481e30b9335f50e5eb66db4343a69f440c778bb53604af5e2d13ed706af7a"
+    },
+    {
+      "id": "impact_heavy_1",
+      "candidate": "audio/batch1c/encoded/impact_heavy_1.mp3",
+      "import_path": "assets/batch1/audio/impact_heavy_1.mp3",
+      "sha256": "86bfdd9bbb70f9cc0e6fadb25e3307d4cb04ec5e0d5df6fe3c619b086845a714",
+      "uuid": "68eb25a6-c69f-56fb-b452-a3a623b90ec9",
+      "meta_sha256": "7afc980a2bb65fbc842f7e587306591c7679d4e4a1e4cfc835dada7697bb8d8e"
+    },
+    {
+      "id": "impact_soft_2",
+      "candidate": "audio/batch1c/encoded/impact_soft_2.mp3",
+      "import_path": "assets/batch1/audio/impact_soft_2.mp3",
+      "sha256": "95c5d680773985f41fe3eafacd767a4fab15f9992b045fc7e5c60ad8d9279a11",
+      "uuid": "89abc0be-4d26-57ef-9c6e-b865e090915f",
+      "meta_sha256": "0fbf08d904d0d27753cd0bdf15bd5d16e5d3c5698aa1db3a71baa23d4efe6303"
+    },
+    {
+      "id": "impact_ice_2",
+      "candidate": "audio/batch1c/encoded/impact_ice_2.mp3",
+      "import_path": "assets/batch1/audio/impact_ice_2.mp3",
+      "sha256": "5bddce1dedb6d73cfba99c2dbaf72efc5844550ee8ef57c8b5fbdf411939c73e",
+      "uuid": "ba670f01-60e8-5ba2-a93c-c1e43439928d",
+      "meta_sha256": "048fc5002688e6072e59e9bc27ebc734bae72996d2dd5934e4b5dfeca1e7002f"
+    },
+    {
+      "id": "impact_heavy_2",
+      "candidate": "audio/batch1c/encoded/impact_heavy_2.mp3",
+      "import_path": "assets/batch1/audio/impact_heavy_2.mp3",
+      "sha256": "f14f9173257c4afe3794900c8ad55fa2568bfb6c39c15687904182e9bbfb1f3c",
+      "uuid": "1668fa3c-c833-58c0-a84c-fec1d25b6394",
+      "meta_sha256": "4f6275c949857bd37b816b8042b7aa21b816dfd3917654ee61bba2220140257a"
+    },
+    {
+      "id": "impact_soft_3",
+      "candidate": "audio/batch1c/encoded/impact_soft_3.mp3",
+      "import_path": "assets/batch1/audio/impact_soft_3.mp3",
+      "sha256": "10d4b1b378aa9ee18417c8cf83e13b05f1b4d05a21b2b070e844de0554b86def",
+      "uuid": "20634fb8-a68e-5cae-a9b2-7cb353390b81",
+      "meta_sha256": "818ef2c7b8134736ae89868acaa74003610e5418880434163fb2900fd2e34542"
+    },
+    {
+      "id": "impact_ice_3",
+      "candidate": "audio/batch1c/encoded/impact_ice_3.mp3",
+      "import_path": "assets/batch1/audio/impact_ice_3.mp3",
+      "sha256": "8678c25c5485d67a37ef30e399a08148c926e049613bbe1ba0ad90f75dd171f4",
+      "uuid": "01845990-b59e-52b4-a17e-4fc0fb692d25",
+      "meta_sha256": "c5d55dbfd459f3bf24ad92d33eb91ea661b0524a600447cf556107f37e278170"
+    },
+    {
+      "id": "impact_heavy_3",
+      "candidate": "audio/batch1c/encoded/impact_heavy_3.mp3",
+      "import_path": "assets/batch1/audio/impact_heavy_3.mp3",
+      "sha256": "af292c7f565d971e5f17dc84f13b32636dc9b411a96e2d2616f70ebded2857bb",
+      "uuid": "8941d852-9b9d-5b9f-b41c-e5f03e8bbd0d",
+      "meta_sha256": "d817954edb8e2a48889d1c0d90435fa2f5a7be3de20d39efd62f4f305eb0ee74"
+    }
+  ]
+}

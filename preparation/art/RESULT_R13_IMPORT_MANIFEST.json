@@ -1,0 +1,223 @@
+{
+  "revision": "result-r13",
+  "status": "approved_visual_runtime_integration",
+  "approved_artifact_sha256": "ffaf472af62c760bcfb408b71f5cc6c61e9e126f073ccace826a0cc20d623890",
+  "entries": [
+    {
+      "id": "result_r13_panel",
+      "candidate": "design/result-r13/assets/result_panel_decorated.png",
+      "import_path": "assets/batch0/art/result_r13_panel.png",
+      "sha256": "120657cefb6a9b216eb1d96a062e3e18b1cab83cf733b1a67cb7892fbbd65cbe",
+      "uuid": "544c2544-68e4-5023-83fd-97f3952a54e1",
+      "kind": "new",
+      "size": [
+        1107,
+        1233
+      ]
+    },
+    {
+      "id": "result_r13_tower",
+      "candidate": "design/result-r13/assets/result_character_tower.png",
+      "import_path": "assets/batch0/art/result_r13_tower.png",
+      "sha256": "5aa6cd284910f44ed072bcc0fc1cd69d8a9006f619f56672b999f93fe062acb4",
+      "uuid": "12f5e35f-0981-5ec0-b3e1-d12b545934c7",
+      "kind": "new",
+      "size": [
+        748,
+        1506
+      ]
+    },
+    {
+      "id": "result_r13_title",
+      "candidate": "design/result-r13/assets/result_title.png",
+      "import_path": "assets/batch0/art/result_r13_title.png",
+      "sha256": "1b7d7859b5aabbc15a9f5f3cd87ea7af76a8adc454e9522245e618e415123b14",
+      "uuid": "5a3bdf5b-28c6-582b-897d-cb3c661307cc",
+      "kind": "new",
+      "size": [
+        900,
+        357
+      ]
+    },
+    {
+      "id": "result_r13_bubble",
+      "candidate": "design/result-r13/assets/result_bubble.png",
+      "import_path": "assets/batch0/art/result_r13_bubble.png",
+      "sha256": "2aaaf0bf8d7cf83bf560cda75e31b36455e8ef57ffcf0ec42920c462384179f1",
+      "uuid": "d5e295ae-a079-527c-be77-ca42a8ca2cfc",
+      "kind": "new",
+      "size": [
+        900,
+        534
+      ]
+    },
+    {
+      "id": "result_r13_retry",
+      "candidate": "design/result-r13/assets/result_retry.png",
+      "import_path": "assets/batch0/art/result_r13_retry.png",
+      "sha256": "61fb5938b185ef47866bc0634c6cc90a08efd1d08160ab5adf7298dfd9771ada",
+      "uuid": "9e397279-db05-5a28-bed7-b5f9babbf837",
+      "kind": "new",
+      "size": [
+        902,
+        219
+      ]
+    },
+    {
+      "id": "result_r13_close",
+      "candidate": "design/result-r13/assets/result_close.png",
+      "import_path": "assets/batch0/art/result_r13_close.png",
+      "sha256": "e181f89de91c29ece6b71458f00e77dbfe87e7e0deabf42df19c6c87d179a2af",
+      "uuid": "264face5-0a40-5cb6-9188-78d7ce379d59",
+      "kind": "new",
+      "size": [
+        141,
+        130
+      ]
+    },
+    {
+      "id": "result_r13_height_0",
+      "candidate": "design/result-r13/assets/height_0.png",
+      "import_path": "assets/batch0/art/result_r13_height_0.png",
+      "sha256": "889e70cd9c40704616e9adb5bbf9f8bc90e9e8779707c7a65db359358f0ef9e1",
+      "uuid": "c89afe78-98e8-5395-b331-3c9547c952f8",
+      "kind": "new",
+      "size": [
+        326,
+        348
+      ]
+    },
+    {
+      "id": "result_r13_height_1",
+      "candidate": "design/result-r13/assets/height_1.png",
+      "import_path": "assets/batch0/art/result_r13_height_1.png",
+      "sha256": "5dab10f11cb00ce0a6273108be6f24c9d9dcce3fcc94eede47025e23780aae12",
+      "uuid": "becae09b-01d7-5898-bbb6-ff03ae81380e",
+      "kind": "new",
+      "size": [
+        242,
+        347
+      ]
+    },
+    {
+      "id": "result_r13_height_2",
+      "candidate": "design/result-r13/assets/height_2.png",
+      "import_path": "assets/batch0/art/result_r13_height_2.png",
+      "sha256": "671e25af2a4525d65fe391b2b20cac47edd2bad5f85f348b403ced790cd94412",
+      "uuid": "5ca2c4ec-fc1d-5a20-aed2-991257193045",
+      "kind": "new",
+      "size": [
+        313,
+        359
+      ]
+    },
+    {
+      "id": "result_r13_height_3",
+      "candidate": "design/result-r13/assets/height_3.png",
+      "import_path": "assets/batch0/art/result_r13_height_3.png",
+      "sha256": "e537a41b69d3e2d2a4768903ebb8bb42c25f4ff3718d713ba4006b5d591de449",
+      "uuid": "47c4664d-ba9f-5678-93e6-a01649bc32e0",
+      "kind": "new",
+      "size": [
+        302,
+        355
+      ]
+    },
+    {
+      "id": "result_r13_height_4",
+      "candidate": "design/result-r13/assets/height_4.png",
+      "import_path": "assets/batch0/art/result_r13_height_4.png",
+      "sha256": "b5697456058d44222439b6331c66b34f6c0df34a31bf5939767dc81e3ab5c578",
+      "uuid": "526f992a-df63-51ff-b727-031d1c49e4b8",
+      "kind": "new",
+      "size": [
+        325,
+        363
+      ]
+    },
+    {
+      "id": "result_r13_height_5",
+      "candidate": "design/result-r13/assets/height_5.png",
+      "import_path": "assets/batch0/art/result_r13_height_5.png",
+      "sha256": "d14e684e88ad783ea3c8e56f6d6da945bf148b1a6e3a767c2031051674fc35c8",
+      "uuid": "5a961635-42c2-525a-9604-2c52fc98041b",
+      "kind": "new",
+      "size": [
+        324,
+        355
+      ]
+    },
+    {
+      "id": "result_r13_height_6",
+      "candidate": "design/result-r13/assets/height_6.png",
+      "import_path": "assets/batch0/art/result_r13_height_6.png",
+      "sha256": "b73764e04b9ef944d39a6e1bc1d2081ae4357a68f414ed78af2e3fe4faebc467",
+      "uuid": "419d0ef4-c2d9-5789-b752-a6cc0c60db30",
+      "kind": "new",
+      "size": [
+        327,
+        361
+      ]
+    },
+    {
+      "id": "result_r13_height_7",
+      "candidate": "design/result-r13/assets/height_7.png",
+      "import_path": "assets/batch0/art/result_r13_height_7.png",
+      "sha256": "391c2e9ba7b48010a3d96a00287a311c1513f7946cdeba353f88e0da7b81f8e9",
+      "uuid": "ceff0de3-adec-5565-9eee-30bf63829596",
+      "kind": "new",
+      "size": [
+        293,
+        354
+      ]
+    },
+    {
+      "id": "result_r13_height_8",
+      "candidate": "design/result-r13/assets/height_8.png",
+      "import_path": "assets/batch0/art/result_r13_height_8.png",
+      "sha256": "bb8c60541b5e7225fd728c5733c01f5e5808a400f6265434607e401e39aecf97",
+      "uuid": "445529b1-6a3d-5e50-a496-3310d01dfcc5",
+      "kind": "new",
+      "size": [
+        331,
+        362
+      ]
+    },
+    {
+      "id": "result_r13_height_9",
+      "candidate": "design/result-r13/assets/height_9.png",
+      "import_path": "assets/batch0/art/result_r13_height_9.png",
+      "sha256": "1d83ad171ab81e5534637fc505e3ccfa2dd4a1a201db071e881758652bf2cff6",
+      "uuid": "eafb5727-1d0e-530f-a8ae-a6cdf2aa500d",
+      "kind": "new",
+      "size": [
+        328,
+        360
+      ]
+    },
+    {
+      "id": "result_r13_height_dot",
+      "candidate": "design/result-r13/assets/height_dot.png",
+      "import_path": "assets/batch0/art/result_r13_height_dot.png",
+      "sha256": "0ff76a1e17faedf8d37afe6cf5d8e0e078cdc32680d7cc25606385ebb7cb2343",
+      "uuid": "003ad394-a2b9-5f56-aae3-3f3ef9c23e06",
+      "kind": "new",
+      "size": [
+        218,
+        202
+      ]
+    },
+    {
+      "id": "result_r13_height_m",
+      "candidate": "design/result-r13/assets/height_m.png",
+      "import_path": "assets/batch0/art/result_r13_height_m.png",
+      "sha256": "4f373aa29d5427bdedb3c91618609b74b9d07b7e4fa0f0c506f71bf5e873ae1a",
+      "uuid": "4e388f47-1a9f-56a3-a88d-6d55971d0ac6",
+      "kind": "new",
+      "size": [
+        335,
+        249
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/home_r10_background.png",
+  "source_sha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+  "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/visual-r11/assets/city-sky-edge.png",
+  "output_sha256": "91cf8330d9b7e04e7dbb6889047994f7c6e18b0ab217e17c8ec6e18782fb13b3",
+  "edge_rgb": [
+    65.38026921714489,
+    176.80114240170033,
+    253.4237070492384
+  ],
+  "untouched_rows": [
+    120,
+    1672
+  ],
+  "operation": "Accepted R10 city unchanged below row120; top24 averaged sky colour, 96-row smoothstep feather to eliminate magnified brush bands"
+}

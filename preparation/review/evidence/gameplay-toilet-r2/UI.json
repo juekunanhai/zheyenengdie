@@ -1,0 +1,767 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "toilet_rotated_bounds_and_real_landing",
+      "evidence": {
+        "rotations": [
+          {
+            "angle": 0,
+            "bounds": {
+              "left": -75.450257,
+              "right": 75.450257,
+              "bottom": 370.4285583496094,
+              "top": 485.4285583496094
+            },
+            "top": 485.42857142857144
+          },
+          {
+            "angle": -89.99999999999999,
+            "bounds": {
+              "left": -57.50000000000002,
+              "right": 57.50000000000001,
+              "bottom": 334.5280574285715,
+              "top": 485.4285714285715
+            },
+            "top": 485.42857142857144
+          },
+          {
+            "angle": -180,
+            "bounds": {
+              "left": -75.450257,
+              "right": 75.450257,
+              "bottom": 370.42857142857144,
+              "top": 485.42857142857144
+            },
+            "top": 485.42857142857144
+          },
+          {
+            "angle": 90.00000000000001,
+            "bounds": {
+              "left": -57.50000000000001,
+              "right": 57.50000000000002,
+              "bottom": 334.52805742857146,
+              "top": 485.42857142857144
+            },
+            "top": 485.42857142857144
+          }
+        ],
+        "landed": {
+          "id": 2,
+          "kind": "toilet",
+          "position": {
+            "x": -0.9577426910400391,
+            "y": 158.54957580566406,
+            "z": 0
+          },
+          "angle": 0.4042362349711687,
+          "size": [
+            150.900515,
+            115
+          ],
+          "physicsAxis": {
+            "x": 0.9999750852584839,
+            "y": 0.007055194582790136
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 4.9956817626953125,
+          "awake": false,
+          "contacts": 1,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -76.77004527394807,
+            "right": 74.49968238369829,
+            "bottom": 100.59523282439994,
+            "top": 216.203316666013
+          }
+        }
+      }
+    },
+    {
+      "name": "dumbbell_rotated_bounds_and_real_landing",
+      "evidence": {
+        "rotations": [
+          {
+            "angle": 0,
+            "bounds": {
+              "left": -73.969957,
+              "right": 73.969957,
+              "bottom": 440.4285583496094,
+              "top": 485.4285583496094
+            },
+            "top": 485.42857142857144
+          },
+          {
+            "angle": -89.99999999999999,
+            "bounds": {
+              "left": -22.500000000000018,
+              "right": 22.500000000000018,
+              "bottom": 337.4886574285714,
+              "top": 485.42857142857144
+            },
+            "top": 485.42857142857144
+          },
+          {
+            "angle": -180,
+            "bounds": {
+              "left": -73.969957,
+              "right": 73.969957,
+              "bottom": 440.42857142857144,
+              "top": 485.42857142857144
+            },
+            "top": 485.42857142857144
+          },
+          {
+            "angle": 90.00000000000001,
+            "bounds": {
+              "left": -22.500000000000025,
+              "right": 22.500000000000025,
+              "bottom": 337.4886574285714,
+              "top": 485.42857142857144
+            },
+            "top": 485.42857142857144
+          }
+        ],
+        "landed": {
+          "id": 2,
+          "kind": "dumbbell",
+          "position": {
+            "x": 0.3988404870033264,
+            "y": 116.57984161376953,
+            "z": 0
+          },
+          "angle": 2.0758592670806015,
+          "size": [
+            147.939914,
+            45
+          ],
+          "physicsAxis": {
+            "x": 0.999343752861023,
+            "y": 0.03622265160083771
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 4.844152927398682,
+          "awake": false,
+          "contacts": 1,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -73.8688649911577,
+            "right": 74.68053754451161,
+            "bottom": 91.82097517832933,
+            "top": 141.34570383888337
+          }
+        }
+      }
+    },
+    {
+      "name": "six_live_smoke_outcome_not_a_balance_pass",
+      "evidence": {
+        "attempts": [
+          {
+            "phase": "entering",
+            "releases": 1,
+            "placed": 1,
+            "peakMetres": 1.0063949191259924,
+            "sequence": [
+              "cardboard_box",
+              "wood_plank",
+              "toilet",
+              "fridge",
+              "dumbbell",
+              "basketball"
+            ],
+            "untimedCalibration": true,
+            "secondsLeft": 4,
+            "tutorial": false,
+            "paused": false,
+            "boundary": {
+              "top": 485.42857142857144,
+              "left": -214.28571428571428,
+              "right": 214.28571428571428,
+              "bottom": -187.42857142857142
+            },
+            "view": {
+              "scale": 1.75,
+              "originY": -339,
+              "cameraY": 0,
+              "width": 750,
+              "height": 1334,
+              "heldTop": 485.42857142857144
+            },
+            "audioClips": 17,
+            "currentId": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "position": {
+                  "x": -0.000856742262840271,
+                  "y": 50.62049865722656,
+                  "z": 0
+                },
+                "angle": -0.05447642155136471,
+                "size": [
+                  100,
+                  100
+                ],
+                "physicsAxis": {
+                  "x": 0.9999995231628418,
+                  "y": -0.0009507928043603897
+                },
+                "velocity": {
+                  "x": 0,
+                  "y": 0
+                },
+                "angularVelocity": 0,
+                "mass": 4.3896484375,
+                "awake": false,
+                "contacts": 1,
+                "placed": true,
+                "type": 2,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -50.03316109652083,
+                  "right": 50.03620157588276,
+                  "bottom": 0.6043577801864402,
+                  "top": 100.63949191259925
+                }
+              },
+              {
+                "id": 2,
+                "kind": "wood_plank",
+                "position": {
+                  "x": 0,
+                  "y": 526.4285888671875,
+                  "z": 0
+                },
+                "angle": 0,
+                "size": [
+                  195,
+                  28
+                ],
+                "physicsAxis": {
+                  "x": 1,
+                  "y": 0
+                },
+                "velocity": {
+                  "x": 0,
+                  "y": 0
+                },
+                "angularVelocity": 0,
+                "mass": 0,
+                "awake": true,
+                "contacts": 0,
+                "placed": false,
+                "type": 1,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -97.5,
+                  "right": 97.5,
+                  "bottom": 512.4285888671875,
+                  "top": 540.4285888671875
+                }
+              }
+            ]
+          },
+          {
+            "phase": "entering",
+            "releases": 2,
+            "placed": 2,
+            "peakMetres": 1.2903851585575261,
+            "sequence": [
+              "cardboard_box",
+              "wood_plank",
+              "toilet",
+              "fridge",
+              "dumbbell",
+              "basketball"
+            ],
+            "untimedCalibration": true,
+            "secondsLeft": 4,
+            "tutorial": false,
+            "paused": false,
+            "boundary": {
+              "top": 485.42857142857144,
+              "left": -214.28571428571428,
+              "right": 214.28571428571428,
+              "bottom": -187.42857142857142
+            },
+            "view": {
+              "scale": 1.75,
+              "originY": -339,
+              "cameraY": 0,
+              "width": 750,
+              "height": 1334,
+              "heldTop": 485.42857142857144
+            },
+            "audioClips": 17,
+            "currentId": 3,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "position": {
+                  "x": 0.01964692771434784,
+                  "y": 50.47581100463867,
+                  "z": 0
+                },
+                "angle": 0.014946851807314674,
+                "size": [
+                  100,
+                  100
+                ],
+                "physicsAxis": {
+                  "x": 0.9999999403953552,
+                  "y": 0.00026087177684530616
+                },
+                "velocity": {
+                  "x": 0,
+                  "y": 0
+                },
+                "angularVelocity": 0,
+                "mass": 4.3896484375,
+                "awake": false,
+                "contacts": 2,
+                "placed": true,
+                "type": 2,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -49.988699267697925,
+                  "right": 50.027210507804966,
+                  "bottom": 0.47111701406080897,
+                  "top": 100.48233109763373
+                }
+              },
+              {
+                "id": 2,
+                "kind": "wood_plank",
+                "position": {
+                  "x": -0.013590356335043907,
+                  "y": 114.9529037475586,
+                  "z": 0
+                },
+                "angle": 0.056386226486643584,
+                "size": [
+                  195,
+                  28
+                ],
+                "physicsAxis": {
+                  "x": 0.9999995231628418,
+                  "y": 0.0009841251885518432
+                },
+                "velocity": {
+                  "x": 0,
+                  "y": 0
+                },
+                "angularVelocity": 0,
+                "mass": 3.4859859943389893,
+                "awake": false,
+                "contacts": 1,
+                "placed": true,
+                "type": 2,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -97.5184637675669,
+                  "right": 97.48144180343569,
+                  "bottom": 100.87073607737597,
+                  "top": 129.03851585575262
+                }
+              },
+              {
+                "id": 3,
+                "kind": "toilet",
+                "position": {
+                  "x": 0,
+                  "y": 482.9285583496094,
+                  "z": 0
+                },
+                "angle": 0,
+                "size": [
+                  150.900515,
+                  115
+                ],
+                "physicsAxis": {
+                  "x": 1,
+                  "y": 0
+                },
+                "velocity": {
+                  "x": 0,
+                  "y": 0
+                },
+                "angularVelocity": 0,
+                "mass": 0,
+                "awake": true,
+                "contacts": 0,
+                "placed": false,
+                "type": 1,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -75.450257,
+                  "right": 75.450257,
+                  "bottom": 425.4285583496094,
+                  "top": 540.4285583496094
+                }
+              }
+            ]
+          },
+          {
+            "phase": "entering",
+            "releases": 3,
+            "placed": 3,
+            "peakMetres": 2.4455920638145567,
+            "sequence": [
+              "cardboard_box",
+              "wood_plank",
+              "toilet",
+              "fridge",
+              "dumbbell",
+              "basketball"
+            ],
+            "untimedCalibration": true,
+            "secondsLeft": 4,
+            "tutorial": false,
+            "paused": false,
+            "boundary": {
+              "top": 498.1592063814557,
+              "left": -214.28571428571428,
+              "right": 214.28571428571428,
+              "bottom": -174.69793647568716
+            },
+            "view": {
+              "scale": 1.75,
+              "originY": -339,
+              "cameraY": 1.412443551663944,
+              "width": 750,
+              "height": 1334,
+              "heldTop": 498.1592063814557
+            },
+            "audioClips": 17,
+            "currentId": 4,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "position": {
+                  "x": -0.07249421626329422,
+                  "y": 50.48411178588867,
+                  "z": 0
+                },
+                "angle": 0.15937124516292728,
+                "size": [
+                  100,
+                  100
+                ],
+                "physicsAxis": {
+                  "x": 0.9999961256980896,
+                  "y": 0.0027815494686365128
+                },
+                "velocity": {
+                  "x": 0.00012074812548235059,
+                  "y": 3.1741703310217417e-7
+                },
+                "angularVelocity": 7.942435331642628e-8,
+                "mass": 4.3896484375,
+                "awake": true,
+                "contacts": 2,
+                "placed": true,
+                "type": 2,
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -50.1613103704427,
+                  "right": 50.0079772897933,
+                  "bottom": 0.4342373229490235,
+                  "top": 100.55345709444819
+                }
+              },
+              {
+                "id": 2,
+                "kind": "wood_plank",
+                "position": {
+                  "x": -0.3313557505607605,
+                  "y": 114.95882415771484,
+                  "z": 0
+                },
+                "angle": 0.43574797971768353,
+                "size": [
+                  195,
+                  28
+                ],
+                "physicsAxis": {
+                  "x": 0.9999710917472839,
+                  "y": 0.007605163846164942
+                },
+                "velocity": {
+                  "x": 0.00020484474953263998,
+                  "y": 0.0000011608361774051446
+                },
+                "angularVelocity": -0.00005147104457137175,
+                "mass": 3.4859859943389893,
+                "awake": true,
+                "contacts": 2,
+                "placed": true,
+                "type": 2,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -97.86656190043679,
+                  "right": 97.12779876290342,
+                  "bottom": 100.3241978691284,
+                  "top": 129.62006851904545
+                }
+              },
+              {
+                "id": 3,
+                "kind": "toilet",
+                "position": {
+                  "x": -0.7060933113098145,
+                  "y": 186.8836669921875,
+                  "z": 0
+                },
+                "angle": 0.4727393237671206,
+                "size": [
+                  150.900515,
+                  115
+                ],
+                "physicsAxis": {
+                  "x": 0.9999659657478333,
+                  "y": 0.008250763639807701
+                },
+                "velocity": {
+                  "x": 0.000386240950319916,
+                  "y": 0.000016508391126990318
+                },
+                "angularVelocity": -0.00006809626938775182,
+                "mass": 4.9956817626953125,
+                "awake": true,
+                "contacts": 1,
+                "placed": true,
+                "type": 2,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -76.57937578612446,
+                  "right": 74.75217431071798,
+                  "bottom": 128.85261491556363,
+                  "top": 244.56317708013347
+                }
+              },
+              {
+                "id": 4,
+                "kind": "fridge",
+                "position": {
+                  "x": 0,
+                  "y": 480.6592102050781,
+                  "z": 0
+                },
+                "angle": 0,
+                "size": [
+                  82,
+                  145
+                ],
+                "physicsAxis": {
+                  "x": 1,
+                  "y": 0
+                },
+                "velocity": {
+                  "x": 0,
+                  "y": 0
+                },
+                "angularVelocity": 0,
+                "mass": 0,
+                "awake": true,
+                "contacts": 0,
+                "placed": false,
+                "type": 1,
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "bounds": {
+                  "left": -41,
+                  "right": 41,
+                  "bottom": 408.1592102050781,
+                  "top": 553.1592102050781
+                }
+              }
+            ]
+          },
+          {
+            "scene": "Result",
+            "engine": "3.8.8",
+            "physics": {
+              "gravity": {
+                "x": 0,
+                "y": -1000
+              },
+              "fixedTimeStep": 0.016666666666666666,
+              "maxSubSteps": 4,
+              "auto": true
+            }
+          }
+        ],
+        "successfulDrops": 3
+      }
+    },
+    {
+      "name": "viewport_375x812",
+      "evidence": {
+        "scale": 1.75,
+        "originY": -484,
+        "cameraY": 0,
+        "width": 750,
+        "height": 1624,
+        "heldTop": 651.1428571428571
+      }
+    },
+    {
+      "name": "viewport_600x800",
+      "evidence": {
+        "scale": 1.2157221206581355,
+        "originY": -212.2998171846435,
+        "cameraY": 0,
+        "width": 750,
+        "height": 1000,
+        "heldTop": 496.47819548872167
+      }
+    },
+    {
+      "name": "normal_entry_preserves_four_object_sequence_and_timer",
+      "evidence": {
+        "phase": "planning",
+        "releases": 0,
+        "placed": 0,
+        "peakMetres": 0,
+        "sequence": [
+          "cardboard_box",
+          "wood_plank",
+          "fridge",
+          "basketball"
+        ],
+        "untimedCalibration": false,
+        "secondsLeft": 4,
+        "tutorial": false,
+        "paused": false,
+        "boundary": {
+          "top": 496.47819548872167,
+          "left": -308.45864661654133,
+          "right": 308.45864661654133,
+          "bottom": -236.64962406015033
+        },
+        "view": {
+          "scale": 1.2157221206581355,
+          "originY": -212.2998171846435,
+          "cameraY": 0,
+          "width": 750,
+          "height": 1000,
+          "heldTop": 496.47819548872167
+        },
+        "audioClips": 17,
+        "currentId": 1,
+        "bodies": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "position": {
+              "x": 0,
+              "y": 446.47821044921875,
+              "z": 0
+            },
+            "angle": 0,
+            "size": [
+              100,
+              100
+            ],
+            "physicsAxis": {
+              "x": 1,
+              "y": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0,
+            "mass": 0,
+            "awake": true,
+            "contacts": 0,
+            "placed": false,
+            "type": 1,
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "bounds": {
+              "left": -50,
+              "right": 50,
+              "bottom": 396.47821044921875,
+              "top": 496.47821044921875
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "captures": [
+    "toilet-held-0.png",
+    "toilet-held-90.png",
+    "toilet-contact.png",
+    "dumbbell-held-0.png",
+    "dumbbell-held-90.png",
+    "dumbbell-contact.png",
+    "six-live-run.png",
+    "six-375x812.png",
+    "six-600x800.png"
+  ]
+}

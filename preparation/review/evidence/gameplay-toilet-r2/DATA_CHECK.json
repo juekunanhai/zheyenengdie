@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "geometryFieldsMatch": true,
+  "otherFiveObjectsUnchanged": true,
+  "otherExportsUnchanged": true,
+  "density": 0.401990728786,
+  "massAreaProduct": {
+    "r1": 5115.578296440419,
+    "r2": 5115.578296439879,
+    "relativeChange": -1.0558220964185239e-13
+  },
+  "note": "Source exports checked with installed TypeScript; final compiled engine data checked separately."
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>首页视觉对照 R10 · 这也能叠</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <main class="review">
+    <header>
+      <p class="eyebrow">这也能叠 / 原 UI 首页对照</p>
+      <h1>首页视觉对照 R10</h1>
+      <p class="lead">只修正背景与 Logo 组合，直接对照原 UI 的玩具城市和弧形标语牌。</p>
+      <p class="boundary">首页内部自查 R10.1 · 独立视觉小样 · 未修改 Cocos · 装饰塔不运行物理</p>
+    </header>
+    <nav class="mode-tabs" aria-label="审阅版本">
+      <button type="button" data-mode="r10" aria-pressed="true">R10 完整稿</button>
+      <button type="button" data-mode="reference" aria-pressed="false">原 UI 参考</button>
+      <button type="button" data-mode="r9" aria-pressed="false">R9 首页</button>
+    </nav>
+    <div class="workspace" id="workspace">
+      <section class="preview" aria-label="首页预览">
+        <div class="toolbar">
+          <label>画幅 <select id="viewport-size"><option value="667">375 × 667</option><option value="812">375 × 812</option></select></label>
+          <button type="button" id="motion-toggle" aria-pressed="true">暂停云动效</button>
+        </div>
+        <div class="phone" id="phone"><div class="scene" id="scene" role="group" aria-label="R10 首页视觉小样"></div></div>
+        <figure class="reference" id="reference" hidden><img id="reference-image" alt=""><figcaption id="reference-caption"></figcaption></figure>
+        <p class="caption" id="caption" aria-live="polite">按钮仅演示按压反馈。首页插画不改变当前四物体玩法池。</p>
+      </section>
+      <aside class="notes" id="notes">
+        <p class="eyebrow">原 UI 首页 · 仅作画法对照</p>
+        <div class="source-home"><img src="../R8/assets/ui-original-reference.png" alt="原UI左上第一屏：首页背景与Logo参考"></div>
+        <p class="source-caption">原始整图通过页面视窗聚焦首页，仅用于对照。图中历史功能不进入本轮产品。</p>
+        <p>保留 R9 已确认的角色素材、木牌和按钮。长屏等比放大装饰塔并收紧 Logo 间距；清理透明边缘，复用正式素材补回两侧飞行小玩具。</p>
+        <ol>
+          <li>Logo 与浅奶油色弧形标语牌作为一组；长短屏均贴近物品塔，不再把空隙随屏高拉大。</li>
+          <li>城市参照原图高低错落的玩具小城，避免规则公寓楼墙与大片空广场。</li>
+          <li>保留独立缓慢漂移的云；木牌与开始按钮的位置保持不变，长屏插画等比适配。</li>
+        </ol>
+        <p class="fine-print">原图中的等级、金币、今日挑战等排除功能不恢复。新首页插画不受当前四物体碰撞尺寸约束，也不意味着新增玩法物品。</p>
+        <a href="../R9/index.html">查看保留的 R9 审阅页</a>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

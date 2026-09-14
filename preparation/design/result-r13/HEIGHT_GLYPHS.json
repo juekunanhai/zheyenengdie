@@ -1,0 +1,163 @@
+{
+  "status": "visual_candidate_not_integrated",
+  "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-ef5d5c99-e422-4cf7-9865-65486c5be0ef.png",
+  "processing": "Separate connected colored glyph silhouettes; preserve enclosed faces; 11px morphological opening removes colored checker fringe; 2px smoothing; rebuild 4px white outer rim; RGBA output. No original UI pixels used.",
+  "glyphs": {
+    "0": {
+      "file": "assets/height_0.png",
+      "atlas_bounds": [
+        35,
+        31,
+        361,
+        379
+      ],
+      "native_size": [
+        326,
+        348
+      ]
+    },
+    "1": {
+      "file": "assets/height_1.png",
+      "atlas_bounds": [
+        369,
+        30,
+        611,
+        377
+      ],
+      "native_size": [
+        242,
+        347
+      ]
+    },
+    "2": {
+      "file": "assets/height_2.png",
+      "atlas_bounds": [
+        655,
+        30,
+        968,
+        389
+      ],
+      "native_size": [
+        313,
+        359
+      ]
+    },
+    "3": {
+      "file": "assets/height_3.png",
+      "atlas_bounds": [
+        1005,
+        24,
+        1307,
+        379
+      ],
+      "native_size": [
+        302,
+        355
+      ]
+    },
+    "4": {
+      "file": "assets/height_4.png",
+      "atlas_bounds": [
+        1330,
+        28,
+        1655,
+        391
+      ],
+      "native_size": [
+        325,
+        363
+      ]
+    },
+    "5": {
+      "file": "assets/height_5.png",
+      "atlas_bounds": [
+        1670,
+        28,
+        1994,
+        383
+      ],
+      "native_size": [
+        324,
+        355
+      ]
+    },
+    "6": {
+      "file": "assets/height_6.png",
+      "atlas_bounds": [
+        31,
+        390,
+        358,
+        751
+      ],
+      "native_size": [
+        327,
+        361
+      ]
+    },
+    "7": {
+      "file": "assets/height_7.png",
+      "atlas_bounds": [
+        367,
+        393,
+        660,
+        747
+      ],
+      "native_size": [
+        293,
+        354
+      ]
+    },
+    "8": {
+      "file": "assets/height_8.png",
+      "atlas_bounds": [
+        686,
+        394,
+        1017,
+        756
+      ],
+      "native_size": [
+        331,
+        362
+      ]
+    },
+    "9": {
+      "file": "assets/height_9.png",
+      "atlas_bounds": [
+        1031,
+        395,
+        1359,
+        755
+      ],
+      "native_size": [
+        328,
+        360
+      ]
+    },
+    ".": {
+      "file": "assets/height_dot.png",
+      "atlas_bounds": [
+        1376,
+        538,
+        1594,
+        740
+      ],
+      "native_size": [
+        218,
+        202
+      ]
+    },
+    "m": {
+      "file": "assets/height_m.png",
+      "atlas_bounds": [
+        1648,
+        499,
+        1983,
+        748
+      ],
+      "native_size": [
+        335,
+        249
+      ]
+    }
+  }
+}

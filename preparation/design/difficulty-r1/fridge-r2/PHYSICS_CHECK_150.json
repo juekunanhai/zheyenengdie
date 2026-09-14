@@ -1,0 +1,113 @@
+{
+  "version": "fridge-r2-150-candidate-check",
+  "status": "trial_candidate_exceeds_one_world_unit_limit_pending_runtime",
+  "passes_one_world_unit_limit": false,
+  "limit_not_relaxed": 1,
+  "strictly_convex": true,
+  "vertices": 8,
+  "same_pixels_and_same_source_vertices": true,
+  "uniform_scale_from_110": 1.3636363636363635,
+  "width": 150.0,
+  "height": 167.554858636,
+  "outline_area_world_squared": 24481.198627066,
+  "mass_target_native_kg": 7.0234375,
+  "density_for_mass_target": 0.2937764653422094,
+  "PTM_squared": 1024,
+  "boundary_distance_world": {
+    "max": 1.1827754393708427,
+    "p95": 0.8715224597167885
+  },
+  "maximum_error_location": {
+    "alpha_boundary_pixel": [
+      21,
+      983
+    ],
+    "nearest_polygon_pixel": [
+      26.51816328071898,
+      977.8528056793293
+    ],
+    "segment_index": 5,
+    "segment_endpoints_px": [
+      [
+        119.0,
+        1077.0
+      ],
+      [
+        8.0,
+        958.0
+      ]
+    ],
+    "distance_px": 7.546107298960156,
+    "distance_world": 1.1827754393708427
+  },
+  "bearing_surfaces": {
+    "top": {
+      "pixel_segment": [
+        [
+          119,
+          8
+        ],
+        [
+          852,
+          8
+        ]
+      ],
+      "endpoints_inside_alpha128": [
+        true,
+        true
+      ],
+      "maximum_vertical_edge_difference_px": 0,
+      "maximum_vertical_edge_difference_world": 0.0,
+      "endpoints_unchanged_from_110_and_125": true
+    },
+    "foot": {
+      "pixel_segment": [
+        [
+          119,
+          1077
+        ],
+        [
+          853,
+          1077
+        ]
+      ],
+      "endpoints_inside_alpha128": [
+        true,
+        true
+      ],
+      "maximum_vertical_edge_difference_px": 0,
+      "maximum_vertical_edge_difference_world": 0.0,
+      "endpoints_unchanged_from_110_and_125": true
+    }
+  },
+  "outside_alpha128_area_world_squared": 14.7895559368088,
+  "outside_alpha128_percentage": 0.060302816301794564,
+  "screen_error_from_current_verified_layout": [
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "world_to_css_pixel": 0.875,
+      "max_error_css_pixels": 1.0349285094494873
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "world_to_css_pixel": 0.875,
+      "max_error_css_pixels": 1.0349285094494873
+    },
+    {
+      "viewport": {
+        "width": 600,
+        "height": 800
+      },
+      "world_to_css_pixel": 0.9725776965265083,
+      "max_error_css_pixels": 1.150341012331423
+    }
+  ],
+  "top_support_half_margin_after_dumbbell_inner_span_71_46": 21.715141363500003,
+  "note": "Maximum error lies on a chamfer segment, not the horizontal top/foot support endpoints. Same original pixels, alpha, eight vertex shape, and all frozen 110/125 source data remain unchanged. Candidate only; root/QA decide adoption."
+}

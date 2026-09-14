@@ -1,0 +1,15 @@
+{
+  "itembar_filled_left.png": "DO_NOT_USE_AS_FINAL: contains example object; compose bar + item icon at runtime",
+  "itembar_filled_right.png": "DO_NOT_USE_AS_FINAL: contains example object; compose bar + item icon at runtime",
+  "itembar_filled_dual.png": "DO_NOT_USE_AS_FINAL: contains example objects; compose at runtime",
+  "itembar_stack_x2.png": "DO_NOT_USE_AS_FINAL: contains example object; use base slot + count badge",
+  "item_replace_popup.png": "REFERENCE: example object baked in; final popup should be 9-slice + dynamic icons/text",
+  "item_drag_hint.png": "REFERENCE: copy/text can be rendered by UI; asset optional",
+  "_document_revision": "2026-09-12-R2",
+  "_scope": "Entries describe original baked examples/defects, not the status of accepted project derivatives. Use BATCH0_IMPORT_MANIFEST and R6 for adopted files.",
+  "hud_next_frame.png": "REPAIR_REQUIRED: remove baked example cube and neighboring fragments; compose one locked NEXT silhouette dynamically.",
+  "hud_star_full_set.png": "REPAIR_REQUIRED: remove fragments and validate separate star frames for current star count 3/2/1/0.",
+  "hud_star_empty_set.png": "REPAIR_REQUIRED: validate complete frames, not raw cutout dimensions.",
+  "panel_9slice_light.png": "REPAIR_REQUIRED: remove baked neighboring text and verify complete border before defining slice margins.",
+  "_current_layout": "R6: top-left height, stars below left, vertical two-slot inventory with upright icons, short claw, no wooden separators. Dynamic values remain separate."
+}

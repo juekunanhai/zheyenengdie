@@ -1,0 +1,60 @@
+{
+  "purpose": "Remove generated baked checkerboard without redrawing or distorting the logo.",
+  "source_image": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7418bc85-d993-481c-ab10-f50cc3be61c3.png",
+  "source_copy": "assets/logo-home-r10.png",
+  "source_sha256": "a634c9f64a06b70d5104556b3f71bd851ece67498135461d33cc8edded8ab5ee",
+  "input_size": [
+    1774,
+    887
+  ],
+  "input_mode": "RGB",
+  "output": "assets/logo-home-r10-clean.png",
+  "output_size": [
+    1381,
+    732
+  ],
+  "output_sha256": "6af075afb4a11dc245e2e67c6e1f6fcfa807e1db2fa6c313e7690e9b1be3f594",
+  "method": {
+    "neutral_max_rgb_channel_difference": 18,
+    "exterior_connectivity": 4,
+    "seeds": "all eligible border pixels",
+    "exterior_pixels_removed": 820663,
+    "additional_enclosed_checkerboard_slivers": {
+      "region_xyxy": [
+        590,
+        530,
+        1100,
+        590
+      ],
+      "neutral_threshold": 18,
+      "max_mean_rgb_exclusive": 220,
+      "pixels_removed": 495
+    },
+    "alpha": "Exterior stays 0; retained inner edge gets 3x3 local foreground-coverage alpha to reduce single-pixel jaggies; fully interior stays255.",
+    "hidden_rgb": "cleared only where alpha=0",
+    "visible_rgb": "All retained RGB preserved bit-for-bit; only alpha differs at the one-pixel inner edge.",
+    "crop_xyxy": [
+      197,
+      61,
+      1578,
+      793
+    ],
+    "resampling": false,
+    "neutral_max_mean_rgb_exclusive": 225,
+    "bright_white_protection": "Near-neutral pixels with mean RGB >=225 are never included in exterior flood; preserves slipper white bands and gloss.",
+    "foreground_component_seed_xy": [
+      900,
+      400
+    ],
+    "foreground_connectivity": 4,
+    "disconnected_exterior_specks_removed": 10,
+    "edge_feather_radius_pixels": 1
+  },
+  "qa": [
+    "qa/logo-home-r10-clean-light-blue.png",
+    "qa/logo-home-r10-clean-cream.png",
+    "qa/logo-home-r10-clean-navy.png"
+  ],
+  "limits": "Local raster background cleanup; not proof of original vector or exact pixel reconstruction.",
+  "qa_result": "Reviewed composites on light blue and navy; visible art RGB preserved; no remaining baked checkerboard field. Bright slipper stripes protected after first QA."
+}

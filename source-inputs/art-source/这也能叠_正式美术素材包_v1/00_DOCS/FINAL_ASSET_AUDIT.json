@@ -1,0 +1,21 @@
+{
+  "ready_png_total": 179,
+  "counts": {
+    "objects": 24,
+    "next": 24,
+    "items": 12,
+    "item_bar": 12,
+    "result_ui": 12,
+    "hud": 8,
+    "backgrounds": 42,
+    "claw": 6,
+    "fx": 10,
+    "landing": 10,
+    "system_ui": 12,
+    "ui": 7
+  },
+  "duplicate_groups": [],
+  "qa_issues": [],
+  "true_missing_art": [],
+  "status": "PREPACK_READY_FOR_REVIEW"
+}

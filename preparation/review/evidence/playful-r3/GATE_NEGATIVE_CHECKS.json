@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "method": "Read-only in-memory injected process exits/hash maps; no runtime or historical artifact modified",
+  "cases": [
+    {
+      "case": "creator_failure",
+      "status": "rejected_as_required",
+      "reason": "Actual Creator process failed"
+    },
+    {
+      "case": "typecheck_failure",
+      "status": "rejected_as_required",
+      "reason": "Actual TypeScript process failed"
+    },
+    {
+      "case": "physics_sha_changed",
+      "status": "rejected_as_required",
+      "reason": "Protected physics/art/scene/meta/config changed"
+    },
+    {
+      "case": "settings_sha_changed",
+      "status": "rejected_as_required",
+      "reason": "Protected physics/art/scene/meta/config changed"
+    },
+    {
+      "case": "old_sound_sha_changed",
+      "status": "rejected_as_required",
+      "reason": "Protected physics/art/scene/meta/config changed"
+    },
+    {
+      "case": "unapproved_asset_added",
+      "status": "rejected_as_required",
+      "reason": "Unexpected new runtime/config files"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "capture": "sample-42_7-300x650.json",
+    "display": "42.7m",
+    "frame": {
+      "height": "650",
+      "width": "300"
+    },
+    "card_inside_canvas": true,
+    "glyphs_inside_canvas": true,
+    "close_hit_css": [
+      44.368559369040845,
+      44.36855936904085
+    ],
+    "screenshot_size": [
+      1265,
+      712
+    ],
+    "viewport_size": {
+      "height": 720,
+      "width": 1280
+    },
+    "card_crop": [
+      113.3955203742366,
+      208.78718069570112,
+      382.4968215888185,
+      515.2576813005965
+    ]
+  },
+  {
+    "capture": "sample-42_7-375x667.json",
+    "display": "42.7m",
+    "frame": {
+      "height": "667",
+      "width": "375"
+    },
+    "card_inside_canvas": true,
+    "glyphs_inside_canvas": true,
+    "close_hit_css": [
+      56.0,
+      56.00000000000006
+    ],
+    "screenshot_size": [
+      1265,
+      712
+    ],
+    "viewport_size": {
+      "height": 720,
+      "width": 1280
+    },
+    "card_crop": [
+      115.2830078125,
+      175.41528930664057,
+      454.93056640625,
+      562.2285705566406
+    ]
+  },
+  {
+    "capture": "sample-42_7-450x600.json",
+    "display": "42.7m",
+    "frame": {
+      "height": "600",
+      "width": "450"
+    },
+    "card_inside_canvas": true,
+    "glyphs_inside_canvas": true,
+    "close_hit_css": [
+      67.2,
+      67.2
+    ],
+    "screenshot_size": [
+      1265,
+      712
+    ],
+    "viewport_size": {
+      "height": 720,
+      "width": 1280
+    },
+    "card_crop": [
+      118.47515625000001,
+      103.1323986816406,
+      526.0522265625,
+      567.3083361816406
+    ]
+  },
+  {
+    "capture": "sample-long-375x667.json",
+    "display": "12345.6m",
+    "frame": {
+      "height": "667",
+      "width": "375"
+    },
+    "card_inside_canvas": true,
+    "glyphs_inside_canvas": true,
+    "close_hit_css": [
+      56.0,
+      56.00000000000006
+    ],
+    "screenshot_size": [
+      1265,
+      712
+    ],
+    "viewport_size": {
+      "height": 720,
+      "width": 1280
+    },
+    "card_crop": [
+      115.2830078125,
+      175.41528930664057,
+      454.93056640625,
+      562.2285705566406
+    ]
+  },
+  {
+    "capture": "sample-zero-375x667.json",
+    "display": "0.0m",
+    "frame": {
+      "height": "667",
+      "width": "375"
+    },
+    "card_inside_canvas": true,
+    "glyphs_inside_canvas": true,
+    "close_hit_css": [
+      55.9910613576152,
+      55.99106135761525
+    ],
+    "screenshot_size": [
+      1265,
+      712
+    ],
+    "viewport_size": {
+      "height": 720,
+      "width": 1280
+    },
+    "card_crop": [
+      115.31003794658727,
+      175.4690904172496,
+      454.9033824677815,
+      562.2206290674144
+    ]
+  }
+]

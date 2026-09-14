@@ -1,0 +1,234 @@
+{
+  "revision": "2026-09-12-P2",
+  "source_root": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1",
+  "script_sha256": "be5dcf211e5f6e25fefdb0d6163c3b26734d6ee4ae6c5bf814ee84295329052f",
+  "authority": "Local repairs authorized; per-output visual approval is recorded in USER_VISUAL_APPROVAL.json; engine validation pending.",
+  "entries": [
+    {
+      "id": "object_cardboard_box",
+      "group": "objects",
+      "output": "art/edge-candidates/objects/object_cardboard_box.png",
+      "sha256": "ca9f234068ae645f793c440a0597c8da0a3deef6ac4ce6a3481d6a0f7a11bb00",
+      "size": [
+        299,
+        297
+      ],
+      "source": "objects/object_cardboard_box.png",
+      "source_sha256": "987970527c2c5f9935fd04cea1b0b13d15e74cf39961978e5d6ba1dcd0a70e41",
+      "method": "linear_edge_extrapolation",
+      "notes": "沿原轮廓两条直边求交，补齐约 22px 缺角；仅新增区域使用边界同列颜色，不声称原始像素恢复。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "added_extent_px": 22,
+      "next_output": "art/edge-candidates/next/next_cardboard_box.png",
+      "next_sha256": "e3a1f56bbfd03b3b2b681dc6d6588a292c3149950ce37a420d39868390c17fdd"
+    },
+    {
+      "id": "object_wooden_crate",
+      "group": "objects",
+      "output": "art/edge-candidates/objects/object_wooden_crate.png",
+      "sha256": "989cadce507e99ba735a03516caf63f6566ef5818de5c96d8767316d8a80b42d",
+      "size": [
+        316,
+        336
+      ],
+      "source": "objects/object_wooden_crate.png",
+      "source_sha256": "57214d087efaa1b2f9fbbc425675cb070821a16f3427b0fc147104d300c65b3d",
+      "method": "linear_edge_extrapolation",
+      "notes": "沿原轮廓两条直边求交，补齐约 36px 缺角；仅新增区域使用边界同列颜色，不声称原始像素恢复。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "added_extent_px": 36,
+      "next_output": "art/edge-candidates/next/next_wooden_crate.png",
+      "next_sha256": "b8df649dae5accab413947c94a8d4fb69cc95df1e64ba938dcc2e80b2c85d464"
+    },
+    {
+      "id": "object_fridge",
+      "group": "objects",
+      "output": "art/edge-candidates/objects/object_fridge.png",
+      "sha256": "dc5656504b62f7895ed30cd7c3245e5ca8f256b81a2de6da25735a4b816a0470",
+      "size": [
+        250,
+        349
+      ],
+      "source": "objects/object_fridge.png",
+      "source_sha256": "1f81aafc12521c23422c127c779795a47f7272136ab1a5b6a02fdf001e0850b6",
+      "method": "linear_edge_extrapolation",
+      "notes": "沿原轮廓两条直边求交，补齐约 13px 缺角；仅新增区域使用边界同列颜色，不声称原始像素恢复。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "added_extent_px": 13,
+      "next_output": "art/edge-candidates/next/next_fridge.png",
+      "next_sha256": "60435c7619eac987468d42f1f283183acb8632ca4c1d468e5f5e54d024cd56d3"
+    },
+    {
+      "id": "object_wood_plank",
+      "group": "objects",
+      "output": "art/edge-candidates/objects/object_wood_plank.png",
+      "sha256": "846eb12d425e206dd993d121f946eca25a81b4862236a75858de5795c99a79f3",
+      "size": [
+        420,
+        111
+      ],
+      "source": "objects/object_wood_plank.png",
+      "source_sha256": "4cec9cd4bccbdd1079f9053d89f341339ff0b843e740d65d04defbcc3f1514ed",
+      "method": "rotate_and_mirror_intact_end",
+      "notes": "先取完整可见木板到 y=357（修正 P1 裁切过短），旋转 -34° 校直，再用完整右端翻转补左端；接缝做 12px 混合。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "art_rotation_deg": -34,
+      "cap_width_px": 70,
+      "next_output": "art/edge-candidates/next/next_wood_plank.png",
+      "next_sha256": "a7aac4ed0605739804c1cad6c0dbdd405499a017ccade9dbb7197fce4132c889"
+    },
+    {
+      "id": "claw_open_mid",
+      "group": "claw",
+      "output": "art/edge-candidates/claw/claw_open_mid.png",
+      "sha256": "5118f2892fd6341495ea2a4bba35af9725ed5355149fe68311d541202b288587",
+      "size": [
+        307,
+        258
+      ],
+      "source": "claw/claw_open_mid.png",
+      "source_sha256": "d5e94acf4eae97ed327def10f9aae224b15547dfa573518c03e558a66891d085",
+      "method": "mirror_missing_left_rim",
+      "notes": "为避免只贴边造成双爪接缝，将该爪态左侧缺失部分所在半爪改用完整右半爪镜像；主体星标与右半部保留。属于推断补齐，挂点待确认。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "symmetry_axis_x": 140
+    },
+    {
+      "id": "claw_open_narrow",
+      "group": "claw",
+      "output": "art/edge-candidates/claw/claw_open_narrow.png",
+      "sha256": "12eb3a5ac7081f3f5f568523707833aa318599a4d7a04315a2d71361651027cf",
+      "size": [
+        225,
+        262
+      ],
+      "source": "claw/claw_open_narrow.png",
+      "source_sha256": "791de63db6e7297266397e78219e987c1eb4dea4a608456d7106b43c16faa14b",
+      "method": "mirror_missing_left_rim",
+      "notes": "为避免只贴边造成双爪接缝，将该爪态左侧缺失部分所在半爪改用完整右半爪镜像；主体星标与右半部保留。属于推断补齐，挂点待确认。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "symmetry_axis_x": 79
+    },
+    {
+      "id": "hud_rotate_90",
+      "group": "hud",
+      "output": "art/edge-candidates/hud/hud_rotate_90.png",
+      "sha256": "9c06bbc2d34307ecd6e0dc65d5e498bee1090a8ad411363ec9541fd55facf5f5",
+      "size": [
+        427,
+        354
+      ],
+      "source": "hud/hud_rotate_90.png",
+      "source_sha256": "e7c0d6f5ef2236287f61ab38cd0ddcf3773bcb5ef2a9154b56b9d7e4d4953c8c",
+      "method": "mirror_missing_right_rim",
+      "notes": "用原按钮完整左侧补右底座外缘；文字、中心圆盘不重画。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "symmetry_axis_x": 209
+    },
+    {
+      "id": "panel_9slice_light",
+      "group": "ui",
+      "output": "art/edge-candidates/ui/panel_9slice_light.png",
+      "sha256": "4a772aca627a7dc251342417cc339025bc72d2e19e97585c3a7f952387db75ba",
+      "size": [
+        336,
+        276
+      ],
+      "source": "ui/panel_9slice_light.png",
+      "source_sha256": "c9ff0b00639e32976a09e0eb829add33e18261761992ca4227278dee0974b739",
+      "method": "extend_intact_corner_and_border",
+      "notes": "从原左上 60×60 边框/颜色镜像延展，恢复内部被误清空的 Alpha；缺失下半部为推断补齐，非原图恢复。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "slice_insets_px": [
+        68,
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "id": "toast_bubble_plain",
+      "group": "ui",
+      "output": "art/edge-candidates/ui/toast_bubble_plain.png",
+      "sha256": "9bd7e26b15ce9cb3d97220fc1d4d37a1ce4080354c2c42c0d16dcc47093d73f8",
+      "size": [
+        336,
+        106
+      ],
+      "source": "ui/panel_9slice_light.png",
+      "source_sha256": "c9ff0b00639e32976a09e0eb829add33e18261761992ca4227278dee0974b739",
+      "method": "reuse_reconstructed_panel_family",
+      "notes": "用已补齐的同款边框形成无烤死文案 Toast 底板；动态文案由 Label 放入。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "slice_insets_px": [
+        30,
+        68,
+        30,
+        68
+      ]
+    },
+    {
+      "id": "btn_settings_base",
+      "group": "ui",
+      "output": "art/edge-candidates/ui/btn_settings_base.png",
+      "sha256": "8429eacd0bc03ccc0ee3970e33c4de200546434cbba90be9a026d5780529b593",
+      "size": [
+        477,
+        162
+      ],
+      "source": "result_ui/result_btn_share.png",
+      "source_sha256": "91a8cfb520e31f9d30d97615568ca154a937a04977e11b0d953976ebdc36ced1",
+      "method": "derive_blank_from_existing_blue_button",
+      "notes": "为缺失的设置入口复用正式蓝按钮边框/填充；清除分享图标与文字，重接同款高光。运行时显示“设置”，原分享按钮保留。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run",
+      "slice_insets_px": [
+        36,
+        48,
+        36,
+        48
+      ]
+    },
+    {
+      "id": "toggle_on",
+      "group": "ui",
+      "output": "art/edge-candidates/ui/toggle_on.png",
+      "sha256": "1854a564b1bce2cdc4de438a277e757ffd931a138e46a1f33377f8987ad8cb8a",
+      "size": [
+        192,
+        78
+      ],
+      "source": "result_ui/result_btn_share.png",
+      "source_sha256": "91a8cfb520e31f9d30d97615568ca154a937a04977e11b0d953976ebdc36ced1",
+      "method": "new_missing_control_from_formal_skin",
+      "notes": "现有开关主体缺失，复用正式蓝按钮配色/边框制作完整开关候选；圆钮为同色板本地绘制，非占位。开/关文案由运行时 Label 辅助。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run"
+    },
+    {
+      "id": "toggle_off",
+      "group": "ui",
+      "output": "art/edge-candidates/ui/toggle_off.png",
+      "sha256": "eb0486b00b7f76f7bbcfe958cbe7d3e5e902fec48a99ff420cec25d9d2d8c4c4",
+      "size": [
+        192,
+        78
+      ],
+      "source": "result_ui/result_btn_share.png",
+      "source_sha256": "91a8cfb520e31f9d30d97615568ca154a937a04977e11b0d953976ebdc36ced1",
+      "method": "new_missing_control_from_formal_skin",
+      "notes": "现有开关主体缺失，复用正式蓝按钮配色/边框制作完整开关候选；圆钮为同色板本地绘制，非占位。开/关文案由运行时 Label 辅助。",
+      "status": "user_visual_accepted_pending_runtime",
+      "runtime_review": "not_run"
+    }
+  ]
+}

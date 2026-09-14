@@ -1,0 +1,112 @@
+{
+  "status": "individual_engine_checks_passed_subjective_review_pending",
+  "unchanged": "Previous six ObjectSpec values",
+  "sequence": [
+    "cardboard_box",
+    "wood_plank",
+    "fridge",
+    "wooden_crate",
+    "sofa",
+    "whale",
+    "wood_plank",
+    "burger",
+    "ice_block",
+    "dumbbell",
+    "wood_plank",
+    "toilet",
+    "slipper",
+    "basketball"
+  ],
+  "parameters": [
+    {
+      "kind": "wooden_crate",
+      "target_mass": 4.8,
+      "area": 12753.441931,
+      "density": 0.385401841055,
+      "friction": 0.68,
+      "restitution": 0.01,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    },
+    {
+      "kind": "ice_block",
+      "target_mass": 4.5,
+      "area": 9057.703272,
+      "density": 0.508738237677,
+      "friction": 0.3,
+      "restitution": 0.01,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    },
+    {
+      "kind": "sofa",
+      "target_mass": 4.2,
+      "area": 13033.381892,
+      "density": 0.329983425303,
+      "friction": 0.8,
+      "restitution": 0.01,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    },
+    {
+      "kind": "whale",
+      "target_mass": 6.8,
+      "area": 16539.315179,
+      "density": 0.421008967097,
+      "friction": 0.72,
+      "restitution": 0.01,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    },
+    {
+      "kind": "burger",
+      "target_mass": 3.2,
+      "area": 12065.702479,
+      "density": 0.271579711642,
+      "friction": 0.8,
+      "restitution": 0.01,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4,
+      "revision": "burger-r3"
+    },
+    {
+      "kind": "slipper",
+      "target_mass": 2.8,
+      "area": 11671.821056,
+      "density": 0.245651470001,
+      "friction": 0.8,
+      "restitution": 0.01,
+      "contactAngularDamping": 6,
+      "contactImpactSpeed": 2.4
+    }
+  ],
+  "sequence_revision": "sequence-r3-compact14",
+  "previous_sequence": {
+    "revision": "sequence-r2",
+    "sequence": [
+      "cardboard_box",
+      "wood_plank",
+      "fridge",
+      "basketball",
+      "wood_plank",
+      "wooden_crate",
+      "sofa",
+      "wood_plank",
+      "slipper",
+      "wood_plank",
+      "burger",
+      "wood_plank",
+      "whale",
+      "wood_plank",
+      "toilet",
+      "fridge",
+      "dumbbell",
+      "ice_block",
+      "wood_plank"
+    ],
+    "evidence": "../../review/evidence/batch1c/ENGINE_R6.json",
+    "status": "center_fast_stack_stress_failed"
+  },
+  "sequence_evidence": "../../review/evidence/batch1c/COMPACT_CANDIDATE_R6.json",
+  "sequence_note": "Adopted in R7 after the unchanged-physics candidate held all 14 releases / 12 kinds with three stars. This fixed action evidence is not player win rate."
+}

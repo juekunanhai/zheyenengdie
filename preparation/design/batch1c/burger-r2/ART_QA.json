@@ -1,0 +1,17 @@
+{
+  "status": "self_checked_pending_root_and_engine",
+  "sprite_size": [
+    304,
+    260
+  ],
+  "next_alpha_exact": true,
+  "self_intersections": [],
+  "flat_top_width": 76.363637,
+  "original_lower_pixels_unchanged_below_row_149": true,
+  "viewed": [
+    "comparison.png",
+    "geometry-overlay.png"
+  ],
+  "lower_outline_note": "Visible lower pixels are preserved; automatic global polygon simplification can resample lower vertices within the recorded 0.5-world tolerance. Exact old collider vertex identity is not claimed.",
+  "runtime_checks": "not_run"
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R9 首页 · Cocos 对照</title>
+<style>
+body{margin:0;background:#edf3f8;font:15px/1.7 system-ui;color:#173047}header{max-width:1000px;margin:auto;padding:20px}h1{font-size:23px;margin:0}p{margin:8px 0}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center}button,select{font:inherit;padding:6px 10px}main{display:flex;justify-content:center;padding:0 20px 28px}iframe{border:0;box-shadow:0 3px 24px #20364d33;max-width:100%}a{color:#197bc1}pre{white-space:pre-wrap;font-size:12px}
+</style>
+<header><h1>旧首页验收入口 · 当前 Cocos 工程</h1>
+<p>此入口建立于 R9，实时工程现已更新为 R10.1。请使用 <a href="home-r10.html">R10.1 实际画面对照页</a>；R9 历史画面保存在原验收截图中。</p>
+<div class="controls"><label>画幅 <select id="size"><option value="375,667">375 × 667</option><option value="375,812">375 × 812</option></select></label><button id="home" disabled>回到首页</button><button id="inspect" disabled>读取运行数据</button><span id="status">引擎加载中…</span><a href="../design/R9/index.html">已认可的 R9 设计稿</a></div>
+<details><summary>运行诊断</summary><pre id="diagnostics"></pre></details></header>
+<main><iframe id="player" title="R9 首页 Cocos 运行" src="play-player.html?revision=home-r9" width="375" height="667"></iframe></main>
+<script>
+const frame=document.querySelector('#player'),status=document.querySelector('#status');
+window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==frame.contentWindow)return;
+ if(e.data.type==='play-ready'){status.textContent='引擎已就绪';document.querySelector('#home').disabled=false;document.querySelector('#inspect').disabled=false}
+ if(e.data.type==='play-error')status.textContent=e.data.error});
+document.querySelector('#home').onclick=()=>frame.contentWindow.qaLoad('Home');
+document.querySelector('#size').onchange=e=>{const [w,h]=e.target.value.split(',');frame.width=w;frame.height=h};
+document.querySelector('#inspect').onclick=()=>{
+ const host=frame.contentWindow,cc=host.qaCC,canvas=cc.director.getScene()?.getChildByName('Canvas');
+ const content=canvas?.getChildByName('SafeArea')?.getChildByName('Content_1230');
+ const nodes=content?.children.map(n=>({name:n.name,position:{x:n.position.x,y:n.position.y},size:n.getComponent(cc.UITransform)?.contentSize}));
+ document.querySelector('#diagnostics').textContent=JSON.stringify({...host.qaSnapshot(),homePresentation:!!canvas?.getComponent('HomePresentation'),nodes},null,2);
+ document.querySelector('details').open=true;
+};
+</script></html>

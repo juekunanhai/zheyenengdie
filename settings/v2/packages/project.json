@@ -1,0 +1,27 @@
+{
+  "general": {
+    "designResolution": {
+      "width": 750,
+      "height": 1334,
+      "fitWidth": true,
+      "fitHeight": false
+    }
+  },
+  "physics": {
+    "gravity": {
+      "x": 0,
+      "y": -31.25,
+      "z": 0
+    },
+    "allowSleep": true,
+    "autoSimulation": true,
+    "fixedTimeStep": 0.016666666666666666,
+    "maxSubSteps": 4
+  },
+  "__version__": "1.0.6",
+  "fbx": {
+    "legacyFbxImporter": {
+      "visible": true
+    }
+  }
+}

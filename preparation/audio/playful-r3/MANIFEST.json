@@ -1,0 +1,264 @@
+{
+  "revision": "playful-r3",
+  "file_base": "project_root",
+  "status": "approved_theme_B_offline_loop_prepared_for_runtime_import",
+  "approval": {
+    "user_text": "确认，配乐选择b。其余音效均认可，尝试找到切入的地方，开始开发",
+    "candidate_file": "preparation/audio/cheerful-r2/music/exports/music_b_happy_boy.mp3",
+    "candidate_sha256": "a6e6a4546bf43c0b365cb8cb3fc71e734549416c71573051aafec8d31ae73107",
+    "scope": "User approved B music and runtime development. Loop cut is implementation, not a newly selected composition."
+  },
+  "source": {
+    "source_title": "Happy Boy End Theme",
+    "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648",
+    "source_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Happy%20Boy%20End%20Theme.mp3",
+    "author": "Kevin MacLeod",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_instruments": "Clarinet, tuba, percussion, guitar",
+    "instrumentation_caveat": "官网声明乐器编配；未核实是否每件乐器都是真人实录。"
+  },
+  "original": {
+    "file": "preparation/audio/cheerful-r2/music/sources/Happy Boy End Theme.mp3",
+    "sha256": "3215d6630ae7d3ff9be86c7a610a973a78b2e3db0cd17ef4651453fc3c3a0f78",
+    "bytes": 2159721,
+    "format": "Author full downloadable MP3; not lossless studio stems"
+  },
+  "source_manifest": {
+    "file": "preparation/audio/cheerful-r2/music/MANIFEST.json",
+    "sha256": "99b9c9f2a74f05830f98342ea8e1288b39423381026c237324787ce7211c0648"
+  },
+  "source_evidence": [
+    {
+      "file": "preparation/audio/playful-r3/evidence/catalog-item.json",
+      "sha256": "b24c9a6496d6b096daa4518eb747647db5f65e31cc0220d8330b527d44338766",
+      "bytes": 742
+    },
+    {
+      "file": "preparation/audio/playful-r3/evidence/cc-by-4.0.html",
+      "sha256": "231a5dac65bbf135ba27145969a63cd289faadc172f1512c4810a6c60ba91036",
+      "bytes": 32178
+    },
+    {
+      "file": "preparation/audio/playful-r3/evidence/incompetech-license.html",
+      "sha256": "479019ed42fd8384c63c04bd95dc6d0e0e0da505ddd6f567a13018c724f8416d",
+      "bytes": 12146
+    }
+  ],
+  "credits": {
+    "file": "preparation/audio/playful-r3/CREDITS.txt",
+    "sha256": "e7f88888e597f0f61454341352f7618d1c50a0a353c9285e7750b38406c5022e"
+  },
+  "loop": {
+    "start_sample": 685755,
+    "end_sample_exclusive": 1317636,
+    "source_start_s": 15.55,
+    "source_end_s": 29.878367346938777,
+    "sample_count": 631881,
+    "duration_s": 14.328367346938775,
+    "source_local_tempo_bpm": 134,
+    "beat_count": 32,
+    "catalog_whole_piece_bpm": 130,
+    "seam_overlap_samples": 2646,
+    "seam_overlap_s": 0.06,
+    "method": "continuous source post-roll wrapped into head with complementary raised-cosine weights",
+    "no_period_shortening": true,
+    "speed": 1.0,
+    "pitch_changed": false,
+    "constant_gain_db": -8.650599913279624,
+    "loop_intro_or_end_fade": false,
+    "source_full_track_silence_removed": "Original has roughly 32–34 s inter-variation near silence; selected loop does not include it.",
+    "selection_limit": "Uses first-speed main orchestration, not entire two-tempo audition sequence."
+  },
+  "height_variants": {
+    "mode": "three_byte_identical_imports_one_approved_arrangement",
+    "reason": "Keep established 3-region clip IDs and phase-aligned crossfade without inventing unapproved arrangements.",
+    "audible_change_at_height_boundary": false,
+    "all_instruments_retained": true,
+    "bytes_three_imports": 1036458,
+    "bytes_unique_payload": 345486,
+    "future_dedup_note": "Runtime may alias one AudioClip if importer supports it; current preparation does not edit references."
+  },
+  "tracks": [
+    {
+      "id": "bgm_city",
+      "file": "preparation/audio/playful-r3/encoded/bgm_city.mp3",
+      "sha256": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "bytes": 345486,
+      "duration_s": 14.328367346938775,
+      "same_pcm_as": "bgm_city",
+      "master": "preparation/audio/playful-r3/masters/music_b_loop.wav",
+      "master_sha256": "29e2c1c5f769dfd499822d9601b16d3b1a87038d79e5a0ab69bd400db7c442b7",
+      "sample_rate": 44100,
+      "channels": 2,
+      "sample_count": 631881,
+      "loop_check": {
+        "sample_count": 631881,
+        "decoded_duration_s": 14.328367346938775,
+        "sample_rate_hz": 44100,
+        "channels": 2,
+        "peak_sample": 0.3625011742115021,
+        "join_step_absolute": 0.0024298951029777527,
+        "ordinary_step_p99": 0.027148182336240757,
+        "join_within_ordinary_step_p99": true,
+        "edge_200ms_rms_dbfs": -27.610830380233075,
+        "longest_below_minus60_dbfs_s": 0.0,
+        "finite": true
+      },
+      "sources_and_edits": [
+        {
+          "file": "preparation/audio/cheerful-r2/music/sources/Happy Boy End Theme.mp3",
+          "sha256": "3215d6630ae7d3ff9be86c7a610a973a78b2e3db0cd17ef4651453fc3c3a0f78",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "32-beat excerpt from first-tempo main orchestration; 60 ms periodic boundary overlap; constant-gain level adjustment; MP3 re-encoding. No tempo/pitch change, no added instruments, no stem separation, compressor, limiter or end fade."
+        }
+      ]
+    },
+    {
+      "id": "bgm_cloud",
+      "file": "preparation/audio/playful-r3/encoded/bgm_cloud.mp3",
+      "sha256": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "bytes": 345486,
+      "duration_s": 14.328367346938775,
+      "same_pcm_as": "bgm_city",
+      "master": "preparation/audio/playful-r3/masters/music_b_loop.wav",
+      "master_sha256": "29e2c1c5f769dfd499822d9601b16d3b1a87038d79e5a0ab69bd400db7c442b7",
+      "sample_rate": 44100,
+      "channels": 2,
+      "sample_count": 631881,
+      "loop_check": {
+        "sample_count": 631881,
+        "decoded_duration_s": 14.328367346938775,
+        "sample_rate_hz": 44100,
+        "channels": 2,
+        "peak_sample": 0.3625011742115021,
+        "join_step_absolute": 0.0024298951029777527,
+        "ordinary_step_p99": 0.027148182336240757,
+        "join_within_ordinary_step_p99": true,
+        "edge_200ms_rms_dbfs": -27.610830380233075,
+        "longest_below_minus60_dbfs_s": 0.0,
+        "finite": true
+      },
+      "sources_and_edits": [
+        {
+          "file": "preparation/audio/cheerful-r2/music/sources/Happy Boy End Theme.mp3",
+          "sha256": "3215d6630ae7d3ff9be86c7a610a973a78b2e3db0cd17ef4651453fc3c3a0f78",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "32-beat excerpt from first-tempo main orchestration; 60 ms periodic boundary overlap; constant-gain level adjustment; MP3 re-encoding. No tempo/pitch change, no added instruments, no stem separation, compressor, limiter or end fade."
+        }
+      ]
+    },
+    {
+      "id": "bgm_space",
+      "file": "preparation/audio/playful-r3/encoded/bgm_space.mp3",
+      "sha256": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "bytes": 345486,
+      "duration_s": 14.328367346938775,
+      "same_pcm_as": "bgm_city",
+      "master": "preparation/audio/playful-r3/masters/music_b_loop.wav",
+      "master_sha256": "29e2c1c5f769dfd499822d9601b16d3b1a87038d79e5a0ab69bd400db7c442b7",
+      "sample_rate": 44100,
+      "channels": 2,
+      "sample_count": 631881,
+      "loop_check": {
+        "sample_count": 631881,
+        "decoded_duration_s": 14.328367346938775,
+        "sample_rate_hz": 44100,
+        "channels": 2,
+        "peak_sample": 0.3625011742115021,
+        "join_step_absolute": 0.0024298951029777527,
+        "ordinary_step_p99": 0.027148182336240757,
+        "join_within_ordinary_step_p99": true,
+        "edge_200ms_rms_dbfs": -27.610830380233075,
+        "longest_below_minus60_dbfs_s": 0.0,
+        "finite": true
+      },
+      "sources_and_edits": [
+        {
+          "file": "preparation/audio/cheerful-r2/music/sources/Happy Boy End Theme.mp3",
+          "sha256": "3215d6630ae7d3ff9be86c7a610a973a78b2e3db0cd17ef4651453fc3c3a0f78",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "32-beat excerpt from first-tempo main orchestration; 60 ms periodic boundary overlap; constant-gain level adjustment; MP3 re-encoding. No tempo/pitch change, no added instruments, no stem separation, compressor, limiter or end fade."
+        }
+      ]
+    }
+  ],
+  "attribution": "\"Happy Boy End Theme\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/ Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648 Changes: 32-beat excerpt from first-tempo main orchestration; 60 ms periodic boundary overlap; constant-gain level adjustment; MP3 re-encoding. No tempo/pitch change, no added instruments, no stem separation, compressor, limiter or end fade.",
+  "master": {
+    "file": "preparation/audio/playful-r3/masters/music_b_loop.wav",
+    "sha256": "29e2c1c5f769dfd499822d9601b16d3b1a87038d79e5a0ab69bd400db7c442b7"
+  },
+  "checks": {
+    "master": {
+      "sample_count": 631881,
+      "decoded_duration_s": 14.328367346938775,
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "peak_sample": 0.37445068359375,
+      "join_step_absolute": 0.000946044921875,
+      "ordinary_step_p99": 0.029571533203125,
+      "join_within_ordinary_step_p99": true,
+      "edge_200ms_rms_dbfs": -27.354781974940146,
+      "longest_below_minus60_dbfs_s": 0.0,
+      "finite": true
+    },
+    "encoded": {
+      "sample_count": 631881,
+      "decoded_duration_s": 14.328367346938775,
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "peak_sample": 0.3625011742115021,
+      "join_step_absolute": 0.0024298951029777527,
+      "ordinary_step_p99": 0.027148182336240757,
+      "join_within_ordinary_step_p99": true,
+      "edge_200ms_rms_dbfs": -27.610830380233075,
+      "longest_below_minus60_dbfs_s": 0.0,
+      "finite": true
+    },
+    "loudness": {
+      "integrated_lufs": -22.57,
+      "true_peak_dbfs": -8.62,
+      "loudness_range_lu": 1.6
+    },
+    "same_decoded_sample_count_all_regions": true,
+    "same_encoded_sha_all_regions": true,
+    "onset_grid": {
+      "method": "positive log-spectral flux; strongest local onset near each second beat",
+      "onset_seconds": [
+        15.67764172335601,
+        16.57560090702948,
+        17.473560090702946,
+        18.366530612244897,
+        19.26448979591837,
+        20.162448979591836,
+        21.055419501133787,
+        21.94839002267574,
+        22.846349206349206,
+        23.744308390022677,
+        24.637278911564625,
+        25.535238095238096,
+        26.428208616780044,
+        27.321179138321995,
+        28.219138321995466,
+        29.117097505668934
+      ],
+      "fitted_beat_seconds": 0.4478461384553822,
+      "fitted_bpm": 133.97458378660923,
+      "grid_residual_max_ms": 3.433373349345459,
+      "caveat": "Measures pulse timing only, not subjective musical phrasing or timbre."
+    }
+  },
+  "review": [
+    "preparation/audio/playful-r3/review/loop_join_3s_before_after.mp3",
+    "preparation/audio/playful-r3/review/three_cycles.mp3"
+  ],
+  "listening_boundary": "Technical boundary checks passed; subjective join and real Cocos/WeChat decoder looping require runtime review.",
+  "generator": {
+    "file": "preparation/tools/build_playful_music_r3.py",
+    "sha256": "ef84e36b3ef17d38730817b6f2e626e3ac4442ca16c13113eb36022c2ab0fb2f",
+    "ffmpeg": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers"
+  }
+}

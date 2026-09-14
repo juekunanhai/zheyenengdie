@@ -1,0 +1,9 @@
+{
+  "status": "approved_with_changes",
+  "user_changes": [
+    "no wooden separator boards between objects",
+    "inventory slots vertical"
+  ],
+  "unchanged_layout": "approved R6 proposal",
+  "scope": "Batch 0 visual implementation only"
+}

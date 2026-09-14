@@ -1,0 +1,29 @@
+{
+  "version": "3.8.8",
+  "bundle_id": "com.cocos.creator",
+  "installed_path": "/Applications/CocosCreator/3.8.8/CocosCreator.app",
+  "official_page": "https://www.cocos.com/creator-download",
+  "download_url": "https://download.cocos.com/CocosCreator/v3.8.8/CocosCreator-v3.8.8-mac-121518.zip",
+  "archive_sha256": "cc65c3665539e996c076fa8202dee8531b8770e7e956f0c68f610537735d640c",
+  "archive_bytes": 1181883559,
+  "codesign": {
+    "command": "codesign --verify --deep --strict --verbose=2 /Applications/CocosCreator/3.8.8/CocosCreator.app",
+    "environment": "outside restricted sandbox, macOS signature services available",
+    "exit_code": 0,
+    "result": [
+      "valid on disk",
+      "satisfies its Designated Requirement"
+    ]
+  },
+  "creator_started": true,
+  "dashboard": {
+    "status": "not_installed",
+    "attempts": [
+      "official 2.2.1 ZIP: HTTP 403",
+      "official 2.2.1 DMG: HTTP 403"
+    ]
+  },
+  "creator_login": "completed_by_user_and_restored_after_restart",
+  "native_import": "35_images_4_scenes_verified_via_build_and_runtime",
+  "build": "web_desktop_success_P3"
+}

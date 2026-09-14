@@ -1,0 +1,5 @@
+{"profile":"cushion-only","id":"center10","outcome":"ended","released":5,"entered":4,"placed":4,"time":9.612199999999238,"peak":3.8959530285631963,"firstHazard":6.395800000000742}
+{"profile":"cushion-only","id":"alternating10","outcome":"ended","released":5,"entered":4,"placed":4,"time":11.199900000000335,"peak":3.897383021380223,"firstHazard":6.5333000000007395}
+{"profile":"cushion-only","id":"fridge_plus15","outcome":"ended","released":5,"entered":5,"placed":4,"time":11.133699999999212,"peak":3.8959143908770733,"firstHazard":6.3834999999999935}
+{"profile":"cushion-only","id":"fridge_minus15","outcome":"ended","released":5,"entered":4,"placed":4,"time":10.08390000000035,"peak":3.8965244481805517,"firstHazard":6.39990000000037}
+{"status":"completed_diagnostic_not_human_playtest","errors":[]}

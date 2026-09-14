@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-09-14T20:11:47.223008+08:00",
+  "completed_at": "2026-09-14T20:12:03.039443+08:00",
+  "creator_exit_code": 36,
+  "exit_source": "subprocess.run actual Creator returncode",
+  "log": "preparation/platform/wechat-r2/BUILD.stdout.log",
+  "log_sha256": "85690149b4ade8a3e4a44020f4910bd7a880edf166a86940494ef5372039c706",
+  "typecheck": "Unchanged runtime input matches Home R4 recorded project typecheck; no new TypeScript edits."
+}

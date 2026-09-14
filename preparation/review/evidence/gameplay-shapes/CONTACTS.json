@@ -1,0 +1,275 @@
+{
+  "status": "passed_native_concave_contact_regressions",
+  "checks": [
+    {
+      "name": "concave_fixture_ends_preserve_remaining_support_and_damping",
+      "status": "passed",
+      "evidence": {
+        "both": {
+          "events": [
+            {
+              "event": "begin",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "begin",
+              "native": 2,
+              "objectContact": true,
+              "damping": 6
+            }
+          ],
+          "maxContacts": 2,
+          "activeNative": 2,
+          "objectContacts": 1,
+          "damping": 6,
+          "x": -0.0000016112180674099363,
+          "y": 70.57648468017578,
+          "impacts": [
+            {
+              "id": 1,
+              "pair": "1:0",
+              "speed": 11.34924602508545
+            }
+          ],
+          "bonds": [],
+          "bounds": {
+            "left": -75.00040772568279,
+            "right": 75.00040450324666,
+            "bottom": 60.57343836593532,
+            "top": 80.57953099441625
+          },
+          "stable": true
+        },
+        "one": {
+          "events": [
+            {
+              "event": "begin",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "begin",
+              "native": 2,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "end",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            }
+          ],
+          "maxContacts": 2,
+          "activeNative": 1,
+          "objectContacts": 1,
+          "damping": 6,
+          "x": 60,
+          "y": 70.57648468017578,
+          "impacts": [
+            {
+              "id": 1,
+              "pair": "1:0",
+              "speed": 11.34924602508545
+            }
+          ],
+          "bonds": [],
+          "bounds": {
+            "left": -15.000406114464724,
+            "right": 135.00040611446474,
+            "bottom": 60.57343836593532,
+            "top": 80.57953099441625
+          },
+          "stable": true
+        },
+        "none": {
+          "events": [
+            {
+              "event": "begin",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "begin",
+              "native": 2,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "end",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "end",
+              "native": 0,
+              "objectContact": false,
+              "damping": 1.5
+            }
+          ],
+          "maxContacts": 2,
+          "activeNative": 0,
+          "objectContacts": 0,
+          "damping": 1.5,
+          "x": 60,
+          "y": 70.57648468017578,
+          "impacts": [
+            {
+              "id": 1,
+              "pair": "1:0",
+              "speed": 11.34924602508545
+            }
+          ],
+          "bonds": [],
+          "bounds": {
+            "left": -15.000406114464724,
+            "right": 135.00040611446474,
+            "bottom": 60.57343836593532,
+            "top": 80.57953099441625
+          },
+          "stable": false
+        }
+      }
+    },
+    {
+      "name": "multiple_support_faces_create_one_glue_bond_and_release_cleanly",
+      "status": "passed",
+      "evidence": {
+        "attached": {
+          "events": [
+            {
+              "event": "begin",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "begin",
+              "native": 2,
+              "objectContact": true,
+              "damping": 6
+            }
+          ],
+          "maxContacts": 2,
+          "activeNative": 2,
+          "objectContacts": 1,
+          "damping": 6,
+          "x": 0.10617753118276596,
+          "y": 48.37004470825195,
+          "impacts": [
+            {
+              "id": 1,
+              "pair": "1:0",
+              "speed": 13.39049243927002
+            }
+          ],
+          "bonds": [
+            {
+              "ball": 1,
+              "side": -1,
+              "other": "ConcaveSupport",
+              "retainsPooledContact": false
+            }
+          ],
+          "bounds": {
+            "left": -33.893822468817234,
+            "right": 34.106177531182766,
+            "bottom": 14.370044708251953,
+            "top": 82.37004470825195
+          },
+          "stable": true
+        },
+        "detached": {
+          "events": [
+            {
+              "event": "begin",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "begin",
+              "native": 2,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "end",
+              "native": 1,
+              "objectContact": true,
+              "damping": 6
+            },
+            {
+              "event": "end",
+              "native": 0,
+              "objectContact": false,
+              "damping": 0.1
+            }
+          ],
+          "maxContacts": 2,
+          "activeNative": 0,
+          "objectContacts": 0,
+          "damping": 0.1,
+          "x": 0.10846059024333954,
+          "y": 48.36776351928711,
+          "impacts": [
+            {
+              "id": 1,
+              "pair": "1:0",
+              "speed": 13.39049243927002
+            }
+          ],
+          "bonds": [],
+          "bounds": {
+            "left": -33.89153940975666,
+            "right": 34.10846059024334,
+            "bottom": 14.36776351928711,
+            "top": 82.36776351928711
+          },
+          "stable": false
+        }
+      }
+    },
+    {
+      "name": "native_polygon_partition_preserves_the_playable_recess",
+      "status": "passed",
+      "evidence": {
+        "events": [
+          {
+            "event": "begin",
+            "native": 1,
+            "objectContact": true,
+            "damping": 1.5
+          }
+        ],
+        "maxContacts": 1,
+        "activeNative": 1,
+        "objectContacts": 1,
+        "damping": 1.5,
+        "x": 0.0014381104847416282,
+        "y": 10.525824546813965,
+        "impacts": [
+          {
+            "id": 1,
+            "pair": "1:0",
+            "speed": 15.424946784973145
+          }
+        ],
+        "bonds": [],
+        "bounds": {
+          "left": -10.004916504459379,
+          "right": 10.007792725428862,
+          "bottom": 0.5194699318698444,
+          "top": 20.532179161758087
+        },
+        "stable": true
+      }
+    }
+  ],
+  "errors": []
+}

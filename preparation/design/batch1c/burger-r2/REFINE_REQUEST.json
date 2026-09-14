@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "generated-original.png",
+  "prompt": "Use case: precise-object-edit. Modify ONLY the silhouette along the top of the upper sesame bun in the supplied hamburger image. Increase the genuinely straight, perfectly horizontal central top edge to 72 percent of the upper bun width (about 67 percent of the entire hamburger width), with small smoothly rounded shoulders at the left and right. The current flat edge is too short. Keep the same vertical position of this flat top, same whole hamburger width, all original colors, sesame texture, golden bread material, green lettuce, cheese, tomato, patty, lower bun, lower outline and composition. Do not alter or redraw the food below the upper bun. No seeds outside the silhouette; no horizontal seam or line drawn across the bun face, only reshape its actual outside upper edge. Show a finished slightly compressed fluffy bun with a broad level physical bearing top, not a bread dome or a separate flat plate. Keep all the clear smooth shaded 2.5D game material. Remove the surrounding checkerboard and make a genuinely transparent RGBA background with clean alpha. No white/black background, no checkerboard, no text, no UI.",
+  "output": "generated-refined.png",
+  "status": "originals_preserved_processed_candidate_self_checked",
+  "hashes": {
+    "reference-burger-r1.png": "84809a3fa248aba9ee7db4428b8a1c620b19be1a81f77afc6c091f7c9bb58a47",
+    "generated-original.png": "c977cfe8869a1e3075f7d7f23edf04e8a27d136ba56253af916131d50d66dbe9",
+    "generated-refined.png": "574b6f839d0e5d017336c3d5f522adaddd4745f9479226b6597dcf3c2181a4cb"
+  }
+}

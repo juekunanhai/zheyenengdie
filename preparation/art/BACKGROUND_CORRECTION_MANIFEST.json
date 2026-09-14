@@ -1,0 +1,21 @@
+{
+  "revision": "2026-09-12-P3",
+  "script_sha256": "e2673d298d297ed85d8ec8388b94184ef761fb266c5ee4b830c015aef83f6021",
+  "entries": [
+    {
+      "id": "bg_sky_panel",
+      "source_candidate": "art/candidates/backgrounds/bg_sky_panel.png",
+      "source_sha256": "c6bb29306b8a2c74d4cfcf209fde87fc312b8e8826059b400c40fe31ee3099d1",
+      "roi": [
+        40,
+        40,
+        360,
+        220
+      ],
+      "output": "art/ui-corrections/bg_sky_panel.png",
+      "sha256": "0d4f68f88beb61658119121449f91a11de48e4531ae74402a751f16b45102c8c",
+      "status": "user_requested_fullscreen_fix_pending_visual_review",
+      "note": "仅裁取正式天空内区，排除原组件烤入的圆角边框和透明残片，内区 Alpha 250–253 归一为背景所需的 255；以等比 cover 用于背景，原文件保持不变。"
+    }
+  ]
+}

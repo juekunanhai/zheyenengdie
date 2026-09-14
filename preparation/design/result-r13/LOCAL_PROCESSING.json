@@ -1,0 +1,47 @@
+{
+  "component_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-b9ee8c6c-f5cb-4195-af55-278791b85368.png",
+  "component_source_sha256": "2091d66b5a8b1a80a00dd89a72e9e2cfe736d951f3dbdcb1667dd366424e2f18",
+  "full_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-b88adc14-7900-4393-bee6-0be19dc51059.png",
+  "full_alpha": "remove only border-connected neutral grey checker pixels: channel spread <23, max <238",
+  "metrics_alpha": "connected white body, fill enclosed text holes, soften .7px; no background speckles retained",
+  "components": {
+    "result_retry": {
+      "generated_crop": [
+        108,
+        1034,
+        1040,
+        1280
+      ],
+      "trim": [
+        14,
+        0,
+        916,
+        219
+      ],
+      "size": [
+        902,
+        219
+      ],
+      "alpha": "colored silhouette with enclosed content, 1px dilation"
+    },
+    "result_close": {
+      "generated_crop": [
+        1017,
+        9,
+        1181,
+        161
+      ],
+      "trim": [
+        1029,
+        23,
+        1170,
+        153
+      ],
+      "size": [
+        141,
+        130
+      ],
+      "alpha": "colored silhouette with enclosed content, 1px dilation"
+    }
+  }
+}

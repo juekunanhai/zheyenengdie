@@ -1,0 +1,73 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · R13 结算引擎验收</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#edf3f8;color:#173047;font:15px/1.6 system-ui}main{max-width:1100px;margin:auto;padding:18px}h1{font-size:23px;margin:0}h2{font-size:17px}button,select{font:inherit;padding:6px 10px;border:1px solid #b9cad9;border-radius:7px;background:white;color:inherit;cursor:pointer}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.layout{display:flex;gap:24px;align-items:start}iframe{display:block;border:0;box-shadow:0 8px 25px #18334830}aside{flex:1;min-width:260px;background:white;border-radius:12px;padding:16px}a{color:#146eae}.notice{padding:10px 14px;background:#fff2d5}#status{margin:8px 0;font-size:14px}pre{white-space:pre-wrap;font-size:12px;max-height:320px;overflow:auto}.reference{width:min(100%,298px);display:block;margin:auto}@media(max-width:700px){.layout{flex-direction:column}aside{width:100%}}</style>
+<main><h1>R13 · 结算组件已接入真实 Cocos</h1>
+<div class="controls"><button id="play" disabled>开始试玩</button><button id="finish" disabled>结束本轮</button><button id="result" disabled>查看真实结算</button><button id="home" disabled>返回首页</button><label>画幅 <select id="size"><option value="300,534">9:16 · 紧凑预览</option><option value="375,667">9:16 · 375×667</option><option value="300,650">长屏 · 300×650</option><option value="450,600">3:4 · 450×600</option></select></label></div>
+<p id="status">正在加载引擎…</p><div class="layout">
+<iframe id="player" title="R13真实Cocos游戏" src="play-player.html?revision=result-r13-engine" width="300" height="534"></iframe>
+<aside><h2>本次接入范围</h2><p>R13 底板、歪塔、标题、气泡、重试、关闭和图片字形。高度来自本轮真实结果，关闭返回首页，重试重新开局。</p><p class="notice">未实现的新纪录、技术分、玩家比例、分享继续隐藏。下方完整稿保留这些视觉区域用于对照；运行版不显示示例数据。</p>
+<label>数字排版检查 <select id="score"><option value="actual">本轮真实高度</option><option value="0">样例 · 0.0m</option><option value="42.7">样例 · 42.7m</option><option value="12345.6">样例 · 12345.6m</option></select></label><p id="sample-note">当前显示真实结算值。</p>
+<details id="diagnostics"><summary>查看运行数据</summary><pre id="data"></pre></details>
+<p><a href="../design/result-r13/engine/REVIEW.md">接入与验收记录</a> · <a href="../design/result-r13/index.html">已确认完整视觉稿</a></p>
+<h2>已确认的 R13 完整稿</h2><img class="reference" src="../design/result-r13/full-card-r13.png" alt="R13已确认完整稿，包含尚未实现区域的视觉示例"></aside></div>
+<section style="background:white;padding:16px;margin-top:22px;border-radius:12px"><h2>最终构建截图</h2><p>左图用于与完整稿对照，42.7m 是明确标注的排版样例；右图是首个纸箱实际落稳后的 1.0m。独立字形的描边接缝与倾角仍与完整稿有细微差别。本页数字样例仅改变显示，不写入本轮成绩。</p><div style="display:flex;gap:24px;flex-wrap:wrap"><figure style="margin:0"><img style="width:298px;max-width:100%" src="../design/result-r13/engine/final-sample-42_7-375x667-card.png" alt="最终Cocos构建，42.7m排版样例"><figcaption>42.7m · 排版对照样例</figcaption></figure><figure style="margin:0"><img style="width:298px;max-width:100%" src="../design/result-r13/engine/actual-1_0-375x667-card.png" alt="最终Cocos构建，1.0m真实成绩"><figcaption>1.0m · 实际首件成绩</figcaption></figure></div></section></main>
+<script>
+const $ = id => document.getElementById(id), frame = $('player');
+let ready = false, busy = false;
+const api = () => frame.contentWindow;
+const canvas = () => api().qaCC.director.getScene()?.getChildByName('Canvas');
+const card = () => canvas()?.getChildByName('SafeArea')?.getChildByName('Content_1230')?.getChildByName('ResultCard');
+async function draw() { await new Promise(resolve => api().qaCC.director.once(api().qaCC.Director.EVENT_AFTER_DRAW, resolve)); }
+async function load(name) {
+  if (!ready || busy) return false;
+  busy = true;
+  try { await api().qaLoad(name); await draw(); return true; }
+  finally { busy = false; }
+}
+async function result() {
+  if (!await load('Result')) return;
+  $('score').value = 'actual'; $('sample-note').textContent = '当前显示真实结算值。';
+  $('status').textContent = '真实结算 · 图片字形显示本轮高度';
+}
+$('play').onclick = async () => {
+  if (!await load('HUD')) return;
+  api().qaGame().configureCalibration(['cardboard_box','wood_plank','toilet','fridge','dumbbell','basketball'],true);
+  $('score').value = 'actual'; $('sample-note').textContent = '进行真实试玩。';
+  $('status').textContent = '拖动物体，松手释放；右下按钮旋转。';
+};
+$('finish').onclick = () => {
+  const game = api().qaGame();
+  if (game) { game.finish(); $('score').value = 'actual'; $('sample-note').textContent = '当前显示真实结算值。'; $('status').textContent = '本轮已结束，正在显示真实高度。'; }
+  else result();
+};
+$('result').onclick = result;
+$('home').onclick = async () => { if (await load('Home')) $('status').textContent = '已返回首页。'; };
+$('size').onchange = () => { const [width,height] = $('size').value.split(','); frame.width = width; frame.height = height; };
+$('score').onchange = async () => {
+  const value = $('score').value;
+  if (value === 'actual') return result();
+  if (!await load('Result')) return;
+  canvas().getComponent('ResultPresentation').setHeight(Number(value));
+  $('sample-note').textContent = '排版样例，不写入成绩：' + value + 'm';
+  $('status').textContent = '仅检查数字排版 · 当前不是本轮成绩';
+};
+window.addEventListener('message', async event => {
+  if (event.origin !== location.origin || event.source !== frame.contentWindow) return;
+  if (event.data.type === 'play-error') { $('status').textContent = event.data.error; return; }
+  if (event.data.type !== 'play-ready') return;
+  ready = true;
+  for (const id of ['play','finish','result','home']) $(id).disabled = false;
+  await result();
+});
+setInterval(() => {
+  if (!ready || !canvas()) return;
+  const cc = api().qaCC, c = card();
+  const size = canvas().getComponent(cc.UITransform).contentSize;
+  const bounds = node => { if (!node) return null; const b = node.getComponent(cc.UITransform).getBoundingBoxToWorld(); return {x:b.x,y:b.y,width:b.width,height:b.height}; };
+  const glyphs = c?.getChildByName('HeightTreatment')?.children.map(node => ({char:node.name.split(':')[1],x:node.position.x,y:node.position.y,bounds:bounds(node)}));
+  $('data').textContent = JSON.stringify({scene:cc.director.getScene().name,displayMode:$('score').value,
+    game:api().qaGame()?.snapshot(),heightFrames:canvas().getComponent('ResultPresentation')?.heightFrames.map(f=>({name:f?.name,width:f?.originalSize.width,height:f?.originalSize.height})),heightGlyphs:glyphs,visibleHeight:glyphs?.map(g=>g.char).join(''),
+    canvas:{width:size.width,height:size.height},frame:{width:frame.width,height:frame.height},
+    card:bounds(c),retry:bounds(c?.getChildByName('result_btn_retry')),close:bounds(c?.getChildByName('result_btn_close'))},null,2);
+},250);
+</script></html>

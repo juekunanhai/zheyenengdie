@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>首页视觉对照 R9 · 这也能叠</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <main class="review">
+    <header>
+      <p class="eyebrow">这也能叠 / 原 UI 首页对照</p>
+      <h1>首页视觉对照 R9</h1>
+      <p class="lead">回到蓝箱、马桶、黄鸭和红拖鞋，找回原图里的叠放趣味。</p>
+      <p class="boundary">仅审首页 · 独立视觉小样 · 未修改 Cocos · 英雄塔是装饰插画，不运行物理</p>
+    </header>
+    <nav class="mode-tabs" aria-label="审阅版本">
+      <button type="button" data-mode="r9" aria-pressed="true">R9 完整稿</button>
+      <button type="button" data-mode="reference" aria-pressed="false">原 UI 参考</button>
+      <button type="button" data-mode="r8" aria-pressed="false">R8 首页</button>
+    </nav>
+    <div class="workspace" id="workspace">
+      <section class="preview" aria-label="首页预览">
+        <div class="toolbar">
+          <label>画幅 <select id="viewport-size"><option value="667">375 × 667</option><option value="812">375 × 812</option></select></label>
+          <button type="button" id="motion-toggle" aria-pressed="true">暂停云动效</button>
+        </div>
+        <div class="phone" id="phone"><div class="scene" id="scene" role="group" aria-label="R9 首页视觉小样"></div></div>
+        <figure class="reference" id="reference" hidden><img id="reference-image" alt=""><figcaption id="reference-caption"></figcaption></figure>
+        <p class="caption" id="caption" aria-live="polite">按钮仅演示按压反馈。首页插画不改变当前四物体玩法池。</p>
+      </section>
+      <aside class="notes" id="notes">
+        <p class="eyebrow">本轮对照原图第一屏</p>
+        <h2>原图的主角，<br>才是这次首页的主角。</h2>
+        <p>蓝色表情箱在底部，往上是表情马桶、黄鸭和带表情的红拖鞋。保留它们倾斜叠放的趣味，整组作为首页插画。</p>
+        <ol>
+          <li>上方 Logo、标语、中部英雄塔与底部开始按钮形成同一条视觉主线。</li>
+          <li>卡通城市和左侧木牌提供场景，中文在牌面独立排版。</li>
+          <li>云独立缓慢漂移，地面和主角保持稳定。</li>
+        </ol>
+        <p class="fine-print">原图中的等级、金币、今日挑战等排除功能不恢复。新首页插画不受当前四物体碰撞尺寸约束，也不意味着新增玩法物品。</p>
+        <a href="../R8/index.html">查看保留的 R8 审阅页</a>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

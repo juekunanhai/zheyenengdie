@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>基础难度 R1 · 当前承托素材与碰撞轮廓</title>
+<style>
+body{margin:0;background:#edf4f9;color:#14344b;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1180px;margin:32px auto;padding:0 22px}h1{font-size:28px}
+aside{background:#fff1d6;border-left:4px solid #efac2f;padding:14px 18px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:24px 0}
+section{background:#fff;border:1px solid #dae6ee;border-radius:14px;padding:20px}h2{margin:0 0 12px}
+.sprite{height:260px;display:flex;align-items:center;justify-content:center;background:#dfedf8;border-radius:8px}
+.sprite img{width:auto;height:auto;max-width:94%;max-height:240px;object-fit:contain}
+dl{display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:14px}dt,dd{margin:0}
+.geometry{display:block;margin:0 auto;max-width:100%;max-height:360px;width:auto;height:auto;object-fit:contain;background:#daeaf6}
+p{font-size:14px}a{color:#1267a1}details{background:#fff;padding:18px;border:1px solid #dae6ee;border-radius:12px}
+summary{cursor:pointer;font-weight:600}.historical{color:#71431a}li{margin:8px 0}
+@media(max-width:850px){.grid{grid-template-columns:1fr}}
+</style>
+<main>
+<h1>基础难度 R1 · 当前承托素材与碰撞轮廓</h1>
+<aside>以下展示本轮当前采用的三件基础件：纸箱、木板使用原图与 8 点凸形；冰箱使用新八边外壳，并等比映射至 150 宽试放候选。红线是当前碰撞边界，蓝线是真实承托平面。这里核对素材与几何，实际难度和连接效果以本轮引擎测试为准。</aside>
+<div class="grid">
+<section>
+<h2>纸箱</h2>
+<div class="sprite"><img src="assets/object_cardboard_box.png" alt="当前纸箱：带眼睛的暖黄色完整纸箱"></div>
+<dl><dt>物理宽 × 高</dt><dd>100.91 × 100.00</dd><dt>水平顶面 / 底面</dt><dd>77.48 / 94.83</dd><dt>当前凸形顶点</dt><dd>8 点</dd><dt>轮廓最大偏差</dt><dd>0.754 世界单位</dd></dl>
+<a href="cardboard_box-physics-r2.png"><img class="geometry" src="cardboard_box-physics-r2.png" alt="当前纸箱八点红色碰撞轮廓，蓝色水平承托面"></a>
+<p>图像保持不变，顶底承托端点与宽高保持不变；将细微倒角简化为单个凸形，不增加隐藏平台。</p>
+</section>
+<section>
+<h2>冰箱</h2>
+<div class="sprite"><img src="fridge-r2/assets/object_fridge.png" alt="当前冰箱：白蓝搪瓷门、有眼睛和星磁贴的八边外壳"></div>
+<dl><dt>物理宽 × 高</dt><dd>150.00 × 167.55</dd><dt>水平顶面 / 底面</dt><dd>114.89 / 115.05</dd><dt>当前凸形顶点</dt><dd>8 点</dd><dt>轮廓最大偏差</dt><dd>1.183 世界单位（倒角）</dd></dl>
+<a href="fridge-r2/fridge-geometry-150.png"><img class="geometry" src="fridge-r2/fridge-geometry-150.png" alt="当前150宽冰箱八点轮廓，世界尺寸150乘167.55，顶面114.89底面115.05"></a>
+<p>外壳本身为八边形，圆润搪瓷质感保留在内部。根据哑铃双脚及左右交替偏移的承托需求选择 150 宽；同图、同顶点全等比映射，没有横向拉伸。顶底承托线全段与端点为 0 像素误差；左下倒角最大差约 1.183 世界单位（当前画幅约 1.04–1.15 屏幕像素），明确超过原 1 单位目标，未标为满足该阈值。</p>
+</section>
+<section>
+<h2>木板</h2>
+<div class="sprite"><img src="assets/object_wood_plank.png" alt="当前木板：长木梁，蓝色防滑带留在轮廓以内"></div>
+<dl><dt>物理宽 × 高</dt><dd>260.00 × 28.74</dd><dt>水平顶面 / 底面</dt><dd>249.19 / 250.06</dd><dt>当前凸形顶点</dt><dd>8 点</dd><dt>轮廓最大偏差</dt><dd>0.605 世界单位</dd></dl>
+<a href="wood_plank-physics-r2.png"><img class="geometry" src="wood_plank-physics-r2.png" alt="当前长木板八点红色轮廓和蓝色连续水平承托面"></a>
+<p>保留原图与真实平顶平底，用单个凸形减少细分接触面带来的异常；没有改动图片比例或扩大看不见的承托面。</p>
+</section>
+</div>
+<p>三件当前 NEXT 与 Sprite 的 alpha 均逐像素一致。顶底数值是按真实图像边界选择的世界尺寸，不是把像素尺寸直接用作物理尺寸。纸箱与木板切换八点轮廓时保总质量；冰箱加宽后仍按约定保持总质量。</p>
+<p><a href="PHYSICS_GEOMETRY_R2.json">纸箱 / 木板当前八点几何（内含已拒绝冰箱条目）</a> · <a href="PHYSICS_GEOMETRY_R2_CHECK.json">八点简化检查</a> · <a href="fridge-r2/GEOMETRY_150.json">当前冰箱 150 宽试放几何</a> · <a href="fridge-r2/PHYSICS_CHECK_150.json">冰箱承托准确与倒角误差检查</a></p>
+<p><a href="SOURCE.json">原纸箱 / 木板生成来源</a> · <a href="fridge-r2/SOURCE.json">新冰箱生成来源</a> · <a href="fridge-r2/SOURCE_150.json">冰箱 150 宽试放选择依据</a> · <a href="PROCESSING_AUDIT.json">原素材本地处理审计</a> · <a href="fridge-r2/PROCESSING_AUDIT.json">新冰箱本地处理审计</a></p>
+<details>
+<summary>历史描边与淘汰候选 · 非当前碰撞</summary>
+<p class="historical">以下文件仅供追溯。原详细描边、旧圆角冰箱以及被拒绝的八点压缩均不是当前运行碰撞轮廓。当前采用数据以上方三张卡片为准。</p>
+<ul>
+<li>首次详细描边：<a href="cardboard_box-geometry.png">纸箱 17 点</a>、<a href="wood_plank-geometry.png">木板 16 点</a>、<a href="fridge-geometry.png">旧圆角冰箱 34 点</a>；<a href="GEOMETRY.json">原冻结几何</a>与<a href="GEOMETRY_CHECK.json">原检查</a>。</li>
+<li><a href="fridge-physics-r2.png">旧圆角冰箱强压 8 点</a>：最大误差 4.846 世界单位，已拒绝。</li>
+<li><a href="generated/fridge-rejected-narrow.png">首轮偏瘦冰箱</a>、<a href="generated/wood_plank-rejected-thin.png">首轮偏薄木板</a>：未采用的生成原图。</li>
+<li><a href="fridge-r2/generated/fridge-first.png">新八边外壳首张偏高冰箱</a>：未采用；<a href="fridge-r2/fridge-geometry.png">新冰箱 110 宽叠图</a>与<a href="fridge-r2/GEOMETRY.json">110 宽冻结几何</a>图片保持一致；<a href="fridge-r2/fridge-geometry-125.png">125 宽叠图</a>、<a href="fridge-r2/GEOMETRY_125.json">125 宽冻结几何</a>与<a href="fridge-r2/SOURCE_125.json">125 来源记录</a>保留追溯，已由当前 150 宽试放世界映射替代。</li>
+</ul>
+</details>
+</main>
+</html>

@@ -1,0 +1,72 @@
+{
+  "asset_id": "sign-wood-r9",
+  "status": "R9_home_review_candidate_not_engine_imported",
+  "generated_with": "built-in image_gen",
+  "prompt": "Use case: stylized-concept.\nAsset type: one finished transparent PNG game sprite: a small blank wooden instruction sign for the homepage of a charming 2.5D cartoon stacking mobile game.\nCreate ONE complete standalone sign, with a portrait rounded rectangular pale creamy-yellow wooden panel, a simple warm golden-yellow wooden frame, and a short little wooden support below. Total silhouette width-to-height ratio approximately 0.72. A gently beveled border, softly rounded corners, tidy readable silhouette, restrained warm light from upper left and soft cool shadows under the bevel. Substantial toy-like cartoon wood with warm appealing tactility, bold simple contour, slightly hand-shaped friendly form, no realistic grain or tiny busy detail, no glossy plastic finish.\nThe sign is nearly front-facing, with only a very slight perspective retreat to the left. Keep the big blank inner face flat, uninterrupted and easy to overlay with three short horizontal lines of Chinese text later. DO NOT GENERATE ANY WORDS OR LETTERS. The inner face should use at least 75 percent of frame width and 72 percent of the framed panel height. Frame only moderately thick. The short support is visually subordinate.\nThis sign will be displayed at roughly 110 by 160 logical pixels, to the left and slightly behind a colorful cartoon tower on a bright toy-city homepage. Make it simple, vivid and meticulously finished at that small display size, cozy and playful rather than elaborate or rustic.\nGenuinely TRANSPARENT RGBA background around the entire complete sign. Center with generous transparent margin on all sides. No ground, no sky, no scenery, no separate drop-shadow rectangle, no unrelated object, no rope, no hooks, no nails or metal screws, no stickers, no arrows, no icons, no face, no numbers, no text, no watermark, no checkerboard drawn into the image. Absolutely no opaque rectangular background. Preserve a clean soft antialiased silhouette with no detached speckles. This is an actual single sprite, not a mockup or sprite sheet.",
+  "input_images_uploaded": [],
+  "original": {
+    "original_path": "/Users/admin/.codex/generated_images/01a09716-87ce-7d81-a8a8-5772c68c075c/exec-b6cda0fa-f969-4b2b-b9e3-0159fc0bba2c.png",
+    "path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/assets/sign-wood-r9.png",
+    "size": [
+      1064,
+      1478
+    ],
+    "mode": "RGBA",
+    "sha256": "3941f303285505ce5d0dbd3d1c24e73814e97addef272ac37e33cfbf2c21ddf4",
+    "alpha": {
+      "min": 0,
+      "max": 255,
+      "fully_transparent": 781896,
+      "partially_transparent": 790319,
+      "opaque": 377,
+      "nonzero_bounds": [
+        126,
+        0,
+        1050,
+        1423
+      ],
+      "bounds_above16": [
+        129,
+        211,
+        934,
+        1309
+      ],
+      "edge_max": 1
+    }
+  },
+  "clean": {
+    "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/assets/sign-wood-r9-clean.png",
+    "sha256": "024e62521573f9449945175cbac793c39dd64ba62a32ad49b2e941b0c8437d0b",
+    "size": [
+      1064,
+      1478
+    ],
+    "method": "Preserve alpha>=16 connected main sign component plus 16px margin. Zero only disconnected/remote alpha<=16 noise. All RGB and all other alpha unchanged. No crop, resize, or hard subject threshold. Original retained.",
+    "changed_pixels": 963,
+    "removed_alpha_max": 1,
+    "main_body_changed": false,
+    "rgb_changed": false,
+    "alpha_bounds": [
+      126,
+      206,
+      937,
+      1318
+    ],
+    "qa": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/qa/sign-wood-r9-light-blue.png"
+  },
+  "visual_review": {
+    "generated_preview": "passed",
+    "local_light_blue_composite": "passed",
+    "transparent_background": true,
+    "blank_face_for_html_text": true,
+    "main_subject_complete": true,
+    "notes": "Warm beveled cartoon wood with pale cream face and short support. Simplified broad illustrative grain, not photoreal wood. No text baked into sprite. Local compositing was used because direct transparent view_image displays near-opaque generated alpha incorrectly."
+  },
+  "usage": {
+    "target_design_size": [
+      110,
+      160
+    ],
+    "logical_size_note": "Size refers to visible sign; original PNG has transparent margin. Clean alpha bounds [126,206,937,1318] are available for layout calibration."
+  }
+}

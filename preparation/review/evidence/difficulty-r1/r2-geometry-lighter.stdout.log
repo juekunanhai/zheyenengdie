@@ -1,0 +1,4 @@
+{"profile":"r2-geometry-lighter","id":"center10","outcome":"ended","released":10,"entered":10,"placed":7,"time":22.93319999999916,"peak":5.831050304833739,"firstHazard":4.833300000000751}
+{"profile":"r2-geometry-lighter","id":"fridge_plus15","outcome":"ended","released":4,"entered":3,"placed":3,"time":9.015999999999996,"peak":2.4511280890988214,"firstHazard":4.8503000000007495}
+{"profile":"r2-geometry-lighter","id":"fridge_minus15","outcome":"ended","released":10,"entered":9,"placed":7,"time":22.01699999999981,"peak":5.744959417213364,"firstHazard":4.851000000000006}
+{"status":"completed_diagnostic_not_human_playtest","errors":[]}

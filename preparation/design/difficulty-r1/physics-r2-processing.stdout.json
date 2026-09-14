@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "cardboard_box",
+    "accepted_for_runtime_comparison": true,
+    "vertices": 8,
+    "strictly_convex": true,
+    "extrema_unchanged": true,
+    "top_and_foot_endpoints_unchanged": true,
+    "boundary_distance_world": {
+      "max": 0.753537,
+      "p95": 0.345739
+    },
+    "outside_visible_alpha128_area_world_squared": 0.0,
+    "outside_visible_alpha128_percent": 0.0,
+    "added_area_vs_R1_polygon_world_squared": 0.0,
+    "lost_visible_area_world_squared": 24.172081,
+    "next_and_sprite_changed": false
+  },
+  {
+    "slug": "fridge",
+    "accepted_for_runtime_comparison": false,
+    "vertices": 8,
+    "strictly_convex": true,
+    "extrema_unchanged": true,
+    "top_and_foot_endpoints_unchanged": true,
+    "boundary_distance_world": {
+      "max": 4.846217,
+      "p95": 3.25276
+    },
+    "outside_visible_alpha128_area_world_squared": 5.115151,
+    "outside_visible_alpha128_percent": 0.035531,
+    "added_area_vs_R1_polygon_world_squared": 4.496026,
+    "lost_visible_area_world_squared": 199.638296,
+    "next_and_sprite_changed": false
+  },
+  {
+    "slug": "wood_plank",
+    "accepted_for_runtime_comparison": true,
+    "vertices": 8,
+    "strictly_convex": true,
+    "extrema_unchanged": true,
+    "top_and_foot_endpoints_unchanged": true,
+    "boundary_distance_world": {
+      "max": 0.604972,
+      "p95": 0.216126
+    },
+    "outside_visible_alpha128_area_world_squared": 1.307897,
+    "outside_visible_alpha128_percent": 0.017483,
+    "added_area_vs_R1_polygon_world_squared": 0.0,
+    "lost_visible_area_world_squared": 39.517167,
+    "next_and_sprite_changed": false
+  }
+]

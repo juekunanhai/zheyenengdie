@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · 六物体玩法验证</title>
+<style>
+body{margin:0;background:#edf3f8;color:#173047;font:15px/1.7 system-ui}main{max-width:1100px;margin:auto;padding:22px}h1{font-size:25px;margin:0}p{margin:8px 0}a{color:#126bb2}button,select{font:inherit;padding:7px 12px;border:1px solid #bacbd9;border-radius:8px;background:white;color:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:wait}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}.workspace{display:flex;gap:24px;align-items:flex-start}.phone{flex:none}iframe{display:block;border:0;box-shadow:0 8px 28px #20364d25}.note{flex:1;min-width:260px;background:white;padding:18px;border-radius:12px}h2{font-size:17px;margin:0 0 8px}pre{font-size:12px;white-space:pre-wrap;max-height:420px;overflow:auto}.badge{font-size:13px;color:#446177}canvas{max-width:100%;background:#dcebf5;border-radius:8px}#status{min-height:24px}.warning{padding:10px 14px;background:#fff3d7;border-left:3px solid #d69b18}@media(max-width:760px){.workspace{flex-direction:column}.note{min-width:0;width:calc(100% - 36px)}main{padding:14px}.phone{max-width:100%;overflow:auto}}
+</style>
+<main><p style="padding:12px;background:#fff3d7;border-left:3px solid #d69b18">本页是历史形状对照。当前承托形状与基础辅助已继续修订，请使用 <a href="difficulty.html?revision=difficulty-r1">新版基础难度试放</a>。本页旧统计只对应当时保存的形状、节奏和测试条件。</p>
+<h1>六物体试放 · 当前工程</h1>
+<p class="warning">马桶 R2 承托修正已接入，<a href="../docs/PLACEMENT_WAIT_R1.md">首次接触后 1.5 秒普通观察上限</a> 已通过本地引擎定向验收。<a href="toilet-r2.html">进入马桶旧 / 新同动作对照</a>。本页手动局使用当前工程；上一轮数据保留为历史记录，已停用旧 A/B/C 回放，避免旧统计配上新版碰撞与节奏。</p>
+<p>纸箱、木板、冰箱、带胶篮球，加上有台阶的马桶和有凹槽的哑铃。真实 Cocos / Box2D 运行。</p>
+<p class="warning">本页是已确认的玩法实验。无计时模式便于观察和规划；宽度实验结果单独记录，尚未作为正式尺寸采用。当前仍是单次越界结束，三星事故规则在后续批次。</p>
+<p class="badge">下方手动试放使用当前游戏抓手与镜头。首次接触后最多观察 1.5 秒，提前稳住提前出物；轻晃超时后开始约 0.24 秒入场，成绩仍待真实稳定确认，明显下坠/剧烈转动仍阻塞。暂停不计时。完整事故在 1B；上一轮统计使用旧节奏，不作为新版结论；固定动作回放属于纯物理稳定诊断，不运行新出物计时。</p>
+<div class="controls">
+<label>试放 <select id="mode"><option value="six">六物体 · 无计时</option><option value="six-timed">六物体 · 4 秒</option><option value="baseline">原四物体对照</option></select></label>
+<button id="start" disabled>开始 / 重开</button>
+<label>画幅 <select id="size"><option value="375,667">9:16</option><option value="375,812">长屏</option><option value="600,800">3:4</option></select></label>
+<button id="geometry" disabled>查看碰撞轮廓</button>
+<span id="status">引擎加载中…</span>
+</div>
+<div class="workspace"><div class="phone"><iframe id="player" title="六物体当前工程试放" src="play-player.html?revision=placement-wait-r1" width="375" height="667"></iframe></div>
+<aside class="note"><h2>这轮观察什么</h2>
+<p>左右拖动、松手释放；右下按钮旋转 90°。先看 NEXT，再决定要增高还是留下更好的台面。</p>
+<p>比较冰箱横放与竖放、马桶两个高度的台面，以及哑铃中央的凹处。带胶篮球保留原有粘连。</p>
+<p class="badge">声音沿用已采用 A2。哑铃使用金属碰撞；马桶暂用硬质碰撞，专属陶瓷音待补。</p>
+<p>六物体固定顺序：纸箱 → 木板 → 马桶 → 冰箱 → 哑铃 → 篮球。用于重复比较，尚非随机导演。</p>
+<p class="badge">“无计时”只关闭规划时的自动释放；三种入口都使用 1.5 秒普通观察上限。超时出物后，上一件继续模拟和接受稳定/掉落判断。</p>
+<p id="run" class="badge"></p>
+<canvas id="overlay" width="360" height="400" hidden></canvas>
+<p><a href="evidence/gameplay-shapes/CHOICES.json" target="_blank">上一轮 R1 原始结果（历史）</a> · <a href="../docs/GAMEPLAY_SHAPE_TRIAL.md" target="_blank">范围与验收记录</a></p>
+<p><a href="home-r10.html">已采用首页</a> · <a href="play.html">原四物体入口</a></p>
+<details><summary>运行数据</summary><pre id="data"></pre></details>
+</aside></div>
+</main>
+<script>
+const frame=document.querySelector('#player'),status=document.querySelector('#status');
+const six=['cardboard_box','wood_plank','toilet','fridge','dumbbell','basketball'];
+let ready=false,drawOutline=false;
+let busy=false;
+function setBusy(value){
+ busy=value;
+ for(const id of ['start','mode','size'])document.querySelector('#'+id).disabled=value||!ready;
+}
+async function begin(){
+ if(!ready||busy)return;
+ setBusy(true);
+ try{
+  const physics=frame.contentWindow.qaCC.PhysicsSystem2D.instance;physics.resetAccumulator(0);physics.autoSimulation=true;
+  frame.contentWindow.qaCC.game.resume();
+  await frame.contentWindow.qaLoad('HUD');frame.style.pointerEvents='auto';
+  const mode=document.querySelector('#mode').value,game=frame.contentWindow.qaGame();
+  if(mode!=='baseline'&&!game.configureCalibration(six,mode==='six'))throw Error('六物体资产尚未完整导入');
+  status.textContent=mode==='baseline'?'原四物体对照':mode==='six'?'六物体 · 无计时':'六物体 · 4 秒';
+ }catch(error){status.textContent=String(error)}finally{setBusy(false)}
+}
+window.addEventListener('message',e=>{
+ if(e.origin!==location.origin||e.source!==frame.contentWindow)return;
+ if(e.data.type==='play-ready'){ready=true;setBusy(false);document.querySelector('#geometry').disabled=false;status.textContent='引擎就绪，点击开始'}
+ if(e.data.type==='play-error')status.textContent=e.data.error;
+});
+document.querySelector('#start').onclick=begin;
+document.querySelector('#mode').onchange=begin;
+document.querySelector('#size').onchange=e=>{const [w,h]=e.target.value.split(',');frame.width=w;frame.height=h};
+document.querySelector('#geometry').onclick=()=>{drawOutline=!drawOutline;document.querySelector('#overlay').hidden=!drawOutline;document.querySelector('#geometry').textContent=drawOutline?'收起碰撞轮廓':'查看碰撞轮廓'};
+setInterval(()=>{
+ if(!ready)return;
+ const win=frame.contentWindow,game=win.qaGame();if(!game)return;
+ const s=game.snapshot();document.querySelector('#data').textContent=JSON.stringify(s,null,2);
+ document.querySelector('#run').textContent=`当前工程 · 已放稳 ${s.placed} 件 · 已确认高度 ${s.peakMetres.toFixed(2)} m`;
+ if(!drawOutline)return;
+ const ctx=document.querySelector('#overlay').getContext('2d');ctx.clearRect(0,0,360,400);
+ const view=s.view,scale=360/view.width,worldScale=view.scale*scale;
+ const px=x=>180+x*worldScale,py=y=>200-(view.originY+(y-view.cameraY)*view.scale)*scale;
+ ctx.strokeStyle='#967139';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(px(-80),py(0));ctx.lineTo(px(80),py(0));ctx.stroke();
+ for(const r of game.world.bodies){
+  const spec=r.spec,p=r.node.position,a=Math.atan2(2*r.node.rotation.w*r.node.rotation.z,1-2*r.node.rotation.z**2),c=Math.cos(a),sn=Math.sin(a);
+  ctx.strokeStyle=r.placed?'#146f60':'#bc5423';ctx.lineWidth=1.5;ctx.beginPath();
+  if(spec.circle)ctx.arc(px(p.x),py(p.y),spec.width/2*worldScale,0,Math.PI*2);
+  else{const points=spec.outline||[[-spec.width/2,-spec.height/2],[spec.width/2,-spec.height/2],[spec.width/2,spec.height/2],[-spec.width/2,spec.height/2]];points.forEach(([x,y],i)=>ctx[i?'lineTo':'moveTo'](px(p.x+x*c-y*sn),py(p.y+x*sn+y*c)));ctx.closePath()}
+  ctx.stroke();
+ }
+},160);
+</script></html>

@@ -1,0 +1,56 @@
+"""Build a local QA wrapper around the actual Cocos output, never a physics substitute."""
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+source = (ROOT / 'build/web-desktop/index.html').read_text()
+source = source.replace('<head>', '<head><base href="../../build/web-desktop/">')
+source = source.replace('</head>', '''<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden}.header,.footer{display:none}
+#GameDiv{border:0;border-radius:0;box-shadow:none}
+</style></head>''')
+source = source.replace('</body>', '''<script>
+(async()=>{
+ const cc=await System.import('cc');window.qaCC=cc;
+ const deadline=Date.now()+30000;
+ while(!cc.director.getScene()){if(Date.now()>deadline)throw Error('场景加载超时');await new Promise(r=>setTimeout(r,50))}
+ // The web-desktop build owns a fixed subframe. This QA host must report its size
+ // through the public API; CSS alone does not trigger Cocos's resize event.
+ const resizeFrame=()=>{const dpr=cc.screen.devicePixelRatio;cc.screen.windowSize=new cc.Size(innerWidth*dpr,innerHeight*dpr)};
+ resizeFrame();window.addEventListener('resize',resizeFrame);
+ cc.profiler.hideStats();
+ window.qaGame=()=>cc.director.getScene()?.getChildByName('Canvas')?.getComponent('StackGameController');
+ window.qaLoad=name=>new Promise((resolve,reject)=>cc.director.loadScene(name,e=>e?reject(e):resolve()));
+ window.qaSnapshot=()=>({scene:cc.director.getScene()?.name,engine:cc.VERSION,
+  physics:{gravity:cc.PhysicsSystem2D.instance.gravity,fixedTimeStep:cc.PhysicsSystem2D.instance.fixedTimeStep,
+  maxSubSteps:cc.PhysicsSystem2D.instance.maxSubSteps,auto:cc.PhysicsSystem2D.instance.autoSimulation},
+  game:window.qaGame()?.snapshot()});
+ parent.postMessage({type:'play-ready'},location.origin);
+})().catch(error=>parent.postMessage({type:'play-error',error:String(error)},location.origin));
+</script></body>''')
+(ROOT / 'preparation/review/play-player.html').write_text(source)
+(ROOT / 'preparation/review/play.html').write_text('''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>这也能叠 · Batch 1A 试放</title>
+<style>body{margin:0;background:#edf3f8;font:15px/1.7 system-ui;color:#173047}header{max-width:1100px;margin:auto;padding:18px}h1{font-size:23px;margin:0}p{margin:6px 0}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center}button,select{font:inherit;padding:6px 10px}main{display:flex;justify-content:center;padding-bottom:25px}iframe{border:0;box-shadow:0 3px 24px #20364d33}a{color:#197bc1}pre{white-space:pre-wrap;font-size:12px}</style>
+<header><h1>这也能叠 · Batch 1A 四物体试放</h1>
+<p>真实 Cocos 3.8.8 / Box2D 运行。左右拖动，松手释放；右下按钮旋转。首局前两件免自动释放，之后每件约 4 秒。</p>
+<p>当前为内部校准：纸箱 → 木板 → 冰箱 → 篮球循环。掉落后结束本轮试放；正式三星、连续事故与倒塌判定在 1B 接入。已接入你同意先采用的 A2 音效；音乐在 1C。</p>
+<p><a href="difficulty.html?revision=difficulty-r1">进入当前六物体基础难度对照试放</a>：当前三件承托形状、等质量长木板与有限辅助正在校准；本页保留四物体操作入口。</p>
+<p>当前节奏：首次接触后最多观察 1.5 秒，仍轻晃也送入下一件；抓手约 0.24 秒后可操作。真正稳定可提前。暂停不计时，明显掉落仍阻塞；高度只在真实稳定后确认。<a href="../docs/PLACEMENT_WAIT_R1.md">本轮规则与验收</a> · <a href="difficulty.html?revision=difficulty-r1">当前六物体试放</a></p>
+<p>当前修订：首件与平台台面对齐；篮球上下接触后粘连，并缓冲新物体砸落。<a href="contact-review.html">查看平台对照、连续五件及镜头录屏</a></p>
+<p>篮球可以稳住下方支撑与球顶新物体；粘连的一段仍会整体受力，明显拉开时胶层释放。物品介绍：“别担心，有人给它贴了双面胶。”介绍界面按后续批次接入。</p>
+<div class="controls"><button id="start" disabled>开始试放</button><button id="end" disabled>结束本轮</button>
+<label>画幅 <select id="size"><option value="375,667">9:16</option><option value="375,812">长屏</option><option value="600,800">3:4</option></select></label>
+<button id="inspect">读取运行数据</button><span id="status">引擎加载中…</span><a href="audio-1a.html">音频 A2 试听</a><a href="geometry.html">历史几何候选</a></div>
+<details><summary>运行诊断</summary><pre id="diagnostics"></pre></details></header>
+<main><iframe id="player" title="四物体 Cocos 试放" src="play-player.html?revision=difficulty-r1" width="375" height="667"></iframe></main>
+<script>
+const frame=document.querySelector('#player'),status=document.querySelector('#status');
+window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==frame.contentWindow)return;
+ if(e.data.type==='play-ready'){status.textContent='引擎已就绪';document.querySelector('#start').disabled=false;document.querySelector('#end').disabled=false}
+ if(e.data.type==='play-error')status.textContent=e.data.error});
+document.querySelector('#start').onclick=()=>frame.contentWindow.qaLoad('HUD');
+document.querySelector('#end').onclick=()=>frame.contentWindow.qaGame()?.finish();
+document.querySelector('#inspect').onclick=()=>{document.querySelector('#diagnostics').textContent=JSON.stringify(frame.contentWindow.qaSnapshot(),null,2);document.querySelector('details').open=true};
+document.querySelector('#size').onchange=e=>{const [w,h]=e.target.value.split(',');frame.width=w;frame.height=h};
+</script></html>''')
+print('Local play review written; no QA code is inside assets.')

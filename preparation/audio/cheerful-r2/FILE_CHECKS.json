@@ -1,0 +1,81 @@
+{
+  "status": "pass",
+  "audio": [
+    {
+      "file": "audio/cheerful-r2/music/exports/music_a_carefree.mp3",
+      "sha256": "5ee6841787f20474e44dd65278675054c293cefffccbc77ce5bf71cf91789b87",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -22.33,
+      "true_peak_dbtp": -7.6
+    },
+    {
+      "file": "audio/cheerful-r2/music/exports/music_b_happy_boy.mp3",
+      "sha256": "a6e6a4546bf43c0b365cb8cb3fc71e734549416c71573051aafec8d31ae73107",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -22.28,
+      "true_peak_dbtp": -7.56
+    },
+    {
+      "file": "audio/cheerful-r2/voice/voice_wow.mp3",
+      "sha256": "2bfd6da81e67b86c8dc18fbfcec9ff75c4b39cba1aa30d6d2e45479abfeff2de",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -18.26,
+      "true_peak_dbtp": -7.53
+    },
+    {
+      "file": "audio/cheerful-r2/voice/voice_hey.mp3",
+      "sha256": "027d60484504864eda1fef12d8de61a4c81e62412487327dde654985d1b5c04f",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -20.08,
+      "true_peak_dbtp": -6.85
+    },
+    {
+      "file": "audio/cheerful-r2/voice/voice_chuckle.mp3",
+      "sha256": "9fcbad3f11f346b9db3022070f636c62ff248be6ac54d6d10a3ee902c2545c56",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -24.79,
+      "true_peak_dbtp": -5.46
+    },
+    {
+      "file": "audio/cheerful-r2/mix/mix_a.mp3",
+      "sha256": "3c6d9ac2c34a8fb3d8f284ca3f7dd76d57847450a49b4ae69be972e0ca21a56c",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -22.51,
+      "true_peak_dbtp": -8.81
+    },
+    {
+      "file": "audio/cheerful-r2/mix/mix_b.mp3",
+      "sha256": "d1c893447b9c83ed510111be375458ce1eea91700792adfefa676614546e8862",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -23.07,
+      "true_peak_dbtp": -8.05
+    },
+    {
+      "file": "audio/cheerful-r2/mix/previous_level_matched.mp3",
+      "sha256": "37f841e201e8a7dde89df4d9d18e366ca77709d6496f81e77fa76910d6d31e90",
+      "decode": "pass",
+      "http": 200,
+      "content_type": "audio/mpeg",
+      "integrated_lufs": -22.57,
+      "true_peak_dbtp": -9.74
+    }
+  ],
+  "protected_runtime_files": 318,
+  "changed_runtime_files": [],
+  "subjective_listening": "pending",
+  "engine_integration": "not_in_scope"
+}

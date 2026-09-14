@@ -1,0 +1,22 @@
+{
+  "assets/batch0/presentation/HeightBackdrop.ts": "96a6c20f942368f4f3a6e23acda857a17fa90dde5a9d014b86b89c4146779997",
+  "assets/batch1/game-audio.ts": "0e4f391f74421323c59dac67dda9e5dcb1a7d4a42cbdc9b6e0e8e531b6081bc3",
+  "assets/batch1/game-controller.ts": "1b3778d43ae5cf4e00c8618bea48255cf385e84a89bf265245f8031248738b71",
+  "assets/batch1/local-platform.ts": "9f3eb25e3b6210d83a7c023a13bba6e2a6423aa30603b47ba364c2274d0febb2",
+  "assets/batch1/object-data.ts": "26c49a443a3ea0468b8eea755be43b7d21dd9cd123331bbfc712a41d4ee2dfbe",
+  "assets/batch1/play-view.ts": "deb4b15cdcaacdd92bbc6e71ba1a867e384e187df2ac5271d82e768b7eca9ae1",
+  "assets/batch1/scene-actions.ts": "e8401ec94afe6f9d66d4ab87b34d5f906e49a13d3402e3c75a85e158762143e8",
+  "assets/batch1/tower-world.ts": "5fc16bcce472a806a08566d2ffff935d31d1056cc2bf3801e82731cec7bc65ef",
+  "package.json": "824e6f6472ea30d34cb53c3a2d96358132310ae950ce2c785300b7e7cb08e818",
+  "tsconfig.json": "f19fc5eafa2162b20ac6462d1b0c5420b53e31bb6a2a92f3bea0f6c8da52249a",
+  "settings/v2/packages/builder.json": "a3e1a8df580b6ebec15ad16c9bbef785806567bfbc093821852bb3606028e702",
+  "settings/v2/packages/cocos-service.json": "b8024a04b7a87fb5d0ba7c45369f10fa5dbc8323e81b4bda2d8f3513fcd8b914",
+  "settings/v2/packages/device.json": "93af91e0b90038cedc84d08651f845e1c2e2ae460321c19f083c27a178e451f8",
+  "settings/v2/packages/engine.json": "4f929e78c45c0065fc05f4d0c089ea33875eb686c63adeb496f33a1e56b44b11",
+  "settings/v2/packages/information.json": "505e0be7e92f752378538aa4a7473b2d7bb8877578a3cca30ff8e111d6d97d3d",
+  "settings/v2/packages/program.json": "d914f9f19ffe02724337936d8c7907798c8666566902b78243eb1aa8da0baedd",
+  "settings/v2/packages/project.json": "64f8b002e03f12ba01405facf5ef0e1108d5e323af976f51a070ee1d91bec3ba",
+  "assets/batch0/scenes/Result.scene": "1fe06c897a8c03685f0d00557d27f07a77374fed2f1a47cbbf480eedb05f123d",
+  "assets/batch0/scenes/Settings.scene": "19c272b89a13dd8cf1fd7f2353dde5b812b144ad7f401deffbb3f0caeae575ff",
+  "assets/batch0/scenes/HUD.scene": "ac799c69736092150c9b2da073e5b89ac9e5458416b637e987883af26c5d5f59"
+}

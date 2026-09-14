@@ -1,0 +1,54 @@
+{
+  "revision": "home-music-r4",
+  "recordedAt": "2026-09-14T19:44:45.511965+08:00",
+  "method": "CUA actual browser click in Home background; visible QA state read from DOM",
+  "page": "http://127.0.0.1:8767/preparation/review/home-music-r4.html",
+  "cold": {
+    "scene": "Home",
+    "gain": 0,
+    "music": {
+      "valid": false,
+      "clip": null,
+      "playing": false
+    }
+  },
+  "after_real_background_touch": {
+    "scene": "Home",
+    "gain": 0.28,
+    "music": {
+      "valid": true,
+      "clip": "bgm_home",
+      "playing": true,
+      "time": 12.069999999999997,
+      "volume": 0.28
+    }
+  },
+  "scope": "Cold idle did not create a music source; a real mouse/touch event through browser UI unlocked A. No synthetic interaction marker used before this check. Not a physical phone touch test.",
+  "scene_actions_sha256": "4bc106e96e06986450ba257d339130a961f25988c172f9ab22b93f43e4d09753",
+  "frame": {
+    "width": 375,
+    "height": 667
+  },
+  "settings_visual": {
+    "actual_gear_opened_settings": true,
+    "five_credit_lines_visible": true,
+    "credits_below_return_without_overlap_or_clipping": true,
+    "actual_return_opened_home": true,
+    "local_screenshot_saved": false
+  },
+  "real_start_button": {
+    "navigated_to_HUD": true,
+    "music": {
+      "region": "bgm_city",
+      "gain": 0.28,
+      "issues": [],
+      "source": {
+        "clip": "bgm_city",
+        "playing": true,
+        "time": 12.15160000000148,
+        "volume": 0.28
+      }
+    },
+    "after_check": "Returned to Home through review page button"
+  }
+}

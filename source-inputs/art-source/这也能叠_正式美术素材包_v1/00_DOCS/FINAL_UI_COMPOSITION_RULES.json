@@ -1,0 +1,107 @@
+{
+  "home": {
+    "must_have": [
+      "logo_main.png",
+      "btn_start.png",
+      "gallery entry",
+      "leaderboard entry(optional visible before Batch5)",
+      "settings entry"
+    ],
+    "layout_rules": [
+      "Keep center visual area open; no dense card wall.",
+      "No daily challenge, level, coins, VIP, shop, tasks.",
+      "Leaderboard can be hidden/disabled until Batch5, but visual slot may be reserved.",
+      "Use approved bright sky/city background and blue-yellow toy-plastic component language.",
+      "Object gallery and prop gallery are separate planned entries; show them in Batch 3 and ranking in Batch 5. Home settings uses the accepted repaired component in the project import manifest.",
+      "Do not redesign existing UI. Repair approved-source assets; only necessary missing art may be produced in the same style."
+    ],
+    "reusable_ready": [
+      "logo_main.png",
+      "btn_start.png",
+      "panel_9slice_light.png",
+      "bubble_plain.png"
+    ],
+    "needs_creation_or_validated_reuse": [
+      "btn_gallery.png",
+      "btn_leaderboard.png"
+    ]
+  },
+  "gameover": {
+    "must_have_dynamic_fields": [
+      "finalHeight",
+      "newRecord",
+      "techScore",
+      "clutchSaveCount",
+      "deathReason",
+      "newCollectionCount"
+    ],
+    "must_have_actions": [
+      "retry",
+      "share"
+    ],
+    "rules": [
+      "Do not render coins, level, challenge completion, treasure chest, generic star rating.",
+      "Height is dominant visual metric.",
+      "Death reason is shown only if reliably detected.",
+      "New collection appears only when count > 0.",
+      "Use 9-slice panel + dynamic text/icons rather than a single baked result image.",
+      "Current stars reaching zero OR confirmed large-collapse count reaching the incident threshold ends a run.",
+      "Batch 1 only shows implemented real fields and retry; tech score, collection, share and ranking attach in their scheduled batches.",
+      "Camera zoom is world-only; HUD and dynamic result text keep their intended size."
+    ],
+    "reusable_ready": [
+      "panel_9slice_light.png",
+      "popup_base_9slice.png",
+      "bubble_plain.png"
+    ],
+    "historical_missing_visual_bits": [
+      "final_height_title_badge",
+      "tech_score_icon_or_label",
+      "clutch_save_icon_or_label",
+      "death_reason_header",
+      "collection_new_badge",
+      "retry_button_final",
+      "share_button_final"
+    ],
+    "present_result_components": [
+      "02_ASSETS/result_ui/death_reason_collapse.png",
+      "02_ASSETS/result_ui/death_reason_drop.png",
+      "02_ASSETS/result_ui/death_reason_imbalance.png",
+      "02_ASSETS/result_ui/death_reason_slide.png",
+      "02_ASSETS/result_ui/death_reason_unknown.png",
+      "02_ASSETS/result_ui/result_btn_retry.png",
+      "02_ASSETS/result_ui/result_btn_share.png",
+      "02_ASSETS/result_ui/result_clutch_save_label.png",
+      "02_ASSETS/result_ui/result_collection_new_badge.png",
+      "02_ASSETS/result_ui/result_death_reason_header.png",
+      "02_ASSETS/result_ui/result_final_height_badge.png",
+      "02_ASSETS/result_ui/result_tech_score_label.png"
+    ]
+  },
+  "document_revision": "2026-09-12-R2",
+  "engineering_review": "required",
+  "review_note": "原始 reusable_ready 仅为用途分组；项目实际采用与修复批准查 BATCH0_IMPORT_MANIFEST、USER_VISUAL_APPROVAL 和 VISUAL_R6。",
+  "hud": {
+    "height": "top of safe area",
+    "stars": "below height on left",
+    "claw": "short cable entering from top; no visible horizontal rail",
+    "inventory": "two slots vertically arranged at lower left; dynamic item icons remain upright",
+    "tower": "no automatic wooden separator boards between objects",
+    "scope": "R6 layout confirmed; static implementation verified within VISUAL_R6; gameplay wiring in Batch 1",
+    "region_badge": "not displayed; keep city backgrounds"
+  },
+  "background": {
+    "date": "2026-09-12",
+    "start": "ground-level city, platform physically seated on ground, no prebuilt tower",
+    "background_input": "current camera/view height above start, independent of record peak",
+    "stages": [
+      "ground city",
+      "city skyline",
+      "clouds",
+      "space"
+    ],
+    "hud": "screen-space, independent of world scaling",
+    "batch0": "presentation preview only; true gameplay wiring in Batch 1",
+    "coverage": "full Canvas, cover and bottom aligned; safe area constrains HUD only"
+  }
+}

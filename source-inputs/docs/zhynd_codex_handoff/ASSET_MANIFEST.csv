@@ -1,0 +1,63 @@
+asset_id,type,usage,status,source_ref,notes,document_revision,source_status,engineering_review
+ui_logo,ui,首页/分享海报,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/logo_main.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,candidate,needs_review
+ui_home_bg,background,首页背景,candidate,../../art-source/这也能叠_正式美术素材包_v1/00_DOCS/BACKGROUND_LAYER_MANIFEST.json,按正式背景分层组合；部分文件名与内容不符，先修复本批阻塞项。,2026-09-12-R1,candidate,blocked
+ui_height_tag,ui,左上高度挂牌,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_height_sign.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,candidate,needs_review
+ui_region_tag,ui,左上区域挂牌,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_region_sign.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,candidate,needs_review
+ui_star_full,ui,生命星星,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_star_full_set.png,上方残片，星星组合边界需拆分复核。,2026-09-12-R1,candidate,blocked
+ui_pause,ui,右上暂停,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_pause.png,上方和侧面带邻近组件残片。,2026-09-12-R1,candidate,blocked
+ui_next_frame,ui,NEXT轮廓预览,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_next_frame.png,框内烤有固定方块虚线，右侧带邻近组件残片。,2026-09-12-R1,candidate,blocked
+ui_item_slot,ui,左下双道具槽,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_empty.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+ui_skill_rotate,ui,右下技能区旋转90°,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_rotate_90.png,上方和侧面带邻近组件残片。,2026-09-12-R1,placeholder,blocked
+entry_claw,ui_fx,物体出场机械抓手,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_open_wide.png,右侧带邻近抓手残片。,2026-09-12-R1,candidate,blocked
+obj_cardboard,object,纸箱,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_cardboard_box.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_woodbox,object,木箱,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_wooden_crate.png,右侧带邻近物体残片。,2026-09-12-R1,placeholder,blocked
+obj_sofa,object,沙发,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_sofa.png,画面下边界截断主体，须复核完整边缘。,2026-09-12-R1,placeholder,blocked
+obj_toilet,object,马桶,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_toilet.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_burger,object,巨型汉堡,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_burger.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_basketball,object,篮球,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_basketball.png,上方带邻近木箱残片。,2026-09-12-R1,placeholder,blocked
+obj_ice,object,冰块,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_ice_block.png,上方和右侧带邻近物体残片。,2026-09-12-R1,placeholder,blocked
+obj_plank,object,长木板,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_wood_plank.png,上下带其他物体残片；斜向画面须校准显示方向和碰撞轮廓。,2026-09-12-R1,placeholder,blocked
+obj_fridge,object,冰箱,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_fridge.png,右侧带邻近物体残片。,2026-09-12-R1,placeholder,blocked
+obj_dumbbell,object,哑铃,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_dumbbell.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_slipper,object,巨型拖鞋,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_slipper.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_whale,object,鲸鱼,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_whale.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_tv,object,电视机,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_television.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_bathtub,object,浴缸,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_bathtub.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_piano,object,钢琴,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_piano.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_tire,object,轮胎,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_tire.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_bowling,object,保龄球,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_bowling_ball.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_oildrum,object,油桶,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_oil_drum.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_springpad,object,弹簧垫,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_spring_pad.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_catbed,object,猫窝,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_cat_bed.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_giraffe,object,长颈鹿,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_giraffe.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_ufo,object,UFO,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_ufo.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_rocket,object,火箭,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_rocket.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+obj_vending,object,自动贩卖机,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_vending_machine.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+power_glue,powerup,强力胶,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_strong_glue_hud.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+power_undo,powerup,后悔药,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_undo_hud.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+power_shrink,powerup,缩水药,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_shrink_hud.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+power_reroll,powerup,换一个,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_reroll_hud.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+power_feather,powerup,羽毛药,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_feather_hud.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+power_star,powerup,恢复1星,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_restore_star_hud.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+bg_city,background,城市阶段,candidate,../../art-source/这也能叠_正式美术素材包_v1/00_DOCS/BACKGROUND_LAYER_MANIFEST.json,按正式背景分层组合；部分文件名与内容不符，先修复本批阻塞项。,2026-09-12-R1,candidate,blocked
+bg_cloud,background,云层阶段,candidate,../../art-source/这也能叠_正式美术素材包_v1/00_DOCS/BACKGROUND_LAYER_MANIFEST.json,按正式背景分层组合；部分文件名与内容不符，先修复本批阻塞项。,2026-09-12-R1,candidate,blocked
+bg_space,background,太空阶段,candidate,../../art-source/这也能叠_正式美术素材包_v1/00_DOCS/BACKGROUND_LAYER_MANIFEST.json,按正式背景分层组合；部分文件名与内容不符，先修复本批阻塞项。,2026-09-12-R1,candidate,blocked
+fx_contact,fx,普通接触,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_contact_dust.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+fx_heavy_hit,fx,重物冲击,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_impact_ring.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+fx_near_miss,fx,惊险稳住,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_stable_swirl.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+fx_discovery,fx,新发现,candidate,../../art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_sparkle_strip.png,正式来源已存在，需工程组合验收；以素材包 Manifest 为准。,2026-09-12-R1,placeholder,needs_review
+bgm_base,audio,主题基础层,placeholder,,未交付音频；需许可记录和试听审批。按 SPEC 第 13/24/28 节分批交付。,2026-09-12-R1,placeholder,missing
+bgm_city,audio,城市stem,placeholder,,未交付音频；需许可记录和试听审批。实时 stem 后置，Batch 1 使用同主题编配版本。,2026-09-12-R1,placeholder,missing
+bgm_cloud,audio,云层stem,placeholder,,未交付音频；需许可记录和试听审批。实时 stem 后置，Batch 1 使用同主题编配版本。,2026-09-12-R1,placeholder,missing
+bgm_space,audio,太空stem,placeholder,,未交付音频；需许可记录和试听审批。实时 stem 后置，Batch 1 使用同主题编配版本。,2026-09-12-R1,placeholder,missing
+sfx_rotate,audio,旋转90°,placeholder,,未交付音频；需许可记录和试听审批。按 SPEC 第 13/24/28 节分批交付。,2026-09-12-R1,placeholder,missing
+sfx_star_lost,audio,掉星,placeholder,,未交付音频；需许可记录和试听审批。按 SPEC 第 13/24/28 节分批交付。,2026-09-12-R1,placeholder,missing
+sfx_collapse,audio,塔塌,placeholder,,未交付音频；需许可记录和试听审批。按 SPEC 第 13/24/28 节分批交付。,2026-09-12-R1,placeholder,missing
+sfx_near_miss,audio,惊险稳住,placeholder,,未交付音频；需许可记录和试听审批。按 SPEC 第 13/24/28 节分批交付。,2026-09-12-R1,placeholder,missing
+bgm_city_mix,audio,城市同主题编配,placeholder,,Batch 1 核心交付，当前文件缺失；候选需许可记录和试听审批。,2026-09-12-R1,not_delivered,missing
+bgm_cloud_mix,audio,云层同主题编配,placeholder,,Batch 1 核心交付，当前文件缺失；候选需许可记录和试听审批。,2026-09-12-R1,not_delivered,missing
+bgm_space_mix,audio,太空同主题编配,placeholder,,Batch 1 核心交付，当前文件缺失；候选需许可记录和试听审批。,2026-09-12-R1,not_delivered,missing
+sfx_claw,audio,抓手送入释放回收,placeholder,,Batch 1 核心交付，当前文件缺失；候选需许可记录和试听审批。,2026-09-12-R1,not_delivered,missing
+sfx_impact_materials,audio,纸木金属软体球冰巨物接触,placeholder,,Batch 1 核心交付，当前文件缺失；候选需许可记录和试听审批。,2026-09-12-R1,not_delivered,missing
+sfx_ui,audio,UI点击,placeholder,,Batch 1 核心交付，当前文件缺失；候选需许可记录和试听审批。,2026-09-12-R1,not_delivered,missing
+sfx_game_over,audio,确定失败与结束,placeholder,,Batch 1 核心交付，当前文件缺失；候选需许可记录和试听审批。,2026-09-12-R1,not_delivered,missing

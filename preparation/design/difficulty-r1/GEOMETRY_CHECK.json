@@ -1,0 +1,137 @@
+{
+  "status": "passed_geometry_only",
+  "assets": [
+    {
+      "slug": "cardboard_box",
+      "simple_polygon": true,
+      "self_intersections": [],
+      "vertices": 17,
+      "polygon_outside_alpha128_percent": 0.000103,
+      "alpha_outside_polygon_percent": 0.096628,
+      "boundary_distance_world": {
+        "max": 0.220011,
+        "p95": 0.10142
+      },
+      "next_alpha_identical": true,
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              135,
+              9
+            ],
+            [
+              899,
+              9
+            ]
+          ],
+          "width_world": 77.484787,
+          "y_world": 50.0
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              38,
+              995
+            ],
+            [
+              973,
+              995
+            ]
+          ],
+          "width_world": 94.827586,
+          "y_world": -50.0
+        }
+      },
+      "validation_boundary": "Geometry and raster checks only; engine balance must be verified separately."
+    },
+    {
+      "slug": "fridge",
+      "simple_polygon": true,
+      "self_intersections": [],
+      "vertices": 34,
+      "polygon_outside_alpha128_percent": 0.045388,
+      "alpha_outside_polygon_percent": 0.101838,
+      "boundary_distance_world": {
+        "max": 0.332042,
+        "p95": 0.121413
+      },
+      "next_alpha_identical": true,
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              127,
+              9
+            ],
+            [
+              794,
+              9
+            ]
+          ],
+          "width_world": 80.98234,
+          "y_world": 66.777042
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              57,
+              1109
+            ],
+            [
+              848,
+              1109
+            ]
+          ],
+          "width_world": 96.037528,
+          "y_world": -66.777042
+        }
+      },
+      "validation_boundary": "Geometry and raster checks only; engine balance must be verified separately."
+    },
+    {
+      "slug": "wood_plank",
+      "simple_polygon": true,
+      "self_intersections": [],
+      "vertices": 16,
+      "polygon_outside_alpha128_percent": 0.01746,
+      "alpha_outside_polygon_percent": 0.393241,
+      "boundary_distance_world": {
+        "max": 0.289964,
+        "p95": 0.216126
+      },
+      "next_alpha_identical": true,
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              33,
+              9
+            ],
+            [
+              1186,
+              9
+            ]
+          ],
+          "width_world": 249.193682,
+          "y_world": 14.372402
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              31,
+              142
+            ],
+            [
+              1188,
+              142
+            ]
+          ],
+          "width_world": 250.058188,
+          "y_world": -14.372402
+        }
+      },
+      "validation_boundary": "Geometry and raster checks only; engine balance must be verified separately."
+    }
+  ]
+}

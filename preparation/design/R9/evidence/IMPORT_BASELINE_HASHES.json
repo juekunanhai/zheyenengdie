@@ -1,0 +1,21 @@
+{
+  "assets/batch0/scenes/HUD.scene": "ac799c69736092150c9b2da073e5b89ac9e5458416b637e987883af26c5d5f59",
+  "assets/batch0/scenes/Settings.scene": "19c272b89a13dd8cf1fd7f2353dde5b812b144ad7f401deffbb3f0caeae575ff",
+  "assets/batch0/scenes/Result.scene": "1fe06c897a8c03685f0d00557d27f07a77374fed2f1a47cbbf480eedb05f123d",
+  "assets/batch0/scenes/Settings.scene.meta": "8ee9df61f6f8d1ac8aff8573814117229e3a9b6d5b2f83fae39f8380e9d984ae",
+  "assets/batch0/scenes/Home.scene.meta": "a3abf437954776688869a8d738305d284304fc5701d06b3c121fb6274116a3a8",
+  "assets/batch0/scenes/Result.scene.meta": "996811a172c2d2671446631380345c1a044cb66ac90c40d8f1cc6d83979324a6",
+  "assets/batch0/scenes/HUD.scene.meta": "d305a040ff69579100830799f1018d6d1724a7bae193cd14e989db83d27e8a5f",
+  "assets/batch0/presentation/HeightBackdrop.ts": "96a6c20f942368f4f3a6e23acda857a17fa90dde5a9d014b86b89c4146779997",
+  "assets/batch1/scene-actions.ts": "e8401ec94afe6f9d66d4ab87b34d5f906e49a13d3402e3c75a85e158762143e8",
+  "assets/batch1/tower-world.ts": "5fc16bcce472a806a08566d2ffff935d31d1056cc2bf3801e82731cec7bc65ef",
+  "assets/batch1/object-data.ts": "26c49a443a3ea0468b8eea755be43b7d21dd9cd123331bbfc712a41d4ee2dfbe",
+  "preparation/tools/build_static_scenes.py": "c05bb337ba60e4e0f7b8572b18ebe05aa1cf31188e0a5d97f49fddac111d4135",
+  "preparation/design/R9/assets/bg-home-r9.png": "bfce81f246bc9080178b24773c06b3cf5f770e311dceb7d7df05cf15e87396fc",
+  "preparation/design/R9/assets/hero-stack-r9-clean.png": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+  "preparation/design/R9/assets/hero-slipper.png": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+  "preparation/design/R9/assets/sign-wood-r9-trimmed.png": "5c850606594b1ded306e0c0816b7b9786ac9e07cf68b2a348a75b1366030482d",
+  "preparation/design/R7/assets/cloud-soft-r7-clean.png": "2ba4cc4f1fc84826f66089e3b8f0a73ef08100edd65db0db8e39aa332878cab1",
+  "preparation/art/candidates/objects/object_slipper.png": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+  "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_slipper.png": "58ad7493993a44f9bac20fdb6c422056ab5c294f4ce32f0a9683e74456202dde"
+}

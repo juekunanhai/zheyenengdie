@@ -1,0 +1,34 @@
+{
+  "batch": "toilet-shape-r2",
+  "method": "R2 replaces only toilet Sprite/NEXT using existing UUIDs; HUD and other images unchanged; R1 retained in original design package for comparison",
+  "assets": [
+    {
+      "source": "preparation/design/gameplay-toilet-r2/candidate-b/assets/object_toilet.png",
+      "target": "assets/batch0/art/object_toilet.png",
+      "sha256": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c",
+      "uuid": "cce2bc47-590b-57c1-9e2c-5c35bffb9c29",
+      "status": "self_checked_trial_candidate_not_user_final_art_approval"
+    },
+    {
+      "source": "preparation/design/gameplay-toilet-r2/candidate-b/assets/next_toilet.png",
+      "target": "assets/batch0/art/next_toilet.png",
+      "sha256": "b694ef2064bce56b6baa5f09d2cce71c8ffbe7fbc59b0845ed9bd28dae827630",
+      "uuid": "c136c394-2eb2-5241-9baf-1dfec8168e2a",
+      "status": "self_checked_trial_candidate_not_user_final_art_approval"
+    },
+    {
+      "source": "preparation/design/gameplay-shapes/assets/object_dumbbell.png",
+      "target": "assets/batch0/art/object_dumbbell.png",
+      "sha256": "d550217e1ee82dfad1cc340325766d347c73c3bfaa8a52e0969b13778d8c0e70",
+      "uuid": "c5455892-cebe-5287-bf11-a67c3748dfd2",
+      "status": "self_checked_trial_candidate_not_user_final_art_approval"
+    },
+    {
+      "source": "preparation/design/gameplay-shapes/assets/next_dumbbell.png",
+      "target": "assets/batch0/art/next_dumbbell.png",
+      "sha256": "7d00350198c6673398b476d537ed99342d9dcdeca08c3340c418480816a50b08",
+      "uuid": "df056fce-6feb-5dfa-ad9c-3a1792cb5a93",
+      "status": "self_checked_trial_candidate_not_user_final_art_approval"
+    }
+  ]
+}

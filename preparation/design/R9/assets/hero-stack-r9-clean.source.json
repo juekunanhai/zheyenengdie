@@ -1,0 +1,45 @@
+{
+  "source": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/assets/hero-stack-r9.png",
+  "source_sha256": "57fc6ee0633f09fa6abab696e532b72f8fdca2fe2def9cd9eab54eacf5556619",
+  "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/assets/hero-stack-r9-clean.png",
+  "sha256": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+  "size": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA",
+  "method": "Protect every alpha>5 pixel plus 16px Chebyshev-distance margin (33x33 maximum filter). Remove only alpha1..5 pixels beyond that margin. Zero RGB only where final alpha=0. No threshold cutting of visible body, no crop, no resize.",
+  "statistics": {
+    "remote_alpha_removed_pixels": 191,
+    "removed_alpha_min": 1,
+    "removed_alpha_max": 1,
+    "hidden_rgb_zeroed_pixels": 792315,
+    "remaining_visible_rgba_identical": true,
+    "alpha_gt_5_rgba_identical": true,
+    "original_bbox": [
+      129,
+      18,
+      1004,
+      1536
+    ],
+    "clean_bbox": [
+      129,
+      18,
+      915,
+      1507
+    ],
+    "edge_alpha_max": 0
+  },
+  "qa_composites": [
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/qa/hero-stack-r9-original-light-blue.png",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/qa/hero-stack-r9-clean-light-blue.png"
+  ],
+  "qa_note": "Local alpha compositing; blue is present only in the QA PNG, not in the Sprite. Large colorful source RGB regions with alpha=0 are not a visible aura.",
+  "visual_review": {
+    "original_light_blue_alpha_composite": "passed",
+    "clean_light_blue_alpha_composite": "passed",
+    "visible_color_aura": false,
+    "body_and_soft_edges_unchanged": true,
+    "notes": "Viewed original and clean composites. The large colorful source preview aura is invisible when actual alpha is applied; the character stack and its edges match between both images."
+  }
+}

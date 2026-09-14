@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "method": "Read-only in-memory substitutions; no source/config/output/history changed, no real failed Creator run claimed.",
+  "cases": [
+    {
+      "case": "third_configuration_change",
+      "status": "rejected_as_required",
+      "reason": "Configuration change exceeds the two approved additions"
+    },
+    {
+      "case": "physics_source_hash_changed",
+      "status": "rejected_as_required",
+      "reason": "Runtime/meta/art/audio/physics/config content changed"
+    },
+    {
+      "case": "existing_Web_output_changed",
+      "status": "rejected_as_required",
+      "reason": "Existing Web output changed"
+    },
+    {
+      "case": "non_success_creator_exit",
+      "status": "rejected_as_required",
+      "reason": "Actual Creator process failed"
+    }
+  ]
+}

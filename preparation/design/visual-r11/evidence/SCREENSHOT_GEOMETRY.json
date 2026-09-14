@@ -1,0 +1,274 @@
+[
+  {
+    "name": "final-game-ground-start",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-game-one-placed",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-result-real",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "result-long-screen",
+    "viewport": [
+      300,
+      650
+    ],
+    "crop": [
+      111,
+      20,
+      408,
+      662
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "result-wide",
+    "viewport": [
+      450,
+      600
+    ],
+    "crop": [
+      111,
+      20,
+      556,
+      613
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "result-zero-wide",
+    "viewport": [
+      450,
+      600
+    ],
+    "crop": [
+      111,
+      20,
+      556,
+      613
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "result-long-number",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "space-wide",
+    "viewport": [
+      450,
+      600
+    ],
+    "crop": [
+      111,
+      20,
+      556,
+      613
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "ground-long",
+    "viewport": [
+      300,
+      650
+    ],
+    "crop": [
+      111,
+      20,
+      408,
+      662
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-background-0m",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-background-6m",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-background-15m",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-background-55m",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-background-85m",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-background-160m",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  },
+  {
+    "name": "final-background-200m",
+    "viewport": [
+      375,
+      667
+    ],
+    "crop": [
+      111,
+      20,
+      482,
+      679
+    ],
+    "source_pixels": [
+      1265,
+      712
+    ]
+  }
+]

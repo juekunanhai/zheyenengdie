@@ -1,0 +1,126 @@
+{
+  "status": "self_reviewed_candidate_pending_engine_and_user_visual_review",
+  "geometry_manifest": "design/batch1c/GEOMETRY.json",
+  "entries": [
+    {
+      "id": "object_wooden_crate",
+      "candidate": "design/batch1c/assets/object_wooden_crate.png",
+      "import_path": "assets/batch0/art/object_wooden_crate.png",
+      "sha256": "ac02371e70ac6fe460e59ba7412e26262a4a7f082a237d4fd3ce7e2e75bf1e40",
+      "uuid": "c08f16c0-112c-5aff-9ce3-b5c54118cea7",
+      "meta_sha256": "fd5948e7faaa5f98a9ab04c958f80a978a409719e5918201200579648553d846",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "next_wooden_crate",
+      "candidate": "design/batch1c/assets/next_wooden_crate.png",
+      "import_path": "assets/batch0/art/next_wooden_crate.png",
+      "sha256": "7d2b79989e56453ee29448ecf57dc62e325e72a062c4c283c5cd1f9c78b2f651",
+      "uuid": "c997cc05-5668-54fe-b75c-806c28c42b57",
+      "meta_sha256": "9bde3ea578b07053c8c577fc42146842ea273674d481cbe20e586dd4042b10a5",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "object_ice_block",
+      "candidate": "design/batch1c/assets/object_ice_block.png",
+      "import_path": "assets/batch0/art/object_ice_block.png",
+      "sha256": "97edca9af4c7b74d86adc25e9544f2777a2659e9fb2a1d5cad5da3108fdf5e0a",
+      "uuid": "4b8aae92-095c-5e27-b928-b1db46048627",
+      "meta_sha256": "eee25a48782fd6b7b5a146eaa9d53f420997770436de21180ec994f16beafa20",
+      "kind": "replacement",
+      "previous_sha256": "726c02ca4eae0d185e51261c905aadc6a912dd1555256357bbafb6f3b0bee2cd"
+    },
+    {
+      "id": "next_ice_block",
+      "candidate": "design/batch1c/assets/next_ice_block.png",
+      "import_path": "assets/batch0/art/next_ice_block.png",
+      "sha256": "e10a71b8b2ea919afb9cfc5ea682951b8df9392c0d187a450fe3a4a6a1c43c5f",
+      "uuid": "26accb7e-da07-5a1d-9e4d-ac4d6df61841",
+      "meta_sha256": "73f83703ecfeef5c06e00591234b4bc7ef59d6f1bb132535752606c720c570ba",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "object_sofa",
+      "candidate": "design/batch1c/assets/object_sofa.png",
+      "import_path": "assets/batch0/art/object_sofa.png",
+      "sha256": "6afa01d86cb88c332287000fc1c6f63b803a6f4c6963148b42898737633430d6",
+      "uuid": "e58dfbb2-df57-5b00-8fe5-2b55520ee99c",
+      "meta_sha256": "23835d2723389544dfd506d3f7492ee89fa541236cef138612c16aebb4800ee9",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "next_sofa",
+      "candidate": "design/batch1c/assets/next_sofa.png",
+      "import_path": "assets/batch0/art/next_sofa.png",
+      "sha256": "fd8f73fd39f304f76aa969074c57b7a1c5e219b1424f67b97b0bd42b90a345fb",
+      "uuid": "cf66836a-ddea-5263-be44-87a6fa70fce1",
+      "meta_sha256": "e0409ee941548876daf90cb1468e66d3e092e8079580b0752750071230d72238",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "object_whale",
+      "candidate": "design/batch1c/assets/object_whale.png",
+      "import_path": "assets/batch0/art/object_whale.png",
+      "sha256": "dafb9e8507608ed83c68ed2e30a3e3886dc9a0f1b449150a27c1212602e5e947",
+      "uuid": "245bd1c2-0956-5e84-a083-abf2aab6b42f",
+      "meta_sha256": "2874f33b28e6dbcdb69aacb3fcf0e6d6f9e4b42a0fd1071b3fbd8cb8863ef6d4",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "next_whale",
+      "candidate": "design/batch1c/assets/next_whale.png",
+      "import_path": "assets/batch0/art/next_whale.png",
+      "sha256": "ac4ab0945bfc46780718bab740f4426d9827a69eb32e7ed6a6dfef3e9c925def",
+      "uuid": "6bf002f5-02dd-5682-a080-8d224174f941",
+      "meta_sha256": "3f9d08ce0f6b63e5cb627976e6d467dcff93efecf9e09885c1f465340f2551cf",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "object_burger",
+      "candidate": "design/batch1c/assets/object_burger.png",
+      "import_path": "assets/batch0/art/object_burger.png",
+      "sha256": "84809a3fa248aba9ee7db4428b8a1c620b19be1a81f77afc6c091f7c9bb58a47",
+      "uuid": "ee5131c5-f13b-523f-b02c-c7ec91d39494",
+      "meta_sha256": "db8bab9a78e755fc4aec7c717e0bcccd268f4fa17e5c8e2d803ee9bcca0d879c",
+      "kind": "replacement",
+      "previous_sha256": "cd65a730bd6a0a70578615aebb8fb999e8797f9dc1b4abe749950c5288ea282b"
+    },
+    {
+      "id": "next_burger",
+      "candidate": "design/batch1c/assets/next_burger.png",
+      "import_path": "assets/batch0/art/next_burger.png",
+      "sha256": "7320a160c2b390e5e4eea68f0dbd9f48e34c6b3813000027c3a57ffb83f4397c",
+      "uuid": "1b161928-9b08-57e4-b37f-3e98e294b8d4",
+      "meta_sha256": "25a60b6ca255eb915d672ac4e7656c3ba6fb762f5d5c521f2e7ab771c5d10f24",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "object_slipper",
+      "candidate": "design/batch1c/assets/object_slipper.png",
+      "import_path": "assets/batch0/art/object_slipper.png",
+      "sha256": "7e9c4091c33b5e8213258e7d21aa6878ff55f3a01e76025965b69a46227040a4",
+      "uuid": "f2f32c9a-ed38-51f6-97db-8d19df5bb5e2",
+      "meta_sha256": "c59e100e092f4db580ce5c267f2cdccbe500d16d700f0e809f5249db200ca7da",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "next_slipper",
+      "candidate": "design/batch1c/assets/next_slipper.png",
+      "import_path": "assets/batch0/art/next_slipper.png",
+      "sha256": "4887d9590b581e9d367b30b5965fa776802ab30de9cf153def5dc2958080180a",
+      "uuid": "65a348ab-bfcb-5feb-a7ab-79c8a4a2b3b3",
+      "meta_sha256": "0b8e7a43f7325fd01caec588f99ea0e8eaafa770703101806ed15aea5aecc7d4",
+      "kind": "new",
+      "previous_sha256": null
+    }
+  ]
+}

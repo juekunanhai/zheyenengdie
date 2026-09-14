@@ -1,0 +1,176 @@
+{
+  "revision": "cheerful-r2",
+  "status": "audition_candidates_only",
+  "imported_into_game": false,
+  "user_listening_status": "pending",
+  "file_base": "preparation",
+  "music": [
+    {
+      "id": "music_a_carefree",
+      "label": "A",
+      "title": "A · 轻快拨弦",
+      "description": "尤克里里、吉他、马林巴与轻打击的明亮拨弦方向；保留连续乐句和配器变化，供比较轻松、欢快的主配乐方向。",
+      "duration_s": 80.0,
+      "file": "audio/cheerful-r2/music/exports/music_a_carefree.mp3",
+      "sha256": "5ee6841787f20474e44dd65278675054c293cefffccbc77ce5bf71cf91789b87",
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037",
+      "author": "Kevin MacLeod",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "note": "候选为带结尾淡出的试听段；尚未制作或验收无缝循环。"
+    },
+    {
+      "id": "music_b_happy_boy",
+      "label": "B",
+      "title": "B · 俏皮小乐队",
+      "description": "单簧管、大号、吉他与打击的喜剧小乐队方向；完整短曲包含两种速度的变奏，用来比较更活泼、逗趣的氛围。",
+      "duration_s": 53.890612,
+      "file": "audio/cheerful-r2/music/exports/music_b_happy_boy.mp3",
+      "sha256": "a6e6a4546bf43c0b365cb8cb3fc71e734549416c71573051aafec8d31ae73107",
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648",
+      "author": "Kevin MacLeod",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "note": "候选为带结尾淡出的试听段；尚未制作或验收无缝循环。"
+    }
+  ],
+  "voice": [
+    {
+      "id": "voice_wow",
+      "label": "V1",
+      "title": "Wow · 惊喜短音（试听候选）",
+      "description": "网站归类为人声 Wow；去掉约两秒尾部静音，保留完整感叹。",
+      "duration_s": 0.88,
+      "file": "audio/cheerful-r2/voice/voice_wow.mp3",
+      "sha256": "2bfd6da81e67b86c8dc18fbfcec9ff75c4b39cba1aa30d6d2e45479abfeff2de",
+      "source_page": "https://www.fiftysounds.com/royalty-free-music/sfx-wow3.html",
+      "author": "FiftySounds",
+      "license": "FiftySounds License — free commercial game use; SFX attribution optional",
+      "license_url": "https://www.fiftysounds.com/music-license.html",
+      "note": ""
+    },
+    {
+      "id": "voice_hey",
+      "label": "V2",
+      "title": "Hey · 明快招呼（试听候选）",
+      "description": "独立录制的 Hey 女声，保留原速度和音高，先试听语气是否贴合游戏。",
+      "duration_s": 0.983605,
+      "file": "audio/cheerful-r2/voice/voice_hey.mp3",
+      "sha256": "027d60484504864eda1fef12d8de61a4c81e62412487327dde654985d1b5c04f",
+      "source_page": "https://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs",
+      "author": "cicifyre",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "note": ""
+    },
+    {
+      "id": "voice_chuckle",
+      "label": "V3",
+      "title": "俏皮短笑（试听候选）",
+      "description": "独立短笑表演，用于比较画面的趣味感；尚未赋予赞许、失败或任何游戏触发语义。",
+      "duration_s": 1.257392,
+      "file": "audio/cheerful-r2/voice/voice_chuckle.mp3",
+      "sha256": "9fcbad3f11f346b9db3022070f636c62ff248be6ac54d6d10a3ee902c2545c56",
+      "source_page": "https://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs",
+      "author": "cicifyre",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "note": ""
+    }
+  ],
+  "mix": [
+    {
+      "id": "mix_a",
+      "label": "A 组合",
+      "title": "配乐 A ＋ 三个人声",
+      "description": "按 V1 → V2 → V3 的顺序出现，比较人声与音乐的搭配。",
+      "duration_s": 20.0,
+      "file": "audio/cheerful-r2/mix/mix_a.mp3",
+      "sha256": "3c6d9ac2c34a8fb3d8f284ca3f7dd76d57847450a49b4ae69be972e0ca21a56c",
+      "master_sha256": "ee1d96412139a3cc271035d968e1b224fa35b780e245de6a5f77ae7fe705e791",
+      "source_page": null,
+      "author": null,
+      "license": "See individual source licenses",
+      "note": "离线混音示范；尚未接入游戏。",
+      "processing": {
+        "music": "music_a_carefree",
+        "voice_ids": [
+          "voice_wow",
+          "voice_hey",
+          "voice_chuckle"
+        ],
+        "voice_times_s": [
+          5,
+          10,
+          15
+        ],
+        "music_duck_gain": 0.42,
+        "duck_attack_s": 0.06,
+        "duck_release_s": 0.25,
+        "common_output_gain": 1.0,
+        "end_fade_s": 1,
+        "pitch_or_speed_change": false
+      },
+      "decoded_peak_dbfs": -8.819599873262266
+    },
+    {
+      "id": "mix_b",
+      "label": "B 组合",
+      "title": "配乐 B ＋ 三个人声",
+      "description": "按 V1 → V2 → V3 的顺序出现，比较人声与音乐的搭配。",
+      "duration_s": 20.0,
+      "file": "audio/cheerful-r2/mix/mix_b.mp3",
+      "sha256": "d1c893447b9c83ed510111be375458ce1eea91700792adfefa676614546e8862",
+      "master_sha256": "a8aaa70c33fd814db03364522b86bbe42a1c5be541d4b20a6bd9a0f81d530b61",
+      "source_page": null,
+      "author": null,
+      "license": "See individual source licenses",
+      "note": "离线混音示范；尚未接入游戏。",
+      "processing": {
+        "music": "music_b_happy_boy",
+        "voice_ids": [
+          "voice_wow",
+          "voice_hey",
+          "voice_chuckle"
+        ],
+        "voice_times_s": [
+          5,
+          10,
+          15
+        ],
+        "music_duck_gain": 0.42,
+        "duck_attack_s": 0.06,
+        "duck_release_s": 0.25,
+        "common_output_gain": 1.0,
+        "end_fade_s": 1,
+        "pitch_or_speed_change": false
+      },
+      "decoded_peak_dbfs": -8.11544614423979
+    }
+  ],
+  "reference": {
+    "file": "audio/cheerful-r2/mix/previous_level_matched.mp3",
+    "sha256": "37f841e201e8a7dde89df4d9d18e366ca77709d6496f81e77fa76910d6d31e90",
+    "source": "audio/batch1c/encoded/bgm_city.mp3",
+    "source_sha256": "b7d43a8c0cc7b07fce8f15a1b01f88a3334a0cdad5436259f2dd9e4d9fd4eeb5",
+    "constant_gain_db": 1.96,
+    "runtime_source_unchanged": true
+  },
+  "credits": "\"Carefree\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/ Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037 Changes: audition excerpt, constant-gain level adjustment, brief boundary fades, MP3 re-encoding; no tempo or pitch changes.\n\n\"Happy Boy End Theme\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/ Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648 Changes: audition excerpt, constant-gain level adjustment, brief boundary fades, MP3 re-encoding; no tempo or pitch changes.\n\nWow · 惊喜短音（试听候选） — FiftySounds\nhttps://www.fiftysounds.com/royalty-free-music/sfx-wow3.html\nFiftySounds License — free commercial game use; SFX attribution optional\n\nHey · 明快招呼（试听候选） — cicifyre\nhttps://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs\nCC0-1.0\n\n俏皮短笑（试听候选） — cicifyre\nhttps://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs\nCC0-1.0\n\n组合示范改动：截取前 20 秒，与本页人声混合；人声期间音乐降低音量，末尾淡出。",
+  "source_manifests": [
+    {
+      "file": "audio/cheerful-r2/music/MANIFEST.json",
+      "sha256": "99b9c9f2a74f05830f98342ea8e1288b39423381026c237324787ce7211c0648"
+    },
+    {
+      "file": "audio/cheerful-r2/voice/MANIFEST.json",
+      "sha256": "db3f26f33825b0f9fafd211c4833d14a8cb56831b514b0a62bfa2a5f360c5674"
+    }
+  ],
+  "builder_sha256": "2c45c482dce1578afbfe04808ecbfff62f876aceeef6a46a9acf6d69f6cb8b2c",
+  "boundaries": [
+    "No runtime audio or configuration changes",
+    "No subjective listening claim; user audition pending",
+    "Not loop-ready or engine-mix tested"
+  ]
+}

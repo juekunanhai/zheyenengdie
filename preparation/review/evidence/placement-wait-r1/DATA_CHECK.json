@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "allExistingObjectDataExportsUnchanged": true,
+  "newObservationLimitSeconds": 1.5,
+  "source_sha256": "ea8f5f083a6ebf34ebddc672c273aa679330a2278cf13388ad782fdd5606a0ba",
+  "note": "Every previous object specification, sequence, geometry, material and existing constant is unchanged. Only the new observation limit is added."
+}

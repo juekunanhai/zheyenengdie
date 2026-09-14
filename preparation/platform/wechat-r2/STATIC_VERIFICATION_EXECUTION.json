@@ -1,0 +1,11 @@
+{
+  "actual_exit_code": 0,
+  "command": "python3 preparation/platform/wechat-r2/record_build.py",
+  "status": "local_creator_build_and_static_checks_passed",
+  "report": "BUILD_CREATOR_STATIC.json",
+  "report_sha256": "bcfbe65ced70fbbfdcf916536658c47853f8b919887f1736dd70752d0d0060b0",
+  "recorder_sha256": "f1b9e4194e8047ea7cc6aaeb047f969e245aac8b6a5a1d9ddd0e846eda2463be",
+  "real_creator_exit_code": 36,
+  "new_creator_build_claimed_by_this_record": false,
+  "boundary": "Recorded the actual process captured in PROCESS_RESULT. No new build, IDE execution, package-limit result or upload is inferred."
+}

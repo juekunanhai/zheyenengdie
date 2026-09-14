@@ -1,0 +1,84 @@
+{
+  "tool": "built-in image_gen",
+  "specs": [
+    {
+      "slug": "wooden_crate",
+      "source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-2b181340-8921-485a-8844-e330418cc79b.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent game object Sprite for a high-quality playful 2D stacking mobile game. Genuine transparent RGBA background, no checkerboard, no ground plane, no detached shadow. A complete sharp isolated object with comfortable transparent padding. Clean premium 2.5D game illustration: rounded bevels, broad tactile highlights, soft upper-left light, warm/friendly, entertaining, not photorealistic. Image 1 is the same object identity/color/material reference. Image 2 is the approved game object quality/style reference, not another object to include. IMPORTANT gameplay camera: orthographic front/elevation, almost no visible top perspective; visible broad horizontal upper bearing edge and level bottom bearing edge, so other game objects can visibly rest on it. No invisible support and no pedestal. Do not include text, UI, watermarks, surrounding objects.\nSubject: exactly ONE golden honey-orange wooden shipping crate, matching the reference frame, diagonal bracing, woodgrain and small silver round rivets. Redraw from straight FRONT view, horizontal top and bottom, overall visible ratio about 1.2:1. One large front face with thick outer wooden bars, small soft clipped corners. The central front has diagonal plank bracing and clear warm wood texture. Broad flat top edge and bottom edge span at least 75 percent of width; only slight corner bevels. The silhouette must be a shallow rounded rectangle, not a diamond or isometric cube balanced on one corner. Keep subtle texture and warm polished game wood, avoid gritty photorealism. No extra feet, no face needed. Full intact crate, all four outer corners visible.",
+      "refs": [
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/art/edge-candidates/objects/object_wooden_crate.png",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_cardboard_box.png"
+      ],
+      "status": "preserved_original_local_alpha_derivative_self_reviewed",
+      "workspace_original": "preparation/design/batch1c/generated/wooden_crate-r1.png",
+      "original_sha256": "18f5759af74f03206306a57299eee6654bd8d48546761d8a683520be8abbd5ec",
+      "reference_sha256": {
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/art/edge-candidates/objects/object_wooden_crate.png": "989cadce507e99ba735a03516caf63f6566ef5818de5c96d8767316d8a80b42d",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_cardboard_box.png": "119a169dfd8da4ee5a17c4bc12bd55fb8f0208e534b50cee54fdb794cdc9683b"
+      }
+    },
+    {
+      "slug": "ice_block",
+      "source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-d3c54911-d32a-4f34-8b8e-ad593d26b3d9.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent game object Sprite for a high-quality playful 2D stacking mobile game. Genuine transparent RGBA background, no checkerboard, no ground plane, no detached shadow. A complete sharp isolated object with comfortable transparent padding. Clean premium 2.5D game illustration: rounded bevels, broad tactile highlights, soft upper-left light, warm/friendly, entertaining, not photorealistic. Image 1 is the same object identity/color/material reference. Image 2 is the approved game object quality/style reference, not another object to include. IMPORTANT gameplay camera: orthographic front/elevation, almost no visible top perspective; visible broad horizontal upper bearing edge and level bottom bearing edge, so other game objects can visibly rest on it. No invisible support and no pedestal. Do not include text, UI, watermarks, surrounding objects.\nSubject: exactly ONE translucent icy-blue ice block, same glowing cyan-white rim, blue internal frozen facets and restrained small bubbles as reference. Straight FRONT view, a wide cuboid whose visible width/height ratio is about 1.2:1; round/soft clipped corners, thick clear icy edges, broad LEVEL top and bottom outlines each at least 72 percent of width. Only a very thin depth bevel; NOT an isometric diamond or corner touching the ground. Cool frosted translucent volume but central alpha must stay enough opaque to read clearly on any background; transparency only outside sprite. Attractive playful polished candy-like ICE material, not a glass panel, not realistic broken ice. No icicles, shards, sparkles outside, drips, eyes, letters, or pedestal. Full intact outline.",
+      "refs": [
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_ice_block.png",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_toilet.png"
+      ],
+      "status": "preserved_original_local_alpha_derivative_self_reviewed",
+      "workspace_original": "preparation/design/batch1c/generated/ice_block-r1.png",
+      "original_sha256": "0f6edb78aa894ec1e7a20178539c60f6e273a225cf1df41a33eedc4fc6bf2c13",
+      "reference_sha256": {
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_ice_block.png": "726c02ca4eae0d185e51261c905aadc6a912dd1555256357bbafb6f3b0bee2cd",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_toilet.png": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c"
+      }
+    },
+    {
+      "slug": "sofa",
+      "source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-884b358e-853c-421c-85ed-5a058b87fbdd.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent game object Sprite for a high-quality playful 2D stacking mobile game. Genuine transparent RGBA background, no checkerboard, no ground plane, no detached shadow. A complete sharp isolated object with comfortable transparent padding. Clean premium 2.5D game illustration: rounded bevels, broad tactile highlights, soft upper-left light, warm/friendly, entertaining, not photorealistic. Image 1 is the same object identity/color/material reference. Image 2 is the approved game object quality/style reference, not another object to include. IMPORTANT gameplay camera: orthographic front/elevation, almost no visible top perspective; visible broad horizontal upper bearing edge and level bottom bearing edge, so other game objects can visibly rest on it. No invisible support and no pedestal. Do not include text, UI, watermarks, surrounding objects.\nSubject: exactly ONE vivid coral-red upholstered two-seat sofa retaining the original red material, two padded back cushions with small button dimples, two padded seats, and chunky upholstered arms. Straight FRONT view, whole visible width/height about 2:1. Two back cushions have a broad nearly level continuous top contour with a shallow central seam; no deep upper notch. Sofa has a thick low rectangular upholstered base whose visible bottom outline is a broad level plane, with small softened corners. Do not add long legs or external wooden plate. Both arms fully present; no cropping on left/right/bottom. Back cushions/supporting upholstered frame visible from front, rounded inflated padded sheen and subtle leather/fabric tactility. Funny friendly object proportions, no photorealistic furniture catalog shot. No separate props, people, text or hearts.",
+      "refs": [
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/art/candidates/objects/object_sofa.png",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_toilet.png"
+      ],
+      "status": "preserved_original_local_alpha_derivative_self_reviewed",
+      "workspace_original": "preparation/design/batch1c/generated/sofa-r1.png",
+      "original_sha256": "06c51bcae25e466d00119a061c8dfc777f60923328626e882d2cbe5f7180e96b",
+      "reference_sha256": {
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/art/candidates/objects/object_sofa.png": "3f26cbe4e65ea958f9785783da43fc456f6028e1e75200f8ea9e70196c25266f",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_toilet.png": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c"
+      }
+    },
+    {
+      "slug": "whale",
+      "source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-d7bc2673-aa23-44cb-978c-adac51b1dd2e.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent game object Sprite for a high-quality playful 2D stacking mobile game. Genuine transparent RGBA background, no checkerboard, no ground plane, no detached shadow. A complete sharp isolated object with comfortable transparent padding. Clean premium 2.5D game illustration: rounded bevels, broad tactile highlights, soft upper-left light, warm/friendly, entertaining, not photorealistic. Image 1 is the same object identity/color/material reference. Image 2 is the approved game object quality/style reference, not another object to include. IMPORTANT gameplay camera: orthographic front/elevation, almost no visible top perspective; visible broad horizontal upper bearing edge and level bottom bearing edge, so other game objects can visibly rest on it. No invisible support and no pedestal. Do not include text, UI, watermarks, surrounding objects.\nSubject: exactly ONE cheerful blue-and-white toy whale. Keep its bright blue body, pearly white underside with gentle grooves, big shiny expressive black eyes, tiny rosy cheek and small blue fin. Full SIDE view, head toward left and connected tail toward right, playful squat WIDE body: full visible width/height about 2.25:1, excluding transparent margins. Body is a plump horizontal loaf with a wide gently flattened top/back and a visibly flattened underside; top central horizontal bearing section at least 40 percent of total width, bottom bearing section at least 40 percent, soft rounded transitions to head and rump. The silhouette still reads unmistakably as a sweet rounded whale, not a box or a balloon. The compact tail has a small actual concave notch and remains connected by a thick tail root. Near flipper is surface detail on body and does not protrude below flat belly. No spout, water spray, bubbles, detached fins, support plate, feet or ground. Glossy smooth rubber-toy character volume, rich blue and soft white material. No photorealism or realistic animal anatomy. Entire tail/head/edges included.",
+      "refs": [
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/art/candidates/objects/object_whale.png",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_toilet.png"
+      ],
+      "status": "preserved_original_local_alpha_derivative_self_reviewed",
+      "workspace_original": "preparation/design/batch1c/generated/whale-r1.png",
+      "original_sha256": "a5ed01880eae74ed022e35c1df82e79801f882d83e0ac2b15718001f71d3a5e5",
+      "reference_sha256": {
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/art/candidates/objects/object_whale.png": "819126b249ae9db8adf7e7fe082c6dc53c02f3c7c72135f3d182ba4b1339ef98",
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/object_toilet.png": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c"
+      }
+    },
+    {
+      "slug": "burger",
+      "prompt": "Use case: precise-object-edit. Modify ONLY the silhouette along the top of the upper sesame bun in the supplied hamburger image. Increase the genuinely straight, perfectly horizontal central top edge to 72 percent of the upper bun width (about 67 percent of the entire hamburger width), with small smoothly rounded shoulders at the left and right. The current flat edge is too short. Keep the same vertical position of this flat top, same whole hamburger width, all original colors, sesame texture, golden bread material, green lettuce, cheese, tomato, patty, lower bun, lower outline and composition. Do not alter or redraw the food below the upper bun. No seeds outside the silhouette; no horizontal seam or line drawn across the bun face, only reshape its actual outside upper edge. Show a finished slightly compressed fluffy bun with a broad level physical bearing top, not a bread dome or a separate flat plate. Keep all the clear smooth shaded 2.5D game material. Remove the surrounding checkerboard and make a genuinely transparent RGBA background with clean alpha. No white/black background, no checkerboard, no text, no UI.",
+      "source": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/batch1c/burger-r2/generated-refined.png",
+      "workspace_original": "preparation/design/batch1c/burger-r2/generated-refined.png",
+      "original_sha256": "574b6f839d0e5d017336c3d5f522adaddd4745f9479226b6597dcf3c2181a4cb",
+      "refs": [
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/batch1c/burger-r2/generated-original.png"
+      ],
+      "reference_sha256": {
+        "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/batch1c/burger-r2/generated-original.png": "c977cfe8869a1e3075f7d7f23edf04e8a27d136ba56253af916131d50d66dbe9"
+      },
+      "status": "upper_bun_redraw_composited_with_original_lower_pixels",
+      "revision_manifest": "preparation/design/batch1c/burger-r2/GEOMETRY.json"
+    }
+  ]
+}

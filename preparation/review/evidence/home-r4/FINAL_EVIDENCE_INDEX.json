@@ -1,0 +1,30 @@
+{
+  "status": "current_R1_build_and_runtime_evidence_consistent",
+  "build_report_sha256": "d50ca01a23a3478134db18ab121d90e773d3a7e263eb594d9ca9a75429856d7a",
+  "runtime_input_hashes_checked": 314,
+  "new_build_required": false,
+  "engine_evidence": [
+    {
+      "file": "ENGINE_R1.json",
+      "sha256": "63c2d05955d71d2a0a32886ce0ba7a85955d1fd5b8ec979f1a88f24977492959"
+    },
+    {
+      "file": "ENGINE_PENDING_R1.json",
+      "sha256": "795a21ef7b7bded6a5beb904162923e94206bc2564663d98fce48483efb5bd8d"
+    },
+    {
+      "file": "MANUAL_UI_R1.json",
+      "sha256": "c28192367057393ee5f1752c9b760132cff93f8c12ac5e7cdb2b5901f1a1b835"
+    }
+  ],
+  "final_qa_script_snapshot": {
+    "file": "QA_FINAL.js.txt",
+    "sha256": "ad28b8a9bff378e343bde75f93fd076d9a3a869d6883fa66424513b0b970ebdc",
+    "boundary": "Final script snapshot only. The first six cases loaded an earlier script version; no identical loaded-script hash is claimed."
+  },
+  "not_proven": [
+    "WeChat and physical phone behavior",
+    "Actual operating-system background lifecycle",
+    "Saved screenshot artifact"
+  ]
+}

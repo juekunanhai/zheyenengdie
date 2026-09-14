@@ -1,0 +1,72 @@
+/** Official sizes: OBJECT_GAMEPLAY_SCALE.json, sha256 8c4306d7…851846.
+ * Material values are first-calibration candidates, not a tuned final balance. */
+export const UNITS_PER_METRE = 100;
+export const PLATFORM_WIDTH = 160;
+export const PLANNING_SECONDS = 4;
+export const ENTER_SECONDS = .24;
+export const STABLE_SECONDS = .65;
+
+export type ObjectKind = 'cardboard_box' | 'wood_plank' | 'basketball' | 'fridge';
+export interface ObjectSpec {
+    kind: ObjectKind;
+    width: number;
+    height: number;
+    circle: boolean;
+    spriteWidth: number;
+    spriteHeight: number;
+    spriteOffset?: readonly [number, number];
+    outline?: readonly (readonly [number, number])[];
+    friction: number;
+    restitution: number;
+    density: number;
+    contactAngularDamping?: number;
+    adhesion?: { maxForce: number; maxTorque: number; maxImpactSpeed: number };
+    description?: string;
+}
+export const OBJECTS: Record<ObjectKind, ObjectSpec> = {
+    cardboard_box: { kind: 'cardboard_box', width: 100, height: 100, circle: false,
+        spriteWidth: 123.4306, spriteHeight: 122.6050,
+        outline: [[-50, -34], [-18, -50], [17, -50], [50, -29], [50, 39], [25, 50], [-20, 50], [-50, 32]],
+        friction: .65, restitution: .02, density: .5 },
+    wood_plank: { kind: 'wood_plank', width: 195, height: 28, circle: false,
+        spriteWidth: 206.7773, spriteHeight: 54.6483, spriteOffset: [0, 7.85],
+        outline: [[-83.5, -14], [83.5, -14], [97.5, 5], [87, 14], [-87, 14], [-97.5, 5]],
+        friction: .65, restitution: .02, density: .7 },
+    basketball: { kind: 'basketball', width: 68, height: 68, circle: true,
+        spriteWidth: 70.2295, spriteHeight: 70.2295, friction: .85, restitution: .03, density: .4,
+        contactAngularDamping: 6, adhesion: { maxForce: 1500, maxTorque: 150, maxImpactSpeed: 2 },
+        description: '别担心，有人给它贴了双面胶。' },
+    fridge: { kind: 'fridge', width: 82, height: 145, circle: false,
+        spriteWidth: 121.9219, spriteHeight: 170.2030, spriteOffset: [10, 0],
+        outline: [[-41, -49], [-12, -72.5], [7, -72.5], [41, -55], [41, 67], [26, 72.5], [-12, 72.5], [-41, 56]],
+        friction: .6, restitution: .01, density: 1.2 },
+};
+// An explicit calibration sequence; the risk director is a later batch.
+export const CALIBRATION_SEQUENCE: readonly ObjectKind[] = ['cardboard_box', 'wood_plank', 'fridge', 'basketball'];
+
+export function halfExtents(spec: ObjectSpec, angle: number): { x: number; y: number } {
+    if (spec.circle) return { x: spec.width / 2, y: spec.height / 2 };
+    const a = angle * Math.PI / 180;
+    const c = Math.abs(Math.cos(a)), s = Math.abs(Math.sin(a));
+    return { x: (spec.width * c + spec.height * s) / 2, y: (spec.width * s + spec.height * c) / 2 };
+}
+
+/** Actual rotated support outline; the rectangle remains only the nominal size envelope. */
+export function localBounds(spec: ObjectSpec, angle: number): { left: number; right: number; bottom: number; top: number } {
+    if (!spec.outline) {
+        const half = halfExtents(spec, angle);
+        return { left: -half.x, right: half.x, bottom: -half.y, top: half.y };
+    }
+    const a = angle * Math.PI / 180, c = Math.cos(a), s = Math.sin(a);
+    const xs = spec.outline.map(([x, y]) => x * c - y * s);
+    const ys = spec.outline.map(([x, y]) => x * s + y * c);
+    return { left: Math.min(...xs), right: Math.max(...xs), bottom: Math.min(...ys), top: Math.max(...ys) };
+}
+
+/** Planar angle avoids the alternative XYZ Euler branch around half turns. */
+export function planarAngle(q: { z: number; w: number }): number {
+    return Math.atan2(2 * q.w * q.z, 1 - 2 * q.z * q.z) * 180 / Math.PI;
+}
+
+export type RunPhase = 'entering' | 'planning' | 'falling' | 'observing' | 'ended';
+export const runResult = { height: 0, placed: 0, reason: 'calibration_end' };

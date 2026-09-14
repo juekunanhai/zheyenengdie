@@ -1,0 +1,26 @@
+[
+  {
+    "id": "next_cardboard_box",
+    "candidate": "art/edge-candidates/next/next_cardboard_box.png",
+    "import_path": "assets/batch0/art/next_cardboard_box.png",
+    "sha256": "e3a1f56bbfd03b3b2b681dc6d6588a292c3149950ce37a420d39868390c17fdd",
+    "authority": "USER_VISUAL_APPROVAL.json: corresponding NEXT silhouettes accepted",
+    "scope": "Batch 1A four-object preview"
+  },
+  {
+    "id": "next_wood_plank",
+    "candidate": "art/edge-candidates/next/next_wood_plank.png",
+    "import_path": "assets/batch0/art/next_wood_plank.png",
+    "sha256": "a7aac4ed0605739804c1cad6c0dbdd405499a017ccade9dbb7197fce4132c889",
+    "authority": "USER_VISUAL_APPROVAL.json: corresponding NEXT silhouettes accepted",
+    "scope": "Batch 1A four-object preview"
+  },
+  {
+    "id": "next_fridge",
+    "candidate": "art/edge-candidates/next/next_fridge.png",
+    "import_path": "assets/batch0/art/next_fridge.png",
+    "sha256": "60435c7619eac987468d42f1f283183acb8632ca4c1d468e5f5e54d024cd56d3",
+    "authority": "USER_VISUAL_APPROVAL.json: corresponding NEXT silhouettes accepted",
+    "scope": "Batch 1A four-object preview"
+  }
+]

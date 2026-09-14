@@ -1,0 +1,1283 @@
+{
+  "status": "candidates_not_physics_acceptance",
+  "script_sha256": "eadee25281be0d833b8af9c290a73428537b9440244c1424808e7b307a13bc07",
+  "original_scale_file_unchanged": true,
+  "source_precedence": "approved_reuse_or_authorized_necessary_redraw",
+  "no_nonuniform_stretch": true,
+  "objects": [
+    {
+      "slug": "wooden_crate",
+      "target_width": 120,
+      "source": "preparation/design/batch1c/generated/wooden_crate-r1.png",
+      "source_sha256": "18f5759af74f03206306a57299eee6654bd8d48546761d8a683520be8abbd5ec",
+      "generated": true,
+      "local_processing": {
+        "method": "boundary_connected_neutral_background_only",
+        "neutral_channel_range_max": 35,
+        "foreground_component": "largest",
+        "removed_pixels": 490220,
+        "input_mode": "RGB"
+      },
+      "sprite": "preparation/design/batch1c/assets/object_wooden_crate.png",
+      "sprite_sha256": "ac02371e70ac6fe460e59ba7412e26262a4a7f082a237d4fd3ce7e2e75bf1e40",
+      "next": "preparation/design/batch1c/assets/next_wooden_crate.png",
+      "next_sha256": "7d2b79989e56453ee29448ecf57dc62e325e72a062c4c283c5cd1f9c78b2f651",
+      "next_alpha_matches": true,
+      "geometry": {
+        "width": 120.0,
+        "height": 110.143416,
+        "circle": false,
+        "spriteWidth": 122.659713,
+        "spriteHeight": 112.803129,
+        "spriteOffset": [
+          0.078227,
+          -0.078227
+        ],
+        "outline": [
+          [
+            -59.530639,
+            49.28292
+          ],
+          [
+            -60.0,
+            35.984355
+          ],
+          [
+            -58.435463,
+            33.637549
+          ],
+          [
+            -58.435463,
+            -34.576271
+          ],
+          [
+            -60.0,
+            -37.392438
+          ],
+          [
+            -60.0,
+            -50.847458
+          ],
+          [
+            -57.340287,
+            -54.445893
+          ],
+          [
+            -55.77575,
+            -55.071708
+          ],
+          [
+            -42.946545,
+            -55.071708
+          ],
+          [
+            -41.225554,
+            -54.132986
+          ],
+          [
+            41.382008,
+            -54.132986
+          ],
+          [
+            42.946545,
+            -55.071708
+          ],
+          [
+            55.932203,
+            -55.071708
+          ],
+          [
+            59.687093,
+            -52.099087
+          ],
+          [
+            60.0,
+            -37.079531
+          ],
+          [
+            58.435463,
+            -34.576271
+          ],
+          [
+            58.435463,
+            33.637549
+          ],
+          [
+            60.0,
+            35.514993
+          ],
+          [
+            60.0,
+            48.344198
+          ],
+          [
+            54.211213,
+            54.602347
+          ],
+          [
+            39.973924,
+            54.915254
+          ],
+          [
+            38.878748,
+            53.820078
+          ],
+          [
+            -38.722295,
+            53.820078
+          ],
+          [
+            -39.817471,
+            54.915254
+          ],
+          [
+            -52.333768,
+            55.071708
+          ],
+          [
+            -54.367666,
+            54.445893
+          ]
+        ]
+      },
+      "geometry_audit": {
+        "alpha_threshold": 128,
+        "epsilon_world": 0.5,
+        "vertex_count": 26,
+        "max_contour_to_polygon_distance_world": 0.469361,
+        "area_world_squared": 12753.441931,
+        "scale_world_per_pixel": 0.156453716,
+        "native_fixture_count": "not_yet_checked",
+        "method": "actual_alpha_contour_simplified_no_hull"
+      },
+      "status": "self_reviewed_candidate_pending_engine_contact_and_user_visual_review"
+    },
+    {
+      "slug": "ice_block",
+      "target_width": 120,
+      "source": "preparation/design/batch1c/generated/ice_block-r1.png",
+      "source_sha256": "0f6edb78aa894ec1e7a20178539c60f6e273a225cf1df41a33eedc4fc6bf2c13",
+      "generated": true,
+      "local_processing": {
+        "method": "boundary_connected_neutral_background_only",
+        "neutral_channel_range_max": 35,
+        "foreground_component": "largest",
+        "removed_pixels": 487259,
+        "input_mode": "RGB"
+      },
+      "sprite": "preparation/design/batch1c/assets/object_ice_block.png",
+      "sprite_sha256": "97edca9af4c7b74d86adc25e9544f2777a2659e9fb2a1d5cad5da3108fdf5e0a",
+      "next": "preparation/design/batch1c/assets/next_ice_block.png",
+      "next_sha256": "e10a71b8b2ea919afb9cfc5ea682951b8df9392c0d187a450fe3a4a6a1c43c5f",
+      "next_alpha_matches": true,
+      "geometry": {
+        "width": 119.687093,
+        "height": 77.444589,
+        "circle": false,
+        "spriteWidth": 122.659713,
+        "spriteHeight": 80.41721,
+        "spriteOffset": [
+          0.078227,
+          -0.078227
+        ],
+        "outline": [
+          [
+            -58.122555,
+            30.11734
+          ],
+          [
+            -59.843546,
+            24.954368
+          ],
+          [
+            -59.843546,
+            -26.831812
+          ],
+          [
+            -56.714472,
+            -34.028683
+          ],
+          [
+            -52.490222,
+            -37.314211
+          ],
+          [
+            -48.735332,
+            -38.565841
+          ],
+          [
+            46.857888,
+            -38.722295
+          ],
+          [
+            53.428944,
+            -36.84485
+          ],
+          [
+            57.653194,
+            -32.777053
+          ],
+          [
+            59.843546,
+            -26.675359
+          ],
+          [
+            59.843546,
+            25.110821
+          ],
+          [
+            57.183833,
+            31.681877
+          ],
+          [
+            51.238592,
+            37.157757
+          ],
+          [
+            46.701434,
+            38.565841
+          ],
+          [
+            -45.606258,
+            38.722295
+          ],
+          [
+            -49.361147,
+            37.940026
+          ],
+          [
+            -53.585398,
+            35.59322
+          ]
+        ]
+      },
+      "geometry_audit": {
+        "alpha_threshold": 128,
+        "epsilon_world": 0.5,
+        "vertex_count": 17,
+        "max_contour_to_polygon_distance_world": 0.476508,
+        "area_world_squared": 9057.703272,
+        "scale_world_per_pixel": 0.156453716,
+        "native_fixture_count": "not_yet_checked",
+        "method": "actual_alpha_contour_simplified_no_hull"
+      },
+      "status": "self_reviewed_candidate_pending_engine_contact_and_user_visual_review"
+    },
+    {
+      "slug": "sofa",
+      "target_width": 180,
+      "source": "preparation/design/batch1c/generated/sofa-r1.png",
+      "source_sha256": "06c51bcae25e466d00119a061c8dfc777f60923328626e882d2cbe5f7180e96b",
+      "generated": true,
+      "local_processing": {
+        "method": "boundary_connected_neutral_background_only",
+        "neutral_channel_range_max": 35,
+        "foreground_component": "largest",
+        "removed_pixels": 406002,
+        "input_mode": "RGB"
+      },
+      "sprite": "preparation/design/batch1c/assets/object_sofa.png",
+      "sprite_sha256": "6afa01d86cb88c332287000fc1c6f63b803a6f4c6963148b42898737633430d6",
+      "next": "preparation/design/batch1c/assets/next_sofa.png",
+      "next_sha256": "fd8f73fd39f304f76aa969074c57b7a1c5e219b1424f67b97b0bd42b90a345fb",
+      "next_alpha_matches": true,
+      "geometry": {
+        "width": 180.0,
+        "height": 81.66884,
+        "circle": false,
+        "spriteWidth": 183.98957,
+        "spriteHeight": 85.658409,
+        "spriteOffset": [
+          0.11734,
+          -0.11734
+        ],
+        "outline": [
+          [
+            -89.530639,
+            7.040417
+          ],
+          [
+            -90.0,
+            -13.142112
+          ],
+          [
+            -89.061278,
+            -34.498044
+          ],
+          [
+            -87.887875,
+            -38.252934
+          ],
+          [
+            -84.367666,
+            -40.599739
+          ],
+          [
+            -71.460235,
+            -40.83442
+          ],
+          [
+            -68.174707,
+            -39.426336
+          ],
+          [
+            -65.123859,
+            -40.83442
+          ],
+          [
+            65.123859,
+            -40.83442
+          ],
+          [
+            68.409387,
+            -39.426336
+          ],
+          [
+            71.225554,
+            -40.83442
+          ],
+          [
+            82.724902,
+            -40.83442
+          ],
+          [
+            86.479791,
+            -39.661017
+          ],
+          [
+            88.826597,
+            -35.671447
+          ],
+          [
+            90.0,
+            -9.621904
+          ],
+          [
+            90.0,
+            4.693611
+          ],
+          [
+            88.826597,
+            8.683181
+          ],
+          [
+            83.898305,
+            12.907432
+          ],
+          [
+            73.57236,
+            18.539765
+          ],
+          [
+            60.899609,
+            19.009126
+          ],
+          [
+            60.430248,
+            28.161669
+          ],
+          [
+            59.256845,
+            33.559322
+          ],
+          [
+            56.440678,
+            37.548892
+          ],
+          [
+            50.808344,
+            40.130378
+          ],
+          [
+            40.013038,
+            40.83442
+          ],
+          [
+            10.912647,
+            40.599739
+          ],
+          [
+            3.402868,
+            39.191656
+          ],
+          [
+            0.352021,
+            36.610169
+          ],
+          [
+            -2.933507,
+            39.426336
+          ],
+          [
+            -12.32073,
+            40.83442
+          ],
+          [
+            -38.604954,
+            40.83442
+          ],
+          [
+            -51.277705,
+            39.661017
+          ],
+          [
+            -55.736636,
+            37.548892
+          ],
+          [
+            -59.022164,
+            33.089961
+          ],
+          [
+            -60.430248,
+            26.518905
+          ],
+          [
+            -60.899609,
+            19.009126
+          ],
+          [
+            -71.694915,
+            19.009126
+          ],
+          [
+            -74.511082,
+            18.070404
+          ],
+          [
+            -86.01043,
+            11.499348
+          ],
+          [
+            -88.357236,
+            9.387223
+          ]
+        ]
+      },
+      "geometry_audit": {
+        "alpha_threshold": 128,
+        "epsilon_world": 0.5,
+        "vertex_count": 40,
+        "max_contour_to_polygon_distance_world": 0.435569,
+        "area_world_squared": 13033.381892,
+        "scale_world_per_pixel": 0.234680574,
+        "native_fixture_count": "not_yet_checked",
+        "method": "actual_alpha_contour_simplified_no_hull"
+      },
+      "status": "self_reviewed_candidate_pending_engine_contact_and_user_visual_review"
+    },
+    {
+      "slug": "whale",
+      "target_width": 225,
+      "source": "preparation/design/batch1c/generated/whale-r1.png",
+      "source_sha256": "a5ed01880eae74ed022e35c1df82e79801f882d83e0ac2b15718001f71d3a5e5",
+      "generated": true,
+      "local_processing": {
+        "method": "boundary_connected_neutral_background_only",
+        "neutral_channel_range_max": 35,
+        "foreground_component": "largest",
+        "removed_pixels": 508074,
+        "input_mode": "RGB"
+      },
+      "sprite": "preparation/design/batch1c/assets/object_whale.png",
+      "sprite_sha256": "dafb9e8507608ed83c68ed2e30a3e3886dc9a0f1b449150a27c1212602e5e947",
+      "next": "preparation/design/batch1c/assets/next_whale.png",
+      "next_sha256": "ac4ab0945bfc46780718bab740f4426d9827a69eb32e7ed6a6dfef3e9c925def",
+      "next_alpha_matches": true,
+      "geometry": {
+        "width": 225.0,
+        "height": 96.512386,
+        "circle": false,
+        "spriteWidth": 229.986962,
+        "spriteHeight": 101.499348,
+        "spriteOffset": [
+          0.146675,
+          -0.146675
+        ],
+        "outline": [
+          [
+            -112.5,
+            -8.360495
+          ],
+          [
+            -108.39309,
+            -21.854628
+          ],
+          [
+            -102.819426,
+            -30.068449
+          ],
+          [
+            -97.245763,
+            -35.348761
+          ],
+          [
+            -92.845502,
+            -38.282269
+          ],
+          [
+            -84.925033,
+            -42.095828
+          ],
+          [
+            -76.417862,
+            -44.735984
+          ],
+          [
+            -58.523468,
+            -47.376141
+          ],
+          [
+            -36.815515,
+            -48.256193
+          ],
+          [
+            0.146675,
+            -48.256193
+          ],
+          [
+            34.468709,
+            -46.496089
+          ],
+          [
+            43.269231,
+            -45.029335
+          ],
+          [
+            52.363103,
+            -42.389179
+          ],
+          [
+            61.750326,
+            -37.988918
+          ],
+          [
+            67.32399,
+            -34.175359
+          ],
+          [
+            74.071056,
+            -28.014993
+          ],
+          [
+            77.884615,
+            -23.321382
+          ],
+          [
+            81.404824,
+            -17.747718
+          ],
+          [
+            82.871578,
+            -13.640808
+          ],
+          [
+            84.631682,
+            -11.880704
+          ],
+          [
+            89.911995,
+            -11.294003
+          ],
+          [
+            97.539113,
+            -8.653846
+          ],
+          [
+            106.046284,
+            -2.20013
+          ],
+          [
+            109.273142,
+            2.20013
+          ],
+          [
+            111.326597,
+            6.600391
+          ],
+          [
+            112.5,
+            11.000652
+          ],
+          [
+            112.5,
+            15.107562
+          ],
+          [
+            109.859844,
+            19.801173
+          ],
+          [
+            102.819426,
+            22.147979
+          ],
+          [
+            96.07236,
+            21.267927
+          ],
+          [
+            89.031943,
+            17.454368
+          ],
+          [
+            86.978488,
+            23.028031
+          ],
+          [
+            82.284876,
+            28.308344
+          ],
+          [
+            75.83116,
+            31.535202
+          ],
+          [
+            69.964146,
+            31.535202
+          ],
+          [
+            67.61734,
+            30.361799
+          ],
+          [
+            65.270535,
+            27.721643
+          ],
+          [
+            63.21708,
+            21.267927
+          ],
+          [
+            63.51043,
+            15.987614
+          ],
+          [
+            64.683833,
+            12.174055
+          ],
+          [
+            67.910691,
+            6.30704
+          ],
+          [
+            71.137549,
+            2.786832
+          ],
+          [
+            68.204042,
+            2.493481
+          ],
+          [
+            65.270535,
+            3.666884
+          ],
+          [
+            62.337027,
+            6.600391
+          ],
+          [
+            52.949804,
+            23.614733
+          ],
+          [
+            45.322686,
+            32.415254
+          ],
+          [
+            38.575619,
+            37.402216
+          ],
+          [
+            28.014993,
+            42.389179
+          ],
+          [
+            18.33442,
+            45.029335
+          ],
+          [
+            1.613429,
+            47.376141
+          ],
+          [
+            -14.52086,
+            48.256193
+          ],
+          [
+            -36.522164,
+            48.256193
+          ],
+          [
+            -51.776402,
+            47.376141
+          ],
+          [
+            -63.51043,
+            45.616037
+          ],
+          [
+            -75.244459,
+            42.389179
+          ],
+          [
+            -86.098435,
+            37.108866
+          ],
+          [
+            -94.312256,
+            30.948501
+          ],
+          [
+            -101.646023,
+            23.321382
+          ],
+          [
+            -108.39309,
+            12.760756
+          ],
+          [
+            -111.913299,
+            1.613429
+          ]
+        ]
+      },
+      "geometry_audit": {
+        "alpha_threshold": 128,
+        "epsilon_world": 0.5,
+        "vertex_count": 61,
+        "max_contour_to_polygon_distance_world": 0.463828,
+        "area_world_squared": 16539.315179,
+        "scale_world_per_pixel": 0.293350717,
+        "native_fixture_count": "not_yet_checked",
+        "method": "actual_alpha_contour_simplified_no_hull"
+      },
+      "status": "self_reviewed_candidate_pending_engine_contact_and_user_visual_review"
+    },
+    {
+      "slug": "burger",
+      "target_width": 130,
+      "source": "preparation/design/batch1c/burger-r3/composite-original-coordinates.png",
+      "source_sha256": "98dfe004049af0d92dffb0dd6be0f63f92f86702b0c1fe886a260f148ffd598a",
+      "generated": true,
+      "local_processing": {
+        "old_bun_bounds": [
+          22,
+          176,
+          285,
+          253
+        ],
+        "generated_bun_bounds": [
+          89,
+          806,
+          1284,
+          1085
+        ],
+        "new_bun_scale_uniform": 0.2200836820083682,
+        "new_bun_offset_old_coordinates": [
+          22,
+          176
+        ],
+        "unchanged_above_original_row": 220,
+        "all_upper_pixels_equal": true,
+        "bread_only_transition_rows": [
+          220,
+          228
+        ],
+        "method": "preserve_all_upper_bread_and_ingredient_pixels; replace_orange_lower_bread_strip_with_premultiplied_alpha_transition"
+      },
+      "sprite": "preparation/design/batch1c/burger-r3/object_burger.png",
+      "sprite_sha256": "5c072d91000b01eb1e16af9a01bbd3cafa8922e1a94fcedd4abb109c97937d89",
+      "next": "preparation/design/batch1c/burger-r3/next_burger.png",
+      "next_sha256": "8332ef5048e449555016b1e0a481bd9be35a5e0e350919871f86d86695f764a2",
+      "next_alpha_matches": true,
+      "geometry": {
+        "width": 130.0,
+        "height": 103.636364,
+        "circle": false,
+        "spriteWidth": 138.181818,
+        "spriteHeight": 111.363636,
+        "spriteOffset": [
+          0.454545,
+          -0.227273
+        ],
+        "outline": [
+          [
+            -54.545455,
+            42.272727
+          ],
+          [
+            -58.636364,
+            35.0
+          ],
+          [
+            -59.545455,
+            31.363636
+          ],
+          [
+            -61.363636,
+            30.0
+          ],
+          [
+            -63.181818,
+            26.363636
+          ],
+          [
+            -62.727273,
+            22.727273
+          ],
+          [
+            -60.0,
+            19.090909
+          ],
+          [
+            -62.727273,
+            15.909091
+          ],
+          [
+            -64.545455,
+            12.272727
+          ],
+          [
+            -65.0,
+            8.636364
+          ],
+          [
+            -63.181818,
+            5.454545
+          ],
+          [
+            -58.181818,
+            4.090909
+          ],
+          [
+            -62.272727,
+            -2.727273
+          ],
+          [
+            -63.636364,
+            -9.090909
+          ],
+          [
+            -63.181818,
+            -10.454545
+          ],
+          [
+            -61.363636,
+            -11.818182
+          ],
+          [
+            -59.090909,
+            -10.909091
+          ],
+          [
+            -58.181818,
+            -11.363636
+          ],
+          [
+            -57.727273,
+            -15.454545
+          ],
+          [
+            -60.909091,
+            -20.454545
+          ],
+          [
+            -61.363636,
+            -23.181818
+          ],
+          [
+            -60.454545,
+            -25.909091
+          ],
+          [
+            -57.727273,
+            -28.181818
+          ],
+          [
+            -58.181818,
+            -32.727273
+          ],
+          [
+            -56.363636,
+            -40.0
+          ],
+          [
+            -51.363636,
+            -45.909091
+          ],
+          [
+            -40.0,
+            -51.818182
+          ],
+          [
+            40.909091,
+            -51.818182
+          ],
+          [
+            52.727273,
+            -45.454545
+          ],
+          [
+            55.454545,
+            -42.727273
+          ],
+          [
+            58.636364,
+            -36.818182
+          ],
+          [
+            59.545455,
+            -33.181818
+          ],
+          [
+            59.545455,
+            -27.727273
+          ],
+          [
+            62.272727,
+            -24.545455
+          ],
+          [
+            62.272727,
+            -20.454545
+          ],
+          [
+            60.0,
+            -15.454545
+          ],
+          [
+            60.909091,
+            -8.181818
+          ],
+          [
+            63.636364,
+            -7.727273
+          ],
+          [
+            65.0,
+            -5.909091
+          ],
+          [
+            65.0,
+            -1.818182
+          ],
+          [
+            64.090909,
+            0.909091
+          ],
+          [
+            59.090909,
+            8.636364
+          ],
+          [
+            60.0,
+            13.636364
+          ],
+          [
+            63.636364,
+            17.272727
+          ],
+          [
+            64.090909,
+            21.818182
+          ],
+          [
+            61.818182,
+            26.363636
+          ],
+          [
+            58.636364,
+            29.545455
+          ],
+          [
+            57.272727,
+            34.545455
+          ],
+          [
+            54.545455,
+            40.0
+          ],
+          [
+            47.727273,
+            47.727273
+          ],
+          [
+            43.181818,
+            50.454545
+          ],
+          [
+            40.454545,
+            50.454545
+          ],
+          [
+            39.545455,
+            51.363636
+          ],
+          [
+            36.818182,
+            51.818182
+          ],
+          [
+            -39.545455,
+            51.818182
+          ],
+          [
+            -40.454545,
+            50.909091
+          ],
+          [
+            -45.454545,
+            50.454545
+          ],
+          [
+            -51.363636,
+            45.909091
+          ]
+        ]
+      },
+      "geometry_audit": {
+        "alpha_threshold": 128,
+        "epsilon_world": 0.5,
+        "vertex_count": 58,
+        "max_contour_to_polygon_distance_world": 0.476202,
+        "area_world_squared": 12065.702479,
+        "scale_world_per_pixel": 0.454545455,
+        "native_fixture_count": "not_yet_checked",
+        "method": "actual_alpha_contour_simplified_no_hull"
+      },
+      "status": "self_reviewed_candidate_pending_engine_contact_and_user_visual_review",
+      "revision_recipe": {
+        "manifest": "preparation/design/batch1c/burger-r3/GEOMETRY.json",
+        "sha256": "718570fe7687333beed905c79486d2e26f7122cc0d8dce94b3af4b9c56571c0c",
+        "script": "preparation/design/batch1c/burger-r3/prepare.py"
+      }
+    },
+    {
+      "slug": "slipper",
+      "target_width": 165,
+      "source": "preparation/art/candidates/objects/object_slipper.png",
+      "source_sha256": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+      "generated": false,
+      "local_processing": {
+        "method": "existing_formal_alpha_preserved",
+        "rotation_deg": 28.64149468579882,
+        "rotation_reason": "align_actual_shoe_long_axis_before_geometry"
+      },
+      "sprite": "preparation/design/batch1c/assets/object_slipper.png",
+      "sprite_sha256": "7e9c4091c33b5e8213258e7d21aa6878ff55f3a01e76025965b69a46227040a4",
+      "next": "preparation/design/batch1c/assets/next_slipper.png",
+      "next_sha256": "4887d9590b581e9d367b30b5965fa776802ab30de9cf153def5dc2958080180a",
+      "next_alpha_matches": true,
+      "geometry": {
+        "width": 165.0,
+        "height": 92.082153,
+        "circle": false,
+        "spriteWidth": 174.348442,
+        "spriteHeight": 101.898017,
+        "spriteOffset": [
+          0.0,
+          -0.233711
+        ],
+        "outline": [
+          [
+            82.032578,
+            3.038244
+          ],
+          [
+            80.16289,
+            8.179887
+          ],
+          [
+            75.488669,
+            16.593484
+          ],
+          [
+            70.347025,
+            22.20255
+          ],
+          [
+            65.205382,
+            25.941926
+          ],
+          [
+            57.259207,
+            29.681303
+          ],
+          [
+            51.18272,
+            31.083569
+          ],
+          [
+            45.573654,
+            33.888102
+          ],
+          [
+            35.290368,
+            37.627479
+          ],
+          [
+            30.616147,
+            38.562323
+          ],
+          [
+            26.876771,
+            40.432011
+          ],
+          [
+            23.137394,
+            40.899433
+          ],
+          [
+            6.310198,
+            46.041076
+          ],
+          [
+            -1.168555,
+            46.041076
+          ],
+          [
+            -4.44051,
+            45.106232
+          ],
+          [
+            -9.114731,
+            42.3017
+          ],
+          [
+            -14.723796,
+            36.692635
+          ],
+          [
+            -17.995751,
+            32.018414
+          ],
+          [
+            -32.953258,
+            34.355524
+          ],
+          [
+            -45.573654,
+            34.355524
+          ],
+          [
+            -54.922096,
+            32.018414
+          ],
+          [
+            -63.803116,
+            27.811615
+          ],
+          [
+            -72.216714,
+            21.267705
+          ],
+          [
+            -75.488669,
+            17.528329
+          ],
+          [
+            -79.695467,
+            10.516997
+          ],
+          [
+            -82.032578,
+            3.505666
+          ],
+          [
+            -82.5,
+            -7.712465
+          ],
+          [
+            -80.630312,
+            -17.060907
+          ],
+          [
+            -76.890935,
+            -25.007082
+          ],
+          [
+            -73.61898,
+            -28.746459
+          ],
+          [
+            -66.607649,
+            -33.42068
+          ],
+          [
+            -61.466006,
+            -35.290368
+          ],
+          [
+            -44.171388,
+            -39.497167
+          ],
+          [
+            -20.332861,
+            -43.236544
+          ],
+          [
+            4.907932,
+            -46.041076
+          ],
+          [
+            24.072238,
+            -46.041076
+          ],
+          [
+            33.888102,
+            -45.106232
+          ],
+          [
+            48.378187,
+            -41.366856
+          ],
+          [
+            60.531161,
+            -35.75779
+          ],
+          [
+            71.28187,
+            -27.811615
+          ],
+          [
+            76.423513,
+            -21.735127
+          ],
+          [
+            81.097734,
+            -13.32153
+          ],
+          [
+            82.5,
+            -7.245042
+          ]
+        ]
+      },
+      "geometry_audit": {
+        "alpha_threshold": 128,
+        "epsilon_world": 0.5,
+        "vertex_count": 43,
+        "max_contour_to_polygon_distance_world": 0.496689,
+        "area_world_squared": 11671.821056,
+        "scale_world_per_pixel": 0.467422096,
+        "native_fixture_count": "not_yet_checked",
+        "method": "actual_alpha_contour_simplified_no_hull"
+      },
+      "status": "self_reviewed_candidate_pending_engine_contact_and_user_visual_review"
+    }
+  ],
+  "revisions": [
+    {
+      "id": "burger-r2",
+      "reason": "R3 real paper-on-burger slipped off the dome",
+      "apply_script": "preparation/tools/apply_batch1c_burger_r2.py",
+      "apply_script_sha256": "9898c2b1980548d04a9464ae3c2dafa7af30efe563f806debb18d6d9bdd9b649"
+    },
+    {
+      "id": "burger-r3",
+      "reason": "R4 left-offset and R5 whale load rolled the curved lower bun",
+      "apply_script": "preparation/tools/apply_batch1c_burger_r3.py",
+      "apply_script_sha256": "a8139ffb63e5e0a6305a1381d0e9ccc00566f626c4c9ba60c8f826ff5802822d"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "revision": "playful-r3-build-r3",
+  "observedAt": "2026-09-14T19:09:26.174420+08:00",
+  "method": "CUA actual browser screenshots and UI coordinate clicks; iframe size read from DOM",
+  "frame": {
+    "width": 375,
+    "height": 667
+  },
+  "scene_actions_sha256": "01e982e65834f32cd86b3eaf85195bcae26c2ba328c737db68105923a5f1389e",
+  "checks": {
+    "home_settings_click_opened_settings": true,
+    "music_credits_below_return_button_without_overlap": true,
+    "all_four_credit_lines_visible_without_bottom_crop": true,
+    "return_click_opened_home": true
+  },
+  "observation": "MusicCredits y=-540 displays in the yellow ground area under the Return button. Title, artist/source, CC BY 4.0 URI and modification line are visible. Music/sound/vibration controls unchanged.",
+  "limitations": [
+    "One 375x667 Web engine viewport; no phone or WeChat real-device validation",
+    "Screenshot visually inspected in tool output; no local screenshot artifact saved",
+    "Seven audio regressions are stored as ENGINE_R2, not a claimed R3 rerun"
+  ]
+}

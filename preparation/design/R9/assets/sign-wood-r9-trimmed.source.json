@@ -1,0 +1,20 @@
+{
+  "source": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/assets/sign-wood-r9-clean.png",
+  "source_sha256": "024e62521573f9449945175cbac793c39dd64ba62a32ad49b2e941b0c8437d0b",
+  "original_source_record": "sign-wood-r9.source.json",
+  "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R9/assets/sign-wood-r9-trimmed.png",
+  "sha256": "5c850606594b1ded306e0c0816b7b9786ac9e07cf68b2a348a75b1366030482d",
+  "crop_box": [
+    126,
+    206,
+    937,
+    1318
+  ],
+  "size": [
+    811,
+    1112
+  ],
+  "mode": "RGBA",
+  "method": "Lossless pixel crop to alpha>0 bounding box. No resampling, color edits, alpha threshold, or dropped visible pixels.",
+  "all_visible_pixels_retained": true
+}

@@ -1,0 +1,188 @@
+{
+  "revision": "cheerful-r2",
+  "status": "audition_candidates_only_not_imported",
+  "generated_at": "2026-09-14T10:29:27.959111+00:00",
+  "file_base": "project_root",
+  "tracks": [
+    {
+      "id": "music_a_carefree",
+      "title": "A · 轻快拨弦",
+      "description": "尤克里里、吉他、马林巴与轻打击的明亮拨弦方向；保留连续乐句和配器变化，供比较轻松、欢快的主配乐方向。",
+      "file": "preparation/audio/cheerful-r2/music/exports/music_a_carefree.mp3",
+      "file_base": "project_root",
+      "duration_s": 80.0,
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037",
+      "source_title": "Carefree",
+      "source_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
+      "author": "Kevin MacLeod",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution_required": true,
+      "attribution": "\"Carefree\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/ Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037 Changes: audition excerpt, constant-gain level adjustment, brief boundary fades, MP3 re-encoding; no tempo or pitch changes.",
+      "source_record": {
+        "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
+        "final_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
+        "content_type": "application/octet-stream",
+        "file": "preparation/audio/cheerful-r2/music/sources/Carefree.mp3",
+        "sha256": "8433b770a630d9b1594fd484442c677907ece899a4d149954cd2e74fd733e311",
+        "bytes": 6566713,
+        "downloaded_at": "2026-09-14T10:29:14.808691+00:00"
+      },
+      "source_format": "Author website full downloadable MP3 (not lossless original)",
+      "source_instruments": "Ukulele, Guitar, Marimba, Glock, Percussion",
+      "source_bpm": "96",
+      "instrumentation_caveat": "官网声明乐器编配；未核实是否每件乐器都是真人实录。",
+      "source_duration_s": 205.139625,
+      "excerpt_start_s": 0,
+      "excerpt_duration_s": 80,
+      "loop_ready": false,
+      "loop_note": "候选为带结尾淡出的试听段；尚未制作或验收无缝循环。",
+      "processing": {
+        "constant_gain_db": -2.16,
+        "filters": "volume=-2.16000dB,afade=t=in:d=0.03,afade=t=out:st=78.80000:d=1.2",
+        "speed": 1.0,
+        "pitch_changed": false,
+        "compressed_or_limited": false,
+        "source_excerpt": "preparation/audio/cheerful-r2/music/exports/music_a_carefree_excerpt.wav",
+        "source_excerpt_sha256": "1adb2ee12f2f7cf5824eae952dde21c26384f146cc81b81a06d3e507af234f37",
+        "before": {
+          "integrated_lufs": -19.84,
+          "true_peak_dbfs": -5.0,
+          "loudness_range_lu": 2.2
+        },
+        "after": {
+          "integrated_lufs": -22.33,
+          "true_peak_dbfs": -7.6,
+          "loudness_range_lu": 2.1
+        }
+      },
+      "sha256": "5ee6841787f20474e44dd65278675054c293cefffccbc77ce5bf71cf91789b87",
+      "bytes": 1921610,
+      "technical_checks": {
+        "decode": "pass",
+        "channels": 2,
+        "sample_rate_hz": 44100,
+        "encoded_bitrate_bps": 192000,
+        "loudness_target_lufs": -22,
+        "peak_below_minus_2_dbfs": true
+      },
+      "listening_status": "not_claimed_audition_candidates_require_user_review"
+    },
+    {
+      "id": "music_b_happy_boy",
+      "title": "B · 俏皮小乐队",
+      "description": "单簧管、大号、吉他与打击的喜剧小乐队方向；完整短曲包含两种速度的变奏，用来比较更活泼、逗趣的氛围。",
+      "file": "preparation/audio/cheerful-r2/music/exports/music_b_happy_boy.mp3",
+      "file_base": "project_root",
+      "duration_s": 53.890612,
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648",
+      "source_title": "Happy Boy End Theme",
+      "source_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Happy%20Boy%20End%20Theme.mp3",
+      "author": "Kevin MacLeod",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution_required": true,
+      "attribution": "\"Happy Boy End Theme\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/ Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648 Changes: audition excerpt, constant-gain level adjustment, brief boundary fades, MP3 re-encoding; no tempo or pitch changes.",
+      "source_record": {
+        "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Happy%20Boy%20End%20Theme.mp3",
+        "final_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Happy%20Boy%20End%20Theme.mp3",
+        "content_type": "application/octet-stream",
+        "file": "preparation/audio/cheerful-r2/music/sources/Happy Boy End Theme.mp3",
+        "sha256": "3215d6630ae7d3ff9be86c7a610a973a78b2e3db0cd17ef4651453fc3c3a0f78",
+        "bytes": 2159721,
+        "downloaded_at": "2026-09-14T10:29:24.344337+00:00"
+      },
+      "source_format": "Author website full downloadable MP3 (not lossless original)",
+      "source_instruments": "Clarinet, tuba, percussion, guitar",
+      "source_bpm": "130",
+      "instrumentation_caveat": "官网声明乐器编配；未核实是否每件乐器都是真人实录。",
+      "source_duration_s": 53.890625,
+      "excerpt_start_s": 0,
+      "excerpt_duration_s": 53.890625,
+      "loop_ready": false,
+      "loop_note": "候选为带结尾淡出的试听段；尚未制作或验收无缝循环。",
+      "processing": {
+        "constant_gain_db": -7.76,
+        "filters": "volume=-7.76000dB,afade=t=in:d=0.03,afade=t=out:st=52.69062:d=1.2",
+        "speed": 1.0,
+        "pitch_changed": false,
+        "compressed_or_limited": false,
+        "source_excerpt": "preparation/audio/cheerful-r2/music/exports/music_b_happy_boy_excerpt.wav",
+        "source_excerpt_sha256": "d54423044cca446f7b47179d7d6fb42d24b85f9e86cd07f80f2a4134ebee6a26",
+        "before": {
+          "integrated_lufs": -14.24,
+          "true_peak_dbfs": 0.09,
+          "loudness_range_lu": 6.9
+        },
+        "after": {
+          "integrated_lufs": -22.28,
+          "true_peak_dbfs": -7.56,
+          "loudness_range_lu": 6.8
+        }
+      },
+      "sha256": "a6e6a4546bf43c0b365cb8cb3fc71e734549416c71573051aafec8d31ae73107",
+      "bytes": 1294671,
+      "technical_checks": {
+        "decode": "pass",
+        "channels": 2,
+        "sample_rate_hz": 44100,
+        "encoded_bitrate_bps": 192000,
+        "loudness_target_lufs": -22,
+        "peak_below_minus_2_dbfs": true
+      },
+      "listening_status": "not_claimed_audition_candidates_require_user_review"
+    }
+  ],
+  "source_evidence": [
+    {
+      "url": "https://incompetech.com/music/royalty-free/pieces.json",
+      "final_url": "https://incompetech.com/music/royalty-free/pieces.json",
+      "content_type": "application/json",
+      "file": "preparation/audio/cheerful-r2/music/evidence/pieces.json",
+      "sha256": "44872de3d9d729257a6e4c9a5cbdf502b14b5e9d8c18068aa2cf7ab1bb49e1dc",
+      "bytes": 961861,
+      "downloaded_at": "2026-09-14T10:29:07.851465+00:00"
+    },
+    {
+      "url": "https://incompetech.com/music/royalty-free/licenses/",
+      "final_url": "https://incompetech.com/music/royalty-free/licenses/",
+      "content_type": "text/html",
+      "file": "preparation/audio/cheerful-r2/music/evidence/incompetech-license.html",
+      "sha256": "479019ed42fd8384c63c04bd95dc6d0e0e0da505ddd6f567a13018c724f8416d",
+      "bytes": 12146,
+      "downloaded_at": "2026-09-14T10:29:08.607793+00:00"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "final_url": "https://creativecommons.org/licenses/by/4.0/",
+      "content_type": "text/html",
+      "file": "preparation/audio/cheerful-r2/music/evidence/cc-by-4.0.html",
+      "sha256": "231a5dac65bbf135ba27145969a63cd289faadc172f1512c4810a6c60ba91036",
+      "bytes": 32178,
+      "downloaded_at": "2026-09-14T10:29:09.002967+00:00"
+    },
+    {
+      "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037",
+      "final_url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037",
+      "content_type": "text/html",
+      "file": "preparation/audio/cheerful-r2/music/evidence/music_a_carefree-source.html",
+      "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+      "bytes": 26826,
+      "downloaded_at": "2026-09-14T10:29:09.910303+00:00"
+    },
+    {
+      "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648",
+      "final_url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100648",
+      "content_type": "text/html",
+      "file": "preparation/audio/cheerful-r2/music/evidence/music_b_happy_boy-source.html",
+      "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+      "bytes": 26826,
+      "downloaded_at": "2026-09-14T10:29:22.410185+00:00"
+    }
+  ],
+  "scope": "仅候选试听。未改运行时、assets、构建配置或既有音乐。",
+  "tool_versions": {
+    "ffmpeg": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "listening_note": "筛选依据为作者乐器/情绪/速度说明和本地技术检查；未声称已实际听感验收。"
+}

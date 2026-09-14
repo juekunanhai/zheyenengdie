@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · 基础难度校准</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#edf3f8;color:#173047;font:15px/1.7 system-ui}main{max-width:1120px;margin:auto;padding:22px}h1{font-size:25px;margin:0}h2{font-size:17px;margin:0 0 10px}p{margin:8px 0}a{color:#126bb2}.notice{padding:12px 16px;background:#fff3d7;border-left:3px solid #d69b18}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}button,select{font:inherit;padding:7px 12px;border:1px solid #bacbd9;border-radius:8px;background:white;color:inherit}button{cursor:pointer}button:disabled{opacity:.5}.workspace{display:flex;gap:24px;align-items:flex-start}.phone{flex:none}iframe{display:block;border:0;box-shadow:0 8px 28px #20364d25}.note{flex:1;min-width:260px;background:white;padding:18px;border-radius:12px}#version{background:#173f66;color:white;padding:6px 12px;margin:0}.small{font-size:13px;color:#506778}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;padding:7px;border-bottom:1px solid #dde6ed}pre{white-space:pre-wrap;font-size:12px;max-height:330px;overflow:auto}.asset-list{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.asset-list img{max-width:150px;max-height:120px;object-fit:contain}@media(max-width:760px){main{padding:14px}.workspace{flex-direction:column}.note{min-width:0;width:100%}.phone{max-width:100%;overflow:auto}}
+</style>
+<main><h1>基础难度校准 · 让合理的放法更宽容</h1>
+<p>纸箱和冰箱扩大可见承托面，木板加长并提供局部稳固。重点看轻微偏放后，还能否承接后面的物体。</p>
+<p class="notice">真实 Cocos 3.8.8 / Box2D。首次接触后最多观察 1.5 秒，提前稳住提前继续；高度仍待真实稳定确认。当前仍是单次越界结束的 1A 校准局。</p>
+<div class="controls">
+<label>版本 <select id="profile"><option value="current">新版 · 基础难度校准</option><option value="before">上版 · 1.5 秒节奏原始构建</option></select></label>
+<label>模式 <select id="mode"><option value="free">六物体 · 无自动释放</option><option value="timed">六物体 · 4 秒自动释放</option></select></label>
+<button id="start" disabled>开始 / 重开</button>
+<label>画幅 <select id="size"><option value="375,667">9:16</option><option value="375,812">长屏</option><option value="600,800">3:4</option></select></label>
+</div><p id="status">引擎加载中…</p>
+<div class="workspace"><div class="phone"><p id="version">新版 · 尚未开始</p><iframe id="player" title="真实引擎难度试放" src="play-player.html?revision=difficulty-r1" width="375" height="667"></iframe></div>
+<aside class="note"><h2>同一顺序，观察连续承托</h2>
+<p>纸箱 → 木板 → 马桶 → 冰箱 → 哑铃 → 篮球，循环出现。左右拖动，松手释放；右下按钮旋转 90°。</p>
+<p>新版横放木板仅连接实际接触的直接下层，最多两件。连接有强度限制；明显偏载、失去支撑仍会倒落。它不会隔空扶正整座塔。</p>
+<p>上版加载本轮修改前保存的完整构建、物体参数与素材，不会拿新图或新机制冒充旧版。</p>
+<p class="small">“无自动释放”只关闭规划倒计时，仍使用 1.5 秒观察上限。“4 秒自动释放”保留新玩家首局前两件的教学豁免。基础音效沿用 A2；本页不代表真人难度、完整事故或微信真机验收。</p>
+<h2>同动作检查</h2><p id="summary">本轮验证结果正在整理。</p><div id="comparison"></div>
+<p id="run" class="small"></p>
+<p><a href="../docs/DIFFICULTY_R1.md">本轮规则、结果与限制</a> · <a href="../design/difficulty-r1/index.html">三件素材与碰撞轮廓</a></p>
+<details><summary>运行数据</summary><pre id="data"></pre></details>
+</aside></div></main>
+<script>
+const $=id=>document.getElementById(id),frame=$('player');
+const sequence=['cardboard_box','wood_plank','toilet','fridge','dumbbell','basketball'];
+let ready=false,busy=false;
+function showStatus(text){$('status').textContent=text}
+function setReady(value){ready=value;$('start').disabled=!value||busy}
+async function begin(){
+ if(!ready||busy)return;busy=true;$('start').disabled=true;
+ try{
+  const win=frame.contentWindow;await win.qaLoad('HUD');
+  if(!win.qaGame().configureCalibration(sequence,$('mode').value==='free'))throw Error('当前构建缺少六物体资源');
+  frame.style.pointerEvents='auto';$('version').textContent=($('profile').value==='before'?'上版原始构建':'新版难度校准')+' · '+($('mode').value==='free'?'无自动释放':'4 秒自动释放');
+  showStatus('已开始 · 可以拖动、松手释放和按钮旋转');
+ }catch(error){showStatus(String(error))}finally{busy=false;$('start').disabled=!ready}
+}
+window.addEventListener('message',async e=>{
+ if(e.origin!==location.origin||e.source!==frame.contentWindow)return;
+ if(e.data.type==='play-error'){showStatus(e.data.error);return}
+ if(e.data.type!=='play-ready'||ready)return;
+ try{
+  await frame.contentWindow.qaLoad('HUD');const g=frame.contentWindow.qaGame();
+  g.enabled=false;g.phase='ended';frame.style.pointerEvents='none';
+  setReady(true);showStatus('引擎就绪，点击“开始 / 重开”');
+ }catch(error){showStatus(String(error))}
+});
+$('start').onclick=begin;$('mode').onchange=()=>{if(ready)begin()};
+$('profile').onchange=()=>{
+ setReady(false);busy=false;showStatus('正在载入对应完整构建…');$('version').textContent=$('profile').value==='before'?'上版原始构建 · 尚未开始':'新版难度校准 · 尚未开始';
+ frame.src=($('profile').value==='before'?'difficulty-before-player.html':'play-player.html')+'?revision=difficulty-r1';
+};
+$('size').onchange=e=>{const [w,h]=e.target.value.split(',');frame.width=w;frame.height=h};
+setInterval(()=>{
+ if(!ready)return;const s=frame.contentWindow.qaGame()?.snapshot();if(!s)return;
+ $('run').textContent=`已释放 ${s.releases} 件 · 真正放稳 ${s.placed} 件 · 已确认 ${s.peakMetres.toFixed(2)} m`;
+ if(document.querySelector('details').open)$('data').textContent=JSON.stringify(s,null,2);
+},200);
+fetch('evidence/difficulty-r1/FINAL_COMPARISON.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('待整理');return r.json()}).then(d=>{
+ $('summary').textContent=d.reviewText;
+ if(!Array.isArray(d.reviewRows))return;
+ const table=document.createElement('table');const head=document.createElement('tr');for(const text of ['固定动作','上版','新版']){const th=document.createElement('th');th.textContent=text;head.append(th)}table.append(head);
+ for(const row of d.reviewRows){const tr=document.createElement('tr');for(const text of [row.name,row.before,row.after]){const td=document.createElement('td');td.textContent=text;tr.append(td)}table.append(tr)}$('comparison').replaceChildren(table);
+}).catch(()=>{});
+</script></html>

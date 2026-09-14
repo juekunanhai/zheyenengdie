@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "method": "Read-only in-memory injected actual-failure exit values or current hash map. No runtime/history edits.",
+  "cases": [
+    {
+      "case": "creator_failure",
+      "status": "rejected_as_required",
+      "reason": "Actual Creator process failed"
+    },
+    {
+      "case": "project_typecheck_failure",
+      "status": "rejected_as_required",
+      "reason": "Actual project TypeScript process failed"
+    },
+    {
+      "case": "physics_hash_changed",
+      "status": "rejected_as_required",
+      "reason": "Unapproved prior audio/art/physics/settings/scene changed"
+    },
+    {
+      "case": "settings_hash_changed",
+      "status": "rejected_as_required",
+      "reason": "Unapproved prior audio/art/physics/settings/scene changed"
+    },
+    {
+      "case": "approved_B_hash_changed",
+      "status": "rejected_as_required",
+      "reason": "Unapproved prior audio/art/physics/settings/scene changed"
+    },
+    {
+      "case": "unexpected_audio_added",
+      "status": "rejected_as_required",
+      "reason": "Unexpected new runtime/config files"
+    }
+  ]
+}

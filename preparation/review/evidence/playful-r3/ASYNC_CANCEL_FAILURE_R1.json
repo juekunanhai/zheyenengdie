@@ -1,0 +1,87 @@
+{
+  "schema": "playful-r3-engine",
+  "createdAt": "2026-09-14T10:56:59.996Z",
+  "results": [
+    {
+      "name": "incidents",
+      "status": "failed",
+      "startedAt": "2026-09-14T10:57:05.597Z",
+      "error": "Error: 立即取消后异步加载仍启动人声\n    at assert (http://127.0.0.1:8767/preparation/review/playful-r3-checks.js:6:63)\n    at Object.incidents (http://127.0.0.1:8767/preparation/review/playful-r3-checks.js:71:9)\n    at async run (http://127.0.0.1:8767/preparation/review/playful-r3-checks.js:151:45)\n    at async batch (http://127.0.0.1:8767/preparation/review/playful-r3-checks.js:155:88)",
+      "evidence": {
+        "audio": {
+          "clock": 0.5485,
+          "lastReactionAt": 0.24730000000074506,
+          "reacting": false,
+          "voices": [
+            {
+              "clip": "claw_grip",
+              "playing": false,
+              "reaction": false,
+              "volume": 0.7
+            },
+            {
+              "clip": "voice_wow",
+              "playing": false,
+              "reaction": true,
+              "volume": 0.7
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            },
+            {
+              "playing": false,
+              "reaction": false,
+              "volume": 1
+            }
+          ]
+        },
+        "events": [
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 6117.89999999851,
+            "clock": 0.24730000000074506
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_wow",
+            "at": 6117.89999999851,
+            "clock": 0.24730000000074506
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 6318.300000000745,
+            "clock": 0.4483999999985099
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T10:57:06.357Z"
+    }
+  ],
+  "errors": [],
+  "ready": true,
+  "busy": false
+}

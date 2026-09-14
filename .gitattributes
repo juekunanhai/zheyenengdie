@@ -1,0 +1,3 @@
+# Preserve exact source/asset/evidence bytes across macOS and Windows checkouts.
+# Historical manifests and the transfer verifier hash the original file bytes.
+* -text

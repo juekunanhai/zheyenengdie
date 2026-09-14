@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-226e2c47-ef61-4b53-9046-edb73f5d02d6.png",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/home_r10_background.png"
+  ],
+  "operation": "Keep bottom-connected alpha >220; erode 2 px and feather 1.1 px; composite over unchanged approved R10 image",
+  "historical_UI_pixels_used": false,
+  "sha256": {
+    "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-226e2c47-ef61-4b53-9046-edb73f5d02d6.png": "6880ace0bc7363265092a1c86b15a1db7327e414239f3f920fdde113020726e9",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/assets/batch0/art/home_r10_background.png": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/visual-r11/assets/ground-foreground-clean.png": "844c7db7eecf7501b188cca608922bc1af74e80513aba85c474dec9d14a040e1",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/visual-r11/assets/ground-composite.png": "8485264f6295b02d06b6ac44807442c6f239b895a5c5348c0227d7a2388bd214"
+  }
+}

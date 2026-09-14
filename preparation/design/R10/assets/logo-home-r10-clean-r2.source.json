@@ -1,0 +1,80 @@
+{
+  "purpose": "Remove only colored checkerboard fringe in the four small gaps between the navy/cyan logo outline and cream slogan ribbon.",
+  "input": "assets/logo-home-r10-clean.png",
+  "input_sha256": "6af075afb4a11dc245e2e67c6e1f6fcfa807e1db2fa6c313e7690e9b1be3f594",
+  "output": "assets/logo-home-r10-clean-r2.png",
+  "output_sha256": "9079e248bbcd4bfc47f2704ae7a967398dab77b0501bdc0ce18f7bd8eba8a254",
+  "size": [
+    1381,
+    732
+  ],
+  "method": {
+    "channels_changed": "alpha only; every RGB byte is identical to input, including newly transparent pixels",
+    "scope": [
+      {
+        "crop_xyxy": [
+          404,
+          504,
+          440,
+          527
+        ],
+        "alpha_pixels_changed": 73,
+        "made_transparent": 45
+      },
+      {
+        "crop_xyxy": [
+          618,
+          471,
+          668,
+          494
+        ],
+        "alpha_pixels_changed": 91,
+        "made_transparent": 73
+      },
+      {
+        "crop_xyxy": [
+          702,
+          472,
+          733,
+          494
+        ],
+        "alpha_pixels_changed": 56,
+        "made_transparent": 38
+      },
+      {
+        "crop_xyxy": [
+          790,
+          473,
+          828,
+          499
+        ],
+        "alpha_pixels_changed": 92,
+        "made_transparent": 70
+      }
+    ],
+    "candidate_mean_rgb_inclusive_exclusive": [
+      85,
+      215
+    ],
+    "candidate_max_minus_min_rgb_exclusive": 110,
+    "alpha_multiplier": "clamp((max(R,G,B)-min(R,G,B)-85)/25,0,1); applied only within the four rectangles and candidate bounds",
+    "fully_transparent_at_chroma_lte": 85,
+    "unmodified_at_chroma_gte": 110,
+    "protection": "Dark navy with mean RGB <85 and bright cream with mean RGB >=215 remain untouched; saturated cyan/yellow edges remain untouched. All pixels outside the four rectangles unchanged.",
+    "cropping": false,
+    "resampling": false,
+    "alpha_pixels_changed": 312,
+    "rgb_byte_changes": 0
+  },
+  "qa": [
+    "qa/logo-home-r10-clean-r2-light-blue.png",
+    "qa/logo-home-r10-clean-r2-cream.png",
+    "qa/logo-home-r10-clean-r2-navy.png"
+  ],
+  "zoomed_notch_qa": "qa/logo-r2-notch-{1..4}-{before,after}.png; 8x nearest-neighbor inspection exports only",
+  "visual_review": {
+    "completed": true,
+    "evidence": "Actually viewed all four 8x before/after notch crops and full-size navy and cream composites; reduced gray flecks without cutting into solid cyan/navy outlines or bright cream ribbon. Light-blue notch composites also viewed.",
+    "scope_limit": "Asset cleanup only; browser composition and engine integration are separate."
+  }
+}

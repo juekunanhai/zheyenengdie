@@ -1,0 +1,24 @@
+{
+  "revision": "toilet-shape-r2",
+  "selected_geometry": "preparation/design/gameplay-toilet-r2/candidate-b/GEOMETRY.json",
+  "geometry_sha256": "ea3b778c88511e18e287476761a3dace4080aaf23ca4db9f5ea99bcbcd91335c",
+  "old_area": 5683.975884933797,
+  "new_area": 12725.612632631537,
+  "old_density": 0.9,
+  "new_density": 0.401990728786,
+  "mass_policy": "Preserve old total mass; uniform density; natural geometric COM/inertia. No hidden COM override.",
+  "images": [
+    {
+      "source": "preparation/design/gameplay-toilet-r2/candidate-b/assets/object_toilet.png",
+      "target": "assets/batch0/art/object_toilet.png",
+      "sha256": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c",
+      "uuid": "cce2bc47-590b-57c1-9e2c-5c35bffb9c29"
+    },
+    {
+      "source": "preparation/design/gameplay-toilet-r2/candidate-b/assets/next_toilet.png",
+      "target": "assets/batch0/art/next_toilet.png",
+      "sha256": "b694ef2064bce56b6baa5f09d2cce71c8ffbe7fbc59b0845ed9bd28dae827630",
+      "uuid": "c136c394-2eb2-5241-9baf-1dfec8168e2a"
+    }
+  ]
+}

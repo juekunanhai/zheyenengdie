@@ -1,0 +1,105 @@
+{
+  "tool": "built-in image_gen",
+  "status": "approved_and_integrated",
+  "reference_usage": "原UI整图作为参考输入重绘，未从历史展板裁切为正式Sprite。",
+  "runs": [
+    {
+      "key": "r10bg",
+      "name": "bg-first-rejected",
+      "prompt": "Use case: stylized-concept. Asset type: finished portrait 9:16 background illustration for a Chinese playful object-stacking mobile game's HOME poster. Create a densely layered, whimsical TOY CITY under a vivid cyan-blue sky. Match a polished soft 2.5D hand-painted casual game illustration: chunky simplified forms, warm peach yellow and cream with salmon pink, mint and powder blue, luminous soft edges, rounded square window holes, gentle dimensional shading with restrained detail. This is a fanciful city assembled from small children's building blocks, slightly wonky verticals and funny irregular stacked shapes. MANY narrow short towers and small buildings, 2 to 6 stories each, densely overlapping in several layers and at different heights. The skyline starts 32 percent down at the edges and dips to 65 percent down in the middle. Near buildings crop into left and right edges, but they are varied detached small blocks, not continuous walls. Several far blue/purple pastel towers remain visible through the center and behind the future hero. Fill the lower two-thirds with the miniature city and green round tree clusters. Use airy atmospheric perspective: near peach and yellow buildings, progressively softer and paler blue distant buildings. The view is a cheerful front-view upward look at the city, like a toy town storybook poster, not architectural rendering. Avoid a symmetrical street canyon. Do not create a road, a boulevard, vanishing pavement, large plaza, sharp pavement slabs, rails, metallic rooftop water tanks or realistic glass facades. The tiny bottom strip can have softly painted warm cream toy blocks/ground, at most six percent of total height. Upper 25 percent clear bright blue sky for the logo. Between 30 and 85 percent down leave the middle 35 percent less contrasted for a separately composited hero, but it is not an empty gap: faint buildings in the far distance. Clouds are small soft scattered puffs near edges and blue sky; no giant cloud bed. Soft white sunlight, colorful fun rounded game-poster illustration. High quality rich shaded volume, clean finished art. No characters, no duck, no toilet, no storage bin, no shoes, no text, no signboards, no logos, no interface, no button, no photography, no precise architectural window grids, no line drawing. Full bleed finished artwork.",
+      "refs": [],
+      "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-042803e7-2457-4ca3-8180-9ebdf692b964.png",
+      "size": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "sha256": "3525003bc19a08760d8df476f3685a8fb5ec0a23813a821bc8fa6961501244dc",
+      "reason": "城堡尖顶与拱窗偏离原UI，未采用。"
+    },
+    {
+      "key": "r10bg2",
+      "name": "bg-second-rejected",
+      "prompt": "Use case: stylized-concept. Finished portrait 9:16 Chinese casual mobile game background illustration. Dense cheerful contemporary CITY of many small APARTMENT buildings, visually a polished soft-painted game poster. IMPORTANT EXACT ARCHITECTURE: EVERY building has a FLAT HORIZONTAL ROOF and RECTANGULAR SQUARE WINDOWS with blue or violet inset panes. All buildings are cuboid rectangular little urban apartment blocks. NO CASTLE, NO FAIRY-TALE KINGDOM, NO cone or pyramid roof, NO dome, NO turret, NO arched windows or doors, NO arcades or bridges, NO European architecture, NO houses with triangular roofs. No rooftop metal tanks or railings. Building facades have playful simplified rectangular ledges, occasional pastel awnings and open square balconies, 3 to 7 floors per building. Many narrower boxy apartment blocks are stacked at varied heights and angles, warm golden yellow, orange, pink, cream, lavender and cyan. A playful rounded toy-like painted treatment of a MODERN URBAN neighborhood with flat rooftops and square windows. Do not make an architectural visualization; no physically detailed glass, crisp window frames or repeated photographic grids. Rich warm pastel colors, soft shaded corners, atmospheric 2.5D illustration. Background layout: bright clear CYAN BLUE SKY at upper 25 percent. Buildings appear at about 32 percent from the top along left and right, with varied asymmetric stepped heights. Numerous mid-distance small colorful blocks fill the lower two-thirds, behind a separately composited central character tower. Faint blue/purple buildings should be visible through the CENTER from 55 percent down; the center is low contrast but not an empty sky corridor. Many rounded small green tree tufts among the lower buildings. The buildings look slightly tilted and haphazardly stacked, charming clean painterly illustration, soft focus and atmospheric haze on distant houses. Lower edge has only a THIN pale warm ledge, 4 percent of height. No street, road, plaza, pavement, deep perspective alley, tunnel, long symmetrical two-wall canyon or tiled ground. Luminous sunny light, soft thick painted volume, saturated cyan sky, warm yellow/orange houses and soft violet shadows. Few small soft white clouds at edges. Background ONLY: no title, logo, text, numbers, signs, banners, buttons, people, ducks, toilet, box characters or shoes. Full bleed final art, no border. All architecture is low/mid-rise MODERN BOXY APARTMENT buildings with FLAT ROOFS and SQUARE WINDOWS.",
+      "refs": [],
+      "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0b3c708b-bacd-445a-a8bf-b8dc9edb795f.png",
+      "size": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "sha256": "437ab5ba32d0a65c464f0847f6fe541277f20c5da64252f2afeb102ae3dea1be",
+      "reason": "楼房、窗框和植物过于真实整齐，未采用。"
+    },
+    {
+      "key": "r10bg3",
+      "name": "bg-home-r10",
+      "prompt": "Create a finished portrait 9:16 background PNG for this game homepage, using the attached image as the EXACT visual reference. Reference role: this full sheet is a UI design reference, not the output layout. Look ONLY at (1) the BACKGROUND BEHIND the logo/duck/toilet/blue-bin tower in the TOP-LEFT phone, and (2) the FIRST tiny city tile in the bottom panel numbered 6. Recreate that very specific charming city illustration as a clean full-screen background. Match the reference's PLAYFUL CITY BUILDING SHAPES, irregular tilted little apartment blocks, short narrow towers, stepped roof silhouettes, closely packed layers, sunny yellow/orange/peach/blue/purple buildings, small rounded square windows and broad cartoon green tree blobs. Match the original soft painterly game-art finish and rich but gently blurred light, its slightly exaggerated comic proportions and subtly crooked buildings. Do not make the architecture more realistic, more orderly, more detailed, sharper, or physically precise. It should visibly belong to the same artwork as that original phone. Do not turn it into a fairy tale castle: it is the reference's modern cartoon apartment city. No metallic rooftop equipment. Fill the side and lower background with the city as in the reference; the low-contrast center remains suitable for overlaying the hero. Preserve the bright sky at the upper quarter, the layered pale city depth, trees at lower edges and only a small warm ledge at the very bottom. The deliverable is ONLY the background, WITHOUT the foreground hero tower, WITHOUT duck/toilet/blue-bin/slippers, WITHOUT the logo, WITHOUT slogans or signs, WITHOUT all UI/buttons/panels/text/numbers. Do not reproduce the whole design sheet or a phone frame. No people, no castle roofs, no arch windows, no huge plaza or realistic street. Full-bleed final polished game background. Adhere to the REFERENCE ART instead of reinterpreting the visual style.",
+      "refs": [
+        "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/02_ui_design_system.png"
+      ],
+      "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-c6096ea5-ab88-45d6-8e28-0b16f47b046f.png",
+      "size": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "sha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+      "output": "assets/bg-home-r10.png",
+      "status": "selected_candidate"
+    },
+    {
+      "key": "r10logo",
+      "name": "logo-first",
+      "prompt": "Use case: logo-brand. Asset type: finished transparent game logo for a polished lighthearted Chinese stacking mobile game. The ONLY main title is exactly four Chinese glyphs: 这也能叠 . Set the four glyphs in ONE very broad compact line, thick cheerful inflated custom Chinese display letters with round corners, colored front faces and dark navy bold outlines, a thin electric-blue outer edge and small dark-blue dimensional extrusion. The three glyphs 这也能 have sunny yellow tops with warm orange lower edges; 叠 is bright sky-blue with light blue highlights. Make a gentle playful arch, not a steep rising diagonal: left and right bottoms close to level, center letters slightly lifted. Overall main lettering width about 900 units and height 310 units. Keep each glyph readable and correctly written. Small golden three-point crown above 叠. A glossy red smiling slide slipper with three white stripes peeks out from BEHIND the top LEFT side of the title, tilted slightly counterclockwise, mostly concealed by the first two letters. Under the main lettering add a SINGLE cream-yellow curved slogan ribbon, golden yellow thin border, rounded ends, subtle shaded thickness. The ribbon closely follows the shallow arch under the lettering and reads exactly: 把乱七八糟的东西叠上天 . The slogan is dark navy-blue bold, large, crisp, evenly spaced Chinese text centered INSIDE the ribbon, one line. The ribbon is approximately 75 percent the width of the title. Keep the entire composition wide and compact, total visible aspect ratio around 1.85:1, title about two-thirds of total height, crown/slipper small accents. Cheerful high-end mobile casual game poster logo; rich smooth shaded paint, restrained shiny highlights, warm joyful colors. Not flat vector, not realistic metal, no neon light glow, no glitter, no background, no extra icons, no extra words, no English, no repeated title. Render a genuinely transparent background with clean alpha and generous small clear margin around all edges. All text must be complete and legible. Finished production logo, no mockup scene.",
+      "refs": [],
+      "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-f8274648-be08-4c9a-8302-6612fc7bda20.png",
+      "size": [
+        1704,
+        923
+      ],
+      "mode": "RGBA",
+      "sha256": "9a69086d981c56a221f454bda90fa91b7466b754e0618b61f85d881b0f15e2c8",
+      "reason": "文字描述候选，改用直接参考原UI的重绘版本。"
+    },
+    {
+      "key": "r10logo2",
+      "name": "logo-home-r10",
+      "prompt": "Create a finished transparent PNG game logo, REDRAWN at high resolution, using the attached UI sheet as the exact visual design reference. Reference role: look ONLY at the large game logo in the TOP-LEFT phone on this sheet. Recreate that logo composition closely. Main title is exactly 这也能叠, four correctly written Chinese characters, in one broad compact slightly arched row. Preserve the reference's letter shapes, rounded cartoon strokes, sunny yellow-orange faces of 这也能, sky-blue 叠, thick dark navy outline and thin blue contour, gentle 3D shading and compact golden crown above 叠. Keep the broad, slightly irregular handmade display lettering proportions from the reference, not a tall steeply rising logo. A small portion of the reference's RED SLIDE SLIPPER peeks behind the upper-left letters; match its small size and mostly hidden placement. Under the wordmark is the reference's pale cream-yellow curved ribbon, with thin golden border and dark blue Chinese slogan exactly 把乱七八糟的东西叠上天 inside it, matching the placement/curve and relative scale of the original. Keep the slogan one legible line. Match the reference art's highlights and rounded shaded thickness without making the border or ribbon overly thick. Redraw this as crisp finished standalone artwork. Do NOT crop pixels from the sheet. Do NOT include any other part of the screen: no background, no city, no duck, no toilet, no blue-bin tower, no controls, no phone frame, no other text or icons. Genuinely transparent alpha background. Leave only a SMALL uniform transparent margin around the visible logo. Target visible overall width/height ratio close to 2:1. Most important: recognizable fidelity to the ORIGINAL logo in the first phone; do not invent a new branding style.",
+      "refs": [
+        "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/02_ui_design_system.png"
+      ],
+      "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7418bc85-d993-481c-ab10-f50cc3be61c3.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "sha256": "a634c9f64a06b70d5104556b3f71bd851ece67498135461d33cc8edded8ab5ee",
+      "output": "assets/logo-home-r10.png"
+    }
+  ],
+  "scope": "背景与Logo组合候选；角色、拖鞋、木牌、按钮保持R9；未接入工程。",
+  "self_review_revision": {
+    "revision": "R10.1",
+    "new_generation": false,
+    "logo_derivative": "assets/logo-home-r10-clean-r2.source.json",
+    "formal_sprite_reuse": [
+      {
+        "file": "preparation/art/candidates/backgrounds/airship_clean.png",
+        "sha256": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289",
+        "source": "02_ASSETS/backgrounds/air_objects.png",
+        "provenance": "preparation/art/CANDIDATE_MANIFEST.json"
+      },
+      {
+        "file": "preparation/art/candidates/backgrounds/airplane_clean.png",
+        "sha256": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600",
+        "source": "02_ASSETS/backgrounds/air_objects.png",
+        "provenance": "preparation/art/CANDIDATE_MANIFEST.json"
+      }
+    ],
+    "evidence": "evidence/self-audit-after-comparison.png"
+  },
+  "approval": "APPROVAL.json",
+  "engine_integration": "ENGINE_INTEGRATION.md"
+}

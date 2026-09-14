@@ -1,0 +1,19 @@
+{
+  "revision": "2026-09-12-P3",
+  "script_sha256": "2f427f03b6627329f0ac279e029869451e02bb819b203c1baf7704cd16fe51a0",
+  "entries": [
+    {
+      "id": "btn_settings_base",
+      "output": "art/ui-corrections/btn_settings_base.png",
+      "sha256": "55150b41d63a1b9822542fd435756dd273833aa393fc12c7ea2a23549ee48414",
+      "source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_btn_share.png",
+      "source_sha256": "91a8cfb520e31f9d30d97615568ca154a937a04977e11b0d953976ebdc36ced1",
+      "method": "local antialiased subtle highlight; render as whole sprite, not 9-slice",
+      "status": "user_requested_correction_pending_visual_review",
+      "size": [
+        493,
+        178
+      ]
+    }
+  ]
+}

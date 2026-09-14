@@ -1,0 +1,353 @@
+{
+  "scope": "visual draft only",
+  "runtime_files_checked": 212,
+  "runtime_changed": [],
+  "runtime_added": [],
+  "engine_build_run": false,
+  "assets": [
+    {
+      "file": "assets/height_0.png",
+      "size": [
+        326,
+        348
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "889e70cd9c40704616e9adb5bbf9f8bc90e9e8779707c7a65db359358f0ef9e1"
+    },
+    {
+      "file": "assets/height_1.png",
+      "size": [
+        242,
+        347
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "5dab10f11cb00ce0a6273108be6f24c9d9dcce3fcc94eede47025e23780aae12"
+    },
+    {
+      "file": "assets/height_2.png",
+      "size": [
+        313,
+        359
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "671e25af2a4525d65fe391b2b20cac47edd2bad5f85f348b403ced790cd94412"
+    },
+    {
+      "file": "assets/height_3.png",
+      "size": [
+        302,
+        355
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "e537a41b69d3e2d2a4768903ebb8bb42c25f4ff3718d713ba4006b5d591de449"
+    },
+    {
+      "file": "assets/height_4.png",
+      "size": [
+        325,
+        363
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b5697456058d44222439b6331c66b34f6c0df34a31bf5939767dc81e3ab5c578"
+    },
+    {
+      "file": "assets/height_5.png",
+      "size": [
+        324,
+        355
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "d14e684e88ad783ea3c8e56f6d6da945bf148b1a6e3a767c2031051674fc35c8"
+    },
+    {
+      "file": "assets/height_6.png",
+      "size": [
+        327,
+        361
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b73764e04b9ef944d39a6e1bc1d2081ae4357a68f414ed78af2e3fe4faebc467"
+    },
+    {
+      "file": "assets/height_7.png",
+      "size": [
+        293,
+        354
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "391c2e9ba7b48010a3d96a00287a311c1513f7946cdeba353f88e0da7b81f8e9"
+    },
+    {
+      "file": "assets/height_8.png",
+      "size": [
+        331,
+        362
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "bb8c60541b5e7225fd728c5733c01f5e5808a400f6265434607e401e39aecf97"
+    },
+    {
+      "file": "assets/height_9.png",
+      "size": [
+        328,
+        360
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1d83ad171ab81e5534637fc505e3ccfa2dd4a1a201db071e881758652bf2cff6"
+    },
+    {
+      "file": "assets/height_dot.png",
+      "size": [
+        218,
+        202
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "0ff76a1e17faedf8d37afe6cf5d8e0e078cdc32680d7cc25606385ebb7cb2343"
+    },
+    {
+      "file": "assets/height_glyph_atlas.png",
+      "size": [
+        2020,
+        779
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "965658a41dd005d9ddd96fbaf90949fd78571d54444fd7af1c7c320d51e552b2"
+    },
+    {
+      "file": "assets/height_m.png",
+      "size": [
+        335,
+        249
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4f373aa29d5427bdedb3c91618609b74b9d07b7e4fa0f0c506f71bf5e873ae1a"
+    },
+    {
+      "file": "assets/result_bubble.png",
+      "size": [
+        900,
+        534
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "2aaaf0bf8d7cf83bf560cda75e31b36455e8ef57ffcf0ec42920c462384179f1"
+    },
+    {
+      "file": "assets/result_character_tower.png",
+      "size": [
+        748,
+        1506
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "5aa6cd284910f44ed072bcc0fc1cd69d8a9006f619f56672b999f93fe062acb4"
+    },
+    {
+      "file": "assets/result_close.png",
+      "size": [
+        141,
+        130
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "e181f89de91c29ece6b71458f00e77dbfe87e7e0deabf42df19c6c87d179a2af"
+    },
+    {
+      "file": "assets/result_metrics.png",
+      "size": [
+        1838,
+        495
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1d614e24146731974f2a4b7a73e0c218886532e42ebd1ccf867593b3fc6ff5b7"
+    },
+    {
+      "file": "assets/result_panel_background.png",
+      "size": [
+        1107,
+        1233
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "ab285401ffb6e2b083d69e9e3392dfed18fdd34490178885e569ea51fec38ee5"
+    },
+    {
+      "file": "assets/result_panel_decorated.png",
+      "size": [
+        1107,
+        1233
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "120657cefb6a9b216eb1d96a062e3e18b1cab83cf733b1a67cb7892fbbd65cbe"
+    },
+    {
+      "file": "assets/result_record.png",
+      "size": [
+        900,
+        500
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "d1862769c38ea192bf8781643674d02992470a4fbb2b0507ce25af6e73b7bd75"
+    },
+    {
+      "file": "assets/result_retry.png",
+      "size": [
+        902,
+        219
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "61fb5938b185ef47866bc0634c6cc90a08efd1d08160ab5adf7298dfd9771ada"
+    },
+    {
+      "file": "assets/result_share.png",
+      "size": [
+        900,
+        1059
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "e55634edae448d6d1aa06cfdee3b4b2df940be829310741d2f09465f3cf4737b"
+    },
+    {
+      "file": "assets/result_title.png",
+      "size": [
+        900,
+        357
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1b7d7859b5aabbc15a9f5f3cd87ea7af76a8adc454e9522245e618e415123b14"
+    }
+  ],
+  "main_draft": {
+    "size": [
+      1182,
+      1330
+    ],
+    "mode": "RGBA",
+    "source": "generated-sources/full-card-layout-corrected.png"
+  },
+  "verification": [
+    "Reference and redraw compared at equal298px width",
+    "Alpha inspection against dark navy and cream backgrounds",
+    "Independent visual reviewer applied before final handoff"
+  ],
+  "limitations": [
+    "Not pixel-identical: source is298x336 raster and new artwork is redrawn",
+    "Independent components are visual candidates; Cocos assembly not executed",
+    "All scores and feature regions are visual examples, not functional integration"
+  ],
+  "remaining_visual_differences": [
+    "Data/share/close anchors still differ a few low-resolution pixels",
+    "Metrics right edge is more regular",
+    "Redrawn glyph geometry and reflections differ"
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:8767/preparation/design/result-r13/index.html",
+    "all18_visible_image_references_loaded": true,
+    "console_errors_or_warnings": 0,
+    "controls_checked": [
+      "size selector",
+      "dark background",
+      "reference overlay",
+      "height glyph sample"
+    ],
+    "default_state_restored": true,
+    "screenshot": "evidence/browser-comparison.png"
+  },
+  "user_visual_review": {
+    "status": "approved",
+    "user_reply": "确认",
+    "context": "用户在 R13 审阅页确认完整结算视觉稿",
+    "approved_artifact": "full-card-r13.png",
+    "approved_artifact_sha256": "ffaf472af62c760bcfb408b71f5cc6c61e9e126f073ccace826a0cc20d623890",
+    "runtime_integration_authorized": false,
+    "engine_acceptance_completed": false
+  }
+}

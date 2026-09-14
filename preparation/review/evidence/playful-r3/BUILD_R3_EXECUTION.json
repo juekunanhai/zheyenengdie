@@ -1,0 +1,22 @@
+{
+  "revision": "playful-r3-build-R3",
+  "actual_creator_exit_code": 36,
+  "creator_execution_source": "Root tool exec session 2656 returned process exit 36",
+  "actual_project_typecheck_exit_code": 0,
+  "project_typecheck_command": "Bundled Node + Cocos Creator 3.8.8 TypeScript tsc.js --noEmit --skipLibCheck",
+  "project_typecheck_stdout": "TSC_R3_SKIP_LIB_CHECK.stdout.log",
+  "project_typecheck_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "earlier_typecheck_without_skip_lib_check": {
+    "actual_exit_code": 2,
+    "source": "Root exec session 96756 returned exit 2 and 102 lines; tool output was truncated, so no complete raw log is claimed or fabricated.",
+    "error_scope": "Cocos engine declarations including JSB, WebGPU and internal cc modules",
+    "boundary": "Does not claim all engine/library declarations typecheck cleanly. No source/config workaround added.",
+    "observed_errors": [
+      "JSB implicit any",
+      "Missing GPUPipelineLayout / GPUDevice",
+      "cc/editor module declaration errors"
+    ],
+    "existing_project_command_evidence": "preparation/tools/record_difficulty_build.py records the existing --noEmit --skipLibCheck command"
+  },
+  "build_report_sha256": "835cb3cd9c50127db7b7a75e20d7a865656cd6e069829c2458bb92a786ceeb08"
+}

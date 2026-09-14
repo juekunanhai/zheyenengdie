@@ -1,0 +1,93 @@
+{
+  "revision": "visual-r11",
+  "status": "local_visual_and_basic_flow_selfcheck_passed",
+  "build_main_sha256": "4f2cae897d4278a300cfb0f29ae8b916441f4409ab4a5b7f532dc6a0120b10cd",
+  "accepted_difficulty_unchanged": true,
+  "result_views": [
+    "375x667",
+    "300x650",
+    "450x600"
+  ],
+  "result_samples": [
+    0,
+    42.7,
+    12345.6
+  ],
+  "actual_height_before_result": 1.0048273040042128,
+  "result_labels": [
+    {
+      "name": "Text:本次叠到了",
+      "text": "本次叠到了"
+    },
+    {
+      "name": "HeightDepth",
+      "text": "1.0 m"
+    },
+    {
+      "name": "HeightRim",
+      "text": "1.0 m"
+    },
+    {
+      "name": "HeightHighlight",
+      "text": "1.0 m"
+    },
+    {
+      "name": "Text:88.6 m",
+      "text": "1.0 m"
+    },
+    {
+      "name": "Text:这也能叠！",
+      "text": "这也能叠！"
+    }
+  ],
+  "background_camera_samples": [
+    0,
+    6,
+    15,
+    55,
+    85,
+    160,
+    200
+  ],
+  "navigation": {
+    "close": "Result to Home",
+    "retry": "Result to HUD with releases/placed/height reset to0"
+  },
+  "independent_review": {
+    "result": "No blocking defects; retained formal bubble and runtime numeral differ slightly from historical image",
+    "background": "6m duplicate skyline removed;15m vertical bands repaired and independently reviewed"
+  },
+  "screenshots": {
+    "result-42-7-game.png": "b1819d03d4f2ce954c3511c06fb30439fc7943c6fba34d020c22029d87103280",
+    "final-background-85m-game.png": "c433d8572ff13385fbea8a6c21d530a5b4dcc3525b1803eaee17e425b7b6dc9c",
+    "result-zero-wide-game.png": "ab26fd8f15cdb07ccc5372b1f2f545f23538b96ddce7a5bd2a8fbdfa74b3b4bc",
+    "final-background-55m-game.png": "9ff6599e70fd6fb675c5948c4a7ad1dd8960578a61f707a44b1c0329a77721b7",
+    "final-game-one-placed-game.png": "34f7cbc50722dc555d9fdafe201035b753e1b7d20abe15dd7b59a5b8efa3cdc5",
+    "background-85m-game.png": "2b0897c99bd1384942a730b98fdae0dddcfdd79af8a59eed876021997289f34f",
+    "ground-long-game.png": "2a711c83e4fa74d148e2c8e7ba5a1604d23f692bccec855bd4e9fcbeca91e7fe",
+    "background-55m-game.png": "7a5b9fcebec2297729e1a26311a7a3cc48521e415e679c09be6bb070a3f3d632",
+    "result-long-screen-game.png": "150dc58689fca6496fb232a221ebeb2097304f96365df746abd8b4546b5335c5",
+    "final-background-160m-game.png": "01b0cc722a2a7d4f2d4d969e1e89390b1bcfe292d699f58ccb2e5eb10f8c1d34",
+    "background-200m-game.png": "f6abd780778d90befc429bbed949387f91650d97a58b706162d1fe53428bbeb1",
+    "space-wide-game.png": "8d4fc0485d7b7cb261efadae18e21f4da66d32022d690ae713b69ba814d1a09c",
+    "final-background-15m-game.png": "44a60cfeb17e18122c558f254d135bf2709d2f8f20eb8e5ba1953797ab66a9df",
+    "ground-0m-game.png": "e89cada3d2b5cf9df10f8c84596acd4f7d22bd4dc4daee1f816dfdd3a8c2415a",
+    "final-background-200m-game.png": "fe0d5d3742facc4828ba4396cd814249b8af202d2a71f62aba27b60a90feb29d",
+    "final-background-6m-game.png": "14a141db943625437ebfb8f689f93f01a85782a1c66743df7b8ed389f207cd1c",
+    "ground-6m-game.png": "9eeb34b14d8d0d153877264728952f4a593ff7e49e1b46bdd79344e227bfebb5",
+    "background-15m-game.png": "e34edb63b3ff08181bc5968c73e4ab8ae75420980513a6644238843c65ce35af",
+    "final-game-ground-start-game.png": "3d4b053a268b21f744f0061295ed973544e7c54f1f04d7839d6ba426adc65adc",
+    "final-background-0m-game.png": "5d56403418669400ac9070224940ab1fb83dfc779076a4c8e4440703126a6989",
+    "final-result-real-game.png": "f85902d3160740f01ae864be11db2641be8c26cc89941fa471dfa840924df825",
+    "background-160m-game.png": "2f0ded6944e76c1db94a1f40e79ccb8236d42ec82164fcb5f0456a744f1f83fb",
+    "result-wide-game.png": "0ba3910a612926915006f0c2f1cffe596f04241bfaa7325d82e3bab0c61d2211",
+    "result-long-number-game.png": "2eee78a0cef2f71f8b6fe678f1c8010d82966de0d24dcd5712ac85170eaf4d5f"
+  },
+  "console_note": "Browser tools reported MutationObserver.observe Node-type errors on page loads. This API was not found in runtime source or built engine scripts; exact origin unresolved, no zero-error claim. Verified controls and scene flow remained functional.",
+  "not_proven": [
+    "Pixel-perfect equality",
+    "Full difficulty suite rerun",
+    "WeChat/device tests",
+    "Publication readiness"
+  ]
+}

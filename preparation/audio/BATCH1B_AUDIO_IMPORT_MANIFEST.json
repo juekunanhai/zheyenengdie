@@ -1,0 +1,107 @@
+{
+  "status": "authorized_for_current_use",
+  "approval_text": "所有的音效先不要用电子音，去到我之前跟你说的，去网站上搜集一些音效，然后使用。",
+  "candidate_manifest": "audio/foley-a3/MANIFEST.json",
+  "entries": [
+    {
+      "id": "claw_grip",
+      "candidate": "audio/foley-a3/encoded/claw_grip.mp3",
+      "import_path": "assets/batch1/audio/claw_grip.mp3",
+      "sha256": "1196d41e94403b39bf8420c74ecde37469ee54a6a8b5394410df6b5bc9abe11c",
+      "meta_sha256": "e3cbd021cf7eb3894e970d6dc53890069f030a460aaf6d4f1ca67f5c0277f23a",
+      "uuid": "08f88886-a7e2-5c48-ae9c-d1765118fb93",
+      "kind": "replacement",
+      "previous_sha256": "853e53ac7af9d7efe6f0708b8e4b22f61c5170f7839ba35af5e51ab17fe0a503"
+    },
+    {
+      "id": "claw_open",
+      "candidate": "audio/foley-a3/encoded/claw_open.mp3",
+      "import_path": "assets/batch1/audio/claw_open.mp3",
+      "sha256": "c4eca31a89d547df305aba4da08e430d2eeac25cc0264241864dd95c7dbf3bbe",
+      "meta_sha256": "d644ffd3605abfaf04a6db948c157426462dbe50a2d45a5480ea0cbf80e4face",
+      "uuid": "e06b303a-6cf1-5b66-9f0c-1677b411a75e",
+      "kind": "replacement",
+      "previous_sha256": "55decb88a476e76aaad14ed5d8594084c97f870f4364a05a6a341c916d737290"
+    },
+    {
+      "id": "rotate_90",
+      "candidate": "audio/foley-a3/encoded/rotate_90.mp3",
+      "import_path": "assets/batch1/audio/rotate_90.mp3",
+      "sha256": "a2494f9a3abe699cfb4a197a401afbd9a4b1cc16700e725bf261c99d450bb7fc",
+      "meta_sha256": "1c338c0ca95680d4970097ee0a9b4d4a9c19733cdb2a312af0f615eb7b1f3168",
+      "uuid": "77f12700-2121-5b38-b8fb-aaf0a7640b45",
+      "kind": "replacement",
+      "previous_sha256": "801db367f5dc91667bc5bb3aec6aa2d3dd72c5c861bf299404d98be5ebf7f86a"
+    },
+    {
+      "id": "next_handoff",
+      "candidate": "audio/foley-a3/encoded/next_handoff.mp3",
+      "import_path": "assets/batch1/audio/next_handoff.mp3",
+      "sha256": "104d856d1b33b47de34b1414f2a501a759cbb789c707076b71d8d238db641ec4",
+      "meta_sha256": "8cf70ac6919c62c896c00ce1bcce43bec52590f36f2e9ad9e27a33ac5af7d547",
+      "uuid": "3555e3a1-c6cf-5675-a998-830c361f0078",
+      "kind": "replacement",
+      "previous_sha256": "7cd6981bd966f1217836abbf24c29d3f0de518b9da5633fbc5a03af16a8c9e44"
+    },
+    {
+      "id": "stable",
+      "candidate": "audio/foley-a3/encoded/stable.mp3",
+      "import_path": "assets/batch1/audio/stable.mp3",
+      "sha256": "1cb7be61901bbe7554a7193bff0500c7622e10a2d2751ee572922476e9aa7929",
+      "meta_sha256": "8e2cc0825d2e83b341d18cf2e18261de93ee4dd0c3fdc3a9125d5964e8d90503",
+      "uuid": "f8c554bc-9f92-5118-98b3-1ad21352aaae",
+      "kind": "replacement",
+      "previous_sha256": "24aea0fa701aeea0a52632dbd46369ab9dab22a842b0b2132e9c728fb6001545"
+    },
+    {
+      "id": "run_end",
+      "candidate": "audio/foley-a3/encoded/run_end.mp3",
+      "import_path": "assets/batch1/audio/run_end.mp3",
+      "sha256": "ad8690e6d85244556733353d0462abf3ba191d320e3aedeadd7af373983a120f",
+      "meta_sha256": "8981469bbebf4be5b9e013996fdffede79632f7e078f76f67db00894b48b74a0",
+      "uuid": "e5c40fea-039d-505e-88b6-12b2b2600536",
+      "kind": "replacement",
+      "previous_sha256": "0aafc01b7163b807ceff8df3aead2d5100c4d04f9455588ece3b70a15279acd8"
+    },
+    {
+      "id": "star_lost",
+      "candidate": "audio/foley-a3/encoded/star_lost.mp3",
+      "import_path": "assets/batch1/audio/star_lost.mp3",
+      "sha256": "1e8860ea65700f56a63149f7c886f3834e1465a4cf0022cbf487c9e84f1b8d64",
+      "meta_sha256": "d19934f352973ec19af1eeca3e190971094c071c321d4d572e58213204d62084",
+      "uuid": "98f8e620-a898-5572-9bdb-93de19f9f70b",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "impact_ceramic_1",
+      "candidate": "audio/foley-a3/encoded/impact_ceramic_1.mp3",
+      "import_path": "assets/batch1/audio/impact_ceramic_1.mp3",
+      "sha256": "e57d174f0ac0cf0e2bf381c2576295da4337388cde49912518284548d3c8e65f",
+      "meta_sha256": "975abab24d14dc74d62eeb3386243f5a4bb93a7f3e680cafeb087e0fac4c8ebb",
+      "uuid": "16942ec4-04ce-5700-bfc3-0989127a6698",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "impact_ceramic_2",
+      "candidate": "audio/foley-a3/encoded/impact_ceramic_2.mp3",
+      "import_path": "assets/batch1/audio/impact_ceramic_2.mp3",
+      "sha256": "85c6d04623c6435be513e65dbb2e98a85a6261ad95fb54191efc92389fb7d294",
+      "meta_sha256": "27a41b3389079c470150957a715ae2297819c77b99f1f968e62cfe0fbddb0f4a",
+      "uuid": "f81cc1ac-143e-5635-8fb8-fa0e15237a4c",
+      "kind": "new",
+      "previous_sha256": null
+    },
+    {
+      "id": "impact_ceramic_3",
+      "candidate": "audio/foley-a3/encoded/impact_ceramic_3.mp3",
+      "import_path": "assets/batch1/audio/impact_ceramic_3.mp3",
+      "sha256": "9048c340b53d43a88346ce075ab535f1588b9d49fb672307247a03d335b91595",
+      "meta_sha256": "baaf565be00a0108c3b56da0293b8e2d2f55083446a393ef1773af40c2d1aec9",
+      "uuid": "6c5f6a81-3aea-5348-a264-48eed8d66851",
+      "kind": "new",
+      "previous_sha256": null
+    }
+  ]
+}

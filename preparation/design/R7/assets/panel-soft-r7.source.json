@@ -1,0 +1,104 @@
+{
+  "generated_with": "built-in image_gen",
+  "input_images": [],
+  "source_path": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-475439d7-aea7-4277-97e5-01cca69ffb27.png",
+  "prompt": "Use case: stylized-concept. Asset type: premium casual mobile stacking game blank UI modal panel sprite. Generate ONE single empty rounded rectangular panel isolated on a genuinely transparent RGBA background, all four edges visible with generous clear margins, straight-on front orthographic view, no perspective distortion. Panel width to height 1:1.1, corners comfortably rounded, subtly molded thickness with a delicate rounded chamfer and precise inner seam. Main panel surface is extremely pale sky-blue almost warm white, clean and quiet with broad nearly uniform center for future labels and icons. The frame is subtly a little cooler blue than center, small physically plausible soft contact shadow below and right. Friendly sophisticated toy-like micro-matte soft plastic material, tactile gentle roughness only detectable in the rounded rim, restrained crisp highlight at upper left, smoothly shaded lower right edge. Warm soft upper-left key light with cool blue gentle ambient fill. High quality 3D illustrated game UI material that complements royal-blue and golden-yellow toy buttons, but this panel itself has no yellow decoration. It should feel solid, calm, softly cushioned and durable, never glass, never chrome, never mirror polished, no high contrast white luminous outline. Center must be blank and spatially uniform, no division into sections. No text, letters, numerals, symbols, header plaque, buttons, hinges, screws, icons, stickers, artifacts, paper, checkerboard, background shape, environment, tabletop or visible ground. No hard perspective extrusion. Transparent outside the panel and its compact very soft alpha shadow, no opaque rectangular background.\nCritical production edge requirement: the complete silhouette and compact shadow must lie comfortably within the central 80 percent of the image, surrounded by at least 10 percent totally transparent empty margin on ALL sides. Extremely clean continuous antialiased cutout edge. No white matting, no wispy or crumbly pale fringe outside the silhouette, no residual flecks or isolated pixels. Short soft contact shadow only along the lower-right within 2 percent of the silhouette width. The panel occupies around 80 percent canvas width and height. Consistent shallow thickness, avoid deep extrusion. Final game-ready cutout quality.",
+  "iterations": 2,
+  "status": "r7_review_candidate_not_runtime_approved",
+  "file": "panel-soft-r7.png",
+  "sha256": "af2d539e5d56050078c9bdd410d5dc71a63b0e2d3ba67a0a95f4b5fe115391c5",
+  "size": [
+    1196,
+    1315
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "extrema": [
+      0,
+      255
+    ],
+    "transparent_pixel_count": 477517,
+    "opaque_pixel_count": 1217,
+    "partial_pixel_count": 1094006,
+    "nonzero_bbox": [
+      0,
+      39,
+      1186,
+      1315
+    ],
+    "body_alpha_typical": 253
+  },
+  "processing": "Byte-for-byte copy of generated output; no source images uploaded, no postprocessing",
+  "quality_risks": [
+    "Fine alpha fringe and isolated very-low-alpha specks visible at native resolution; inspect and clean before engine promotion.",
+    "Generated body pixels are typically alpha 253, close to opaque but not perfectly opaque."
+  ],
+  "derived": {
+    "file": "panel-soft-r7-clean.png",
+    "path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/assets/panel-soft-r7-clean.png",
+    "sha256": "dc78dada1f91f7a82f98ce849725238e1a79a2f1de527f5272db6c2dbef377ac",
+    "size": [
+      1196,
+      1315
+    ],
+    "mode": "RGBA",
+    "method": "Edge cleanup: seed-connected alpha>=32 identifies the complete material; preserve all RGBA there and original soft shadows within a 32px dilation; remove disconnected exterior residue and near-white alpha<=7 fringe. All visible RGB unchanged, original alpha levels retained everywhere else. Zero hidden RGB only at fully transparent pixels to remove white matte residues. No crop, no resize, no opaque backdrop.",
+    "script": "../clean_candidate_edges.py",
+    "statistics": {
+      "changed_pixel_count": 9065,
+      "removed_near_white_low_alpha_pixel_count": 6266,
+      "changed_pixel_fraction": 0.005763826188689802,
+      "changed_alpha_max": 6,
+      "preserved_core_pixel_count": 1038252,
+      "preserved_core_rgba_identical": true,
+      "all_visible_rgb_identical": true,
+      "hidden_rgb_zeroed_pixel_count": 6370,
+      "original_alpha_bbox": [
+        0,
+        39,
+        1186,
+        1315
+      ],
+      "clean_alpha_bbox": [
+        107,
+        110,
+        1131,
+        1217
+      ],
+      "original_alpha_mass": 258353365,
+      "clean_alpha_mass": 258343426,
+      "remaining_partial_alpha_pixel_count": 1084941
+    },
+    "qa_files": [
+      "qa/panel-soft-r7-light-blue-edges.png",
+      "qa/panel-soft-r7-dark-blue-edges.png"
+    ],
+    "status": "edge_cleaned_candidate_pending_visual_direction_approval_and_engine_import",
+    "script_sha256": "90b9bc35313351f0d71ec0c0bedf2909ccfb3795ae52a37530b26c206015de33",
+    "visual_qa": "Viewed light-blue and dark-blue original/cleaned composites. Both have clean silhouettes at intended UI size; original molding/bevel/light/shadow remain. Also viewed cleaned transparent output: large white fringe removed.",
+    "remaining_limits": [
+      "Direction candidate only; pending user approval and engine import validation.",
+      "Original body alpha around253 intentionally retained; no forced opaque body."
+    ],
+    "trimmed": {
+      "file": "panel-soft-r7-trimmed.png",
+      "path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/assets/panel-soft-r7-trimmed.png",
+      "source_file": "panel-soft-r7-clean.png",
+      "source_sha256": "dc78dada1f91f7a82f98ce849725238e1a79a2f1de527f5272db6c2dbef377ac",
+      "crop_box": [
+        107,
+        110,
+        1131,
+        1217
+      ],
+      "size": [
+        1024,
+        1107
+      ],
+      "mode": "RGBA",
+      "sha256": "e97b87ee9796f0f86a058cc210f965f4274dfec4ac8fe7230cbdb1330139c724",
+      "method": "Lossless pixel crop to alpha>0 bounding box from the cleaned sprite. No scaling, no color or alpha adjustment. All visible soft shadow pixels retained.",
+      "all_visible_pixels_retained": true
+    }
+  }
+}

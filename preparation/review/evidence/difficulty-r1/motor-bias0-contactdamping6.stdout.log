@@ -1,0 +1,5 @@
+{"profile":"motor-bias0-contactdamping6","id":"center10","outcome":"survived_and_confirmed","released":10,"entered":10,"placed":10,"time":24.066599999997543,"peak":8.679253558724922,"firstHazard":16.949999999999925}
+{"profile":"motor-bias0-contactdamping6","id":"alternating10","outcome":"ended","released":10,"entered":9,"placed":7,"time":23.200200000002837,"peak":5.9546930008524415,"firstHazard":8.35000000000001}
+{"profile":"motor-bias0-contactdamping6","id":"fridge_plus15","outcome":"ended","released":10,"entered":9,"placed":9,"time":21.166499999999854,"peak":7.21259771856484,"firstHazard":10.799800000000708}
+{"profile":"motor-bias0-contactdamping6","id":"fridge_minus15","outcome":"ended","released":5,"entered":4,"placed":4,"time":11.199900000002183,"peak":3.85176362012452,"firstHazard":8.166699999999253}
+{"status":"completed_diagnostic_not_human_playtest","errors":[]}

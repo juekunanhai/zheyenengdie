@@ -1,0 +1,36 @@
+{
+  "status": "candidate",
+  "visual_rule": "bright blue/yellow toy-plastic; simple symbolic death-reason icons; no coins/levels/challenge/shop",
+  "assets": [
+    "death_reason_collapse.png",
+    "death_reason_drop.png",
+    "death_reason_imbalance.png",
+    "death_reason_slide.png",
+    "death_reason_unknown.png",
+    "result_btn_retry.png",
+    "result_btn_share.png",
+    "result_clutch_save_label.png",
+    "result_collection_new_badge.png",
+    "result_death_reason_header.png",
+    "result_final_height_badge.png",
+    "result_tech_score_label.png"
+  ],
+  "death_reason_symbols": [
+    "collapse",
+    "drop",
+    "slide",
+    "imbalance",
+    "unknown"
+  ],
+  "runtime_note": "All score/count/value text remains dynamic in Cocos. These PNGs are labels/icons/buttons only.",
+  "source_status": "READY_CANDIDATE",
+  "document_revision": "2026-09-12-R2",
+  "engineering_review": "needs_review",
+  "runtime_rules": [
+    "只在星数归零或数量型大面积倒塌确认后进入结束流程；趋势演出不等于失败。",
+    "本局高度为已确认峰值；不把飞行物、瞬时弹起或缩放计入成绩。",
+    "原因可靠时才展示；Batch 1 不伪造技术分、图鉴、排名或分享能力。",
+    "同一结束结果只提交一次，失败锁定后保留短暂倒塌余韵。"
+  ],
+  "review_note": "原始组件用途与状态保留；R6 静态组合已在指定范围检查，真实分数、死因与按钮通路随 Batch 1 验收，不据静态示例宣布动态逻辑通过。"
+}

@@ -1,0 +1,33 @@
+{
+  "version": "fridge-r2-uniform-150-candidate-source",
+  "status": "accepted_for_current_trial_pending_runtime",
+  "new_image_generation_calls": 0,
+  "raster_operations": [],
+  "uniform_scale_from_110": 1.3636363636363635,
+  "uniform_scale_from_125": 1.2,
+  "frozen_110_and_125_files_unchanged": {
+    "SOURCE.json": {
+      "GEOMETRY.json": true,
+      "GEOMETRY_CHECK.json": true,
+      "PHYSICS_CHECK.json": true,
+      "PROCESSING_AUDIT.json": true,
+      "assets/next_fridge.png": true,
+      "assets/object_fridge.png": true
+    },
+    "SOURCE_125.json": {
+      "GEOMETRY_125.json": true,
+      "PHYSICS_CHECK_125.json": true,
+      "fridge-geometry-125.png": true
+    }
+  },
+  "reason": "Alternating absolute offsets -10 and +10 can create 20 relative offset between the fridge and dumbbell. 150-wide mapping provides a real 114.89-wide top and nominal +/-21.715 geometric room for 71.46 inner-foot span. No success-rate claim; test actual dynamics before adoption.",
+  "acknowledged_geometry_limit_exceeded": "Maximum error 1.182775439 world units on the lower-left chamfer. Horizontal support top and foot and their endpoints exactly follow the alpha128 edge. The 1-unit target is not silently relaxed.",
+  "screen_error_note": "Using measured current world-to-CSS factor: about 1.035 px in 375-wide view, 1.150 px in 600-wide view. Not 0.6 px.",
+  "mass_target_native_kg": 7.0234375,
+  "outputs": {
+    "GEOMETRY_150.json": "fd38cb7760b3b075a34c8f1978b3c2822b3714fb2407d14f80e69fec464c6fea",
+    "PHYSICS_CHECK_150.json": "e8bf438d67b60f53fb9d0927a368da994b84916a0604c047e209d5a1ff4f64d4",
+    "fridge-geometry-150.png": "b32c38b91d97e4ca591dec5fcee7c3dc8de255d791b87f789c37ce893f30628c"
+  },
+  "trial_selection": "Root accepted the measured trial candidate: visible horizontal support segments and endpoints are exact. The disclosed 1.1828-world-unit lower-left chamfer error is retained, and the original 1-unit criterion remains false. Balance QA is pending."
+}

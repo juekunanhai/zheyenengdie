@@ -1,0 +1,31 @@
+﻿Asset,Decision,Reason
+item_bar/itembar_empty.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/itembar_highlight_left.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/itembar_highlight_right.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/itembar_highlight_both.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/item_slot_selected.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/item_slot_disabled.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/item_count_badges.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/itembar_toggle.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/item_cooldown_overlay.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/item_slot_plus.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/item_delete_btn.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/itembar_title.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/loading_spinner.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/loading_dots.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/loading_bar.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/retry_button.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/reconnect_button.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/modal_mask_sample.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/toggle_on.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/toggle_off.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/icon_cloud_sync.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/icon_wifi_off.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/icon_refresh.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+system_ui/icon_empty_box.png,PROMOTE_TO_READY,"Modular component, no gameplay-specific example baked in"
+item_bar/itembar_filled_left.png,KEEP_REVIEW,DO_NOT_USE_AS_FINAL: contains example object; compose bar + item icon at runtime
+item_bar/itembar_filled_right.png,KEEP_REVIEW,DO_NOT_USE_AS_FINAL: contains example object; compose bar + item icon at runtime
+item_bar/itembar_filled_dual.png,KEEP_REVIEW,DO_NOT_USE_AS_FINAL: contains example objects; compose at runtime
+item_bar/itembar_stack_x2.png,KEEP_REVIEW,DO_NOT_USE_AS_FINAL: contains example object; use base slot + count badge
+item_bar/item_replace_popup.png,KEEP_REVIEW,REFERENCE: example object baked in; final popup should be 9-slice + dynamic icons/text
+item_bar/item_drag_hint.png,KEEP_REVIEW,REFERENCE: copy/text can be rendered by UI; asset optional

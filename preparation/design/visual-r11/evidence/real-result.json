@@ -1,0 +1,30 @@
+{
+  "scene": "Result",
+  "clouds": [],
+  "heightLabels": [
+    {
+      "name": "Text:本次叠到了",
+      "text": "本次叠到了"
+    },
+    {
+      "name": "HeightDepth",
+      "text": "1.0 m"
+    },
+    {
+      "name": "HeightRim",
+      "text": "1.0 m"
+    },
+    {
+      "name": "HeightHighlight",
+      "text": "1.0 m"
+    },
+    {
+      "name": "Text:88.6 m",
+      "text": "1.0 m"
+    },
+    {
+      "name": "Text:这也能叠！",
+      "text": "这也能叠！"
+    }
+  ]
+}

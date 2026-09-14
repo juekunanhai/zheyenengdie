@@ -1,0 +1,639 @@
+{
+  "capturedAt": "2026-09-14T06:56:32.036Z",
+  "results": [
+    {
+      "id": "music",
+      "name": "音乐切换与停止",
+      "status": "passed",
+      "startedAt": "2026-09-14T06:54:53.567Z",
+      "evidence": {
+        "method": "实际GameMusic与AudioSource STARTED事件。fixture暂停玩法控制器，自行喂镜头高度，真实两源播放、跨区和暂停；最后发Cocos显示/隐藏事件触发现有RunLifecycle。没有物理位置注入。",
+        "city": {
+          "region": "bgm_city",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.21497999999932946,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 0.6989999999999981,
+              "volume": 0.21497999999932946
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 0,
+              "volume": 0
+            }
+          ]
+        },
+        "delayedStart": {
+          "method": "只截留一次新AudioSource.play，等待1.2秒引擎事件，再调用原始play；STARTED完全由真实音源产生。",
+          "requestedAt": "2026-09-14T06:54:54.552Z",
+          "waiting": {
+            "region": "bgm_cloud",
+            "fading": true,
+            "fade": 0,
+            "gain": 0.22,
+            "paused": false,
+            "enabled": true,
+            "issues": [],
+            "sources": [
+              {
+                "clip": "bgm_city",
+                "playing": true,
+                "time": 1.8989999999999974,
+                "volume": 0.22
+              },
+              {
+                "clip": "bgm_cloud",
+                "playing": false,
+                "time": 0.7152000000029801,
+                "volume": 0
+              }
+            ]
+          },
+          "oldTimeWhenRealPlayCalled": 1.8989999999999974,
+          "actualStarted": {
+            "type": "started",
+            "clip": "bgm_cloud",
+            "time": 1.8992000000029776,
+            "at": "2026-09-14T06:54:55.736Z",
+            "state": {
+              "region": "bgm_cloud",
+              "fading": true,
+              "fade": 0,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.8992000000029776,
+                  "volume": 0.22
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 1.8992000000029776,
+                  "volume": 0
+                }
+              ]
+            }
+          }
+        },
+        "cloudMid": {
+          "region": "bgm_cloud",
+          "fading": true,
+          "fade": 0.016600000001490117,
+          "gain": 0.22,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_city",
+              "playing": true,
+              "time": 1.916400000002234,
+              "volume": 0.2163479999996722
+            },
+            {
+              "clip": "bgm_cloud",
+              "playing": true,
+              "time": 1.916400000002234,
+              "volume": 0.0036520000003278257
+            }
+          ]
+        },
+        "space": {
+          "region": "bgm_space",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.22,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_space",
+              "playing": true,
+              "time": 3.9198000000007447,
+              "volume": 0.22
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 1.8992000000029776,
+              "volume": 0
+            }
+          ]
+        },
+        "ducked": {
+          "region": "bgm_space",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.09495999999977651,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_space",
+              "playing": true,
+              "time": 4.336300000000744,
+              "volume": 0.09495999999977651
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 1.8992000000029776,
+              "volume": 0
+            }
+          ]
+        },
+        "paused": {
+          "region": "bgm_space",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.2149599999997765,
+          "paused": true,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_space",
+              "playing": false,
+              "time": 4.736400000002234,
+              "volume": 0.2149599999997765
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 1.8992000000029776,
+              "volume": 0
+            }
+          ]
+        },
+        "muted": {
+          "region": null,
+          "fading": false,
+          "fade": 1,
+          "gain": 0,
+          "paused": false,
+          "enabled": false,
+          "issues": [],
+          "sources": [
+            {
+              "clip": null,
+              "playing": false,
+              "time": 2.915499999999998,
+              "volume": 0.21996999999955297
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 1.8992000000029776,
+              "volume": 0
+            }
+          ]
+        },
+        "hidden": {
+          "region": "bgm_cloud",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.009990000000223518,
+          "paused": true,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_cloud",
+              "playing": false,
+              "time": 0.016199999999255255,
+              "volume": 0.009990000000223518
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 1.8992000000029776,
+              "volume": 0
+            }
+          ]
+        },
+        "shown": {
+          "region": "bgm_cloud",
+          "fading": false,
+          "fade": 1,
+          "gain": 0.012480000000447036,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_cloud",
+              "playing": true,
+              "time": 0.024799999997018318,
+              "volume": 0.012480000000447036
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 1.8992000000029776,
+              "volume": 0
+            }
+          ]
+        },
+        "defeated": {
+          "region": "bgm_cloud",
+          "fading": false,
+          "fade": 1,
+          "gain": 0,
+          "paused": false,
+          "enabled": true,
+          "issues": [],
+          "sources": [
+            {
+              "clip": "bgm_cloud",
+              "playing": true,
+              "time": 0.07489999999850738,
+              "volume": 0
+            },
+            {
+              "clip": null,
+              "playing": false,
+              "time": 1.8992000000029776,
+              "volume": 0
+            }
+          ]
+        },
+        "events": [
+          {
+            "type": "started",
+            "clip": "bgm_city",
+            "time": 0.00010000000148835397,
+            "at": "2026-09-14T06:54:53.837Z",
+            "state": {
+              "region": "bgm_city",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.005009999999776482,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.00010000000148835397,
+                  "volume": 0
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "type": "started",
+            "clip": "bgm_cloud",
+            "time": 1.8992000000029776,
+            "at": "2026-09-14T06:54:55.736Z",
+            "state": {
+              "region": "bgm_cloud",
+              "fading": true,
+              "fade": 0,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.8992000000029776,
+                  "volume": 0.22
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 1.8992000000029776,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "type": "started",
+            "clip": "bgm_space",
+            "time": 2.915499999999998,
+            "at": "2026-09-14T06:54:56.752Z",
+            "state": {
+              "region": "bgm_space",
+              "fading": true,
+              "fade": 0,
+              "gain": 0.22,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_space",
+                  "playing": true,
+                  "time": 2.915499999999998,
+                  "volume": 0
+                },
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 2.915499999999998,
+                  "volume": 0.22
+                }
+              ]
+            }
+          },
+          {
+            "type": "started",
+            "clip": "bgm_space",
+            "time": 4.736400000002234,
+            "at": "2026-09-14T06:54:58.807Z",
+            "state": {
+              "region": "bgm_space",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.2149599999997765,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_space",
+                  "playing": true,
+                  "time": 4.736400000002234,
+                  "volume": 0.2149599999997765
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 1.8992000000029776,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "type": "started",
+            "clip": "bgm_cloud",
+            "time": 0,
+            "at": "2026-09-14T06:54:59.074Z",
+            "state": {
+              "region": "bgm_cloud",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.005009999999776482,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 0,
+                  "volume": 0
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 1.8992000000029776,
+                  "volume": 0
+                }
+              ]
+            }
+          },
+          {
+            "type": "started",
+            "clip": "bgm_cloud",
+            "time": 0.016199999999255255,
+            "at": "2026-09-14T06:54:59.090Z",
+            "state": {
+              "region": "bgm_cloud",
+              "fading": false,
+              "fade": 1,
+              "gain": 0.009990000000223518,
+              "paused": false,
+              "enabled": true,
+              "issues": [],
+              "sources": [
+                {
+                  "clip": "bgm_cloud",
+                  "playing": true,
+                  "time": 0.016199999999255255,
+                  "volume": 0.009990000000223518
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 1.8992000000029776,
+                  "volume": 0
+                }
+              ]
+            }
+          }
+        ],
+        "maxConcurrent": 2,
+        "notProven": [
+          "主观音色、循环接缝和音乐风格",
+          "手机扬声器",
+          "微信系统电话或音频焦点中断"
+        ]
+      },
+      "finishedAt": "2026-09-14T06:54:59.149Z",
+      "engineErrors": []
+    }
+  ],
+  "state": {
+    "scene": "HUD",
+    "engine": "3.8.8",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "game": {
+      "phase": "planning",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "stars": 3,
+      "incidentCount": 0,
+      "incident": null,
+      "recoverySeconds": 0,
+      "failureReason": null,
+      "normalBoundary": {
+        "top": 574.8571428571429,
+        "bottom": -187.42857142857142,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "safety": {
+        "enabled": true,
+        "boundary": {
+          "top": 574.8571428571429,
+          "bottom": -187.42857142857142,
+          "left": -214.28571428571428,
+          "right": 214.28571428571428
+        },
+        "confirmedTop": 0,
+        "assistanceEnabled": true,
+        "maxAssistDamping": 8,
+        "filteredContacts": 0,
+        "pendingSupportReturns": 0,
+        "detachGraceSeconds": 0.12,
+        "fallSeconds": 0.12,
+        "fallSpeed": -0.75,
+        "collapseTrend": false,
+        "remainingStable": true,
+        "bodies": [
+          {
+            "id": 1,
+            "lost": false,
+            "supported": false,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 1.5
+          }
+        ]
+      },
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball",
+        "wood_plank",
+        "wooden_crate",
+        "sofa",
+        "wood_plank",
+        "slipper",
+        "burger",
+        "wood_plank",
+        "whale",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "ice_block",
+        "wood_plank"
+      ],
+      "untimedCalibration": true,
+      "observationSeconds": null,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 0,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144,
+        "zoom": 1,
+        "zoomTarget": 1,
+        "incidentCamera": false
+      },
+      "music": {
+        "region": "bgm_cloud",
+        "fading": false,
+        "fade": 1,
+        "gain": 0,
+        "paused": true,
+        "enabled": true,
+        "issues": [],
+        "sources": [
+          {
+            "clip": "bgm_cloud",
+            "playing": false,
+            "time": 0.0750999999977644,
+            "volume": 0
+          },
+          {
+            "clip": null,
+            "playing": false,
+            "time": 1.8992000000029776,
+            "volume": 0
+          }
+        ]
+      },
+      "audioClips": 33,
+      "currentId": 1,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0,
+            "y": 435.4285583496094,
+            "z": 0
+          },
+          "angle": 0,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 0,
+          "awake": false,
+          "contacts": 0,
+          "contactSeconds": null,
+          "lost": false,
+          "supported": false,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": false,
+          "type": 1,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456389,
+            "right": 50.456389,
+            "bottom": 385.4285583496094,
+            "top": 485.4285583496094
+          }
+        }
+      ]
+    }
+  }
+}

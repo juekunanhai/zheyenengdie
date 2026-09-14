@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>基础视觉精修 R7 · 这也能叠</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <main class="review">
+    <header class="page-header">
+      <p class="eyebrow">这也能叠 / 视觉与动作审阅</p>
+      <h1>基础视觉精修 R7</h1>
+      <p class="intro">把材质、接触和动作连成一套。先审画面，再进入工程。</p>
+      <p class="boundary">独立视觉小样 · 未修改 Cocos · 堆叠与数值为静态示意，不代表物理运行结果</p>
+    </header>
+    <nav class="state-tabs" aria-label="画面状态" id="state-tabs"></nav>
+    <div class="workspace">
+      <section class="preview-column" aria-label="画面预览">
+        <div class="preview-toolbar">
+          <div class="segmented" aria-label="对照模式">
+            <button type="button" data-mode="before" aria-pressed="false">当前工程</button>
+            <button type="button" data-mode="after" aria-pressed="true">R7 精修</button>
+          </div>
+          <label class="size-label">画幅 <select id="viewport-size"><option value="667">375 × 667</option><option value="812">375 × 812</option></select></label>
+        </div>
+        <div class="phone" id="phone"><div class="scene" id="scene" role="group" aria-label="R7 视觉小样"></div></div>
+        <div class="preview-footer"><span id="preview-label">R7 / 首页</span><button type="button" id="motion-toggle" aria-pressed="true">暂停动效</button></div>
+        <p class="caption" id="caption"></p>
+      </section>
+      <aside class="review-notes">
+        <p class="eyebrow">本屏审阅重点</p>
+        <h2 id="note-title"></h2>
+        <p id="note-lead"></p>
+        <ol id="note-items"></ol>
+        <div class="note-rule"></div>
+        <h3>动态也应当有分寸</h3>
+        <p>最多三朵独立云，速度与距离不同；城市和地面保持固定。云只在后景缓慢经过，不占据中央操作区。</p>
+        <p>暂停、页面离开前台、系统减少动态效果时，环境动作停止。按钮可试按；旋转仅展示过渡。</p>
+        <h3>这一轮的边界</h3>
+        <p>保留正式物体、抓手、挂牌与按钮。新增背景、云、竖槽和面板先作为待审核候选，未替换游戏资产。</p>
+        <p>声音按钮仅改变本页示例；不写入游戏设置。背景音乐、震动和道具尚未在这一轮接入。</p>
+        <a class="text-link" href="../../review/play.html?revision=20260913-adhesion-r2">打开当前 Cocos 试玩</a>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

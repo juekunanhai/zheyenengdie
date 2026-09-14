@@ -1,0 +1,327 @@
+{
+  "status": "self_review_candidate_pending_root_engine_validation",
+  "slug": "burger",
+  "sprite": "preparation/design/batch1c/burger-r3/object_burger.png",
+  "next": "preparation/design/batch1c/burger-r3/next_burger.png",
+  "geometry": {
+    "width": 130.0,
+    "height": 103.636364,
+    "circle": false,
+    "spriteWidth": 138.181818,
+    "spriteHeight": 111.363636,
+    "spriteOffset": [
+      0.454545,
+      -0.227273
+    ],
+    "outline": [
+      [
+        -54.545455,
+        42.272727
+      ],
+      [
+        -58.636364,
+        35.0
+      ],
+      [
+        -59.545455,
+        31.363636
+      ],
+      [
+        -61.363636,
+        30.0
+      ],
+      [
+        -63.181818,
+        26.363636
+      ],
+      [
+        -62.727273,
+        22.727273
+      ],
+      [
+        -60.0,
+        19.090909
+      ],
+      [
+        -62.727273,
+        15.909091
+      ],
+      [
+        -64.545455,
+        12.272727
+      ],
+      [
+        -65.0,
+        8.636364
+      ],
+      [
+        -63.181818,
+        5.454545
+      ],
+      [
+        -58.181818,
+        4.090909
+      ],
+      [
+        -62.272727,
+        -2.727273
+      ],
+      [
+        -63.636364,
+        -9.090909
+      ],
+      [
+        -63.181818,
+        -10.454545
+      ],
+      [
+        -61.363636,
+        -11.818182
+      ],
+      [
+        -59.090909,
+        -10.909091
+      ],
+      [
+        -58.181818,
+        -11.363636
+      ],
+      [
+        -57.727273,
+        -15.454545
+      ],
+      [
+        -60.909091,
+        -20.454545
+      ],
+      [
+        -61.363636,
+        -23.181818
+      ],
+      [
+        -60.454545,
+        -25.909091
+      ],
+      [
+        -57.727273,
+        -28.181818
+      ],
+      [
+        -58.181818,
+        -32.727273
+      ],
+      [
+        -56.363636,
+        -40.0
+      ],
+      [
+        -51.363636,
+        -45.909091
+      ],
+      [
+        -40.0,
+        -51.818182
+      ],
+      [
+        40.909091,
+        -51.818182
+      ],
+      [
+        52.727273,
+        -45.454545
+      ],
+      [
+        55.454545,
+        -42.727273
+      ],
+      [
+        58.636364,
+        -36.818182
+      ],
+      [
+        59.545455,
+        -33.181818
+      ],
+      [
+        59.545455,
+        -27.727273
+      ],
+      [
+        62.272727,
+        -24.545455
+      ],
+      [
+        62.272727,
+        -20.454545
+      ],
+      [
+        60.0,
+        -15.454545
+      ],
+      [
+        60.909091,
+        -8.181818
+      ],
+      [
+        63.636364,
+        -7.727273
+      ],
+      [
+        65.0,
+        -5.909091
+      ],
+      [
+        65.0,
+        -1.818182
+      ],
+      [
+        64.090909,
+        0.909091
+      ],
+      [
+        59.090909,
+        8.636364
+      ],
+      [
+        60.0,
+        13.636364
+      ],
+      [
+        63.636364,
+        17.272727
+      ],
+      [
+        64.090909,
+        21.818182
+      ],
+      [
+        61.818182,
+        26.363636
+      ],
+      [
+        58.636364,
+        29.545455
+      ],
+      [
+        57.272727,
+        34.545455
+      ],
+      [
+        54.545455,
+        40.0
+      ],
+      [
+        47.727273,
+        47.727273
+      ],
+      [
+        43.181818,
+        50.454545
+      ],
+      [
+        40.454545,
+        50.454545
+      ],
+      [
+        39.545455,
+        51.363636
+      ],
+      [
+        36.818182,
+        51.818182
+      ],
+      [
+        -39.545455,
+        51.818182
+      ],
+      [
+        -40.454545,
+        50.909091
+      ],
+      [
+        -45.454545,
+        50.454545
+      ],
+      [
+        -51.363636,
+        45.909091
+      ]
+    ],
+    "density_for_total_mass_3_2": 0.271579711642
+  },
+  "geometry_audit": {
+    "alpha_threshold": 128,
+    "epsilon_world": 0.5,
+    "vertex_count": 58,
+    "max_contour_to_polygon_distance_world": 0.476202,
+    "area_world_squared": 12065.702479,
+    "scale_world_per_pixel": 0.454545455,
+    "native_fixture_count": "not_yet_checked",
+    "method": "actual_alpha_contour_simplified_no_hull"
+  },
+  "flat_segments": {
+    "top": [
+      [
+        36.818182,
+        -39.545455
+      ]
+    ],
+    "bottom": [
+      [
+        -40.0,
+        40.909091
+      ]
+    ]
+  },
+  "composition": {
+    "old_bun_bounds": [
+      22,
+      176,
+      285,
+      253
+    ],
+    "generated_bun_bounds": [
+      89,
+      806,
+      1284,
+      1085
+    ],
+    "new_bun_scale_uniform": 0.2200836820083682,
+    "new_bun_offset_old_coordinates": [
+      22,
+      176
+    ],
+    "unchanged_above_original_row": 220,
+    "all_upper_pixels_equal": true,
+    "bread_only_transition_rows": [
+      220,
+      228
+    ],
+    "method": "preserve_all_upper_bread_and_ingredient_pixels; replace_orange_lower_bread_strip_with_premultiplied_alpha_transition"
+  },
+  "extraction": {
+    "method": "boundary_connected_neutral_background_only",
+    "neutral_channel_range_max": 35,
+    "foreground_component": "largest",
+    "removed_pixels": 348136,
+    "input_mode": "RGB"
+  },
+  "preserved_runtime_parameters": {
+    "mass": 3.2,
+    "friction": 0.8,
+    "restitution": 0.01,
+    "contactAngularDamping": 6,
+    "contactImpactSpeed": 2.4,
+    "adhesion": null
+  },
+  "hashes": {
+    "reference-burger-r2.png": "0643bc448408a4211ca45e5c755d325deff336ff9e0aecaf0962d473b565d664",
+    "generated-original.png": "680ccdebe024e5d6403389a972bce979173fe161691d0f2735da36e7a613accc",
+    "object_burger.png": "5c072d91000b01eb1e16af9a01bbd3cafa8922e1a94fcedd4abb109c97937d89",
+    "comparison.png": "e6c13be97f4c45ef4a08d7df367d89993618c0f7bec11a3f13c6312636aa1236",
+    "next_burger.png": "8332ef5048e449555016b1e0a481bd9be35a5e0e350919871f86d86695f764a2",
+    "composite-original-coordinates.png": "98dfe004049af0d92dffb0dd6be0f63f92f86702b0c1fe886a260f148ffd598a",
+    "geometry-overlay.png": "836d6ad7951272f97208b2a6da8e461cded1470587ce9f54014ccf924de0bb1d"
+  },
+  "script_sha256": "a9b245509609f1b6aad876b30a21508fed6b4271dd9f3ab7e7ed3ed32d500ea2"
+}

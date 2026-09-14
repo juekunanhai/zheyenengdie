@@ -1,0 +1,43 @@
+{
+  "scope": "Read-only Result UI review; no runtime/source asset/configuration changes",
+  "user_difficulty_feedback": "难度ok。最后看一下结束画面，与设计的ui不符。",
+  "reference": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/02_ui_design_system.png",
+  "reference_region": [
+    393,
+    103,
+    716,
+    725
+  ],
+  "current_capture": "01-current-user-result.png",
+  "current_region": [
+    22,
+    126,
+    390,
+    781
+  ],
+  "comparison": "03-design-current-comparison.png",
+  "comparison_note": "Reference and current viewport have different aspect ratios; compare at equal visible width without stretching. Historical reference used for review only, never as runtime sprite.",
+  "rejected_capture": {
+    "file": "02-current-result-375x667.png",
+    "reason": "Browser screenshot clip returned a scaled whole page instead of the requested game rectangle. Not accepted as isolated Result evidence."
+  },
+  "findings": [
+    "Wrong background hierarchy: bright gameplay background instead of dimmed Home behind a card",
+    "Large blank card after hiding unimplemented rows without recomposing layout",
+    "Title and score lose sticker, thick extrusion and highlighted type treatment",
+    "Missing decorative character and light confetti accents",
+    "Retry outside card and no close-to-Home control"
+  ],
+  "preserve": [
+    "User-accepted difficulty",
+    "Actual confirmed height",
+    "Working retry",
+    "No fake record, tech score, rank, share, collection or death cause"
+  ],
+  "not_verified": [
+    "Revised runtime visuals: not implemented",
+    "Long-screen Result layout",
+    "Screen-reader semantics, keyboard and real-device accessibility",
+    "Replay behavior not retested in this visual-only audit"
+  ]
+}

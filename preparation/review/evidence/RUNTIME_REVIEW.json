@@ -1,0 +1,182 @@
+{
+  "revision": "2026-09-12-P3",
+  "method": "CUA browser controls on actual Cocos build; qaInfo reads public engine transforms and Camera.worldToScreen; observations recorded from UI diagnostics. Each size cold-started.",
+  "checks": [
+    {
+      "iframe_css_size": "375x667",
+      "scene": "Home",
+      "render_pixel_size": [
+        750,
+        1334
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "375x667",
+      "scene": "HUD",
+      "render_pixel_size": [
+        750,
+        1334
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "375x667",
+      "scene": "Settings",
+      "render_pixel_size": [
+        750,
+        1334
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "375x667",
+      "scene": "Result",
+      "render_pixel_size": [
+        750,
+        1334
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "375x812",
+      "scene": "Home",
+      "render_pixel_size": [
+        750,
+        1624
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "375x812",
+      "scene": "HUD",
+      "render_pixel_size": [
+        750,
+        1624
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "375x812",
+      "scene": "Settings",
+      "render_pixel_size": [
+        750,
+        1624
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "375x812",
+      "scene": "Result",
+      "render_pixel_size": [
+        750,
+        1624
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "600x800",
+      "scene": "Home",
+      "render_pixel_size": [
+        1200,
+        1600
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "600x800",
+      "scene": "HUD",
+      "render_pixel_size": [
+        1200,
+        1600
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "600x800",
+      "scene": "Settings",
+      "render_pixel_size": [
+        1200,
+        1600
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    },
+    {
+      "iframe_css_size": "600x800",
+      "scene": "Result",
+      "render_pixel_size": [
+        1200,
+        1600
+      ],
+      "loaded": true,
+      "background_covers": true,
+      "hud_overflow": []
+    }
+  ],
+  "boundary_check_scope": "Opaque background coverage for all scenes; HUD scene hud_ / itembar_ / Text: nodes only. Empty overflow lists on other scenes do not assert every label bound was checked.",
+  "hud_zoom": {
+    "world_scale": [
+      0.75,
+      0.75,
+      1
+    ],
+    "hud_bounds_unchanged": true,
+    "tested_iframe_css_size": "600x800"
+  },
+  "visual_review": [
+    "Home and Settings/Result panels and controls inspected in actual engine",
+    "opaque fullscreen background has no baked frame band",
+    "button gloss antialiased and whole-sprite scaled",
+    "short/long layouts visually inspected; three claw states alignment not signed off"
+  ],
+  "open_findings": [
+    {
+      "id": "P3-RESIZE",
+      "scope": "QA desktop Web container live resizing",
+      "observed": "Changing iframe CSS size while engine keeps running produced stale visibleSize/canvas size and SafeArea anchor drift; HUD clipped and city baseline moved. Initial-size reload tests pass.",
+      "resolution": "Not fixed. QA selector now explicitly cold-starts each size; live resize must be investigated when implementing platform lifecycle/layout; do not call resize acceptance passed."
+    },
+    {
+      "id": "P3-BROWSER",
+      "scope": "in-app browser injected script",
+      "observed": "MutationObserver.observe invalid Node; stack belongs to Electron-wrapped injected script, not a built game source. No MutationObserver in project/built entry source.",
+      "resolution": "Recorded as tool-side error; do not call all browser console errors zero."
+    },
+    {
+      "id": "P3-EDITOR",
+      "scope": "editor process lifecycle",
+      "observed": "Closing duplicate no-project launch instance caused editor user child-process EPIPE at 19:05:46; subsequent build tasks succeed.",
+      "resolution": "Recorded separately from asset/build errors."
+    }
+  ],
+  "not_proven": [
+    "WeChat capsule and real safe area",
+    "native apps or physical device",
+    "claw three-state mount calibration",
+    "colliders/physics/input/timers/accident/camera animations",
+    "audio subjective quality or in-game playback",
+    "runtime resize recovery"
+  ]
+}

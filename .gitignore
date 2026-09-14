@@ -1,0 +1,40 @@
+
+#///////////////////////////
+# Cocos Creator Project
+#///////////////////////////
+
+/library/
+/temp/
+/local/
+/build/
+/profiles/
+/native/engine/android/**/*/assets
+
+#//////////////////////////
+# NPM
+#//////////////////////////
+node_modules/
+
+#//////////////////////////
+# VSCode
+#//////////////////////////
+.vscode/
+
+#//////////////////////////
+# WebStorm
+#//////////////////////////
+.idea/
+
+# Local OS / Python-generated state; source art and audio remain tracked.
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+/.venv/
+
+# Project documentation is required even when a developer's global ignore omits it.
+!README.md
+!/preparation/docs/
+!/preparation/docs/**
+!/source-inputs/docs/
+!/source-inputs/docs/**

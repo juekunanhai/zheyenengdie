@@ -1,0 +1,9 @@
+{"profile":"final-board","id":"dual_edge_260_off","outcome":"survived_and_confirmed","released":3,"entered":3,"placed":5,"time":8.250499999999999,"peak":3.9812660130887845}
+{"profile":"final-board","id":"dual_edge_260_on","outcome":"survived_and_confirmed","released":3,"entered":3,"placed":5,"time":6.9670000000000085,"peak":3.9828344761791867,"firstHazard":4.533400000002241}
+{"profile":"final-board","id":"dual_edge_225_off","outcome":"ended","released":2,"entered":1,"placed":3,"time":5.191100000001495,"peak":1.2970150271784393,"firstHazard":3.8916999999992568}
+{"profile":"final-board","id":"dual_edge_225_on","outcome":"ended","released":2,"entered":1,"placed":3,"time":5.183300000000753,"peak":1.2970160891381548,"firstHazard":3.8833000000007503}
+{"profile":"final-board","id":"single_bias_260_off","outcome":"ended","released":3,"entered":2,"placed":2,"time":7.616699999999261,"peak":1.2971449146653822,"firstHazard":6.65009999999777}
+{"profile":"final-board","id":"single_bias_260_on","outcome":"survived_and_confirmed","released":3,"entered":3,"placed":4,"time":7.033300000000756,"peak":3.983585851868002,"firstHazard":4.599800000000756}
+{"profile":"final-board","id":"single_severe_260_off","outcome":"ended","released":2,"entered":1,"placed":2,"time":4.249300000000751,"peak":1.2971449146653822,"firstHazard":2.783300000000747}
+{"profile":"final-board","id":"single_severe_260_on","outcome":"ended","released":2,"entered":1,"placed":2,"time":4.6165000000000065,"peak":1.29712524272527,"firstHazard":2.7666999999992585}
+{"status":"completed_diagnostic_not_human_playtest","errors":[]}

@@ -1,0 +1,2334 @@
+{
+  "schema": "batch1c-ten-fixed-recipes-posthoc-analysis",
+  "generatedAt": "2026-09-14T07:58:12.789309+00:00",
+  "source": {
+    "path": "TEN_R7.json",
+    "sha256": "3ac07a25559d2520b8a1cc0f0b8902c9f1309904e23260e3193c97a08d8b2fc8",
+    "capturedAt": "2026-09-14T07:54:58.215Z"
+  },
+  "method": {
+    "noRerun": true,
+    "rawEvidenceUnmodified": true,
+    "deduplication": "前n次实际释放的before.currentId去重，再在下次释放前快照按这些ID统计。",
+    "checkpoints": "使用drops[].before.releases恰等于8/14的快照，即准备第9/15次释放之前；不是第8/14件刚松手或刚碰撞瞬间。",
+    "effectivePlaced": "placed && !lost：此前稳定确认且当前仍有效。",
+    "effectiveSupported": "supported && !lost：当前仍连通有效支撑，不等同稳定确认。",
+    "aliveUnconfirmed": "!placed && !lost：仍有效但尚未稳定确认。",
+    "gateCorrection": "运行断言maxPlaced>=8只证明对局结束/观察上限前累计至少8件曾稳定确认；前8指标另由原始快照事后推导。",
+    "timing": "十局动作在Director.AFTER_UPDATE回调内、当帧PhysicsSystem2D.postUpdate之前release；normalCheck等待AFTER_PHYSICS后在Promise续体release，最早下一步。两种时序均合法，但不能当作同一物理轨迹。",
+    "noWinRate": "五个指定配方各重复两次的自动快速释放统计；不是真人十局体验或玩家胜率。"
+  },
+  "summary": {
+    "runs": 10,
+    "allTechnicalFlowsPassed": 10,
+    "first8Reached": 10,
+    "first8AllConfirmedAndEffective": 10,
+    "first8ThreeStarsNoIncident": 10,
+    "first14ReachedAlive": 8,
+    "first14AllConfirmedAndEffective": 2,
+    "first14NotReached": 2,
+    "first14ReachedWithStarLoss": 4,
+    "failureReasons": {
+      "stars_exhausted": 3,
+      "large_collapse": 7
+    },
+    "confirmedPeakMetres": {
+      "min": 7.212505266461269,
+      "max": 15.10612471445218,
+      "mean": 11.597054774381737,
+      "median": 11.537822444269718
+    }
+  },
+  "runs": [
+    {
+      "id": "ten-run-1-1",
+      "recipe": [
+        0
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.212514143010147,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 7,
+          "effectiveSupported": 10,
+          "lost": 4,
+          "aliveUnconfirmed": 3,
+          "confirmedThenLost": 1
+        },
+        "allFirstNConfirmedAndEffective": false,
+        "stars": 2,
+        "lostStars": 1,
+        "incidentCount": 1,
+        "peakMetres": 7.212514143010147,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 24,
+      "cumulativeEverConfirmedAtEnd": 16,
+      "starsAtFailure": 0,
+      "reason": "stars_exhausted",
+      "confirmedPeakMetres": 13.581705787267293,
+      "engineSeconds": 66.10360000000028,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-1-2",
+      "recipe": [
+        0
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.212525308621822,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 14,
+          "effectivePlaced": 14,
+          "effectiveSupported": 14,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 11.477186279296875,
+        "globalHistoricalPlaced": 14,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 20,
+      "cumulativeEverConfirmedAtEnd": 17,
+      "starsAtFailure": 2,
+      "reason": "large_collapse",
+      "confirmedPeakMetres": 14.442342426848741,
+      "engineSeconds": 38.74560000000093,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-2-1",
+      "recipe": [
+        4
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.212417220368774,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 14,
+          "lost": 0,
+          "aliveUnconfirmed": 6,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": false,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.212417220368774,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 23,
+      "cumulativeEverConfirmedAtEnd": 18,
+      "starsAtFailure": 0,
+      "reason": "stars_exhausted",
+      "confirmedPeakMetres": 15.10612471445218,
+      "engineSeconds": 49.7997999999999,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-2-2",
+      "recipe": [
+        4
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.212505266461269,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": false,
+        "releaseCount": 14,
+        "source": null,
+        "reason": "未观察到准备下一次释放的快照；不补作通过或零损失。"
+      },
+      "releaseCountAtEnd": 11,
+      "cumulativeEverConfirmedAtEnd": 8,
+      "starsAtFailure": 2,
+      "reason": "large_collapse",
+      "confirmedPeakMetres": 7.212505266461269,
+      "engineSeconds": 23.767199999999093,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-3-1",
+      "recipe": [
+        -4
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.212455204698262,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 7,
+          "effectiveSupported": 10,
+          "lost": 4,
+          "aliveUnconfirmed": 3,
+          "confirmedThenLost": 1
+        },
+        "allFirstNConfirmedAndEffective": false,
+        "stars": 2,
+        "lostStars": 1,
+        "incidentCount": 1,
+        "peakMetres": 7.212455204698262,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 18,
+      "cumulativeEverConfirmedAtEnd": 12,
+      "starsAtFailure": 1,
+      "reason": "large_collapse",
+      "confirmedPeakMetres": 9.935761226842745,
+      "engineSeconds": 44.53720000000226,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-3-2",
+      "recipe": [
+        -4
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.2125322283814395,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 7,
+          "effectiveSupported": 10,
+          "lost": 4,
+          "aliveUnconfirmed": 3,
+          "confirmedThenLost": 1
+        },
+        "allFirstNConfirmedAndEffective": false,
+        "stars": 2,
+        "lostStars": 1,
+        "incidentCount": 1,
+        "peakMetres": 7.2125322283814395,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 24,
+      "cumulativeEverConfirmedAtEnd": 14,
+      "starsAtFailure": 0,
+      "reason": "stars_exhausted",
+      "confirmedPeakMetres": 12.260419745073584,
+      "engineSeconds": 62.22879999999914,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-4-1",
+      "recipe": [
+        -4,
+        4
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.207144682213445,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 13,
+          "effectivePlaced": 13,
+          "effectiveSupported": 14,
+          "lost": 0,
+          "aliveUnconfirmed": 1,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": false,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 10.815225143465852,
+        "globalHistoricalPlaced": 13,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": false,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 16,
+      "cumulativeEverConfirmedAtEnd": 13,
+      "starsAtFailure": 2,
+      "reason": "large_collapse",
+      "confirmedPeakMetres": 10.815225143465852,
+      "engineSeconds": 31.949999999999736,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-4-2",
+      "recipe": [
+        -4,
+        4
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.207115489450677,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 14,
+          "effectivePlaced": 14,
+          "effectiveSupported": 14,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 11.49812744140625,
+        "globalHistoricalPlaced": 14,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 20,
+      "cumulativeEverConfirmedAtEnd": 17,
+      "starsAtFailure": 2,
+      "reason": "large_collapse",
+      "confirmedPeakMetres": 14.468492929276414,
+      "engineSeconds": 39.166600000001075,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-5-1",
+      "recipe": [
+        -8,
+        8
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.206505123505889,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": false,
+        "releaseCount": 14,
+        "source": null,
+        "reason": "未观察到准备下一次释放的快照；不补作通过或零损失。"
+      },
+      "releaseCountAtEnd": 13,
+      "cumulativeEverConfirmedAtEnd": 11,
+      "starsAtFailure": 2,
+      "reason": "large_collapse",
+      "confirmedPeakMetres": 8.755444881607163,
+      "engineSeconds": 27.520599999997614,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    },
+    {
+      "id": "ten-run-5-2",
+      "recipe": [
+        -8,
+        8
+      ],
+      "status": "passed",
+      "first8": {
+        "reached": true,
+        "releaseCount": 8,
+        "source": "evidence.drops[8].before",
+        "samplePoint": "第9次释放之前；已有8次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observedUniqueIds": 8,
+        "counts": {
+          "confirmedEver": 8,
+          "effectivePlaced": 8,
+          "effectiveSupported": 8,
+          "lost": 0,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 0
+        },
+        "allFirstNConfirmedAndEffective": true,
+        "stars": 3,
+        "lostStars": 0,
+        "incidentCount": 0,
+        "peakMetres": 7.2076810710857036,
+        "globalHistoricalPlaced": 8,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "first14": {
+        "reached": true,
+        "releaseCount": 14,
+        "source": "evidence.drops[14].before",
+        "samplePoint": "第15次释放之前；已有14次释放，当前phase=planning。",
+        "firstReleasedIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "observedUniqueIds": 14,
+        "counts": {
+          "confirmedEver": 11,
+          "effectivePlaced": 9,
+          "effectiveSupported": 9,
+          "lost": 5,
+          "aliveUnconfirmed": 0,
+          "confirmedThenLost": 2
+        },
+        "allFirstNConfirmedAndEffective": false,
+        "stars": 2,
+        "lostStars": 1,
+        "incidentCount": 1,
+        "peakMetres": 8.7541921340853,
+        "globalHistoricalPlaced": 11,
+        "objects": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 2,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 3,
+            "kind": "fridge",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 4,
+            "kind": "wooden_crate",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 5,
+            "kind": "sofa",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 6,
+            "kind": "whale",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 7,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 8,
+            "kind": "burger",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 9,
+            "kind": "ice_block",
+            "placed": true,
+            "supported": true,
+            "lost": false
+          },
+          {
+            "id": 10,
+            "kind": "dumbbell",
+            "placed": true,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 11,
+            "kind": "wood_plank",
+            "placed": true,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 12,
+            "kind": "toilet",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 13,
+            "kind": "slipper",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          },
+          {
+            "id": 14,
+            "kind": "basketball",
+            "placed": false,
+            "supported": false,
+            "lost": true
+          }
+        ],
+        "continuousStabilityAtSnapshot": "未从单帧重建连续0.65秒稳定；placed表示此前通过引擎确认，effective另排除失效体。"
+      },
+      "releaseCountAtEnd": 18,
+      "cumulativeEverConfirmedAtEnd": 13,
+      "starsAtFailure": 1,
+      "reason": "large_collapse",
+      "confirmedPeakMetres": 9.39252562252213,
+      "engineSeconds": 40.39549999999956,
+      "technicalChecks": {
+        "testPassed": true,
+        "engineErrorsEmpty": true,
+        "naturalFailure": true,
+        "resultVerified": true,
+        "realHeightGlyphs": true,
+        "runEndStartedOnce": true,
+        "runEndEndedOnce": true,
+        "oldMusicSourcesDestroyed": true,
+        "newMusicActuallyStarted": true,
+        "newMusicPlaying": true,
+        "retryReset": true
+      },
+      "allTechnicalChecksPassed": true
+    }
+  ]
+}

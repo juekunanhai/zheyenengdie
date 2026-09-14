@@ -1,0 +1,279 @@
+{
+  "scene": "Home",
+  "cloudsMoved": true,
+  "otherNodesStable": true,
+  "before": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    },
+    "homePresentation": true,
+    "nodes": [
+      {
+        "name": "R9Cloud0",
+        "position": {
+          "x": -256.98240223001505,
+          "y": 405.88863544285584
+        },
+        "size": {
+          "width": 340,
+          "height": 130.82096933728982
+        }
+      },
+      {
+        "name": "R9Cloud1",
+        "position": {
+          "x": 276.03318233627226,
+          "y": 214.14966526257052
+        },
+        "size": {
+          "width": 290,
+          "height": 111.58259149357072
+        }
+      },
+      {
+        "name": "R9Cloud2",
+        "position": {
+          "x": -338.7865777736848,
+          "y": -30.748094768679287
+        },
+        "size": {
+          "width": 185,
+          "height": 71.18199802176063
+        }
+      },
+      {
+        "name": "R9WoodBoard",
+        "position": {
+          "x": -240,
+          "y": -138.76
+        },
+        "size": {
+          "width": 226,
+          "height": 310
+        }
+      },
+      {
+        "name": "R9Hero",
+        "position": {
+          "x": 45,
+          "y": -306.8818359375
+        },
+        "size": {
+          "width": 499,
+          "height": 748.5
+        }
+      },
+      {
+        "name": "R9SlipperBack",
+        "position": {
+          "x": -87.212890625,
+          "y": 148.94463465073528
+        },
+        "size": {
+          "width": 144,
+          "height": 108.84705882352941
+        }
+      },
+      {
+        "name": "R9SlipperFront",
+        "position": {
+          "x": -17.212890625,
+          "y": 115.04757582720588
+        },
+        "size": {
+          "width": 194,
+          "height": 146.64117647058825
+        }
+      },
+      {
+        "name": "logo_main",
+        "position": {
+          "x": 0,
+          "y": 493.2522935779816
+        },
+        "size": {
+          "width": 500,
+          "height": 294.4954128440367
+        }
+      },
+      {
+        "name": "Text:把乱七八糟的东西叠上天",
+        "position": {
+          "x": 0,
+          "y": 324.0045871559633
+        },
+        "size": {
+          "width": 528,
+          "height": 32
+        }
+      },
+      {
+        "name": "btn_settings_icon",
+        "position": {
+          "x": 315.5,
+          "y": 753.5
+        },
+        "size": {
+          "width": 67,
+          "height": 67
+        }
+      },
+      {
+        "name": "btn_start",
+        "position": {
+          "x": 0,
+          "y": -707.2828282828283
+        },
+        "size": {
+          "width": 556,
+          "height": 196.56565656565655
+        }
+      }
+    ]
+  },
+  "after": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    },
+    "homePresentation": true,
+    "nodes": [
+      {
+        "name": "R9Cloud0",
+        "position": {
+          "x": -351.39401667996214,
+          "y": 410.6092161653532
+        },
+        "size": {
+          "width": 340,
+          "height": 130.82096933728982
+        }
+      },
+      {
+        "name": "R9Cloud1",
+        "position": {
+          "x": 360.9497783281688,
+          "y": 209.29728834874783
+        },
+        "size": {
+          "width": 290,
+          "height": 111.58259149357072
+        }
+      },
+      {
+        "name": "R9Cloud2",
+        "position": {
+          "x": -337.39237342199453,
+          "y": -30.824142278771568
+        },
+        "size": {
+          "width": 185,
+          "height": 71.18199802176063
+        }
+      },
+      {
+        "name": "R9WoodBoard",
+        "position": {
+          "x": -240,
+          "y": -138.76
+        },
+        "size": {
+          "width": 226,
+          "height": 310
+        }
+      },
+      {
+        "name": "R9Hero",
+        "position": {
+          "x": 45,
+          "y": -306.8818359375
+        },
+        "size": {
+          "width": 499,
+          "height": 748.5
+        }
+      },
+      {
+        "name": "R9SlipperBack",
+        "position": {
+          "x": -87.212890625,
+          "y": 148.94463465073528
+        },
+        "size": {
+          "width": 144,
+          "height": 108.84705882352941
+        }
+      },
+      {
+        "name": "R9SlipperFront",
+        "position": {
+          "x": -17.212890625,
+          "y": 115.04757582720588
+        },
+        "size": {
+          "width": 194,
+          "height": 146.64117647058825
+        }
+      },
+      {
+        "name": "logo_main",
+        "position": {
+          "x": 0,
+          "y": 493.2522935779816
+        },
+        "size": {
+          "width": 500,
+          "height": 294.4954128440367
+        }
+      },
+      {
+        "name": "Text:把乱七八糟的东西叠上天",
+        "position": {
+          "x": 0,
+          "y": 324.0045871559633
+        },
+        "size": {
+          "width": 528,
+          "height": 32
+        }
+      },
+      {
+        "name": "btn_settings_icon",
+        "position": {
+          "x": 315.5,
+          "y": 753.5
+        },
+        "size": {
+          "width": 67,
+          "height": 67
+        }
+      },
+      {
+        "name": "btn_start",
+        "position": {
+          "x": 0,
+          "y": -707.2828282828283
+        },
+        "size": {
+          "width": 556,
+          "height": 196.56565656565655
+        }
+      }
+    ]
+  }
+}

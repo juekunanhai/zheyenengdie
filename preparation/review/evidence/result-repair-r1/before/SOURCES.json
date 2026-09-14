@@ -1,0 +1,12 @@
+[
+  {
+    "source": "assets/batch0/scenes/Result.scene",
+    "sha256": "1fe06c897a8c03685f0d00557d27f07a77374fed2f1a47cbbf480eedb05f123d",
+    "copy": "preparation/review/evidence/result-repair-r1/before/assets__batch0__scenes__Result.scene"
+  },
+  {
+    "source": "assets/batch1/scene-actions.ts",
+    "sha256": "e8401ec94afe6f9d66d4ab87b34d5f906e49a13d3402e3c75a85e158762143e8",
+    "copy": "preparation/review/evidence/result-repair-r1/before/assets__batch1__scene-actions.ts.txt"
+  }
+]

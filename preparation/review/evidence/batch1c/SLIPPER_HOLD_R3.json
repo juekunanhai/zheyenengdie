@@ -1,0 +1,2516 @@
+{
+  "capturedAt": "2026-09-14T07:01:32.398Z",
+  "results": [
+    {
+      "id": "slipper",
+      "name": "拖鞋真实落地与承托",
+      "status": "passed",
+      "startedAt": "2026-09-14T07:00:48.603Z",
+      "evidence": {
+        "method": "独立世界；原始参数物体从台面上方60单位自然下落，稳定后标记fixture placed；纸箱从其最高点上方35单位自然下落，真实稳定后同样标记，并继续自然模拟两秒。无速度/姿态/隐藏支撑注入。",
+        "kind": "slipper",
+        "grounded": {
+          "id": 1,
+          "kind": "slipper",
+          "angle": 6.23301804691572,
+          "bounds": {
+            "left": -86.87853713332464,
+            "right": 77.8486451911772,
+            "bottom": 0.5668183485020819,
+            "top": 92.25687960879728
+          },
+          "mass": 2.799999952316284,
+          "bullet": true,
+          "fixtures": 9,
+          "supported": true,
+          "lost": false,
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0
+        },
+        "loaded": {
+          "lower": {
+            "id": 1,
+            "kind": "slipper",
+            "angle": 0.004810065257080605,
+            "bounds": {
+              "left": -82.36337599641946,
+              "right": 82.63658418128229,
+              "bottom": 0.6293877650862569,
+              "top": 92.71165716289562
+            },
+            "mass": 2.799999952316284,
+            "bullet": true,
+            "fixtures": 9,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0.000002563315774750663,
+              "y": 3.005098676567286e-7
+            },
+            "angularVelocity": -4.0314492366633203e-7
+          },
+          "upper": {
+            "id": 2,
+            "kind": "cardboard_box",
+            "angle": -15.270291493437943,
+            "bounds": {
+              "left": -37.69544225713573,
+              "right": 82.51934622143915,
+              "bottom": 79.81474420031688,
+              "top": 198.66817865658862
+            },
+            "mass": 4.389647960662842,
+            "bullet": true,
+            "fixtures": 1,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0.00002282410059706308,
+              "y": -0.000005857133601239184
+            },
+            "angularVelocity": -0.000011055993127229158
+          },
+          "touchesLower": true
+        },
+        "retained": {
+          "lower": {
+            "id": 1,
+            "kind": "slipper",
+            "angle": 0.004810346652203271,
+            "bounds": {
+              "left": -82.36333264083184,
+              "right": 82.63662753450623,
+              "bottom": 0.6293877892094315,
+              "top": 92.71165719386774
+            },
+            "mass": 2.799999952316284,
+            "bullet": true,
+            "fixtures": 9,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0
+          },
+          "upper": {
+            "id": 2,
+            "kind": "cardboard_box",
+            "angle": -15.270525427417015,
+            "bounds": {
+              "left": -37.695291415631544,
+              "right": 82.51973183191754,
+              "bottom": 79.81454941756108,
+              "top": 198.66821239829787
+            },
+            "mass": 4.389647960662842,
+            "bullet": true,
+            "fixtures": 1,
+            "supported": true,
+            "lost": false,
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0
+          },
+          "touchesLower": true
+        },
+        "holdSeconds": 2,
+        "contacts": [
+          {
+            "seconds": 0.334,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.907931804656982,
+                "y": 0.07999992370605469
+              },
+              {
+                "x": 24.07223892211914,
+                "y": 0.07999992370605469
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.55,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.946167945861816,
+                "y": 0.24533843994140625
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.767,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.926207065582275,
+                "y": 0.2499256134033203
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 0.983,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.9280829429626465,
+                "y": 0.27893829345703125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.184,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.927430152893066,
+                "y": 0.2834053039550781
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.4,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.927430152893066,
+                "y": 0.2834053039550781
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.867,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.927430152893066,
+                "y": 0.2834053039550781
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.867,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -3.6761579513549805,
+                "y": 92.33688354492188
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 1.867,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": -3.6761579513549805,
+                "y": 92.33688354492188
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.067,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.029278837144374847,
+              "y": 0.9995712637901306
+            },
+            "points": [
+              {
+                "x": -3.871969699859619,
+                "y": 92.41131591796875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.067,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.029278837144374847,
+              "y": 0.9995712637901306
+            },
+            "points": [
+              {
+                "x": -3.871969699859619,
+                "y": 92.41131591796875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.067,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.943658351898193,
+                "y": 0.2516307830810547
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.267,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.0956171378493309,
+              "y": 0.9954181909561157
+            },
+            "points": [
+              {
+                "x": -3.855905532836914,
+                "y": 92.41456604003906
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.267,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.0956171378493309,
+              "y": 0.9954181909561157
+            },
+            "points": [
+              {
+                "x": -3.855905532836914,
+                "y": 92.41456604003906
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.267,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.943445682525635,
+                "y": 0.2514190673828125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.483,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.17078113555908203,
+              "y": 0.9853090047836304
+            },
+            "points": [
+              {
+                "x": 18.36264419555664,
+                "y": 88.99161529541016
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.483,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.17078113555908203,
+              "y": 0.9853090047836304
+            },
+            "points": [
+              {
+                "x": 18.36264419555664,
+                "y": 88.99161529541016
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.483,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.946329593658447,
+                "y": 0.25179100036621094
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.683,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.20105887949466705,
+              "y": 0.9795791506767273
+            },
+            "points": [
+              {
+                "x": 21.33533477783203,
+                "y": 88.50248718261719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.683,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.20105887949466705,
+              "y": 0.9795791506767273
+            },
+            "points": [
+              {
+                "x": 21.33533477783203,
+                "y": 88.50248718261719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.683,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.954408645629883,
+                "y": 0.25279998779296875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.884,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.23515844345092773,
+              "y": 0.9719570279121399
+            },
+            "points": [
+              {
+                "x": 24.40964698791504,
+                "y": 87.88106536865234
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.884,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.23515844345092773,
+              "y": 0.9719570279121399
+            },
+            "points": [
+              {
+                "x": 24.40964698791504,
+                "y": 87.88106536865234
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 2.884,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 4.962917327880859,
+                "y": 0.25389862060546875
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.084,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.28024154901504517,
+              "y": 0.9599295258522034
+            },
+            "points": [
+              {
+                "x": 27.63686752319336,
+                "y": 87.28860473632812
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.084,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.28024154901504517,
+              "y": 0.9599295258522034
+            },
+            "points": [
+              {
+                "x": 27.63686752319336,
+                "y": 87.28860473632812
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.084,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 24.231332778930664,
+                "y": 0.2904338836669922
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.284,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.3241244852542877,
+              "y": 0.9460144639015198
+            },
+            "points": [
+              {
+                "x": 27.723899841308594,
+                "y": 87.33199310302734
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.284,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.3241244852542877,
+              "y": 0.9460144639015198
+            },
+            "points": [
+              {
+                "x": 27.723899841308594,
+                "y": 87.33199310302734
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.284,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 24.231220245361328,
+                "y": 0.29050445556640625
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.5,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.31720030307769775,
+              "y": 0.9483585953712463
+            },
+            "points": [
+              {
+                "x": 27.347827911376953,
+                "y": 87.33430480957031
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.5,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.31720030307769775,
+              "y": 0.9483585953712463
+            },
+            "points": [
+              {
+                "x": 27.347827911376953,
+                "y": 87.33430480957031
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.5,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 5.065582752227783,
+                "y": 0.31467437744140625
+              },
+              {
+                "x": 24.229829788208008,
+                "y": 0.29058837890625
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.717,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.2845868170261383,
+              "y": 0.9586502909660339
+            },
+            "points": [
+              {
+                "x": 27.323646545410156,
+                "y": 87.31810760498047
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.717,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.2845868170261383,
+              "y": 0.9586502909660339
+            },
+            "points": [
+              {
+                "x": 27.323646545410156,
+                "y": 87.31810760498047
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.717,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 5.057016849517822,
+                "y": 0.31467437744140625
+              },
+              {
+                "x": 24.22126007080078,
+                "y": 0.29058837890625
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.933,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.26253437995910645,
+              "y": 0.9649226665496826
+            },
+            "points": [
+              {
+                "x": 27.078744888305664,
+                "y": 87.39320373535156
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.933,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.26253437995910645,
+              "y": 0.9649226665496826
+            },
+            "points": [
+              {
+                "x": 27.078744888305664,
+                "y": 87.39320373535156
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 3.933,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 5.038557529449463,
+                "y": 0.3146934509277344
+              },
+              {
+                "x": 24.202863693237305,
+                "y": 0.31549644470214844
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.15,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.26328620314598083,
+              "y": 0.9647177457809448
+            },
+            "points": [
+              {
+                "x": 27.085203170776367,
+                "y": 87.38569641113281
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.15,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.26328620314598083,
+              "y": 0.9647177457809448
+            },
+            "points": [
+              {
+                "x": 27.085203170776367,
+                "y": 87.38569641113281
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.15,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 5.046828746795654,
+                "y": 0.3146934509277344
+              },
+              {
+                "x": 24.211135864257812,
+                "y": 0.31549835205078125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.35,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.26336202025413513,
+              "y": 0.9646970629692078
+            },
+            "points": [
+              {
+                "x": 27.085845947265625,
+                "y": 87.38493347167969
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.35,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.26336202025413513,
+              "y": 0.9646970629692078
+            },
+            "points": [
+              {
+                "x": 27.085845947265625,
+                "y": 87.38493347167969
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.35,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 5.0476555824279785,
+                "y": 0.3146934509277344
+              },
+              {
+                "x": 24.21196174621582,
+                "y": 0.31549835205078125
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.551,
+            "self": "Body:1:slipper",
+            "other": "Body:2:cardboard_box",
+            "normal": {
+              "x": 0.263374924659729,
+              "y": 0.964693546295166
+            },
+            "points": [
+              {
+                "x": 27.085952758789062,
+                "y": 87.38481140136719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.551,
+            "self": "Body:2:cardboard_box",
+            "other": "Body:1:slipper",
+            "normal": {
+              "x": 0.263374924659729,
+              "y": 0.964693546295166
+            },
+            "points": [
+              {
+                "x": 27.085952758789062,
+                "y": 87.38481140136719
+              }
+            ],
+            "disabled": false
+          },
+          {
+            "seconds": 4.551,
+            "self": "Body:1:slipper",
+            "other": "GroundSupport",
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "points": [
+              {
+                "x": 5.047796726226807,
+                "y": 0.3146934509277344
+              },
+              {
+                "x": 24.21210479736328,
+                "y": 0.31549835205078125
+              }
+            ],
+            "disabled": false
+          }
+        ],
+        "trajectory": [
+          {
+            "seconds": 0,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0,
+              "bounds": {
+                "left": -82.5,
+                "right": 82.5,
+                "bottom": 60.00000066015625,
+                "top": 152.08215266015625
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.201,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0,
+              "bounds": {
+                "left": -82.5,
+                "right": 82.5,
+                "bottom": 34.82717961523438,
+                "top": 126.90933161523438
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": -6.731500148773193
+              },
+              "angularVelocity": 0
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.417,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.5878269974256305,
+              "bounds": {
+                "left": -82.84355047515473,
+                "right": 82.14297039201267,
+                "bottom": 0.4886889408427635,
+                "top": 92.58038112548053
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.1943482756614685,
+                "y": -0.02249491587281227
+              },
+              "angularVelocity": 0.14324335753917694
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.617,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 3.4880136845854315,
+              "bounds": {
+                "left": -84.85392108289558,
+                "right": 80.02793835741798,
+                "bottom": 0.49311301673665753,
+                "top": 92.49000073019002
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.41963818669319153,
+                "y": -0.06891700625419617
+              },
+              "angularVelocity": 0.31135421991348267
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 0.833,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 7.117876737853688,
+              "bounds": {
+                "left": -87.4888808912606,
+                "right": 77.10782989987528,
+                "bottom": 0.49357712637862505,
+                "top": 92.38453389725825
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.12710259854793549,
+                "y": 0.04583611711859703
+              },
+              "angularVelocity": 0.09488791972398758
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.033,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 6.062358940313781,
+              "bounds": {
+                "left": -86.75873522771982,
+                "right": 77.98909198483163,
+                "bottom": 0.557899609169155,
+                "top": 92.27318035404906
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.03560255095362663,
+                "y": -0.007663637399673462
+              },
+              "angularVelocity": 0.02664540708065033
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.251,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 6.23301804691572,
+              "bounds": {
+                "left": -86.87853713332464,
+                "right": 77.8486451911772,
+                "bottom": 0.5668183485020819,
+                "top": 92.25687960879728
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 2.623450612304623e-8,
+                "y": 5.854026596807671e-9
+              },
+              "angularVelocity": -1.9647764304409066e-8
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.467,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 6.23301804691572,
+              "bounds": {
+                "left": -86.87853713332464,
+                "right": 77.8486451911772,
+                "bottom": 0.5668183485020819,
+                "top": 92.25687960879728
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 4.2104929320885276e-8,
+                "y": 8.781043447925185e-9
+              },
+              "angularVelocity": -3.153103733666285e-8
+            },
+            "upper": null,
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.617,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 6.23301804691572,
+              "bounds": {
+                "left": -86.87853713332464,
+                "right": 77.8486451911772,
+                "bottom": 0.5668183485020819,
+                "top": 92.25687960879728
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 0,
+              "bounds": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 127.25688171386719,
+                "top": 227.2568817138672
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 1.834,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 6.23301804691572,
+              "bounds": {
+                "left": -86.87853713332464,
+                "right": 77.8486451911772,
+                "bottom": 0.5668183485020819,
+                "top": 92.25687960879728
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": 0,
+              "bounds": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 98.21942138671875,
+                "top": 198.21942138671875
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": false,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": -7.246294975280762
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": false
+          },
+          {
+            "seconds": 2.05,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 6.369897599203714,
+              "bounds": {
+                "left": -86.95715247431518,
+                "right": 77.75241505077003,
+                "bottom": 0.49042933635736574,
+                "top": 92.17284251112167
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.000009025224244396668,
+                "y": -1.3362898698687786e-7
+              },
+              "angularVelocity": -2.6816792342287954e-7
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -1.482432475030913,
+              "bounds": {
+                "left": -50.57010537155069,
+                "right": 52.5548505618806,
+                "bottom": 91.32840340143215,
+                "top": 193.4936588489448
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.2969299554824829,
+                "y": -0.02893890254199505
+              },
+              "angularVelocity": -0.1914621740579605
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.267,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 6.369915955337109,
+              "bounds": {
+                "left": -86.95739005805505,
+                "right": 77.75217505674728,
+                "bottom": 0.48966911968225446,
+                "top": 92.17208757139812
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.00004433037975104526,
+                "y": -7.479060570858564e-8
+              },
+              "angularVelocity": -1.5008879472588887e-7
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -5.486840797546159,
+              "bounds": {
+                "left": -50.14157326854216,
+                "right": 58.609882602618384,
+                "bottom": 87.77523150912813,
+                "top": 195.44353693031087
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.623588502407074,
+                "y": -0.10266924649477005
+              },
+              "angularVelocity": -0.40558961033821106
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.468,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 5.637078065416585,
+              "bounds": {
+                "left": -86.44056272932299,
+                "right": 78.35235166629565,
+                "bottom": 0.5035840169538943,
+                "top": 92.27817088651587
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.23587870597839355,
+                "y": 0.049817439168691635
+              },
+              "angularVelocity": -0.17649802565574646
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -9.833238932959768,
+              "bounds": {
+                "left": -48.21315659833368,
+                "right": 66.04354581058931,
+                "bottom": 84.190163019545,
+                "top": 197.23572619630656
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.763799250125885,
+                "y": -0.01816445216536522
+              },
+              "angularVelocity": -0.1680305302143097
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.683,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 3.7129518776346386,
+              "bounds": {
+                "left": -85.01215711808507,
+                "right": 79.87126098141383,
+                "bottom": 0.5056049026119211,
+                "top": 92.48528470948177
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.21707125008106232,
+                "y": 0.038265861570835114
+              },
+              "angularVelocity": -0.16135789453983307
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -11.598886375864025,
+              "bounds": {
+                "left": -44.74706431800428,
+                "right": 71.56000015679697,
+                "bottom": 82.80835993015431,
+                "top": 197.85424145186047
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.7078109979629517,
+                "y": -0.04362811520695686
+              },
+              "angularVelocity": -0.1606494039297104
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 2.884,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 1.7102546087354515,
+              "bounds": {
+                "left": -83.55000038117363,
+                "right": 81.36254751333233,
+                "bottom": 0.5077971622179689,
+                "top": 92.59078057169364
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.26099908351898193,
+                "y": 0.036848604679107666
+              },
+              "angularVelocity": -0.19294922053813934
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -13.600962524435559,
+              "bounds": {
+                "left": -41.039313718750186,
+                "right": 77.45895066873717,
+                "bottom": 81.1737192623706,
+                "top": 198.35550725223808
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.84526526927948,
+                "y": -0.08171870559453964
+              },
+              "angularVelocity": -0.1928727924823761
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.084,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": -0.3492452880659116,
+              "bounds": {
+                "left": -82.10529258734954,
+                "right": 82.89449129456884,
+                "bottom": 0.5808744586827714,
+                "top": 92.8151696175319
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.14036937057971954,
+                "y": 0.07614563405513763
+              },
+              "angularVelocity": -0.1029859185218811
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -16.274621292016832,
+              "bounds": {
+                "left": -36.825802191586355,
+                "right": 84.37263836855416,
+                "bottom": 79.20438397587618,
+                "top": 199.01502479568518
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.7084671854972839,
+                "y": 0.015374043956398964
+              },
+              "angularVelocity": -0.2602124810218811
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.284,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": -0.3881476977007771,
+              "bounds": {
+                "left": -82.07891600281646,
+                "right": 82.92046433088757,
+                "bottom": 0.5810088202759474,
+                "top": 92.83203917360082
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.015209866687655449,
+                "y": 0.008198784664273262
+              },
+              "angularVelocity": -0.01113381702452898
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -18.912541094766016,
+              "bounds": {
+                "left": -35.64137090193912,
+                "right": 87.96257574431819,
+                "bottom": 77.9919973618814,
+                "top": 200.14073480557326
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.14832039177417755,
+                "y": 0.015010933391749859
+              },
+              "angularVelocity": -0.06837718933820724
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.5,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": -0.1440237433968425,
+              "bounds": {
+                "left": -82.24572686761579,
+                "right": 82.75492680028212,
+                "bottom": 0.5811765989723341,
+                "top": 92.72648510960362
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.104740671813488,
+                "y": -0.05689512565732002
+              },
+              "angularVelocity": 0.07686769962310791
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -18.49369511184062,
+              "bounds": {
+                "left": -36.16707794335088,
+                "right": 87.07229516809457,
+                "bottom": 78.1761763269844,
+                "top": 199.9708410672487
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.314164936542511,
+                "y": 0.009335634298622608
+              },
+              "angularVelocity": 0.06436904519796371
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.717,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": -0.14402208921040288,
+              "bounds": {
+                "left": -82.25429404376389,
+                "right": 82.74635962261351,
+                "bottom": 0.5811772906162247,
+                "top": 92.72648507920778
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.000038299102016026154,
+                "y": -1.637498314721597e-8
+              },
+              "angularVelocity": 1.1449487402614977e-7
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -16.534151405004398,
+              "bounds": {
+                "left": -36.97407242019447,
+                "right": 84.47251224566354,
+                "bottom": 79.1051825257068,
+                "top": 199.15720258141687
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": -0.28030458092689514,
+                "y": -0.013380293734371662
+              },
+              "angularVelocity": 0.1701992154121399
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 3.917,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004806812329462587,
+              "bounds": {
+                "left": -82.3725895395264,
+                "right": 82.6273706654991,
+                "bottom": 0.6293874862224982,
+                "top": 92.71165680485794
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.0015792325139045715,
+                "y": -4.709283984993817e-8
+              },
+              "angularVelocity": 3.2139860195457004e-7
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.220495999293965,
+              "bounds": {
+                "left": -37.72798577348097,
+                "right": 82.43706928437464,
+                "bottom": 79.85901975830328,
+                "top": 198.66404293291814
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.009983466006815434,
+                "y": -0.002528521465137601
+              },
+              "angularVelocity": -0.004561800044029951
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.118,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004807948331994831,
+              "bounds": {
+                "left": -82.36475283600008,
+                "right": 82.63520735948337,
+                "bottom": 0.6293875836085832,
+                "top": 92.71165692989355
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.00020930588652845472,
+                "y": 0.0000016615031199762598
+              },
+              "angularVelocity": 1.9508297555148602e-7
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.262798775918435,
+              "bounds": {
+                "left": -37.7003155118984,
+                "right": 82.50699530975842,
+                "bottom": 79.82139977379383,
+                "top": 198.6675554516209
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.0013482611393555999,
+                "y": -0.0003540359321050346
+              },
+              "angularVelocity": -0.0006223809323273599
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.333,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.00481012570492177,
+              "bounds": {
+                "left": -82.36355775263962,
+                "right": 82.63640242455435,
+                "bottom": 0.6293877702682735,
+                "top": 92.7116571695489
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.000027684136512107216,
+                "y": 0.0000018359828573011328
+              },
+              "angularVelocity": 1.929329300764948e-7
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.269295993366415,
+              "bounds": {
+                "left": -37.69608606189638,
+                "right": 82.51770951944648,
+                "bottom": 79.81561502699806,
+                "top": 198.66808299530027
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.00017863375251181424,
+                "y": -0.00004555564737529494
+              },
+              "angularVelocity": -0.00008253466512542218
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.551,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.00481036207682481,
+              "bounds": {
+                "left": -82.36335263611203,
+                "right": 82.63660753909649,
+                "bottom": 0.6293877905317373,
+                "top": 92.71165719556546
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.000024239181584562175,
+                "y": -4.101202932815795e-9
+              },
+              "angularVelocity": 2.7989457862531708e-8
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270412729295712,
+              "bounds": {
+                "left": -37.695361507885735,
+                "right": 82.51954846471061,
+                "bottom": 79.8146444677586,
+                "top": 198.6681971864935
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0.00015852885553613305,
+                "y": -0.000042517414840403944
+              },
+              "angularVelocity": -0.00007389295205939561
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.755,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 4.971,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 5.188,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 5.388,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 5.604,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 5.804,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 6.021,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 6.237,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 6.454,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          },
+          {
+            "seconds": 6.538,
+            "lower": {
+              "id": 1,
+              "kind": "slipper",
+              "angle": 0.004810346652203271,
+              "bounds": {
+                "left": -82.36333264083184,
+                "right": 82.63662753450623,
+                "bottom": 0.6293877892094315,
+                "top": 92.71165719386774
+              },
+              "mass": 2.799999952316284,
+              "bullet": true,
+              "fixtures": 9,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "upper": {
+              "id": 2,
+              "kind": "cardboard_box",
+              "angle": -15.270525427417015,
+              "bounds": {
+                "left": -37.695291415631544,
+                "right": 82.51973183191754,
+                "bottom": 79.81454941756108,
+                "top": 198.66821239829787
+              },
+              "mass": 4.389647960662842,
+              "bullet": true,
+              "fixtures": 1,
+              "supported": true,
+              "lost": false,
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0
+            },
+            "touchesLower": true
+          }
+        ]
+      },
+      "finishedAt": "2026-09-14T07:00:55.435Z",
+      "engineErrors": []
+    }
+  ],
+  "state": {
+    "scene": "HUD",
+    "engine": "3.8.8",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "game": {
+      "phase": "planning",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "stars": 3,
+      "incidentCount": 0,
+      "incident": null,
+      "recoverySeconds": 0,
+      "failureReason": null,
+      "normalBoundary": {
+        "top": 574.8571428571429,
+        "bottom": -187.42857142857142,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "safety": {
+        "enabled": true,
+        "boundary": {
+          "left": -400,
+          "right": 400,
+          "bottom": -200,
+          "top": 1200
+        },
+        "confirmedTop": 0,
+        "assistanceEnabled": true,
+        "maxAssistDamping": 8,
+        "filteredContacts": 0,
+        "pendingSupportReturns": 0,
+        "detachGraceSeconds": 0.12,
+        "fallSeconds": 0.12,
+        "fallSpeed": -0.75,
+        "collapseTrend": false,
+        "remainingStable": true,
+        "bodies": [
+          {
+            "id": 1,
+            "lost": false,
+            "supported": true,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 6
+          },
+          {
+            "id": 2,
+            "lost": false,
+            "supported": true,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 6
+          }
+        ]
+      },
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball",
+        "wood_plank",
+        "wooden_crate",
+        "sofa",
+        "wood_plank",
+        "slipper",
+        "burger",
+        "wood_plank",
+        "whale",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "ice_block",
+        "wood_plank"
+      ],
+      "untimedCalibration": true,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 198.6682119672176,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144,
+        "zoom": 1,
+        "zoomTarget": 1,
+        "incidentCamera": false
+      },
+      "music": {
+        "region": "bgm_city",
+        "fading": false,
+        "fade": 1,
+        "gain": 0.07494000000022354,
+        "paused": true,
+        "enabled": true,
+        "issues": [],
+        "sources": [
+          {
+            "clip": "bgm_city",
+            "playing": false,
+            "time": 0.20800000000000018,
+            "volume": 0.07494000000022354
+          },
+          {
+            "clip": null,
+            "playing": false,
+            "time": 0,
+            "volume": 0
+          }
+        ]
+      },
+      "audioClips": 33,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "slipper",
+          "position": {
+            "x": 0.13601955771446228,
+            "y": 46.67005157470703,
+            "z": 0
+          },
+          "angle": 0.004810346652203271,
+          "size": [
+            165,
+            92.082153
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0.00008395638724323362
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 2.799999952316284,
+          "awake": false,
+          "contacts": 2,
+          "contactSeconds": 0,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -82.36333264083032,
+            "right": 82.63662753450765,
+            "bottom": 0.6293877892103978,
+            "top": 92.71165719386897
+          }
+        },
+        {
+          "id": 2,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 23.34712791442871,
+            "y": 140.53689575195312,
+            "z": 0
+          },
+          "angle": -15.270525427417015,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 0.964693009853363,
+            "y": -0.2633768320083618
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 4.389647960662842,
+          "awake": false,
+          "contacts": 1,
+          "contactSeconds": 0,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -37.69529081776528,
+            "right": 82.51973136196665,
+            "bottom": 79.8145500258955,
+            "top": 198.6682119672176
+          }
+        }
+      ]
+    }
+  }
+}

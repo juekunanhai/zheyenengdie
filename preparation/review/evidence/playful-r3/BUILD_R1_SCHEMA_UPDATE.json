@@ -1,0 +1,12 @@
+{
+  "status": "same_actual_build_metadata_completed",
+  "new_build_recorded": false,
+  "original_report": "BUILD_R1.json",
+  "original_report_sha256": "23b64b2021af20dc3cc6a352559aed25d9138c28fcb52e0c8767c97e078b4e7b",
+  "completed_report_sha256": "faa20be62b562b206648d8e71753db5abdd92a9b7fd28002ad44b11b3b162383",
+  "added_fields": [
+    "code_and_settings_sha256",
+    "scene_source_sha256"
+  ],
+  "actual_exit_source": "Reused captured Creator 36 and TypeScript 0 from unchanged frozen R1; input/output/log hashes all equal original report."
+}

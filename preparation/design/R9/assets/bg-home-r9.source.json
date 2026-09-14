@@ -1,0 +1,34 @@
+{
+  "generated_with": "built-in image_gen",
+  "input_images": [],
+  "prompt": "Create a portrait 9:16 FULL BLEED BACKGROUND for a funny mobile game home poster. A cheerful contemporary illustrated CITY made of colorful apartment-block shapes, sunny blue sky, warm cream ground. The city is unmistakably a MODERN CITY: cubic apartment buildings, FLAT horizontal rooftops, only large RECTANGULAR windows, little rooftop water tanks, playful uneven stacking of building masses. Use sunny YELLOW, CORAL ORANGE, and SKY BLUE blocks alternating at the edges. Rich soft hand-painted 2.5D game illustration, gently softened corners and appealing chunky graphic shapes, playful slightly wonky proportions, expressive silhouettes, sophisticated shaded volume and clean color. Think modern urban blocks translated into charming casual game illustration. Green trees are small graphic rounded clusters among buildings. A few roof shapes sit at imaginative tilts, but architecture is simple readable rectangles. Do not make window grids mechanically repetitive. Not photorealistic; avoid architectural precision, polished product-render finish, detailed surface texture. Composition: upper quarter mostly clear sky for a large logo; the central 40% of width from 35% to 85% down stays open and quiet for a separate hero illustration. Buildings are arranged in asymmetric layered groups along LEFT and RIGHT edges, softer pale blue distant apartment blocks near bottom center, framing the upward central view. Ground occupies bottom 15%, simple broad warm light pavement shapes with short gentle shadows; no road running into distance, no strong vanishing tile lines, no circular plinth or platform. Overall feeling is SUNNY, BOUNCY, QUIRKY, ENTERTAINING and COLORFUL, not solemn or realistic. Warm light from upper left, readable graphic lighting. Sky has no baked-in large clouds because cloud sprites will be animated separately. This is environment only. No people, no characters, no objects stacked in center, no signs, no writing, no letters, no logos, no UI, no buttons. Final polished background image. Every roof must be flat and every window rectangular. Modern urban city scenery only.",
+  "source_path": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-71748a88-4a0f-45a7-9992-c67d1cb015bc.png",
+  "status": "r9_home_background_candidate_pending_composite_review",
+  "iterations": 2,
+  "rejected_iteration": {
+    "source_path": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-5f96104a-ec75-4f5e-8f1b-5f95e034036e.png",
+    "reason": "Arched windows and terracotta roofs drifted toward European resort street, inconsistent with original modern city home reference."
+  },
+  "scope": "Home poster environment only. Does not change gameplay backgrounds or runtime assets.",
+  "file": "bg-home-r9.png",
+  "sha256": "bfce81f246bc9080178b24773c06b3cf5f770e311dceb7d7df05cf15e87396fc",
+  "size": [
+    941,
+    1672
+  ],
+  "mode": "RGB",
+  "processing": "Byte-identical local copy. No images uploaded; prompt-only generation.",
+  "adversarial_review": {
+    "passes": [
+      "Modern yellow/coral/blue city blocks with flat rooftops instead of European arches or roofs.",
+      "Softer painted game-illustration volume and medium buildings instead of the prior tall office-building rendering.",
+      "Top sky and center remain clear for logo and independent hero, without baked-in heroes/signs/UI.",
+      "Ground is limited to lower portion and lacks strong converging tile lines; separate clouds can be animated."
+    ],
+    "remaining_risks": [
+      "Architecture remains orderly compared with original home poster; assembled expressive blue-bin/toilet/duck/slipper tower and side sign must carry the specific original personality.",
+      "Ground is closer to 18 percent than requested 15 percent; check final crop and button/hero placement at actual viewport.",
+      "No claim of whole-home restoration until composited with the original-reference hero and UI."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "claw_track",
+    "candidate": "art/rail-components/claw_track.png",
+    "import_path": "assets/batch0/art/claw_track.png",
+    "sha256": "80396893945df4b952bfb2803fc48f62a0fcc6446504aacbbab73ed74ffbab05",
+    "purpose": "Formal-source rail split for independent slider and cable alignment",
+    "source": "assets/batch0/art/claw_rail.png",
+    "source_sha256": "be76d1d7f77f918add2dcda28ab1da44a204e1f84da60511c8b96d206256f71c",
+    "crop": [
+      352,
+      8,
+      592,
+      88
+    ]
+  },
+  {
+    "id": "claw_slider",
+    "candidate": "art/rail-components/claw_slider.png",
+    "import_path": "assets/batch0/art/claw_slider.png",
+    "sha256": "dd5fdde29a22d159a773afd93abd593a1461dd61b1a91a71bcb0cb1e528c7ee2",
+    "purpose": "Formal-source rail split for independent slider and cable alignment",
+    "source": "assets/batch0/art/claw_rail.png",
+    "source_sha256": "be76d1d7f77f918add2dcda28ab1da44a204e1f84da60511c8b96d206256f71c",
+    "crop": [
+      183,
+      0,
+      349,
+      166
+    ]
+  },
+  {
+    "id": "claw_cap_left",
+    "candidate": "art/rail-components/claw_cap_left.png",
+    "import_path": "assets/batch0/art/claw_cap_left.png",
+    "sha256": "c9c1e902131cecbbfd908fa864f7f86aab819785fd04f29f48b8f4268a1acdbf",
+    "purpose": "Formal-source rail split for independent slider and cable alignment",
+    "source": "assets/batch0/art/claw_rail.png",
+    "source_sha256": "be76d1d7f77f918add2dcda28ab1da44a204e1f84da60511c8b96d206256f71c",
+    "crop": [
+      0,
+      0,
+      44,
+      88
+    ]
+  },
+  {
+    "id": "claw_cap_right",
+    "candidate": "art/rail-components/claw_cap_right.png",
+    "import_path": "assets/batch0/art/claw_cap_right.png",
+    "sha256": "58b1a72192885676dc7534ffe00fab7a1549dcf819b9694f06ef9528ecb4664e",
+    "purpose": "Formal-source rail split for independent slider and cable alignment",
+    "source": "assets/batch0/art/claw_rail.png",
+    "source_sha256": "be76d1d7f77f918add2dcda28ab1da44a204e1f84da60511c8b96d206256f71c",
+    "crop": [
+      777,
+      0,
+      821,
+      88
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "key": "r10alpha",
+  "name": "logo-alpha-attempt-not-adopted",
+  "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-017bdbde-9669-4f46-a8a6-1f4c8fa3858a.png",
+  "prompt": "Edit ONLY the BACKGROUND of this game logo image. Remove the entire gray-and-white checkerboard backdrop, including its shadow patterns, to produce REAL TRANSPARENT ALPHA pixels. The checkerboard is printed into the source and must be removed, NOT retained or redrawn. Preserve the logo artwork EXACTLY: same four correctly written Chinese title characters 这也能叠, same yellow/orange and blue colors, same dark-blue contour, same red slide slipper, same golden crown, same cream curved slogan ribbon reading 把乱七八糟的东西叠上天 . Keep all visible artwork geometry, proportions, relative position, colors, shading and text unchanged. Do not redesign any component. Remove the gray checked texture also from holes/gaps outside the artwork. Transparent outside edge with clean anti-aliasing, no gray/white matte, no checkerboard drawn in the final image. Finished production PNG with an ACTUAL alpha channel.",
+  "refs": [
+    "preparation/design/R10/assets/logo-home-r10.png"
+  ],
+  "reason": "内置工具仍导出RGB棋盘格。按既有本地清理授权，另存真正Alpha派生，保留字标主体。"
+}

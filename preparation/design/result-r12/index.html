@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · 结算完整视觉母版 R12</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f6;color:#17354f;font:15px/1.65 system-ui}main{max-width:1120px;margin:auto;padding:24px}h1{font-size:26px;margin:0 0 8px}h2{font-size:20px;margin:0 0 12px}p{margin:8px 0}a{color:#176fa9}.note{background:#fff3d7;border-left:4px solid #dcac43;padding:12px 16px;margin:16px 0}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:18px 0}select{font:inherit;padding:6px 10px;border:1px solid #bbcbd8;border-radius:6px;background:white;color:inherit}.grid{display:grid;grid-template-columns:minmax(0,660px) 1fr;gap:24px;align-items:start}.card{padding:18px;background:white;border:1px solid #dae3eb;border-radius:12px}.image-area{overflow:auto;background:#dce7f0;padding:14px;text-align:center}.master{width:596px;max-width:none;height:auto;display:block;margin:auto}ul{padding-left:20px;margin:10px 0}li{margin:6px 0}.small{font-size:13px;color:#536e82}.context{display:block;width:323px;max-width:100%;height:auto;margin:16px auto}.links{display:flex;gap:15px;flex-wrap:wrap}.compare{display:flex;gap:20px;justify-content:center;align-items:start;flex-wrap:wrap;margin-top:20px}.compare figure{margin:0;flex:1;min-width:240px;max-width:430px}.compare img{width:100%;height:auto}figcaption{margin-bottom:8px;font-weight:600}@media(max-width:920px){.grid{grid-template-columns:1fr}}@media(max-width:600px){main{padding:14px}.master{width:100%!important}.card{padding:12px}}
+</style>
+<main>
+<h1>结算完整视觉母版 · R12</h1>
+<p>以原 UI 第一排第二屏为唯一目标，保留完整战绩卡的内容、比例与细节。</p>
+<div class="note"><strong>这是原图母版，暂未接入游戏。</strong>本页原样呈现设计参考，不是重新生成的插画，也不是新的引擎截图。示例 42.7m、2680、92% 仅用于画稿。</div>
+<div class="controls"><label>母版缩放 <select id="zoom"><option value="1">100% · 原始像素</option><option value="1.5">150%</option><option value="2" selected>200% · 放大检查</option></select></label><label><input id="contextToggle" type="checkbox"> 查看原图整屏上下文</label><a href="README.md">修正要求</a><a href="REFERENCE_MASTER.json">原图坐标与来源</a></div>
+<div class="grid">
+<section class="card"><h2>完整结算卡</h2><div class="image-area"><img id="master" class="master" src="reference-only/result-card.png" alt="原设计完整结算卡，包含本次叠到了42.7m、新纪录、倾斜鸭子方块塔、太棒了气泡、本次技术分2680、超过92%的玩家、分享、再来一局及关闭"></div><p class="small">原图裁切用于审阅，未改动像素。放大不会增加原图没有的细节；这些图片不作为正式 Sprite 导入。</p></section>
+<aside class="card"><h2>本轮锁定</h2><ul><li>面板高宽比约 1.10，保留原卡高度与云光质感。</li><li>轻薄短白贴纸，恢复原字形、字号与倾斜。</li><li>黄色立体数字，较小的 m 紧贴数字。</li><li>鸭子与表情方块错落歪塔，恢复右侧轮廓。</li><li>小白气泡写“太棒了！”。</li><li>新纪录红贴纸、白色技术分与百分比区域、分享完整保留。</li><li>宽扁黄按钮、红三角、关闭位置与原稿一致。</li></ul><p class="small">当前仅锁定结算卡。整屏参考中的旧等级、今日挑战等首页内容不在本次范围内。</p><p>接下来需要补齐同款独立素材，不能再用首页角色或相似组件替代。</p><div class="links"><a href="../../review/visual-r11.html">查看当前游戏 R11</a><a href="reference-only/original-ui.png">完整原始 UI 图</a></div></aside>
+</div>
+<section id="context" class="card" hidden style="margin-top:24px"><h2>原稿整屏上下文</h2><p>只用来核对结算卡在页面中的占位，不授权恢复已排除的首页功能。</p><img class="context" src="reference-only/result-context.png" alt="原UI第一排第二屏的完整上下文"></section>
+<section class="card" style="margin-top:24px"><h2>为什么 R11 没有达到 1:1</h2><p>卡片压矮约21%；右侧换成了首页马桶塔；贴纸变厚、气泡轮廓与文案改变；按钮偏短厚；成绩单位同大。这些是造型和构图偏差，不能以“风格接近”作为通过依据。</p><p class="small">原始参考不是可直接交付的独立资源包。本轮没有修改运行场景、玩法、素材或构建，不将这份母版称为已完成的游戏还原。</p></section>
+</main>
+<script>
+document.querySelector('#zoom').onchange=e=>{document.querySelector('#master').style.width=(298*Number(e.target.value))+'px'};
+document.querySelector('#contextToggle').onchange=e=>{document.querySelector('#context').hidden=!e.target.checked};
+</script></html>

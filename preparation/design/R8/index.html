@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>首页构图精修 R8 · 这也能叠</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <main class="review">
+    <header>
+      <p class="eyebrow">这也能叠 / 首页专项审阅</p>
+      <h1>首页构图精修 R8</h1>
+      <p class="lead">保留物品原来的质感，让背景与构图更有趣。</p>
+      <p class="boundary">仅审首页 · 独立视觉小样 · 未修改 Cocos · 展示塔不运行物理</p>
+    </header>
+    <nav class="mode-tabs" aria-label="审阅版本">
+      <button type="button" data-mode="r8" aria-pressed="true">R8 完整稿</button>
+      <button type="button" data-mode="r7" aria-pressed="false">R7 首页</button>
+      <button type="button" data-mode="reference" aria-pressed="false">原 UI 参考</button>
+    </nav>
+    <div class="workspace" id="workspace">
+      <section class="preview" aria-label="首页预览">
+        <div class="toolbar">
+          <label>画幅 <select id="viewport-size"><option value="667">375 × 667</option><option value="812">375 × 812</option></select></label>
+          <button type="button" id="motion-toggle" aria-pressed="true">暂停云动效</button>
+        </div>
+        <div class="phone" id="phone"><div class="scene" id="scene" role="group" aria-label="R8 首页视觉小样"></div></div>
+        <figure class="reference" id="reference" hidden><img id="reference-image" alt=""><figcaption id="reference-caption"></figcaption></figure>
+        <p class="caption" id="caption" aria-live="polite">按钮仅演示按压反馈，不进入玩法或设置。物品质感与正式图一致。</p>
+      </section>
+      <aside class="notes" id="notes">
+        <p class="eyebrow">这一轮只解决首页</p>
+        <h2>有趣来自组合，<br>不必给每件东西换一种画风。</h2>
+        <p>纸箱、冰箱、篮球保留正式图。不同材质可以混搭，统一的是清晰度、接触关系和完成质量。</p>
+        <ol>
+          <li>背景提供场景感，主体仍然是 Logo 和展示塔。</li>
+          <li>展示塔更饱满，轻微错位让组合自然；接触位置保留软影。</li>
+          <li>开始按钮与平台分开，云在后景缓慢移动，地面和塔保持稳固。</li>
+        </ol>
+        <p class="fine-print">短、长屏使用同一套正式物品比例；整体展示尺寸随画幅调整，不改变游戏物理尺寸。</p>
+        <a href="../R7/index.html">查看保留的 R7 六状态小样</a>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

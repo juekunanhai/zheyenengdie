@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · 马桶承托修正</title>
+<style>
+body{margin:0;background:#edf3f8;color:#173047;font:15px/1.7 system-ui}main{max-width:1100px;margin:auto;padding:22px}h1{font-size:25px;margin:0}h2{font-size:17px;margin:0 0 8px}p{margin:8px 0}a{color:#126bb2}button,select{font:inherit;padding:7px 12px;border:1px solid #bacbd9;border-radius:8px;background:white;color:inherit}button{cursor:pointer}button:disabled,select:disabled{opacity:.5}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:16px 0}.workspace{display:flex;gap:24px;align-items:flex-start}.phone{flex:none}iframe{display:block;border:0;box-shadow:0 8px 28px #20364d25}.note{flex:1;min-width:260px;background:white;padding:18px;border-radius:12px}.badge{font-size:13px;color:#446177}.warning{padding:10px 14px;background:#fff3d7;border-left:3px solid #d69b18}#status{min-height:26px;font-weight:600}#version{background:#173f66;color:white;padding:6px 12px;margin:0}pre{font-size:12px;white-space:pre-wrap;max-height:400px;overflow:auto}canvas{max-width:100%;background:#dcebf5;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid #dce5ed}@media(max-width:760px){.workspace{flex-direction:column}.note{min-width:0;width:calc(100% - 36px)}main{padding:14px}.phone{max-width:100%;overflow:auto}}
+</style>
+<main><p style="padding:12px;background:#fff3d7;border-left:3px solid #d69b18">本页是历史形状对照。当前承托形状与基础辅助已继续修订，请使用 <a href="difficulty.html?revision=difficulty-r1">新版基础难度试放</a>。本页旧统计只对应当时保存的形状、节奏和测试条件。</p>
+<h1>马桶承托修正 · 旧 / 新同动作对照</h1>
+<p>先让前期合理的放置更宽容，放稳后还能承接下一件。重点看一段可用落点，而不是只找到一个精确位置。</p>
+<p class="warning">手动局使用当前工程：首次接触后最多观察 1.5 秒，提前稳住提前出物；轻晃超时后开始抓手入场，约再过 0.24 秒可操作。明显下坠/剧烈转动仍阻塞，成绩仍待真实稳定确认。暂停不计时，仍是单次越界结束的校准局，完整事故在 1B。<a href="../docs/PLACEMENT_WAIT_R1.md">本轮本地引擎验收通过，查看结果与边界</a>。</p>
+<p id="finding">本轮结果读取中；报告未完成也可手动试放。</p>
+<div class="controls">
+<label>固定动作 <select id="case"><option value="box-center">居中纸箱 · x 0 / 0°</option><option value="fridge-center">居中冰箱 · x 0 / 0°</option><option value="fridge-nearby">冰箱小偏移 · x +10 / 0°</option><option value="bridge">哑铃再接木板 · 原旋转组合</option><option value="box">补充：纸箱 · x −25 / 0°</option><option value="fridge">补充：冰箱 · x −30 / 0°</option></select></label>
+<label>马桶版本 <select id="profile"><option value="r2">新候选</option><option value="r1">旧候选</option></select></label>
+<button id="replay" disabled>回放相同动作</button><button id="stop" hidden>停止回放</button>
+</div>
+<p class="badge">回放使用预置动态马桶与统一 80 世界单位净空，按真实物理稳定结果诊断，不运行游戏控制器的 1.5 秒出物计时。旧版同时加载旧图、旧 NEXT 与旧碰撞；新版使用当前工程。此处不代表正常抓手存活率或新节奏验收。</p>
+<div class="controls">
+<label>当前工程手动局 <select id="mode"><option value="six">六物体 · 无计时</option><option value="six-timed">六物体 · 4 秒</option></select></label>
+<button id="start" disabled>开始 / 重开</button>
+<label>画幅 <select id="size"><option value="375,667">9:16</option><option value="375,812">长屏</option><option value="600,800">3:4</option></select></label>
+<button id="geometry" disabled>查看碰撞轮廓</button>
+</div>
+<p id="status">引擎加载中…</p>
+<div class="workspace"><div class="phone"><p id="version">当前工程 · 尚未开始</p><iframe id="player" title="马桶真实引擎试放" src="play-player.html?revision=placement-wait-r1" width="375" height="667"></iframe></div>
+<aside class="note"><h2>看承托，也看代价</h2>
+<p>同一动作切换旧 / 新，观察脚座是否仍被上层物体带倒、稍微偏一点能否放稳，以及下一件砸下后还能否继续。</p>
+<p>先看中间与附近落点，再看原旋转组合是否仍能继续堆叠；失败会如实保留。</p>
+<div id="comparison"></div>
+<p>手动固定顺序：纸箱 → 木板 → 马桶 → 冰箱 → 哑铃 → 篮球。拖动后松手释放；只通过按钮旋转 90°。</p>
+<p class="badge">“无计时”仅关闭规划时的自动释放；两种手动模式都使用首次接触后 1.5 秒普通观察上限。超时出物不会停止上一件的真实晃动和掉落监测。</p>
+<p class="badge">音效沿用已采用 A2；马桶仍暂用硬质碰撞音。新图是本轮试放候选，尚非最终美术签收。</p>
+<p id="run" class="badge"></p><canvas id="overlay" width="360" height="400" hidden></canvas>
+<p><a href="evidence/gameplay-toilet-r2/FINAL_COMPARISON.json" target="_blank">R2 几何与旧节奏结果</a> · <a href="../docs/TOILET_SHAPE_R2.md" target="_blank">R2 批次记录</a> · <a href="../docs/PLACEMENT_WAIT_R1.md" target="_blank">当前节奏修正</a></p>
+<p><a href="shapes.html">上一轮记录与入口</a> · <a href="play.html">原四物体入口</a></p>
+<details><summary>运行数据</summary><pre id="data"></pre></details>
+</aside></div>
+</main>
+<script>
+const $=id=>document.getElementById(id),frame=$('player');
+const six=['cardboard_box','wood_plank','toilet','fridge','dumbbell','basketball'];
+const cases=[
+ {id:'box-center',scenario:{id:'toilet_box_center',supports:[{kind:'toilet',x:0}],sequence:['cardboard_box']},actions:[{x:0,angle:0}]},
+ {id:'fridge-center',scenario:{id:'toilet_fridge_center',supports:[{kind:'toilet',x:0}],sequence:['fridge']},actions:[{x:0,angle:0}]},
+ {id:'fridge-nearby',scenario:{id:'toilet_fridge_plus10',supports:[{kind:'toilet',x:0}],sequence:['fridge']},actions:[{x:10,angle:0}]},
+ {id:'box',scenario:{id:'toilet_box_minus25',supports:[{kind:'toilet',x:0}],sequence:['cardboard_box']},actions:[{x:-25,angle:0}]},
+ {id:'fridge',scenario:{id:'toilet_fridge_minus30',supports:[{kind:'toilet',x:0}],sequence:['fridge']},actions:[{x:-30,angle:0}]},
+ {id:'bridge',scenario:{id:'H01_toilet_dumbbell_bridge',supports:[{kind:'toilet',x:0}],sequence:['dumbbell','wood_plank']},actions:[{x:0,angle:180},{x:0,angle:270}]},
+];
+let ready=false,busy=false,replayView=false,replayPromise=null,drawOutline=false;
+let dataModule,nativeSpec,nativeFrames,oldSpec,oldFrames,comparison=null;
+const baselinePromise=fetch('evidence/gameplay-shapes/CHOICES.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('旧版本数据未就绪');return r.json()}).then(d=>oldSpec=d.engine.specs.toilet);
+baselinePromise.catch(()=>{});
+function setBusy(value){
+ busy=value;
+ for(const id of ['start','mode','case','profile','replay','size'])$(id).disabled=value||!ready;
+}
+function status(text){$('status').textContent=text}
+function sameSpec(a,b){
+ if(!a||!b)return false;
+ const keys=['kind','width','height','circle','spriteWidth','spriteHeight','spriteOffset','outline','density','friction','restitution','contactAngularDamping','adhesion','description'];
+ return keys.every(key=>JSON.stringify(a[key])===JSON.stringify(b[key]));
+}
+function setVersion(profile,mode){
+ const old=profile==='r1';
+ $('version').textContent=`${old?'旧候选 R1':sameSpec(nativeSpec,oldSpec)?'当前构建仍为 R1，等待新构建':'新候选 R2'} · ${mode}`;
+}
+function renderComparison(){
+ if(!comparison){$('finding').textContent='本轮报告尚未完成，可以先手动观察；此处不引用上一轮 A/B/C 数字。';return}
+ const scan=comparison.scan||[],rows=[],centreNotes=[];
+ for(const kind of ['cardboard_box','fridge']){
+  const bands=[];
+  const counts=['r1','r2'].map(profile=>{
+   const trials=scan.filter(r=>r.profile===profile&&r.kind===kind).sort((a,b)=>a.x-b.x);
+   const centre=trials.findIndex(r=>r.x===0);let band='未采样中线';
+   if(centre>=0){
+    band='中线未稳定';
+    if(trials[centre].feasible){
+     let left=centre,right=centre;
+     while(left>0&&trials[left-1].feasible&&trials[left].x-trials[left-1].x===5)left--;
+     while(right+1<trials.length&&trials[right+1].feasible&&trials[right+1].x-trials[right].x===5)right++;
+     band=left===right?'仅 x = 0':`x = ${trials[left].x} 至 ${trials[right].x}`;
+    }
+   }
+   bands.push(`${profile==='r1'?'旧':'新'}：${band}`);
+   return trials.length?`${trials.filter(r=>r.feasible).length} / ${trials.length}`:'待记录';
+  });
+  rows.push(`<tr><td>${kind==='fridge'?'冰箱':'纸箱'}</td><td>${counts[0]}</td><td>${counts[1]}</td></tr>`);
+  centreNotes.push(`${kind==='fridge'?'冰箱':'纸箱'} · ${bands.join('；')}`);
+ }
+ const matching=comparison.profiles?.find(p=>p.id==='r2');
+ const matchesBuild=!nativeSpec||!matching||sameSpec(matching.spec,nativeSpec);
+ $('finding').textContent=matchesBuild?'下表保留 R2 固定几何扫描与旧节奏的正常抓手结果；新 1.5 秒节奏另有本地定向验收记录，不沿用此表宣布通过。还需看连续可用范围与后续承托，不能用单一成功点判定问题已解决。':'当前工程与报告中的马桶数据不同，统计仅供历史参考，等待匹配构建。';
+ $('comparison').innerHTML='<h2>固定落点扫描</h2><table><thead><tr><th>负载</th><th>旧 R1</th><th>新 R2</th></tr></thead><tbody>'+rows.join('')+'</tbody></table>';
+ for(const text of ['包含中线的连续成功采样区间（每 5 单位采样，不代表区间内每一点均已验证）：',...centreNotes]){const p=document.createElement('p');p.className='badge';p.textContent=text;$('comparison').append(p)}
+ if(comparison.normalControllerSummary?.length){
+  const title=document.createElement('h2');title.textContent='旧节奏：正常抓手与塔上的结果';$('comparison').append(title);
+  const normalCases=[['normal_center','全居中'],['normal_fridge_offset_-15','第四件偏 −15'],['normal_fridge_offset_-10','第四件偏 −10'],['normal_fridge_offset_10','第四件偏 +10'],['normal_fridge_offset_15','第四件偏 +15']];
+  const text=normalCases.map(([id,label])=>{const row=comparison.normalControllerSummary.find(r=>r.scenario===id);return row?`${label}：${row.successfulDrops} / 6`:null}).filter(Boolean).join('；');
+  const p=document.createElement('p');p.className='badge';p.textContent=text+'。这是修改等待规则之前的固定动作验证，尚非真人试玩，不继承为新节奏通过。';$('comparison').append(p);
+ }
+ const boundary=document.createElement('p');boundary.className='badge';boundary.textContent='上表用地面上的动态马桶作支撑；普通塔上还会受到下层倾斜和落差影响。采样成功范围不能当作正常局的容错保证。';$('comparison').append(boundary);
+ const note=document.createElement('p');note.className='badge';note.textContent=comparison.status?.startsWith('completed')?'R2 物理对照已记录，尚非真人试玩或新节奏结论。回放下方会显示本次纯物理诊断结果。':'R2 验收尚未完成；回放下方会显示本次纯物理诊断结果。';$('comparison').append(note);
+}
+fetch('evidence/gameplay-toilet-r2/FINAL_COMPARISON.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('报告待生成');return r.json()}).then(d=>{comparison=d;renderComparison()}).catch(()=>renderComparison());
+async function loadOldFrames(){
+ if(oldFrames)return oldFrames;
+ const cc=frame.contentWindow.qaCC;
+ oldFrames=await Promise.all(['object_toilet','next_toilet'].map(name=>new Promise((resolve,reject)=>{
+  const url=new URL(`../design/gameplay-shapes/assets/${name}.png`,location.href);
+  if(url.origin!==location.origin){reject(Error('仅允许本地同源候选图'));return}
+  cc.assetManager.loadRemote(url.href,{ext:'.png'},(error,image)=>{
+   if(error){reject(error);return}
+   const sprite=cc.SpriteFrame.createWithImage(image);sprite.name=name;sprite.addRef();resolve(sprite);
+  });
+ })));
+ return oldFrames;
+}
+function swapFrames(game,selected){
+ game.frames=game.frames.map(f=>selected.find(s=>s.name===f.name)||f);
+}
+async function begin(){
+ if(!ready||busy)return;setBusy(true);frame.style.pointerEvents='none';
+ try{
+  const win=frame.contentWindow;win.choiceLab?.stopReplay();if(replayPromise)await replayPromise;
+  dataModule.OBJECTS.toilet=nativeSpec;
+  if(win.qaGame())swapFrames(win.qaGame(),nativeFrames);
+  win.qaCC.game.resume();const physics=win.qaCC.PhysicsSystem2D.instance;physics.resetAccumulator(0);physics.autoSimulation=true;
+  await win.qaLoad('HUD');replayView=false;
+  const untimed=$('mode').value==='six';
+  if(!win.qaGame().configureCalibration(six,untimed))throw Error('六物体资产尚未完整导入');
+  frame.style.pointerEvents='auto';$('profile').value='r2';setVersion('r2',untimed?'六物体无计时':'六物体 4 秒');status('手动局已开始 · 使用当前工程图与碰撞');
+ }catch(error){status(String(error))}finally{setBusy(false)}
+}
+async function replay(){
+ if(!ready||busy)return;setBusy(true);frame.style.pointerEvents='none';
+ const win=frame.contentWindow,profile=$('profile').value,entry=cases.find(c=>c.id===$('case').value);
+ try{
+  status('准备相同动作与对应素材…');
+  await baselinePromise;
+  const selected=profile==='r1'?await loadOldFrames():nativeFrames;
+  if(!win.choiceLab)await new Promise((resolve,reject)=>{const script=win.document.createElement('script');script.src=new URL('gameplay-lab.js',location.href).href;script.onload=resolve;script.onerror=()=>reject(Error('回放脚本加载失败'));win.document.body.append(script)});
+  dataModule.OBJECTS.toilet=profile==='r1'?oldSpec:nativeSpec;
+  win.qaCC.game.resume();await win.choiceLab.initialize();swapFrames(win.qaGame(),selected);
+  replayView=true;setVersion(profile,'同场景 / 同动作回放');status('实际物理回放中…');
+  replayPromise=win.choiceLab.replay(entry.scenario,entry.actions);$('stop').hidden=false;
+  const result=await replayPromise;
+  const count=(result.outcomes||[]).filter(r=>r.status==='stable').length;
+  status(result.cancelled||result.setup?.status==='cancelled'?'回放已停止；点击开始可恢复手动局':`本次回放：${count} / ${entry.actions.length} 件放稳${result.completed?' · 指定动作完成':' · 保留失败结果'}`);
+ }catch(error){status(String(error))}finally{replayPromise=null;$('stop').hidden=true;setBusy(false)}
+}
+window.addEventListener('message',async e=>{
+ if(e.origin!==location.origin||e.source!==frame.contentWindow)return;
+ if(e.data.type==='play-error'){status(e.data.error);return}
+ if(e.data.type!=='play-ready'||ready)return;
+ frame.style.pointerEvents='none';
+ try{
+  const win=frame.contentWindow;dataModule=await win.System.import('chunks:///_virtual/object-data.ts');
+  nativeSpec=JSON.parse(JSON.stringify(dataModule.OBJECTS.toilet));
+  await win.qaLoad('HUD');nativeFrames=win.qaGame().frames.filter(f=>['object_toilet','next_toilet'].includes(f.name));
+  if(nativeFrames.length!==2)throw Error('当前构建缺少马桶 / NEXT 素材');
+  nativeFrames.forEach(f=>f.addRef());
+  win.qaGame().enabled=false;win.qaGame().phase='ended';
+  ready=true;setBusy(false);$('geometry').disabled=false;setVersion('r2','尚未开始');renderComparison();status('引擎就绪，选择手动局或相同动作回放');
+ }catch(error){status(String(error))}
+});
+$('start').onclick=begin;$('mode').onchange=begin;$('replay').onclick=replay;
+$('stop').onclick=()=>frame.contentWindow.choiceLab?.stopReplay();
+$('size').onchange=e=>{const [w,h]=e.target.value.split(',');frame.width=w;frame.height=h};
+$('geometry').onclick=()=>{drawOutline=!drawOutline;$('overlay').hidden=!drawOutline;$('geometry').textContent=drawOutline?'收起碰撞轮廓':'查看碰撞轮廓'};
+setInterval(()=>{
+ if(!ready)return;const game=frame.contentWindow.qaGame();if(!game)return;
+ const s=game.snapshot();$('data').textContent=JSON.stringify(s,null,2);
+ $('run').textContent=replayView?'同动作回放 · 游戏输入暂停':`已放稳 ${s.placed} 件 · 已确认高度 ${s.peakMetres.toFixed(2)} m`;
+ if(!drawOutline)return;
+ const ctx=$('overlay').getContext('2d');ctx.clearRect(0,0,360,400);
+ const view=s.view,scale=360/view.width,worldScale=view.scale*scale;
+ const px=x=>180+x*worldScale,py=y=>200-(view.originY+(y-view.cameraY)*view.scale)*scale;
+ ctx.strokeStyle='#967139';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(px(-80),py(0));ctx.lineTo(px(80),py(0));ctx.stroke();
+ for(const r of game.world.bodies){
+  const spec=r.spec,p=r.node.position,a=Math.atan2(2*r.node.rotation.w*r.node.rotation.z,1-2*r.node.rotation.z**2),c=Math.cos(a),sn=Math.sin(a);
+  ctx.strokeStyle=r.placed?'#146f60':'#bc5423';ctx.lineWidth=1.5;ctx.beginPath();
+  if(spec.circle)ctx.arc(px(p.x),py(p.y),spec.width/2*worldScale,0,Math.PI*2);
+  else{const points=spec.outline||[[-spec.width/2,-spec.height/2],[spec.width/2,-spec.height/2],[spec.width/2,spec.height/2],[-spec.width/2,spec.height/2]];points.forEach(([x,y],i)=>ctx[i?'lineTo':'moveTo'](px(p.x+x*c-y*sn),py(p.y+x*sn+y*c)));ctx.closePath()}
+  ctx.stroke();
+ }
+},160);
+</script></html>

@@ -1,0 +1,33 @@
+{
+  "status": "adhesion_and_platform_verified_awaiting_user_playtest",
+  "scope": "authorized_four_object_batch_1a",
+  "backup": "/var/folders/r9/ppc2npgs5w931p28g5735zt00000gn/T/zhynd-batch1a-1ihj8oq_",
+  "user_request": "ok，继续",
+  "rules_revision": "2026-09-13-R4",
+  "audio": "A2_approved_imported_browser_runtime_verified",
+  "updated_at": "2026-09-13",
+  "audio_feedback": "缺少材质感；抓手和结束提示不合适；轻松、有趣。",
+  "audio_revision": "audio/batch1a-v2/MANIFEST.json",
+  "acceptance": "docs/BATCH1A_ACCEPTANCE.md",
+  "next_batch_started": false,
+  "audio_approval": "音频先按照这版使用，后续如果不合适再换",
+  "verified_checks": {
+    "interaction": 17,
+    "physics": 7,
+    "audio": 8,
+    "camera_and_contacts": 6,
+    "contact_pixels": 1,
+    "consecutive_drop_recording": 1,
+    "platform_and_adhesion": 11
+  },
+  "remaining": [
+    "User gameplay feedback and phone sound quality",
+    "1B incidents and deep support assistance",
+    "1C full base experience and WeChat/device acceptance"
+  ],
+  "revision": "20260913-adhesion-r2",
+  "correction_confirmation": "确认。",
+  "current_review": "review/contact-review.html",
+  "basketball_confirmation": "采用摩擦＋滚动阻力（推荐）",
+  "adhesion_confirmation": "确认。"
+}

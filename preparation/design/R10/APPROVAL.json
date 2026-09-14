@@ -1,0 +1,53 @@
+{
+  "status": "approved",
+  "revision": "R10.1",
+  "recorded_at_local": "2026-09-13T15:11:33",
+  "user_quote": "可以的，未开发的功能按钮你是没有做，对吗？那没问题，然后你开始执行下一步开发任务吧。",
+  "scope": "采用R10.1首页并接入Cocos Home；保留现有开始/设置交互。当前执行批次为首页视觉基础收尾，不自动加入历史排除功能。",
+  "design_files": [
+    {
+      "path": "design/R10/index.html",
+      "sha256": "fa886071be4c43be49ad0cb3126296cdf40c82135044e85be6fbe887969a6217"
+    },
+    {
+      "path": "design/R10/review.js",
+      "sha256": "61a99386bd9fd625ca6349aa254df14b076370200f7c7b30852950a77d7bf0ee"
+    },
+    {
+      "path": "design/R10/review.css",
+      "sha256": "b0451e565fa6df5365ccdd0a2739d880b88dde90fa77e526e3ede88a5895cc46"
+    },
+    {
+      "path": "design/R10/assets/bg-home-r10.png",
+      "sha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f"
+    },
+    {
+      "path": "design/R10/assets/logo-home-r10-clean-r2.png",
+      "sha256": "9079e248bbcd4bfc47f2704ae7a967398dab77b0501bdc0ce18f7bd8eba8a254"
+    },
+    {
+      "path": "design/R9/assets/hero-stack-r9-clean.png",
+      "sha256": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7"
+    },
+    {
+      "path": "design/R9/assets/hero-slipper.png",
+      "sha256": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8"
+    },
+    {
+      "path": "design/R9/assets/sign-wood-r9-trimmed.png",
+      "sha256": "5c850606594b1ded306e0c0816b7b9786ac9e07cf68b2a348a75b1366030482d"
+    },
+    {
+      "path": "design/R7/assets/cloud-soft-r7-clean.png",
+      "sha256": "2ba4cc4f1fc84826f66089e3b8f0a73ef08100edd65db0db8e39aa332878cab1"
+    },
+    {
+      "path": "art/candidates/backgrounds/airship_clean.png",
+      "sha256": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289"
+    },
+    {
+      "path": "art/candidates/backgrounds/airplane_clean.png",
+      "sha256": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600"
+    }
+  ]
+}

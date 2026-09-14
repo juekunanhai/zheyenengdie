@@ -1,0 +1,94 @@
+{
+  "short": {
+    "frame": {
+      "height": 667,
+      "width": 375,
+      "x": 247,
+      "y": 233.09375
+    },
+    "height": 1200,
+    "width": 1280
+  },
+  "long": {
+    "frame": {
+      "height": 812,
+      "width": 375,
+      "x": 247,
+      "y": 233.09375
+    },
+    "height": 1200,
+    "width": 1280
+  },
+  "finalShort": {
+    "frame": {
+      "height": 667,
+      "width": 375,
+      "x": 247,
+      "y": 233.09375
+    },
+    "height": 1200,
+    "width": 1280,
+    "native_pixels": [
+      1280,
+      1200
+    ],
+    "native_crop": [
+      247,
+      233,
+      622,
+      900
+    ],
+    "normalization": [
+      375,
+      667
+    ]
+  },
+  "finalLong": {
+    "frame": {
+      "height": 812,
+      "width": 375,
+      "x": 247,
+      "y": 233.09375
+    },
+    "height": 1200,
+    "width": 1280,
+    "native_pixels": [
+      1280,
+      1200
+    ],
+    "native_crop": [
+      247,
+      233,
+      622,
+      1045
+    ],
+    "normalization": [
+      375,
+      812
+    ]
+  },
+  "finalWide": {
+    "frame": {
+      "height": 800,
+      "width": 600,
+      "x": 134.5,
+      "y": 233.09375
+    },
+    "height": 1200,
+    "width": 1280,
+    "native_pixels": [
+      1280,
+      1200
+    ],
+    "native_crop": [
+      134,
+      233,
+      734,
+      1033
+    ],
+    "normalization": [
+      600,
+      800
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "R2_audio_runtime_evidence_retained_by_unchanged_input_hashes",
+  "R3_build_report_sha256": "835cb3cd9c50127db7b7a75e20d7a865656cd6e069829c2458bb92a786ceeb08",
+  "R2_build_report_sha256": "17f4f003c2a2e59041203ef004fc974f378840356f699c523e84aba7dcad1b24",
+  "engine_evidence": "ENGINE_R2.json",
+  "engine_evidence_sha256": "5d7e3613c69bb3ef63599f16f867e416061a5c4a4f503473bec897f2d07554f0",
+  "changed_runtime_files_since_R2": [
+    "assets/batch1/scene-actions.ts"
+  ],
+  "exact_change": "MusicCredits Y position -390 to -540 only",
+  "unchanged_runtime_input_count": 311,
+  "R2_cases": [
+    {
+      "name": "voices",
+      "status": "passed",
+      "mode": "real audio start/end and natural cooldown wait"
+    },
+    {
+      "name": "controls",
+      "status": "passed",
+      "mode": "controlled settings and simulated visibility; audio clock advanced 12.1s between independent cases"
+    },
+    {
+      "name": "incidents",
+      "status": "passed",
+      "mode": "immediate cancel plus explicit incident/failure fixture; controlled audio clock advance between cases"
+    },
+    {
+      "name": "duck",
+      "status": "passed",
+      "mode": "real controller lateUpdate and AudioSource events"
+    },
+    {
+      "name": "fixture",
+      "status": "passed",
+      "mode": "controlled controller fixture; synthetic stable scores, not natural tower evidence"
+    },
+    {
+      "name": "natural",
+      "status": "passed",
+      "mode": "actual default sequence / controlled centre release / unchanged physics"
+    },
+    {
+      "name": "loops",
+      "status": "passed",
+      "mode": "controlled height inputs 0/60/170; actual AudioSource natural playback, no music time fast-forward; not natural tower-height evidence"
+    }
+  ],
+  "not_claimed": [
+    "No seven-case R3 audio rerun claimed",
+    "UI screenshot was visually inspected through the tool; no saved screenshot artifact is claimed",
+    "Simulated visibility is not native OS background or WeChat device validation"
+  ],
+  "R3_settings_visual_evidence": {
+    "file": "UI_REVIEW_R3.json",
+    "sha256": "1e1cfbf642d26db6f11b10b535c0477b36cde3508aa0355ac7c181ec5cba74d6",
+    "status": "passed_tool_observation_375x667",
+    "local_screenshot_saved": false
+  }
+}

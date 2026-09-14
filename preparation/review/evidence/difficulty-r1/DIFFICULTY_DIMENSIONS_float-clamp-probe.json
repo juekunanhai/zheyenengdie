@@ -1,0 +1,655 @@
+{
+  "status": "failed_or_incomplete",
+  "createdAt": "2026-09-13T11:07:22.383Z",
+  "method": "Actual compiled Cocos HUD, automatic native Box2D, configureCalibration([paper, plank, fridge, paper], true), controller.rotate/moveTo/release. No body pose, velocity, type, scale, contacts, stepping, score, or camera mutation. Measurements after normal UI animation settles. World-coordinate area-density products are not engine mass; snapshot mass is native kg.",
+  "views": [
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "objects": [
+        {
+          "kind": "cardboard_box",
+          "poses": []
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "sources": {
+    "assets/batch1/object-data.ts": "dd2fc28e64c2db1d8c79442addcc0f569a922b5a1a755dd9f6c935ee71f9ea25",
+    "assets/batch1/tower-world.ts": "36fc8021f13716e03f956da52c1e87346df464aa83f51787fadff2b6de438fe3",
+    "assets/batch1/game-controller.ts": "390bcca0e86048a39e24f559d85259de5e7f0eb415faeb44dd92c93953e1d534",
+    "assets/batch1/play-view.ts": "91b648d0e2bafa214ca9b1f0acdecd50e0aee121064aed536cac65902c93903f",
+    "preparation/review/play-player.html": "bd7696f6f5bd63cc3c1c651c0d7b172e81f55b1f45810c366361a7364870dad0",
+    "build/web-desktop/assets/main/index.js": "054adc7b9d013cebe726985b195121718276b59a648f2262afc6ff568f8bebc3"
+  },
+  "captures": [],
+  "engine": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    }
+  },
+  "compiledSpecs": {
+    "cardboard_box": {
+      "kind": "cardboard_box",
+      "width": 100.912779,
+      "height": 100,
+      "circle": false,
+      "spriteWidth": 102.636917,
+      "spriteHeight": 101.926978,
+      "spriteOffset": [
+        0.05071,
+        -0.05071
+      ],
+      "outline": [
+        [
+          -50.456389,
+          39.858012
+        ],
+        [
+          -50.456389,
+          -46.957404
+        ],
+        [
+          -47.413793,
+          -50
+        ],
+        [
+          47.413793,
+          -50
+        ],
+        [
+          50.456389,
+          -46.957404
+        ],
+        [
+          50.456389,
+          39.858012
+        ],
+        [
+          39.908722,
+          50
+        ],
+        [
+          -37.576065,
+          50
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.45115949058,
+      "contactImpactSpeed": 2.4
+    },
+    "wood_plank": {
+      "kind": "wood_plank",
+      "width": 260,
+      "height": 28.744805,
+      "circle": false,
+      "spriteWidth": 263.674148,
+      "spriteHeight": 32.851205,
+      "spriteOffset": [
+        0.108063,
+        -0.108063
+      ],
+      "outline": [
+        [
+          -130,
+          8.536991
+        ],
+        [
+          -130,
+          -10.049875
+        ],
+        [
+          -125.029094,
+          -14.372402
+        ],
+        [
+          125.029094,
+          -14.372402
+        ],
+        [
+          130,
+          -10.049875
+        ],
+        [
+          130,
+          8.536991
+        ],
+        [
+          124.596841,
+          14.372402
+        ],
+        [
+          -124.596841,
+          14.372402
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.481043899512,
+      "contactImpactSpeed": 2.4,
+      "stabilizer": {
+        "maxForce": 420,
+        "maxTorque": 95,
+        "maxImpactSpeed": 1.8,
+        "maxAngleError": 12
+      },
+      "description": "搭上一块稳固板，上下都踏实一点。"
+    },
+    "basketball": {
+      "kind": "basketball",
+      "width": 68,
+      "height": 68,
+      "circle": true,
+      "spriteWidth": 70.2295,
+      "spriteHeight": 70.2295,
+      "friction": 0.85,
+      "restitution": 0.03,
+      "density": 0.4,
+      "contactAngularDamping": 6,
+      "adhesion": {
+        "maxForce": 1500,
+        "maxTorque": 150,
+        "maxImpactSpeed": 2
+      },
+      "description": "别担心，有人给它贴了双面胶。"
+    },
+    "fridge": {
+      "kind": "fridge",
+      "width": 125,
+      "height": 139.629048864,
+      "circle": false,
+      "spriteWidth": 127.220480682,
+      "spriteHeight": 141.849529545,
+      "spriteOffset": [
+        0.065307955,
+        -0.065307955
+      ],
+      "outline": [
+        [
+          -62.369382955,
+          54.924242045
+        ],
+        [
+          -62.5,
+          -54.271160227
+        ],
+        [
+          -48.001567045,
+          -69.814525
+        ],
+        [
+          47.870951136,
+          -69.814525
+        ],
+        [
+          62.5,
+          -55.054859091
+        ],
+        [
+          62.369382955,
+          55.185475
+        ],
+        [
+          47.740334091,
+          69.814525
+        ],
+        [
+          -48.001567045,
+          69.814525
+        ]
+      ],
+      "friction": 0.6,
+      "restitution": 0.01,
+      "density": 0.423038110103,
+      "contactImpactSpeed": 2.4
+    },
+    "toilet": {
+      "kind": "toilet",
+      "width": 150.900515,
+      "height": 115,
+      "circle": false,
+      "spriteWidth": 154.64837,
+      "spriteHeight": 118.5506,
+      "spriteOffset": [
+        0.098628,
+        0
+      ],
+      "outline": [
+        [
+          -74.266724,
+          54.738422
+        ],
+        [
+          -75.450257,
+          51.582333
+        ],
+        [
+          -74.858491,
+          46.848199
+        ],
+        [
+          -72.096913,
+          44.875643
+        ],
+        [
+          -70.518868,
+          18.837907
+        ],
+        [
+          -67.165523,
+          -1.084906
+        ],
+        [
+          -63.417667,
+          -7.791595
+        ],
+        [
+          -57.697256,
+          -9.764151
+        ],
+        [
+          -52.174099,
+          -16.668096
+        ],
+        [
+          -48.031732,
+          -22.191252
+        ],
+        [
+          -46.256432,
+          -28.897942
+        ],
+        [
+          -47.637221,
+          -34.421098
+        ],
+        [
+          -50.596055,
+          -40.141509
+        ],
+        [
+          -56.119211,
+          -44.678388
+        ],
+        [
+          -63.023156,
+          -47.834477
+        ],
+        [
+          -66.573756,
+          -51.187822
+        ],
+        [
+          -67.75729,
+          -55.921955
+        ],
+        [
+          -64.601201,
+          -57.5
+        ],
+        [
+          64.009434,
+          -57.5
+        ],
+        [
+          67.362779,
+          -54.541166
+        ],
+        [
+          65.192967,
+          -49.01801
+        ],
+        [
+          59.078045,
+          -45.46741
+        ],
+        [
+          56.316467,
+          -41.127787
+        ],
+        [
+          54.738422,
+          -35.21012
+        ],
+        [
+          56.513722,
+          -32.054031
+        ],
+        [
+          63.417667,
+          -28.503431
+        ],
+        [
+          68.546312,
+          -24.163808
+        ],
+        [
+          72.294168,
+          -17.654374
+        ],
+        [
+          74.463979,
+          -9.566895
+        ],
+        [
+          75.450257,
+          -1.282161
+        ],
+        [
+          73.280446,
+          2.465695
+        ],
+        [
+          67.560034,
+          4.43825
+        ],
+        [
+          24.95283,
+          4.43825
+        ],
+        [
+          22.585763,
+          4.240995
+        ],
+        [
+          24.95283,
+          45.861921
+        ],
+        [
+          27.517153,
+          47.24271
+        ],
+        [
+          28.108919,
+          51.779588
+        ],
+        [
+          26.925386,
+          55.330189
+        ],
+        [
+          21.993997,
+          57.5
+        ],
+        [
+          -68.940823,
+          57.5
+        ]
+      ],
+      "friction": 0.62,
+      "restitution": 0.015,
+      "density": 0.401990728786,
+      "contactImpactSpeed": 2.4
+    },
+    "dumbbell": {
+      "kind": "dumbbell",
+      "width": 147.939914,
+      "height": 45,
+      "circle": false,
+      "spriteWidth": 151.416309,
+      "spriteHeight": 48.476395,
+      "spriteOffset": [
+        0,
+        0
+      ],
+      "outline": [
+        [
+          -67.982833,
+          17.285408
+        ],
+        [
+          -70.493562,
+          11.491416
+        ],
+        [
+          -73.969957,
+          9.560086
+        ],
+        [
+          -73.969957,
+          -9.946352
+        ],
+        [
+          -70.493562,
+          -11.684549
+        ],
+        [
+          -67.982833,
+          -17.478541
+        ],
+        [
+          -62.76824,
+          -22.5
+        ],
+        [
+          -35.729614,
+          -22.5
+        ],
+        [
+          -31.287554,
+          -18.05794
+        ],
+        [
+          -28.969957,
+          -11.298283
+        ],
+        [
+          -26.652361,
+          -8.401288
+        ],
+        [
+          -22.982833,
+          -7.049356
+        ],
+        [
+          22.7897,
+          -7.049356
+        ],
+        [
+          26.652361,
+          -8.401288
+        ],
+        [
+          28.390558,
+          -11.298283
+        ],
+        [
+          30.515021,
+          -17.478541
+        ],
+        [
+          35.729614,
+          -22.5
+        ],
+        [
+          62.961373,
+          -22.5
+        ],
+        [
+          68.175966,
+          -17.478541
+        ],
+        [
+          70.493562,
+          -12.070815
+        ],
+        [
+          73.969957,
+          -9.946352
+        ],
+        [
+          73.969957,
+          9.560086
+        ],
+        [
+          70.493562,
+          11.298283
+        ],
+        [
+          67.7897,
+          17.285408
+        ],
+        [
+          62.961373,
+          22.5
+        ],
+        [
+          35.729614,
+          22.5
+        ],
+        [
+          30.901288,
+          17.671674
+        ],
+        [
+          28.583691,
+          12.070815
+        ],
+        [
+          26.652361,
+          8.787554
+        ],
+        [
+          22.7897,
+          7.049356
+        ],
+        [
+          -22.982833,
+          7.049356
+        ],
+        [
+          -25.686695,
+          8.208155
+        ],
+        [
+          -28.583691,
+          11.10515
+        ],
+        [
+          -30.321888,
+          17.092275
+        ],
+        [
+          -35.729614,
+          22.5
+        ],
+        [
+          -62.76824,
+          22.5
+        ]
+      ],
+      "friction": 0.72,
+      "restitution": 0.015,
+      "density": 1.1,
+      "contactImpactSpeed": 2.4
+    }
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: moveTo clamps at genuine collider edges\n    at /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_difficulty_dimensions.cjs:51:12",
+  "failureState": {
+    "scene": "HUD",
+    "phase": "planning",
+    "currentId": 1,
+    "kind": "cardboard_box",
+    "angle": 0,
+    "releases": 0,
+    "position": {
+      "x": 159.82933044433594,
+      "y": 435.4285583496094
+    },
+    "physicsScale": {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "bounds": {
+      "left": 109.37294144433594,
+      "right": 210.28571944433594,
+      "bottom": 385.4285583496094,
+      "top": 485.4285583496094
+    },
+    "supportTop": 0,
+    "gap": 385.4285583496094,
+    "boundary": {
+      "top": 485.42857142857144,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428,
+      "bottom": -187.42857142857142
+    },
+    "view": {
+      "scale": 1.75,
+      "originY": -339,
+      "cameraY": 0,
+      "targetCameraY": 0,
+      "width": 750,
+      "height": 1334,
+      "heldTop": 485.42857142857144
+    },
+    "canvas": {
+      "left": 0,
+      "top": 0,
+      "right": 375,
+      "bottom": 667
+    },
+    "attachment": {
+      "x": 327.35066413879395,
+      "y": 78.25001144409181
+    },
+    "sprite": {
+      "active": true,
+      "frame": "object_cardboard_box",
+      "rect": {
+        "left": 282.4913796875,
+        "right": 372.29868206249995,
+        "top": 77.45132981909184,
+        "bottom": 166.63743556909188
+      },
+      "size": {
+        "width": 179.61460474999998,
+        "height": 178.37221150000002
+      }
+    },
+    "claw": {
+      "active": true,
+      "frame": "claw_open_narrow",
+      "rect": {
+        "left": 295.3611558082061,
+        "right": 359.3401634417939,
+        "top": 21.75001144409183,
+        "bottom": 96.25001144409183
+      }
+    },
+    "next": {
+      "expected": "next_wood_plank",
+      "frame": "next_wood_plank",
+      "active": true,
+      "rect": {
+        "left": 320.5,
+        "right": 351.5,
+        "top": 132.06885245901637,
+        "bottom": 135.9311475409836
+      },
+      "size": {
+        "width": 62,
+        "height": 7.724590163934426
+      },
+      "originalSize": {
+        "width": 1220,
+        "height": 152
+      }
+    },
+    "releasedBodies": [],
+    "autoSimulation": true
+  }
+}

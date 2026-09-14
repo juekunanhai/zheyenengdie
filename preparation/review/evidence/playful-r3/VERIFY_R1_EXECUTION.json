@@ -1,0 +1,10 @@
+{
+  "actual_exit_code": 0,
+  "command": "python3 preparation/tools/verify_preparation.py",
+  "status": "passed_integrity_only",
+  "report": "INTEGRITY_R1.json",
+  "report_sha256": "ce955a0c09054c95e7cfd58a23b5e0695f3fdb31be00284e4a31e1a87dd97bd3",
+  "build_report": "BUILD_R1_SCHEMA_COMPLETE.json",
+  "build_report_sha256": "faa20be62b562b206648d8e71753db5abdd92a9b7fd28002ad44b11b3b162383",
+  "gate_sha256": "2f308fcc7742df3fa08ec28cc97f7adca2a0b3f66a70415e089924e69543b21b"
+}

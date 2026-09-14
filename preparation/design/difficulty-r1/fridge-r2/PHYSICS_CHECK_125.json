@@ -1,0 +1,21 @@
+{
+  "strictly_convex": true,
+  "vertices": 8,
+  "single_convex_fixture_eligible": true,
+  "expected_fixture_count": 1,
+  "actual_engine_fixture_count": "pending_125_world_scale_engine_verification",
+  "outside_alpha128_area_world_squared": 10.270525568,
+  "outside_alpha128_percentage": 0.060303,
+  "outline_area_world_squared": 17000.832379907,
+  "uniform_pixel_to_world": 0.13061651,
+  "width": 125.0,
+  "height": 139.629048864,
+  "note": "Dumbbell inner feet gap about 71.46 world units needs a broader visible support: 125-wide fridge provides a 95.74-wide top. Density must keep agreed total mass unchanged; no raster resampling.",
+  "boundary_distance_world": {
+    "max": 0.985646591,
+    "p95": 0.726268182
+  },
+  "uniform_scale_from_110": 1.1363636363636365,
+  "texture_and_alpha_unchanged": true,
+  "source_pixel_vertices_unchanged": true
+}

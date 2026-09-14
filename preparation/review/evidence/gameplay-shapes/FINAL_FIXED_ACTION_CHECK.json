@@ -1,0 +1,975 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "scenario": "S01_center_cycle",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 3,
+      "stableDrops": [
+        3,
+        3,
+        3
+      ],
+      "heights": [
+        274.35524313948383,
+        274.3566044323426,
+        274.35524313948383
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S01_center_cycle",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 3,
+      "stableDrops": [
+        3,
+        3,
+        3
+      ],
+      "heights": [
+        274.3566044323426,
+        274.35524313948383,
+        274.3566044323426
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S01_center_cycle",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": 30,
+          "angle": 90
+        },
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 30,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 3,
+      "stableDrops": [
+        3,
+        3,
+        3
+      ],
+      "heights": [
+        274.47975772974144,
+        274.480957339533,
+        274.47975772974144
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S02_narrow_column",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        274.3976875660363,
+        274.39707430672917,
+        274.3976875660363
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S02_narrow_column",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        274.39707430672917,
+        274.3976875660363,
+        274.39707430672917
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S02_narrow_column",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        274.3976875660363,
+        274.39707430672917,
+        274.3976875660363
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S03_toilet_step",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50019151805657,
+        115.50019136229855,
+        115.50019151805657
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S03_toilet_step",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50019136229855,
+        115.50019151805657,
+        115.50019136229855
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S03_toilet_step",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50019151805657,
+        115.50019136229855,
+        115.50019151805657
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S04_dumbbell_cradle",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 1,
+      "stableDrops": [
+        1,
+        1,
+        1
+      ],
+      "heights": [
+        98.18588256835938,
+        98.18588256835938,
+        98.18588256835938
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S04_dumbbell_cradle",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 180
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        198.45218769145376,
+        198.4513162897859,
+        198.45218769145376
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S04_dumbbell_cradle",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": -30,
+          "angle": 0
+        },
+        {
+          "x": -30,
+          "angle": 180
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        213.597598677595,
+        213.597598677595,
+        213.597598677595
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S05_offcentre_repair",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        100.500000157346,
+        100.500000157346,
+        100.500000157346
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S05_offcentre_repair",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        100.500000157346,
+        100.500000157346,
+        100.500000157346
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S05_offcentre_repair",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": -30,
+          "angle": 0
+        },
+        {
+          "x": -30,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        274.36841909749387,
+        274.3702657219946,
+        274.36841909749387
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S06_two_dynamic_piers",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        244.37438440367927,
+        244.37479204271938,
+        244.37505852379815
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S06_two_dynamic_piers",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        244.37547979311233,
+        244.37070187501794,
+        244.37085636270092
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S06_two_dynamic_piers",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        244.37438440367927,
+        244.37438440367927,
+        244.37492889877404
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H01_toilet_dumbbell_bridge",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        189.62133757100707,
+        188.86053668898685,
+        189.6167464249037
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H01_toilet_dumbbell_bridge",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 180
+        },
+        {
+          "x": 0,
+          "angle": 270
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        304.66059900965735,
+        304.69192104611506,
+        304.6438619134219
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H01_toilet_dumbbell_bridge",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 180
+        },
+        {
+          "x": 0,
+          "angle": 270
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        304.69192104611506,
+        304.64381416478204,
+        304.69192104611506
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H02_dumbbell_fridge_ball",
+      "policy": "A",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        243.67442321777344,
+        243.67442321777344,
+        243.67442321777344
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H02_dumbbell_fridge_ball",
+      "policy": "B",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        243.6744384765625,
+        243.6744384765625,
+        243.6744384765625
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H02_dumbbell_fridge_ball",
+      "policy": "C",
+      "variant": {},
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        243.6744384765625,
+        243.6744384765625,
+        243.6744384765625
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S03_toilet_step",
+      "policy": "A",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50000016342787,
+        115.50000016342787,
+        115.50000016342787
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S03_toilet_step",
+      "policy": "B",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50000016342787,
+        115.50000016342787,
+        115.50000016342787
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S03_toilet_step",
+      "policy": "C",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50000016342787,
+        115.50000016342787,
+        115.50000016342787
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S04_dumbbell_cradle",
+      "policy": "A",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        213.5169905178581,
+        213.51837472987847,
+        213.5169905178581
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S04_dumbbell_cradle",
+      "policy": "B",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 180
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        213.8404143303199,
+        213.84204595816283,
+        213.8404143303199
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "S04_dumbbell_cradle",
+      "policy": "C",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 180
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        213.8404143303199,
+        213.84204595816283,
+        213.8404143303199
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H01_toilet_dumbbell_bridge",
+      "policy": "A",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50000016342787,
+        115.50000016342787,
+        115.49999997972319
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H01_toilet_dumbbell_bridge",
+      "policy": "B",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.49999997972319,
+        115.50000016342787,
+        115.50000016342787
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H01_toilet_dumbbell_bridge",
+      "policy": "C",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 0,
+      "stableDrops": [
+        0,
+        0,
+        0
+      ],
+      "heights": [
+        115.50000016342787,
+        115.49999997972319,
+        115.49999997972319
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H02_dumbbell_fridge_ball",
+      "policy": "A",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        258.97486877441406,
+        258.9752502441406,
+        258.97520446777344
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H02_dumbbell_fridge_ball",
+      "policy": "B",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        258.97486877441406,
+        258.9752502441406,
+        258.97520446777344
+      ],
+      "matched": true
+    },
+    {
+      "scenario": "H02_dumbbell_fridge_ball",
+      "policy": "C",
+      "variant": {
+        "geometry": "convex-envelope"
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "expectedStableDrops": 2,
+      "stableDrops": [
+        2,
+        2,
+        2
+      ],
+      "heights": [
+        258.97486877441406,
+        258.9752502441406,
+        258.97520446777344
+      ],
+      "matched": true
+    }
+  ],
+  "errors": [],
+  "sources": {
+    "assets/batch1/object-data.ts": "dde0793c2e475b358e61e6ac900b234046f4a0fd4a72bd053ba9d6c67213c1ef",
+    "assets/batch1/tower-world.ts": "b990421aafcea19a938658a54583eae66df311f42173556307ffa57ae5435c78",
+    "preparation/review/gameplay-lab.js": "791043cd06d323c7df79be8442051cf47f24f70dc93ec932655036f616643c3c"
+  }
+}

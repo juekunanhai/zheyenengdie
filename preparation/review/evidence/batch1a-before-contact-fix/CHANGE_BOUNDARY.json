@@ -1,0 +1,15 @@
+{
+  "status": "passed_original_files_preserved_except_scene_bindings",
+  "compared_original_files": 116,
+  "changed_original_files": [
+    "assets/batch0/scenes/Home.scene",
+    "assets/batch0/scenes/Result.scene",
+    "assets/batch0/scenes/Settings.scene",
+    "assets/batch0/scenes/HUD.scene"
+  ],
+  "settings_unchanged": true,
+  "original_art_and_existing_meta_unchanged": true,
+  "added_runtime_ts": 7,
+  "added_next_images": 3,
+  "added_approved_audio": 18
+}

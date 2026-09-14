@@ -1,0 +1,139 @@
+{
+  "recorded_at": "2026-09-14T15:57:15.791761+08:00",
+  "authorization": "User authorized official WeChat developer-tool local import; root performed UI import after this agent finished CLI build. No upload or publication.",
+  "initial_capture_source": "Read-only cat output immediately after Creator exit, before IDE import. Parsed values below preserve that observed configuration; not presented as a byte-for-byte original-file archive.",
+  "creator_initial_project_config": {
+    "description": "项目配置文件。",
+    "miniprogramRoot": "./",
+    "setting": {
+      "urlCheck": true,
+      "postcss": true,
+      "minified": true,
+      "newFeature": false,
+      "enhance": true,
+      "useIsolateContext": true
+    },
+    "compileType": "game",
+    "libVersion": "widelyUsed",
+    "appid": "wxc0360e0c829a3307",
+    "projectname": "zhe-ye-neng-die",
+    "condition": {
+      "search": {
+        "current": -1,
+        "list": []
+      },
+      "conversation": {
+        "current": -1,
+        "list": []
+      },
+      "game": {
+        "currentL": -1,
+        "list": [],
+        "current": -1
+      },
+      "miniprogram": {
+        "current": -1,
+        "list": []
+      }
+    }
+  },
+  "creator_initial_project_config_observed_bytes": 462,
+  "creator_initial_unpacked_bytes": 30807615,
+  "current_project_config": {
+    "description": "项目配置文件。",
+    "miniprogramRoot": "./",
+    "setting": {
+      "urlCheck": true,
+      "postcss": true,
+      "minified": true,
+      "newFeature": false,
+      "enhance": true,
+      "useIsolateContext": true,
+      "es6": false,
+      "compileWorklet": false,
+      "uglifyFileName": false,
+      "uploadWithSourceMap": true,
+      "packNpmManually": false,
+      "packNpmRelationList": [],
+      "minifyWXSS": true,
+      "minifyWXML": true,
+      "localPlugins": false,
+      "disableUseStrict": false,
+      "useCompilerPlugins": false,
+      "condition": false,
+      "swc": false,
+      "disableSWC": true,
+      "babelSetting": {
+        "ignore": [],
+        "disablePlugins": [],
+        "outputPath": ""
+      }
+    },
+    "compileType": "game",
+    "libVersion": "widelyUsed",
+    "appid": "wxc0360e0c829a3307",
+    "projectname": "zhe-ye-neng-die",
+    "condition": {
+      "search": {
+        "current": -1,
+        "list": []
+      },
+      "conversation": {
+        "current": -1,
+        "list": []
+      },
+      "game": {
+        "currentL": -1,
+        "list": [],
+        "current": -1
+      },
+      "miniprogram": {
+        "current": -1,
+        "list": []
+      }
+    },
+    "simulatorPluginLibVersion": {},
+    "packOptions": {
+      "ignore": [],
+      "include": []
+    },
+    "isGameTourist": false,
+    "editorSetting": {}
+  },
+  "current_project_config_sha256": "5b237eeaa59c2fbf8824071449fa97efa1c3fdc5bfb98bdb399e164d37188951",
+  "current_project_config_bytes": 1271,
+  "project_private_config": {
+    "libVersion": "3.17.2",
+    "projectname": "wechatgame",
+    "condition": {},
+    "setting": {
+      "urlCheck": true,
+      "coverView": false,
+      "lazyloadPlaceholderEnable": false,
+      "skylineRenderEnable": false,
+      "preloadBackgroundData": false,
+      "autoAudits": false,
+      "useApiHook": true,
+      "showShadowRootInWxmlPanel": false,
+      "useStaticServer": false,
+      "useLanDebug": false,
+      "showES6CompileOption": false,
+      "compileHotReLoad": false,
+      "checkInvalidKey": true,
+      "ignoreDevUnusedFiles": true,
+      "bigPackageSizeSupport": false,
+      "useIsolateContext": true
+    }
+  },
+  "project_private_config_sha256": "f501c930d5e386928d493d2440b6425d114603146c28cb83a0b976b6653579a0",
+  "project_private_config_bytes": 594,
+  "changes": [
+    "project.config.json reformatted and editor default setting fields appended; original AppID, portrait game configuration and public projectname remain unchanged.",
+    "project.private.config.json created by IDE: libVersion 3.17.2, local projectname wechatgame."
+  ],
+  "runtime_and_web_effect": "No original runtime/settings/profile/project/Web-output content hash changed during CLI build.",
+  "not_proven": [
+    "Private configuration effects on final package accounting: use official tool package report.",
+    "Preview/real-device/upload/release: none performed by this agent."
+  ]
+}

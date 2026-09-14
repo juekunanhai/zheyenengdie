@@ -1,0 +1,415 @@
+{
+  "status": "adopted_for_bounded_trial_pending_user_review",
+  "assets": [
+    {
+      "slug": "cardboard_box",
+      "kind": "cardboard_box",
+      "name": "纸箱",
+      "width": 100.912779,
+      "height": 100,
+      "spriteWidth": 102.636917,
+      "spriteHeight": 101.926978,
+      "spriteOffset": [
+        0.05071,
+        -0.05071
+      ],
+      "sprite_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/assets/object_cardboard_box.png",
+      "next_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/assets/next_cardboard_box.png",
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              135,
+              9
+            ],
+            [
+              899,
+              9
+            ]
+          ],
+          "width_world": 77.484787,
+          "y_world": 50
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              38,
+              995
+            ],
+            [
+              973,
+              995
+            ]
+          ],
+          "width_world": 94.827586,
+          "y_world": -50
+        }
+      },
+      "pixel_to_world": 0.10141987829614604,
+      "status": "accepted_geometric_candidate_pending_engine_test",
+      "outline": [
+        [
+          -50.456389,
+          39.858012
+        ],
+        [
+          -50.456389,
+          -46.957404
+        ],
+        [
+          -47.413793,
+          -50
+        ],
+        [
+          47.413793,
+          -50
+        ],
+        [
+          50.456389,
+          -46.957404
+        ],
+        [
+          50.456389,
+          39.858012
+        ],
+        [
+          39.908722,
+          50
+        ],
+        [
+          -37.576065,
+          50
+        ]
+      ],
+      "outline_winding": "counter_clockwise",
+      "outline_area_world_squared": 9963.217208,
+      "source_outline_px": [
+        [
+          135,
+          9
+        ],
+        [
+          899,
+          9
+        ],
+        [
+          1003,
+          109
+        ],
+        [
+          1003,
+          965
+        ],
+        [
+          973,
+          995
+        ],
+        [
+          38,
+          995
+        ],
+        [
+          8,
+          965
+        ],
+        [
+          8,
+          109
+        ]
+      ],
+      "source_vertex_indices": [
+        0,
+        1,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12
+      ],
+      "notes": "Eight convex vertices retain original top/foot endpoints and full width/height. Not committed to runtime."
+    },
+    {
+      "slug": "wood_plank",
+      "kind": "wood_plank",
+      "name": "木板",
+      "width": 260,
+      "height": 28.744805,
+      "spriteWidth": 263.674148,
+      "spriteHeight": 32.851205,
+      "spriteOffset": [
+        0.108063,
+        -0.108063
+      ],
+      "sprite_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/assets/object_wood_plank.png",
+      "next_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/assets/next_wood_plank.png",
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              33,
+              9
+            ],
+            [
+              1186,
+              9
+            ]
+          ],
+          "width_world": 249.193682,
+          "y_world": 14.372402
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              31,
+              142
+            ],
+            [
+              1188,
+              142
+            ]
+          ],
+          "width_world": 250.058188,
+          "y_world": -14.372402
+        }
+      },
+      "pixel_to_world": 0.21612635078969245,
+      "status": "accepted_geometric_candidate_pending_engine_test",
+      "outline": [
+        [
+          -130,
+          8.536991
+        ],
+        [
+          -130,
+          -10.049875
+        ],
+        [
+          -125.029094,
+          -14.372402
+        ],
+        [
+          125.029094,
+          -14.372402
+        ],
+        [
+          130,
+          -10.049875
+        ],
+        [
+          130,
+          8.536991
+        ],
+        [
+          124.596841,
+          14.372402
+        ],
+        [
+          -124.596841,
+          14.372402
+        ]
+      ],
+      "outline_winding": "counter_clockwise",
+      "outline_area_world_squared": 7420.632511,
+      "source_outline_px": [
+        [
+          33,
+          9
+        ],
+        [
+          1186,
+          9
+        ],
+        [
+          1211,
+          36
+        ],
+        [
+          1211,
+          122
+        ],
+        [
+          1188,
+          142
+        ],
+        [
+          31,
+          142
+        ],
+        [
+          8,
+          122
+        ],
+        [
+          8,
+          36
+        ]
+      ],
+      "source_vertex_indices": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13
+      ],
+      "notes": "Eight convex vertices retain original top/foot endpoints and full width/height. Not committed to runtime."
+    },
+    {
+      "slug": "fridge",
+      "kind": "fridge",
+      "name": "冰箱 R2 单凸形",
+      "status": "candidate_150_width_pending_runtime_review_exceeds_one_world_unit_boundary_error",
+      "width": 150,
+      "height": 167.554858636,
+      "spriteWidth": 152.664576818,
+      "spriteHeight": 170.219435455,
+      "spriteOffset": [
+        0.078369545,
+        -0.078369545
+      ],
+      "outline": [
+        [
+          -74.843259545,
+          65.909090455
+        ],
+        [
+          -75,
+          -65.125392273
+        ],
+        [
+          -57.601880455,
+          -83.77743
+        ],
+        [
+          57.445141364,
+          -83.77743
+        ],
+        [
+          75,
+          -66.065830909
+        ],
+        [
+          74.843259545,
+          66.22257
+        ],
+        [
+          57.288400909,
+          83.77743
+        ],
+        [
+          -57.601880455,
+          83.77743
+        ]
+      ],
+      "outline_winding": "counter_clockwise",
+      "outline_area_world_squared": 24481.198627066,
+      "source_outline_px": [
+        [
+          119,
+          8
+        ],
+        [
+          852,
+          8
+        ],
+        [
+          964,
+          120
+        ],
+        [
+          965,
+          964
+        ],
+        [
+          853,
+          1077
+        ],
+        [
+          119,
+          1077
+        ],
+        [
+          8,
+          958
+        ],
+        [
+          9,
+          122
+        ]
+      ],
+      "raw_source_outline_px": [
+        [
+          260,
+          90
+        ],
+        [
+          993,
+          90
+        ],
+        [
+          1105,
+          202
+        ],
+        [
+          1106,
+          1046
+        ],
+        [
+          994,
+          1159
+        ],
+        [
+          260,
+          1159
+        ],
+        [
+          149,
+          1040
+        ],
+        [
+          150,
+          204
+        ]
+      ],
+      "pixel_to_world": 0.156739812,
+      "sprite_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/assets/object_fridge.png",
+      "next_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/assets/next_fridge.png",
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              119,
+              8
+            ],
+            [
+              852,
+              8
+            ]
+          ],
+          "width_world": 114.890282727,
+          "y_world": 83.77743
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              119,
+              1077
+            ],
+            [
+              853,
+              1077
+            ]
+          ],
+          "width_world": 115.047021818,
+          "y_world": -83.77743
+        }
+      },
+      "size_selection": "Uniform 150 / 110 world-unit remapping of unchanged fridge-r2 texture and same eight source-pixel vertices. Candidate targets about +/-21.7 relative support offset for dumbbell inner-foot span 71.46; current 125 mapping stays frozen. No raster resizing or anisotropic stretching."
+    }
+  ],
+  "notes": "Paper/plank retain original PNGs and checked <=1-unit simplification. Fridge is the new true eight-sided image uniformly mapped to 150 world units for two-foot dumbbell support. Flat bearing segments match the alpha128 boundary exactly; the lower chamfer has an openly recorded 1.183-unit simplification error.",
+  "selected_profile": "profiles/contact-damped.json"
+}

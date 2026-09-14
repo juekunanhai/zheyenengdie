@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit.\nAsset type: finished transparent RGBA game object Sprite. The attached image is the EDIT TARGET, an existing approved orange sesame hamburger Sprite for a playful high-quality 2D stacking game.\nChange ONLY the UPPER BREAD BUN silhouette so it can visibly support other stacked objects: gently squash its domed top into a broad genuinely HORIZONTAL upper bearing edge occupying about 60 to 65 percent of the full hamburger width, then smoothly rounded shoulders fall toward the original left/right bun edges. It should still read as a soft plump sesame bread bun with warm glossy golden-orange crust, creamy sesame seeds, and depth shading, now slightly flattened by previous stacking. Do not add a separate board, a plate, icing, a cut lid or artificial supports. IMPORTANT: the VERY TOP outer silhouette must have a straight horizontal central run, like a squashed rounded loaf, not an ellipse, dome, rounded single apex or wavy line. For reference the game object is 130 units wide and needs a visibly flat central top 75–85 units wide. Place sesame seeds inside the bun face; no seed may protrude above the flat outer top edge.\nPreserve the remainder closely: original full burger width and lower-bun footprint; golden orange lower bun, green folded lettuce at both layers, red tomato, melting yellow cheese corner in front, rich brown thick patty and its rounded visible texture. Preserve their arrangement, shading, side protrusions/concavities and proportions. Only upper bun silhouette is flatter; do not turn the whole burger into a short pancake, square crate, new character or toy with a face. Keep no eyes/mouth, no new ingredients, no text. Same clean colorful tactile 2.5D game illustration quality, not photorealistic fast-food advertising.\nFull complete burger centered with at least 5 percent padding. Genuine transparent background outside the entire burger, preserve actual RGBA alpha. No white backdrop, no black backdrop, no gray checkerboard, no scene, ground shadow, UI, labels or watermark.",
+  "source": "preparation/design/batch1c/assets/object_burger.png",
+  "purpose": "Only visible upper bread bearing face; existing friction/damping and total mass 3.2 preserved by runtime owner.",
+  "status": "originals_preserved_processed_candidate_self_checked",
+  "immutable_reference": "preparation/design/batch1c/burger-r2/reference-burger-r1.png",
+  "reference_sha256": "84809a3fa248aba9ee7db4428b8a1c620b19be1a81f77afc6c091f7c9bb58a47",
+  "generated_file": "preparation/design/batch1c/burger-r2/generated-original.png",
+  "generated_sha256": "c977cfe8869a1e3075f7d7f23edf04e8a27d136ba56253af916131d50d66dbe9",
+  "hashes": {
+    "reference-burger-r1.png": "84809a3fa248aba9ee7db4428b8a1c620b19be1a81f77afc6c091f7c9bb58a47",
+    "generated-original.png": "c977cfe8869a1e3075f7d7f23edf04e8a27d136ba56253af916131d50d66dbe9",
+    "generated-refined.png": "574b6f839d0e5d017336c3d5f522adaddd4745f9479226b6597dcf3c2181a4cb"
+  }
+}

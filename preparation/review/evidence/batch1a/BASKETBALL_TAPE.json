@@ -1,0 +1,260 @@
+{
+  "status": "passed_directed_tape_material_checks",
+  "checks": [
+    {
+      "name": "mild_slope_drift_reduced_without_changing_ball_shape",
+      "status": "passed",
+      "evidence": {
+        "before": {
+          "tape": false,
+          "supportDegrees": -0.5,
+          "observationFrames": 240,
+          "first": {
+            "x": 0.6918699741363525,
+            "y": 34.68602752685547,
+            "angle": -0.8349332631172013,
+            "vx": 0.11258404701948166,
+            "vy": 1.0036402940750122,
+            "omega": -0.09845501184463501,
+            "contacts": [
+              "GroundSupport"
+            ],
+            "damping": 0.1,
+            "dynamic": true,
+            "sleeping": false
+          },
+          "last": {
+            "x": 54.8129997253418,
+            "y": 33.81780242919922,
+            "angle": -92.04341751922756,
+            "vx": 0.7154863476753235,
+            "vy": -0.006243903189897537,
+            "omega": -0.6736782789230347,
+            "contacts": [
+              "GroundSupport"
+            ],
+            "damping": 0.1,
+            "dynamic": true,
+            "sleeping": false
+          },
+          "travel": 54.121129751205444
+        },
+        "after": {
+          "tape": true,
+          "supportDegrees": -0.5,
+          "observationFrames": 240,
+          "first": {
+            "x": 0.032760825008153915,
+            "y": 35.1644401550293,
+            "angle": -0.03584926838512346,
+            "vx": 0.09363715350627899,
+            "vy": 3.1769726276397705,
+            "omega": -0.062197230756282806,
+            "contacts": [
+              "GroundSupport"
+            ],
+            "damping": 6,
+            "dynamic": true,
+            "sleeping": false
+          },
+          "last": {
+            "x": 12.909040451049805,
+            "y": 34.18341827392578,
+            "angle": -21.398723122461483,
+            "vx": 0.09804891049861908,
+            "vy": -0.0008556423126719892,
+            "omega": -0.09231971204280853,
+            "contacts": [
+              "GroundSupport"
+            ],
+            "damping": 6,
+            "dynamic": true,
+            "sleeping": false
+          },
+          "travel": 12.87627962604165
+        },
+        "spec": {
+          "kind": "basketball",
+          "width": 68,
+          "height": 68,
+          "circle": true,
+          "spriteWidth": 70.2295,
+          "spriteHeight": 70.2295,
+          "friction": 0.85,
+          "restitution": 0.28,
+          "density": 0.4,
+          "contactAngularDamping": 6,
+          "description": "别担心，有人给它贴了双面胶。"
+        }
+      }
+    },
+    {
+      "name": "steeper_slope_still_rolls_off_and_falls",
+      "status": "passed",
+      "evidence": {
+        "rolling": {
+          "x": 26.4995059967041,
+          "y": 30.933177947998047,
+          "angle": -39.16220100258875,
+          "vx": 1.8031196594238281,
+          "vy": -0.2534119784832001,
+          "omega": -1.716676115989685,
+          "contacts": [
+            "GroundSupport"
+          ],
+          "damping": 6,
+          "dynamic": true,
+          "sleeping": false
+        },
+        "fallen": {
+          "x": 135.50904846191406,
+          "y": -91.3542251586914,
+          "angle": 112.94118405948016,
+          "vx": 2.3278005123138428,
+          "vy": -14.006348609924316,
+          "omega": -2.970999002456665,
+          "contacts": [],
+          "damping": 0.1,
+          "dynamic": true,
+          "sleeping": false
+        }
+      }
+    },
+    {
+      "name": "remaining_contact_keeps_rolling_resistance",
+      "status": "passed",
+      "evidence": {
+        "two": {
+          "x": -0.6496865153312683,
+          "y": 34.15749740600586,
+          "angle": 0,
+          "vx": 0,
+          "vy": 0,
+          "omega": 0,
+          "contacts": [
+            "TapeTestWall",
+            "GroundSupport"
+          ],
+          "damping": 6,
+          "dynamic": true,
+          "sleeping": false
+        },
+        "one": {
+          "x": -0.6496865153312683,
+          "y": 34.15749740600586,
+          "angle": 0,
+          "vx": 0,
+          "vy": 0,
+          "omega": 0,
+          "contacts": [
+            "GroundSupport"
+          ],
+          "damping": 6,
+          "dynamic": true,
+          "sleeping": false
+        }
+      }
+    },
+    {
+      "name": "last_contact_end_restores_air_rotation_and_gravity",
+      "status": "passed",
+      "evidence": {
+        "leaving": {
+          "x": -0.6496865153312683,
+          "y": 34.15749740600586,
+          "angle": 0,
+          "vx": 0,
+          "vy": 0,
+          "omega": 4,
+          "contacts": [],
+          "damping": 0.1,
+          "dynamic": true,
+          "sleeping": false
+        },
+        "air": {
+          "x": -0.6496865153312683,
+          "y": -93.86883544921875,
+          "angle": 111.68323715681653,
+          "vx": 0,
+          "vy": -15.424947738647461,
+          "omega": 3.8050789833068848,
+          "contacts": [],
+          "damping": 0.1,
+          "dynamic": true,
+          "sleeping": false
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "lowSlope": {
+    "before": {
+      "tape": false,
+      "supportDegrees": -0.5,
+      "observationFrames": 240,
+      "first": {
+        "x": 0.6918699741363525,
+        "y": 34.68602752685547,
+        "angle": -0.8349332631172013,
+        "vx": 0.11258404701948166,
+        "vy": 1.0036402940750122,
+        "omega": -0.09845501184463501,
+        "contacts": [
+          "GroundSupport"
+        ],
+        "damping": 0.1,
+        "dynamic": true,
+        "sleeping": false
+      },
+      "last": {
+        "x": 54.8129997253418,
+        "y": 33.81780242919922,
+        "angle": -92.04341751922756,
+        "vx": 0.7154863476753235,
+        "vy": -0.006243903189897537,
+        "omega": -0.6736782789230347,
+        "contacts": [
+          "GroundSupport"
+        ],
+        "damping": 0.1,
+        "dynamic": true,
+        "sleeping": false
+      },
+      "travel": 54.121129751205444
+    },
+    "after": {
+      "tape": true,
+      "supportDegrees": -0.5,
+      "observationFrames": 240,
+      "first": {
+        "x": 0.032760825008153915,
+        "y": 35.1644401550293,
+        "angle": -0.03584926838512346,
+        "vx": 0.09363715350627899,
+        "vy": 3.1769726276397705,
+        "omega": -0.062197230756282806,
+        "contacts": [
+          "GroundSupport"
+        ],
+        "damping": 6,
+        "dynamic": true,
+        "sleeping": false
+      },
+      "last": {
+        "x": 12.909040451049805,
+        "y": 34.18341827392578,
+        "angle": -21.398723122461483,
+        "vx": 0.09804891049861908,
+        "vy": -0.0008556423126719892,
+        "omega": -0.09231971204280853,
+        "contacts": [
+          "GroundSupport"
+        ],
+        "damping": 6,
+        "dynamic": true,
+        "sleeping": false
+      },
+      "travel": 12.87627962604165
+    }
+  }
+}

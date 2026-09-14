@@ -1,0 +1,5 @@
+{"profile":"final-remaining","id":"all_plus10","outcome":"survived_and_confirmed","released":10,"entered":10,"placed":10,"time":24.566600000001277,"peak":9.238776355609486}
+{"profile":"final-remaining","id":"all_minus10","outcome":"survived_and_confirmed","released":10,"entered":10,"placed":10,"time":23.53330000000058,"peak":9.238658108098186,"firstHazard":16.78340000000219}
+{"profile":"final-remaining","id":"paper_plus10","outcome":"survived_and_confirmed","released":10,"entered":10,"placed":10,"time":24.68319999999913,"peak":9.239785434219785,"firstHazard":17.54999999999993}
+{"profile":"final-remaining","id":"paper_minus10","outcome":"survived_and_confirmed","released":10,"entered":10,"placed":10,"time":24.71710000000134,"peak":9.242030280499037,"firstHazard":17.432899999998433}
+{"status":"completed_diagnostic_not_human_playtest","errors":[]}

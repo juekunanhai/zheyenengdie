@@ -1,0 +1,732 @@
+{
+  "status": "passed_sampled_real_contact_pixels",
+  "contact_samples": 40,
+  "max_distance_world": 0.9205272675582351,
+  "max_distance_css_pixels_at_375x667": 0.8054613591134557,
+  "threshold_world": 1.5,
+  "profiles": {
+    "wood_plank": {
+      "kind": "wood_plank",
+      "width": 195,
+      "height": 28,
+      "circle": false,
+      "spriteWidth": 206.7773,
+      "spriteHeight": 54.6483,
+      "spriteOffset": [
+        0,
+        7.85
+      ],
+      "outline": [
+        [
+          -83.5,
+          -14
+        ],
+        [
+          83.5,
+          -14
+        ],
+        [
+          97.5,
+          5
+        ],
+        [
+          87,
+          14
+        ],
+        [
+          -87,
+          14
+        ],
+        [
+          -97.5,
+          5
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.7,
+      "source_sha256": "846eb12d425e206dd993d121f946eca25a81b4862236a75858de5795c99a79f3"
+    },
+    "fridge": {
+      "kind": "fridge",
+      "width": 82,
+      "height": 145,
+      "circle": false,
+      "spriteWidth": 121.9219,
+      "spriteHeight": 170.203,
+      "spriteOffset": [
+        10,
+        0
+      ],
+      "outline": [
+        [
+          -41,
+          -49
+        ],
+        [
+          -12,
+          -72.5
+        ],
+        [
+          7,
+          -72.5
+        ],
+        [
+          41,
+          -55
+        ],
+        [
+          41,
+          67
+        ],
+        [
+          26,
+          72.5
+        ],
+        [
+          -12,
+          72.5
+        ],
+        [
+          -41,
+          56
+        ]
+      ],
+      "friction": 0.6,
+      "restitution": 0.01,
+      "density": 1.2,
+      "source_sha256": "dc5656504b62f7895ed30cd7c3245e5ca8f256b81a2de6da25735a4b816a0470"
+    },
+    "cardboard_box": {
+      "kind": "cardboard_box",
+      "width": 100,
+      "height": 100,
+      "circle": false,
+      "spriteWidth": 123.4306,
+      "spriteHeight": 122.605,
+      "outline": [
+        [
+          -50,
+          -34
+        ],
+        [
+          -18,
+          -50
+        ],
+        [
+          17,
+          -50
+        ],
+        [
+          50,
+          -29
+        ],
+        [
+          50,
+          39
+        ],
+        [
+          25,
+          50
+        ],
+        [
+          -20,
+          50
+        ],
+        [
+          -50,
+          32
+        ]
+      ],
+      "friction": 0.65,
+      "restitution": 0.02,
+      "density": 0.5,
+      "source_sha256": "ca9f234068ae645f793c440a0597c8da0a3deef6ac4ce6a3481d6a0f7a11bb00"
+    },
+    "basketball": {
+      "kind": "basketball",
+      "width": 68,
+      "height": 68,
+      "circle": true,
+      "spriteWidth": 70.2295,
+      "spriteHeight": 70.2295,
+      "friction": 0.85,
+      "restitution": 0.03,
+      "density": 0.4,
+      "contactAngularDamping": 6,
+      "adhesion": {
+        "maxForce": 1500,
+        "maxTorque": 150,
+        "maxImpactSpeed": 2
+      },
+      "description": "别担心，有人给它贴了双面胶。",
+      "source_sha256": "bcd896e6cb989523ad4b857efa61a35e040a71b8b620ba557c90e39237d50784"
+    }
+  },
+  "samples": [
+    {
+      "kind": "wood_plank",
+      "angle": 90,
+      "other": "GroundSupport",
+      "world": {
+        "x": -850.6036987304688,
+        "y": 0.23998355865478516
+      },
+      "local": {
+        "x": -83.50001525878906,
+        "y": -14.239983558654785
+      },
+      "distance_world": 0.7015645598531699
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 90,
+      "other": "GroundSupport",
+      "world": {
+        "x": -683.6036987304688,
+        "y": 0.2479400634765625
+      },
+      "local": {
+        "x": 83.49998474121094,
+        "y": -14.247940063476562
+      },
+      "distance_world": 0.7092175901500413
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 270,
+      "other": "GroundSupport",
+      "world": {
+        "x": -366.396728515625,
+        "y": 0.24792051315307617
+      },
+      "local": {
+        "x": -83.49996185302734,
+        "y": -14.247920036315918
+      },
+      "distance_world": 0.7092046523064296
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 270,
+      "other": "GroundSupport",
+      "world": {
+        "x": -199.39674377441406,
+        "y": 0.23999643325805664
+      },
+      "local": {
+        "x": 83.5000228881836,
+        "y": -14.239996910095215
+      },
+      "distance_world": 0.7015752555273304
+    },
+    {
+      "kind": "fridge",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": 1562.9168701171875,
+        "y": 0.2666587829589844
+      },
+      "local": {
+        "x": -11.999740600585938,
+        "y": -72.76664733886719
+      },
+      "distance_world": 0.15246757097880823
+    },
+    {
+      "kind": "fridge",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": 1581.9168701171875,
+        "y": 0.256072998046875
+      },
+      "local": {
+        "x": 7.000258922576904,
+        "y": -72.75607299804688
+      },
+      "distance_world": 0.9205272675582351
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": -2643.048583984375,
+        "y": 0.2894420623779297
+      },
+      "local": {
+        "x": -17.999799728393555,
+        "y": -50.28944396972656
+      },
+      "distance_world": 0.13948697971141757
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": -2608.048583984375,
+        "y": 0.27280426025390625
+      },
+      "local": {
+        "x": 17.000198364257812,
+        "y": -50.272804260253906
+      },
+      "distance_world": 0.17547317532884313
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 90,
+      "other": "GroundSupport",
+      "world": {
+        "x": -2307.0078125,
+        "y": 0.2749919891357422
+      },
+      "local": {
+        "x": -50.27499008178711,
+        "y": 31.999982833862305
+      },
+      "distance_world": 0.11862088869729942
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 90,
+      "other": "GroundSupport",
+      "world": {
+        "x": -2241.0078125,
+        "y": 0.2698516845703125
+      },
+      "local": {
+        "x": -50.26985168457031,
+        "y": -34.00001907348633
+      },
+      "distance_world": 0.12676990457135612
+    },
+    {
+      "kind": "fridge",
+      "angle": 90,
+      "other": "GroundSupport",
+      "world": {
+        "x": 1869.00244140625,
+        "y": 0.25211143493652344
+      },
+      "local": {
+        "x": -41.252113342285156,
+        "y": 56.00004577636719
+      },
+      "distance_world": 0.16599853083535185
+    },
+    {
+      "kind": "fridge",
+      "angle": 90,
+      "other": "GroundSupport",
+      "world": {
+        "x": 1974.00244140625,
+        "y": 0.25527381896972656
+      },
+      "local": {
+        "x": -41.255271911621094,
+        "y": -48.99995803833008
+      },
+      "distance_world": 0.04971134018705009
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": -1308.498779296875,
+        "y": 0.26598501205444336
+      },
+      "local": {
+        "x": -83.50006866455078,
+        "y": -14.265985488891602
+      },
+      "distance_world": 0.7265576769279335
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": -1141.498779296875,
+        "y": 0.2735476493835449
+      },
+      "local": {
+        "x": 83.49993133544922,
+        "y": -14.273548126220703
+      },
+      "distance_world": 0.7338807987044296
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 180,
+      "other": "GroundSupport",
+      "world": {
+        "x": -611.99853515625,
+        "y": 0.2634458541870117
+      },
+      "local": {
+        "x": 87.00006103515625,
+        "y": 14.263445854187012
+      },
+      "distance_world": 0.2727308454895084
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 180,
+      "other": "GroundSupport",
+      "world": {
+        "x": -437.9985046386719,
+        "y": 0.27274608612060547
+      },
+      "local": {
+        "x": -86.99996948242188,
+        "y": 14.272746086120605
+      },
+      "distance_world": 0.2648796890483421
+    },
+    {
+      "kind": "fridge",
+      "angle": 180,
+      "other": "GroundSupport",
+      "world": {
+        "x": 2248.9033203125,
+        "y": 0.27991485595703125
+      },
+      "local": {
+        "x": 25.999656677246094,
+        "y": 72.77991485595703
+      },
+      "distance_world": 0.15995314282465836
+    },
+    {
+      "kind": "fridge",
+      "angle": 180,
+      "other": "GroundSupport",
+      "world": {
+        "x": 2286.9033203125,
+        "y": 0.253814697265625
+      },
+      "local": {
+        "x": -12.00034236907959,
+        "y": 72.75381469726562
+      },
+      "distance_world": 0.16473486115535763
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 180,
+      "other": "GroundSupport",
+      "world": {
+        "x": -1950.037109375,
+        "y": 0.2884521484375
+      },
+      "local": {
+        "x": 24.999820709228516,
+        "y": 50.28844451904297
+      },
+      "distance_world": 0.1341532084909133
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 180,
+      "other": "GroundSupport",
+      "world": {
+        "x": -1905.037109375,
+        "y": 0.2714347839355469
+      },
+      "local": {
+        "x": -20.00017738342285,
+        "y": 50.27143478393555
+      },
+      "distance_world": 0.11677953165945758
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 270,
+      "other": "GroundSupport",
+      "world": {
+        "x": -1604.0057373046875,
+        "y": 0.2735729217529297
+      },
+      "local": {
+        "x": 50.2735710144043,
+        "y": -29.000017166137695
+      },
+      "distance_world": 0.1559957635182415
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 270,
+      "other": "GroundSupport",
+      "world": {
+        "x": -1536.0057373046875,
+        "y": 0.26970481872558594
+      },
+      "local": {
+        "x": 50.26970291137695,
+        "y": 38.99998092651367
+      },
+      "distance_world": 0.11362631279538082
+    },
+    {
+      "kind": "fridge",
+      "angle": 270,
+      "other": "GroundSupport",
+      "world": {
+        "x": 2570.00439453125,
+        "y": 0.24576759338378906
+      },
+      "local": {
+        "x": 41.24576950073242,
+        "y": -55.000118255615234
+      },
+      "distance_world": 0.1394047651142828
+    },
+    {
+      "kind": "fridge",
+      "angle": 270,
+      "other": "GroundSupport",
+      "world": {
+        "x": 2692.00439453125,
+        "y": 0.2528038024902344
+      },
+      "local": {
+        "x": 41.252803802490234,
+        "y": 66.9998779296875
+      },
+      "distance_world": 0.07024062469280361
+    },
+    {
+      "kind": "basketball",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": 175,
+        "y": 0.24347686767578125
+      },
+      "local": {
+        "x": 0,
+        "y": -33.92347717285156
+      },
+      "distance_world": 0.48085812523251364
+    },
+    {
+      "kind": "basketball",
+      "angle": 90,
+      "other": "GroundSupport",
+      "world": {
+        "x": 525,
+        "y": 0.24347686767578125
+      },
+      "local": {
+        "x": -33.92347717285156,
+        "y": 1.482842321820499e-06
+      },
+      "distance_world": 0.2021696331744636
+    },
+    {
+      "kind": "basketball",
+      "angle": 180,
+      "other": "GroundSupport",
+      "world": {
+        "x": 875,
+        "y": 0.24347686767578125
+      },
+      "local": {
+        "x": -2.965684643640998e-06,
+        "y": 33.92347717285156
+      },
+      "distance_world": 0.20216963319077777
+    },
+    {
+      "kind": "basketball",
+      "angle": 270,
+      "other": "GroundSupport",
+      "world": {
+        "x": 1225,
+        "y": 0.24347686767578125
+      },
+      "local": {
+        "x": 33.92347717285156,
+        "y": 1.482842321820499e-06
+      },
+      "distance_world": 0.4808581252348
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": -17.882570266723633,
+        "y": 0.23464012145996094
+      },
+      "local": {
+        "x": -18.000123977661133,
+        "y": -50.234642028808594
+      },
+      "distance_world": 0.08902993146889392
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 0,
+      "other": "GroundSupport",
+      "world": {
+        "x": 17.11741828918457,
+        "y": 0.24428939819335938
+      },
+      "local": {
+        "x": 16.999860763549805,
+        "y": -50.24428939819336
+      },
+      "distance_world": 0.15831993670518785
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 0,
+      "other": "Body:1:cardboard_box",
+      "world": {
+        "x": 25.06205177307129,
+        "y": 100.7311782836914
+      },
+      "local": {
+        "x": 24.98426628112793,
+        "y": -14.238199234008789
+      },
+      "distance_world": 0.6833924798616435
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 0,
+      "other": "Body:1:cardboard_box",
+      "world": {
+        "x": -19.937931060791016,
+        "y": 100.69738006591797
+      },
+      "local": {
+        "x": -20.015727996826172,
+        "y": -14.22921371459961
+      },
+      "distance_world": 0.24065498125484894
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 0,
+      "other": "Body:2:wood_plank",
+      "world": {
+        "x": 25.06205177307129,
+        "y": 100.7311782836914
+      },
+      "local": {
+        "x": 24.99990463256836,
+        "y": 50.23820114135742
+      },
+      "distance_world": 0.08530004252401731
+    },
+    {
+      "kind": "cardboard_box",
+      "angle": 0,
+      "other": "Body:2:wood_plank",
+      "world": {
+        "x": -19.937931060791016,
+        "y": 100.69738006591797
+      },
+      "local": {
+        "x": -20.000089645385742,
+        "y": 50.229217529296875
+      },
+      "distance_world": 0.075674914188975
+    },
+    {
+      "kind": "fridge",
+      "angle": 0,
+      "other": "Body:2:wood_plank",
+      "world": {
+        "x": -12.103562355041504,
+        "y": 129.20181274414062
+      },
+      "local": {
+        "x": -11.999006271362305,
+        "y": -72.76777648925781
+      },
+      "distance_world": 0.15115221439572774
+    },
+    {
+      "kind": "fridge",
+      "angle": 0,
+      "other": "Body:2:wood_plank",
+      "world": {
+        "x": 6.896331787109375,
+        "y": 129.18463134765625
+      },
+      "local": {
+        "x": 7.000863075256348,
+        "y": -72.73250579833984
+      },
+      "distance_world": 0.8998196835709413
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 0,
+      "other": "Body:3:fridge",
+      "world": {
+        "x": -12.103562355041504,
+        "y": 129.20181274414062
+      },
+      "local": {
+        "x": -12.15426254272461,
+        "y": 14.267756462097168
+      },
+      "distance_world": 0.2756319588691226
+    },
+    {
+      "kind": "wood_plank",
+      "angle": 0,
+      "other": "Body:3:fridge",
+      "world": {
+        "x": 6.896331787109375,
+        "y": 129.18463134765625
+      },
+      "local": {
+        "x": 6.845606327056885,
+        "y": 14.232511520385742
+      },
+      "distance_world": 0.2332028978203417
+    },
+    {
+      "kind": "fridge",
+      "angle": 0,
+      "other": "Body:4:basketball",
+      "world": {
+        "x": -0.0791652575135231,
+        "y": 274.675048828125
+      },
+      "local": {
+        "x": -0.37624913454055786,
+        "y": 72.73810577392578
+      },
+      "distance_world": 0.21790782607474987
+    },
+    {
+      "kind": "basketball",
+      "angle": 0,
+      "other": "Body:3:fridge",
+      "world": {
+        "x": -0.0791652575135231,
+        "y": 274.675048828125
+      },
+      "local": {
+        "x": -0.08566245436668396,
+        "y": -33.91802215576172
+      },
+      "distance_world": 0.48305917993537545
+    }
+  ],
+  "limits": [
+    "Measured contact cases, not all possible combinations or long-session balance.",
+    "A convex support outline is intentionally simpler than a pixel silhouette."
+  ]
+}

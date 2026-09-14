@@ -1,0 +1,7 @@
+{
+  "source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-1497a51a-f5cb-4ab5-b4e0-2a83617bf8d6.png",
+  "source_sha256": "43f622c2040680386398e66e03f39156fc9ec2ba1161c7489255aa4388560505",
+  "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/visual-r11/assets/retry-clean.png",
+  "output_sha256": "289612f8e5922f08099253fd28846e042ba40f96addf8e3d129ff5ef773753f4",
+  "method": "Retain center-connected alpha>220; erode2px and feather0.7px to remove chroma fragments; no subject redesign."
+}

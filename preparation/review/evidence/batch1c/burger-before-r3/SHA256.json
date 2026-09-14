@@ -1,0 +1,12 @@
+{
+  "preparation/design/batch1c/GEOMETRY.json": "5560067bf6739c3883d71a29af8f45edfd2895e798f73a16c25fbdccbf0f0058",
+  "preparation/design/batch1c/GENERATION_RESULTS.json": "6fdfce3f06e9bcc57a5310c9dacb34f81c0596819894d95b7eeed772c1bb4aaa",
+  "preparation/design/batch1c/ART_QA.json": "39257cbb82999fa6a01a4c8781c40cfbadd5d9b6ede2af99e2e48d96cf0ddb66",
+  "preparation/design/batch1c/PARAMETERS.json": "58a2f5f7b6b5e729eda43fb77cfc7c2c99a651433fe43b812f46b2be70cc117a",
+  "preparation/art/BATCH1C_IMPORT_MANIFEST.json": "9a30daf8b423409e403fcff4f0afef2222951aa909ecf8498782f6beacfa364a",
+  "assets/batch1/object-data.ts": "4f7b9c88c801784cf3068dc778b4bfcf1a30038359b3e17e4a7aa39e0fc60a5f",
+  "assets/batch0/art/object_burger.png": "0643bc448408a4211ca45e5c755d325deff336ff9e0aecaf0962d473b565d664",
+  "assets/batch0/art/object_burger.png.meta": "37cf3a164c69da963ecdb1cbefd86db87b18775cf7264cc913de73b9d1eeb093",
+  "assets/batch0/art/next_burger.png": "8cfd94934823026c32090aaaffa3aa969b864ff73cb11045455722566a725738",
+  "assets/batch0/art/next_burger.png.meta": "bf400661ae98ad291f817e4a928d40ceab29a3ede166e3ba5893fce5c5a90a20"
+}

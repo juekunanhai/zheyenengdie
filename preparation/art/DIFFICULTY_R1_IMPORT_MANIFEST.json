@@ -1,0 +1,60 @@
+{
+  "batch": "difficulty-r1",
+  "method": "Existing image/SpriteFrame UUIDs preserved; only three Sprite/NEXT pairs replaced. All geometry maps each image uniformly. Formal sources unchanged.",
+  "entries": [
+    {
+      "id": "object_cardboard_box",
+      "candidate": "design/difficulty-r1/assets/object_cardboard_box.png",
+      "import_path": "assets/batch0/art/object_cardboard_box.png",
+      "sha256": "119a169dfd8da4ee5a17c4bc12bd55fb8f0208e534b50cee54fdb794cdc9683b",
+      "previous_sha256": "ca9f234068ae645f793c440a0597c8da0a3deef6ac4ce6a3481d6a0f7a11bb00",
+      "uuid": "f5ca6384-3db3-5ede-96ed-3eb32cc2443d",
+      "status": "self_checked_trial_candidate_pending_runtime_and_user_visual_review"
+    },
+    {
+      "id": "next_cardboard_box",
+      "candidate": "design/difficulty-r1/assets/next_cardboard_box.png",
+      "import_path": "assets/batch0/art/next_cardboard_box.png",
+      "sha256": "c1f3677a1df12513406815fd5bf90f0c07c0d2f1ebe08a851c9de88ef8b5a8b0",
+      "previous_sha256": "e3a1f56bbfd03b3b2b681dc6d6588a292c3149950ce37a420d39868390c17fdd",
+      "uuid": "32f9d4f2-24f9-5839-af82-5ffde874e1b5",
+      "status": "self_checked_trial_candidate_pending_runtime_and_user_visual_review"
+    },
+    {
+      "id": "object_fridge",
+      "candidate": "design/difficulty-r1/fridge-r2/assets/object_fridge.png",
+      "import_path": "assets/batch0/art/object_fridge.png",
+      "sha256": "f8d8b26d64af8ba6e36163bfcb2533f1b60f0c429871b773613406d799ca37d0",
+      "previous_sha256": "dc5656504b62f7895ed30cd7c3245e5ca8f256b81a2de6da25735a4b816a0470",
+      "uuid": "b0dd028e-7a35-53eb-afb8-2aa5e92d1381",
+      "status": "self_checked_trial_candidate_pending_runtime_and_user_visual_review"
+    },
+    {
+      "id": "next_fridge",
+      "candidate": "design/difficulty-r1/fridge-r2/assets/next_fridge.png",
+      "import_path": "assets/batch0/art/next_fridge.png",
+      "sha256": "c9e8cc38532c5032cc53406e601c1e651bf7b898adeb322cacd63b6223afa977",
+      "previous_sha256": "60435c7619eac987468d42f1f283183acb8632ca4c1d468e5f5e54d024cd56d3",
+      "uuid": "ac7dc395-89bc-5dda-831b-ad646cc85af3",
+      "status": "self_checked_trial_candidate_pending_runtime_and_user_visual_review"
+    },
+    {
+      "id": "object_wood_plank",
+      "candidate": "design/difficulty-r1/assets/object_wood_plank.png",
+      "import_path": "assets/batch0/art/object_wood_plank.png",
+      "sha256": "2a7d93c6a2dce6191129642ceeffe91bcbed0ee071fe1f5a493ecefbc9b96462",
+      "previous_sha256": "846eb12d425e206dd993d121f946eca25a81b4862236a75858de5795c99a79f3",
+      "uuid": "dedc90ac-5149-556d-9b3b-7d282443ee08",
+      "status": "self_checked_trial_candidate_pending_runtime_and_user_visual_review"
+    },
+    {
+      "id": "next_wood_plank",
+      "candidate": "design/difficulty-r1/assets/next_wood_plank.png",
+      "import_path": "assets/batch0/art/next_wood_plank.png",
+      "sha256": "d78593c2d3af2e4bc4a677199c74e82771df5e4fe34741f26ee197eb3bce274c",
+      "previous_sha256": "a7aac4ed0605739804c1cad6c0dbdd405499a017ccade9dbb7197fce4132c889",
+      "uuid": "aa5672be-5f9d-5e29-bba8-4d207180adea",
+      "status": "self_checked_trial_candidate_pending_runtime_and_user_visual_review"
+    }
+  ]
+}

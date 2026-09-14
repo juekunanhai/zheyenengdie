@@ -1,0 +1,30 @@
+[
+  {
+    "id": "465451",
+    "name": "box",
+    "author": "ittou",
+    "source_url": "https://freesound.org/people/ittou/sounds/465451/",
+    "download_url": "https://cdn.freesound.org/previews/465/465451_4596196-hq.mp3",
+    "download_quality": "public high quality MP3 preview explicitly linked by author page; not original WAV",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "downloaded_at": "2026-09-13",
+    "file": "preparation/audio/sources/freesound/box-465451-hq.mp3",
+    "sha256": "16fe9b1a3afbaece11beeb1499f8900920dcdd53523f84b5f6d9a0fd810219e7",
+    "license_evidence": "preparation/audio/sources/freesound/box-page.html"
+  },
+  {
+    "id": "451642",
+    "name": "ball",
+    "author": "toddcircle",
+    "source_url": "https://freesound.org/people/toddcircle/sounds/451642/",
+    "download_url": "https://cdn.freesound.org/previews/451/451642_9133009-hq.mp3",
+    "download_quality": "public high quality MP3 preview explicitly linked by author page; not original WAV",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "downloaded_at": "2026-09-13",
+    "file": "preparation/audio/sources/freesound/ball-451642-hq.mp3",
+    "sha256": "a929399f009bb826386616e0d33ce5762005ab2d19a8c393ac7ca937f9022ae9",
+    "license_evidence": "preparation/audio/sources/freesound/ball-page.html"
+  }
+]

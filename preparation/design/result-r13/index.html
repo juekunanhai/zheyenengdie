@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R13 · 结算完整视觉稿</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:#17334c;background:#edf3f7;font-synthesis:none}*{box-sizing:border-box}body{margin:0}main{max-width:1150px;margin:auto;padding:24px}h1{font-size:25px;margin:0 0 8px}p{line-height:1.65;margin:7px 0;color:#526b80}a{color:#176ac1}button,select,input{font:inherit}header{margin-bottom:20px}.notice{background:#fff4d9;border-left:3px solid #c79523;padding:10px 14px;margin:16px 0}.tools{display:flex;gap:18px;align-items:center;flex-wrap:wrap;font-size:14px}.tools label{display:flex;align-items:center;gap:7px}select,button{border:1px solid #b8cbd9;border-radius:7px;background:white;color:#17334c;padding:7px 11px;cursor:pointer}button[aria-pressed=true]{background:#17334c;color:white}.comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:22px 0}.frame{margin:0;background:#fff;border:1px solid #d5e2eb;border-radius:12px;overflow:hidden}.frame figcaption{padding:14px 18px;font-weight:600;border-bottom:1px solid #e1eaf0}.stage{min-height:390px;padding:20px 10px;display:flex;justify-content:center;align-items:center;background:#dce7ef}.card{position:relative;width:min(100%,447px);aspect-ratio:298/336;flex:none}.card>img{width:100%;height:100%;object-fit:fill;display:block}.overlay{position:absolute;inset:0;opacity:0;pointer-events:none}.overlay.active{opacity:.5}.small .card{width:min(100%,298px)}.detail{background:#fff;border:1px solid #d5e2eb;border-radius:12px;padding:20px;margin:22px 0}.detail h2{margin:0 0 8px;font-size:18px}.parts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:17px}.part{padding:12px;background:#eff4f8;border-radius:8px;margin:0}.part .tile{height:135px;display:flex;align-items:center;justify-content:center;background:#dae7f0;border-radius:6px}.part img{max-width:100%;max-height:100%;object-fit:contain}.part figcaption{font-size:13px;margin-top:9px}.part a{font-size:12px;display:inline-block;margin-top:5px}.glyph{display:flex;align-items:flex-end;justify-content:center;gap:1px;min-height:100px;background:#dfecf5;padding:15px;border-radius:8px;max-width:550px;margin-top:15px}.glyph img{height:69px;width:auto;max-width:75px}.glyph img.unit{height:43px}.glyph img.dot{height:35px}.links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}.fine{font-size:13px}.dark .stage,.dark .tile,.dark .glyph{background:#152b47}.light .stage,.light .tile,.light .glyph{background:#fff1d1}footer{margin:25px 0;color:#60768a;font-size:13px}@media(max-width:800px){.parts{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){main{padding:16px}.comparison{grid-template-columns:1fr}.parts{grid-template-columns:repeat(2,minmax(0,1fr))}.stage{min-height:0}}
+</style>
+</head>
+<body class="small"><main>
+<header><h1>R13 · 结算完整视觉稿</h1><p>左边是已确认的原 UI 母版，右边是本轮独立重绘。先按同一尺寸比较，再放大看细节。</p>
+<div class="notice">R13 组件已接入真实 Cocos，本地自验通过，待用户引擎视觉复核。<a href="../../review/result-r13.html">打开引擎运行审阅</a> · <a href="engine/REVIEW.md">查看引擎检查记录</a>。本页保留已批准的完整视觉稿；42.7m、2680、92% 为图中示例，新纪录、技术分、玩家比例及分享在实际结算中仍隐藏。</div>
+<div class="tools">
+<label>查看尺寸 <select id="size"><option value="small">母版尺寸 · 298px</option><option value="large">放大 1.5 倍</option></select></label>
+<label>背景 <select id="backdrop"><option value="normal">浅灰蓝</option><option value="dark">深蓝 · 查透明边缘</option><option value="light">米白 · 查透明边缘</option></select></label>
+<button id="overlay-toggle" type="button" aria-pressed="false">叠加原图核对</button>
+</div></header>
+<div class="comparison">
+<figure class="frame"><figcaption>原 UI · 已确认的 R12 母版</figcaption><div class="stage"><div class="card"><img src="../result-r12/reference-only/result-card.png" alt="原UI结算母版"></div></div></figure>
+<figure class="frame"><figcaption>R13 · 本轮完整重绘稿</figcaption><div class="stage"><div class="card"><img src="full-card-r13.png" alt="R13完整结算视觉稿"><img class="overlay" src="../result-r12/reference-only/result-card.png" alt="半透明原图对照"></div></div></figure>
+</div>
+<section class="detail"><h2>完整稿阶段的对照修正</h2><p>保留原图的白纸标题、黄色蓝边成绩字、红色新纪录贴纸、右侧歪塔、白色数据区、相机分享卡和宽扁黄色重试按钮。自查后修正了标题多出的尖角、数据区尖角、成绩字块宽度、下半部位置与关闭按钮尺寸。</p><p class="fine">原母版只有 298 × 336 像素；细小高光和字形重绘仍存在差异。完整视觉稿此前已批准，当时按“暂不接入游戏”执行；随后已授权并完成组件接入与本地自验。当前待复核的是引擎组装视觉，不能将本稿标记为逐像素相同。</p></section>
+<section class="detail"><h2>独立组件与接入范围</h2><p>以下保留完整视觉稿阶段整理的透明图片，其中 18 张已原样组装进 Cocos，数字字形显示真实高度。新纪录、数据和分享区域仍只保留为视觉素材；本次未新增这些功能，未推进 1B。</p><div id="components" class="parts"></div></section>
+<section class="detail"><h2>成绩字形检查</h2><p>单独查看数字、小数点和单位图片；这里只检查资源是否齐全。</p><div class="tools"><label>示例 <select id="score"><option>42.7</option><option>0.0</option><option>123.4</option><option>567.8</option><option>999.9</option></select></label></div><div class="glyph" id="glyph"></div></section>
+<section class="detail"><h2>对照与来源</h2><div class="links"><a href="evidence/comparison.png" target="_blank">自查前后对照</a><a href="full-card-r13.png" target="_blank">完整透明稿</a><a href="COMPONENT_LAYOUT.json" target="_blank">母版坐标表</a><a href="README.md" target="_blank">交付说明</a><a href="QA.json" target="_blank">完整稿阶段检查记录</a><a href="engine/REVIEW.md" target="_blank">当前引擎检查记录</a></div><p class="fine">历史 UI 图片仅用于参考与比对；没有从历史图中抠取素材接入游戏。</p></section>
+<footer id="status">正在检查图片…</footer>
+</main><script>
+const $=s=>document.querySelector(s);
+$('#size').onchange=e=>document.body.classList.toggle('small',e.target.value==='small');
+$('#backdrop').onchange=e=>{document.body.classList.remove('dark','light');if(e.target.value!=='normal')document.body.classList.add(e.target.value)};
+$('#overlay-toggle').onclick=e=>{const on=e.target.getAttribute('aria-pressed')!=='true';e.target.setAttribute('aria-pressed',String(on));$('.overlay').classList.toggle('active',on);e.target.textContent=on?'关闭原图叠加':'叠加原图核对'};
+function drawGlyph(){const host=$('#glyph');host.replaceChildren();for(const c of $('#score').value+'m'){const im=new Image();im.src='assets/height_'+(c==='.'?'dot':c)+'.png';im.alt=c;im.className=c==='m'?'unit':c==='.'?'dot':'';host.append(im)}}
+$('#score').onchange=drawGlyph;drawGlyph();
+fetch('COMPONENT_LAYOUT.json').then(r=>r.json()).then(data=>{for(const item of data.groups){const fig=document.createElement('figure');fig.className='part';const tile=document.createElement('div');tile.className='tile';const image=new Image();image.src=item.file;image.alt=item.title;tile.append(image);const cap=document.createElement('figcaption');cap.textContent=item.title;const a=document.createElement('a');a.href=item.file;a.target='_blank';a.textContent='查看 PNG';fig.append(tile,cap,a);$('#components').append(fig)}return Promise.all([...document.images].map(im=>im.decode().catch(()=>null)))}).then(()=>{const imgs=[...document.images];const bad=imgs.filter(i=>!i.naturalWidth);$('#status').textContent=bad.length?'图片加载异常：'+bad.map(i=>i.alt).join('、'):'完整稿与 10 组组件已显示 · 本页没有游戏交互'}).catch(()=>{$('#status').textContent='组件清单读取失败，请通过本地审阅地址打开本页。'});
+</script></body></html>

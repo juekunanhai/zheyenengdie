@@ -1,0 +1,682 @@
+{
+  "settings": {
+    "scene": "Settings",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    },
+    "homePresentation": false,
+    "canvasSize": {
+      "width": 750,
+      "height": 1334
+    },
+    "contentScale": {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "nodes": [
+      {
+        "name": "panel_9slice_light",
+        "position": {
+          "x": 0,
+          "y": 50
+        },
+        "size": {
+          "width": 586,
+          "height": 630
+        },
+        "rotation": 0,
+        "spriteFrame": "944b899a-01b1-535a-aa70-502da07c9f84@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_settings_icon",
+        "position": {
+          "x": 0,
+          "y": 394
+        },
+        "size": {
+          "width": 112,
+          "height": 112
+        },
+        "rotation": 0,
+        "spriteFrame": "34764b14-1abf-5de9-a05d-1daa96843744@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "Text:设置",
+        "position": {
+          "x": 0,
+          "y": 281
+        },
+        "size": {
+          "width": 450,
+          "height": 74
+        },
+        "rotation": 0
+      },
+      {
+        "name": "Text:音乐",
+        "position": {
+          "x": -129,
+          "y": 143
+        },
+        "size": {
+          "width": 210,
+          "height": 76
+        },
+        "rotation": 0
+      },
+      {
+        "name": "toggle_on",
+        "position": {
+          "x": 130,
+          "y": 142
+        },
+        "size": {
+          "width": 170,
+          "height": 70
+        },
+        "rotation": 0,
+        "spriteFrame": "a65ae333-33f7-596d-8eab-8df0c4e85945@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "Text:音效",
+        "position": {
+          "x": -129,
+          "y": 14
+        },
+        "size": {
+          "width": 210,
+          "height": 76
+        },
+        "rotation": 0
+      },
+      {
+        "name": "toggle_on",
+        "position": {
+          "x": 130,
+          "y": 13
+        },
+        "size": {
+          "width": 170,
+          "height": 70
+        },
+        "rotation": 0,
+        "spriteFrame": "a65ae333-33f7-596d-8eab-8df0c4e85945@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "Text:震动",
+        "position": {
+          "x": -129,
+          "y": -115
+        },
+        "size": {
+          "width": 210,
+          "height": 76
+        },
+        "rotation": 0
+      },
+      {
+        "name": "toggle_off",
+        "position": {
+          "x": 130,
+          "y": -116
+        },
+        "size": {
+          "width": 170,
+          "height": 70
+        },
+        "rotation": 0,
+        "spriteFrame": "1d7fd559-bc53-547a-a00d-00b933f55893@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_settings_base",
+        "position": {
+          "x": 0,
+          "y": -379.59432048681543
+        },
+        "size": {
+          "width": 390,
+          "height": 140.81135902636916
+        },
+        "rotation": 0,
+        "spriteFrame": "9a223153-887d-5751-8adc-a7440d0ce9e0@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "Text:返回",
+        "position": {
+          "x": 0,
+          "y": -390
+        },
+        "size": {
+          "width": 370,
+          "height": 70
+        },
+        "rotation": 0
+      }
+    ]
+  },
+  "returned": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    },
+    "homePresentation": true,
+    "canvasSize": {
+      "width": 750,
+      "height": 1334
+    },
+    "contentScale": {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "nodes": [
+      {
+        "name": "R9Cloud0",
+        "position": {
+          "x": -348.59376816659346,
+          "y": 300.26920373968477
+        },
+        "size": {
+          "width": 340,
+          "height": 130.82096933728982
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Cloud1",
+        "position": {
+          "x": 316.66420536335113,
+          "y": 124.82789251816604
+        },
+        "size": {
+          "width": 290,
+          "height": 111.58259149357072
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Cloud2",
+        "position": {
+          "x": -309.8363850976243,
+          "y": -104.82719618737352
+        },
+        "size": {
+          "width": 185,
+          "height": 71.18199802176063
+        },
+        "rotation": 0,
+        "spriteFrame": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "HomeAirship",
+        "position": {
+          "x": -310,
+          "y": 480.5178383530956
+        },
+        "size": {
+          "width": 112,
+          "height": 64
+        },
+        "rotation": 10,
+        "spriteFrame": "7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "HomeAirplane",
+        "position": {
+          "x": 319.5,
+          "y": 289.25368740969935
+        },
+        "size": {
+          "width": 99,
+          "height": 58.528301886792455
+        },
+        "rotation": -22,
+        "spriteFrame": "5e2578a8-4a8b-5612-9b1f-15da9ed36867@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9WoodBoard",
+        "position": {
+          "x": -240,
+          "y": -141.65999999999997
+        },
+        "size": {
+          "width": 226,
+          "height": 310
+        },
+        "rotation": 7,
+        "spriteFrame": "0828129a-4f9c-54b6-9ee2-179ce3117b59@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9Hero",
+        "position": {
+          "x": 45,
+          "y": -182.810546875
+        },
+        "size": {
+          "width": 470,
+          "height": 705
+        },
+        "rotation": 0,
+        "spriteFrame": "5aaf430f-206d-5b84-9912-fd9e41fec676@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9SlipperBack",
+        "position": {
+          "x": -85.45703125,
+          "y": 251.26592371323528
+        },
+        "size": {
+          "width": 144,
+          "height": 108.84705882352941
+        },
+        "rotation": 6,
+        "spriteFrame": "c8e884b0-443b-5289-b43b-28289dbcbab5@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "R9SlipperFront",
+        "position": {
+          "x": -15.45703125,
+          "y": 217.3688648897059
+        },
+        "size": {
+          "width": 194,
+          "height": 146.64117647058825
+        },
+        "rotation": 0,
+        "spriteFrame": "c8e884b0-443b-5289-b43b-28289dbcbab5@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "logo_main",
+        "position": {
+          "x": 0,
+          "y": 466.1036457390478
+        },
+        "size": {
+          "width": 560,
+          "height": 296.82838522809556
+        },
+        "rotation": 0,
+        "spriteFrame": "2a967c38-21e7-5ab5-8f8c-70f49d9e9e74@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_settings_icon",
+        "position": {
+          "x": 315.5,
+          "y": 608.5
+        },
+        "size": {
+          "width": 67,
+          "height": 67
+        },
+        "rotation": 0,
+        "spriteFrame": "34764b14-1abf-5de9-a05d-1daa96843744@f9941",
+        "opacity": 255
+      },
+      {
+        "name": "btn_start",
+        "position": {
+          "x": 0,
+          "y": -562.2828282828283
+        },
+        "size": {
+          "width": 556,
+          "height": 196.56565656565655
+        },
+        "rotation": 0,
+        "spriteFrame": "15e4005b-d75b-5047-85ee-ad1a2b421b35@f9941",
+        "opacity": 255
+      }
+    ]
+  },
+  "started": {
+    "scene": "HUD",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    },
+    "game": {
+      "phase": "observing",
+      "releases": 7,
+      "placed": 6,
+      "peakMetres": 4.709474657791967,
+      "secondsLeft": 0,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 724.5474657791967,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": 51.690322922053866
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 239.11889435062517,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 724.5474657791967
+      },
+      "audioClips": 17,
+      "currentId": 7,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0.11046139895915985,
+            "y": 50.47948455810547,
+            "z": 0
+          },
+          "angle": -0.00535307446749321,
+          "size": [
+            100,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": -0.00009342877456219867
+          },
+          "velocity": {
+            "x": 0.0009314588969573379,
+            "y": -8.227107173297554e-8
+          },
+          "angularVelocity": 1.3853423297405243e-7,
+          "mass": 4.3896484375,
+          "awake": true,
+          "contacts": 2,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 0.9999999999999999,
+            "y": 0.9999999999999999,
+            "z": 1
+          },
+          "bounds": {
+            "left": -49.89271496114794,
+            "right": 50.11410490293839,
+            "bottom": 0.4778964871636191,
+            "top": 100.48135291537059
+          }
+        },
+        {
+          "id": 2,
+          "kind": "wood_plank",
+          "position": {
+            "x": 0.06027938425540924,
+            "y": 114.97318267822266,
+            "z": 0
+          },
+          "angle": -0.0489429678076627,
+          "size": [
+            195,
+            28
+          ],
+          "physicsAxis": {
+            "x": 0.9999996423721313,
+            "y": -0.0008542158175259829
+          },
+          "velocity": {
+            "x": 0.0016755651449784636,
+            "y": 0.000025503544748062268
+          },
+          "angularVelocity": -0.00034933810820803046,
+          "mass": 3.4859859943389893,
+          "awake": true,
+          "contacts": 2,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -97.43541396445946,
+            "right": 97.56451489127085,
+            "bottom": 100.90186076420666,
+            "top": 129.04749434764386
+          }
+        },
+        {
+          "id": 3,
+          "kind": "fridge",
+          "position": {
+            "x": 0.7455483675003052,
+            "y": 202.02635192871094,
+            "z": 0
+          },
+          "angle": -0.7149917261971923,
+          "size": [
+            82,
+            145
+          ],
+          "physicsAxis": {
+            "x": 0.9999221563339233,
+            "y": -0.012478635646402836
+          },
+          "velocity": {
+            "x": 0.01069415919482708,
+            "y": 0.000587092072237283
+          },
+          "angularVelocity": -0.003671157406643033,
+          "mass": 12.856934547424316,
+          "awake": true,
+          "contacts": 2,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -40.86271248057962,
+            "right": 42.57842466122856,
+            "bottom": 129.44464641518834,
+            "top": 274.6704506215803
+          }
+        },
+        {
+          "id": 4,
+          "kind": "basketball",
+          "position": {
+            "x": 1.702731728553772,
+            "y": 308.6809997558594,
+            "z": 0
+          },
+          "angle": -0.5323981980419787,
+          "size": [
+            68,
+            68
+          ],
+          "physicsAxis": {
+            "x": 0.9999568462371826,
+            "y": -0.009291967377066612
+          },
+          "velocity": {
+            "x": 0.0189849641174078,
+            "y": 0.0006147744716145098
+          },
+          "angularVelocity": -0.00027493899688124657,
+          "mass": 1.4186254739761353,
+          "awake": true,
+          "contacts": 2,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -32.29726827144623,
+            "right": 35.70273172855377,
+            "bottom": 274.6809997558594,
+            "top": 342.6809997558594
+          }
+        },
+        {
+          "id": 5,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 2.2079291343688965,
+            "y": 392.8424072265625,
+            "z": 0
+          },
+          "angle": -0.9802614926042369,
+          "size": [
+            100,
+            100
+          ],
+          "physicsAxis": {
+            "x": 0.9998536705970764,
+            "y": -0.017107956111431122
+          },
+          "velocity": {
+            "x": 0.018247628584504128,
+            "y": 0.0003148854011669755
+          },
+          "angularVelocity": -0.000705861602909863,
+          "mass": 4.3896484375,
+          "awake": true,
+          "contacts": 2,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 0.9999999999999999,
+            "y": 0.9999999999999999,
+            "z": 1
+          },
+          "bounds": {
+            "left": -48.36642377801947,
+            "right": 52.86782182642869,
+            "bottom": 342.55888956505703,
+            "top": 443.17724875587083
+          }
+        },
+        {
+          "id": 6,
+          "kind": "wood_plank",
+          "position": {
+            "x": 3.6077466011047363,
+            "y": 457.3125915527344,
+            "z": 0
+          },
+          "angle": -0.9890417007822883,
+          "size": [
+            195,
+            28
+          ],
+          "physicsAxis": {
+            "x": 0.9998509883880615,
+            "y": -0.01726117730140686
+          },
+          "velocity": {
+            "x": 0.019577184692025185,
+            "y": 0.00031662266701459885
+          },
+          "angularVelocity": -0.00014974683290347457,
+          "mass": 3.4859859943389893,
+          "awake": true,
+          "contacts": 2,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -93.79142145655146,
+            "right": 101.17952642723154,
+            "bottom": 441.87336907896406,
+            "top": 472.8122281454694
+          }
+        },
+        {
+          "id": 7,
+          "kind": "fridge",
+          "position": {
+            "x": 6.379703998565674,
+            "y": 544.2963256835938,
+            "z": 0
+          },
+          "angle": -1.3152627413212041,
+          "size": [
+            82,
+            145
+          ],
+          "physicsAxis": {
+            "x": 0.9997365474700928,
+            "y": -0.02295364998281002
+          },
+          "velocity": {
+            "x": 0.0190750565379858,
+            "y": 0.00034081959165632725
+          },
+          "angularVelocity": 0.00010873069550143555,
+          "mass": 12.856934547424316,
+          "awake": true,
+          "contacts": 1,
+          "placed": false,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -35.734222558219216,
+            "right": 48.90679624254483,
+            "bottom": 471.6547516929821,
+            "top": 617.0526679206482
+          }
+        }
+      ]
+    },
+    "homePresentation": false,
+    "canvasSize": {
+      "width": 750,
+      "height": 1334
+    }
+  }
+}

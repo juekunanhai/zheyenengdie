@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "createdAt": "2026-09-13T09:58:08.865Z",
+  "primary": {
+    "file": "WAIT.json",
+    "passed": 13,
+    "total": 13,
+    "errors": []
+  },
+  "supplemental": [
+    {
+      "file": "WAIT-real_light.json",
+      "purpose": "Explicit delayed-score camera target equality; capture after two RAF frames",
+      "status": "passed"
+    },
+    {
+      "file": "WAIT-contacting_horizontal.json",
+      "purpose": "Five-layer instead of short three-layer tower: removes initial spare clearance as a false pass",
+      "status": "passed"
+    },
+    {
+      "file": "WAIT-repeated_deadlines.json",
+      "purpose": "Six consecutive real-micro-motion timeouts, then genuine high-tower stability qualifies all six without changing camera target; capture after two RAF frames",
+      "status": "passed"
+    }
+  ],
+  "measurements": {
+    "lightSwayContactToEnter": 1.517400000000373,
+    "lightSwayContactToPlanning": 1.7665000000000006,
+    "tenFpsContactToEnter": 1.5005999999996273,
+    "horizontalTopMinFourRotationGap": 58.84837876430788,
+    "highPendingCameraTarget": 247.52769077845983,
+    "highConfirmedCameraTarget": 247.52769077845983,
+    "highConfirmedPlaced": 6,
+    "highConfirmedMetres": 4.79358642578125,
+    "normalSixMetres": 4.793507995605469
+  },
+  "limitations": [
+    "Forced velocity and escape cases are mechanism regressions, not difficulty or human survival estimates.",
+    "Full first-run report used a three-layer horizontal mover; the five-layer supplement is the stronger regression evidence.",
+    "Screenshot normal-six-complete.png was captured after scene-state validation; the revised helper now explicitly waits two RAFs, used by the other final captures.",
+    "No WeChat/device acceptance is implied."
+  ],
+  "sourceHashes": {
+    "preparation/tools/check_placement_wait.cjs": "78ccd4fa0993135bcf8f76cbc1c397ff4b616fc668f526743d5334cf9c0d5ba9",
+    "assets/batch1/game-controller.ts": "30b55b99da76ee67999883da5ceab0f5e7fee34e4039c8ec50236812ea86088d",
+    "assets/batch1/tower-world.ts": "2af99a42f7ec6e7a81294d71be94788f9bfc7f7f475839372df2ac053e4df404",
+    "assets/batch1/play-view.ts": "91b648d0e2bafa214ca9b1f0acdecd50e0aee121064aed536cac65902c93903f",
+    "assets/batch1/object-data.ts": "ea8f5f083a6ebf34ebddc672c273aa679330a2278cf13388ad782fdd5606a0ba"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "revision": "2026-09-14-cheerful-voice-r2",
+  "path_base": "project_root",
+  "status": "audition_candidates_only",
+  "imported_into_game": false,
+  "listening_status": "not_reviewed",
+  "download_date": "2026-09-14",
+  "technical_checks": "All three MP3s decode successfully; measured LUFS and true peaks are recorded per item.",
+  "boundary": "Source descriptions, licenses, duration and encoding were checked. No subjective audio quality, tone or in-game timing is claimed verified.",
+  "excluded_research_downloads": [
+    "sources/kenney_voiceover-pack.zip"
+  ],
+  "research_note": "Freesound candidates were not used because the site returned temporary busy/502/503 responses. No login-only original downloads were attempted.",
+  "items": [
+    {
+      "id": "voice_wow",
+      "title": "Wow · 惊喜短音（试听候选）",
+      "source_title": "Sfx Strong Wow",
+      "author": "FiftySounds",
+      "source_page": "https://www.fiftysounds.com/royalty-free-music/sfx-wow3.html",
+      "download_url": "https://www.fiftysounds.com/music/sfx-wow3.zip",
+      "archive": "fiftysounds-wow3.zip",
+      "archive_member": "sfx-wow3.mp3",
+      "license": "FiftySounds License — free commercial game use; SFX attribution optional",
+      "license_url": "https://www.fiftysounds.com/music-license.html",
+      "source_evidence": [
+        {
+          "file": "preparation/audio/cheerful-r2/voice/sources/fiftysounds-wow.html",
+          "sha256": "7d29984e8430695afc9ccf2a86534e056f8d8942af9d5a6caea7c89cb9a6baa7"
+        },
+        {
+          "file": "preparation/audio/cheerful-r2/voice/sources/fiftysounds-license.html",
+          "sha256": "1e75ce44f4fd81c10473dd3055ca7358fe594ad3e036830c1db2bc755f9be1b1"
+        }
+      ],
+      "description": "网站归类为人声 Wow；去掉约两秒尾部静音，保留完整感叹。",
+      "human_voice_evidence": "FiftySounds Human Sounds / Wow category and the individual Strong Wow item.",
+      "source_quality": "Author-provided original downloadable MP3 (320 kbps), not a captured stream.",
+      "source_boundary": "Website does not publish the original recording or prior processing chain; this is not claimed to be an unprocessed dry recording.",
+      "trim_start_s": 0.02,
+      "trim_end_s": 0.9,
+      "file": "preparation/audio/cheerful-r2/voice/voice_wow.mp3",
+      "master": "preparation/audio/cheerful-r2/voice/voice_wow.wav",
+      "duration_s": 0.88,
+      "bytes": 22612,
+      "sha256": "2bfd6da81e67b86c8dc18fbfcec9ff75c4b39cba1aa30d6d2e45479abfeff2de",
+      "master_sha256": "7d75da2f9c52d16395998a5bca8f59b18160fb7bdf3974920ca3971a0dc0065f",
+      "source_file": "preparation/audio/cheerful-r2/voice/sources/fiftysounds-wow3.mp3",
+      "source_sha256": "ceb5235ccc7418b75dfca19fa728d6bec383c5e26177dbb072ed411df40815e9",
+      "source_archive": "preparation/audio/cheerful-r2/voice/sources/fiftysounds-wow3.zip",
+      "source_archive_sha256": "688a7b3829ecf4ac7c2da94957c8e64d335dbf4ddc6d9450d3c7825aeb4e766f",
+      "metrics": {
+        "integrated_lufs": -18.26,
+        "true_peak_dbtp": -7.53
+      },
+      "sample_rate": 44100,
+      "channels": 1,
+      "processing": {
+        "trim_start_s": 0.02,
+        "trim_end_s": 0.9,
+        "source_decoded_duration_s": 2.899592,
+        "resample_hz": 44100,
+        "mono_downmix": true,
+        "dc_removed": -3.2974654871693677e-06,
+        "fade_in_s": 0.002,
+        "fade_out_s": 0.012,
+        "gain_db": -0.62,
+        "target_lufs": -18,
+        "true_peak_ceiling_dbtp": -3,
+        "upward_gain_cap_db": 6,
+        "speed_ratio": 1,
+        "pitch_shift_semitones": 0,
+        "compression": false,
+        "synthesized_layers": false
+      },
+      "status": "audition_candidate",
+      "listening_status": "not_reviewed",
+      "imported_into_game": false
+    },
+    {
+      "id": "voice_hey",
+      "title": "Hey · 明快招呼（试听候选）",
+      "source_title": "Free Voice Clips Pack - Bright Female / 01-hey.wav",
+      "author": "cicifyre",
+      "source_page": "https://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs",
+      "download_url": "https://opengameart.org/sites/default/files/Free%20Voice%20Clips%20Pack%20-%20Bright%20Female_0.zip",
+      "archive": "cicifyre-bright-female.zip",
+      "archive_member": "Free Voice Clips Pack - Bright Female/01-hey.wav",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_evidence": [
+        {
+          "file": "preparation/audio/cheerful-r2/voice/sources/cicifyre-page.html",
+          "sha256": "a6b1a87c6abda2000a610f0322e44d8c70b14df1a0d7b6cd0d062865b82c623e"
+        },
+        {
+          "file": "preparation/audio/cheerful-r2/voice/sources/cicifyre-readme.txt",
+          "sha256": "b3c6efea65a411f4e18e6123b1514ba07aaf901f3fe469fd47c532a0ab9921b3"
+        }
+      ],
+      "description": "独立录制的 Hey 女声，保留原速度和音高，先试听语气是否贴合游戏。",
+      "human_voice_evidence": "Author-tagged Voice Acting / female pack, 2019 release; filename explicitly labels the spoken word.",
+      "source_quality": "Original author WAV (32-bit float) from the downloadable archive.",
+      "source_boundary": "Metadata establishes voice acting and the word, not a completed subjective listening review.",
+      "trim_start_s": 0,
+      "trim_end_s": null,
+      "file": "preparation/audio/cheerful-r2/voice/voice_hey.mp3",
+      "master": "preparation/audio/cheerful-r2/voice/voice_hey.wav",
+      "duration_s": 0.983605,
+      "bytes": 25120,
+      "sha256": "027d60484504864eda1fef12d8de61a4c81e62412487327dde654985d1b5c04f",
+      "master_sha256": "76b31fe14b08aa1a5ff999718b6d5a401b6040558dbda66f823e02dfecd26415",
+      "source_file": "preparation/audio/cheerful-r2/voice/sources/cicifyre-01-hey.wav",
+      "source_sha256": "5d69c67f41380fc22b7438ea268b20d3dc26b8578b917878ee4dac0016f0d6d8",
+      "source_archive": "preparation/audio/cheerful-r2/voice/sources/cicifyre-bright-female.zip",
+      "source_archive_sha256": "cbdaac33267b6efc4b749c5416f884113da0ba7be54f52f80587f655122138a6",
+      "metrics": {
+        "integrated_lufs": -20.08,
+        "true_peak_dbtp": -6.85
+      },
+      "sample_rate": 44100,
+      "channels": 1,
+      "processing": {
+        "trim_start_s": 0,
+        "trim_end_s": 0.983605,
+        "source_decoded_duration_s": 0.983605,
+        "resample_hz": 44100,
+        "mono_downmix": true,
+        "dc_removed": 1.707454249021201e-08,
+        "fade_in_s": 0.002,
+        "fade_out_s": 0.012,
+        "gain_db": 6,
+        "target_lufs": -18,
+        "true_peak_ceiling_dbtp": -3,
+        "upward_gain_cap_db": 6,
+        "speed_ratio": 1,
+        "pitch_shift_semitones": 0,
+        "compression": false,
+        "synthesized_layers": false
+      },
+      "status": "audition_candidate",
+      "listening_status": "not_reviewed",
+      "imported_into_game": false
+    },
+    {
+      "id": "voice_chuckle",
+      "title": "俏皮短笑（试听候选）",
+      "source_title": "Free Voice Clips Pack - Bright Female / 01-laughter.wav",
+      "author": "cicifyre",
+      "source_page": "https://opengameart.org/content/voice-clip-packs-for-visual-novels-and-rpgs",
+      "download_url": "https://opengameart.org/sites/default/files/Free%20Voice%20Clips%20Pack%20-%20Bright%20Female_0.zip",
+      "archive": "cicifyre-bright-female.zip",
+      "archive_member": "Free Voice Clips Pack - Bright Female/01-laughter.wav",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_evidence": [
+        {
+          "file": "preparation/audio/cheerful-r2/voice/sources/cicifyre-page.html",
+          "sha256": "a6b1a87c6abda2000a610f0322e44d8c70b14df1a0d7b6cd0d062865b82c623e"
+        },
+        {
+          "file": "preparation/audio/cheerful-r2/voice/sources/cicifyre-readme.txt",
+          "sha256": "b3c6efea65a411f4e18e6123b1514ba07aaf901f3fe469fd47c532a0ab9921b3"
+        }
+      ],
+      "description": "独立短笑表演，用于比较画面的趣味感；尚未赋予赞许、失败或任何游戏触发语义。",
+      "human_voice_evidence": "Author-tagged Voice Acting / female pack, 2019 release; filename explicitly labels laughter.",
+      "source_quality": "Original author WAV (32-bit float) from the downloadable archive.",
+      "source_boundary": "Whether the laugh feels friendly or mocking must be decided by listening; it is not assigned to failure feedback.",
+      "trim_start_s": 0,
+      "trim_end_s": null,
+      "file": "preparation/audio/cheerful-r2/voice/voice_chuckle.mp3",
+      "master": "preparation/audio/cheerful-r2/voice/voice_chuckle.wav",
+      "duration_s": 1.257392,
+      "bytes": 32016,
+      "sha256": "9fcbad3f11f346b9db3022070f636c62ff248be6ac54d6d10a3ee902c2545c56",
+      "master_sha256": "50e0f0f85eeb69ce5a0768b5187fd034c0ad65ffc500d465ba28e5e0bbb260ae",
+      "source_file": "preparation/audio/cheerful-r2/voice/sources/cicifyre-01-laughter.wav",
+      "source_sha256": "3e936ed651320af3a3e8754842f6a7192e0ca2161b586c72cbffc20fd0de48a7",
+      "source_archive": "preparation/audio/cheerful-r2/voice/sources/cicifyre-bright-female.zip",
+      "source_archive_sha256": "cbdaac33267b6efc4b749c5416f884113da0ba7be54f52f80587f655122138a6",
+      "metrics": {
+        "integrated_lufs": -24.79,
+        "true_peak_dbtp": -5.46
+      },
+      "sample_rate": 44100,
+      "channels": 1,
+      "processing": {
+        "trim_start_s": 0,
+        "trim_end_s": 1.257392,
+        "source_decoded_duration_s": 1.257392,
+        "resample_hz": 44100,
+        "mono_downmix": true,
+        "dc_removed": -3.0362092045999998e-06,
+        "fade_in_s": 0.002,
+        "fade_out_s": 0.012,
+        "gain_db": 6,
+        "target_lufs": -18,
+        "true_peak_ceiling_dbtp": -3,
+        "upward_gain_cap_db": 6,
+        "speed_ratio": 1,
+        "pitch_shift_semitones": 0,
+        "compression": false,
+        "synthesized_layers": false
+      },
+      "status": "audition_candidate",
+      "listening_status": "not_reviewed",
+      "imported_into_game": false
+    }
+  ]
+}

@@ -1,0 +1,2958 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-14T12:51:17.435619+00:00",
+  "scope": "Copies of user-provided source packs and project-text-referenced generated originals. Originals remain unchanged. No account configuration or unrelated Codex files copied.",
+  "repository_root_at_collection": "/Users/admin/Desktop/douchao/my-project/wechatgames/die",
+  "text_files_scanned": 3370,
+  "pack_counts": {
+    "docs": {
+      "files": 15,
+      "bytes": 34999075
+    },
+    "art-source": {
+      "files": 201,
+      "bytes": 38403037
+    }
+  },
+  "generated_reference_paths": 58,
+  "generated_originals_copied": 58,
+  "skipped_files": [
+    "/Users/admin/Downloads/zheyenengdie/docs/.DS_Store",
+    "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/.DS_Store",
+    "/Users/admin/Downloads/zheyenengdie/art-source/.DS_Store",
+    "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/.DS_Store",
+    "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/.DS_Store"
+  ],
+  "missing_references": [],
+  "files": [
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/ASSET_MANIFEST.csv",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/ASSET_MANIFEST.csv",
+      "sha256": "9d42bddddb575746d360e4bf749709e43362d615d2e7c2679ba0f0a69b8ec363",
+      "bytes": 14081,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/DEVELOPMENT_READINESS.md",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/DEVELOPMENT_READINESS.md",
+      "sha256": "f513841dd880d0f7c87c4c42f56261bae2d12bf5177998da49f330710189dedb",
+      "bytes": 17053,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/PLATFORM_PORTABILITY.md",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/PLATFORM_PORTABILITY.md",
+      "sha256": "079957a95779d4e31a22d6b073d12f1e3e767f22aa6fda696aa6450d3da42786",
+      "bytes": 13047,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/SPEC.md",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/SPEC.md",
+      "sha256": "c588f26fd490b605a07562d08abced5b0a4997ec8242aa5e919ed27475263652",
+      "bytes": 78793,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/01_game_blueprint.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/01_game_blueprint.png",
+      "sha256": "98a91bb73ed3bcf8a90cfb72a5afb1e842650aab1a2f72c35eb8f5893bb0c59c",
+      "bytes": 2093955,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/02_ui_design_system.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/02_ui_design_system.png",
+      "sha256": "79309826c353b7f74c3e33a0a95da601354da7f8f330e1bfdd0735303fa4df66",
+      "bytes": 2108483,
+      "identical_existing_project_files": [
+        "preparation/design/R8/assets/ui-original-reference.png",
+        "preparation/design/result-r12/reference-only/original-ui.png"
+      ]
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/03_2_5d_asset_overview.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/03_2_5d_asset_overview.png",
+      "sha256": "86405cd0bf4824af57263629069c6535e419743e8f6ebbbe4646303b63d0bd94",
+      "bytes": 1965542,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/04_city_to_space.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/04_city_to_space.png",
+      "sha256": "0e4539a79c1e52af73a6e96faecce7ec0ba7a8b4cf3a319bebc0fc6d3c4d36ea",
+      "bytes": 2074854,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/05_hud_reference.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/05_hud_reference.png",
+      "sha256": "89d1f9530e0e7bd6aa18ae5112a62499188c055d08002833276de9d4e6cf8865",
+      "bytes": 2243960,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/06_object_entry_claw.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/06_object_entry_claw.png",
+      "sha256": "36641100d7b4904d3330a01697626cf8f13103c9910f3772732e6a30d9327ca8",
+      "bytes": 1665483,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/07_hud_comparison.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/07_hud_comparison.png",
+      "sha256": "5e63b4917ff1f2c1820b28b16b116ae69d7e78b8d0adcc6b06cbf14bfab5a15d",
+      "bytes": 2026401,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/08_ui_icons_assets.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/08_ui_icons_assets.png",
+      "sha256": "55491ae9e09338379590df721f7694f18ff53f80b27836ccb81b5f0d933500b2",
+      "bytes": 1959599,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/09_legacy_ui_reference.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/09_legacy_ui_reference.png",
+      "sha256": "6bb29b37f9d5b55de4823b2172e2b3da6d6fb18ffab5e95f13626049fae80198",
+      "bytes": 2205653,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/visual_refs/10_legacy_integrated_board.png",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/visual_refs/10_legacy_integrated_board.png",
+      "sha256": "12494a852e38f314c38de0b0e9757c063528c42956951169ecb65f571d1f487f",
+      "bytes": 2430559,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_docs",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/这也能叠_Codex开发交接_FINAL_v2_跨平台.docx",
+      "repository_path": "source-inputs/docs/zhynd_codex_handoff/这也能叠_Codex开发交接_FINAL_v2_跨平台.docx",
+      "sha256": "1ae71ff232d3194378ea7570cd0e7bcca5998aece4775333b4abd81c66f077f9",
+      "bytes": 14101612,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/ASSET_MANIFEST.csv",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/ASSET_MANIFEST.csv",
+      "sha256": "1c11a7d96a827396e727485e803d8539375e72f5b528385f7e6cdc80307d6c5d",
+      "bytes": 48079,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/ASSET_MANIFEST.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/ASSET_MANIFEST.json",
+      "sha256": "b11b80b0f90a5de889a58534896d66453a83c68344b70cc03bcf1cfdcb516632",
+      "bytes": 90035,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/BACKGROUND_LAYER_MANIFEST.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/BACKGROUND_LAYER_MANIFEST.json",
+      "sha256": "870251c5011c2e3572e482d2eb60163e77c154f15dec84a3a575a129e7e1f746",
+      "bytes": 12919,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/CLAW_RUNTIME_RULES.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/CLAW_RUNTIME_RULES.json",
+      "sha256": "fe272866a498eca59197f2f3ba13154bb94882ef55c9263778a43b39f70fe8af",
+      "bytes": 1609,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/DYNAMIC_COMPOSITION_RULES.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/DYNAMIC_COMPOSITION_RULES.json",
+      "sha256": "d70e6cdd1ada8a0b77bf44ca3c766dadfa6b10f6fcc89365c6e7e72a37d2cd4b",
+      "bytes": 1531,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/EXCLUDED_RULES.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/EXCLUDED_RULES.json",
+      "sha256": "f1049afffb62d1b1aba8456b5e32b0fc35a2b75f45db2216b728a9b061bc6d2b",
+      "bytes": 714,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_ASSET_AUDIT.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_ASSET_AUDIT.json",
+      "sha256": "99c8e8d4efe58f536ed6440ca8c6ed259d47eb176a414d230ac44c3f6b94a44d",
+      "bytes": 369,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_QA_DUPLICATES.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_QA_DUPLICATES.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_QA_SUMMARY.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_QA_SUMMARY.json",
+      "sha256": "86413e272b7990d15273d8fd0525fabdd1d7bb72229f2b5509927078cae2ee7e",
+      "bytes": 98,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_UI_COMPOSITION_RULES.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/FINAL_UI_COMPOSITION_RULES.json",
+      "sha256": "a793f96d8e08b1830ec7ddc45de336020b9e8b59bc242b7fb209663e9026732a",
+      "bytes": 4436,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/OBJECT_GAMEPLAY_SCALE.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/OBJECT_GAMEPLAY_SCALE.json",
+      "sha256": "8c4306d7ff7305fb6934288078054e2e0e1cb3e725738107fb568bdd24851846",
+      "bytes": 7011,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/PACKAGE_VERIFY.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/PACKAGE_VERIFY.json",
+      "sha256": "eee500ea84fb0ccab7b61fa42324cc468e0c2970f665507e7681c500e7c2418a",
+      "bytes": 86,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/QA_PROMOTION.csv",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/QA_PROMOTION.csv",
+      "sha256": "d92575be8d8f299c14c86a1d6b5eb525dfbc56c4e94e83829ad2e068ebe4868a",
+      "bytes": 3304,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/README_CODEX.md",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/README_CODEX.md",
+      "sha256": "aefda8aac56c1dcdf6bd55e7976f94d381919ae4559c3ef90115b30c04721f9e",
+      "bytes": 4013,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/RESULT_UI_MANIFEST.json",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/RESULT_UI_MANIFEST.json",
+      "sha256": "43ffc60dee5c0c3fc572026a220479517382a23d941df26defb259d8e172bcf9",
+      "bytes": 1520,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/SPLIT_MANIFEST.csv",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/SPLIT_MANIFEST.csv",
+      "sha256": "15326e0afe5ffd0d2b0477fe47371ae474eec400d021ff754fa3f9a26a37cd2b",
+      "bytes": 14323,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/这也能叠_Codex开发交接_FINAL_v2_跨平台.docx",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/00_DOCS/这也能叠_Codex开发交接_FINAL_v2_跨平台.docx",
+      "sha256": "1ae71ff232d3194378ea7570cd0e7bcca5998aece4775333b4abd81c66f077f9",
+      "bytes": 14101612,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/玩具风叠塔游戏hud方案板.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/玩具风叠塔游戏hud方案板.png",
+      "sha256": "89d1f9530e0e7bd6aa18ae5112a62499188c055d08002833276de9d4e6cf8865",
+      "bytes": 2243960,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_2.5d游戏素材总览.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_2.5d游戏素材总览.png",
+      "sha256": "86405cd0bf4824af57263629069c6535e419743e8f6ebbbe4646303b63d0bd94",
+      "bytes": 1965542,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_从城市到宇宙.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_从城市到宇宙.png",
+      "sha256": "0e4539a79c1e52af73a6e96faecce7ec0ba7a8b4cf3a319bebc0fc6d3c4d36ea",
+      "bytes": 2074854,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_微信小游戏ui设计规范.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_微信小游戏ui设计规范.png",
+      "sha256": "79309826c353b7f74c3e33a0a95da601354da7f8f330e1bfdd0735303fa4df66",
+      "bytes": 2108483,
+      "identical_existing_project_files": [
+        "preparation/design/R8/assets/ui-original-reference.png",
+        "preparation/design/result-r12/reference-only/original-ui.png"
+      ]
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_微信小游戏设计蓝图.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/01_VISUAL_REFERENCE/这也能叠_微信小游戏设计蓝图.png",
+      "sha256": "98a91bb73ed3bcf8a90cfb72a5afb1e842650aab1a2f72c35eb8f5893bb0c59c",
+      "bytes": 2093955,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/air_objects.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/air_objects.png",
+      "sha256": "ffbd2a32ff44fbae1e464706e94e5eec1117bb783dcfd499bfde392ed15e1bdb",
+      "bytes": 147190,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/airplane.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/airplane.png",
+      "sha256": "8b3c16db130bf5f7dc19801d1c67227de61e578cfba4114d95f77ec4bd1186f5",
+      "bytes": 36762,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/airship.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/airship.png",
+      "sha256": "f5712693dae748d9f6382ff6468a87ff9f26fd2eb0d3265d2988a1004687c03d",
+      "bytes": 36320,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/asteroid_cluster.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/asteroid_cluster.png",
+      "sha256": "be28506c60ea2c210940d8e6ef62b4f25be9ff9179c079d6f32fb8f941f37244",
+      "bytes": 80619,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/bg_city_far.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/bg_city_far.png",
+      "sha256": "bda68e86b0709460c2a75235465fb9cb2f5687ea71e6574054dc3bbf63fe1368",
+      "bytes": 154285,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/bg_city_near.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/bg_city_near.png",
+      "sha256": "6b8b6856d48ea0f95b0f0a97b0a94944fd649cda3b664a812e84b6a7d7711697",
+      "bytes": 202211,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/bg_sky_panel.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/bg_sky_panel.png",
+      "sha256": "81e6413b1a8b6e4a72c63da59c9783c4cfe0cc8969b31d62824f67e64cc0a46d",
+      "bytes": 84295,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/blimp.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/blimp.png",
+      "sha256": "33792327655fc29d14167dd07b858aa5e73d03edf7ec901593e05b32bf29ea0d",
+      "bytes": 49603,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_01.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_01.png",
+      "sha256": "871fcc2f758607be2a4d6a21c33c9ec8596321379e302d7b0c9bf8a4cdbfb515",
+      "bytes": 68758,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_02.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_02.png",
+      "sha256": "f836cf71251559bf9c71a0c47d5d58bfab28fab700fdd79593784a5c43afc1fb",
+      "bytes": 59715,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_a.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_a.png",
+      "sha256": "f562d8072f84d596960fb152077784eefe537e5bfb8d416864118c4ccad91849",
+      "bytes": 73779,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_b.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_large_b.png",
+      "sha256": "c64d71d4b260153d89c63354ee5705f47821d8c4968da6324f13abf2ba87f6a7",
+      "bytes": 82152,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_mid_a.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_mid_a.png",
+      "sha256": "b28eec6489a2b077e0eb12302efaea07e480a2263c5f6dd0bf604f2b385057cc",
+      "bytes": 60794,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_platforms.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_platforms.png",
+      "sha256": "830de7f942086736d8863c530e54cf8464c54d3ddb4888487583472fe296ed98",
+      "bytes": 213063,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_a.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_a.png",
+      "sha256": "5447b9a6bf19f9e1dcc8ec900dc0a7c4b3af29570cba25f029c54c76f9fff9af",
+      "bytes": 40384,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_b.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_b.png",
+      "sha256": "aa8e50583f925f115988545185f822ec77431f227a7499d35372a228ae10f22b",
+      "bytes": 34509,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_c.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_c.png",
+      "sha256": "eb130d81cf44c7e17012d754e94f8ad009c1bce254d2154482ebe72dfebb31a3",
+      "bytes": 29620,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_group.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/cloud_small_group.png",
+      "sha256": "8f539cb2db693749073302983a999f5f04234b44b1b19b11404d1fdc54ed8876",
+      "bytes": 150950,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_curve.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_curve.png",
+      "sha256": "af2627b1b9a68e1ceb48a18e3a6cef0006cc84b400e13188dbdc4a53c5024e27",
+      "bytes": 137636,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_curve_wide.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_curve_wide.png",
+      "sha256": "705db6f4f57b9fc1902fbec4b49f317fcfd4c2a5b873a33af719f786d392e2ce",
+      "bytes": 194545,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_full.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_full.png",
+      "sha256": "4125f6f72159408a14d80a95961283ffc792288be81083156b8fbbda5dd668aa",
+      "bytes": 141083,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_small.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/earth_small.png",
+      "sha256": "eb8d20bc445a11713de488bb894129b3c697acf3d6eb90fcc2a9c286e17aa64d",
+      "bytes": 52443,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_01.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_01.png",
+      "sha256": "e66ad88afe8167b693058f9bf6b8aabf9782bcbd786807ba54dd717efb1fd2c5",
+      "bytes": 78188,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_02.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_02.png",
+      "sha256": "363d29c4a0e55ead18833b81f1b7c39775f274cda146c0005962b1076001c888",
+      "bytes": 55550,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_large.png",
+      "sha256": "fc8198f53252655dd4f22321e1cd06e70cf60d7196f743b1700c68b0eda68aae",
+      "bytes": 54596,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_small.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/floating_island_small.png",
+      "sha256": "86d924cb467b4f87fd02ab2797baf37f57a34c5a6e008ad9572a85072358aced",
+      "bytes": 43444,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/hot_air_balloon.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/hot_air_balloon.png",
+      "sha256": "36e2b1cadb9e9b82670abe9b97f373805389bbd5285b1f48f75e3d0f999ed1d6",
+      "bytes": 38522,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/moon.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/moon.png",
+      "sha256": "74c0eb5be0154fd8fffd334c853a127e93414387827889c5dca0b4469d17a1d9",
+      "bytes": 41558,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/nebula_group.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/nebula_group.png",
+      "sha256": "0aa07e066a9e4fde41dfa8a48d3b9f8a04f619e354e313c4fa936a063a987bed",
+      "bytes": 97199,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/nebula_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/nebula_large.png",
+      "sha256": "12947f563cb55a20af3678a0b02f3ac46d8dae88752cc09f922d898bebaf14f0",
+      "bytes": 87479,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/planet_purple.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/planet_purple.png",
+      "sha256": "545904e6eb3b495258ad94c80c68e33f70bd8546b127434b2aed947a8b19d75d",
+      "bytes": 44767,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/planet_red.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/planet_red.png",
+      "sha256": "7e20fa08bb22083bf6eb69b09939e2e30e60e3bfafb24942a662381ecb974182",
+      "bytes": 33945,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/planet_ringed.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/planet_ringed.png",
+      "sha256": "02dbcf8eef7bdd2c99bb8ebf1a88322594e2ea351d4e0bd8d609b947c5a1c1d6",
+      "bytes": 56583,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/satellite.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/satellite.png",
+      "sha256": "fa5d62256dc20c6a746f0502c0bcc7f39de40f4f13a104407437fd20ff52dd0d",
+      "bytes": 80196,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/satellite_group.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/satellite_group.png",
+      "sha256": "506c681134b0304ca2341eb3fdaed74b3a2ada39794eeaefbedb31141b4b57ef",
+      "bytes": 102932,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/space_planets_group.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/space_planets_group.png",
+      "sha256": "8d200c9d5ff6d95437284576e85aa6e8447e4e6b2d0da6a319812b6e9cc82c28",
+      "bytes": 192935,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/star_cluster_a.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/star_cluster_a.png",
+      "sha256": "fe64b0937dec290061b26095ceb007aba8a0d5dd28ea0fb8e12cb1390e0c56b1",
+      "bytes": 25734,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/star_cluster_b.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/star_cluster_b.png",
+      "sha256": "22b0acff1e53b3e58733e9d9696011770f06aee8df7ea021f808a8e4513d2eae",
+      "bytes": 58589,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/stars_fx_group.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/stars_fx_group.png",
+      "sha256": "9de3723c27205eb531e97c22953ec62827ae8455a50276ac5e73d013451c3f24",
+      "bytes": 115232,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/wind_streaks.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/wind_streaks.png",
+      "sha256": "2319ec0ae90a39d530a8c06a9cfbef7a6d0543a02e1bb1baecc5f39d7590b0b2",
+      "bytes": 155360,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/wind_swirl_a.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/wind_swirl_a.png",
+      "sha256": "80ba2d6c9e2cafadb8cf129a5833ce8ed3a66572e836c1b73482f37fa520df74",
+      "bytes": 63288,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/wind_swirl_b.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/backgrounds/wind_swirl_b.png",
+      "sha256": "f228383c6c6d08602d473cd9ba2b1733a918f2d470d66f91b44eee8636614c4a",
+      "bytes": 98614,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_cable_flex.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_cable_flex.png",
+      "sha256": "6b4ecfd6a94a9154d707d6b51248e355bf4b1d71219c654476dc2632bcbbb8d2",
+      "bytes": 51449,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_cable_straight.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_cable_straight.png",
+      "sha256": "7db8e9c4bab0d1d2c11418270165ec701e028e2c200b6330aec7aa359c263a5f",
+      "bytes": 31502,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_open_mid.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_open_mid.png",
+      "sha256": "d5e94acf4eae97ed327def10f9aae224b15547dfa573518c03e558a66891d085",
+      "bytes": 91629,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_open_narrow.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_open_narrow.png",
+      "sha256": "791de63db6e7297266397e78219e987c1eb4dea4a608456d7106b43c16faa14b",
+      "bytes": 132863,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_open_wide.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_open_wide.png",
+      "sha256": "426f727d91f1fbc841ba50d9b07728845b6763c6e4600681cd3dd6b6b05b3418",
+      "bytes": 99729,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_rail.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/claw/claw_rail.png",
+      "sha256": "26b68f6ddcf6a6cca22d3286b8c47fec05e887615e939fd6f63954f06e6fc111",
+      "bytes": 150391,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_contact_dust.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_contact_dust.png",
+      "sha256": "831d58703db58e5e736c57f33aa9ef7be6fd9784e51429619d183dc254d417b1",
+      "bytes": 53300,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_debris_color.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_debris_color.png",
+      "sha256": "ec510b9b66ab36f27ce8566b3006e33f8802eeb2b1d24368254f5817169b965c",
+      "bytes": 75683,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_impact_burst.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_impact_burst.png",
+      "sha256": "62b15f36f7d2ea1098bbc9bffcca4b6903b6f8a96a980724305659a79593fa4b",
+      "bytes": 118258,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_impact_ring.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_impact_ring.png",
+      "sha256": "b240baf07f0b33278c2f34ff627685e577eb0a72b183d3ca481e4d95c03778a2",
+      "bytes": 74425,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_sparkle_strip.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_sparkle_strip.png",
+      "sha256": "63295fc35bf6331b84fa82ae13b6468d021960d968f198ecdd59e1de949dff05",
+      "bytes": 164541,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_stable_swirl.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_stable_swirl.png",
+      "sha256": "21f5ee5c5923eaa0822686d397f3c47b5c96655a61ecc63c6d1c181bee7ec635",
+      "bytes": 116361,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_star_green.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_star_green.png",
+      "sha256": "c96f1852889e5921fad4acd5d7421843b99657196eb54517cc9f66715524fdf8",
+      "bytes": 129960,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_star_recover.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_star_recover.png",
+      "sha256": "c0cb766827c1d0cde834e043ab986ae6ba04505d1a6a6b790fd9b506cabc7e0a",
+      "bytes": 99281,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_star_red.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_star_red.png",
+      "sha256": "40fcd801d294dafe42abe33061c2b72ef42dff12c49d3de4c434b914b1406cf1",
+      "bytes": 102751,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_warning_burst.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_warning_burst.png",
+      "sha256": "f79f481e2ae890ff2572ac358b421b3c7927fb93d94a9fa54353a011bb02ff95",
+      "bytes": 53906,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_height_sign.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_height_sign.png",
+      "sha256": "8a21ce5b4d8be20b7d08bed4ccd3c776ba3ef474da2e3d16944423ec5f0d71c0",
+      "bytes": 106888,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_next_frame.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_next_frame.png",
+      "sha256": "bdd75d6f25a144269c40b031995ab9ac66c2ea584345534d236c7c67c6712bc3",
+      "bytes": 113946,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_pause.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_pause.png",
+      "sha256": "92527ec1242cdcc4e4eee92c60fab7ca2e540a531596f8767f6ef25a8680cc4b",
+      "bytes": 56700,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_region_sign.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_region_sign.png",
+      "sha256": "3169feb78f0acc23c55638efee30d65d750f8aeab3e5564f8e101986a7c6fd9c",
+      "bytes": 91142,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_rotate_90.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_rotate_90.png",
+      "sha256": "e7c0d6f5ef2236287f61ab38cd0ddcf3773bcb5ef2a9154b56b9d7e4d4953c8c",
+      "bytes": 213447,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_star_empty_set.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_star_empty_set.png",
+      "sha256": "83ffc141b4a673d8fc1e665a80d6df875949a70a3574029b4317b265760fd7ba",
+      "bytes": 40728,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_star_full_set.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/hud_star_full_set.png",
+      "sha256": "d54747eb636121ad2cc05c55a80387e1e9c3b3d134df8371d5a8c7d4243ae394",
+      "bytes": 58326,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/logo_game.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/hud/logo_game.png",
+      "sha256": "44b706a04a9b10fe347dd9f6226b036559455f7b73b6a987d73c87a7757de6d5",
+      "bytes": 208718,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_cooldown_overlay.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_cooldown_overlay.png",
+      "sha256": "9f4b20ac1a735ec2c198c957e2d165e0147120ba0c5f7383269c39032e99b618",
+      "bytes": 49772,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_count_badges.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_count_badges.png",
+      "sha256": "4755a6061933349dc0d3e0b6ca42aacba8122efce260fc72e9e601e80b396528",
+      "bytes": 31633,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_delete_btn.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_delete_btn.png",
+      "sha256": "8bc1eeef9fd00530df2d78ab7cb787d5c1b961cd720842a910bccc878b13f8e2",
+      "bytes": 48144,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_slot_disabled.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_slot_disabled.png",
+      "sha256": "fc6400d50b8e1e715eb47c5e8eb219d407068fd8b24cf7c63fbe7c896209748d",
+      "bytes": 25248,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_slot_plus.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_slot_plus.png",
+      "sha256": "c8d025e704c1595ed165f82f8d98ff78ba8d25c61a5843087d33d4c716c02545",
+      "bytes": 40647,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_slot_selected.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/item_slot_selected.png",
+      "sha256": "968cdcc9a42d8ea5c1d6759c51df5ce8cc11d52bf95fbe3b436d7e4728815e70",
+      "bytes": 31877,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_empty.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_empty.png",
+      "sha256": "cc687bc0f95193015784483d8d41e2fbda3f7863f59f889769c36ac2f6aa529a",
+      "bytes": 73427,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_highlight_both.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_highlight_both.png",
+      "sha256": "e25fdf380da21ff985b0eb57a34f99eb003bd9de61d328c3d7d920a9808cacec",
+      "bytes": 76375,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_highlight_left.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_highlight_left.png",
+      "sha256": "01593c48977562bccaf9626579266e7b67a6c94d4b32b90f0fb4eee5a393c0f7",
+      "bytes": 75443,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_highlight_right.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_highlight_right.png",
+      "sha256": "ab6ee383d7fd5451f58be4e9305c7ffa763ece64036662341668c40f8d9ae3b6",
+      "bytes": 72640,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_title.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_title.png",
+      "sha256": "28a0dafebe4ae716d615644e10c5cf3a7c6e1dfe23399911a201de700a7c16e6",
+      "bytes": 82729,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_toggle.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/item_bar/itembar_toggle.png",
+      "sha256": "bc99e178620382f3f179f5bc3e9b95ad8c930a3e4e7c49d8e7b2016aec0180ac",
+      "bytes": 83803,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_feather_hud.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_feather_hud.png",
+      "sha256": "5efe83ac9182d7b4b800e1e67601a4b0f868d38b8a708731811d73275c6a829c",
+      "bytes": 70105,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_feather_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_feather_large.png",
+      "sha256": "b1d36063ed95c03f18e928df7a55728f02fe760b4c7aa919ce117c510529fec7",
+      "bytes": 121525,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_reroll_hud.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_reroll_hud.png",
+      "sha256": "c4767a5e8ed17efe75e31b55bb49829db5b22b7e6c12f610dfbc7905b72c1bd7",
+      "bytes": 53054,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_reroll_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_reroll_large.png",
+      "sha256": "e81c78c731882836ffda720e690d1395106e7986a446c57db0544d76c10775e7",
+      "bytes": 110707,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_restore_star_hud.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_restore_star_hud.png",
+      "sha256": "11d35b26b008cf3c177fcdfa282d2c911346183c8d5bec58748fbea62365e45f",
+      "bytes": 81595,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_restore_star_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_restore_star_large.png",
+      "sha256": "18ccfee838fbb271c58477585f444630526309337ce1828eee746bc0476bbea5",
+      "bytes": 106738,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_shrink_hud.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_shrink_hud.png",
+      "sha256": "018797fbd8f7cb28cb9a4b79612c97ccfecc5e5dff6195a15a117a32887c4f71",
+      "bytes": 69889,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_shrink_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_shrink_large.png",
+      "sha256": "9dda8dafbb5e0ac7c4669f6bdd71af6315e8f902d1035f03a327965d03c69327",
+      "bytes": 121716,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_strong_glue_hud.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_strong_glue_hud.png",
+      "sha256": "cbc2005380a5452b2483d11b3c87c037bbb62ac481d3e72b8608c5ab72a88c7f",
+      "bytes": 59440,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_strong_glue_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_strong_glue_large.png",
+      "sha256": "d0ef3f7dfb52f1f0d7102f900d4199788f9a13e6596fc9b6dafcefbe6c6d64f9",
+      "bytes": 103981,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_undo_hud.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_undo_hud.png",
+      "sha256": "ae82d52d743b4407b233695dc3d61391b7638b443cce667e582d8e3c518ba465",
+      "bytes": 63859,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_undo_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/items/prop_undo_large.png",
+      "sha256": "94da747e0a640e8fc838d82e2e82b3c7fad759d99baf167a077ce7d0c1f27a6d",
+      "bytes": 112879,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_hint_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_hint_large.png",
+      "sha256": "1354fffaa9002b4c9eb5c6ad5cc44c08f938c4443c7e444ab112a121cf40b857",
+      "bytes": 117331,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_hint_medium.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_hint_medium.png",
+      "sha256": "b26ae9509b63a8e0992b6675b851d067c88d0675ca043dab863aed77640c43af",
+      "bytes": 106398,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_hint_small.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_hint_small.png",
+      "sha256": "62c704602e06e020bf287782a0e745a856b250bd358f9cc76af88b2297fd4e3b",
+      "bytes": 71634,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_shadow_large.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_shadow_large.png",
+      "sha256": "37e29b7de431435e7cb81a1c1b99d031ef83f342758710f513a0dea7b297bfaa",
+      "bytes": 64718,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_shadow_medium.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_shadow_medium.png",
+      "sha256": "1d55e467a426bddfd3d3d49851cdf5e8c3536fbffa812a744216932e0fccf736",
+      "bytes": 43891,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_shadow_small.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/landing_shadow_small.png",
+      "sha256": "907230e65623a2b2e9c3f747c0e87ddc7d4ff13317f90be91c96e5d1d00d6e5e",
+      "bytes": 19359,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/platform_city_base.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/platform_city_base.png",
+      "sha256": "f00e1f21d059fe35793aadf260ecea07943ec0885a127762e543a44e009a147f",
+      "bytes": 155328,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/platform_cloud_base.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/platform_cloud_base.png",
+      "sha256": "4e823878aaa7d97ed8cb29609b2300be5f149483b8cb2e9f394570b388c20c6e",
+      "bytes": 161190,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/platform_space_base.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/platform_space_base.png",
+      "sha256": "124c073105c9ba0f1eff5b3dd1bfb7b9296675ac445e15497bdc2d9ca6754f23",
+      "bytes": 176726,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/vertical_drop_guide.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/landing/vertical_drop_guide.png",
+      "sha256": "ecc497ca2f076d46ee0394e1ffdffe6ed642e5b3aef28f08087669bb2686053d",
+      "bytes": 117616,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_basketball.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_basketball.png",
+      "sha256": "111dea69313407fc555cdea340592a337e97a7e629c6f62e121ad3698ad1138a",
+      "bytes": 45708,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_bathtub.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_bathtub.png",
+      "sha256": "d03a0a6bd66e3066654136c71923a043bebe9dd3230bdcc8bb886279461d38ec",
+      "bytes": 43358,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_bowling_ball.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_bowling_ball.png",
+      "sha256": "8da9b5a3f01b08e9bdf6962c9cefefe24178e74827d8ab16e2dd361b690cdd5e",
+      "bytes": 36090,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_burger.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_burger.png",
+      "sha256": "14bcead3290d020c940e6bff2792fb1035d1332df87051f36e8b03323f3eca81",
+      "bytes": 53072,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_cardboard_box.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_cardboard_box.png",
+      "sha256": "51fecce46c09793959be43e203d656205b88ab5bfa031fe503cc656fb3859dc7",
+      "bytes": 40718,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_cat_bed.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_cat_bed.png",
+      "sha256": "276afcd75ae63a4a849839f5816fff198c2f7d26d85a8c2da2e68109824bf6bb",
+      "bytes": 55583,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_dumbbell.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_dumbbell.png",
+      "sha256": "d5905a457a86dbc8b7b731b1b46b2332a7bf6e0b2fd028d1f0e204fcfd42db55",
+      "bytes": 46208,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_fridge.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_fridge.png",
+      "sha256": "6b6927eaedc7eb9eaad125388dd20fcf31c503582435566e61ececbdbeb73f37",
+      "bytes": 51481,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_giraffe.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_giraffe.png",
+      "sha256": "055fcf48aaabf211d87bf8874c5a7788558c9b28ad0ca5215700c97e6c6cdf27",
+      "bytes": 41656,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_ice_block.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_ice_block.png",
+      "sha256": "f0d419578369dbb386bb5575b881a8b68f40e824b91d82a51b1e6bc8a77de51b",
+      "bytes": 43257,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_oil_drum.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_oil_drum.png",
+      "sha256": "dea730cfde9daf506f1115217050c03d29cf19e8d56f349b8524c9ae841dd9ef",
+      "bytes": 41133,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_piano.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_piano.png",
+      "sha256": "3fcab0221e78e21e3d4ec7c0c0a1d316838ad975b23dc7c5cab4937bff1230ba",
+      "bytes": 60873,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_rocket.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_rocket.png",
+      "sha256": "bb6f352d40013a3816b2802d8c5af63fd6a538fbb08414cf1328068d932df2cd",
+      "bytes": 43346,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_slipper.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_slipper.png",
+      "sha256": "e1c6f39d289cc6b3632f3db1aafbd65117066a7e1c14556a7e0c4af2ea8c3fb4",
+      "bytes": 46262,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_sofa.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_sofa.png",
+      "sha256": "e585c91a9fe2f265eb722d0cbbf6e18d67bde7e9f60b8e10dc7477c485e5681f",
+      "bytes": 49345,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_spring_pad.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_spring_pad.png",
+      "sha256": "b1d504462d65d85b517a2843235ec59a68b5c77cf7959fe5b4beeb5d5d87696f",
+      "bytes": 50267,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_television.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_television.png",
+      "sha256": "b31bb0202d855f5c80a467386a682c13a912d3b4e2de648f17c7a9a505e803c6",
+      "bytes": 45291,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_tire.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_tire.png",
+      "sha256": "f9c144caf46cbed6e7a9293c9e265f403baf25b5c3c47f75d32716b6d0cafe04",
+      "bytes": 57704,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_toilet.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_toilet.png",
+      "sha256": "99571dcbf619f603c2ff8293f40f1f08325329b95786bedd17cf34d21db65064",
+      "bytes": 46650,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_ufo.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_ufo.png",
+      "sha256": "9be6c0f31a3949bafe9320cf8f157ba2f01a095d8914608099a4e14b22f7046f",
+      "bytes": 45732,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_vending_machine.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_vending_machine.png",
+      "sha256": "32103e79a224712e78094f2da71024ba85ec7115a4bcef593b86ecf79581fcb9",
+      "bytes": 50109,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_whale.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_whale.png",
+      "sha256": "944209d22e003758b2f21f3f59eca8a3480ac59633b5a62a57dfbfe4daf27581",
+      "bytes": 48126,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_wood_plank.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_wood_plank.png",
+      "sha256": "6e86bf4edfa616813fb1360cf534db08774d5cb9270e35f77b85aa1a37781aa7",
+      "bytes": 35500,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_wooden_crate.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/next/next_wooden_crate.png",
+      "sha256": "3c16fa77c65500f99c15bfc5146fce5467cfa044ef586eed1eefb011eebff170",
+      "bytes": 56824,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_basketball.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_basketball.png",
+      "sha256": "de3c3fc1e8e2a8fec625c36a546b5a5057dfd10a9f7c7d193ce03ddd441831ed",
+      "bytes": 119219,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_bathtub.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_bathtub.png",
+      "sha256": "62c0eaa99727d8cb68108e24693c49416533f428bd1c08bbe6e3fcbc3fac30fd",
+      "bytes": 99013,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_bowling_ball.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_bowling_ball.png",
+      "sha256": "0cf1a328c7127767f9e469deb78feffa6197b18bda4a7a6f4c1943464d0e3953",
+      "bytes": 86707,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_burger.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_burger.png",
+      "sha256": "86cc4c937edbedf923bae43e49ee3260c48e7afbd2ba85daa1854bb72d283778",
+      "bytes": 138401,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_cardboard_box.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_cardboard_box.png",
+      "sha256": "987970527c2c5f9935fd04cea1b0b13d15e74cf39961978e5d6ba1dcd0a70e41",
+      "bytes": 108827,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_cat_bed.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_cat_bed.png",
+      "sha256": "553f4736947aec658163d7f6f13cae56b891fe6e0767b614eabb7acab766ad6d",
+      "bytes": 140003,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_dumbbell.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_dumbbell.png",
+      "sha256": "9fd1ee03b677a66def49dc60c8b5f5e3af5dcf576d52836ee6468d0e8f88dbf0",
+      "bytes": 89068,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_fridge.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_fridge.png",
+      "sha256": "1f81aafc12521c23422c127c779795a47f7272136ab1a5b6a02fdf001e0850b6",
+      "bytes": 98711,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_giraffe.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_giraffe.png",
+      "sha256": "ba3d1d5d21a1e81df121d271e358e2803b519be98f6ff4a7353108f979fe7932",
+      "bytes": 93901,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_ice_block.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_ice_block.png",
+      "sha256": "d1c8b925f111bee0cf43d2e241276849c0a8e7a3c4104fdd2c5ae0f9944d1d30",
+      "bytes": 107795,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_oil_drum.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_oil_drum.png",
+      "sha256": "4228940e3f0384a47b766c642d24c9e269bd0b72c3952a83f9dd211e7261911b",
+      "bytes": 94749,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_piano.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_piano.png",
+      "sha256": "7b7c9217d093efdd7b6ef3357f664fea2707f72181e411ddbfe927567ff74016",
+      "bytes": 139373,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_rocket.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_rocket.png",
+      "sha256": "cd913dc0a08c38e12f16ea597b602a4ec99da2bf83c08fb1211c40e73f6f42be",
+      "bytes": 92313,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_slipper.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_slipper.png",
+      "sha256": "58ad7493993a44f9bac20fdb6c422056ab5c294f4ce32f0a9683e74456202dde",
+      "bytes": 108519,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_sofa.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_sofa.png",
+      "sha256": "1c44c169151c117891245fe0e1f708eab668eca4a200fdaf0d95456bd8c7a148",
+      "bytes": 109848,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_spring_pad.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_spring_pad.png",
+      "sha256": "706913e1cf01af87832a4bd4acb2fc78488b31895a660c458e9b9fe88f09af01",
+      "bytes": 124969,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_television.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_television.png",
+      "sha256": "3d89c3a11ee6ce1c437898633b797475ee4da9a94904f8ed4ab6fd9d8c96a926",
+      "bytes": 131463,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_tire.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_tire.png",
+      "sha256": "b094446a57059ed4b0d04d0c3926b6296f7dd9e9266a591736248e98a1540eb3",
+      "bytes": 125695,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_toilet.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_toilet.png",
+      "sha256": "bdb46183be9b016a8c4b64f7acdb0511c28ff666b8516e7e2694e6b98c813eaa",
+      "bytes": 95388,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_ufo.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_ufo.png",
+      "sha256": "3330fedcdc6eac97a46883d4d0abf984fa865bfe31dccff5478c09d19486e2dc",
+      "bytes": 104565,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_vending_machine.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_vending_machine.png",
+      "sha256": "7c3b94f486932084ba089a5bd3d4b1ceb7c315815566510691458c037bfcb8a0",
+      "bytes": 113440,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_whale.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_whale.png",
+      "sha256": "dd5c8db2adc7ae39ef13a625a7303f488282f1e39f2c9c16aebe714177cb67d4",
+      "bytes": 105782,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_wood_plank.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_wood_plank.png",
+      "sha256": "4cec9cd4bccbdd1079f9053d89f341339ff0b843e740d65d04defbcc3f1514ed",
+      "bytes": 86181,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_wooden_crate.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/objects/object_wooden_crate.png",
+      "sha256": "57214d087efaa1b2f9fbbc425675cb070821a16f3427b0fc147104d300c65b3d",
+      "bytes": 151496,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_collapse.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_collapse.png",
+      "sha256": "88e43b5fe5044bd94aabc004fcbd8ac6951e114380f4db62e5868391bb70b63a",
+      "bytes": 1307,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_drop.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_drop.png",
+      "sha256": "dfd649ce8d05c101748a51d1132dbc75ccd81b26d32730651cbebcda2f3d988d",
+      "bytes": 1211,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_imbalance.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_imbalance.png",
+      "sha256": "419c0ac0bf8447bfab180582eb74f044e2893a23e5b281b1350f97d442dad622",
+      "bytes": 1343,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_slide.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_slide.png",
+      "sha256": "bbdafce844524a6a036f7573ff800402638b6daa1b3c33b1ff0ddc7b0f16924a",
+      "bytes": 1311,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_unknown.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/death_reason_unknown.png",
+      "sha256": "4b9067d098f294303b78eddb36f07784acd4649f45e7ec984afce246ee8ad671",
+      "bytes": 2153,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_btn_retry.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_btn_retry.png",
+      "sha256": "23773bf739451b1c47e002c5f37a34962a4fd175393a1e77a445b97fcf77f78b",
+      "bytes": 13555,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_btn_share.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_btn_share.png",
+      "sha256": "91a8cfb520e31f9d30d97615568ca154a937a04977e11b0d953976ebdc36ced1",
+      "bytes": 17948,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_clutch_save_label.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_clutch_save_label.png",
+      "sha256": "2e6c679883f4dd3954bb3b03a8f3ee315661c8d7ae6bd34288a0f4878c09438c",
+      "bytes": 18221,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_collection_new_badge.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_collection_new_badge.png",
+      "sha256": "cf06bd14237d8c6622037ade9fd46939ab9f715ac6d5147e0b0b70274d71851a",
+      "bytes": 14217,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_death_reason_header.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_death_reason_header.png",
+      "sha256": "8374c4f1f872090a633229b1750632ee0b60617f4aef7e722c0ecdce71c3cdf2",
+      "bytes": 13686,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_final_height_badge.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_final_height_badge.png",
+      "sha256": "66565c136a50de68611837ea10d83854cd7a5d3337cedd8c16ab07e03e2c494b",
+      "bytes": 13889,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_tech_score_label.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_tech_score_label.png",
+      "sha256": "05f9ed969ec7bc8f258eca1d1bb771ac7b5fdd087f354b5cd4630bfd9cfa37d1",
+      "bytes": 14179,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_cloud_sync.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_cloud_sync.png",
+      "sha256": "da204e9551d46986200f4da2642fbca551b53aa3b430cdaaa1f69f2e5bd2e554",
+      "bytes": 21115,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_empty_box.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_empty_box.png",
+      "sha256": "75412ff6cba79169a4ad588a615780636fbd58f2aa9d27795d5301dc4297045c",
+      "bytes": 25167,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_refresh.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_refresh.png",
+      "sha256": "18d355ffe4e9f0bce1dacd0d677fb94034a4389ce64eee883a60ed0dd36946e2",
+      "bytes": 18987,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_wifi_off.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/icon_wifi_off.png",
+      "sha256": "23d2497e29183be29c53c9705712b33e3ffce7cb44eb35bce2450a7d71a16f6a",
+      "bytes": 21670,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/loading_bar.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/loading_bar.png",
+      "sha256": "84a6afe9524c976537d37cd9ccd2c5fd810950de562e962e296e863380a13260",
+      "bytes": 25624,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/loading_dots.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/loading_dots.png",
+      "sha256": "c8578737df0062b963c5c10779481903721eadb9a1f52775afc17c6ce9ffa61c",
+      "bytes": 15376,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/loading_spinner.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/loading_spinner.png",
+      "sha256": "582792cffb12659fe81f98861f6df49381277e727ddd18078eccfc11630c0bbe",
+      "bytes": 23621,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/modal_mask_sample.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/modal_mask_sample.png",
+      "sha256": "8afe407b8d819908ee2f2a9987aa535526b04d40be4910393777019e9b30e1f4",
+      "bytes": 17678,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/reconnect_button.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/reconnect_button.png",
+      "sha256": "41da814e120a940b5781503a4bd5068576b905e694266db203c4b2e1a520297e",
+      "bytes": 29647,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/retry_button.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/retry_button.png",
+      "sha256": "40cbbac76d15820ff419f259048ace95d45297de872839328ab93c5f735c764a",
+      "bytes": 32675,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/toggle_off.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/toggle_off.png",
+      "sha256": "da902b9fa2f3d87654860367d4e766d4658b99bbc6afc32d4234fa3b25395e78",
+      "bytes": 14202,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/toggle_on.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/system_ui/toggle_on.png",
+      "sha256": "86da20ceb4f99857eeda283f8cacf523a9b0e7537e3a34b7f0230df7f8d01625",
+      "bytes": 14029,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/btn_start.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/btn_start.png",
+      "sha256": "e0dd3d83ed671584ac4dadaf50db9185ac5f017f2ff164e31b7df7c736b89fde",
+      "bytes": 151919,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/bubble_plain.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/bubble_plain.png",
+      "sha256": "3270126d4618be17da2068fa5fb530640f7d9d8e26ba9410c2186e1f1fbd2221",
+      "bytes": 55554,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/confirm_dialog.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/confirm_dialog.png",
+      "sha256": "f5ca32d31992680c72f0730030a9ed907c0fa4ce73c2fe1fd9634a8c941af43b",
+      "bytes": 47632,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/logo_main.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/logo_main.png",
+      "sha256": "656729ca0a477c0abd780770150a567b503711c54c160aece88b998e6f64b2bf",
+      "bytes": 212746,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/panel_9slice_light.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/panel_9slice_light.png",
+      "sha256": "c9ff0b00639e32976a09e0eb829add33e18261761992ca4227278dee0974b739",
+      "bytes": 26139,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/popup_base_9slice.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/popup_base_9slice.png",
+      "sha256": "28426e24ebca0bd4feaf7c9db3c0d9b64d844e3ab94b5232938576438c81ce57",
+      "bytes": 39143,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "provided_art-source",
+      "original_source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/toast_bubble.png",
+      "repository_path": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/ui/toast_bubble.png",
+      "sha256": "c95cbd212b2e604547c8c28acd33d43c5b520a620ff0dc761690903c155a9cb8",
+      "bytes": 26151,
+      "identical_existing_project_files": []
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0150459b-e0df-44c5-a439-1e94db9c4353.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0150459b-e0df-44c5-a439-1e94db9c4353.png",
+      "sha256": "ca1dc4e3e06e34e416bad5a7bc86a98ee41f757e967467b5639f3798d9996d09",
+      "bytes": 1557710,
+      "identical_existing_project_files": [
+        "preparation/design/R8/assets/bg-home-r8.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R8/SOURCE.json",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-017bdbde-9669-4f46-a8a6-1f4c8fa3858a.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-017bdbde-9669-4f46-a8a6-1f4c8fa3858a.png",
+      "sha256": "754084f636b40fd647988256560feb91b1a96767b6e5fbbb6c876286a4b1716c",
+      "bytes": 1906407,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/R10/ALPHA_ATTEMPT.json",
+          "line": 4,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-042803e7-2457-4ca3-8180-9ebdf692b964.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-042803e7-2457-4ca3-8180-9ebdf692b964.png",
+      "sha256": "3525003bc19a08760d8df476f3685a8fb5ec0a23813a821bc8fa6961501244dc",
+      "bytes": 1677878,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/R10/SOURCE.json",
+          "line": 11,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0737fe3a-dc07-4b8d-822d-6f70c630a1e9.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0737fe3a-dc07-4b8d-822d-6f70c630a1e9.png",
+      "sha256": "2a6db2cfb667868b9bfb205d0924d928b35711f6522797b864c776db5b613736",
+      "bytes": 1493291,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/GENERATED_VISUAL_MANIFEST.json",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0b3c708b-bacd-445a-a8bf-b8dc9edb795f.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0b3c708b-bacd-445a-a8bf-b8dc9edb795f.png",
+      "sha256": "437ab5ba32d0a65c464f0847f6fe541277f20c5da64252f2afeb102ae3dea1be",
+      "bytes": 1843625,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/R10/SOURCE.json",
+          "line": 25,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0f94dbd9-11d7-4f76-8a7a-2648d1be6721.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0f94dbd9-11d7-4f76-8a7a-2648d1be6721.png",
+      "sha256": "724c2c6ec8583fe764b514eca33a96363746b69e9be6a6ceaaab08e8b4accc5d",
+      "bytes": 1706885,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/MAIN_GENERATION.json",
+          "line": 7,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-1497a51a-f5cb-4ab5-b4e0-2a83617bf8d6.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-1497a51a-f5cb-4ab5-b4e0-2a83617bf8d6.png",
+      "sha256": "43f622c2040680386398e66e03f39156fc9ec2ba1161c7489255aa4388560505",
+      "bytes": 1139196,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 53,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/RETRY_GENERATION.json",
+          "line": 4,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/RETRY_PROCESSING.json",
+          "line": 2,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 57,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-14b332f3-52ac-42a7-84de-3473888812ff.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-14b332f3-52ac-42a7-84de-3473888812ff.png",
+      "sha256": "0e924f2e3c7aef26c3b27e7de601e96c61adf7aec9617f0ba5c119645c00dd43",
+      "bytes": 1432725,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/VISUAL_R11_IMPORT_MANIFEST.json",
+          "line": 97,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 47,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 51,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 92,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-226e2c47-ef61-4b53-9046-edb73f5d02d6.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-226e2c47-ef61-4b53-9046-edb73f5d02d6.png",
+      "sha256": "6880ace0bc7363265092a1c86b15a1db7327e414239f3f920fdde113020726e9",
+      "bytes": 441026,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 41,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/GROUND_PROCESSING.json",
+          "line": 3,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/GROUND_PROCESSING.json",
+          "line": 9,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 45,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-2a0231bb-1329-41fe-a6b3-b2889575db4f.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-2a0231bb-1329-41fe-a6b3-b2889575db4f.png",
+      "sha256": "40a0f08e6fa5f6a063bd43a8d549b81ea124c4d2708d85c633f256b37174b868",
+      "bytes": 1774565,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 11,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 15,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-6abf0a39-5607-4ea0-9554-d0fd1ea8a451.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-6abf0a39-5607-4ea0-9554-d0fd1ea8a451.png",
+      "sha256": "f2dbcb2bf627ecbf0b80498bf6972616cf3ef9757b65d44880a9261045efebfb",
+      "bytes": 1477596,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/GENERATED_VISUAL_MANIFEST.json",
+          "line": 22,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-6ea782ec-7d8a-460b-921a-7928c5f53c94.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-6ea782ec-7d8a-460b-921a-7928c5f53c94.png",
+      "sha256": "57fc6ee0633f09fa6abab696e532b72f8fdca2fe2def9cd9eab54eacf5556619",
+      "bytes": 1501278,
+      "identical_existing_project_files": [
+        "preparation/design/R9/assets/hero-stack-r9.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R9/HERO_SOURCE.json",
+          "line": 7,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7127811e-5fea-46aa-9ab9-600c81266cdc.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7127811e-5fea-46aa-9ab9-600c81266cdc.png",
+      "sha256": "64c7711419107a3fdae6394338bd990ee3e98b1f6c54e1a970ba307cf99f2e15",
+      "bytes": 174868,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/VISUAL_R11_IMPORT_MANIFEST.json",
+          "line": 49,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 29,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 33,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 77,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7418bc85-d993-481c-ab10-f50cc3be61c3.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7418bc85-d993-481c-ab10-f50cc3be61c3.png",
+      "sha256": "a634c9f64a06b70d5104556b3f71bd851ece67498135461d33cc8edded8ab5ee",
+      "bytes": 1939957,
+      "identical_existing_project_files": [
+        "preparation/design/R10/assets/logo-home-r10.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R10/SOURCE.json",
+          "line": 72,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/R10/assets/logo-home-r10-clean.source.json",
+          "line": 3,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-77548215-3674-4115-99f1-0e6a0bae9653.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-77548215-3674-4115-99f1-0e6a0bae9653.png",
+      "sha256": "51d95c9d5e8ef70b0e1e870a16dd465b0a5adb7be04e26bfe7b313323284a300",
+      "bytes": 1439762,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/MAIN_GENERATION.json",
+          "line": 17,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/process_main_art.py",
+          "line": 74,
+          "mode": "literal_filename_with_unique_generated_directory_in_same_file"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7dcfd57c-181e-4a6f-ae60-6fbfda9e21d7.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-7dcfd57c-181e-4a6f-ae60-6fbfda9e21d7.png",
+      "sha256": "f5688ffd715fafcab4b0c37eb3d75b103b584b63d414aef96f50680f0a739e3f",
+      "bytes": 1261638,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/VISUAL_R11_IMPORT_MANIFEST.json",
+          "line": 17,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 17,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 21,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 65,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-8499c794-34da-4140-a6f0-b6a83bba3090.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-8499c794-34da-4140-a6f0-b6a83bba3090.png",
+      "sha256": "b2686c7ae7951922191cdf869036ebadeb44e30e4fc068720a15aca651e58d86",
+      "bytes": 1191632,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/VISUAL_R11_IMPORT_MANIFEST.json",
+          "line": 33,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 23,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 27,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 71,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-8ccf922e-8c4c-4580-bed1-3c06b584b4d7.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-8ccf922e-8c4c-4580-bed1-3c06b584b4d7.png",
+      "sha256": "892eab543b84357af8d416c0a839137337dd8383754994f16ccf2b4310bde064",
+      "bytes": 1827899,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 5,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 9,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-a315aa46-f55f-4a3e-b802-12b03698bf4b.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-a315aa46-f55f-4a3e-b802-12b03698bf4b.png",
+      "sha256": "cd05725ba876dfc46f29de757bda8f3692f6d4ce3ee9508df91ec354cb3964ee",
+      "bytes": 1343593,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/GENERATED_VISUAL_MANIFEST.json",
+          "line": 38,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-b88adc14-7900-4393-bee6-0be19dc51059.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-b88adc14-7900-4393-bee6-0be19dc51059.png",
+      "sha256": "be4f5006a23aaa179c743836b185615f7a8aa24193022efc1d7cf292fa0b07a8",
+      "bytes": 1727478,
+      "identical_existing_project_files": [
+        "preparation/design/result-r13/generated-sources/full-card-layout-corrected.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/LAYOUT_CORRECTION_GENERATION.json",
+          "line": 4,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/LOCAL_PROCESSING.json",
+          "line": 4,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/process_main_art.py",
+          "line": 49,
+          "mode": "literal_filename_with_unique_generated_directory_in_same_file"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-b9ee8c6c-f5cb-4195-af55-278791b85368.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-b9ee8c6c-f5cb-4195-af55-278791b85368.png",
+      "sha256": "2091d66b5a8b1a80a00dd89a72e9e2cfe736d951f3dbdcb1667dd366424e2f18",
+      "bytes": 1727703,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/FIXED_LABELS.json",
+          "line": 59,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/LOCAL_PROCESSING.json",
+          "line": 2,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/MAIN_GENERATION.json",
+          "line": 12,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/process_main_art.py",
+          "line": 48,
+          "mode": "literal_filename_with_unique_generated_directory_in_same_file"
+        },
+        {
+          "file": "preparation/design/result-r13/process_main_art.py",
+          "line": 73,
+          "mode": "literal_filename_with_unique_generated_directory_in_same_file"
+        },
+        {
+          "file": "preparation/design/result-r13/process_main_art.py",
+          "line": 73,
+          "mode": "literal_filename_with_unique_generated_directory_in_same_file"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-c3bb30d4-048e-455f-b6ae-b0eb03744863.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-c3bb30d4-048e-455f-b6ae-b0eb03744863.png",
+      "sha256": "1981adc18598f194cb0ba283088a2faf8acd89e842bf5fa7e3bc55fd0285ea05",
+      "bytes": 1277724,
+      "identical_existing_project_files": [
+        "preparation/design/R7/assets/bg-ground-clear-r7.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R7/assets/background-source.json",
+          "line": 4,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-c6096ea5-ab88-45d6-8e28-0b16f47b046f.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-c6096ea5-ab88-45d6-8e28-0b16f47b046f.png",
+      "sha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+      "bytes": 1553668,
+      "identical_existing_project_files": [
+        "assets/batch0/art/home_r10_background.png",
+        "build/web-desktop/assets/main/native/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png",
+        "build/wechatgame/subpackages/main/native/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png",
+        "library/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png",
+        "preparation/design/R10/assets/bg-home-r10.png",
+        "preparation/platform/wechat-r2/before/build/wechatgame/assets/main/native/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png",
+        "preparation/review/evidence/difficulty-r1/before/web-desktop/assets/main/native/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png",
+        "preparation/review/evidence/home-r4/before/build/web-desktop/assets/main/native/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R10/SOURCE.json",
+          "line": 41,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-d42445a5-3ac2-4ec6-a946-25f04d4b5d38.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-d42445a5-3ac2-4ec6-a946-25f04d4b5d38.png",
+      "sha256": "0f8fac01b453bbfdf5a11bcad62b0ec1b9dad7455817430f874d3373f1372308",
+      "bytes": 1336761,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/GENERATED_VISUAL_MANIFEST.json",
+          "line": 54,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-ef5d5c99-e422-4cf7-9865-65486c5be0ef.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-ef5d5c99-e422-4cf7-9865-65486c5be0ef.png",
+      "sha256": "406d30da217d6b3078916e94ddbf03258dd5a95986dd07390d1cc246de24a4d0",
+      "bytes": 1900784,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/HEIGHT_GLYPHS.json",
+          "line": 3,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/MAIN_GENERATION.json",
+          "line": 22,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/process_main_art.py",
+          "line": 83,
+          "mode": "literal_filename_with_unique_generated_directory_in_same_file"
+        },
+        {
+          "file": "preparation/design/result-r13/process_main_art.py",
+          "line": 113,
+          "mode": "literal_filename_with_unique_generated_directory_in_same_file"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-efe04544-5e8d-4fac-b5d7-947842937e94.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-efe04544-5e8d-4fac-b5d7-947842937e94.png",
+      "sha256": "a6cb56eb7b918070666551df5f4d1da46a3f74c419f38406a4b8b7e83b840482",
+      "bytes": 1839465,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/visual-r11/GENERATION_CALLS.json",
+          "line": 35,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/visual-r11/SOURCE.json",
+          "line": 39,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-f3cbe237-7af7-44a8-934d-7830c6042982.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-f3cbe237-7af7-44a8-934d-7830c6042982.png",
+      "sha256": "5904c601b906dd2138b0506577603ddd41ea5bfc5dc23f65db9e5698d17499b8",
+      "bytes": 1174520,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/art/GENERATED_VISUAL_MANIFEST.json",
+          "line": 70,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-f8274648-be08-4c9a-8302-6612fc7bda20.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-f8274648-be08-4c9a-8302-6612fc7bda20.png",
+      "sha256": "9a69086d981c56a221f454bda90fa91b7466b754e0618b61f85d881b0f15e2c8",
+      "bytes": 1216016,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/R10/SOURCE.json",
+          "line": 56,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-ffbf5c13-3f2c-4711-90c1-169894ea3ab1.png",
+      "repository_path": "source-inputs/generated-images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-ffbf5c13-3f2c-4711-90c1-169894ea3ab1.png",
+      "sha256": "3a6e1fd1113b395978e0cac4c8b1147aa2060e0e686b0cc2d702a3f940d34a12",
+      "bytes": 1808678,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/R8/SOURCE.json",
+          "line": 10,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09716-87ce-7d81-a8a8-5772c68c075c/exec-b6cda0fa-f969-4b2b-b9e3-0159fc0bba2c.png",
+      "repository_path": "source-inputs/generated-images/01a09716-87ce-7d81-a8a8-5772c68c075c/exec-b6cda0fa-f969-4b2b-b9e3-0159fc0bba2c.png",
+      "sha256": "3941f303285505ce5d0dbd3d1c24e73814e97addef272ac37e33cfbf2c21ddf4",
+      "bytes": 884123,
+      "identical_existing_project_files": [
+        "preparation/design/R9/assets/sign-wood-r9.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R9/assets/sign-wood-r9.source.json",
+          "line": 8,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09716-87ce-7d81-a8a8-5772c68c075c/exec-dc630828-dc8d-4b4e-a41f-44f449a99247.png",
+      "repository_path": "source-inputs/generated-images/01a09716-87ce-7d81-a8a8-5772c68c075c/exec-dc630828-dc8d-4b4e-a41f-44f449a99247.png",
+      "sha256": "2c6cfacad0da00a056944d0301f3a7ef2384a28f38b8662b49100248a6d673e8",
+      "bytes": 702070,
+      "identical_existing_project_files": [
+        "preparation/design/R7/assets/cloud-soft-r7.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R7/assets/cloud-source.json",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-3928d5a2-27d0-4e6c-9a7b-ed1d973a6be4.png",
+      "repository_path": "source-inputs/generated-images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-3928d5a2-27d0-4e6c-9a7b-ed1d973a6be4.png",
+      "sha256": "203350e401e50bd924cec7a3eda0da49b2adfef0da741b5c601b4d9d29924bc6",
+      "bytes": 1365692,
+      "identical_existing_project_files": [
+        "preparation/design/R7/assets/inventory-vertical-r7.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R7/assets/inventory-vertical-r7.source.json",
+          "line": 4,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-475439d7-aea7-4277-97e5-01cca69ffb27.png",
+      "repository_path": "source-inputs/generated-images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-475439d7-aea7-4277-97e5-01cca69ffb27.png",
+      "sha256": "af2d539e5d56050078c9bdd410d5dc71a63b0e2d3ba67a0a95f4b5fe115391c5",
+      "bytes": 1061565,
+      "identical_existing_project_files": [
+        "preparation/design/R7/assets/panel-soft-r7.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R7/assets/panel-soft-r7.source.json",
+          "line": 4,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-5f96104a-ec75-4f5e-8f1b-5f95e034036e.png",
+      "repository_path": "source-inputs/generated-images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-5f96104a-ec75-4f5e-8f1b-5f95e034036e.png",
+      "sha256": "541bdabb2b92e88efdbb6f2b2e975a67dd92ee3be71d49337aa5b9b2e12175f6",
+      "bytes": 1553327,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/R9/assets/bg-home-r9.source.json",
+          "line": 9,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-71748a88-4a0f-45a7-9992-c67d1cb015bc.png",
+      "repository_path": "source-inputs/generated-images/01a09716-e0f2-7431-aefd-adcf473b620e/exec-71748a88-4a0f-45a7-9992-c67d1cb015bc.png",
+      "sha256": "bfce81f246bc9080178b24773c06b3cf5f770e311dceb7d7df05cf15e87396fc",
+      "bytes": 1589852,
+      "identical_existing_project_files": [
+        "assets/batch0/art/home_r9_background.png",
+        "library/e9/e9934db9-bb86-5714-b5a4-30ea513f5cb4.png",
+        "preparation/design/R9/assets/bg-home-r9.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/R9/assets/bg-home-r9.source.json",
+          "line": 5,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a099da-85a3-7c82-8a7c-81a76c99cc22/exec-a0b69112-0c32-4a58-a18e-b55942f104d4.png",
+      "repository_path": "source-inputs/generated-images/01a099da-85a3-7c82-8a7c-81a76c99cc22/exec-a0b69112-0c32-4a58-a18e-b55942f104d4.png",
+      "sha256": "016d459db4fe9d5b382a9918e9db76dc5826cc09d117a69c28ed3f4cd11b1167",
+      "bytes": 805981,
+      "identical_existing_project_files": [
+        "preparation/design/gameplay-shapes/assets/object_toilet.generated.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/gameplay-shapes/SOURCE.json",
+          "line": 12,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a099da-85a3-7c82-8a7c-81a76c99cc22/exec-d0cc9d93-3204-425b-8355-416628f28583.png",
+      "repository_path": "source-inputs/generated-images/01a099da-85a3-7c82-8a7c-81a76c99cc22/exec-d0cc9d93-3204-425b-8355-416628f28583.png",
+      "sha256": "dbe60520827e306ef5b59aa370d4909aa35d4364f6cd24af96db6e68643c0fba",
+      "bytes": 1094171,
+      "identical_existing_project_files": [
+        "preparation/design/gameplay-shapes/assets/object_dumbbell.generated.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/gameplay-shapes/SOURCE.json",
+          "line": 19,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a099da-85a3-7c82-8a7c-81a76c99cc22/exec-f71a1b6d-e239-4052-a9dc-0f070ae909ae.png",
+      "repository_path": "source-inputs/generated-images/01a099da-85a3-7c82-8a7c-81a76c99cc22/exec-f71a1b6d-e239-4052-a9dc-0f070ae909ae.png",
+      "sha256": "e087261da579d560beb597e4c6ead4cfb7f36154d2756426d25c4c0e12f40ff5",
+      "bytes": 930796,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/gameplay-shapes/SOURCE.json",
+          "line": 26,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a0c-4628-7122-8188-0f05bfbbad53/exec-c75e07cc-f2da-48c3-a873-bd96454510b2.png",
+      "repository_path": "source-inputs/generated-images/01a09a0c-4628-7122-8188-0f05bfbbad53/exec-c75e07cc-f2da-48c3-a873-bd96454510b2.png",
+      "sha256": "7130443977873289b76b83ccfe56b58d2b2f89f75fb34f10368df75d29de0bf6",
+      "bytes": 1126410,
+      "identical_existing_project_files": [
+        "preparation/design/gameplay-toilet-r2/assets/object_toilet.generated.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/gameplay-toilet-r2/SOURCE.json",
+          "line": 8,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a0c-4628-7122-8188-0f05bfbbad53/exec-cd0d4ca3-b05c-445a-aab7-a86d719e3e6d.png",
+      "repository_path": "source-inputs/generated-images/01a09a0c-4628-7122-8188-0f05bfbbad53/exec-cd0d4ca3-b05c-445a-aab7-a86d719e3e6d.png",
+      "sha256": "ddb04397b36984ef8b028cc918c4233d6bcaf9231296d0a297f53bab8c95c226",
+      "bytes": 1099400,
+      "identical_existing_project_files": [
+        "preparation/design/gameplay-toilet-r2/candidate-b/assets/object_toilet.generated.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/gameplay-toilet-r2/candidate-b/SOURCE.json",
+          "line": 8,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-135d35a4-1d78-4430-a173-c9451996c34f.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-135d35a4-1d78-4430-a173-c9451996c34f.png",
+      "sha256": "f50bfc0f28600ea9ce36aa6729239adaa4f51f7152c5e7001b20a09f0ef1bf0a",
+      "bytes": 1340639,
+      "identical_existing_project_files": [
+        "preparation/design/result-r13/component-generated/result_panel_background-original.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/COMPONENT_ART.json",
+          "line": 5,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/COMPONENT_ART.json",
+          "line": 121,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-49c0fcb4-8152-4c4f-bf02-bcf13b311c0b.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-49c0fcb4-8152-4c4f-bf02-bcf13b311c0b.png",
+      "sha256": "54fdf7d1f311fc8aa6993cedd8db2766fc0964ac39bd1b1f9b3e01ed28d999ac",
+      "bytes": 1215367,
+      "identical_existing_project_files": [
+        "preparation/design/difficulty-r1/fridge-r2/generated/fridge-first.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/difficulty-r1/fridge-r2/SOURCE.json",
+          "line": 14,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/difficulty-r1/fridge-r2/write_source.py",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-565088dc-f4a5-4f57-8860-1bdf7608e7c0.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-565088dc-f4a5-4f57-8860-1bdf7608e7c0.png",
+      "sha256": "c8aae57b1cb52aeb28e40b09160b7b218b41609e0306e97dd0f35b25a7a69fd9",
+      "bytes": 2131379,
+      "identical_existing_project_files": [
+        "preparation/design/result-r13/component-generated/result_character_tower-original.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/COMPONENT_ART.json",
+          "line": 57,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/COMPONENT_ART.json",
+          "line": 129,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-61c836f6-bd7e-43f9-96f6-9e642a0a8430.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-61c836f6-bd7e-43f9-96f6-9e642a0a8430.png",
+      "sha256": "36a7f314eb5138d2ee7292b99a22986f1c6884e16b5c97cfa27e3938da22fb10",
+      "bytes": 277941,
+      "identical_existing_project_files": [
+        "preparation/design/difficulty-r1/generated/wood_plank.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/difficulty-r1/SOURCE.json",
+          "line": 69,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/difficulty-r1/write_audit.py",
+          "line": 10,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-890c4472-3106-4668-bfb8-5dc9eb1074ac.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-890c4472-3106-4668-bfb8-5dc9eb1074ac.png",
+      "sha256": "f28adbb06f84a38c1e55b8962cb9a25178c53a7255e697f488c460a0fd31f8ad",
+      "bytes": 904562,
+      "identical_existing_project_files": [
+        "preparation/design/difficulty-r1/generated/fridge-rejected-narrow.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/difficulty-r1/SOURCE.json",
+          "line": 27,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/difficulty-r1/write_audit.py",
+          "line": 7,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-a98347e0-07b7-4db6-832c-e8357b99ca2c.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-a98347e0-07b7-4db6-832c-e8357b99ca2c.png",
+      "sha256": "c92791ced31ebd19c225c62b1cf2b915e4eba0081144877cdb21ec81eec6dc81",
+      "bytes": 1069874,
+      "identical_existing_project_files": [
+        "preparation/design/difficulty-r1/generated/fridge.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/difficulty-r1/SOURCE.json",
+          "line": 41,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/difficulty-r1/write_audit.py",
+          "line": 8,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-b7c8a8df-6cb3-45f5-9e0f-ad2a4b72113e.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-b7c8a8df-6cb3-45f5-9e0f-ad2a4b72113e.png",
+      "sha256": "7571bc6ecaf95621ea2806f1532deac587ffc40e2ed11b1407e3ad8a8c29ce58",
+      "bytes": 1965951,
+      "identical_existing_project_files": [
+        "preparation/design/difficulty-r1/generated/cardboard_box.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/difficulty-r1/SOURCE.json",
+          "line": 13,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/difficulty-r1/write_audit.py",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-c8405eaa-ecc4-4271-a9b8-7b198d48981f.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-c8405eaa-ecc4-4271-a9b8-7b198d48981f.png",
+      "sha256": "abbfe5597f4b532996de272e07493b887abdbd777072df7af275efa4c6eb73cd",
+      "bytes": 469484,
+      "identical_existing_project_files": [
+        "preparation/design/difficulty-r1/generated/wood_plank-rejected-thin.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/difficulty-r1/SOURCE.json",
+          "line": 55,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/difficulty-r1/write_audit.py",
+          "line": 9,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-d2a8e094-fc3c-4479-85c2-71fd4e3f2491.png",
+      "repository_path": "source-inputs/generated-images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-d2a8e094-fc3c-4479-85c2-71fd4e3f2491.png",
+      "sha256": "8535bf389a4be06f2e7e15b7c938f4b48ce1fe4f7b9b493aa12fa64541d2c6da",
+      "bytes": 1117221,
+      "identical_existing_project_files": [
+        "preparation/design/difficulty-r1/fridge-r2/generated/fridge.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/difficulty-r1/fridge-r2/SOURCE.json",
+          "line": 24,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/difficulty-r1/fridge-r2/write_source.py",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-26a69b99-2114-4c72-b856-7920294da773.png",
+      "repository_path": "source-inputs/generated-images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-26a69b99-2114-4c72-b856-7920294da773.png",
+      "sha256": "dce905fe31447df4143e5bf54cd3637f946fb4b4992668eaabc6c92c907b7f00",
+      "bytes": 1634892,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/FIXED_LABELS.json",
+          "line": 61,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-304a778d-7c1d-4261-a2e2-a132d60b0d0f.png",
+      "repository_path": "source-inputs/generated-images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-304a778d-7c1d-4261-a2e2-a132d60b0d0f.png",
+      "sha256": "91cbc3db25bd4fbe94627b2b0de256b223ab27ea7693e80f790d3d7e0dde071f",
+      "bytes": 1607821,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/FIXED_LABELS.json",
+          "line": 18,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/design/result-r13/FIXED_LABELS.json",
+          "line": 28,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-5e91d5c8-543d-4801-b9d6-7e1bf898c711.png",
+      "repository_path": "source-inputs/generated-images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-5e91d5c8-543d-4801-b9d6-7e1bf898c711.png",
+      "sha256": "6b14c48c049870c93c05f4fc8f48e311fc427386ab94d567a9678b7962f61999",
+      "bytes": 1723056,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/FIXED_LABELS.json",
+          "line": 40,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-74bd9e30-2e03-4a23-b616-2ee0bff7818f.png",
+      "repository_path": "source-inputs/generated-images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-74bd9e30-2e03-4a23-b616-2ee0bff7818f.png",
+      "sha256": "8058ac978730e2ed73937f35ab9dcec7c0101a6bd25b0252670e0173261120cb",
+      "bytes": 1454667,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/FIXED_LABELS.json",
+          "line": 30,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-bcbb1336-c8fc-4902-a80a-c13ff2a89883.png",
+      "repository_path": "source-inputs/generated-images/01a09a47-53cf-7a70-a233-504e354f5cd5/exec-bcbb1336-c8fc-4902-a80a-c13ff2a89883.png",
+      "sha256": "57d1cf4f7a63be80aeeb093dad788b8a5927f1dc2b95659761e24d265467cb38",
+      "bytes": 1628576,
+      "identical_existing_project_files": [],
+      "references": [
+        {
+          "file": "preparation/design/result-r13/FIXED_LABELS.json",
+          "line": 50,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-2b181340-8921-485a-8844-e330418cc79b.png",
+      "repository_path": "source-inputs/generated-images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-2b181340-8921-485a-8844-e330418cc79b.png",
+      "sha256": "18f5759af74f03206306a57299eee6654bd8d48546761d8a683520be8abbd5ec",
+      "bytes": 1327395,
+      "identical_existing_project_files": [
+        "preparation/design/batch1c/generated/wooden_crate-r1.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r2/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r3/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 6,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-884b358e-853c-421c-85ed-5a058b87fbdd.png",
+      "repository_path": "source-inputs/generated-images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-884b358e-853c-421c-85ed-5a058b87fbdd.png",
+      "sha256": "06c51bcae25e466d00119a061c8dfc777f60923328626e882d2cbe5f7180e96b",
+      "bytes": 1331214,
+      "identical_existing_project_files": [
+        "preparation/design/batch1c/generated/sofa-r1.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 38,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r2/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 38,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r3/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 38,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-d3c54911-d32a-4f34-8b8e-ad593d26b3d9.png",
+      "repository_path": "source-inputs/generated-images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-d3c54911-d32a-4f34-8b8e-ad593d26b3d9.png",
+      "sha256": "0f6edb78aa894ec1e7a20178539c60f6e273a225cf1df41a33eedc4fc6bf2c13",
+      "bytes": 1206795,
+      "identical_existing_project_files": [
+        "preparation/design/batch1c/generated/ice_block-r1.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 22,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r2/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 22,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r3/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 22,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    },
+    {
+      "kind": "generated_original",
+      "original_source": "/Users/admin/.codex/generated_images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-d7bc2673-aa23-44cb-978c-adac51b1dd2e.png",
+      "repository_path": "source-inputs/generated-images/01a09e97-ceb9-75d0-8638-4900507b535c/exec-d7bc2673-aa23-44cb-978c-adac51b1dd2e.png",
+      "sha256": "a5ed01880eae74ed022e35c1df82e79801f882d83e0ac2b15718001f71d3a5e5",
+      "bytes": 1442677,
+      "identical_existing_project_files": [
+        "preparation/design/batch1c/generated/whale-r1.png"
+      ],
+      "references": [
+        {
+          "file": "preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 54,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r2/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 54,
+          "mode": "explicit_absolute_path"
+        },
+        {
+          "file": "preparation/review/evidence/batch1c/burger-before-r3/preparation/design/batch1c/GENERATION_RESULTS.json",
+          "line": 54,
+          "mode": "explicit_absolute_path"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "files": 274,
+    "bytes": 152159338,
+    "media_files": 252
+  }
+}

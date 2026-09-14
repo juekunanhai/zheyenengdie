@@ -1,0 +1,1454 @@
+{
+  "schema": "batch1b-local-engine-checks",
+  "createdAt": "2026-09-13T16:33:42.873Z",
+  "source": "play-player.html / actual locally built Cocos modules",
+  "method": "Directed physical fixtures, not normal gameplay difficulty evidence. No direct Incident.recordLoss calls.",
+  "results": [
+    {
+      "id": "audio",
+      "name": "A3真实音源事件、强碰撞优先与停止",
+      "status": "passed",
+      "startedAt": "2026-09-13T16:34:07.077Z",
+      "evidence": {
+        "isolation": "HUD真实调用compiled GameAudio.play映射并监听AudioSource STARTED/ENDED；音效fixture暂时停用玩法控制器、自行推进音频时钟。末尾通过真实finish进入Result，窄范围观察其onLoad的run_end。临时sound设置及play观察封装均在finally恢复；不声称HUD声音均由自然碰撞触发。",
+        "clips": [
+          {
+            "name": "impact_paper_1",
+            "duration": 0.470204
+          },
+          {
+            "name": "impact_paper_2",
+            "duration": 0.470204
+          },
+          {
+            "name": "impact_paper_3",
+            "duration": 0.470204
+          },
+          {
+            "name": "impact_wood_1",
+            "duration": 0.339592
+          },
+          {
+            "name": "impact_wood_2",
+            "duration": 0.339592
+          },
+          {
+            "name": "impact_wood_3",
+            "duration": 0.339592
+          },
+          {
+            "name": "impact_rubber_1",
+            "duration": 0.391837
+          },
+          {
+            "name": "impact_rubber_2",
+            "duration": 0.391837
+          },
+          {
+            "name": "impact_rubber_3",
+            "duration": 0.391837
+          },
+          {
+            "name": "impact_metal_1",
+            "duration": 0.417959
+          },
+          {
+            "name": "impact_metal_2",
+            "duration": 0.417959
+          },
+          {
+            "name": "impact_metal_3",
+            "duration": 0.417959
+          },
+          {
+            "name": "claw_grip",
+            "duration": 0.235102
+          },
+          {
+            "name": "claw_open",
+            "duration": 0.182857
+          },
+          {
+            "name": "rotate_90",
+            "duration": 0.287347
+          },
+          {
+            "name": "next_handoff",
+            "duration": 0.20898
+          },
+          {
+            "name": "stable",
+            "duration": 0.339592
+          },
+          {
+            "name": "star_lost",
+            "duration": 0.339592
+          },
+          {
+            "name": "impact_ceramic_1",
+            "duration": 0.470204
+          },
+          {
+            "name": "impact_ceramic_2",
+            "duration": 0.470204
+          },
+          {
+            "name": "impact_ceramic_3",
+            "duration": 0.470204
+          }
+        ],
+        "coverage": {
+          "hudBound": 21,
+          "hudUsed": [
+            "impact_paper_1",
+            "impact_paper_2",
+            "impact_paper_3",
+            "impact_wood_1",
+            "impact_wood_2",
+            "impact_wood_3",
+            "impact_rubber_1",
+            "impact_rubber_2",
+            "impact_rubber_3",
+            "impact_metal_1",
+            "impact_metal_2",
+            "impact_metal_3",
+            "impact_ceramic_1",
+            "impact_ceramic_2",
+            "impact_ceramic_3",
+            "rotate_90",
+            "claw_open",
+            "claw_grip",
+            "next_handoff",
+            "star_lost"
+          ],
+          "hudUsedCount": 20,
+          "resultUsed": [
+            "run_end"
+          ],
+          "totalUsedCount": 21,
+          "unused": [
+            "stable"
+          ]
+        },
+        "playback": [
+          {
+            "eventName": "impact_cardboard_box",
+            "expected": "impact_paper_1",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_paper_1",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 24576.69999999553
+              },
+              {
+                "type": "ended",
+                "clip": "impact_paper_1",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 24997.79999999702
+              }
+            ]
+          },
+          {
+            "eventName": "impact_cardboard_box",
+            "expected": "impact_paper_2",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_paper_2",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 25010.29999999702
+              },
+              {
+                "type": "ended",
+                "clip": "impact_paper_2",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 25431.19999999553
+              }
+            ]
+          },
+          {
+            "eventName": "impact_cardboard_box",
+            "expected": "impact_paper_3",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_paper_3",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 25445
+              },
+              {
+                "type": "ended",
+                "clip": "impact_paper_3",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 25865.60000000149
+              }
+            ]
+          },
+          {
+            "eventName": "impact_wood_plank",
+            "expected": "impact_wood_1",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_wood_1",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 25877
+              },
+              {
+                "type": "ended",
+                "clip": "impact_wood_1",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 26177.5
+              }
+            ]
+          },
+          {
+            "eventName": "impact_wood_plank",
+            "expected": "impact_wood_2",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_wood_2",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 26193.19999999553
+              },
+              {
+                "type": "ended",
+                "clip": "impact_wood_2",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 26493.29999999702
+              }
+            ]
+          },
+          {
+            "eventName": "impact_wood_plank",
+            "expected": "impact_wood_3",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_wood_3",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 26510.10000000149
+              },
+              {
+                "type": "ended",
+                "clip": "impact_wood_3",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 26810.19999999553
+              }
+            ]
+          },
+          {
+            "eventName": "impact_basketball",
+            "expected": "impact_rubber_1",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_rubber_1",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 26826.79999999702
+              },
+              {
+                "type": "ended",
+                "clip": "impact_rubber_1",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 27167.29999999702
+              }
+            ]
+          },
+          {
+            "eventName": "impact_basketball",
+            "expected": "impact_rubber_2",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_rubber_2",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 27176.79999999702
+              },
+              {
+                "type": "ended",
+                "clip": "impact_rubber_2",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 27517.60000000149
+              }
+            ]
+          },
+          {
+            "eventName": "impact_basketball",
+            "expected": "impact_rubber_3",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_rubber_3",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 27527.89999999851
+              },
+              {
+                "type": "ended",
+                "clip": "impact_rubber_3",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 27871.19999999553
+              }
+            ]
+          },
+          {
+            "eventName": "impact_fridge",
+            "expected": "impact_metal_1",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_metal_1",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 27876.79999999702
+              },
+              {
+                "type": "ended",
+                "clip": "impact_metal_1",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 28257.79999999702
+              }
+            ]
+          },
+          {
+            "eventName": "impact_fridge",
+            "expected": "impact_metal_2",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_metal_2",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 28261.10000000149
+              },
+              {
+                "type": "ended",
+                "clip": "impact_metal_2",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 28642.29999999702
+              }
+            ]
+          },
+          {
+            "eventName": "impact_fridge",
+            "expected": "impact_metal_3",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_metal_3",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 28644.10000000149
+              },
+              {
+                "type": "ended",
+                "clip": "impact_metal_3",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 29024.69999999553
+              }
+            ]
+          },
+          {
+            "eventName": "impact_dumbbell",
+            "expected": "impact_metal_1",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_metal_1",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 29026.60000000149
+              },
+              {
+                "type": "ended",
+                "clip": "impact_metal_1",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 29407.60000000149
+              }
+            ]
+          },
+          {
+            "eventName": "impact_toilet",
+            "expected": "impact_ceramic_1",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_ceramic_1",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 29410.29999999702
+              },
+              {
+                "type": "ended",
+                "clip": "impact_ceramic_1",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 29831
+              }
+            ]
+          },
+          {
+            "eventName": "impact_toilet",
+            "expected": "impact_ceramic_2",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_ceramic_2",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 29843.39999999851
+              },
+              {
+                "type": "ended",
+                "clip": "impact_ceramic_2",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 30264.5
+              }
+            ]
+          },
+          {
+            "eventName": "impact_toilet",
+            "expected": "impact_ceramic_3",
+            "events": [
+              {
+                "type": "started",
+                "clip": "impact_ceramic_3",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 30277
+              },
+              {
+                "type": "ended",
+                "clip": "impact_ceramic_3",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 30697.5
+              }
+            ]
+          },
+          {
+            "eventName": "skill_rotate_90",
+            "expected": "rotate_90",
+            "events": [
+              {
+                "type": "started",
+                "clip": "rotate_90",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 30710.10000000149
+              },
+              {
+                "type": "ended",
+                "clip": "rotate_90",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 30970.19999999553
+              }
+            ]
+          },
+          {
+            "eventName": "claw_release",
+            "expected": "claw_open",
+            "events": [
+              {
+                "type": "started",
+                "clip": "claw_open",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 30976.79999999702
+              },
+              {
+                "type": "ended",
+                "clip": "claw_open",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 31117.60000000149
+              }
+            ]
+          },
+          {
+            "eventName": "claw_grip",
+            "expected": "claw_grip",
+            "events": [
+              {
+                "type": "started",
+                "clip": "claw_grip",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 31126.5
+              },
+              {
+                "type": "ended",
+                "clip": "claw_grip",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 31326.79999999702
+              }
+            ]
+          },
+          {
+            "eventName": "next_handoff",
+            "expected": "next_handoff",
+            "events": [
+              {
+                "type": "started",
+                "clip": "next_handoff",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 31343.79999999702
+              },
+              {
+                "type": "ended",
+                "clip": "next_handoff",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 31513.10000000149
+              }
+            ]
+          },
+          {
+            "eventName": "ui_tap",
+            "expected": "next_handoff",
+            "events": [
+              {
+                "type": "started",
+                "clip": "next_handoff",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 31526.89999999851
+              },
+              {
+                "type": "ended",
+                "clip": "next_handoff",
+                "scene": "HUD",
+                "source": "Sfx:0",
+                "volume": 0.55,
+                "at": 31698.10000000149
+              }
+            ]
+          },
+          {
+            "eventName": "star_lost",
+            "expected": "star_lost",
+            "events": [
+              {
+                "type": "started",
+                "clip": "star_lost",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 31710.10000000149
+              },
+              {
+                "type": "ended",
+                "clip": "star_lost",
+                "scene": "HUD",
+                "source": "Sfx:1",
+                "volume": 0.55,
+                "at": 32000.79999999702
+              }
+            ]
+          }
+        ],
+        "samePair": {
+          "first": true,
+          "weakerRejected": true,
+          "strongerAccepted": true,
+          "voices": [
+            {
+              "name": "Sfx:0",
+              "clip": "impact_paper_2",
+              "playing": false,
+              "reserved": true,
+              "collision": true,
+              "pairKey": "qa-pair",
+              "volume": 0.8
+            },
+            {
+              "name": "Sfx:1",
+              "clip": "star_lost",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "qa-a3:21",
+              "volume": 0.55
+            },
+            {
+              "name": "Sfx:2",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            },
+            {
+              "name": "Sfx:3",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            },
+            {
+              "name": "Sfx:4",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            },
+            {
+              "name": "Sfx:5",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            },
+            {
+              "name": "Sfx:6",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            },
+            {
+              "name": "Sfx:7",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            }
+          ]
+        },
+        "multiBusyPair": {
+          "explicitAudioClockAdvance": 0.13,
+          "first": true,
+          "second": true,
+          "beforeWeak": [
+            {
+              "name": "Sfx:0",
+              "clip": "impact_paper_3",
+              "playing": false,
+              "reserved": true,
+              "collision": true,
+              "pairKey": "qa-multi-pair",
+              "volume": 0.2
+            },
+            {
+              "name": "Sfx:1",
+              "clip": "impact_paper_1",
+              "playing": false,
+              "reserved": true,
+              "collision": true,
+              "pairKey": "qa-multi-pair",
+              "volume": 0.5
+            }
+          ],
+          "rejectedMedium": true,
+          "events": [
+            {
+              "type": "started",
+              "clip": "impact_paper_3",
+              "scene": "HUD",
+              "source": "Sfx:0",
+              "volume": 0.2,
+              "at": 32093.60000000149
+            },
+            {
+              "type": "started",
+              "clip": "impact_paper_1",
+              "scene": "HUD",
+              "source": "Sfx:1",
+              "volume": 0.5,
+              "at": 32093.60000000149
+            }
+          ]
+        },
+        "priority": {
+          "fills": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "overflowWeak": false,
+          "overflowStrong": true,
+          "star": true,
+          "operation": true,
+          "voices": [
+            {
+              "name": "Sfx:0",
+              "clip": "impact_metal_2",
+              "playing": false,
+              "reserved": true,
+              "collision": true,
+              "pairKey": "qa-full:strong",
+              "volume": 0.85
+            },
+            {
+              "name": "Sfx:1",
+              "clip": "impact_metal_2",
+              "playing": false,
+              "reserved": true,
+              "collision": true,
+              "pairKey": "qa-full:1",
+              "volume": 0.3
+            },
+            {
+              "name": "Sfx:2",
+              "clip": "impact_metal_3",
+              "playing": false,
+              "reserved": true,
+              "collision": true,
+              "pairKey": "qa-full:2",
+              "volume": 0.4
+            },
+            {
+              "name": "Sfx:3",
+              "clip": "impact_metal_1",
+              "playing": false,
+              "reserved": true,
+              "collision": true,
+              "pairKey": "qa-full:3",
+              "volume": 0.5
+            },
+            {
+              "name": "Sfx:4",
+              "clip": "star_lost",
+              "playing": false,
+              "reserved": true,
+              "collision": false,
+              "pairKey": "qa-full:star",
+              "volume": 0.65
+            },
+            {
+              "name": "Sfx:5",
+              "clip": "rotate_90",
+              "playing": false,
+              "reserved": true,
+              "collision": false,
+              "pairKey": "qa-full:operation",
+              "volume": 0.65
+            },
+            {
+              "name": "Sfx:6",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            },
+            {
+              "name": "Sfx:7",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            }
+          ]
+        },
+        "pause": {
+          "stopped": [
+            {
+              "name": "Sfx:0",
+              "clip": "impact_ceramic_1",
+              "playing": false,
+              "reserved": false,
+              "collision": true,
+              "pairKey": "qa-pause",
+              "volume": 0.55
+            },
+            {
+              "name": "Sfx:1",
+              "clip": "impact_metal_2",
+              "playing": false,
+              "reserved": false,
+              "collision": true,
+              "pairKey": "qa-full:1",
+              "volume": 0.3
+            },
+            {
+              "name": "Sfx:2",
+              "clip": "impact_metal_3",
+              "playing": false,
+              "reserved": false,
+              "collision": true,
+              "pairKey": "qa-full:2",
+              "volume": 0.4
+            },
+            {
+              "name": "Sfx:3",
+              "clip": "impact_metal_1",
+              "playing": false,
+              "reserved": false,
+              "collision": true,
+              "pairKey": "qa-full:3",
+              "volume": 0.5
+            },
+            {
+              "name": "Sfx:4",
+              "clip": "star_lost",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "qa-full:star",
+              "volume": 0.65
+            },
+            {
+              "name": "Sfx:5",
+              "clip": "rotate_90",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "qa-full:operation",
+              "volume": 0.65
+            },
+            {
+              "name": "Sfx:6",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            },
+            {
+              "name": "Sfx:7",
+              "playing": false,
+              "reserved": false,
+              "collision": false,
+              "pairKey": "",
+              "volume": 1
+            }
+          ],
+          "rejected": true,
+          "noReplay": true
+        },
+        "muted": [
+          {
+            "name": "impact_cardboard_box",
+            "accepted": false
+          },
+          {
+            "name": "impact_wood_plank",
+            "accepted": false
+          },
+          {
+            "name": "impact_basketball",
+            "accepted": false
+          },
+          {
+            "name": "impact_fridge",
+            "accepted": false
+          },
+          {
+            "name": "impact_dumbbell",
+            "accepted": false
+          },
+          {
+            "name": "impact_toilet",
+            "accepted": false
+          },
+          {
+            "name": "skill_rotate_90",
+            "accepted": false
+          },
+          {
+            "name": "claw_release",
+            "accepted": false
+          },
+          {
+            "name": "claw_grip",
+            "accepted": false
+          },
+          {
+            "name": "next_handoff",
+            "accepted": false
+          },
+          {
+            "name": "ui_tap",
+            "accepted": false
+          },
+          {
+            "name": "star_lost",
+            "accepted": false
+          }
+        ],
+        "result": {
+          "scene": "Result",
+          "boundClip": "run_end",
+          "duration": 0.444082,
+          "events": [
+            {
+              "type": "started",
+              "clip": "run_end",
+              "scene": "Result",
+              "source": "Sfx:0",
+              "volume": 0.75,
+              "at": 32857.10000000149
+            },
+            {
+              "type": "ended",
+              "clip": "run_end",
+              "scene": "Result",
+              "source": "Sfx:0",
+              "volume": 0.75,
+              "at": 33258.5
+            }
+          ]
+        },
+        "events": [
+          {
+            "type": "started",
+            "clip": "impact_paper_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 24576.69999999553
+          },
+          {
+            "type": "ended",
+            "clip": "impact_paper_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 24997.79999999702
+          },
+          {
+            "type": "started",
+            "clip": "impact_paper_2",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 25010.29999999702
+          },
+          {
+            "type": "ended",
+            "clip": "impact_paper_2",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 25431.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_paper_3",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 25445
+          },
+          {
+            "type": "ended",
+            "clip": "impact_paper_3",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 25865.60000000149
+          },
+          {
+            "type": "started",
+            "clip": "impact_wood_1",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 25877
+          },
+          {
+            "type": "ended",
+            "clip": "impact_wood_1",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 26177.5
+          },
+          {
+            "type": "started",
+            "clip": "impact_wood_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 26193.19999999553
+          },
+          {
+            "type": "ended",
+            "clip": "impact_wood_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 26493.29999999702
+          },
+          {
+            "type": "started",
+            "clip": "impact_wood_3",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 26510.10000000149
+          },
+          {
+            "type": "ended",
+            "clip": "impact_wood_3",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 26810.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_rubber_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 26826.79999999702
+          },
+          {
+            "type": "ended",
+            "clip": "impact_rubber_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 27167.29999999702
+          },
+          {
+            "type": "started",
+            "clip": "impact_rubber_2",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 27176.79999999702
+          },
+          {
+            "type": "ended",
+            "clip": "impact_rubber_2",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 27517.60000000149
+          },
+          {
+            "type": "started",
+            "clip": "impact_rubber_3",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 27527.89999999851
+          },
+          {
+            "type": "ended",
+            "clip": "impact_rubber_3",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 27871.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_1",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 27876.79999999702
+          },
+          {
+            "type": "ended",
+            "clip": "impact_metal_1",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 28257.79999999702
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 28261.10000000149
+          },
+          {
+            "type": "ended",
+            "clip": "impact_metal_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 28642.29999999702
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_3",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 28644.10000000149
+          },
+          {
+            "type": "ended",
+            "clip": "impact_metal_3",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 29024.69999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 29026.60000000149
+          },
+          {
+            "type": "ended",
+            "clip": "impact_metal_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 29407.60000000149
+          },
+          {
+            "type": "started",
+            "clip": "impact_ceramic_1",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 29410.29999999702
+          },
+          {
+            "type": "ended",
+            "clip": "impact_ceramic_1",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 29831
+          },
+          {
+            "type": "started",
+            "clip": "impact_ceramic_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 29843.39999999851
+          },
+          {
+            "type": "ended",
+            "clip": "impact_ceramic_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 30264.5
+          },
+          {
+            "type": "started",
+            "clip": "impact_ceramic_3",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 30277
+          },
+          {
+            "type": "ended",
+            "clip": "impact_ceramic_3",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 30697.5
+          },
+          {
+            "type": "started",
+            "clip": "rotate_90",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 30710.10000000149
+          },
+          {
+            "type": "ended",
+            "clip": "rotate_90",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 30970.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "claw_open",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 30976.79999999702
+          },
+          {
+            "type": "ended",
+            "clip": "claw_open",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 31117.60000000149
+          },
+          {
+            "type": "started",
+            "clip": "claw_grip",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 31126.5
+          },
+          {
+            "type": "ended",
+            "clip": "claw_grip",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 31326.79999999702
+          },
+          {
+            "type": "started",
+            "clip": "next_handoff",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 31343.79999999702
+          },
+          {
+            "type": "ended",
+            "clip": "next_handoff",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 31513.10000000149
+          },
+          {
+            "type": "started",
+            "clip": "next_handoff",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 31526.89999999851
+          },
+          {
+            "type": "ended",
+            "clip": "next_handoff",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 31698.10000000149
+          },
+          {
+            "type": "started",
+            "clip": "star_lost",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 31710.10000000149
+          },
+          {
+            "type": "ended",
+            "clip": "star_lost",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.55,
+            "at": 32000.79999999702
+          },
+          {
+            "type": "started",
+            "clip": "impact_paper_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.25,
+            "at": 32043.5
+          },
+          {
+            "type": "started",
+            "clip": "impact_paper_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.8,
+            "at": 32061.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_paper_3",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.2,
+            "at": 32093.60000000149
+          },
+          {
+            "type": "started",
+            "clip": "impact_paper_1",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.5,
+            "at": 32093.60000000149
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_2",
+            "scene": "HUD",
+            "source": "Sfx:1",
+            "volume": 0.3,
+            "at": 32144.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_3",
+            "scene": "HUD",
+            "source": "Sfx:2",
+            "volume": 0.4,
+            "at": 32144.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_1",
+            "scene": "HUD",
+            "source": "Sfx:3",
+            "volume": 0.5,
+            "at": 32144.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_metal_2",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.85,
+            "at": 32144.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "star_lost",
+            "scene": "HUD",
+            "source": "Sfx:4",
+            "volume": 0.65,
+            "at": 32144.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "rotate_90",
+            "scene": "HUD",
+            "source": "Sfx:5",
+            "volume": 0.65,
+            "at": 32144.19999999553
+          },
+          {
+            "type": "started",
+            "clip": "impact_ceramic_1",
+            "scene": "HUD",
+            "source": "Sfx:0",
+            "volume": 0.55,
+            "at": 32193.39999999851
+          },
+          {
+            "type": "started",
+            "clip": "run_end",
+            "scene": "Result",
+            "source": "Sfx:0",
+            "volume": 0.75,
+            "at": 32857.10000000149
+          },
+          {
+            "type": "ended",
+            "clip": "run_end",
+            "scene": "Result",
+            "source": "Sfx:0",
+            "volume": 0.75,
+            "at": 33258.5
+          }
+        ],
+        "notProven": [
+          "扬声器实际听感",
+          "所有自然物理触发映射",
+          "微信及移动设备中断恢复",
+          "背景音乐或未启用stable高光事件"
+        ]
+      },
+      "finishedAt": "2026-09-13T16:34:16.071Z",
+      "engineErrors": []
+    }
+  ],
+  "manualActions": [],
+  "errors": [],
+  "busy": false,
+  "ready": true,
+  "exportedAt": "2026-09-13T16:34:45.991Z",
+  "finalState": {
+    "scene": "Result",
+    "engine": "3.8.8",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "fixture": false,
+    "game": null,
+    "nativeBullet": []
+  }
+}

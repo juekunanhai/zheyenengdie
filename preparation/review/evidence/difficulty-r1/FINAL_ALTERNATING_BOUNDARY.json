@@ -1,0 +1,506 @@
+{
+  "method": "Offline derivation from previously captured actual native-controller final-core alternating10, no rerun. Uniform-density polygon centroid is calculated from compiled convex fridge vertices. Shelf endpoint projection bounds COM support, not a measured native contact point. Normal snapshots sampled about 0.15 seconds; first-contact snapshot captured after physics.",
+  "source": "final-core.json",
+  "packageSha256": "2cdd10da09f0c35d7906b428061e22098708b547a477b94c168a0782543c80ee",
+  "fridgeLocalCOM": {
+    "x": 0.019901646110742185,
+    "y": -0.007248463310591379
+  },
+  "toiletLocalHighestShelf": [
+    [
+      -68.940823,
+      57.5
+    ],
+    [
+      21.993997,
+      57.5
+    ]
+  ],
+  "release": {
+    "time": 18.315800000000596,
+    "fridge10": {
+      "position": {
+        "x": 10,
+        "y": 934.4091186523438,
+        "z": 0
+      },
+      "angle": 0,
+      "angularVelocity": 0,
+      "contacts": [],
+      "confirmed": false,
+      "calculatedUniformDensityCOM": {
+        "x": 10.019901646110743,
+        "y": 934.4018701890332
+      }
+    },
+    "toilet9": {
+      "position": {
+        "x": -10.747665405273438,
+        "y": 706.9033813476562,
+        "z": 0
+      },
+      "angle": 0.4957302741219124,
+      "angularVelocity": -0.007719157729297876,
+      "contacts": [
+        8
+      ],
+      "confirmed": true
+    },
+    "shelfWorld": [
+      {
+        "x": -80.18339899972052,
+        "y": 763.8047519473026
+      },
+      {
+        "x": 10.748017364144877,
+        "y": 764.591521604667
+      }
+    ],
+    "rightMarginX": 0.7281157180341342,
+    "leftMarginX": 90.20330064583126,
+    "olderContacts": [
+      {
+        "id": 5,
+        "others": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "others": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "others": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "others": [
+          7,
+          9
+        ]
+      },
+      {
+        "id": 9,
+        "others": [
+          8
+        ]
+      }
+    ]
+  },
+  "firstContact": {
+    "time": 18.733100000001333,
+    "fridge10": {
+      "position": {
+        "x": 10.059770584106445,
+        "y": 846.2044067382812,
+        "z": 0
+      },
+      "angle": -0.37786559495726346,
+      "angularVelocity": -0.034166958183050156,
+      "contacts": [
+        9
+      ],
+      "confirmed": false,
+      "calculatedUniformDensityCOM": {
+        "x": 10.079623994157538,
+        "y": 846.1970271822224
+      }
+    },
+    "toilet9": {
+      "position": {
+        "x": -10.455343246459961,
+        "y": 705.1353149414062,
+        "z": 0
+      },
+      "angle": 0.5050460118195751,
+      "angularVelocity": -0.012735630385577679,
+      "contacts": [
+        8,
+        10
+      ],
+      "confirmed": true
+    },
+    "shelfWorld": [
+      {
+        "x": -79.90032753371457,
+        "y": 762.0253952125773
+      },
+      {
+        "x": 11.030959707127208,
+        "y": 762.8269494252955
+      }
+    ],
+    "rightMarginX": 0.9513357129696693,
+    "leftMarginX": 89.97995152787212,
+    "olderContacts": [
+      {
+        "id": 5,
+        "others": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "others": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "others": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "others": [
+          7,
+          9
+        ]
+      },
+      {
+        "id": 9,
+        "others": [
+          8,
+          10
+        ]
+      }
+    ]
+  },
+  "firstSampleCOMOutsideShelf": {
+    "time": 19.016499999999834,
+    "fridge10": {
+      "position": {
+        "x": 9.555910110473633,
+        "y": 846.8192138671875,
+        "z": 0
+      },
+      "angle": -1.3504219938474915,
+      "angularVelocity": -0.06937216222286224,
+      "contacts": [
+        9
+      ],
+      "confirmed": false,
+      "calculatedUniformDensityCOM": {
+        "x": 9.57563540357246,
+        "y": 846.8114983924486
+      }
+    },
+    "toilet9": {
+      "position": {
+        "x": -11.701927185058594,
+        "y": 704.7803955078125,
+        "z": 0
+      },
+      "angle": 0.9475746618357886,
+      "angularVelocity": 0.05737495794892311,
+      "contacts": [
+        8,
+        10
+      ],
+      "confirmed": true
+    },
+    "shelfWorld": [
+      {
+        "x": -81.5842309869194,
+        "y": 761.132420238622
+      },
+      {
+        "x": 9.338153264576578,
+        "y": 762.6362588123117
+      }
+    ],
+    "rightMarginX": -0.23748213899588144,
+    "leftMarginX": 91.15986639049186,
+    "olderContacts": [
+      {
+        "id": 5,
+        "others": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "others": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "others": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "others": [
+          7,
+          9
+        ]
+      },
+      {
+        "id": 9,
+        "others": [
+          8,
+          10
+        ]
+      }
+    ]
+  },
+  "firstSampleFridgeTiltOver5": {
+    "time": 19.81649999999982,
+    "fridge10": {
+      "position": {
+        "x": 4.19456148147583,
+        "y": 846.9127807617188,
+        "z": 0
+      },
+      "angle": -5.988372196790087,
+      "angularVelocity": -0.14287807047367096,
+      "contacts": [
+        9
+      ],
+      "confirmed": false,
+      "calculatedUniformDensityCOM": {
+        "x": 4.21359831831456,
+        "y": 846.9034955809743
+      }
+    },
+    "toilet9": {
+      "position": {
+        "x": -21.933204650878906,
+        "y": 704.4271850585938,
+        "z": 0
+      },
+      "angle": 2.8031783641517563,
+      "angularVelocity": 0.034986428916454315,
+      "contacts": [
+        8,
+        10
+      ],
+      "confirmed": true
+    },
+    "shelfWorld": [
+      {
+        "x": -93.60358249587468,
+        "y": 758.4868189407508
+      },
+      {
+        "x": -2.777572740335576,
+        "y": 762.9340023549037
+      }
+    ],
+    "rightMarginX": -6.991171058650136,
+    "leftMarginX": 97.81718081418924,
+    "olderContacts": [
+      {
+        "id": 5,
+        "others": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "others": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "others": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "others": [
+          7,
+          9
+        ]
+      },
+      {
+        "id": 9,
+        "others": [
+          8,
+          10
+        ]
+      }
+    ]
+  },
+  "firstSampleFridgeNoSupport": {
+    "time": 20.616499999999803,
+    "fridge10": {
+      "position": {
+        "x": 19.446563720703125,
+        "y": 842.3335571289062,
+        "z": 0
+      },
+      "angle": -20.815781844726537,
+      "angularVelocity": -0.5620758533477783,
+      "contacts": [],
+      "confirmed": false,
+      "calculatedUniformDensityCOM": {
+        "x": 19.46259049703396,
+        "y": 842.3197094511687
+      }
+    },
+    "toilet9": {
+      "position": {
+        "x": -26.872745513916016,
+        "y": 704.1696166992188,
+        "z": 0
+      },
+      "angle": 3.8650815347919787,
+      "angularVelocity": 0.0007703857263550162,
+      "contacts": [
+        8
+      ],
+      "confirmed": true
+    },
+    "shelfWorld": [
+      {
+        "x": -99.53268242323794,
+        "y": 756.8917244363975
+      },
+      {
+        "x": -8.804689584649644,
+        "y": 763.0213903256177
+      }
+    ],
+    "rightMarginX": -28.267280081683605,
+    "leftMarginX": 118.9952729202719,
+    "olderContacts": [
+      {
+        "id": 5,
+        "others": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "others": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "others": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "others": [
+          7,
+          9
+        ]
+      },
+      {
+        "id": 9,
+        "others": [
+          8
+        ]
+      }
+    ]
+  },
+  "end": {
+    "time": 22.66640000000201,
+    "fridge10": {
+      "position": {
+        "x": 293.6593933105469,
+        "y": 400.3028564453125,
+        "z": 0
+      },
+      "angle": -177.21974918654595,
+      "angularVelocity": -1.0291450023651123,
+      "contacts": [],
+      "confirmed": false,
+      "calculatedUniformDensityCOM": {
+        "x": 293.63916350008105,
+        "y": 400.3091310374746
+      }
+    },
+    "toilet9": {
+      "position": {
+        "x": 36.53417205810547,
+        "y": 707.6243896484375,
+        "z": 0
+      },
+      "angle": -16.27166382010622,
+      "angularVelocity": -0.02890162728726864,
+      "contacts": [
+        8
+      ],
+      "confirmed": true
+    },
+    "shelfWorld": [
+      {
+        "x": -13.534116391605203,
+        "y": 782.1378351977737
+      },
+      {
+        "x": 73.75821673217501,
+        "y": 756.6586266888859
+      }
+    ],
+    "rightMarginX": -219.88094676790604,
+    "leftMarginX": 307.17327989168626,
+    "olderContacts": [
+      {
+        "id": 5,
+        "others": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "others": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "others": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "others": [
+          7,
+          9
+        ]
+      },
+      {
+        "id": 9,
+        "others": [
+          8
+        ]
+      }
+    ]
+  },
+  "conclusion": "10th fridge first tips from the right edge of the 9th toilet high cistern shelf. The COM has only about one design-unit right-side margin at initial contact. Small support motion consumes that margin, followed by progressive clockwise fridge tipping and lost contact. Older basketball and lower adjacent support contacts remain intact at this local tipping stage. This is a remaining asymmetric top-shelf placement boundary; the trace does not show an unexplained adhesive-joint explosion."
+}

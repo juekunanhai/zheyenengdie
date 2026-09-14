@@ -1,0 +1,28 @@
+{
+  "implementation": "runtime_composition",
+  "states": {
+    "idle_open": "02_ASSETS/claw/claw_open_wide.png",
+    "approach": "02_ASSETS/claw/claw_open_mid.png",
+    "grip": "02_ASSETS/claw/claw_open_narrow.png"
+  },
+  "object_rendering": "The held object is a separate Cocos Node/Sprite, parented or constrained to the claw attachment point. Never use claw_grab_example.png as a final gameplay sprite.",
+  "rail": "02_ASSETS/claw/claw_rail.png",
+  "cable_options": [
+    "02_ASSETS/claw/claw_cable_flex.png",
+    "02_ASSETS/claw/claw_cable_straight.png"
+  ],
+  "excluded": [
+    "02_ASSETS/claw/claw_grab_example.png"
+  ],
+  "document_revision": "2026-09-12-R2",
+  "path_base": "正式美术包根目录",
+  "engineering_review": "blocked",
+  "review_note": "原始三态文件有已知缺陷；项目已采用清理/补边版本，静态短抓手显示见 R6。原图状态不覆盖派生修复批准；三态运行挂点与旋转间隙仍待 1A。",
+  "interaction_rules": [
+    "仅技能按钮旋转 90°；点击当前物体松手也释放。",
+    "UI 触摸不得冒泡触发释放，释放只处理一次。",
+    "可操作后开始规划倒计时；首局前两件免自动释放；后台/暂停不计时。"
+  ],
+  "layout": "R6 short cable and claw enter from safe-area top; no visible horizontal rail. rail is an unused source catalog entry, not a rendering requirement.",
+  "runtime_calibration": "Batch 1A checks three-state attachments, lowest Collider point after 90 degree rotation, visible support and release clearance. Initial position follows SPEC 2.2, not PNG canvas dimensions."
+}

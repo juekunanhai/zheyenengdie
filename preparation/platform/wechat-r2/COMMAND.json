@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Applications/CocosCreator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+    "--project",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die",
+    "--build",
+    "configPath=/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/platform/wechat-build.json"
+  ],
+  "config": "preparation/platform/wechat-build.json",
+  "config_sha256": "48f3188e6d272a9d892758893ec609c78b0b82d18adeeb05c31075971530dda7",
+  "approval": "用户同意下一轮仅推进微信构建与开发工具验收，应用已评审Home启动与main分包两项配置。",
+  "scope": "Local build and developer tools only; no upload, preview upload, remote hosting, or publishing"
+}

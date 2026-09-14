@@ -1,0 +1,264 @@
+{
+  "createdAt": "2026-09-13T10:37:49.776Z",
+  "stages": [
+    {
+      "name": "cushion-only",
+      "status": "completed_diagnostic_not_human_playtest",
+      "override": "Counterfactual exported ObjectSpec override in the loaded engine. This is not evidence of an old engine build.",
+      "errors": [],
+      "results": [
+        {
+          "id": "center10",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 4,
+          "placed": 4,
+          "survived": false,
+          "finalTowerTop": 264.21326361267927,
+          "finalMaxAbsAngle": 133.27936640666974
+        },
+        {
+          "id": "alternating10",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 4,
+          "placed": 4,
+          "survived": false,
+          "finalTowerTop": 244.6093012914542,
+          "finalMaxAbsAngle": 173.58247219030474
+        },
+        {
+          "id": "fridge_plus15",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 5,
+          "placed": 4,
+          "survived": false,
+          "finalTowerTop": 306.368179512105,
+          "finalMaxAbsAngle": 151.90124880130585
+        },
+        {
+          "id": "fridge_minus15",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 4,
+          "placed": 4,
+          "survived": false,
+          "finalTowerTop": 336.69359137814814,
+          "finalMaxAbsAngle": 63.82624632193659
+        }
+      ]
+    },
+    {
+      "name": "geometry-only",
+      "status": "completed_diagnostic_not_human_playtest",
+      "override": "Counterfactual exported ObjectSpec override in the loaded engine. This is not evidence of an old engine build.",
+      "errors": [],
+      "results": [
+        {
+          "id": "center10",
+          "outcome": "ended",
+          "released": 10,
+          "entered": 9,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 481.4629609908352,
+          "finalMaxAbsAngle": 174.69499708060744
+        },
+        {
+          "id": "alternating10",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 4,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 376.82603531990964,
+          "finalMaxAbsAngle": 31.009322021512034
+        },
+        {
+          "id": "fridge_plus15",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 4,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 376.7687271607099,
+          "finalMaxAbsAngle": 22.020000771831537
+        },
+        {
+          "id": "fridge_minus15",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 4,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 374.83665780586193,
+          "finalMaxAbsAngle": 110.73243748568142
+        }
+      ]
+    },
+    {
+      "name": "geometry-lighter",
+      "status": "completed_diagnostic_not_human_playtest",
+      "override": "Counterfactual exported ObjectSpec override in the loaded engine. This is not evidence of an old engine build.",
+      "errors": [],
+      "results": [
+        {
+          "id": "center10",
+          "outcome": "ended",
+          "released": 10,
+          "entered": 10,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 742.0254711876627,
+          "finalMaxAbsAngle": 61.89814539094451
+        },
+        {
+          "id": "alternating10",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 4,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 376.3913434305981,
+          "finalMaxAbsAngle": 35.87192493694088
+        },
+        {
+          "id": "fridge_plus15",
+          "outcome": "ended",
+          "released": 5,
+          "entered": 5,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 376.941551707147,
+          "finalMaxAbsAngle": 17.41194534639073
+        },
+        {
+          "id": "fridge_minus15",
+          "outcome": "ended",
+          "released": 6,
+          "entered": 5,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 441.8899230957031,
+          "finalMaxAbsAngle": 118.75556017537193
+        }
+      ]
+    },
+    {
+      "name": "geometry-cushion",
+      "status": "completed_diagnostic_not_human_playtest",
+      "override": "Counterfactual exported ObjectSpec override in the loaded engine. This is not evidence of an old engine build.",
+      "errors": [],
+      "results": [
+        {
+          "id": "center10",
+          "outcome": "ended",
+          "released": 10,
+          "entered": 10,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 762.5115671644086,
+          "finalMaxAbsAngle": 59.11248005871148
+        },
+        {
+          "id": "alternating10",
+          "outcome": "ended",
+          "released": 10,
+          "entered": 9,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 745.3464192349854,
+          "finalMaxAbsAngle": 147.53703112923452
+        },
+        {
+          "id": "fridge_plus15",
+          "outcome": "ended",
+          "released": 8,
+          "entered": 8,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 527.714527436544,
+          "finalMaxAbsAngle": 63.605562909853475
+        },
+        {
+          "id": "fridge_minus15",
+          "outcome": "ended",
+          "released": 8,
+          "entered": 8,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 509.4942406284186,
+          "finalMaxAbsAngle": 86.0783264491103
+        }
+      ]
+    },
+    {
+      "name": "stabilized",
+      "status": "completed_diagnostic_not_human_playtest",
+      "override": "Actual compiled current build; no spec override.",
+      "errors": [],
+      "results": [
+        {
+          "id": "center10",
+          "outcome": "ended",
+          "released": 10,
+          "entered": 9,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 758.3194526635259,
+          "finalMaxAbsAngle": 54.28119697572174
+        },
+        {
+          "id": "alternating10",
+          "outcome": "ended",
+          "released": 10,
+          "entered": 10,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 778.1711591425224,
+          "finalMaxAbsAngle": 57.92884242649413
+        },
+        {
+          "id": "fridge_plus15",
+          "outcome": "ended",
+          "released": 9,
+          "entered": 9,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 614.0760500000865,
+          "finalMaxAbsAngle": 73.62685061104202
+        },
+        {
+          "id": "fridge_minus15",
+          "outcome": "ended",
+          "released": 9,
+          "entered": 8,
+          "placed": 2,
+          "survived": false,
+          "finalTowerTop": 611.0989081608262,
+          "finalMaxAbsAngle": 78.30089249405431
+        }
+      ]
+    },
+    {
+      "name": "geometry-cushion-plank8-diagnostic",
+      "status": "completed_diagnostic_not_human_playtest",
+      "override": "Counterfactual exported ObjectSpec override in the loaded engine. This is not evidence of an old engine build.",
+      "errors": [],
+      "results": [
+        {
+          "id": "center10",
+          "outcome": "final_settlement_timeout",
+          "released": 10,
+          "entered": 10,
+          "placed": 7,
+          "survived": false,
+          "finalTowerTop": 855.4899325456022,
+          "finalMaxAbsAngle": 11.007181965423943
+        }
+      ]
+    }
+  ],
+  "conclusion": "No candidate passes the four ten-object fixed ordinary-controller trajectories. Eight-point plank counterfactual removes initial toilet crawling and raises confirmed count to 7 but remains unstable under later load. Correct collision representation before selecting difficulty parameters."
+}

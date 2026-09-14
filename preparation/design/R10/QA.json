@@ -1,0 +1,81 @@
+{
+  "status": "approved_and_integrated_web",
+  "engine_changed": true,
+  "scope": [
+    "background",
+    "logo_with_slogan",
+    "same_home_composition_on_short_and_long_screens",
+    "formal_sky_toy_decoration"
+  ],
+  "preserved": [
+    "R9 hero image pixels",
+    "R9 slipper pixels",
+    "wood sign asset and position",
+    "button assets and positions",
+    "all gameplay"
+  ],
+  "assets": [
+    {
+      "file": "assets/bg-home-r10.png",
+      "sha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f"
+    },
+    {
+      "file": "assets/logo-home-r10-clean-r2.png",
+      "sha256": "9079e248bbcd4bfc47f2704ae7a967398dab77b0501bdc0ce18f7bd8eba8a254"
+    }
+  ],
+  "checks": [
+    "source and implementation same-width combined visual comparison",
+    "375x667 visual",
+    "375x812 visual",
+    "focused logo shape/type/copy comparison",
+    "four alpha gaps and three backdrop colours",
+    "independent adversarial review after corrections",
+    "13 homepage images loaded",
+    "no captured review-page console errors/warnings",
+    "three cloud transforms observed changing",
+    "JS syntax"
+  ],
+  "pending": "WeChat and real-device validation remain pending. No further homepage design approval requested.",
+  "revision": "R10.1",
+  "final_result": "passed",
+  "layout_adjustment": "Long-screen hero uniformly enlarged to 571.5 design units wide; logo 618 wide, logo-to-slipper image bounds gap 12 design units on both screens.",
+  "issues_resolved": [
+    "P2 long-screen logo-to-tower spacing",
+    "P2 alpha debris in four logo/ribbon gaps",
+    "P2 missing sky toy accents"
+  ],
+  "evidence": [
+    "evidence/self-audit-after-comparison.png",
+    "evidence/self-audit-logo-focus.png",
+    "evidence/SELF_AUDIT_CAPTURE.json"
+  ],
+  "residual_differences": [
+    "redrawn buildings not pixel-identical",
+    "logo highlight and ribbon curvature not pixel-identical",
+    "approved R9 characters and sign retained",
+    "original historical controls excluded by current product scope"
+  ],
+  "not_verified": [
+    "WeChat/device safe area",
+    "background/resume on device",
+    "long-session performance"
+  ],
+  "unchanged_baseline_count": 19,
+  "formal_sprite_reuse": [
+    {
+      "file": "preparation/art/candidates/backgrounds/airship_clean.png",
+      "sha256": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289",
+      "source": "02_ASSETS/backgrounds/air_objects.png",
+      "provenance": "preparation/art/CANDIDATE_MANIFEST.json"
+    },
+    {
+      "file": "preparation/art/candidates/backgrounds/airplane_clean.png",
+      "sha256": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600",
+      "source": "02_ASSETS/backgrounds/air_objects.png",
+      "provenance": "preparation/art/CANDIDATE_MANIFEST.json"
+    }
+  ],
+  "approval": "APPROVAL.json",
+  "engine_acceptance": "evidence/RUNTIME_ACCEPTANCE.json"
+}

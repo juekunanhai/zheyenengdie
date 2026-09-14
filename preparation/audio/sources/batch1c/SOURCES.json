@@ -1,0 +1,21 @@
+[
+  {
+    "id": "muri_kuri_ukulele_682461",
+    "author": "muri_kuri",
+    "title": "ukulele loop.wav",
+    "page_url": "https://freesound.org/people/muri_kuri/sounds/682461/",
+    "download_url": "https://cdn.freesound.org/previews/682/682461_10105416-hq.mp3",
+    "file": "preparation/audio/sources/batch1c/ukulele-hq.mp3",
+    "sha256": "4a1b2b0c074a035fc137e83d25256e6a3177a3a998219b076ff465faf2ef49c0",
+    "bytes": 389455,
+    "downloaded_at": "2026-09-14",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "quality": "Public HQ MP3 preview, not original lossless WAV",
+    "page_verified_by": "web search/open of primary author page; author profile ID 10105416 observed in linked avatar URL",
+    "page_fetch_note": "Shell requests to author page and embed returned HTTP503; public CDN download succeeded. Evidence is web-tool verified text in SOURCE_EVIDENCE.md, not an archived raw author HTML.",
+    "page_and_license_evidence": "preparation/audio/sources/batch1c/AUTHOR_AND_LICENSE_WEB_EVIDENCE.txt",
+    "page_and_license_evidence_sha256": "c25e58e842dc224803a74895565465dd78d648f0a41c21c7a09fd5e5f34c12b9",
+    "evidence_format": "Complete web-tool primary author and CC0 page extraction; not raw HTML"
+  }
+]

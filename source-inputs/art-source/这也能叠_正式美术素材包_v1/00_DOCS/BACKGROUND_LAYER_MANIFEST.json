@@ -1,0 +1,493 @@
+{
+  "source_of_truth": "02_ASSETS 优先；已获接受的必要补图及派生修复按项目 BATCH0_IMPORT_MANIFEST 和 R6 记录采用。下方逐项状态仅针对原始 PNG。",
+  "engine_usage": {
+    "city": [
+      "bg_city_far.png",
+      "bg_city_near.png",
+      "airplane.png",
+      "blimp.png",
+      "hot_air_balloon.png"
+    ],
+    "cloud": [
+      "cloud_large_a.png",
+      "cloud_large_b.png",
+      "cloud_mid_a.png",
+      "cloud_small_a.png",
+      "cloud_small_b.png",
+      "cloud_small_c.png",
+      "floating_island_01.png",
+      "floating_island_02.png",
+      "wind_swirl_a.png",
+      "wind_swirl_b.png"
+    ],
+    "space": [
+      "earth_full.png",
+      "earth_small.png",
+      "moon.png",
+      "planet_ringed.png",
+      "planet_purple.png",
+      "planet_red.png",
+      "asteroid_cluster.png",
+      "satellite.png",
+      "star_cluster_a.png",
+      "star_cluster_b.png"
+    ]
+  },
+  "rules": [
+    "Do not use a single ultra-tall background texture.",
+    "Use layered sprites + parallax + height-based fade/crossfade.",
+    "Decorations should be reused and randomized; avoid spawning all at once.",
+    "World-scale thresholds remain configurable.",
+    "Several filenames do not match their visual content; engine_usage is intended mapping, not verified ready-to-load art.",
+    "Normal and collapse camera transforms are presentation only; background layers have no physical support or death-boundary authority."
+  ],
+  "assets": [
+    {
+      "file": "backgrounds/airplane.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        0,
+        650,
+        190,
+        830
+      ],
+      "size": [
+        190,
+        180
+      ],
+      "status": "candidate",
+      "notes": "城市/云层轻装饰：飞机",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "内容为云与星点，不是独立飞机。"
+    },
+    {
+      "file": "backgrounds/blimp.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        170,
+        640,
+        405,
+        820
+      ],
+      "size": [
+        235,
+        180
+      ],
+      "status": "candidate",
+      "notes": "城市/云层轻装饰：飞艇",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "内容为云与星点，不是独立飞艇。"
+    },
+    {
+      "file": "backgrounds/hot_air_balloon.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        385,
+        635,
+        555,
+        820
+      ],
+      "size": [
+        170,
+        185
+      ],
+      "status": "candidate",
+      "notes": "城市/云层轻装饰：热气球",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "内容为风流/星点/星云残片，不是独立热气球。"
+    },
+    {
+      "file": "backgrounds/floating_island_01.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        850,
+        480,
+        1125,
+        700
+      ],
+      "size": [
+        275,
+        220
+      ],
+      "status": "candidate",
+      "notes": "高空装饰：浮空岛A",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    },
+    {
+      "file": "backgrounds/floating_island_02.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        1090,
+        490,
+        1325,
+        700
+      ],
+      "size": [
+        235,
+        210
+      ],
+      "status": "candidate",
+      "notes": "高空装饰：浮空岛B",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    },
+    {
+      "file": "backgrounds/earth_full.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        0,
+        880,
+        570,
+        1086
+      ],
+      "size": [
+        570,
+        206
+      ],
+      "status": "candidate",
+      "notes": "太空背景：完整地球/地球弧线来源",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    },
+    {
+      "file": "backgrounds/earth_small.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        430,
+        865,
+        620,
+        1086
+      ],
+      "size": [
+        190,
+        221
+      ],
+      "status": "candidate",
+      "notes": "太空装饰：小地球",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    },
+    {
+      "file": "backgrounds/moon.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        610,
+        860,
+        760,
+        1086
+      ],
+      "size": [
+        150,
+        226
+      ],
+      "status": "candidate",
+      "notes": "太空装饰：月球",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "内容为背景色条等残片，不是独立月球。"
+    },
+    {
+      "file": "backgrounds/planet_ringed.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        720,
+        850,
+        910,
+        1086
+      ],
+      "size": [
+        190,
+        236
+      ],
+      "status": "candidate",
+      "notes": "太空装饰：带环行星",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为色条和残片，不是独立带环行星。"
+    },
+    {
+      "file": "backgrounds/planet_purple.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        875,
+        850,
+        1035,
+        1086
+      ],
+      "size": [
+        160,
+        236
+      ],
+      "status": "candidate",
+      "notes": "太空装饰：紫色行星",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为色条和邻近残片，不是独立紫色行星。"
+    },
+    {
+      "file": "backgrounds/planet_red.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        985,
+        900,
+        1115,
+        1086
+      ],
+      "size": [
+        130,
+        185
+      ],
+      "status": "candidate",
+      "notes": "太空装饰：红色行星",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为背景色条，不是独立红色行星。"
+    },
+    {
+      "file": "backgrounds/asteroid_cluster.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        1050,
+        835,
+        1280,
+        1086
+      ],
+      "size": [
+        230,
+        251
+      ],
+      "status": "candidate",
+      "notes": "太空装饰：小行星群",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "混有背景色条和光效，不满足独立小行星组要求。"
+    },
+    {
+      "file": "backgrounds/satellite.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        1210,
+        820,
+        1448,
+        1086
+      ],
+      "size": [
+        238,
+        266
+      ],
+      "status": "candidate",
+      "notes": "太空装饰：卫星",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为其他特效与残片，不是独立卫星。"
+    },
+    {
+      "file": "backgrounds/cloud_large_a.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        0,
+        260,
+        330,
+        500
+      ],
+      "size": [
+        330,
+        240
+      ],
+      "status": "candidate",
+      "notes": "云层：大云A",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为城市建筑，不是清单所述大云。"
+    },
+    {
+      "file": "backgrounds/cloud_large_b.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        320,
+        260,
+        670,
+        500
+      ],
+      "size": [
+        350,
+        240
+      ],
+      "status": "candidate",
+      "notes": "云层：大云B",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为城市建筑，不是清单所述大云。"
+    },
+    {
+      "file": "backgrounds/cloud_mid_a.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        660,
+        300,
+        900,
+        470
+      ],
+      "size": [
+        240,
+        170
+      ],
+      "status": "candidate",
+      "notes": "云层：中云A",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为城市建筑，不是清单所述中云。"
+    },
+    {
+      "file": "backgrounds/cloud_small_a.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        925,
+        295,
+        1110,
+        445
+      ],
+      "size": [
+        185,
+        150
+      ],
+      "status": "candidate",
+      "notes": "云层：小云A",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为楼顶，不是清单所述小云。"
+    },
+    {
+      "file": "backgrounds/cloud_small_b.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        1110,
+        295,
+        1285,
+        445
+      ],
+      "size": [
+        175,
+        150
+      ],
+      "status": "candidate",
+      "notes": "云层：小云B",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为楼顶，不是清单所述小云。"
+    },
+    {
+      "file": "backgrounds/cloud_small_c.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        1270,
+        300,
+        1448,
+        450
+      ],
+      "size": [
+        168,
+        149
+      ],
+      "status": "candidate",
+      "notes": "云层：小云C",
+      "source_status": "READY",
+      "engineering_review": "blocked",
+      "review_note": "主要内容为楼顶，不是清单所述小云。"
+    },
+    {
+      "file": "backgrounds/wind_swirl_a.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        540,
+        620,
+        825,
+        800
+      ],
+      "size": [
+        285,
+        180
+      ],
+      "status": "candidate",
+      "notes": "高空环境：风流A",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    },
+    {
+      "file": "backgrounds/wind_swirl_b.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        760,
+        620,
+        1120,
+        810
+      ],
+      "size": [
+        360,
+        190
+      ],
+      "status": "candidate",
+      "notes": "高空环境：风流B",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    },
+    {
+      "file": "backgrounds/star_cluster_a.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        0,
+        790,
+        240,
+        930
+      ],
+      "size": [
+        240,
+        140
+      ],
+      "status": "candidate",
+      "notes": "太空粒子：星星组A",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    },
+    {
+      "file": "backgrounds/star_cluster_b.png",
+      "source": "卡通游戏天空城市太空素材表.png",
+      "crop_box": [
+        200,
+        800,
+        500,
+        940
+      ],
+      "size": [
+        300,
+        140
+      ],
+      "status": "candidate",
+      "notes": "太空粒子：星星组B",
+      "source_status": "READY",
+      "engineering_review": "needs_review",
+      "review_note": "待独立工程和层叠视觉验收。"
+    }
+  ],
+  "historical_source_reference": "卡通游戏天空城市太空素材表.png",
+  "document_revision": "2026-09-12-R2",
+  "engineering_review": "blocked",
+  "current_project_rules": [
+    "Start on ground with one platform and no prebuilt tower.",
+    "Full Canvas background; safe area applies only to HUD.",
+    "Use current camera/view height, independent of record peak; ground city -> city above -> clouds -> space.",
+    "No independent city HUD sign; city backgrounds remain.",
+    "Existing R6 preview is presentation only; real camera/audio/layer loading belongs to Batch 1."
+  ]
+}

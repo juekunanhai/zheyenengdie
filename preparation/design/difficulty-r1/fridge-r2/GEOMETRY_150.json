@@ -1,0 +1,161 @@
+{
+  "version": "difficulty-r1-fridge-r2-uniform-150-candidate",
+  "coordinate_system": "x-right y-up; collider bounds center at local origin; world units",
+  "assets": [
+    {
+      "slug": "fridge",
+      "kind": "fridge",
+      "name": "冰箱 R2 单凸形",
+      "status": "candidate_150_width_pending_runtime_review_exceeds_one_world_unit_boundary_error",
+      "width": 150.0,
+      "height": 167.554858636,
+      "spriteWidth": 152.664576818,
+      "spriteHeight": 170.219435455,
+      "spriteOffset": [
+        0.078369545,
+        -0.078369545
+      ],
+      "outline": [
+        [
+          -74.843259545,
+          65.909090455
+        ],
+        [
+          -75.0,
+          -65.125392273
+        ],
+        [
+          -57.601880455,
+          -83.77743
+        ],
+        [
+          57.445141364,
+          -83.77743
+        ],
+        [
+          75.0,
+          -66.065830909
+        ],
+        [
+          74.843259545,
+          66.22257
+        ],
+        [
+          57.288400909,
+          83.77743
+        ],
+        [
+          -57.601880455,
+          83.77743
+        ]
+      ],
+      "outline_winding": "counter_clockwise",
+      "outline_area_world_squared": 24481.198627066,
+      "source_outline_px": [
+        [
+          119,
+          8
+        ],
+        [
+          852,
+          8
+        ],
+        [
+          964,
+          120
+        ],
+        [
+          965,
+          964
+        ],
+        [
+          853,
+          1077
+        ],
+        [
+          119,
+          1077
+        ],
+        [
+          8,
+          958
+        ],
+        [
+          9,
+          122
+        ]
+      ],
+      "raw_source_outline_px": [
+        [
+          260,
+          90
+        ],
+        [
+          993,
+          90
+        ],
+        [
+          1105,
+          202
+        ],
+        [
+          1106,
+          1046
+        ],
+        [
+          994,
+          1159
+        ],
+        [
+          260,
+          1159
+        ],
+        [
+          149,
+          1040
+        ],
+        [
+          150,
+          204
+        ]
+      ],
+      "pixel_to_world": 0.156739812,
+      "sprite_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/assets/object_fridge.png",
+      "next_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/assets/next_fridge.png",
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              119,
+              8
+            ],
+            [
+              852,
+              8
+            ]
+          ],
+          "width_world": 114.890282727,
+          "y_world": 83.77743
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              119,
+              1077
+            ],
+            [
+              853,
+              1077
+            ]
+          ],
+          "width_world": 115.047021818,
+          "y_world": -83.77743
+        }
+      },
+      "size_selection": "Uniform 150 / 110 world-unit remapping of unchanged fridge-r2 texture and same eight source-pixel vertices. Candidate targets about +/-21.7 relative support offset for dumbbell inner-foot span 71.46; current 125 mapping stays frozen. No raster resizing or anisotropic stretching."
+    }
+  ],
+  "source_geometry_110_sha256": "09236e37e716a6ba8cd11d4ad73756c03830dd8b462c931bb5fd053fa601afe9",
+  "source_geometry_125_sha256": "d63ce7ea8d5bf4e2732782205b3c9a9e02c73e6c5324341b54891a3d493fe06f",
+  "uniform_scale_from_110": 1.3636363636363635
+}

@@ -1,0 +1,229 @@
+{
+  "schema": "playful-r3-engine",
+  "createdAt": "2026-09-14T10:54:01.819Z",
+  "results": [
+    {
+      "name": "voices",
+      "status": "passed",
+      "startedAt": "2026-09-14T10:55:08.821Z",
+      "evidence": {
+        "mode": "real audio start/end and natural cooldown wait",
+        "observations": [
+          {
+            "id": "voice_wow",
+            "state": {
+              "clock": 1.143800000000745,
+              "lastReactionAt": 0.24369999999925498,
+              "reacting": true,
+              "voices": [
+                {
+                  "clip": "claw_grip",
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 0.7
+                },
+                {
+                  "clip": "voice_wow",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            },
+            "otherVoiceBlocked": true
+          },
+          {
+            "id": "voice_hey",
+            "state": {
+              "clock": 13.310900000002208,
+              "lastReactionAt": 12.310300000000726,
+              "reacting": true,
+              "voices": [
+                {
+                  "clip": "voice_hey",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "clip": "voice_wow",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            },
+            "otherVoiceBlocked": true
+          },
+          {
+            "id": "voice_chuckle",
+            "state": {
+              "clock": 25.628100000001425,
+              "lastReactionAt": 24.360499999999934,
+              "reacting": true,
+              "voices": [
+                {
+                  "clip": "voice_chuckle",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "clip": "voice_wow",
+                  "playing": false,
+                  "reaction": true,
+                  "volume": 0.7
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                },
+                {
+                  "playing": false,
+                  "reaction": false,
+                  "volume": 1
+                }
+              ]
+            },
+            "otherVoiceBlocked": true
+          }
+        ],
+        "events": [
+          {
+            "type": "STARTED",
+            "clip": "claw_grip",
+            "at": 68265.29999999702,
+            "clock": 0.24369999999925498
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_wow",
+            "at": 68265.29999999702,
+            "clock": 0.24369999999925498
+          },
+          {
+            "type": "ENDED",
+            "clip": "claw_grip",
+            "at": 68465.89999999851,
+            "clock": 0.44340000000223523
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_wow",
+            "at": 69146.5,
+            "clock": 1.1271000000014901
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_hey",
+            "at": 80324.69999999925,
+            "clock": 12.310300000000726
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_hey",
+            "at": 81308.39999999851,
+            "clock": 13.293800000000719
+          },
+          {
+            "type": "STARTED",
+            "clip": "voice_chuckle",
+            "at": 92375.29999999702,
+            "clock": 24.360499999999934
+          },
+          {
+            "type": "ENDED",
+            "clip": "voice_chuckle",
+            "at": 93633.59999999776,
+            "clock": 25.610600000001426
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T10:55:34.675Z"
+    }
+  ],
+  "errors": [],
+  "ready": true,
+  "busy": false
+}

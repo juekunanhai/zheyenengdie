@@ -1,0 +1,151 @@
+{
+  "scene": "HUD",
+  "game": {
+    "phase": "planning",
+    "releases": 1,
+    "placed": 1,
+    "peakMetres": 1.0048273040042128,
+    "sequence": [
+      "cardboard_box",
+      "wood_plank",
+      "toilet",
+      "fridge",
+      "dumbbell",
+      "basketball"
+    ],
+    "untimedCalibration": true,
+    "observationSeconds": null,
+    "maxObserveSeconds": 1.5,
+    "placementBlocked": false,
+    "placementTop": 100.48273040042129,
+    "stabilizers": {
+      "active": [],
+      "brokenPairs": []
+    },
+    "secondsLeft": 4,
+    "tutorial": false,
+    "paused": false,
+    "boundary": {
+      "top": 485.42857142857144,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428,
+      "bottom": -187.42857142857142
+    },
+    "view": {
+      "scale": 1.75,
+      "originY": -339,
+      "cameraY": 0,
+      "targetCameraY": 0,
+      "width": 750,
+      "height": 1334,
+      "heldTop": 485.42857142857144
+    },
+    "audioClips": 17,
+    "currentId": 2,
+    "bodies": [
+      {
+        "id": 1,
+        "kind": "cardboard_box",
+        "position": {
+          "x": -0.000015750527381896973,
+          "y": 50.48147964477539,
+          "z": 0
+        },
+        "angle": 0.0017957083844344238,
+        "size": [
+          100.912779,
+          100
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.00003134102371404879
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 4.389647960662842,
+        "awake": false,
+        "contacts": 1,
+        "contactSeconds": 1.0821999999992553,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 0.9999999999999999,
+          "y": 0.9999999999999999,
+          "z": 1
+        },
+        "bounds": {
+          "left": -50.457653916645825,
+          "right": 50.45784491780405,
+          "bottom": 0.4799936725213456,
+          "top": 100.48273040042129
+        }
+      },
+      {
+        "id": 2,
+        "kind": "wood_plank",
+        "position": {
+          "x": 0,
+          "y": 471.0561828613281,
+          "z": 0
+        },
+        "angle": 0,
+        "size": [
+          260,
+          28.744805
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 0,
+        "awake": true,
+        "contacts": 0,
+        "contactSeconds": null,
+        "placed": false,
+        "type": 1,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -130,
+          "right": 130,
+          "bottom": 456.6837808613281,
+          "top": 485.42858486132815
+        }
+      }
+    ]
+  },
+  "backdrop": 0,
+  "clouds": [
+    {
+      "name": "BackdropCloud0",
+      "x": -361.3977960193258,
+      "y": 170.023887283494
+    },
+    {
+      "name": "BackdropCloud1",
+      "x": 350.1765768740017,
+      "y": 24.94857620649501
+    },
+    {
+      "name": "BackdropCloud2",
+      "x": -281.46856769222757,
+      "y": -210.16831196126657
+    }
+  ]
+}

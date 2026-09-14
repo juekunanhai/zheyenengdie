@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-09-14T15:50:16.849003+08:00",
+  "completed_at": "2026-09-14T15:50:47.276299+08:00",
+  "creator_exit_code": 36,
+  "exit_source": "subprocess.run returncode of the exact Creator argv in COMMAND.json; outer Python exit is not the Creator exit",
+  "log": "preparation/platform/wechat/BUILD.stdout.log",
+  "log_sha256": "a951d8f6a239206cd3da03ee9016934a9251ab4953b4790a8e86ce0e5d0bf2c0",
+  "fresh_typecheck": "not_run; runtime inputs inherit R7 with its previously recorded typecheck"
+}

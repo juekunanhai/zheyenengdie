@@ -1,0 +1,126 @@
+{
+  "revision": "wechat-r2",
+  "status": "passed_read_only_scope_and_document_review",
+  "recorded_at": "2026-09-14T20:34:12.636217+08:00",
+  "method": "Rehashed all current runtime, Web, WeChat and profile files; verified frozen snapshot/report anchors; reviewed current documents. No Creator build, old recorder, UI interaction or historical engine test rerun in this audit.",
+  "scope": {
+    "runtime": {
+      "checked_files": 314,
+      "counts": {
+        ".ts": 12,
+        ".scene": 4,
+        ".png": 95,
+        ".mp3": 38,
+        ".meta": 155
+      },
+      "matches_frozen_before": true,
+      "changes": {},
+      "inventory_sha256": "ad1e929dc98ca24c61d38a606c61111a2f6fb8b7cc27936ac68812e2fc57c3e4"
+    },
+    "web": {
+      "checked_files": 214,
+      "matches_frozen_successful_web": true,
+      "changes": {},
+      "inventory_sha256": "beac3c889e48570e33b86163c0ac57148057df2683bee09615857f277ada8054"
+    },
+    "wechat": {
+      "checked_files": 230,
+      "matches_post_creator_snapshot": true,
+      "changes": {},
+      "inventory_sha256": "38559bf36e364b0e90578c7cf56e26e8b1d6b3123d2a2164cdd6e11a514af5ff"
+    },
+    "profiles": {
+      "checked_files": 12,
+      "changes": {}
+    },
+    "platform_configuration": {
+      "sha256": "48f3188e6d272a9d892758893ec609c78b0b82d18adeeb05c31075971530dda7",
+      "exact_approved_additions": {
+        "startScene": "b35d6350-0c9c-52a9-8eab-897e6f0d1d60",
+        "mainBundleCompressionType": "subpackage"
+      },
+      "no_additional_changes": true
+    },
+    "settings_identical_content_mtime_changes": {
+      "settings/v2/packages/engine.json": {
+        "before_mtime": 1789386150.1043494,
+        "current_mtime": 1789387910.157355,
+        "content_sha256_unchanged": "4f929e78c45c0065fc05f4d0c089ea33875eb686c63adeb496f33a1e56b44b11"
+      }
+    }
+  },
+  "devtools_files": {
+    "added": [],
+    "removed": [],
+    "content_changed": {},
+    "files_newer_than_creator_process_end_plus_one_second": {},
+    "finding": "No current file-content or newer-mtime side effect was observed in the 230-file WeChat output. This compares retained filesystem state; it does not assert DevTools never wrote an intermediate file."
+  },
+  "frozen_evidence": {
+    "creator_report_sha256": "bcfbe65ced70fbbfdcf916536658c47853f8b919887f1736dd70752d0d0060b0",
+    "build_report_matches_frozen": true,
+    "anchor_checks": {
+      "process_result_sha256": true,
+      "command_sha256": true,
+      "baseline_sha256": true,
+      "recorder_sha256": true,
+      "output_snapshot_sha256": true,
+      "post_creator_file_sizes_sha256": true
+    },
+    "source_snapshot_files_verified": 192,
+    "historical_frozen_reference_files_verified": 24,
+    "prior_wechat_files_verified": 214,
+    "generated_config_and_script_copies_verified": 6,
+    "old_reports_runtime_sources_and_outputs_unchanged": true
+  },
+  "authorized_document_change": {
+    "path": "preparation/platform/wechat/WECHAT_R2_CONFIG_REVIEW.md",
+    "before": "58ace220fda4c0718769d5d05915f56031f6c30cf602cc010774bde284a700a1",
+    "current": "5151926e01ad0d355ecd9193c750842d471170083d33345c5afb4026d0bb6d39",
+    "scope": "Only historical review heading and approval/execution pointer added; old estimates and review body byte-for-byte preserved from the first-round-build paragraph onward. Explicitly authorized by root for final documentation.",
+    "old_recorder_boundary": "The old strict recorder also protects this original document hash and was not rerun or altered after the authorized status edit. Its earlier actual exit 0 remains a historical frozen result; this independent audit classifies the documentation-only difference explicitly."
+  },
+  "document_review": {
+    "reviewed_file_sha256": {
+      "README.md": "525c7c883480909589c2a55eaf05c6cd85b2f2f4451898fcc3ac2dcfdd2ed01c",
+      "preparation/docs/BATCH_PLAN.md": "24a6f7a7392ed9ec141902037cc66931ab6edfe4ee56ee7e0551923d335686a0",
+      "preparation/docs/BATCH1C_IMPLEMENTATION.md": "544c6c5e1b8fc02020037275009c0792a891c18287d97ca9a8e469f254def4cb",
+      "preparation/docs/AUDIO_DELIVERY.md": "6e8626970744eca2182a4f7887081aa0fe016ef1040080fe0f284eb8c2af17cc",
+      "preparation/platform/wechat/WECHAT_R2_CONFIG_REVIEW.md": "5151926e01ad0d355ecd9193c750842d471170083d33345c5afb4026d0bb6d39",
+      "preparation/platform/wechat-r2/DEVTOOLS_OBSERVATIONS.json": "290565bfa0485265fa947765dc697cb1c0edba9e92b44e35d30e9dbc6a4af56e",
+      "preparation/platform/wechat-r2/REVIEW.md": "1cd24b9955156ff931ad800082f751ab2e877a90a10af4d230bec47fa1470d6c",
+      "preparation/platform/wechat-r2/STATIC_ACCEPTANCE.md": "bc845327734b409d9762cd83aa5a02acba39f342949594ce43bf14c1810beee3"
+    },
+    "material_findings": [],
+    "checks": {
+      "current_wechat_r2_status_confirmed_and_executed": true,
+      "old_pending_and_estimate_text_explicitly_historical": true,
+      "raw_bytes_and_tool_aggregate_not_called_compressed_package_acceptance": true,
+      "manual_home_to_hud_distinguished_from_failed_automated_taps": true,
+      "single_physics_music_snapshot_not_called_full_interaction_or_audio_lifecycle_pass": true,
+      "console_rounds_and_agent_probe_error_distinguished": true,
+      "no_zero_error_real_device_upload_or_publication_claim": true,
+      "old_web_engine_results_not_called_current_wechat_regression": true
+    },
+    "observational_provenance": "DevTools runtime observations and manual screenshots were recorded by root/user earlier in this task. This agent compared their written records and boundaries; it did not replay these UI observations.",
+    "score_boundary": "11.03311767578125 is the earlier HUD peak snapshot; 11.4m is the later observed Result display, not claimed to be simultaneous values."
+  },
+  "build_and_package_facts": {
+    "actual_creator_exit_code": 36,
+    "recorded_static_gate_actual_exit_code": 0,
+    "current_unpacked_filesystem_bytes": 31180754,
+    "tool_local_code_label": "30450 KB",
+    "final_compressed_package_limit_acceptance": "not_verified"
+  },
+  "still_not_verified": [
+    "Current WeChat drag, rotate, pause/resume, Settings and result buttons as a complete regression",
+    "Home A complete loop and Home A/B switch lifecycle in WeChat",
+    "Final compressed platform main-package and total-package limits",
+    "Real-device safe area, speaker mix, native background/foreground and long-run performance",
+    "Zero-error WeChat tool acceptance; current recorded session retains 2 errors and 3 warnings",
+    "Any preview upload, real-device preview, upload, remote deployment or publication"
+  ],
+  "writes_by_this_audit": [
+    "preparation/platform/wechat-r2/FINAL_SCOPE_AUDIT.json"
+  ]
+}

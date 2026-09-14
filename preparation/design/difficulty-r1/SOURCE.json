@@ -1,0 +1,92 @@
+{
+  "version": "difficulty-r1-art-frozen",
+  "date": "2026-09-13",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "text-only generation; one asset per tool call",
+  "input_images_submitted": [],
+  "local_files_uploaded": false,
+  "source_policy": "New generated game candidates authorized by user; local original images were only viewed to understand style. No historical UI image was cut into these assets. No third-party image downloads. Not a replacement of the external formal-source archive.",
+  "generation_calls": [
+    {
+      "id": "cardboard_box",
+      "selected": true,
+      "original_tool_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-b7c8a8df-6cb3-45f5-9e0f-ad2a4b72113e.png",
+      "reason": "Broad visible foot and top; square body with playful eyes.",
+      "saved_generated_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/cardboard_box.png",
+      "generated_sha256": "7571bc6ecaf95621ea2806f1532deac587ffc40e2ed11b1407e3ad8a8c29ce58",
+      "prompt_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/prompts/cardboard_box.txt",
+      "prompt": "Use case: stylized-concept.\nAsset type: final-quality transparent PNG physics sprite for a playful polished mobile stacking game.\nPrimary request: ONE single complete sealed cardboard shipping box, almost square, with two small lively googly eyes printed/embedded on its front face. Warm golden orange corrugated cardboard, subtle broad paper fibres, darker brown packing tape, finely beveled lit edges and restrained toy-like dimensional shading. Fun and appealing, polished casual game rendering, not photorealistic and not flat vector clipart.\nComposition: exact straight-on orthographic 2D side-scroller view, only a very shallow bevel visible. Silhouette is square; long perfectly horizontal top edge occupies at least 85 percent of width, long perfectly horizontal bottom edge occupies at least 85 percent of width. Left/right sides vertical. Corners tiny chamfers, NOT rotated/isometric, NOT a diamond foot, NO long perspective slopes. The broad foot must visually touch the same horizontal ground line across almost full width. Top is closed, no flaps. Packing tape and eyes remain INSIDE the square body.\nLighting: warm top-left highlight, gentle right edge depth, pleasant saturated golden-orange palette, delicate paper texture visible at mobile resolution, tactile premium toy finish.\nConstraints: isolated ONE object, centered and uncropped with 5 percent transparent margin, genuine transparent background. No floor, no cast shadow, no glow, no backdrop, no other objects, no label text, no watermark, no arms, legs or sticking-out accessories. The top and bottom physical support faces MUST be clearly broad, straight and level. Output suitable as a finished game sprite.\n",
+      "generation_options": "Built-in default; genuine transparent background requested; no reference-image inputs; no custom model or CLI",
+      "tool_parameters_exposed": [
+        "prompt"
+      ]
+    },
+    {
+      "id": "fridge-rejected-narrow",
+      "selected": false,
+      "original_tool_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-890c4472-3106-4668-bfb8-5dc9eb1074ac.png",
+      "reason": "Rejected: width-to-height ratio about 0.57 remains too slender for the approved broad-foot experiment.",
+      "saved_generated_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/fridge-rejected-narrow.png",
+      "generated_sha256": "f28adbb06f84a38c1e55b8962cb9a25178c53a7255e697f488c460a0fd31f8ad",
+      "prompt_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/prompts/fridge-rejected-narrow.txt",
+      "prompt": "Use case: stylized-concept.\nAsset type: final-quality transparent PNG game sprite, a playful polished mobile physics stacking game.\nSubject: ONE complete adorable upright refrigerator, with an upper freezer door and a larger lower door, pale icy-blue and ivory enamel, two small lively googly eyes on the upper door, two restrained blue vertical handles inset within the front silhouette, one small yellow star magnet on the lower door. It is a fun toy-like household object, no arms/legs.\nStyle: premium casual mobile-game painted 3D sprite, rounded tiny edge bevels with clear glossy highlights, lovely chunky product shapes, clean illustrative blue shadows, controlled shiny enamel and plastic textures, entertainment character feeling. NOT photographic realism, NOT dirty or aged, NOT flat vector.\nExact silhouette and physics readability: straight-on orthographic frontal view, width-to-height ratio approximately 0.75, nearly rectangular upright body. Broad perfectly HORIZONTAL TOP from 8% to 92% of the width. Broad perfectly HORIZONTAL BOTTOM from 8% to 92% of the width. Tiny corner bevels only. Continuous full-width integrated plinth base; absolutely NO thin feet, no wheels, no recessed bottom hole, no isometric diamond base. Very shallow bevel depth only, no visible receding side plane. Top and bottom are physically broad level shelves.\nComposition: one isolated sprite, centered complete uncropped with 5% clear transparent margin. Soft top-left bright lighting, pale ivory front and light blue edge tint, dimensional toy texture visible at game scale.\nBackground: genuinely transparent alpha, no ground shadow, no floor, no backdrop, no glow. No extraneous object, no text, no logo, no watermark. All handles, eyes and magnet remain inside outer body outline.\n",
+      "generation_options": "Built-in default; genuine transparent background requested; no reference-image inputs; no custom model or CLI",
+      "tool_parameters_exposed": [
+        "prompt"
+      ]
+    },
+    {
+      "id": "fridge",
+      "selected": true,
+      "original_tool_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-a98347e0-07b7-4db6-832c-e8357b99ca2c.png",
+      "reason": "Wider toy fridge, visible full-width plinth and top; uniformly scaled to 110 world units wide.",
+      "saved_generated_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/fridge.png",
+      "generated_sha256": "c92791ced31ebd19c225c62b1cf2b915e4eba0081144877cdb21ec81eec6dc81",
+      "prompt_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/prompts/fridge.txt",
+      "prompt": "Use case: stylized-concept.\nFinal production sprite on transparent alpha: ONE WIDE, SQUAT, STOCKY little refrigerator character for a fun stacking mobile game. The complete body must measure exactly THREE units WIDE for FOUR units TALL (3:4 WIDTH:HEIGHT). Please make it visibly wider and shorter than a normal slim refrigerator, like a chubby toy mini-fridge, not a tall narrow fridge.\nStraight-on orthographic frontal view, rectangular complete body 75% as wide as it is high, no perspective. Upper small freezer door occupying one-third of height, lower fridge door occupying two-thirds of height. Warm white glossy enamel front and icy light-blue glossy casing with tiny rounded bevels, two large friendly googly eyes embedded on upper door, two small blue handles inside the body silhouette at left, one yellow star magnet on lower door. A simple integrated continuous blue plinth directly underneath.\nPremium illustrative 3D casual-game asset with colorful toy-like tactile shading, clear restrained highlights, charming expressive personality, clean smoothly painted surface, not photorealistic, not flat clipart.\nCritical physical silhouette: wide straight horizontal top edge spans at least 85% of BODY WIDTH; wide straight horizontal bottom edge spans at least 90% of BODY WIDTH. Both are absolutely level. Body sides vertical; corner rounding no more than 4% body width. No feet, no wheels, no bottom indentation, no limbs or external decorative protrusions. All handles and eyes inside silhouette. The bottom is a broad visible flat shelf-like support, the top is a broad flat shelf.\nOne centered isolated complete object with 6% transparent border. Genuine transparent background. No floor, no cast shadow, no glow, no surrounding objects, no writing, no watermark. Remember silhouette width 3 and height 4: this is a BROAD CHUBBY refrigerator.\n",
+      "generation_options": "Built-in default; genuine transparent background requested; no reference-image inputs; no custom model or CLI",
+      "tool_parameters_exposed": [
+        "prompt"
+      ]
+    },
+    {
+      "id": "wood_plank-rejected-thin",
+      "selected": false,
+      "original_tool_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-c8405eaa-ecc4-4271-a9b8-7b198d48981f.png",
+      "reason": "Rejected: aspect ratio about 15.8 would yield an excessively thin plank at 260 world units width.",
+      "saved_generated_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/wood_plank-rejected-thin.png",
+      "generated_sha256": "abbfe5597f4b532996de272e07493b887abdbd777072df7af275efa4c6eb73cd",
+      "prompt_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/prompts/wood_plank-rejected-thin.txt",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE final-production transparent PNG platform-like WOOD PLANK sprite for a playful premium mobile stacking game.\nSingle very long, straight horizontal solid wooden board. Its VISIBLE OUTER SILHOUETTE must be approximately NINE times WIDER than it is TALL. Broad straight and perfectly level horizontal top and bottom bearing edges extend almost the entire length. Tiny chamfers only at four end corners, no sloping long edges, no warped/bent board.\nStraight-on orthographic front view with only extremely shallow top bevel, NO isometric perspective. Warm golden honey-yellow wood front with broad decorative wood grain, gentle clean tactile texture, small darker end-grain facets at both ends, bright polished rounded edge highlights. Two small short patches of thin blue rubber anti-slip tape cross the front near one-quarter and three-quarters of length; tape stays flush inside silhouette, no protrusions. A useful 'steadying board' with cheerful polished casual-game feel, dimensional painted toy finish, not photographic lumber, not flat vector.\nComposition: landscape transparent canvas, horizontal board centered, complete unobstructed object, 5% clear margin at both tips; board silhouette aspect ratio about 9:1. Thin plank but visibly solid and thick enough to feel sturdy, broad flat foot and top. No eyes needed, no screws sticking out, no text, no companion objects.\nLighting soft from top-left, restrained highlights and amber shading, high-quality crisp finished sprite with genuine transparent alpha background. NO floor shadow, NO glow, NO floor, NO background, NO watermark. The length-to-thickness ratio is essential: nine-to-one.\n",
+      "generation_options": "Built-in default; genuine transparent background requested; no reference-image inputs; no custom model or CLI",
+      "tool_parameters_exposed": [
+        "prompt"
+      ]
+    },
+    {
+      "id": "wood_plank",
+      "selected": true,
+      "original_tool_path": "/Users/admin/.codex/generated_images/01a09a46-f889-7fa1-a3f0-03f63ff9df3b/exec-61c836f6-bd7e-43f9-96f6-9e642a0a8430.png",
+      "reason": "260-wide long level beam, about 28.7 units thick; blue flush anti-slip bands are visible.",
+      "saved_generated_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/wood_plank.png",
+      "generated_sha256": "36a7f314eb5138d2ee7292b99a22986f1c6884e16b5c97cfa27e3938da22fb10",
+      "prompt_file": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/prompts/wood_plank.txt",
+      "prompt": "Use case: stylized-concept. Create ONE final quality transparent PNG game sprite.\nA substantial thick horizontal honey-golden wooden beam, long and sturdy, rendered as a polished colorful casual mobile-game object with lightly rounded/chamfered corners and pleasant wood texture. Broad gold front face. Small blue flush rubber anti-slip wraps near the quarter and three-quarter length, subtle tactile diamond texture. No eyes. Warm bright upper highlight and amber lower bevel, beautiful premium toy-like material rendering, NOT real-world photography, NOT vector.\nCRITICAL GEOMETRY: beam outer silhouette length EIGHT units, total thickness ONE unit. The beam is exactly 8:1 in body width:height. Do NOT make a skinny strip. Give the wood a visibly thick 1-unit-high front face. Perfectly flat HORIZONTAL top edge and perfectly flat HORIZONTAL bottom edge, both extend over 94% of the full beam length. Vertical end faces with tiny chamfers at corners. Straight-on orthographic side-on view, almost no perspective, no slanted receding top, no curved support surfaces. Entire solid beam single convex body.\nPlace the isolated wood beam across the middle of a square canvas with transparent empty space above and below. The complete beam spans 90% of square image width, and total beam thickness spans 11% of square image height. Keep these proportions. Square image; long wooden beam centered.\nGenuine transparent alpha background, no floor, no cast shadow, no glow, no other objects, no writing, no watermark, no brackets or supports. All rubber strips stay within the straight wood silhouette. Finished crisp game art, not a mockup.\n",
+      "generation_options": "Built-in default; genuine transparent background requested; no reference-image inputs; no custom model or CLI",
+      "tool_parameters_exposed": [
+        "prompt"
+      ]
+    }
+  ],
+  "frozen_files": {
+    "GEOMETRY.json": "bb4dff9a095b27d82da907240b58a5197e71e069349cd1b8a4ecd5159cea9ae0",
+    "GEOMETRY_CHECK.json": "6e6f9a8ff70e3ae0b7027c132561f1de3c57243d9d6b236252c0e6ad26a98243",
+    "PROCESSING_AUDIT.json": "15fdfacbfe3a3e249a746db7e0ddf9a6b7766ede74faeffe0d67312570637656",
+    "assets/next_cardboard_box.png": "c1f3677a1df12513406815fd5bf90f0c07c0d2f1ebe08a851c9de88ef8b5a8b0",
+    "assets/next_fridge.png": "a16022214ccaccf24d169943243d603615a59d19518e4588ab6331da72a0e090",
+    "assets/next_wood_plank.png": "d78593c2d3af2e4bc4a677199c74e82771df5e4fe34741f26ee197eb3bce274c",
+    "assets/object_cardboard_box.png": "119a169dfd8da4ee5a17c4bc12bd55fb8f0208e534b50cee54fdb794cdc9683b",
+    "assets/object_fridge.png": "66f1c7cc3621e4f66dea8e6c0682891efe5abc2307c80688e300b769bfb29b3a",
+    "assets/object_wood_plank.png": "2a7d93c6a2dce6191129642ceeffe91bcbed0ee071fe1f5a493ecefbc9b96462"
+  }
+}

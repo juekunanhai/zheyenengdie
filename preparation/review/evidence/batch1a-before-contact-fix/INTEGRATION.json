@@ -1,0 +1,424 @@
+{
+  "status": "passed_tested_scope_only",
+  "source": "actual_Creator_Web_build",
+  "checks": [
+    {
+      "name": "ground_start_and_engine_settings",
+      "status": "passed",
+      "evidence": {
+        "scene": "HUD",
+        "engine": "3.8.8",
+        "physics": {
+          "gravity": {
+            "x": 0,
+            "y": -1000
+          },
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 4,
+          "auto": true
+        },
+        "game": {
+          "phase": "planning",
+          "releases": 0,
+          "placed": 0,
+          "peakMetres": 0,
+          "secondsLeft": 4,
+          "tutorial": true,
+          "paused": false,
+          "boundary": {
+            "top": 485.42857142857144,
+            "left": -214.28571428571428,
+            "right": 214.28571428571428,
+            "bottom": -187.42857142857142
+          },
+          "view": {
+            "scale": 1.75,
+            "originY": -339,
+            "cameraY": 0,
+            "width": 750,
+            "height": 1334,
+            "heldTop": 485.42857142857144
+          },
+          "audioClips": 17,
+          "currentId": 1,
+          "bodies": [
+            {
+              "id": 1,
+              "kind": "cardboard_box",
+              "position": {
+                "x": 0,
+                "y": 435.4285583496094,
+                "z": 0
+              },
+              "angle": 0,
+              "size": [
+                100,
+                100
+              ],
+              "physicsAxis": {
+                "x": 1,
+                "y": 0
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "mass": 0,
+              "awake": true,
+              "contacts": 0,
+              "placed": false,
+              "type": 1,
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "bounds": {
+                "left": -50,
+                "right": 50,
+                "bottom": 385.4285583496094,
+                "top": 485.4285583496094
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "first_object_tutorial_exemption",
+      "status": "passed",
+      "evidence": 4
+    },
+    {
+      "name": "rotate_button_consumes_touch",
+      "status": "passed",
+      "evidence": {
+        "rotations": 4,
+        "releases": 0
+      }
+    },
+    {
+      "name": "cancelled_drag_keeps_object",
+      "status": "passed",
+      "evidence": 22.85714340209961
+    },
+    {
+      "name": "tap_releases_once_and_box_lands",
+      "status": "passed",
+      "evidence": {
+        "id": 1,
+        "kind": "cardboard_box",
+        "position": {
+          "x": 0.0000012373424169709324,
+          "y": 50.60129928588867,
+          "z": 0
+        },
+        "angle": 0.005189132418383048,
+        "size": [
+          100,
+          100
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.00009056744602276012
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 4.8828125,
+        "awake": false,
+        "contacts": 1,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -50.00452692989098,
+          "right": 50.00452940457581,
+          "bottom": 0.5967711186552762,
+          "top": 100.60582745312206
+        }
+      }
+    },
+    {
+      "name": "second_exemption_and_rotated_clearance",
+      "status": "passed",
+      "evidence": {
+        "top": 485.4285583496094,
+        "lowest": 290.42855773765
+      }
+    },
+    {
+      "name": "manual_pause_survives_background_return",
+      "status": "passed",
+      "evidence": true
+    },
+    {
+      "name": "third_countdown_pause_rotation_and_auto_release",
+      "status": "passed",
+      "evidence": {
+        "before": 3.1997999999970195,
+        "paused": 3.1827999999970196
+      }
+    },
+    {
+      "name": "fridge_mass_and_stable_landing",
+      "status": "passed",
+      "evidence": {
+        "id": 3,
+        "kind": "fridge",
+        "position": {
+          "x": -0.0014196987031027675,
+          "y": 201.56329345703125,
+          "z": 0
+        },
+        "angle": -0.009840710939798243,
+        "size": [
+          82,
+          145
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": -0.00017175280663650483
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 13.933594703674316,
+        "awake": false,
+        "contacts": 1,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -41.01387117239298,
+          "right": 41.011031774986776,
+          "bottom": 129.05625266133347,
+          "top": 274.070334252729
+        }
+      }
+    },
+    {
+      "name": "basketball_collision_and_settling",
+      "status": "passed",
+      "evidence": {
+        "id": 4,
+        "kind": "basketball",
+        "position": {
+          "x": 0.0943516194820404,
+          "y": 308.2988586425781,
+          "z": 0
+        },
+        "angle": -0.15871844182887537,
+        "size": [
+          68,
+          68
+        ],
+        "physicsAxis": {
+          "x": 0.9999961853027344,
+          "y": -0.0027701559010893106
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 1.4186254739761353,
+        "awake": false,
+        "contacts": 1,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 0.9999999999999999,
+          "y": 0.9999999999999999,
+          "z": 1
+        },
+        "bounds": {
+          "left": -33.90564838051796,
+          "right": 34.09435161948204,
+          "bottom": 274.2988586425781,
+          "top": 342.2988586425781
+        }
+      }
+    },
+    {
+      "name": "end_retry_resets_world_keeps_tutorial_completion",
+      "status": "passed",
+      "evidence": {
+        "phase": "planning",
+        "releases": 0,
+        "placed": 0,
+        "peakMetres": 0,
+        "secondsLeft": 4,
+        "tutorial": false,
+        "paused": false,
+        "boundary": {
+          "top": 485.42857142857144,
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "view": {
+          "scale": 1.75,
+          "originY": -339,
+          "cameraY": 0,
+          "width": 750,
+          "height": 1334,
+          "heldTop": 485.42857142857144
+        },
+        "audioClips": 17,
+        "currentId": 1,
+        "bodies": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "position": {
+              "x": 0,
+              "y": 435.4285583496094,
+              "z": 0
+            },
+            "angle": 0,
+            "size": [
+              100,
+              100
+            ],
+            "physicsAxis": {
+              "x": 1,
+              "y": 0
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0,
+            "mass": 0,
+            "awake": true,
+            "contacts": 0,
+            "placed": false,
+            "type": 1,
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "bounds": {
+              "left": -50,
+              "right": 50,
+              "bottom": 385.4285583496094,
+              "top": 485.4285583496094
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "live_resize_preserves_tower_and_refreshes_held_boundary",
+      "status": "passed",
+      "evidence": {
+        "before": {
+          "top": 485.42857142857144,
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "after": {
+          "top": 651.1428571428571,
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        }
+      }
+    },
+    {
+      "name": "resize-375-812",
+      "status": "passed",
+      "evidence": {
+        "view": {
+          "scale": 1.75,
+          "originY": -484,
+          "cameraY": 0,
+          "width": 750,
+          "height": 1624,
+          "heldTop": 651.1428571428571
+        },
+        "body": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "name": "resize-600-800",
+      "status": "passed",
+      "evidence": {
+        "view": {
+          "scale": 1.2157221206581355,
+          "originY": -212.2998171846435,
+          "cameraY": 0,
+          "width": 750,
+          "height": 1000,
+          "heldTop": 496.47819548872167
+        },
+        "body": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "name": "resize-375-667",
+      "status": "passed",
+      "evidence": {
+        "view": {
+          "scale": 1.75,
+          "originY": -339,
+          "cameraY": 0,
+          "width": 750,
+          "height": 1334,
+          "heldTop": 485.42857142857144
+        },
+        "body": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "name": "stall_does_not_leave_countdown_catchup",
+      "status": "passed",
+      "evidence": 0.3000000000000007
+    }
+  ],
+  "errors": [],
+  "browserWarnings": [
+    "Ignored attempt to cancel a touchcancel event with cancelable=false, for example because scrolling is in progress and cannot be interrupted."
+  ],
+  "captures": [
+    "preparation/review/evidence/batch1a/01-ground-planning.png",
+    "preparation/review/evidence/batch1a/02-plank-rotated.png",
+    "preparation/review/evidence/batch1a/03-two-landings.png",
+    "preparation/review/evidence/batch1a/04-fridge-landed-ball-held.png",
+    "preparation/review/evidence/batch1a/05-result.png",
+    "preparation/review/evidence/batch1a/06-size-375-812.png",
+    "preparation/review/evidence/batch1a/06-size-600-800.png",
+    "preparation/review/evidence/batch1a/06-size-375-667.png"
+  ],
+  "not_proven": [
+    "Subjective audio or real audio playback",
+    "WeChat device behavior",
+    "Incident and star rules",
+    "Long-session performance"
+  ]
+}

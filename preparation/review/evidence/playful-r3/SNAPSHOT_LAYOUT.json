@@ -1,0 +1,125 @@
+{
+  "reason": "Keep source snapshots as text evidence so project TypeScript scanning does not compile archived partial modules. Original contents and BEFORE.json logical file hashes unchanged.",
+  "entries": [
+    {
+      "logical_path": "before/assets/batch0/presentation/HeightBackdrop.ts",
+      "snapshot_file": "before/assets/batch0/presentation/HeightBackdrop.ts.txt",
+      "sha256": "c05bb4cc719b1d9d7b91c755c11fdb463db3c73a016a64aea807a3c887c81fb0"
+    },
+    {
+      "logical_path": "before/assets/batch0/presentation/HomePresentation.ts",
+      "snapshot_file": "before/assets/batch0/presentation/HomePresentation.ts.txt",
+      "sha256": "24a7c75b4588fe12acb44505b5fb2dac7a5b9bdf1a059a8afc93442db7192fcf"
+    },
+    {
+      "logical_path": "before/assets/batch0/presentation/ResultPresentation.ts",
+      "snapshot_file": "before/assets/batch0/presentation/ResultPresentation.ts.txt",
+      "sha256": "a6fe6d11dc13bb2b95a65fd2a073164d765caa791c1bdc6b5264a4c202333500"
+    },
+    {
+      "logical_path": "before/assets/batch1/game-audio.ts",
+      "snapshot_file": "before/assets/batch1/game-audio.ts.txt",
+      "sha256": "a9cd657c8ef022686f42141fce76a8332a1fd2cd0d06886021b0978776a7f614"
+    },
+    {
+      "logical_path": "before/assets/batch1/game-controller.ts",
+      "snapshot_file": "before/assets/batch1/game-controller.ts.txt",
+      "sha256": "d190f1f60d45907b83f1b4ce06d2927503bb33601d14b93788df17af79135ea0"
+    },
+    {
+      "logical_path": "before/assets/batch1/game-music.ts",
+      "snapshot_file": "before/assets/batch1/game-music.ts.txt",
+      "sha256": "96b66964eed60c4ec5cc393c06aad65562b6180b397adc491387d04878564fef"
+    },
+    {
+      "logical_path": "before/assets/batch1/incident-state.ts",
+      "snapshot_file": "before/assets/batch1/incident-state.ts.txt",
+      "sha256": "065113e7c37003725724c5a488124141fb2d4f0e8da61ed3fcb8d092da804074"
+    },
+    {
+      "logical_path": "before/assets/batch1/local-platform.ts",
+      "snapshot_file": "before/assets/batch1/local-platform.ts.txt",
+      "sha256": "9f3eb25e3b6210d83a7c023a13bba6e2a6423aa30603b47ba364c2274d0febb2"
+    },
+    {
+      "logical_path": "before/assets/batch1/object-data.ts",
+      "snapshot_file": "before/assets/batch1/object-data.ts.txt",
+      "sha256": "8fbc407f088b1b0a94740656b89487be8597db655efa6b011264f661df6b792a"
+    },
+    {
+      "logical_path": "before/assets/batch1/play-view.ts",
+      "snapshot_file": "before/assets/batch1/play-view.ts.txt",
+      "sha256": "14ae3cc21f74a4578a8beb93a55ebe0df811ef8be56258dbe57456eeda3b0fe8"
+    },
+    {
+      "logical_path": "before/assets/batch1/scene-actions.ts",
+      "snapshot_file": "before/assets/batch1/scene-actions.ts.txt",
+      "sha256": "aa0edaf621696779d9348b8c5c43cac46c137869d3a7289502883aa26675fbac"
+    },
+    {
+      "logical_path": "before/assets/batch1/tower-world.ts",
+      "snapshot_file": "before/assets/batch1/tower-world.ts.txt",
+      "sha256": "6ea053c52b54882596803293b6f83f47760573d1f60d9903b5c4b2d029acf51e"
+    },
+    {
+      "logical_path": "runtime-r1/assets/batch1/game-audio.ts",
+      "snapshot_file": "runtime-r1/assets/batch1/game-audio.ts.txt",
+      "sha256": "0d7e309cb36a6b687c98c5479cac69788e26f2c5a5c9ed7c0f73a08287aa90b0"
+    },
+    {
+      "logical_path": "runtime-r1/assets/batch1/game-controller.ts",
+      "snapshot_file": "runtime-r1/assets/batch1/game-controller.ts.txt",
+      "sha256": "d4a46ffbbacaa89d39546f8bf7baf257ca6ad757674ae73e5d469c689c5a1667"
+    },
+    {
+      "logical_path": "runtime-r1/assets/batch1/game-music.ts",
+      "snapshot_file": "runtime-r1/assets/batch1/game-music.ts.txt",
+      "sha256": "8d1e448b9df3e64ff56bc5ce1beebb6c71a9c727078978c8a36beed6b3fc84d6"
+    },
+    {
+      "logical_path": "runtime-r1/assets/batch1/scene-actions.ts",
+      "snapshot_file": "runtime-r1/assets/batch1/scene-actions.ts.txt",
+      "sha256": "8b12e3098eba09307a0ae51f0159915b25f5f36e8ad3ccff5ecf22efb023470e"
+    },
+    {
+      "logical_path": "runtime-r2/assets/batch1/game-audio.ts",
+      "snapshot_file": "runtime-r2/assets/batch1/game-audio.ts.txt",
+      "sha256": "71908078f925580f25eb4190dcb05a06b88677cbecf36f19def5d1e9783f8c4e"
+    },
+    {
+      "logical_path": "runtime-r2/assets/batch1/game-controller.ts",
+      "snapshot_file": "runtime-r2/assets/batch1/game-controller.ts.txt",
+      "sha256": "d4a46ffbbacaa89d39546f8bf7baf257ca6ad757674ae73e5d469c689c5a1667"
+    },
+    {
+      "logical_path": "runtime-r2/assets/batch1/game-music.ts",
+      "snapshot_file": "runtime-r2/assets/batch1/game-music.ts.txt",
+      "sha256": "8d1e448b9df3e64ff56bc5ce1beebb6c71a9c727078978c8a36beed6b3fc84d6"
+    },
+    {
+      "logical_path": "runtime-r2/assets/batch1/scene-actions.ts",
+      "snapshot_file": "runtime-r2/assets/batch1/scene-actions.ts.txt",
+      "sha256": "8b12e3098eba09307a0ae51f0159915b25f5f36e8ad3ccff5ecf22efb023470e"
+    },
+    {
+      "logical_path": "runtime-r3/assets/batch1/game-audio.ts",
+      "snapshot_file": "runtime-r3/assets/batch1/game-audio.ts.txt",
+      "sha256": "71908078f925580f25eb4190dcb05a06b88677cbecf36f19def5d1e9783f8c4e"
+    },
+    {
+      "logical_path": "runtime-r3/assets/batch1/game-controller.ts",
+      "snapshot_file": "runtime-r3/assets/batch1/game-controller.ts.txt",
+      "sha256": "d4a46ffbbacaa89d39546f8bf7baf257ca6ad757674ae73e5d469c689c5a1667"
+    },
+    {
+      "logical_path": "runtime-r3/assets/batch1/game-music.ts",
+      "snapshot_file": "runtime-r3/assets/batch1/game-music.ts.txt",
+      "sha256": "8d1e448b9df3e64ff56bc5ce1beebb6c71a9c727078978c8a36beed6b3fc84d6"
+    },
+    {
+      "logical_path": "runtime-r3/assets/batch1/scene-actions.ts",
+      "snapshot_file": "runtime-r3/assets/batch1/scene-actions.ts.txt",
+      "sha256": "01e982e65834f32cd86b3eaf85195bcae26c2ba328c737db68105923a5f1389e"
+    }
+  ]
+}

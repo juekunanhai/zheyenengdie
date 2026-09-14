@@ -1,0 +1,158 @@
+{
+  "version": "difficulty-r1-fridge-r2",
+  "coordinate_system": "x-right y-up; collider bounds center at local origin; world units",
+  "assets": [
+    {
+      "slug": "fridge",
+      "kind": "fridge",
+      "name": "冰箱 R2 单凸形",
+      "status": "self_checked_candidate_pending_runtime_balance",
+      "width": 110.0,
+      "height": 122.873563,
+      "spriteWidth": 111.954023,
+      "spriteHeight": 124.827586,
+      "spriteOffset": [
+        0.057471,
+        -0.057471
+      ],
+      "outline": [
+        [
+          -54.885057,
+          48.333333
+        ],
+        [
+          -55.0,
+          -47.758621
+        ],
+        [
+          -42.241379,
+          -61.436782
+        ],
+        [
+          42.126437,
+          -61.436782
+        ],
+        [
+          55.0,
+          -48.448276
+        ],
+        [
+          54.885057,
+          48.563218
+        ],
+        [
+          42.011494,
+          61.436782
+        ],
+        [
+          -42.241379,
+          61.436782
+        ]
+      ],
+      "outline_winding": "counter_clockwise",
+      "outline_area_world_squared": 13165.444595,
+      "source_outline_px": [
+        [
+          119,
+          8
+        ],
+        [
+          852,
+          8
+        ],
+        [
+          964,
+          120
+        ],
+        [
+          965,
+          964
+        ],
+        [
+          853,
+          1077
+        ],
+        [
+          119,
+          1077
+        ],
+        [
+          8,
+          958
+        ],
+        [
+          9,
+          122
+        ]
+      ],
+      "raw_source_outline_px": [
+        [
+          260,
+          90
+        ],
+        [
+          993,
+          90
+        ],
+        [
+          1105,
+          202
+        ],
+        [
+          1106,
+          1046
+        ],
+        [
+          994,
+          1159
+        ],
+        [
+          260,
+          1159
+        ],
+        [
+          149,
+          1040
+        ],
+        [
+          150,
+          204
+        ]
+      ],
+      "pixel_to_world": 0.11494252873563218,
+      "sprite_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/assets/object_fridge.png",
+      "next_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/fridge-r2/assets/next_fridge.png",
+      "measurements": {
+        "top": {
+          "pixel_segment": [
+            [
+              119,
+              8
+            ],
+            [
+              852,
+              8
+            ]
+          ],
+          "width_world": 84.252874,
+          "y_world": 61.436782
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              119,
+              1077
+            ],
+            [
+              853,
+              1077
+            ]
+          ],
+          "width_world": 84.367816,
+          "y_world": -61.436782
+        }
+      },
+      "size_selection": "Uniform source-pixel scale; selected width 110 world units; no horizontal stretching."
+    }
+  ]
+}

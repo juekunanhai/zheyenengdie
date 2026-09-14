@@ -1,0 +1,169 @@
+{
+  "schema": "home-music-r4-engine",
+  "createdAt": "2026-09-14T11:45:20.774Z",
+  "results": [
+    {
+      "name": "navigation",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:45:47.790Z",
+      "evidence": {
+        "mode": "actual bound start-button handler; interaction marker set explicitly",
+        "normal": {
+          "old": {
+            "valid": false,
+            "clip": null,
+            "playing": false,
+            "time": null,
+            "volume": null
+          },
+          "music": {
+            "region": "bgm_city",
+            "fading": false,
+            "fade": 1,
+            "gain": 0.28,
+            "paused": false,
+            "enabled": true,
+            "issues": [],
+            "sources": [
+              {
+                "clip": "bgm_city",
+                "playing": true,
+                "time": 1.19910000000149,
+                "volume": 0.28
+              },
+              {
+                "clip": null,
+                "playing": false,
+                "time": 0,
+                "volume": 0
+              }
+            ]
+          }
+        },
+        "immediate": {
+          "valid": true,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        },
+        "cancelled": {
+          "valid": false,
+          "clip": null,
+          "playing": false,
+          "time": null,
+          "volume": null
+        },
+        "events": [
+          {
+            "id": 1,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 27073.10000000149,
+            "clip": "bgm_home"
+          },
+          {
+            "id": 2,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 28119.89999999851,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 4,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 28258.30000000447,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 5,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 28338.39999999851,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 5,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 28539,
+            "clip": "claw_grip"
+          },
+          {
+            "id": 13,
+            "tag": "B",
+            "type": "STARTED",
+            "at": 29372.70000000298,
+            "clip": "bgm_city"
+          },
+          {
+            "id": 15,
+            "tag": "sfx",
+            "type": "ENDED",
+            "at": 29522.20000000298,
+            "clip": "next_handoff"
+          },
+          {
+            "id": 16,
+            "tag": "sfx",
+            "type": "STARTED",
+            "at": 29588.10000000149,
+            "clip": "claw_grip"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:45:50.486Z"
+    },
+    {
+      "name": "visibility",
+      "status": "passed",
+      "startedAt": "2026-09-14T11:46:10.045Z",
+      "evidence": {
+        "mode": "simulated Game hide/show including immediate pending-play cancellation",
+        "hidden": {
+          "suspended": true,
+          "music": {
+            "valid": true,
+            "playing": false,
+            "time": 0,
+            "volume": 0
+          }
+        },
+        "returned": {
+          "valid": true,
+          "clip": "bgm_home",
+          "playing": true,
+          "time": 0.016800000004472793,
+          "volume": 0.005914999999478459
+        },
+        "rapidReturned": {
+          "valid": true,
+          "clip": "bgm_home",
+          "playing": true,
+          "time": 0.42290000000595995,
+          "volume": 0.15151499999947843
+        },
+        "events": [
+          {
+            "id": 11,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 49327.39999999851,
+            "clip": "bgm_home"
+          },
+          {
+            "id": 14,
+            "tag": "A",
+            "type": "STARTED",
+            "at": 50144.89999999851,
+            "clip": "bgm_home"
+          }
+        ]
+      },
+      "completedAt": "2026-09-14T11:46:11.302Z"
+    }
+  ],
+  "errors": [],
+  "ready": true,
+  "busy": false
+}

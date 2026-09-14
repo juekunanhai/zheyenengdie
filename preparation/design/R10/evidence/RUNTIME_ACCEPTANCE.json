@@ -1,0 +1,66 @@
+{
+  "status": "passed_scoped_web_acceptance",
+  "revision": "R10.1",
+  "recorded_at_local": "2026-09-13T15:29:53",
+  "engine": "3.8.8",
+  "route": "preparation/review/home-r10.html",
+  "build_report": "evidence/BUILD_REPORT.json",
+  "viewports": [
+    {
+      "width": 375,
+      "height": 667,
+      "visual": "passed_against_approved_same_size",
+      "screenshot": "evidence/engine-final-compare-667.png"
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "visual": "passed_against_approved_same_size",
+      "screenshot": "evidence/engine-final-compare-812.png"
+    },
+    {
+      "width": 600,
+      "height": 800,
+      "visual": "passed_visibility_and_no_clipping",
+      "screenshot": "evidence/engine-final-600x800.png",
+      "source_limit": "No dedicated wide design exists."
+    }
+  ],
+  "navigation": {
+    "Home_to_Settings": "passed",
+    "Settings_to_Home_actual_return_button": "passed",
+    "Home_to_HUD_actual_start_button": "passed",
+    "evidence": "evidence/ENGINE_NAVIGATION.json"
+  },
+  "motion": {
+    "only_three_cloud_nodes_moved": true,
+    "evidence": "evidence/ENGINE_MOTION.json"
+  },
+  "independent_visual_review": "passed_final_three_viewports",
+  "typecheck_exit": 0,
+  "integrity": "preparation/review/INTEGRITY_REPORT.json",
+  "runtime_scripts_changed": [
+    "assets/batch0/presentation/HomePresentation.ts"
+  ],
+  "runtime_scenes_changed": [
+    "assets/batch0/scenes/Home.scene"
+  ],
+  "protected_files_unchanged": 20,
+  "known_differences": [
+    "P3 sky toy CSS blur not applied to native Sprite",
+    "cloud cosine easing is not frame-identical to CSS ease-in-out",
+    "screenshot sampling/font antialiasing differ"
+  ],
+  "browser_errors": {
+    "source": "evidence/BROWSER_LOGS.json",
+    "description": "MutationObserver.observe TypeError without URL or stack; no matching call found in current local loaded files. Origin unconfirmed; specified visuals/navigation passed.",
+    "zero_console_errors_claimed": false
+  },
+  "not_proven": [
+    "WeChat build",
+    "physical device safe area",
+    "background/resume",
+    "long session performance",
+    "new gameplay or Batch1B completion"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Batch 0 visual validation; HeightBackdrop is presentation only; no gameplay",
+  "scenes": [
+    {
+      "name": "Home",
+      "url": "db://assets/batch0/scenes/Home.scene",
+      "uuid": "b35d6350-0c9c-52a9-8eab-897e6f0d1d60"
+    },
+    {
+      "name": "HUD",
+      "url": "db://assets/batch0/scenes/HUD.scene",
+      "uuid": "b7c75a45-76af-5b9b-a0f3-109ff6d309fb"
+    },
+    {
+      "name": "Settings",
+      "url": "db://assets/batch0/scenes/Settings.scene",
+      "uuid": "cd6075d6-236e-557a-bcba-708910fef2d6"
+    },
+    {
+      "name": "Result",
+      "url": "db://assets/batch0/scenes/Result.scene",
+      "uuid": "e63cce04-c9a9-55d0-aa28-be661b15ef79"
+    }
+  ]
+}

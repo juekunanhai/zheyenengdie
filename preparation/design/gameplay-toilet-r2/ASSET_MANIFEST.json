@@ -1,0 +1,42 @@
+{
+  "processing": "alpha threshold 160, 7px median, seed flood-fill component, 0.7px alpha feather, uniform Lanczos resize to max 768, 8px margin; RGB material retained; NEXT constant RGB with same alpha",
+  "assets": [
+    {
+      "slug": "toilet",
+      "source": "assets/object_toilet.generated.png",
+      "source_sha256": "7130443977873289b76b83ccfe56b58d2b2f89f75fb34f10368df75d29de0bf6",
+      "source_size": [
+        1308,
+        1203
+      ],
+      "crop_source_px": [
+        29,
+        17,
+        1282,
+        1177
+      ],
+      "uniform_raster_scale": 0.6129289704708699,
+      "sprite": "assets/object_toilet.png",
+      "sprite_sha256": "1bbe6bdf3270aab28ae2af9239e3a1fc5ed952f1e0775ebb1a2f20da5a705186",
+      "next": "assets/next_toilet.png",
+      "next_sha256": "0917ac9d1880c0414fe2b07da87cebf37be1020ebd7730637f1f1508e3d32a82",
+      "size_px": [
+        784,
+        727
+      ],
+      "alpha_bounds_px": [
+        8,
+        8,
+        776,
+        719
+      ],
+      "alpha128_bounds_px": [
+        9,
+        9,
+        775,
+        718
+      ],
+      "status": "complete_generated_candidate_self_checked_not_user_approved_or_runtime_verified"
+    }
+  ]
+}

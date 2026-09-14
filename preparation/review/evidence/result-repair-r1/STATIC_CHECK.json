@@ -1,0 +1,67 @@
+{
+  "status": "passed_static_only_pending_engine_visual_and_interaction",
+  "iteration": "r2_after_first_engine_self_review",
+  "records": 117,
+  "reachable_records": 117,
+  "new_sprite_aspect_checks": [
+    {
+      "node": "ResultTitleSticker",
+      "width": 344,
+      "height": 126.89777777777778,
+      "aspect_error": 0.0
+    },
+    {
+      "node": "ResultConfetti",
+      "width": 616,
+      "height": 461.82237600922724,
+      "aspect_error": 2.220446049250313e-16
+    },
+    {
+      "node": "CloseVisual",
+      "width": 84,
+      "height": 84,
+      "aspect_error": 0.0
+    },
+    {
+      "node": "result_btn_retry",
+      "width": 460,
+      "height": 197.2888888888889,
+      "aspect_error": 0.0
+    },
+    {
+      "node": "ResultBubble",
+      "width": 160,
+      "height": 135.77981651376146,
+      "aspect_error": 2.220446049250313e-16
+    }
+  ],
+  "height_group_rotation_degrees": 5,
+  "height_font": "Arial bold italic",
+  "close_visual": 84,
+  "close_touch_target": 104,
+  "retry_top": 355.0,
+  "retry_bottom": 552.2888888888889,
+  "typescript": "passed --noEmit --skipLibCheck",
+  "files": [
+    {
+      "path": "assets/batch0/scenes/Result.scene",
+      "sha256": "860fac3cbfade6387e3c53d127eb960f868718c189cf02d8a3a603e0d9be1b4d"
+    },
+    {
+      "path": "assets/batch1/scene-actions.ts",
+      "sha256": "aa0edaf621696779d9348b8c5c43cac46c137869d3a7289502883aa26675fbac"
+    },
+    {
+      "path": "assets/batch0/presentation/ResultPresentation.ts",
+      "sha256": "5b8fa65825085e627a44a3cfd0cc78590d8b62d8903a217d44395837d83a403b"
+    },
+    {
+      "path": "assets/batch0/presentation/ResultPresentation.ts.meta",
+      "sha256": "7d45bea2637ea83afd5f5588dec1d0434f1e7296ff750bfe34aec07a9ed1d743"
+    },
+    {
+      "path": "preparation/tools/repair_result_scene.py",
+      "sha256": "f873ef1e3cf41710ea84a3bea412a6f57f08e7fc2aad002e13401b12b43e0e77"
+    }
+  ]
+}

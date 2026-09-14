@@ -1,0 +1,418 @@
+{
+  "version": "gameplay-toilet-r2-first-art",
+  "coordinate_system": "x-right y-up, collider bounds center at local origin; world units",
+  "assets": [
+    {
+      "slug": "toilet",
+      "name": "马桶",
+      "candidate_status": "self_checked_contour_pending_runtime_physics",
+      "formal_source_size_world": [
+        85,
+        115
+      ],
+      "size_selection": "115 world units for simplified bearing-outline height; whole raster is mapped uniformly, never anisotropically stretched. Original formal scale untouched.",
+      "width": 124.787234,
+      "height": 115,
+      "spriteWidth": 127.886525,
+      "spriteHeight": 118.588652,
+      "spriteOffset": [
+        0.08156,
+        0.163121
+      ],
+      "sprite_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/gameplay-toilet-r2/assets/object_toilet.png",
+      "next_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/gameplay-toilet-r2/assets/next_toilet.png",
+      "outline": [
+        [
+          -61.414894,
+          56.195035
+        ],
+        [
+          -62.393617,
+          52.932624
+        ],
+        [
+          -62.067376,
+          48.365248
+        ],
+        [
+          -60.27305,
+          46.734043
+        ],
+        [
+          -59.457447,
+          -1.712766
+        ],
+        [
+          -57.5,
+          -7.421986
+        ],
+        [
+          -52.769504,
+          -10.847518
+        ],
+        [
+          -49.01773,
+          -16.393617
+        ],
+        [
+          -46.734043,
+          -26.996454
+        ],
+        [
+          -48.202128,
+          -36.131206
+        ],
+        [
+          -50.975177,
+          -41.351064
+        ],
+        [
+          -55.542553,
+          -46.244681
+        ],
+        [
+          -56.847518,
+          -49.180851
+        ],
+        [
+          -57.010638,
+          -54.72695
+        ],
+        [
+          -55.053191,
+          -57.5
+        ],
+        [
+          46.897163,
+          -57.5
+        ],
+        [
+          51.464539,
+          -54.890071
+        ],
+        [
+          50.812057,
+          -49.01773
+        ],
+        [
+          49.01773,
+          -45.91844
+        ],
+        [
+          42.98227,
+          -42.329787
+        ],
+        [
+          37.599291,
+          -38.251773
+        ],
+        [
+          34.5,
+          -33.684397
+        ],
+        [
+          34.173759,
+          -30.748227
+        ],
+        [
+          34.989362,
+          -28.62766
+        ],
+        [
+          41.677305,
+          -25.365248
+        ],
+        [
+          48.528369,
+          -21.287234
+        ],
+        [
+          54.72695,
+          -15.414894
+        ],
+        [
+          59.457447,
+          -7.748227
+        ],
+        [
+          61.414894,
+          0.407801
+        ],
+        [
+          62.393617,
+          7.421986
+        ],
+        [
+          61.251773,
+          10.847518
+        ],
+        [
+          57.5,
+          13.294326
+        ],
+        [
+          48.691489,
+          14.43617
+        ],
+        [
+          -13.294326,
+          14.43617
+        ],
+        [
+          -17.861702,
+          12.968085
+        ],
+        [
+          -17.698582,
+          47.712766
+        ],
+        [
+          -15.904255,
+          50.159574
+        ],
+        [
+          -16.230496,
+          55.053191
+        ],
+        [
+          -19.003546,
+          57.5
+        ],
+        [
+          -58.804965,
+          57.5
+        ]
+      ],
+      "outline_winding": "counter_clockwise",
+      "outline_area_world_squared": 9354.992889,
+      "source_outline_px": [
+        [
+          31,
+          12
+        ],
+        [
+          275,
+          12
+        ],
+        [
+          292,
+          27
+        ],
+        [
+          294,
+          57
+        ],
+        [
+          283,
+          72
+        ],
+        [
+          282,
+          285
+        ],
+        [
+          310,
+          276
+        ],
+        [
+          690,
+          276
+        ],
+        [
+          744,
+          283
+        ],
+        [
+          767,
+          298
+        ],
+        [
+          774,
+          319
+        ],
+        [
+          768,
+          362
+        ],
+        [
+          756,
+          412
+        ],
+        [
+          727,
+          459
+        ],
+        [
+          689,
+          495
+        ],
+        [
+          647,
+          520
+        ],
+        [
+          606,
+          540
+        ],
+        [
+          601,
+          553
+        ],
+        [
+          603,
+          571
+        ],
+        [
+          622,
+          599
+        ],
+        [
+          655,
+          624
+        ],
+        [
+          692,
+          646
+        ],
+        [
+          703,
+          665
+        ],
+        [
+          707,
+          701
+        ],
+        [
+          679,
+          717
+        ],
+        [
+          54,
+          717
+        ],
+        [
+          42,
+          700
+        ],
+        [
+          43,
+          666
+        ],
+        [
+          51,
+          648
+        ],
+        [
+          79,
+          618
+        ],
+        [
+          96,
+          586
+        ],
+        [
+          105,
+          530
+        ],
+        [
+          91,
+          465
+        ],
+        [
+          68,
+          431
+        ],
+        [
+          39,
+          410
+        ],
+        [
+          27,
+          375
+        ],
+        [
+          22,
+          78
+        ],
+        [
+          11,
+          68
+        ],
+        [
+          9,
+          40
+        ],
+        [
+          15,
+          20
+        ]
+      ],
+      "pixel_to_world": 0.16312056737588654,
+      "visual_alpha128_bounds_px": [
+        9,
+        9,
+        775,
+        718
+      ],
+      "physics_contact_material": "ceramic",
+      "measurements": {
+        "high_plateau": {
+          "pixel_segment": [
+            [
+              31,
+              12
+            ],
+            [
+              275,
+              12
+            ]
+          ],
+          "width_world": 39.801418,
+          "x_world": [
+            -58.804965,
+            -19.003546
+          ],
+          "y_world": 57.5
+        },
+        "low_plateau": {
+          "pixel_segment": [
+            [
+              310,
+              276
+            ],
+            [
+              690,
+              276
+            ]
+          ],
+          "width_world": 61.985816,
+          "x_world": [
+            -13.294326,
+            48.691489
+          ],
+          "y_world": 14.43617
+        },
+        "foot": {
+          "pixel_segment": [
+            [
+              54,
+              717
+            ],
+            [
+              679,
+              717
+            ]
+          ],
+          "width_world": 101.950355,
+          "x_world": [
+            -55.053191,
+            46.897163
+          ],
+          "y_world": -57.5
+        },
+        "step_height_world": 43.06383
+      },
+      "notes": "Integrated broad foot reaches beneath left tank. Both separate support ledges and under-bowl recesses remain real. Near-horizontal alpha-bearing edges simplified within 3 source pixels; no concavity is convex-filled."
+    }
+  ]
+}

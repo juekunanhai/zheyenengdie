@@ -1,0 +1,880 @@
+{
+  "schema": "batch1b-local-engine-checks",
+  "createdAt": "2026-09-13T16:13:20.757Z",
+  "source": "play-player.html / actual locally built Cocos modules",
+  "method": "Directed physical fixtures, not normal gameplay difficulty evidence. No direct Incident.recordLoss calls.",
+  "results": [
+    {
+      "id": "presolve",
+      "name": "同子步越界不传递碰撞冲量",
+      "status": "passed",
+      "startedAt": "2026-09-13T16:13:51.425Z",
+      "evidence": {
+        "isolation": "真实纸箱支撑上方 5 单位缝隙，以 -20m/s 定向下坠；该fixture暂用1/240秒、最多8子步，finally还原；仅上件关闭首次接触缓冲以显露冲量。对照组不启用 safety。原生位置、节点位置、原生bullet及POST_SOLVE冲量均现场采样。",
+        "filtered": {
+          "filtered": true,
+          "boundary": {
+            "left": -375,
+            "right": 375,
+            "bottom": 204.47998162040975,
+            "top": 1204.4799816204097
+          },
+          "before": {
+            "upper": {
+              "left": -50.456389,
+              "right": 50.456389,
+              "bottom": 105.47998046875,
+              "top": 205.47998046875
+            },
+            "lower": {
+              "left": -50.45639015702476,
+              "right": 50.45639034688237,
+              "bottom": 0.47997910125400267,
+              "top": 100.47998161978674
+            },
+            "lowerVelocity": {
+              "x": 6.997834312016948e-9,
+              "y": 6.613523062526383e-10
+            },
+            "bullet": {
+              "lower": {
+                "configured": true,
+                "native": false
+              },
+              "upper": {
+                "configured": true,
+                "native": false
+              }
+            }
+          },
+          "contacts": [
+            {
+              "node": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 105.47998046875,
+                "top": 205.47998046875
+              },
+              "native": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 100.1483154296875,
+                "top": 200.1483154296875
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998162040975,
+                "top": 1204.4799816204097
+              },
+              "disabled": true,
+              "disabledOnce": false,
+              "lost": true
+            },
+            {
+              "node": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 105.47998046875,
+                "top": 205.47998046875
+              },
+              "native": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 97.48330688476562,
+                "top": 197.48330688476562
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998162040975,
+                "top": 1204.4799816204097
+              },
+              "disabled": true,
+              "disabledOnce": false,
+              "lost": true
+            },
+            {
+              "node": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 105.47998046875,
+                "top": 205.47998046875
+              },
+              "native": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 94.81886291503906,
+                "top": 194.81886291503906
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998162040975,
+                "top": 1204.4799816204097
+              },
+              "disabled": true,
+              "disabledOnce": false,
+              "lost": true
+            }
+          ],
+          "impulses": [],
+          "losses": [
+            {
+              "id": 2,
+              "node": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 105.47998046875,
+                "top": 205.47998046875
+              },
+              "native": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 100.1483154296875,
+                "top": 200.1483154296875
+              },
+              "filteredContacts": 0
+            }
+          ],
+          "physics": {
+            "original": {
+              "fixedTimeStep": 0.016666666666666666,
+              "maxSubSteps": 4
+            },
+            "fixture": {
+              "fixedTimeStep": 0.004166666666666667,
+              "maxSubSteps": 8
+            }
+          },
+          "after": {
+            "upper": {
+              "left": -50.456389,
+              "right": 50.456389,
+              "bottom": 70.86381530761719,
+              "top": 170.8638153076172
+            },
+            "lower": {
+              "left": -50.45639015741908,
+              "right": 50.45639035546105,
+              "bottom": 0.47997909635343916,
+              "top": 100.4799816239116
+            },
+            "lowerVelocity": {
+              "x": -1.3546971322497825e-9,
+              "y": 0
+            }
+          },
+          "safety": {
+            "enabled": true,
+            "boundary": {
+              "left": -375,
+              "right": 375,
+              "bottom": 204.47998162040975,
+              "top": 1204.4799816204097
+            },
+            "confirmedTop": 100.47998162040975,
+            "assistanceEnabled": true,
+            "maxAssistDamping": 8,
+            "filteredContacts": 8,
+            "pendingSupportReturns": 0,
+            "detachGraceSeconds": 0.12,
+            "fallSeconds": 0.12,
+            "fallSpeed": -0.75,
+            "collapseTrend": false,
+            "remainingStable": true,
+            "bodies": [
+              {
+                "id": 1,
+                "lost": false,
+                "supported": true,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 2,
+                "lost": true,
+                "supported": false,
+                "detachedSeconds": 0.033399999998509886,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 1.5
+              }
+            ]
+          }
+        },
+        "control": {
+          "filtered": false,
+          "boundary": {
+            "left": -375,
+            "right": 375,
+            "bottom": 204.47998147492143,
+            "top": 1204.4799814749215
+          },
+          "before": {
+            "upper": {
+              "left": -50.456389,
+              "right": 50.456389,
+              "bottom": 105.47998046875,
+              "top": 205.47998046875
+            },
+            "lower": {
+              "left": -50.45638838336578,
+              "right": 50.456391811288306,
+              "bottom": 0.479979270150956,
+              "top": 100.47998147762428
+            },
+            "lowerVelocity": {
+              "x": -1.722530118541954e-9,
+              "y": -7.450580596923828e-9
+            },
+            "bullet": {
+              "lower": {
+                "configured": true,
+                "native": false
+              },
+              "upper": {
+                "configured": true,
+                "native": false
+              }
+            }
+          },
+          "contacts": [
+            {
+              "node": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 105.47998046875,
+                "top": 205.47998046875
+              },
+              "native": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 100.1483154296875,
+                "top": 200.1483154296875
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.456389,
+                "right": 50.456389,
+                "bottom": 105.47998046875,
+                "top": 205.47998046875
+              },
+              "native": {
+                "left": -50.45767651187854,
+                "right": 50.45810504669638,
+                "bottom": 100.53862756320592,
+                "top": 200.54164866681688
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.4577850184745,
+                "right": 50.45823446330745,
+                "bottom": 100.61082428232214,
+                "top": 200.6140846990255
+              },
+              "native": {
+                "left": -50.457785018473814,
+                "right": 50.45823446330664,
+                "bottom": 100.61082428232297,
+                "top": 200.61408469902483
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.4577850184745,
+                "right": 50.45823446330745,
+                "bottom": 100.61082428232214,
+                "top": 200.6140846990255
+              },
+              "native": {
+                "left": -50.45787000520978,
+                "right": 50.45833404471816,
+                "bottom": 100.67642782666402,
+                "top": 200.67987388972017
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.4577850184745,
+                "right": 50.45823446330745,
+                "bottom": 100.61082428232214,
+                "top": 200.6140846990255
+              },
+              "native": {
+                "left": -50.457931633446265,
+                "right": 50.45840539286055,
+                "bottom": 100.73653586604595,
+                "top": 200.74011568230412
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.4577850184745,
+                "right": 50.45823446330745,
+                "bottom": 100.61082428232214,
+                "top": 200.6140846990255
+              },
+              "native": {
+                "left": -50.45797067854917,
+                "right": 50.45845028128869,
+                "bottom": 100.79198624179486,
+                "top": 200.7956504819099
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.45798733561773,
+                "right": 50.45846946725945,
+                "bottom": 100.84338878535486,
+                "top": 200.84708907789874
+              },
+              "native": {
+                "left": -50.457987335616714,
+                "right": 50.458469467258254,
+                "bottom": 100.84338878535607,
+                "top": 200.84708907789775
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.45798733561773,
+                "right": 50.45846946725945,
+                "bottom": 100.84338878535486,
+                "top": 200.84708907789874
+              },
+              "native": {
+                "left": -50.457987153636445,
+                "right": 50.45846938268891,
+                "bottom": 100.89362086452519,
+                "top": 200.89732088896008
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.45798733561773,
+                "right": 50.45846946725945,
+                "bottom": 100.84338878535486,
+                "top": 200.84708907789874
+              },
+              "native": {
+                "left": -50.457986978281355,
+                "right": 50.45846929781072,
+                "bottom": 100.94385294024465,
+                "top": 200.94755270292603
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.45798733561773,
+                "right": 50.45846946725945,
+                "bottom": 100.84338878535486,
+                "top": 200.84708907789874
+              },
+              "native": {
+                "left": -50.45798680224586,
+                "right": 50.45846922024509,
+                "bottom": 100.9940697535529,
+                "top": 200.9977692611517
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            },
+            {
+              "node": {
+                "left": -50.45798733561773,
+                "right": 50.45846946725945,
+                "bottom": 100.84338878535486,
+                "top": 200.84708907789874
+              },
+              "native": {
+                "left": -50.457986632690556,
+                "right": 50.45846914219978,
+                "bottom": 101.04427130479496,
+                "top": 201.04797056334667
+              },
+              "boundary": {
+                "left": -375,
+                "right": 375,
+                "bottom": 204.47998147492143,
+                "top": 1204.4799814749215
+              },
+              "disabled": false,
+              "disabledOnce": false,
+              "lost": false
+            }
+          ],
+          "impulses": [
+            {
+              "normalImpulses": [
+                1389.784423828125,
+                1470.8251953125
+              ],
+              "tangentImpulses": [
+                0.000004060238097736146,
+                -1.0924171723464271e-12
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            },
+            {
+              "normalImpulses": [
+                0,
+                0
+              ],
+              "tangentImpulses": [
+                0,
+                0
+              ]
+            }
+          ],
+          "losses": [],
+          "physics": {
+            "original": {
+              "fixedTimeStep": 0.016666666666666666,
+              "maxSubSteps": 4
+            },
+            "fixture": {
+              "fixedTimeStep": 0.004166666666666667,
+              "maxSubSteps": 8
+            }
+          },
+          "after": {
+            "upper": {
+              "left": -50.457986465890166,
+              "right": 50.45846906740011,
+              "bottom": 101.09445759397076,
+              "top": 201.09815660951102
+            },
+            "lower": {
+              "left": -50.45750953411701,
+              "right": 50.457568887209526,
+              "bottom": 0.44410191129455967,
+              "top": 100.44641577017855
+            },
+            "lowerVelocity": {
+              "x": 1.1418149981068382e-8,
+              "y": 2.035385193721595e-8
+            }
+          },
+          "safety": {
+            "enabled": false,
+            "maxAssistDamping": 8,
+            "filteredContacts": 0,
+            "pendingSupportReturns": 0,
+            "detachGraceSeconds": 0.12,
+            "fallSeconds": 0.12,
+            "fallSpeed": -0.75,
+            "collapseTrend": false,
+            "remainingStable": false,
+            "bodies": [
+              {
+                "id": 1,
+                "lost": false,
+                "supported": false,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              },
+              {
+                "id": 2,
+                "lost": false,
+                "supported": false,
+                "detachedSeconds": 0,
+                "fallingSeconds": 0,
+                "assistDamping": 0,
+                "angularDamping": 6
+              }
+            ]
+          }
+        }
+      },
+      "finishedAt": "2026-09-13T16:13:53.684Z",
+      "engineErrors": []
+    }
+  ],
+  "errors": [],
+  "busy": false,
+  "ready": true,
+  "exportedAt": "2026-09-13T16:14:57.195Z",
+  "finalState": {
+    "scene": "HUD",
+    "engine": "3.8.8",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "fixture": false,
+    "game": {
+      "phase": "planning",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "stars": 3,
+      "incidentCount": 0,
+      "incident": null,
+      "recoverySeconds": 0,
+      "failureReason": null,
+      "normalBoundary": {
+        "top": 574.8571428571429,
+        "bottom": -187.42857142857142,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "safety": {
+        "enabled": false,
+        "maxAssistDamping": 8,
+        "filteredContacts": 0,
+        "pendingSupportReturns": 0,
+        "detachGraceSeconds": 0.12,
+        "fallSeconds": 0.12,
+        "fallSpeed": -0.75,
+        "collapseTrend": false,
+        "remainingStable": false,
+        "bodies": [
+          {
+            "id": 1,
+            "lost": false,
+            "supported": false,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 6
+          },
+          {
+            "id": 2,
+            "lost": false,
+            "supported": false,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 1.5
+          }
+        ]
+      },
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "basketball"
+      ],
+      "untimedCalibration": true,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 100.47987280368193,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144,
+        "zoom": 1,
+        "zoomTarget": 1,
+        "incidentCamera": false
+      },
+      "audioClips": 17,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": -0.000050514936447143555,
+            "y": 50.47986602783203,
+            "z": 0
+          },
+          "angle": 0.000009727889642989106,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 1.6978370354081562e-7
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 4.389647960662842,
+          "awake": false,
+          "contacts": 1,
+          "contactSeconds": 0,
+          "lost": false,
+          "supported": false,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": true,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456446282176614,
+            "right": 50.456346457664786,
+            "bottom": 0.4798579777433787,
+            "top": 100.47987280368193
+          }
+        },
+        {
+          "id": 2,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0.00034230202436447144,
+            "y": 381.93426513671875,
+            "z": 0
+          },
+          "angle": 0.0024016283728785395,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0.0000419163225160446
+          },
+          "velocity": {
+            "x": 1.713057784513694e-8,
+            "y": 0.015752043575048447
+          },
+          "angularVelocity": -2.802596928649634e-44,
+          "mass": 4.389647960662842,
+          "awake": true,
+          "contacts": 0,
+          "contactSeconds": 0,
+          "lost": false,
+          "supported": false,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": false,
+          "type": 2,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.4577173549356,
+            "right": 50.45869953938899,
+            "bottom": 331.9322777688047,
+            "top": 431.93593791965634
+          }
+        }
+      ]
+    },
+    "nativeBullet": [
+      {
+        "id": 1,
+        "configured": true,
+        "native": false
+      },
+      {
+        "id": 2,
+        "configured": true,
+        "native": false
+      }
+    ]
+  }
+}

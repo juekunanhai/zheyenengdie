@@ -1,0 +1,53 @@
+{
+  "asset": "cloud-soft-r7.png",
+  "candidate_status": "R7 design candidate; not imported into Cocos",
+  "generation_method": "Built-in image_gen tool, text-only generation",
+  "generated_at": "2026-09-13",
+  "original_output_path": "/Users/admin/.codex/generated_images/01a09716-87ce-7d81-a8a8-5772c68c075c/exec-dc630828-dc8d-4b4e-a41f-44f449a99247.png",
+  "project_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/assets/cloud-soft-r7.png",
+  "input_images_sent": [],
+  "style_inputs_inspected_locally": [
+    "assets/batch0/art/cloud_large_01.png",
+    "assets/batch0/art/bg_ground_city.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: one production-quality transparent PNG sprite for a playful 2.5D stacking mobile game.\nPrimary request: a SINGLE horizontally stretched fluffy cumulus cloud, complete and centered, designed to drift slowly at the outer edges of a bright toy-city game background. Generate a new asset from text only.\nStyle: polished stylized 2.5D / soft high-end animated-game illustration. Sculptural volume with softly merging natural puffs of varied scale, an irregular but clean readable silhouette. Elegant, quiet and friendly. NOT a chain of separate plastic spheres, NOT flat vector art, NOT photorealistic storm vapor.\nLighting: broad warm sunlight from upper left; luminous warm ivory-white crown; subtle cool sky-blue shading on the underside; gentle diffuse ambient occlusion between overlapping vapor forms, no dark outlines, no harsh glossy specular highlights. Texture should feel airy and soft, with a controlled clean silhouette readable at 140-pixel width.\nComposition: single wide cloud approx 2.6:1 shape ratio, with lower flatter wispy lobes and one softly rising off-center crown. Keep generous genuinely transparent margin on all four sides, no clipped edges, no secondary clouds. All visible object pixels belong to the cloud.\nBackground: TRUE TRANSPARENT ALPHA, not a solid white background and not a checkerboard drawn into the image. No scene, no sky rectangle, no ground, no cast shadow underneath or behind the cloud.\nNo text, face, eyes, stars, rain, lightning, icons, panels, watermarks or decorative objects. The cloud should harmonize with a cheerful blue-and-yellow toy world without drawing attention from central gameplay.",
+  "sha256": "2c6cfacad0da00a056944d0301f3a7ef2384a28f38b8662b49100248a6d673e8",
+  "dimensions": [
+    2022,
+    778
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "fully_transparent_pixels": 1009322,
+    "partially_transparent_pixels": 563788,
+    "opaque_pixels": 6,
+    "body_modal_alpha": 253,
+    "body_center_rgba": [
+      247,
+      239,
+      226,
+      253
+    ],
+    "nonzero_bounds": [
+      71,
+      24,
+      1957,
+      778
+    ],
+    "alpha_gt_127_bounds": [
+      78,
+      104,
+      1949,
+      702
+    ],
+    "edge_max": 1
+  },
+  "validation": {
+    "real_alpha": true,
+    "checkerboard_drawn_in_background": false,
+    "white_background": false,
+    "subject_complete": true,
+    "source_pixels_unmodified": true,
+    "notes": "The main cloud has near-opaque alpha 252-253. The outermost edge contains alpha-1 generation noise; meaningful silhouette remains inset on all sides. Original image copied without alpha thresholding, cropping, or other edits."
+  }
+}

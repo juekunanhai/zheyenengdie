@@ -1,0 +1,14 @@
+{
+  "strictly_convex": true,
+  "vertices": 8,
+  "single_convex_fixture_eligible": true,
+  "expected_fixture_count": 1,
+  "actual_engine_fixture_count": "pending_engine_import",
+  "outside_alpha128_area_world_squared": 7.953495,
+  "outside_alpha128_percentage": 0.060303,
+  "outline_area_world_squared": 13165.444595,
+  "uniform_pixel_to_world": 0.11494252873563218,
+  "width": 110.0,
+  "height": 122.873563,
+  "note": "Preserve this geometry mass target by recalculating density from 13165.444595 square-world-units polygon area. Sprite dimensions are texture mapping, never body dimensions."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "art_self_review_passed; candidate_frozen; pending_engine_validation_and_final_user_visual_review",
+  "scope": "Only burger-r3; existing runtime and other five assets untouched",
+  "checks": {
+    "sprite_next_alpha_identical": true,
+    "reference_matches_adopted_r2": true,
+    "upper_bun_and_all_ingredients_original_rows_0_to_219_exact": true,
+    "foreground_components_alpha128": 1,
+    "interior_transparent_holes_alpha128": 0,
+    "outer_four_pixel_border_clear": true,
+    "polygon_self_intersections": [],
+    "positive_ccw_area": true,
+    "visible_flat_top_width_world": 76.363637,
+    "visible_flat_bottom_width_world": 80.90909099999999,
+    "polygon_follows_actual_alpha_without_hull": true,
+    "density_mass_reconstruction": 3.200000000004868
+  },
+  "visual_review": {
+    "image": "comparison.png",
+    "geometry_image": "geometry-overlay.png",
+    "result": "White curved splice artifact eliminated by preserving original upper bread and every ingredient through row 219; transition is confined to orange lower bread rows 220 through 227. Flat bottom is the visible bread silhouette, with rounded shoulders; no plate, board, line or glue added.",
+    "reviewers": "agent self-review; root viewed comparison hash e6c13be97f4c45ef4a08d7df367d89993618c0f7bec11a3f13c6312636aa1236 and accepted seam/material continuity"
+  },
+  "limitations": [
+    "Art and alpha geometry checks do not prove Cocos fixture generation, lightly offset support or whole-tower behavior; root will integrate and verify.",
+    "User has not separately approved final Batch1C new object visuals."
+  ],
+  "sha256": {
+    "reference-burger-r2.png": "0643bc448408a4211ca45e5c755d325deff336ff9e0aecaf0962d473b565d664",
+    "generated-original.png": "680ccdebe024e5d6403389a972bce979173fe161691d0f2735da36e7a613accc",
+    "object_burger.png": "5c072d91000b01eb1e16af9a01bbd3cafa8922e1a94fcedd4abb109c97937d89",
+    "comparison.png": "e6c13be97f4c45ef4a08d7df367d89993618c0f7bec11a3f13c6312636aa1236",
+    "next_burger.png": "8332ef5048e449555016b1e0a481bd9be35a5e0e350919871f86d86695f764a2",
+    "composite-original-coordinates.png": "98dfe004049af0d92dffb0dd6be0f63f92f86702b0c1fe886a260f148ffd598a",
+    "geometry-overlay.png": "836d6ad7951272f97208b2a6da8e461cded1470587ce9f54014ccf924de0bb1d"
+  }
+}

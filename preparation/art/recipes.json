@@ -1,0 +1,612 @@
+[
+  {
+    "source": "objects/object_cardboard_box.png",
+    "id": "object_cardboard_box",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "底部箱角缺失"
+  },
+  {
+    "source": "objects/object_wooden_crate.png",
+    "id": "object_wooden_crate",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "底部箱角缺失",
+    "roi": [
+      0,
+      0,
+      330,
+      347
+    ]
+  },
+  {
+    "source": "objects/object_sofa.png",
+    "id": "object_sofa",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "左右扶手和底部缺失"
+  },
+  {
+    "source": "objects/object_toilet.png",
+    "id": "object_toilet",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "底座下边界缺失",
+    "roi": [
+      35,
+      0,
+      346,
+      361
+    ]
+  },
+  {
+    "source": "objects/object_burger.png",
+    "id": "object_burger",
+    "group": "objects",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      35,
+      319,
+      343
+    ]
+  },
+  {
+    "source": "objects/object_basketball.png",
+    "id": "object_basketball",
+    "group": "objects",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      55,
+      322,
+      350
+    ]
+  },
+  {
+    "source": "objects/object_ice_block.png",
+    "id": "object_ice_block",
+    "group": "objects",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      70,
+      290,
+      362
+    ]
+  },
+  {
+    "source": "objects/object_wood_plank.png",
+    "id": "object_wood_plank",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "左端缺失",
+    "roi": [
+      0,
+      70,
+      330,
+      310
+    ]
+  },
+  {
+    "source": "objects/object_fridge.png",
+    "id": "object_fridge",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "顶部缺失",
+    "roi": [
+      0,
+      0,
+      335,
+      338
+    ]
+  },
+  {
+    "source": "objects/object_dumbbell.png",
+    "id": "object_dumbbell",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "左端面缺失"
+  },
+  {
+    "source": "objects/object_slipper.png",
+    "id": "object_slipper",
+    "group": "objects",
+    "quality": "isolated",
+    "note": ""
+  },
+  {
+    "source": "objects/object_whale.png",
+    "id": "object_whale",
+    "group": "objects",
+    "quality": "source_incomplete",
+    "note": "喷水上端缺失"
+  },
+  {
+    "source": "hud/hud_height_sign.png",
+    "id": "hud_height_sign",
+    "group": "hud",
+    "quality": "edge_review",
+    "note": "挂牌下边缘可能截断；绳子顶部是拼接边界"
+  },
+  {
+    "source": "hud/hud_region_sign.png",
+    "id": "hud_region_sign",
+    "group": "hud",
+    "quality": "edge_review",
+    "note": "挂牌下边缘需复核；绳子顶部是拼接边界"
+  },
+  {
+    "source": "hud/hud_pause.png",
+    "id": "hud_pause",
+    "group": "hud",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      52,
+      28,
+      254,
+      221
+    ]
+  },
+  {
+    "source": "hud/hud_star_full_set.png",
+    "id": "hud_star_full",
+    "group": "hud",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      9,
+      52,
+      139,
+      184
+    ]
+  },
+  {
+    "source": "hud/hud_star_empty_set.png",
+    "id": "hud_star_empty",
+    "group": "hud",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      32,
+      47,
+      168,
+      185
+    ]
+  },
+  {
+    "source": "hud/hud_next_frame.png",
+    "id": "hud_next_frame",
+    "group": "hud",
+    "quality": "reconstructed_interior",
+    "note": "仅在框内灰色虚线遮罩中用邻近原图颜色扩散修复，保留原框和渐变；需组合验收",
+    "roi": [
+      0,
+      5,
+      249,
+      379
+    ],
+    "remove_next_demo": true
+  },
+  {
+    "source": "hud/hud_rotate_90.png",
+    "id": "hud_rotate_90",
+    "group": "hud",
+    "quality": "source_incomplete",
+    "note": "右侧底座缺失",
+    "roi": [
+      28,
+      39,
+      430,
+      403
+    ]
+  },
+  {
+    "source": "ui/logo_main.png",
+    "id": "logo_main",
+    "group": "ui",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      0,
+      555,
+      360
+    ]
+  },
+  {
+    "source": "ui/btn_start.png",
+    "id": "btn_start",
+    "group": "ui",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      0,
+      608,
+      213
+    ]
+  },
+  {
+    "source": "ui/bubble_plain.png",
+    "id": "bubble_plain",
+    "group": "ui",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      29,
+      37,
+      258,
+      232
+    ]
+  },
+  {
+    "source": "claw/claw_cable_straight.png",
+    "id": "claw_cable_straight",
+    "group": "claw",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      36,
+      0,
+      111,
+      399
+    ]
+  },
+  {
+    "source": "claw/claw_cable_flex.png",
+    "id": "claw_cable_flex",
+    "group": "claw",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      55,
+      0,
+      145,
+      397
+    ]
+  },
+  {
+    "source": "claw/claw_open_wide.png",
+    "id": "claw_open_wide",
+    "group": "claw",
+    "quality": "edge_review",
+    "note": "爪体完整；移除顶部原柔性索缆残段，挂点接缝待引擎验证",
+    "roi": [
+      12,
+      38,
+      302,
+      325
+    ],
+    "opening": 5,
+    "clear_regions": [
+      [
+        170,
+        0,
+        207,
+        31
+      ]
+    ]
+  },
+  {
+    "source": "claw/claw_open_mid.png",
+    "id": "claw_open_mid",
+    "group": "claw",
+    "quality": "source_incomplete",
+    "note": "左侧外缘缺边",
+    "roi": [
+      0,
+      36,
+      291,
+      317
+    ],
+    "opening": 5
+  },
+  {
+    "source": "claw/claw_open_narrow.png",
+    "id": "claw_open_narrow",
+    "group": "claw",
+    "quality": "source_incomplete",
+    "note": "左侧爪臂缺边；已排除右边带红方块的另一只抓手",
+    "roi": [
+      0,
+      45,
+      188,
+      321
+    ],
+    "opening": 5
+  },
+  {
+    "source": "claw/claw_rail.png",
+    "id": "claw_rail",
+    "group": "claw",
+    "quality": "isolated",
+    "note": "正式导轨主体保留；附带索缆移除，独立索缆运行时接入",
+    "roi": [
+      0,
+      0,
+      860,
+      182
+    ],
+    "opening": 5,
+    "clear_regions": [
+      [
+        145,
+        113,
+        223,
+        182
+      ]
+    ]
+  },
+  {
+    "source": "landing/platform_city_base.png",
+    "id": "platform_city_base",
+    "group": "landing",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      20,
+      65,
+      483,
+      366
+    ],
+    "opening": 5
+  },
+  {
+    "source": "landing/platform_cloud_base.png",
+    "id": "platform_cloud_base",
+    "group": "landing",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      35,
+      482,
+      350
+    ],
+    "opening": 5
+  },
+  {
+    "source": "landing/platform_space_base.png",
+    "id": "platform_space_base",
+    "group": "landing",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      35,
+      483,
+      350
+    ],
+    "opening": 5
+  },
+  {
+    "source": "item_bar/itembar_empty.png",
+    "id": "itembar_empty",
+    "group": "item_bar",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "backgrounds/bg_sky_panel.png",
+    "id": "bg_sky_panel",
+    "group": "backgrounds",
+    "quality": "edge_review",
+    "note": "保留原背景；运行时覆盖比例另验收",
+    "clean": false
+  },
+  {
+    "source": "backgrounds/bg_city_far.png",
+    "id": "bg_city_far",
+    "group": "backgrounds",
+    "quality": "edge_review",
+    "note": "建筑横带，边缘与杂点需复核",
+    "roi": [
+      0,
+      8,
+      618,
+      215
+    ],
+    "clean": true,
+    "opening": 3
+  },
+  {
+    "source": "backgrounds/bg_city_near.png",
+    "id": "city_roof_near",
+    "group": "backgrounds",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      263,
+      28,
+      422,
+      204
+    ],
+    "opening": 5
+  },
+  {
+    "source": "backgrounds/cloud_large_01.png",
+    "id": "cloud_large_01",
+    "group": "backgrounds",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      12,
+      4,
+      365,
+      144
+    ],
+    "opening": 5
+  },
+  {
+    "source": "backgrounds/air_objects.png",
+    "id": "airplane_clean",
+    "group": "backgrounds",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      87,
+      25,
+      257,
+      136
+    ],
+    "opening": 5
+  },
+  {
+    "source": "backgrounds/air_objects.png",
+    "id": "airship_clean",
+    "group": "backgrounds",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      18,
+      156,
+      193,
+      265
+    ],
+    "opening": 5
+  },
+  {
+    "source": "backgrounds/air_objects.png",
+    "id": "balloon_clean",
+    "group": "backgrounds",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      279,
+      6,
+      416,
+      159
+    ],
+    "opening": 5
+  },
+  {
+    "source": "backgrounds/floating_island_large.png",
+    "id": "floating_island_large",
+    "group": "backgrounds",
+    "quality": "isolated",
+    "note": "",
+    "roi": [
+      0,
+      30,
+      218,
+      195
+    ],
+    "opening": 5
+  },
+  {
+    "source": "backgrounds/earth_curve.png",
+    "id": "earth_curve",
+    "group": "backgrounds",
+    "quality": "edge_review",
+    "note": "地平线用途，非完整球体",
+    "roi": [
+      0,
+      16,
+      650,
+      166
+    ],
+    "clean": false
+  },
+  {
+    "source": "result_ui/death_reason_collapse.png",
+    "id": "death_reason_collapse",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/death_reason_drop.png",
+    "id": "death_reason_drop",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/death_reason_imbalance.png",
+    "id": "death_reason_imbalance",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/death_reason_slide.png",
+    "id": "death_reason_slide",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/death_reason_unknown.png",
+    "id": "death_reason_unknown",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/result_btn_retry.png",
+    "id": "result_btn_retry",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/result_btn_share.png",
+    "id": "result_btn_share",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/result_clutch_save_label.png",
+    "id": "result_clutch_save_label",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/result_collection_new_badge.png",
+    "id": "result_collection_new_badge",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/result_death_reason_header.png",
+    "id": "result_death_reason_header",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/result_final_height_badge.png",
+    "id": "result_final_height_badge",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  },
+  {
+    "source": "result_ui/result_tech_score_label.png",
+    "id": "result_tech_score_label",
+    "group": "result_ui",
+    "quality": "isolated",
+    "note": "",
+    "clean": false
+  }
+]

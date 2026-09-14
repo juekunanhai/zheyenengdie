@@ -1,0 +1,101 @@
+{
+  "mode": "authorized_local_alpha_cleanup_only",
+  "assets": [
+    {
+      "slug": "cardboard_box",
+      "generated": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/cardboard_box.png",
+      "generated_sha256": "7571bc6ecaf95621ea2806f1532deac587ffc40e2ed11b1407e3ad8a8c29ce58",
+      "input_size": [
+        1254,
+        1254
+      ],
+      "crop_box": [
+        121,
+        134,
+        1133,
+        1139
+      ],
+      "output_size": [
+        1012,
+        1005
+      ],
+      "removed_nonzero_alpha_pixels": 15769,
+      "strong_alpha_removed_pixels": 0,
+      "alpha_increased_pixels": 0,
+      "rgb_changed_pixels": 0,
+      "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/assets/object_cardboard_box.png",
+      "output_sha256": "119a169dfd8da4ee5a17c4bc12bd55fb8f0208e534b50cee54fdb794cdc9683b",
+      "next_sha256": "c1f3677a1df12513406815fd5bf90f0c07c0d2f1ebe08a851c9de88ef8b5a8b0",
+      "operations": [
+        "Keep connected strong-alpha subject plus original two-pixel antialias fringe",
+        "Remove disconnected exterior alpha pixels",
+        "Crop with six-pixel transparent margin",
+        "Make NEXT from identical final alpha; no body repainting or resizing"
+      ]
+    },
+    {
+      "slug": "fridge",
+      "generated": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/fridge.png",
+      "generated_sha256": "c92791ced31ebd19c225c62b1cf2b915e4eba0081144877cdb21ec81eec6dc81",
+      "input_size": [
+        1086,
+        1448
+      ],
+      "crop_box": [
+        82,
+        165,
+        1005,
+        1283
+      ],
+      "output_size": [
+        923,
+        1118
+      ],
+      "removed_nonzero_alpha_pixels": 16108,
+      "strong_alpha_removed_pixels": 0,
+      "alpha_increased_pixels": 0,
+      "rgb_changed_pixels": 0,
+      "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/assets/object_fridge.png",
+      "output_sha256": "66f1c7cc3621e4f66dea8e6c0682891efe5abc2307c80688e300b769bfb29b3a",
+      "next_sha256": "a16022214ccaccf24d169943243d603615a59d19518e4588ab6331da72a0e090",
+      "operations": [
+        "Keep connected strong-alpha subject plus original two-pixel antialias fringe",
+        "Remove disconnected exterior alpha pixels",
+        "Crop with six-pixel transparent margin",
+        "Make NEXT from identical final alpha; no body repainting or resizing"
+      ]
+    },
+    {
+      "slug": "wood_plank",
+      "generated": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/generated/wood_plank.png",
+      "generated_sha256": "36a7f314eb5138d2ee7292b99a22986f1c6884e16b5c97cfa27e3938da22fb10",
+      "input_size": [
+        1254,
+        1254
+      ],
+      "crop_box": [
+        17,
+        550,
+        1237,
+        702
+      ],
+      "output_size": [
+        1220,
+        152
+      ],
+      "removed_nonzero_alpha_pixels": 4684,
+      "strong_alpha_removed_pixels": 0,
+      "alpha_increased_pixels": 0,
+      "rgb_changed_pixels": 0,
+      "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/difficulty-r1/assets/object_wood_plank.png",
+      "output_sha256": "2a7d93c6a2dce6191129642ceeffe91bcbed0ee071fe1f5a493ecefbc9b96462",
+      "next_sha256": "d78593c2d3af2e4bc4a677199c74e82771df5e4fe34741f26ee197eb3bce274c",
+      "operations": [
+        "Keep connected strong-alpha subject plus original two-pixel antialias fringe",
+        "Remove disconnected exterior alpha pixels",
+        "Crop with six-pixel transparent margin",
+        "Make NEXT from identical final alpha; no body repainting or resizing"
+      ]
+    }
+  ]
+}

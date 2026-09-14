@@ -1,0 +1,174 @@
+Captured 2026-09-14 using web.run. This file preserves tool output for author/license verification; it is not raw website HTML.
+
+Freesound - ukulele loop.wav by muri_kuri (https://freesound.org/people/muri_kuri/sounds/682461/)
+citeturn37view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://freesound.org/people/muri_kuri/sounds/682461/","lineno":null}); Total lines: 137
+L0: You need to enable JavaScript to run this app.
+L1: 
+L2: #### Log in to Freesound
+L3: 
+L4: [Input]
+L5: 
+L6: Username: [Input: Enter your email or username]
+L7: 
+L8: Password: [Input: Enter your password]
+L9: 
+L10: [Input] [Button: Log in]
+L11: 
+L12: Problems logging in?
+L13: 
+L14: Don't have an account? Join now
+L15: 
+L16: #### Problems logging in?
+L17: 
+L18: Enter your email or username below and we'll send you a link to help you login into your account.
+L19: 
+L20: [Input]
+L21: 
+L22: [Input: Your email or username]
+L23: 
+L24: [Button: Send me a link]
+L25: 
+L26: Back to log in
+L27: #### Almost there!
+L28: 
+L29: We've sent a verification link by email
+L30: 
+L31: Didn't receive the email? Check your Spam folder, it may have been caught by a filter. If you still don't see it, you can cite0†resend the verification email .
+L32: 
+L33: #### Default title
+L34: 
+L35: [Input] [Button: Yes]
+L36: 
+L37: [Button: Cancel]
+L38: 
+L39: [Input: Search sounds...]
+L40: # cite1†ukulele loop.wav L41: 
+L42: Overall rating (8 ratings)
+L43: 
+L44: cite2†Image L45: 
+L46: cite3†muri_kuri L47: 
+L48: April 3rd, 2023
+L49: 
+L50: cite4†Follow L51: 
+L52: cite5†Music > cite6†Solo instrument L53: 
+L54: cite7†loops L55: 
+L56: I playing two of my favorite ukulele chords
+L57: 
+L58: muri_kuri
+L59: 
+L60: Sound illegal or offensive? Flag it!
+L61: 
+L62: cite8†calm L63: 
+L64: cite9†loop L65: 
+L66: cite10†melody L67: 
+L68: cite11†music L69: 
+L70: cite12†relax L71: 
+L72: cite13†strings L73: 
+L74: cite14†ukulele L75: 
+L76: Type
+L77: 
+L78: Wave (.wav)
+L79: 
+L80: Duration
+L81: 
+L82: 0:17.000
+L83: 
+L84: File size
+L85: 
+L86: 2.9 MB
+L87: 
+L88: Sample rate
+L89: 
+L90: 44100.0 Hz
+L91: 
+L92: Bit depth
+L93: 
+L94: 16 bit
+L95: 
+L96: Channels
+L97: 
+L98: Stereo
+L99: ###### Comments
+L100: 
+L101: Please cite15†log in to comment
+L102: 
+L103: B
+L104: 
+L105: cite16†BramStroker2509 L106: 
+L107: 3 years, 5 months ago
+L108: 
+L109: i like it
+L110: 
+L111:   1. 262 downloads
+L112:   2. cite17†1 comment L113: 
+L114: cite18†Creative Commons 0†creativecommons.org L115: 
+L116: You can copy, modify, distribute and perform the sound, even for commercial purposes, all without the need of asking permission to the author. Get attribution text...
+L117: 
+L118: cite19†Login to download L119: 
+L120:   1.   2.   3.   4. Share url:
+L121: [Input]
+L122: 
+L123: 920 x 245
+L124: 
+L125: cite20†Image: Embed example, large size L126: 
+L127: 481 x 86
+L128: cite21†Image: Embed example, medium size L129: 
+L130: 375 x 30
+L131: 
+L132: cite22†Image: Embed example, small size L133: 
+L134: cite23†About Freesound cite24†Terms of use cite25†Privacy cite26†Cookies cite27†Developers cite28†Help cite29†Donations cite30†Blog†blog.freesound.org cite31†Freesound Labs†labs.freesound.org cite32†Get your t-shirt! L135: 
+L136: © 2026 Universitat Pompeu Fabra
+--------------------------------------------------------------------------------
+Deed - CC0 1.0 Universal - Creative Commons (https://creativecommons.org/publicdomain/zero/1.0/)
+citeturn37view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://creativecommons.org/publicdomain/zero/1.0/","lineno":null}); Total lines: 96
+L0: cite0†Skip to content L1: 
+L2: [Select]
+L3: # cite1†Creative Commons L4: 
+L5: [Button: Menu]
+L6:   * cite2†Who We Are [Button: Expand]
+L7:     * cite3†Strategic Plan L8:     * cite4†Team L9:     * cite5†Governance L10:     * cite6†Opportunities L11:     * cite7†Annual Reports & Financials L12:     * cite8†History L13:     * cite9†Press L14:   * cite10†What We Do [Button: Expand]
+L15:     * cite11†Build Open Infrastructure [Button: Expand ]
+L16:       * cite12†CC Licenses L17:       * cite13†CC Signals L18:       * cite14†Public Domain L19:       * cite15†Chooser L20:       * cite16†FAQs L21:     * cite17†Implement the Commons [Button: Expand ]
+L22:       * cite18†Where CC Makes An Impact L23:       * cite19†Resources L24:       * cite20†Search the Commons†search.creativecommons.org L25:     * cite21†Engage the People [Button: Expand ]
+L26:       * cite22†Training + Webinars L27:       * cite23†Advocacy L28:       * cite24†Community L29:       * cite25†Events L30:   * cite26†Blog L31:   * cite27†Support Us [Button: Expand]
+L32:     * cite28†Make a Gift†giving.gofundme.com L33:     * cite29†Open Infrastructure Circle L34:     * cite30†Donor FAQ L35:   * cite28†Donate†giving.gofundme.com L36: # CC0 1.0 Universal
+L37: 
+L38: CC0 1.0
+L39: 
+L40: ## Deed
+L41: 
+L42: ## Canonical URL
+L43: 
+L44: cite31†https://creativecommons.org/publicdomain/zero/1.0/ L45: 
+L46: cite32†See the legal code L47: ## No Copyright
+L48: 
+L49:   1. The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.
+L50:   2. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
+L51: ## Other Information
+L52:   1. In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as cite33†publicity or privacy rights.
+L53:   2. Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.
+L54:   3. When using or citing the work, you should not imply cite34†endorsement by the author or the affirmer.
+L55: ## Notice
+L56: 
+L57: The Commons Deed is not a legal instrument. It is simply a handy reference for understanding the CC0 Legal Code, a human-readable expression of some of its key terms. Think of it as the user-friendly interface to the CC0 Legal Code beneath. This Deed itself has no legal value, and its contents do not appear in CC0.
+L58: 
+L59: Creative Commons is not a law firm and does not provide legal services. Distributing, displaying, or linking to this Commons Deed does not create an attorney-client relationship.
+L60: Creative Commons has not verified the copyright status of any work to which CC0 has been applied. CC makes no warranties about any work or its copyright status in any jurisdiction, and disclaims all liability for all uses of any work.
+L61: 
+L62: Creative Commons is the nonprofit behind the open licenses and other legal tools that allow creators to share their work. Our legal tools are free to use.
+L63:   * cite35†Learn more about our work L64:   * cite36†Learn more about CC Licensing L65:   * cite37†Support our work L66:   * cite38†Use the license for your own material. L67:   * cite39†Licenses List L68:   * cite40†Public Domain List L69: ## Footnotes
+L70:   * cite41†return to reference publicity or privacy — The use of a work free of known copyright restrictions may be otherwise regulated or limited. The work or its use may be subject to personal data protection laws, publicity, image, or privacy rights that allow a person to control how their voice, image or likeness is used, or other restrictions or limitations under applicable law.
+L71:     * cite42†More info L72:   * cite43†return to reference endorsement — In some jurisdictions, wrongfully implying that an author, publisher or anyone else endorses your use of a work may be unlawful.
+L73:     * cite44†More info L74: cite1†Creative Commons L75: 
+L76: [Input: Search] [Button: submit]
+L77: 
+L78:   * cite2†Who we are L79:   * cite10†What we do L80:   * cite26†Blog L81:   * cite27†Support us L82:   * cite45†Store†creative-commons-shop.fourthwall.com L83:   * cite46†Contact L84:   * cite47†Privacy L85:   * cite48†Policies L86:   * cite49†Terms L87: ## Contact Us
+L88: 
+L89: Creative Commons
+L90: PO Box 1866, Mountain View,
+L91: CA 94042
+L92: 
+L93: info@creativecommons.org
+L94: 
+L95: Except where otherwise cite50†noted , content on this site is licensed under a cite51†Creative Commons Attribution 4.0 International license . Icons by cite52†Font Awesome†fontawesome.com .
+

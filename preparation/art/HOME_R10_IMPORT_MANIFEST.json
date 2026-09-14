@@ -1,0 +1,26 @@
+[
+  {
+    "id": "home_r10_background",
+    "candidate": "design/R10/assets/bg-home-r10.png",
+    "import_path": "assets/batch0/art/home_r10_background.png",
+    "sha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f"
+  },
+  {
+    "id": "home_r10_logo",
+    "candidate": "design/R10/assets/logo-home-r10-clean-r2.png",
+    "import_path": "assets/batch0/art/home_r10_logo.png",
+    "sha256": "9079e248bbcd4bfc47f2704ae7a967398dab77b0501bdc0ce18f7bd8eba8a254"
+  },
+  {
+    "id": "home_r10_airship",
+    "candidate": "art/candidates/backgrounds/airship_clean.png",
+    "import_path": "assets/batch0/art/home_r10_airship.png",
+    "sha256": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289"
+  },
+  {
+    "id": "home_r10_airplane",
+    "candidate": "art/candidates/backgrounds/airplane_clean.png",
+    "import_path": "assets/batch0/art/home_r10_airplane.png",
+    "sha256": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600"
+  }
+]

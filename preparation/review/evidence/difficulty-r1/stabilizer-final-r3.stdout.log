@@ -1,0 +1,12 @@
+static_ground_never_bonds: passed
+horizontal_180_degree_board_bonds: passed
+three_contacts_two_bonds_and_unfixed_group_falls: passed
+vertical_board_does_not_bond: passed
+side_graze_preserves_first_landing_cushion: passed
+overload_breaks_without_same_pair_reattachment: passed
+continuous_native_angle_does_not_cause_full_turn_correction: passed
+basketball_native_181_degree_support_preserves_contact_pose: passed
+joint_target_resolves_real_contact_overlap_without_body_movement: passed
+board_top_cushions_without_upper_bond: passed
+ordinary_contact_damping_restores_original_in_air: passed
+{"status":"passed","checks":11,"errors":[]}

@@ -1,0 +1,4533 @@
+{
+  "capturedAt": "2026-09-14T07:06:02.412Z",
+  "results": [
+    {
+      "id": "material-audio",
+      "name": "新材质音效 / 音乐自然循环",
+      "status": "passed",
+      "startedAt": "2026-09-14T07:02:44.444Z",
+      "evidence": {
+        "method": "独立音频fixture暂停玩法，仅推进真实GameAudio/GameMusic时钟。六种新物体各实际调用三次impact事件，共18次，监听真实STARTED/ENDED；城市音乐从0自然播放跨过一次循环，无seek/倍速/伪造事件。45秒整体上限。",
+        "newClips": [
+          "impact_soft_1",
+          "impact_soft_2",
+          "impact_soft_3",
+          "impact_ice_1",
+          "impact_ice_2",
+          "impact_ice_3",
+          "impact_heavy_1",
+          "impact_heavy_2",
+          "impact_heavy_3"
+        ],
+        "mapping": [
+          [
+            "wooden_crate",
+            "wood"
+          ],
+          [
+            "sofa",
+            "soft"
+          ],
+          [
+            "burger",
+            "soft"
+          ],
+          [
+            "slipper",
+            "soft"
+          ],
+          [
+            "ice_block",
+            "ice"
+          ],
+          [
+            "whale",
+            "heavy"
+          ]
+        ],
+        "playback": [
+          {
+            "kind": "wooden_crate",
+            "eventName": "impact_wooden_crate",
+            "expected": "impact_wood_1",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_wood_1",
+                "source": "Sfx:0",
+                "at": 7626.400000002235,
+                "time": 0.00010000000149013033,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_wood_1",
+                "source": "Sfx:0",
+                "at": 7926.699999999255,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "wooden_crate",
+            "eventName": "impact_wooden_crate",
+            "expected": "impact_wood_2",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_wood_2",
+                "source": "Sfx:1",
+                "at": 7943.199999999255,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_wood_2",
+                "source": "Sfx:1",
+                "at": 8246.5,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "wooden_crate",
+            "eventName": "impact_wooden_crate",
+            "expected": "impact_wood_3",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_wood_3",
+                "source": "Sfx:0",
+                "at": 8260.300000000745,
+                "time": 0.00010000000149013033,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_wood_3",
+                "source": "Sfx:0",
+                "at": 8561.10000000149,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "sofa",
+            "eventName": "impact_sofa",
+            "expected": "impact_soft_1",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_1",
+                "source": "Sfx:1",
+                "at": 8577.5,
+                "time": 0.00009999999776333368,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_1",
+                "source": "Sfx:1",
+                "at": 8867.199999999255,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "sofa",
+            "eventName": "impact_sofa",
+            "expected": "impact_soft_2",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_2",
+                "source": "Sfx:0",
+                "at": 8877.60000000149,
+                "time": 0.00010000000149013033,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_2",
+                "source": "Sfx:0",
+                "at": 9167.800000000745,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "sofa",
+            "eventName": "impact_sofa",
+            "expected": "impact_soft_3",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_3",
+                "source": "Sfx:1",
+                "at": 9177,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_3",
+                "source": "Sfx:1",
+                "at": 9467.300000000745,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "burger",
+            "eventName": "impact_burger",
+            "expected": "impact_soft_1",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_1",
+                "source": "Sfx:0",
+                "at": 9476.300000000745,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_1",
+                "source": "Sfx:0",
+                "at": 9767.10000000149,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "burger",
+            "eventName": "impact_burger",
+            "expected": "impact_soft_2",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_2",
+                "source": "Sfx:1",
+                "at": 9777.60000000149,
+                "time": 0.00010000000149013033,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_2",
+                "source": "Sfx:1",
+                "at": 10067.199999999255,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "burger",
+            "eventName": "impact_burger",
+            "expected": "impact_soft_3",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_3",
+                "source": "Sfx:0",
+                "at": 10076.900000002235,
+                "time": 0.00010000000149013033,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_3",
+                "source": "Sfx:0",
+                "at": 10367.199999999255,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "slipper",
+            "eventName": "impact_slipper",
+            "expected": "impact_soft_1",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_1",
+                "source": "Sfx:1",
+                "at": 10377.10000000149,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_1",
+                "source": "Sfx:1",
+                "at": 10667.60000000149,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "slipper",
+            "eventName": "impact_slipper",
+            "expected": "impact_soft_2",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_2",
+                "source": "Sfx:0",
+                "at": 10677.60000000149,
+                "time": 0.00010000000149013033,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_2",
+                "source": "Sfx:0",
+                "at": 10968.5,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "slipper",
+            "eventName": "impact_slipper",
+            "expected": "impact_soft_3",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_soft_3",
+                "source": "Sfx:1",
+                "at": 10976.300000000745,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_soft_3",
+                "source": "Sfx:1",
+                "at": 11267.199999999255,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "ice_block",
+            "eventName": "impact_ice_block",
+            "expected": "impact_ice_1",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_ice_1",
+                "source": "Sfx:0",
+                "at": 11276.800000000745,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_ice_1",
+                "source": "Sfx:0",
+                "at": 11627.5,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "ice_block",
+            "eventName": "impact_ice_block",
+            "expected": "impact_ice_2",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_ice_2",
+                "source": "Sfx:1",
+                "at": 11644.800000000745,
+                "time": 0.00010000000149013033,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_ice_2",
+                "source": "Sfx:1",
+                "at": 11995.199999999255,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "ice_block",
+            "eventName": "impact_ice_block",
+            "expected": "impact_ice_3",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_ice_3",
+                "source": "Sfx:0",
+                "at": 12009.60000000149,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_ice_3",
+                "source": "Sfx:0",
+                "at": 12360.699999999255,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "whale",
+            "eventName": "impact_whale",
+            "expected": "impact_heavy_1",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_heavy_1",
+                "source": "Sfx:1",
+                "at": 12377.300000000745,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_heavy_1",
+                "source": "Sfx:1",
+                "at": 12858.300000000745,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "whale",
+            "eventName": "impact_whale",
+            "expected": "impact_heavy_2",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_heavy_2",
+                "source": "Sfx:0",
+                "at": 12860.60000000149,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_heavy_2",
+                "source": "Sfx:0",
+                "at": 13341.5,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          },
+          {
+            "kind": "whale",
+            "eventName": "impact_whale",
+            "expected": "impact_heavy_3",
+            "events": [
+              {
+                "type": "started",
+                "channel": "sfx",
+                "clip": "impact_heavy_3",
+                "source": "Sfx:1",
+                "at": 13343.300000000745,
+                "time": 0,
+                "playing": true
+              },
+              {
+                "type": "ended",
+                "channel": "sfx",
+                "clip": "impact_heavy_3",
+                "source": "Sfx:1",
+                "at": 13823.400000002235,
+                "time": 0,
+                "playing": true
+              }
+            ]
+          }
+        ],
+        "musicLoop": {
+          "duration": 35.683265,
+          "wrapped": {
+            "before": {
+              "elapsedWall": 35.64039999999851,
+              "time": 35.628800000000744,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 35.628800000000744,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            "after": {
+              "elapsedWall": 35.65719999999926,
+              "time": 0.00549999999999784,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.00549999999999784,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            }
+          },
+          "maxConcurrent": 1,
+          "final": {
+            "region": "bgm_city",
+            "fading": false,
+            "fade": 1,
+            "gain": 0.22,
+            "paused": false,
+            "enabled": true,
+            "issues": [],
+            "sources": [
+              {
+                "clip": "bgm_city",
+                "playing": true,
+                "time": 0.3671999999992579,
+                "volume": 0.22
+              },
+              {
+                "clip": null,
+                "playing": false,
+                "time": 0,
+                "volume": 0
+              }
+            ]
+          },
+          "samples": [
+            {
+              "elapsedWall": 0.027799999997019768,
+              "time": 0.016199999999254366,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.016199999999254366,
+                  "volume": 0.009990000000223518
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 0.22789999999850988,
+              "time": 0.21619999999925454,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.21619999999925454,
+                  "volume": 0.07001999999955297
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 0.4445,
+              "time": 0.4329000000022356,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.4329000000022356,
+                  "volume": 0.13499999999999998
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 0.6450999999977648,
+              "time": 0.6335000000000006,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.6335000000000006,
+                  "volume": 0.1951499999999999
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 0.8452999999970198,
+              "time": 0.8336999999992551,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.8336999999992551,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 1.0455,
+              "time": 1.0339000000022347,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.0339000000022347,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 1.2615,
+              "time": 1.2499000000022358,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.2499000000022358,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 1.4780999999977649,
+              "time": 1.466499999999999,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.466499999999999,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 1.6942999999970199,
+              "time": 1.6826999999992553,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.6826999999992553,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 1.8945,
+              "time": 1.882900000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 1.882900000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 2.11139999999851,
+              "time": 2.0998000000007453,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 2.0998000000007453,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 2.327699999999255,
+              "time": 2.31610000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 2.31610000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 2.528,
+              "time": 2.5164000000022346,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 2.5164000000022346,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 2.7445999999977646,
+              "time": 2.7329000000022345,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 2.7329000000022345,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 2.94539999999851,
+              "time": 2.933800000000745,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 2.933800000000745,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 3.162099999997765,
+              "time": 3.1505,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 3.1505,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 3.37779999999702,
+              "time": 3.366199999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 3.366199999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 3.57889999999851,
+              "time": 3.5673000000007447,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 3.5673000000007447,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 3.794699999999255,
+              "time": 3.7831000000014905,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 3.7831000000014905,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 4.011099999997765,
+              "time": 3.9995000000000003,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 3.9995000000000003,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 4.212199999999255,
+              "time": 4.200600000001489,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 4.200600000001489,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 4.42779999999702,
+              "time": 4.416199999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 4.416199999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 4.62879999999702,
+              "time": 4.617199999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 4.617199999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 4.8445,
+              "time": 4.832900000002234,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 4.832900000002234,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 5.044699999999255,
+              "time": 5.0331000000014905,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 5.0331000000014905,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 5.244699999999255,
+              "time": 5.23310000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 5.23310000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 5.461199999999255,
+              "time": 5.44960000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 5.44960000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 5.66129999999702,
+              "time": 5.649699999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 5.649699999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 5.878599999997765,
+              "time": 5.867,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 5.867,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 6.094699999999255,
+              "time": 6.083100000001489,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 6.083100000001489,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 6.31089999999851,
+              "time": 6.299300000000744,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 6.299300000000744,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 6.5115,
+              "time": 6.499900000002236,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 6.499900000002236,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 6.728,
+              "time": 6.716300000000746,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 6.716300000000746,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 6.94489999999851,
+              "time": 6.933300000000744,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 6.933300000000744,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 7.161199999999255,
+              "time": 7.149500000000001,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 7.149500000000001,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 7.36179999999702,
+              "time": 7.350199999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 7.350199999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 7.562199999999255,
+              "time": 7.550600000001491,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 7.550600000001491,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 7.77889999999851,
+              "time": 7.767300000000744,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 7.767300000000744,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 7.994599999997765,
+              "time": 7.983,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 7.983,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 8.194599999997765,
+              "time": 8.182900000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 8.182900000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 8.411099999997765,
+              "time": 8.3995,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 8.3995,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 8.61139999999851,
+              "time": 8.599699999999252,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 8.599699999999252,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 8.828,
+              "time": 8.816300000000744,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 8.816300000000744,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 9.040199999999254,
+              "time": 9.02860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 9.02860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 9.2405,
+              "time": 9.228900000002234,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 9.228900000002234,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 9.45689999999851,
+              "time": 9.445300000000746,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 9.445300000000746,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 9.67339999999851,
+              "time": 9.661800000000746,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 9.661800000000746,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 9.8735,
+              "time": 9.861900000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 9.861900000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 10.090199999999255,
+              "time": 10.07860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 10.07860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 10.30679999999702,
+              "time": 10.295199999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 10.295199999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 10.5235,
+              "time": 10.511900000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 10.511900000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 10.7405,
+              "time": 10.728900000002234,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 10.728900000002234,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 10.956,
+              "time": 10.944400000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 10.944400000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 11.1575,
+              "time": 11.145900000002236,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 11.145900000002236,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 11.3745,
+              "time": 11.362900000002234,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 11.362900000002234,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 11.590199999999255,
+              "time": 11.57860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 11.57860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 11.79029999999702,
+              "time": 11.778699999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 11.778699999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 11.991099999997765,
+              "time": 11.979499999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 11.979499999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 12.207099999997764,
+              "time": 12.1955,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 12.1955,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 12.4235,
+              "time": 12.411900000002234,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 12.411900000002234,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 12.623699999999255,
+              "time": 12.61210000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 12.61210000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 12.841099999997764,
+              "time": 12.8295,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 12.8295,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 13.057099999997765,
+              "time": 13.0455,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 13.0455,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 13.273699999999256,
+              "time": 13.262100000001489,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 13.262100000001489,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 13.47389999999851,
+              "time": 13.462199999999253,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 13.462199999999253,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 13.69029999999702,
+              "time": 13.678699999999253,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 13.678699999999253,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 13.890599999997765,
+              "time": 13.878999999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 13.878999999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 14.10689999999851,
+              "time": 14.095300000000744,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 14.095300000000744,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 14.323599999997764,
+              "time": 14.311900000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 14.311900000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 14.523699999999256,
+              "time": 14.512100000001489,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 14.512100000001489,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 14.72379999999702,
+              "time": 14.712199999999253,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 14.712199999999253,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 14.94039999999851,
+              "time": 14.928800000000745,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 14.928800000000745,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 15.140599999997765,
+              "time": 15.128999999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 15.128999999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 15.35779999999702,
+              "time": 15.346100000001488,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 15.346100000001488,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 15.573699999999254,
+              "time": 15.56210000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 15.56210000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 15.774599999997765,
+              "time": 15.762999999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 15.762999999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 15.990099999997765,
+              "time": 15.9785,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 15.9785,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 16.190599999997765,
+              "time": 16.179,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 16.179,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 16.406899999998508,
+              "time": 16.395300000000745,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 16.395300000000745,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 16.607,
+              "time": 16.595400000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 16.595400000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 16.80729999999702,
+              "time": 16.795699999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 16.795699999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 17.00739999999851,
+              "time": 16.995800000000745,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 16.995800000000745,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 17.22339999999851,
+              "time": 17.211800000000743,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 17.211800000000743,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 17.440199999999255,
+              "time": 17.428600000001488,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 17.428600000001488,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 17.64039999999851,
+              "time": 17.628800000000744,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 17.628800000000744,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 17.857,
+              "time": 17.845400000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 17.845400000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 18.074699999999254,
+              "time": 18.06310000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 18.06310000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 18.290199999999256,
+              "time": 18.27860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 18.27860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 18.491199999999257,
+              "time": 18.47960000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 18.47960000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 18.707099999997766,
+              "time": 18.6955,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 18.6955,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 18.9235,
+              "time": 18.911900000002234,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 18.911900000002234,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 19.12429999999702,
+              "time": 19.112699999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 19.112699999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 19.340199999999253,
+              "time": 19.32860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 19.32860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 19.540199999999256,
+              "time": 19.52860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 19.52860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 19.74029999999702,
+              "time": 19.728699999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 19.728699999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 19.957199999999254,
+              "time": 19.945600000001487,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 19.945600000001487,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 20.173599999997766,
+              "time": 20.162,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 20.162,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 20.390199999999254,
+              "time": 20.378600000001487,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 20.378600000001487,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 20.607,
+              "time": 20.595400000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 20.595400000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 20.8235,
+              "time": 20.811900000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 20.811900000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 21.023599999997764,
+              "time": 21.012,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 21.012,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 21.223599999997766,
+              "time": 21.211900000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 21.211900000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 21.44029999999702,
+              "time": 21.428600000001488,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 21.428600000001488,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 21.657,
+              "time": 21.645400000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 21.645400000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 21.87429999999702,
+              "time": 21.862699999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 21.862699999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 22.090199999999253,
+              "time": 22.07860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 22.07860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 22.29039999999851,
+              "time": 22.278699999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 22.278699999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 22.507,
+              "time": 22.495400000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 22.495400000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 22.72379999999702,
+              "time": 22.712199999999253,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 22.712199999999253,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 22.940199999999255,
+              "time": 22.928600000001488,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 22.928600000001488,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 23.157099999997765,
+              "time": 23.1455,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 23.1455,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 23.373599999997765,
+              "time": 23.362,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 23.362,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 23.573699999999256,
+              "time": 23.56210000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 23.56210000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 23.774199999999254,
+              "time": 23.762600000001488,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 23.762600000001488,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 23.974699999999256,
+              "time": 23.962999999999997,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 23.962999999999997,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 24.191199999999256,
+              "time": 24.179499999999997,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 24.179499999999997,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 24.40679999999702,
+              "time": 24.395199999999253,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 24.395199999999253,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 24.607,
+              "time": 24.595400000002236,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 24.595400000002236,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 24.82439999999851,
+              "time": 24.812800000000742,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 24.812800000000742,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 25.041199999999254,
+              "time": 25.029600000001487,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 25.029600000001487,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 25.257099999997767,
+              "time": 25.2455,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 25.2455,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 25.4735,
+              "time": 25.46190000000223,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 25.46190000000223,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 25.69129999999702,
+              "time": 25.679600000001486,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 25.679600000001486,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 25.90679999999702,
+              "time": 25.89510000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 25.89510000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 26.12339999999851,
+              "time": 26.11180000000074,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 26.11180000000074,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 26.323599999997764,
+              "time": 26.311999999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 26.311999999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 26.52389999999851,
+              "time": 26.512300000000742,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 26.512300000000742,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 26.724,
+              "time": 26.712300000000745,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 26.712300000000745,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 26.940099999997766,
+              "time": 26.928400000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 26.928400000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 27.140199999999254,
+              "time": 27.12860000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 27.12860000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 27.341099999997766,
+              "time": 27.329499999999996,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 27.329499999999996,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 27.557099999997764,
+              "time": 27.545499999999997,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 27.545499999999997,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 27.773599999997764,
+              "time": 27.762,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 27.762,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 27.973699999999255,
+              "time": 27.96210000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 27.96210000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 28.191199999999256,
+              "time": 28.179600000001486,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 28.179600000001486,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 28.4065,
+              "time": 28.39490000000223,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 28.39490000000223,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 28.60679999999702,
+              "time": 28.595199999999252,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 28.595199999999252,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 28.823599999997764,
+              "time": 28.811999999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 28.811999999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 29.023699999999256,
+              "time": 29.01210000000149,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 29.01210000000149,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 29.22389999999851,
+              "time": 29.212199999999257,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 29.212199999999257,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 29.43989999999851,
+              "time": 29.428300000000746,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 29.428300000000746,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 29.657,
+              "time": 29.645400000002233,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 29.645400000002233,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 29.873599999997765,
+              "time": 29.862000000000002,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 29.862000000000002,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 30.073699999999256,
+              "time": 30.062100000001486,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 30.062100000001486,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 30.29029999999702,
+              "time": 30.278699999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 30.278699999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 30.50679999999702,
+              "time": 30.495100000001486,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 30.495100000001486,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 30.72339999999851,
+              "time": 30.711699999999254,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 30.711699999999254,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 30.94,
+              "time": 30.928400000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 30.928400000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 31.140599999997765,
+              "time": 31.128999999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 31.128999999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 31.35779999999702,
+              "time": 31.346199999999257,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 31.346199999999257,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 31.573599999997764,
+              "time": 31.561999999999998,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 31.561999999999998,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 31.79039999999851,
+              "time": 31.778699999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 31.778699999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 32.007,
+              "time": 31.995300000000746,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 31.995300000000746,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 32.22339999999851,
+              "time": 32.21180000000074,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 32.21180000000074,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 32.44009999999776,
+              "time": 32.4285,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 32.4285,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 32.656,
+              "time": 32.644400000002236,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 32.644400000002236,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 32.85689999999851,
+              "time": 32.84530000000074,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 32.84530000000074,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 33.0735,
+              "time": 33.06190000000223,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 33.06190000000223,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 33.27369999999925,
+              "time": 33.262,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 33.262,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 33.48979999999702,
+              "time": 33.478199999999255,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 33.478199999999255,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 33.69019999999926,
+              "time": 33.6785,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 33.6785,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 33.891,
+              "time": 33.879400000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 33.879400000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 34.10679999999702,
+              "time": 34.09519999999925,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 34.09519999999925,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 34.307,
+              "time": 34.29540000000223,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 34.29540000000223,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 34.5235,
+              "time": 34.511900000002235,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 34.511900000002235,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 34.7245,
+              "time": 34.712900000002236,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 34.712900000002236,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 34.94009999999776,
+              "time": 34.9285,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 34.9285,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 35.140699999999256,
+              "time": 35.129,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 35.129,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 35.35679999999702,
+              "time": 35.34519999999925,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 35.34519999999925,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 35.557,
+              "time": 35.54540000000223,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 35.54540000000223,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 35.65719999999926,
+              "time": 0.00549999999999784,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.00549999999999784,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            },
+            {
+              "elapsedWall": 35.8735,
+              "time": 0.21630000000075,
+              "playing": true,
+              "sources": [
+                {
+                  "clip": "bgm_city",
+                  "playing": true,
+                  "time": 0.21630000000075,
+                  "volume": 0.22
+                },
+                {
+                  "clip": null,
+                  "playing": false,
+                  "time": 0,
+                  "volume": 0
+                }
+              ],
+              "region": "bgm_city"
+            }
+          ]
+        },
+        "events": [
+          {
+            "type": "started",
+            "channel": "music",
+            "clip": "bgm_city",
+            "source": "Music:0",
+            "at": 7609.5,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_wood_1",
+            "source": "Sfx:0",
+            "at": 7626.400000002235,
+            "time": 0.00010000000149013033,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_wood_1",
+            "source": "Sfx:0",
+            "at": 7926.699999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_wood_2",
+            "source": "Sfx:1",
+            "at": 7943.199999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_wood_2",
+            "source": "Sfx:1",
+            "at": 8246.5,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_wood_3",
+            "source": "Sfx:0",
+            "at": 8260.300000000745,
+            "time": 0.00010000000149013033,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_wood_3",
+            "source": "Sfx:0",
+            "at": 8561.10000000149,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_1",
+            "source": "Sfx:1",
+            "at": 8577.5,
+            "time": 0.00009999999776333368,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_1",
+            "source": "Sfx:1",
+            "at": 8867.199999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_2",
+            "source": "Sfx:0",
+            "at": 8877.60000000149,
+            "time": 0.00010000000149013033,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_2",
+            "source": "Sfx:0",
+            "at": 9167.800000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_3",
+            "source": "Sfx:1",
+            "at": 9177,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_3",
+            "source": "Sfx:1",
+            "at": 9467.300000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_1",
+            "source": "Sfx:0",
+            "at": 9476.300000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_1",
+            "source": "Sfx:0",
+            "at": 9767.10000000149,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_2",
+            "source": "Sfx:1",
+            "at": 9777.60000000149,
+            "time": 0.00010000000149013033,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_2",
+            "source": "Sfx:1",
+            "at": 10067.199999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_3",
+            "source": "Sfx:0",
+            "at": 10076.900000002235,
+            "time": 0.00010000000149013033,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_3",
+            "source": "Sfx:0",
+            "at": 10367.199999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_1",
+            "source": "Sfx:1",
+            "at": 10377.10000000149,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_1",
+            "source": "Sfx:1",
+            "at": 10667.60000000149,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_2",
+            "source": "Sfx:0",
+            "at": 10677.60000000149,
+            "time": 0.00010000000149013033,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_2",
+            "source": "Sfx:0",
+            "at": 10968.5,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_soft_3",
+            "source": "Sfx:1",
+            "at": 10976.300000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_soft_3",
+            "source": "Sfx:1",
+            "at": 11267.199999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_ice_1",
+            "source": "Sfx:0",
+            "at": 11276.800000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_ice_1",
+            "source": "Sfx:0",
+            "at": 11627.5,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_ice_2",
+            "source": "Sfx:1",
+            "at": 11644.800000000745,
+            "time": 0.00010000000149013033,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_ice_2",
+            "source": "Sfx:1",
+            "at": 11995.199999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_ice_3",
+            "source": "Sfx:0",
+            "at": 12009.60000000149,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_ice_3",
+            "source": "Sfx:0",
+            "at": 12360.699999999255,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_heavy_1",
+            "source": "Sfx:1",
+            "at": 12377.300000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_heavy_1",
+            "source": "Sfx:1",
+            "at": 12858.300000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_heavy_2",
+            "source": "Sfx:0",
+            "at": 12860.60000000149,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_heavy_2",
+            "source": "Sfx:0",
+            "at": 13341.5,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "started",
+            "channel": "sfx",
+            "clip": "impact_heavy_3",
+            "source": "Sfx:1",
+            "at": 13343.300000000745,
+            "time": 0,
+            "playing": true
+          },
+          {
+            "type": "ended",
+            "channel": "sfx",
+            "clip": "impact_heavy_3",
+            "source": "Sfx:1",
+            "at": 13823.400000002235,
+            "time": 0,
+            "playing": true
+          }
+        ],
+        "notProven": [
+          "新物体音效均由自然碰撞触发",
+          "循环接缝主观听感",
+          "手机或微信音频行为"
+        ]
+      },
+      "finishedAt": "2026-09-14T07:03:20.725Z",
+      "engineErrors": []
+    }
+  ],
+  "state": {
+    "scene": "HUD",
+    "engine": "3.8.8",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "game": {
+      "phase": "planning",
+      "releases": 0,
+      "placed": 0,
+      "peakMetres": 0,
+      "stars": 3,
+      "incidentCount": 0,
+      "incident": null,
+      "recoverySeconds": 0,
+      "failureReason": null,
+      "normalBoundary": {
+        "top": 574.8571428571429,
+        "bottom": -187.42857142857142,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "safety": {
+        "enabled": true,
+        "boundary": {
+          "top": 574.8571428571429,
+          "bottom": -187.42857142857142,
+          "left": -214.28571428571428,
+          "right": 214.28571428571428
+        },
+        "confirmedTop": 0,
+        "assistanceEnabled": true,
+        "maxAssistDamping": 8,
+        "filteredContacts": 0,
+        "pendingSupportReturns": 0,
+        "detachGraceSeconds": 0.12,
+        "fallSeconds": 0.12,
+        "fallSpeed": -0.75,
+        "collapseTrend": false,
+        "remainingStable": true,
+        "bodies": [
+          {
+            "id": 1,
+            "lost": false,
+            "supported": false,
+            "detachedSeconds": 0,
+            "fallingSeconds": 0,
+            "assistDamping": 0,
+            "angularDamping": 1.5
+          }
+        ]
+      },
+      "sequence": [
+        "cardboard_box",
+        "wood_plank",
+        "fridge",
+        "basketball",
+        "wood_plank",
+        "wooden_crate",
+        "sofa",
+        "wood_plank",
+        "slipper",
+        "burger",
+        "wood_plank",
+        "whale",
+        "wood_plank",
+        "toilet",
+        "fridge",
+        "dumbbell",
+        "ice_block",
+        "wood_plank"
+      ],
+      "untimedCalibration": true,
+      "observationSeconds": null,
+      "maxObserveSeconds": 1.5,
+      "placementBlocked": false,
+      "placementTop": 0,
+      "stabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "secondsLeft": 4,
+      "tutorial": false,
+      "paused": false,
+      "boundary": {
+        "top": 485.42857142857144,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428,
+        "bottom": -187.42857142857142
+      },
+      "view": {
+        "scale": 1.75,
+        "originY": -339,
+        "cameraY": 0,
+        "targetCameraY": 0,
+        "width": 750,
+        "height": 1334,
+        "heldTop": 485.42857142857144,
+        "zoom": 1,
+        "zoomTarget": 1,
+        "incidentCamera": false
+      },
+      "music": {
+        "region": "bgm_city",
+        "fading": false,
+        "fade": 1,
+        "gain": 0.22,
+        "paused": true,
+        "enabled": true,
+        "issues": [],
+        "sources": [
+          {
+            "clip": "bgm_city",
+            "playing": false,
+            "time": 0.36739999999851136,
+            "volume": 0.22
+          },
+          {
+            "clip": null,
+            "playing": false,
+            "time": 0,
+            "volume": 0
+          }
+        ]
+      },
+      "audioClips": 33,
+      "currentId": 1,
+      "bodies": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "position": {
+            "x": 0,
+            "y": 435.4285583496094,
+            "z": 0
+          },
+          "angle": 0,
+          "size": [
+            100.912779,
+            100
+          ],
+          "physicsAxis": {
+            "x": 1,
+            "y": 0
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "angularVelocity": 0,
+          "mass": 0,
+          "awake": false,
+          "contacts": 0,
+          "contactSeconds": null,
+          "lost": false,
+          "supported": false,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "placed": false,
+          "type": 1,
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bounds": {
+            "left": -50.456389,
+            "right": 50.456389,
+            "bottom": 385.4285583496094,
+            "top": 485.4285583496094
+          }
+        }
+      ]
+    }
+  }
+}

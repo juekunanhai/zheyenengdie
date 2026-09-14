@@ -1,0 +1,23 @@
+{
+  "revision": "home-r9",
+  "status": "passed_scoped_home_checks",
+  "checks": [
+    "375x667 visual comparison",
+    "375x812 visual comparison and resize",
+    "Home->Settings->Home actual clicks",
+    "Home->HUD actual start click",
+    "independent cloud movement with stable other nodes",
+    "TypeScript noEmit skipLibCheck",
+    "Creator build exit36",
+    "source integrity55 images,4 scenes,7 gameplay scripts,2 presentation scripts"
+  ],
+  "known_console_event": "One MutationObserver.observe error without source URL; source not confirmed, absent from searched served build/scripts.",
+  "not_verified": [
+    "WeChat",
+    "real-device safe area",
+    "background/resume",
+    "reduced motion",
+    "full physics regression after this visual-only change"
+  ],
+  "review": "preparation/design/R9/ENGINE_INTEGRATION.md"
+}

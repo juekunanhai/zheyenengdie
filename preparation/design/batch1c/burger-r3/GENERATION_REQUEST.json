@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "source": "reference-burger-r2.png",
+  "purpose": "Only visible lower bread footprint; preserve R2 upper bread and ingredients; mass 3.2 and existing material parameters.",
+  "prompt": "Use case: precise-object-edit. Asset type: finished transparent game Sprite. The attached image is the locked R2 hamburger edit target. It already has the correct flattened upper sesame bun.\nModify ONLY the LOWER orange bread bun. Give its actual lowest outside silhouette a wide perfectly HORIZONTAL flat base, 70 percent of the lower bun width (about 62 percent of the whole hamburger width). Connect this flat underside to the existing sides through small smooth rounded corners. The target is a visible level 75–85-unit footprint on a hamburger 130 units wide. The bread should look softly compressed from its own weight, with polished golden-orange crust, a gently shaded lower edge and soft rounded corner volume. Keep the lower bun's top behind lettuce/cheese at its existing position, keep its full width, and keep roughly its existing thickness. Do NOT add feet, a plate, a cutting board, a pedestal or any separate supporting object. The bread itself forms the broad level bottom, not a drawn horizontal line across its face, not a dome or elliptical bottom.\nPreserve the entire upper sesame bun and its flat top, all sesame seeds, green lettuce, red tomato, yellow cheese with central hanging corner, brown patty, their shading, arrangement and outlines. No face, character additions, words, labels or UI. Keep the same warm colorful tactile 2.5D playful game style and materials, not photorealistic product advertising. Do not stretch the whole hamburger, change its width or redraw the upper silhouette.\nEntire object complete with small clear margin. Genuine transparent RGBA alpha outside object, no checkerboard painted into pixels, no white or black background and no ground shadow.",
+  "status": "generated_and_locally_composited; final_candidate_frozen",
+  "reference_sha256": "0643bc448408a4211ca45e5c755d325deff336ff9e0aecaf0962d473b565d664",
+  "generated_output": "generated-original.png",
+  "generated_output_sha256": "680ccdebe024e5d6403389a972bce979173fe161691d0f2735da36e7a613accc",
+  "final_sprite_sha256": "5c072d91000b01eb1e16af9a01bbd3cafa8922e1a94fcedd4abb109c97937d89",
+  "local_composition": "prepare.py; preserve original rows 0–219 exactly; blend orange bread only in rows 220–227; lower strip from generated pixels",
+  "preparation_script_sha256": "a9b245509609f1b6aad876b30a21508fed6b4271dd9f3ab7e7ed3ed32d500ea2"
+}

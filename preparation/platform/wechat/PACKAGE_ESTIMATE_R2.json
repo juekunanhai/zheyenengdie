@@ -1,0 +1,160 @@
+{
+  "status": "estimate_only_no_build_config_or_outputs_changed",
+  "method": "Exclude existing assets/main as an estimate of the built-in main bundle moved to subpackages/main, then format-only minify remaining JavaScript in memory with installed Cocos Terser; compress=false,mangle=false,comments=false. This is NOT the WeChat developer-tool packer or its measured package size.",
+  "tool_asar_path": "node_modules/@cocos/rollup-plugin-terser/node_modules/terser/dist/bundle.min.js",
+  "tool_sha256": "2d247323f13ef750ed5889901342d0a5cd34e58c33e3f67e8ce24519b54d84c9",
+  "raw_non_main_bundle_bytes": 4839723,
+  "format_only_non_main_bundle_bytes": 3311463,
+  "rows": [
+    {
+      "path": "application.js",
+      "raw_bytes": 3300,
+      "format_only_bytes": 2307,
+      "sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2"
+    },
+    {
+      "path": "assets/internal/config.json",
+      "raw_bytes": 5246,
+      "format_only_bytes": 5246,
+      "sha256": "c195765619ae3c8c4ae2490e6692999c4dc6df2c6aaa419fe4dd6419a06b57e0"
+    },
+    {
+      "path": "assets/internal/import/0b/0b0f7a282.json",
+      "raw_bytes": 117182,
+      "format_only_bytes": 117182,
+      "sha256": "51bd7169f3884c82d4306d4fd78488d00e7b3b417c01421ad5007ab9b801abb6"
+    },
+    {
+      "path": "assets/internal/index.js",
+      "raw_bytes": 103562,
+      "format_only_bytes": 69727,
+      "sha256": "d842bf596127320ad8cd42ce506a2817cd8a6402fbec6735e6b13af359a40757"
+    },
+    {
+      "path": "cocos-js/_virtual_cc-D0SNvGsQ.js",
+      "raw_bytes": 3979898,
+      "format_only_bytes": 2606346,
+      "sha256": "19fd1cc47c8aeb882c1dfd61aa4c857afb3487d39d4f33608d8e98740d9fe32f"
+    },
+    {
+      "path": "cocos-js/assets/box2d.release.wasm-FOUq4jPK.wasm",
+      "raw_bytes": 179504,
+      "format_only_bytes": 179504,
+      "sha256": "a066ae3080af280f8c09fe5e872f69a219e1c4e017f351064852482ef52954ff"
+    },
+    {
+      "path": "cocos-js/box2d.release.asm-DCm5O5Fz.js",
+      "raw_bytes": 188,
+      "format_only_bytes": 150,
+      "sha256": "65d0d5dd35d1cf1a7e15e680b5cc36cf72876e6e9c4eae43ec6e12c4b5b713f1"
+    },
+    {
+      "path": "cocos-js/box2d.release.wasm-Czb_OePo.js",
+      "raw_bytes": 234,
+      "format_only_bytes": 173,
+      "sha256": "e08c07d960c4170ca9e23348473beba133f41466c7aa54ef040c8ed60c25bfbc"
+    },
+    {
+      "path": "cocos-js/box2d.release.wasm-DpZzCH_G.js",
+      "raw_bytes": 97584,
+      "format_only_bytes": 61734,
+      "sha256": "624fd39afe695258d58f97cee3566e7c1e91cdf14e34f192e67196a1e757c389"
+    },
+    {
+      "path": "cocos-js/cc.js",
+      "raw_bytes": 10580,
+      "format_only_bytes": 9686,
+      "sha256": "ef00e5fcbd35beacf15e1efa258d82424fbe2b9e9d5b4cc23ec86295d88c944c"
+    },
+    {
+      "path": "engine-adapter.js",
+      "raw_bytes": 47799,
+      "format_only_bytes": 32238,
+      "sha256": "9092bee3da699f98dffb7b9eee1ee937532021ee5e7b00ee64e81c3bc60175d7"
+    },
+    {
+      "path": "first-screen.js",
+      "raw_bytes": 18364,
+      "format_only_bytes": 14478,
+      "sha256": "ff5e1afcc7ffcf0bb11f343107cee2b300c13c9c2314ca55333cb86a58c6097c"
+    },
+    {
+      "path": "game.js",
+      "raw_bytes": 2522,
+      "format_only_bytes": 1719,
+      "sha256": "32a997ceb72b71efbc26553d820d1a2de26115a5b00ac48917351ca5ab68c5a3"
+    },
+    {
+      "path": "game.json",
+      "raw_bytes": 186,
+      "format_only_bytes": 186,
+      "sha256": "3a34225ebbeadbe9f6973fa0406c33ccf3f77c892f4f50a0f7104709d8ecc0d0"
+    },
+    {
+      "path": "logo.png",
+      "raw_bytes": 14496,
+      "format_only_bytes": 14496,
+      "sha256": "9e6a5832c6bc9c5f2da97dc54d916fd257a6ab35e9ffd57dbe88c435bd535940"
+    },
+    {
+      "path": "project.config.json",
+      "raw_bytes": 1271,
+      "format_only_bytes": 1271,
+      "sha256": "5b237eeaa59c2fbf8824071449fa97efa1c3fdc5bfb98bdb399e164d37188951"
+    },
+    {
+      "path": "project.private.config.json",
+      "raw_bytes": 594,
+      "format_only_bytes": 594,
+      "sha256": "f501c930d5e386928d493d2440b6425d114603146c28cb83a0b976b6653579a0"
+    },
+    {
+      "path": "slogan.png",
+      "raw_bytes": 11482,
+      "format_only_bytes": 11482,
+      "sha256": "b3113554f80c03f9ce51d12ea7c17d68bf7914b89d092743cc54cd370d7f65a9"
+    },
+    {
+      "path": "src/chunks/bundle.js",
+      "raw_bytes": 6252,
+      "format_only_bytes": 4542,
+      "sha256": "92831b609777e6bc4bf4a3e5aea1d85604e8fd4ebe9e7e2b5471a019d2aa421c"
+    },
+    {
+      "path": "src/effect.bin",
+      "raw_bytes": 5755,
+      "format_only_bytes": 5755,
+      "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556"
+    },
+    {
+      "path": "src/import-map.js",
+      "raw_bytes": 210,
+      "format_only_bytes": 174,
+      "sha256": "f3cf39bc861d3a2ffd0bfc7d2e7df4397e54d13f71d3f74fbe213219e728bbdc"
+    },
+    {
+      "path": "src/polyfills.bundle.js",
+      "raw_bytes": 8394,
+      "format_only_bytes": 8393,
+      "sha256": "cb588d11797e0ca56123d979812db39c8b38dd01c5a6761b2aa5f79cb1d4c701"
+    },
+    {
+      "path": "src/settings.json",
+      "raw_bytes": 1975,
+      "format_only_bytes": 1975,
+      "sha256": "b45327dca89ac0bdb06a3979ed70f96ac14567ea530587c33075fb9207aecbf7"
+    },
+    {
+      "path": "src/system.bundle.js",
+      "raw_bytes": 27303,
+      "format_only_bytes": 15889,
+      "sha256": "f1bf370e6df5bf58763175b5135fc999c0b09e9a1b75f42e19eb37678c84c157"
+    },
+    {
+      "path": "web-adapter.js",
+      "raw_bytes": 195842,
+      "format_only_bytes": 146216,
+      "sha256": "0dd8288b84eaee879dbdaa5bf8f64177d87c4f15f34eecfad6c70f16f8fc2c6b"
+    }
+  ]
+}

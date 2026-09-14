@@ -1,0 +1,26 @@
+											168 tab (selected) Description: 调试器 - Errors: 2, Warnings: 4, Value: 1
+																		222 container Warning [Deprecation] SharedArrayBuffer will require cross-origin isolation as of M92, around July 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details. Error [jsbridge] invoke getSystemInfo fail: jsbridge not ready. Error: jsbridge not ready at Object.invoke (http://127.0.0.1:13142/game/__dev__/WAGame.js:1:135678) at d (http://127.0.0.1:13142/game/__dev__/WAGame.js:1:795720) at http://127.0.0.1:13142/game/__dev__/WAGame.js:1:801675 at se (http://127.0.0.1:13142/game/__
+																			230 container Error [jsbridge] invoke getSystemInfo fail: jsbridge not ready. Error: jsbridge not ready at Object.invoke (http://127.0.0.1:13142/game/__dev__/WAGame.js:1:135678) at d (http://127.0.0.1:13142/game/__dev__/WAGame.js:1:795720) at http://127.0.0.1:13142/game/__dev__/WAGame.js:1:801675 at se (http://127.0.0.1:13142/game/__dev__/WAGame.js:1:801826) at http://127.0.0.1:13142/game/__dev__/WAGame.js:1:509272 at x (http://127.0.0.1:13142/game/__dev__/WAGame.js:1:509340) at http://127.0.0.1:13142/game/__dev__/WAGame
+																					233 text [jsbridge] invoke getSystemInfo fail: jsbridge not ready. Error: jsbridge not ready
+																					263 text ) (env: macOS,mg,2.01.2510290; lib: 3.17.2)
+																			264 container Wechat Lib:3.17.2, 2026.9.8 20:10:23
+																				265 文本 Wechat Lib:3.17.2, 2026.9.8 20:10:23
+																			266 container Error [] Cannot read property 'indexOf' of undefined TypeError: Cannot read property 'indexOf' of undefined at K (/Applications/wechatwebdevtools.app/Contents/Resources/package.nw/core.wxvpkg/b7dcb8a….js:2:9773) at /Applications/wechatwebdevtools.app/Contents/Resources/package.nw/core.wxvpkg/b7dcb8a….js:2:11643 (env: macOS,mg,2.01.2510290; lib: 3.17.2)
+																					269 文本 [] Cannot read property 'indexOf' of undefined
+TypeError: Cannot read property 'indexOf' of undefined
+																					281 text :11643 (env: macOS,mg,2.01.2510290; lib: 3.17.2)
+																			316 row Warning _virtual_cc-D0SNvGsQ.js:1170 Failed to set shading scale, pipelineSceneData is invalid.
+																					319 container _virtual_cc-D0SNvGsQ.js:1170 Failed to set shading scale, pipelineSceneData is invalid.
+																						322 文本 Failed to set shading scale, pipelineSceneData is invalid.
+																			323 row Warning web-adapter.js? [sm]:4606 Read json failed: path: http://usr/gamecaches/cacheList.json message: readFileSync:fail no such file or directory http://usr/gamecaches/cacheList.json
+																					326 container web-adapter.js? [sm]:4606 Read json failed: path: http://usr/gamecaches/cacheList.json message: readFileSync:fail no such file or directory http://usr/gamecaches/cacheList.json
+																						330 链接 http://usr/gamecaches/cacheList.json
+																							331 文本 http://usr/gamecaches/cacheList.json
+																						333 链接 http://usr/gamecaches/cacheList.json
+																							334 文本 http://usr/gamecaches/cacheList.json
+																			340 container [box2d]:box2d wasm lib loaded.
+																				341 文本 [box2d]:box2d wasm lib loaded.
+																			342 container [PHYSICS2D]: register box2d-wasm.
+																				343 文本 [PHYSICS2D]: register box2d-wasm.
+																			349 container Cocos Creator v3.8.8
+																				350 文本 Cocos Creator v3.8.8

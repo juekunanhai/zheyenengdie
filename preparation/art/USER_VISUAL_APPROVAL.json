@@ -1,0 +1,56 @@
+{
+  "revision": "2026-09-12-P2",
+  "confirmation": "用户：接受这批素材，继续引擎验收",
+  "scope": "12 个补边/设置组件及其对应 NEXT 外形；仅视觉采用，仍需引擎验证，不授权 Batch 1",
+  "approved_outputs": {
+    "object_cardboard_box": {
+      "output": "art/edge-candidates/objects/object_cardboard_box.png",
+      "sha256": "ca9f234068ae645f793c440a0597c8da0a3deef6ac4ce6a3481d6a0f7a11bb00"
+    },
+    "object_wooden_crate": {
+      "output": "art/edge-candidates/objects/object_wooden_crate.png",
+      "sha256": "989cadce507e99ba735a03516caf63f6566ef5818de5c96d8767316d8a80b42d"
+    },
+    "object_fridge": {
+      "output": "art/edge-candidates/objects/object_fridge.png",
+      "sha256": "dc5656504b62f7895ed30cd7c3245e5ca8f256b81a2de6da25735a4b816a0470"
+    },
+    "object_wood_plank": {
+      "output": "art/edge-candidates/objects/object_wood_plank.png",
+      "sha256": "846eb12d425e206dd993d121f946eca25a81b4862236a75858de5795c99a79f3"
+    },
+    "claw_open_mid": {
+      "output": "art/edge-candidates/claw/claw_open_mid.png",
+      "sha256": "5118f2892fd6341495ea2a4bba35af9725ed5355149fe68311d541202b288587"
+    },
+    "claw_open_narrow": {
+      "output": "art/edge-candidates/claw/claw_open_narrow.png",
+      "sha256": "12eb3a5ac7081f3f5f568523707833aa318599a4d7a04315a2d71361651027cf"
+    },
+    "hud_rotate_90": {
+      "output": "art/edge-candidates/hud/hud_rotate_90.png",
+      "sha256": "9c06bbc2d34307ecd6e0dc65d5e498bee1090a8ad411363ec9541fd55facf5f5"
+    },
+    "panel_9slice_light": {
+      "output": "art/edge-candidates/ui/panel_9slice_light.png",
+      "sha256": "4a772aca627a7dc251342417cc339025bc72d2e19e97585c3a7f952387db75ba"
+    },
+    "toast_bubble_plain": {
+      "output": "art/edge-candidates/ui/toast_bubble_plain.png",
+      "sha256": "9bd7e26b15ce9cb3d97220fc1d4d37a1ce4080354c2c42c0d16dcc47093d73f8"
+    },
+    "btn_settings_base": {
+      "output": "art/edge-candidates/ui/btn_settings_base.png",
+      "sha256": "8429eacd0bc03ccc0ee3970e33c4de200546434cbba90be9a026d5780529b593"
+    },
+    "toggle_on": {
+      "output": "art/edge-candidates/ui/toggle_on.png",
+      "sha256": "1854a564b1bce2cdc4de438a277e757ffd931a138e46a1f33377f8987ad8cb8a"
+    },
+    "toggle_off": {
+      "output": "art/edge-candidates/ui/toggle_off.png",
+      "sha256": "eb0486b00b7f76f7bbcfe958cbe7d3e5e902fec48a99ff420cec25d9d2d8c4c4"
+    }
+  },
+  "audio": "User has not listened; keep all audio as candidates"
+}

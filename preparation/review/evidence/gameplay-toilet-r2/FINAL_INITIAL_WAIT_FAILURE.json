@@ -1,0 +1,1076 @@
+{
+  "status": "failed_or_incomplete",
+  "createdAt": "2026-09-13T09:23:02.848Z",
+  "geometry": {
+    "slug": "toilet",
+    "name": "马桶",
+    "candidate_status": "self_checked_contour_pending_runtime_physics",
+    "formal_source_size_world": [
+      85,
+      115
+    ],
+    "size_selection": "115 world units for simplified bearing-outline height; whole raster is mapped uniformly, never anisotropically stretched. Original formal scale untouched.",
+    "width": 150.900515,
+    "height": 115,
+    "spriteWidth": 154.64837,
+    "spriteHeight": 118.5506,
+    "spriteOffset": [
+      0.098628,
+      0
+    ],
+    "sprite_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/gameplay-toilet-r2/candidate-b/assets/object_toilet.png",
+    "next_path": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/gameplay-toilet-r2/candidate-b/assets/next_toilet.png",
+    "outline": [
+      [
+        -74.266724,
+        54.738422
+      ],
+      [
+        -75.450257,
+        51.582333
+      ],
+      [
+        -74.858491,
+        46.848199
+      ],
+      [
+        -72.096913,
+        44.875643
+      ],
+      [
+        -70.518868,
+        18.837907
+      ],
+      [
+        -67.165523,
+        -1.084906
+      ],
+      [
+        -63.417667,
+        -7.791595
+      ],
+      [
+        -57.697256,
+        -9.764151
+      ],
+      [
+        -55.7247,
+        -12.722985
+      ],
+      [
+        -52.174099,
+        -16.668096
+      ],
+      [
+        -48.031732,
+        -22.191252
+      ],
+      [
+        -46.256432,
+        -28.897942
+      ],
+      [
+        -47.637221,
+        -34.421098
+      ],
+      [
+        -50.596055,
+        -40.141509
+      ],
+      [
+        -56.119211,
+        -44.678388
+      ],
+      [
+        -63.023156,
+        -47.834477
+      ],
+      [
+        -66.573756,
+        -51.187822
+      ],
+      [
+        -67.75729,
+        -55.921955
+      ],
+      [
+        -64.601201,
+        -57.5
+      ],
+      [
+        64.009434,
+        -57.5
+      ],
+      [
+        67.362779,
+        -54.541166
+      ],
+      [
+        65.192967,
+        -49.01801
+      ],
+      [
+        59.078045,
+        -45.46741
+      ],
+      [
+        56.316467,
+        -41.127787
+      ],
+      [
+        54.738422,
+        -35.21012
+      ],
+      [
+        56.513722,
+        -32.054031
+      ],
+      [
+        63.417667,
+        -28.503431
+      ],
+      [
+        68.546312,
+        -24.163808
+      ],
+      [
+        72.294168,
+        -17.654374
+      ],
+      [
+        74.463979,
+        -9.566895
+      ],
+      [
+        75.450257,
+        -1.282161
+      ],
+      [
+        73.280446,
+        2.465695
+      ],
+      [
+        67.560034,
+        4.43825
+      ],
+      [
+        24.95283,
+        4.43825
+      ],
+      [
+        22.585763,
+        4.240995
+      ],
+      [
+        26.530875,
+        46.256432
+      ],
+      [
+        28.108919,
+        51.779588
+      ],
+      [
+        26.925386,
+        55.330189
+      ],
+      [
+        21.993997,
+        57.5
+      ],
+      [
+        -68.940823,
+        57.5
+      ]
+    ],
+    "outline_winding": "counter_clockwise",
+    "outline_area_world_squared": 12757.985564,
+    "source_outline_px": [
+      [
+        42,
+        9
+      ],
+      [
+        503,
+        9
+      ],
+      [
+        528,
+        20
+      ],
+      [
+        534,
+        38
+      ],
+      [
+        526,
+        66
+      ],
+      [
+        506,
+        279
+      ],
+      [
+        518,
+        278
+      ],
+      [
+        734,
+        278
+      ],
+      [
+        763,
+        288
+      ],
+      [
+        774,
+        307
+      ],
+      [
+        769,
+        349
+      ],
+      [
+        758,
+        390
+      ],
+      [
+        739,
+        423
+      ],
+      [
+        713,
+        445
+      ],
+      [
+        678,
+        463
+      ],
+      [
+        669,
+        479
+      ],
+      [
+        677,
+        509
+      ],
+      [
+        691,
+        531
+      ],
+      [
+        722,
+        549
+      ],
+      [
+        733,
+        577
+      ],
+      [
+        716,
+        592
+      ],
+      [
+        64,
+        592
+      ],
+      [
+        48,
+        584
+      ],
+      [
+        54,
+        560
+      ],
+      [
+        72,
+        543
+      ],
+      [
+        107,
+        527
+      ],
+      [
+        135,
+        504
+      ],
+      [
+        150,
+        475
+      ],
+      [
+        157,
+        447
+      ],
+      [
+        148,
+        413
+      ],
+      [
+        127,
+        385
+      ],
+      [
+        109,
+        365
+      ],
+      [
+        99,
+        350
+      ],
+      [
+        70,
+        340
+      ],
+      [
+        51,
+        306
+      ],
+      [
+        34,
+        205
+      ],
+      [
+        26,
+        73
+      ],
+      [
+        12,
+        63
+      ],
+      [
+        9,
+        39
+      ],
+      [
+        15,
+        23
+      ]
+    ],
+    "pixel_to_world": 0.19725557461406518,
+    "visual_alpha128_bounds_px": [
+      9,
+      9,
+      775,
+      592
+    ],
+    "physics_contact_material": "ceramic",
+    "measurements": {
+      "high_plateau": {
+        "pixel_segment": [
+          [
+            42,
+            9
+          ],
+          [
+            503,
+            9
+          ]
+        ],
+        "width_world": 90.93482,
+        "x_world": [
+          -68.940823,
+          21.993997
+        ],
+        "y_world": 57.5
+      },
+      "low_plateau": {
+        "pixel_segment": [
+          [
+            518,
+            278
+          ],
+          [
+            734,
+            278
+          ]
+        ],
+        "width_world": 42.607204,
+        "x_world": [
+          24.95283,
+          67.560034
+        ],
+        "y_world": 4.43825
+      },
+      "foot": {
+        "pixel_segment": [
+          [
+            64,
+            592
+          ],
+          [
+            716,
+            592
+          ]
+        ],
+        "width_world": 128.610635,
+        "x_world": [
+          -64.601201,
+          64.009434
+        ],
+        "y_world": -57.5
+      },
+      "step_height_world": 53.06175
+    },
+    "notes": "Broad tank exterior top crosses center; integrated broad foot reaches beneath it. Separate lower seat and under-bowl concavities remain real. The high bearing edge follows an actual horizontal alpha row; no broad invisible shelf or convex fill is added."
+  },
+  "profiles": [
+    {
+      "id": "r1",
+      "spec": {
+        "kind": "toilet",
+        "width": 89.627937,
+        "height": 115,
+        "circle": false,
+        "spriteWidth": 92.330287,
+        "spriteHeight": 117.70235,
+        "spriteOffset": [
+          0,
+          0
+        ],
+        "outline": [
+          [
+            -41.811358,
+            55.248042
+          ],
+          [
+            -44.813969,
+            52.395561
+          ],
+          [
+            -44.663838,
+            46.690601
+          ],
+          [
+            -42.862272,
+            45.789817
+          ],
+          [
+            -41.811358,
+            1.651436
+          ],
+          [
+            -39.70953,
+            -3.753264
+          ],
+          [
+            -35.656005,
+            -6.155352
+          ],
+          [
+            -35.055483,
+            -9.007833
+          ],
+          [
+            -32.803525,
+            -13.211488
+          ],
+          [
+            -23.945822,
+            -18.315927
+          ],
+          [
+            -19.742167,
+            -26.723238
+          ],
+          [
+            -17.340078,
+            -34.980418
+          ],
+          [
+            -16.289164,
+            -42.036554
+          ],
+          [
+            -17.940601,
+            -46.990862
+          ],
+          [
+            -21.393603,
+            -52.0953
+          ],
+          [
+            -21.543734,
+            -55.398172
+          ],
+          [
+            -18.541123,
+            -57.5
+          ],
+          [
+            29.050261,
+            -57.5
+          ],
+          [
+            32.203003,
+            -55.398172
+          ],
+          [
+            32.203003,
+            -52.545692
+          ],
+          [
+            30.251305,
+            -48.792428
+          ],
+          [
+            24.546345,
+            -37.983029
+          ],
+          [
+            23.19517,
+            -29.125326
+          ],
+          [
+            33.554178,
+            -22.969974
+          ],
+          [
+            40.610313,
+            -15.463446
+          ],
+          [
+            44.363577,
+            -6.755875
+          ],
+          [
+            44.663838,
+            3.753264
+          ],
+          [
+            41.961488,
+            7.806789
+          ],
+          [
+            27.849217,
+            9.908616
+          ],
+          [
+            -6.080287,
+            9.908616
+          ],
+          [
+            -9.833551,
+            7.656658
+          ],
+          [
+            -9.833551,
+            45.939948
+          ],
+          [
+            -8.031984,
+            49.39295
+          ],
+          [
+            -8.782637,
+            55.097911
+          ],
+          [
+            -12.38577,
+            57.5
+          ],
+          [
+            -34.905352,
+            57.5
+          ]
+        ],
+        "friction": 0.62,
+        "restitution": 0.015,
+        "density": 0.9
+      },
+      "artPath": "preparation/design/gameplay-shapes/assets/object_toilet.png",
+      "nextPath": "preparation/design/gameplay-shapes/assets/next_toilet.png"
+    },
+    {
+      "id": "r2",
+      "spec": {
+        "kind": "toilet",
+        "width": 150.900515,
+        "height": 115,
+        "circle": false,
+        "spriteWidth": 154.64837,
+        "spriteHeight": 118.5506,
+        "spriteOffset": [
+          0.098628,
+          0
+        ],
+        "outline": [
+          [
+            -74.266724,
+            54.738422
+          ],
+          [
+            -75.450257,
+            51.582333
+          ],
+          [
+            -74.858491,
+            46.848199
+          ],
+          [
+            -72.096913,
+            44.875643
+          ],
+          [
+            -70.518868,
+            18.837907
+          ],
+          [
+            -67.165523,
+            -1.084906
+          ],
+          [
+            -63.417667,
+            -7.791595
+          ],
+          [
+            -57.697256,
+            -9.764151
+          ],
+          [
+            -55.7247,
+            -12.722985
+          ],
+          [
+            -52.174099,
+            -16.668096
+          ],
+          [
+            -48.031732,
+            -22.191252
+          ],
+          [
+            -46.256432,
+            -28.897942
+          ],
+          [
+            -47.637221,
+            -34.421098
+          ],
+          [
+            -50.596055,
+            -40.141509
+          ],
+          [
+            -56.119211,
+            -44.678388
+          ],
+          [
+            -63.023156,
+            -47.834477
+          ],
+          [
+            -66.573756,
+            -51.187822
+          ],
+          [
+            -67.75729,
+            -55.921955
+          ],
+          [
+            -64.601201,
+            -57.5
+          ],
+          [
+            64.009434,
+            -57.5
+          ],
+          [
+            67.362779,
+            -54.541166
+          ],
+          [
+            65.192967,
+            -49.01801
+          ],
+          [
+            59.078045,
+            -45.46741
+          ],
+          [
+            56.316467,
+            -41.127787
+          ],
+          [
+            54.738422,
+            -35.21012
+          ],
+          [
+            56.513722,
+            -32.054031
+          ],
+          [
+            63.417667,
+            -28.503431
+          ],
+          [
+            68.546312,
+            -24.163808
+          ],
+          [
+            72.294168,
+            -17.654374
+          ],
+          [
+            74.463979,
+            -9.566895
+          ],
+          [
+            75.450257,
+            -1.282161
+          ],
+          [
+            73.280446,
+            2.465695
+          ],
+          [
+            67.560034,
+            4.43825
+          ],
+          [
+            24.95283,
+            4.43825
+          ],
+          [
+            22.585763,
+            4.240995
+          ],
+          [
+            26.530875,
+            46.256432
+          ],
+          [
+            28.108919,
+            51.779588
+          ],
+          [
+            26.925386,
+            55.330189
+          ],
+          [
+            21.993997,
+            57.5
+          ],
+          [
+            -68.940823,
+            57.5
+          ]
+        ],
+        "friction": 0.62,
+        "restitution": 0.015,
+        "density": 0.4009706917047069
+      },
+      "artPath": "preparation/design/gameplay-toilet-r2/candidate-b/assets/object_toilet.png",
+      "nextPath": "preparation/design/gameplay-toilet-r2/candidate-b/assets/next_toilet.png"
+    }
+  ],
+  "method": {
+    "rule": "Latest user priority: forgiving early placements; no requirement that lateral C policy beat center.",
+    "fixed": "Actual traced PNG outlines; height115, original friction/restitution and total mass fixed. Physical COM/inertia follow geometry. No hidden COM, stabilization, fixed tower, added glue or bounce adjustment.",
+    "matchedOldDiagnostic": {
+      "xs": [
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5
+      ],
+      "kinds": [
+        "cardboard_box",
+        "fridge"
+      ],
+      "countPerProfile": 20
+    },
+    "worldCenterTolerance": {
+      "xs": [
+        -15,
+        -10,
+        -5,
+        0,
+        5,
+        10,
+        15
+      ],
+      "coreXs": [
+        -10,
+        -5,
+        0,
+        5,
+        10
+      ]
+    },
+    "ledgeRelativeTolerance": {
+      "roundedHighCenters": [
+        {
+          "profile": "r1",
+          "x": -25
+        },
+        {
+          "profile": "r2",
+          "x": -25
+        }
+      ],
+      "offsets": [
+        -15,
+        -10,
+        -5,
+        0,
+        5,
+        10,
+        15
+      ],
+      "explanation": "Compare equal offsets from each visible high ledge midpoint, rounded to existing five-unit grid. This is separate from identical world-coordinate comparisons."
+    },
+    "physicalSuccess": "completed=true; toilet abs(angle)<12deg; payload bottom > toilet bottom+50. Falling beside toilet and stopping on base is rejected.",
+    "search": "Only the unchanged H01 two-item sequence is re-searched, both objects visible as current+NEXT, available C actions x0,+/-30 and 0/90/180/270. No extra x values are tuned for new shape. Fixed old chosen actions are reported separately.",
+    "caveat": "80 world-unit synthetic release clearance, continuous stability .65seconds and timeout8seconds as before. Normal six-piece claw placement is separate LIVE_R1/LIVE_R2 evidence. These are diagnostics, not human playtest success rates."
+  },
+  "scan": [],
+  "representatives": [
+    {
+      "id": "paper_old_position",
+      "scenario": {
+        "id": "paper_old_position",
+        "supports": [
+          {
+            "kind": "toilet",
+            "x": 0
+          }
+        ],
+        "sequence": [
+          "cardboard_box"
+        ],
+        "actions": [
+          {
+            "x": -25,
+            "angle": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "x": -25,
+          "angle": 0
+        }
+      ],
+      "results": {}
+    },
+    {
+      "id": "fridge_center",
+      "scenario": {
+        "id": "fridge_center",
+        "supports": [
+          {
+            "kind": "toilet",
+            "x": 0
+          }
+        ],
+        "sequence": [
+          "fridge"
+        ],
+        "actions": [
+          {
+            "x": 0,
+            "angle": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "results": {}
+    },
+    {
+      "id": "fridge_plus10",
+      "scenario": {
+        "id": "fridge_plus10",
+        "supports": [
+          {
+            "kind": "toilet",
+            "x": 0
+          }
+        ],
+        "sequence": [
+          "fridge"
+        ],
+        "actions": [
+          {
+            "x": 10,
+            "angle": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "x": 10,
+          "angle": 0
+        }
+      ],
+      "results": {}
+    }
+  ],
+  "holdouts": [
+    {
+      "id": "H01_existing_dumbbell_bridge",
+      "scenario": {
+        "id": "H01_existing_dumbbell_bridge",
+        "supports": [
+          {
+            "kind": "toilet",
+            "x": 0
+          }
+        ],
+        "sequence": [
+          "dumbbell",
+          "wood_plank"
+        ],
+        "actions": [
+          {
+            "x": 0,
+            "angle": 180
+          },
+          {
+            "x": 0,
+            "angle": 270
+          }
+        ]
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 180
+        },
+        {
+          "x": 0,
+          "angle": 270
+        }
+      ],
+      "results": {}
+    },
+    {
+      "id": "H02_toilet_lands_on_box_plank",
+      "scenario": {
+        "id": "H02_toilet_lands_on_box_plank",
+        "supports": [],
+        "sequence": [
+          "cardboard_box",
+          "wood_plank",
+          "toilet"
+        ],
+        "actions": [
+          {
+            "x": 0,
+            "angle": 0
+          },
+          {
+            "x": 0,
+            "angle": 0
+          },
+          {
+            "x": 0,
+            "angle": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        },
+        {
+          "x": 0,
+          "angle": 0
+        }
+      ],
+      "results": {}
+    },
+    {
+      "id": "H03_lower_lid_ball",
+      "scenario": {
+        "id": "H03_lower_lid_ball",
+        "supports": [
+          {
+            "kind": "toilet",
+            "x": 0
+          }
+        ],
+        "sequence": [
+          "basketball"
+        ],
+        "actions": [
+          {
+            "x": 35,
+            "angle": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "x": 35,
+          "angle": 0
+        }
+      ],
+      "results": {}
+    },
+    {
+      "id": "H04_rotated_toilet_on_box",
+      "scenario": {
+        "id": "H04_rotated_toilet_on_box",
+        "supports": [
+          {
+            "kind": "cardboard_box",
+            "x": 0
+          }
+        ],
+        "sequence": [
+          "toilet"
+        ],
+        "actions": [
+          {
+            "x": 0,
+            "angle": 90
+          }
+        ]
+      },
+      "actions": [
+        {
+          "x": 0,
+          "angle": 90
+        }
+      ],
+      "results": {}
+    }
+  ],
+  "search": [],
+  "summary": {},
+  "checks": [],
+  "sources": {
+    "preparation/design/gameplay-toilet-r2/candidate-b/GEOMETRY.json": "a89f402d03e695c397e53ba563012d882e0c713c138dd524a81ba33feceb6ba5",
+    "preparation/design/gameplay-shapes/assets/object_toilet.png": "32500eda53f586315e288322dce74f76175a3d7c85b61ea152945a06bf7af484",
+    "preparation/design/gameplay-shapes/assets/next_toilet.png": "a3ee37d944204b5edfed319bd2e02f24a893cdbadcd282bbd6d90de37edd98cc",
+    "preparation/design/gameplay-toilet-r2/candidate-b/assets/object_toilet.png": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c",
+    "preparation/design/gameplay-toilet-r2/candidate-b/assets/next_toilet.png": "b694ef2064bce56b6baa5f09d2cce71c8ffbe7fbc59b0845ed9bd28dae827630",
+    "assets/batch1/object-data.ts": "dde0793c2e475b358e61e6ac900b234046f4a0fd4a72bd053ba9d6c67213c1ef",
+    "assets/batch1/tower-world.ts": "b990421aafcea19a938658a54583eae66df311f42173556307ffa57ae5435c78",
+    "preparation/review/gameplay-lab.js": "791043cd06d323c7df79be8442051cf47f24f70dc93ec932655036f616643c3c",
+    "preparation/tools/check_toilet_r2_final.cjs": "f1d7981636b873925b7b445ae074e208beea8e40b23dd1e7732b0355cedb0901"
+  },
+  "errors": [
+    "ReferenceError: qaLoad is not defined"
+  ],
+  "failure": "page.waitForFunction: ReferenceError: qaLoad is not defined\n    at eval (eval at predicate (eval at evaluate (:311:30)), <anonymous>:1:5)\n    at predicate (eval at evaluate (:311:30), <anonymous>:7:27)\n    at next (eval at evaluate (:311:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:311:30), <anonymous>:42:13)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_toilet_r2_final.cjs:33:267",
+  "trials": 0,
+  "physicsSteps": 0,
+  "elapsedMs": 425
+}

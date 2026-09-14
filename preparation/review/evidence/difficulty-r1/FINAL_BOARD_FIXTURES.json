@@ -1,0 +1,467 @@
+{
+  "method": "Eight bounded local-mechanic fixtures, not human difficulty statistics. Real dynamic paper supports settle first; ordinary held board/fridge/paper release next. Both arms keep identical complete material specs including board upper-impact cap1.8; off only disables QA instance validStabilizerContact eligibility. Width225 x-only diagnostic keeps thickness and mass, not production art. Same controller algorithm determines later gaps from actual state; each gap is recorded, not forced constant.",
+  "packageSha256": "2cdd10da09f0c35d7906b428061e22098708b547a477b94c168a0782543c80ee",
+  "errors": [],
+  "results": [
+    {
+      "id": "dual_edge_260_off",
+      "outcome": "survived_and_confirmed",
+      "newReleases": 3,
+      "confirmedIncludingSupports": 5,
+      "initialSupportCount": 2,
+      "newObjectsTrulyConfirmed": 3,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": -52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        },
+        {
+          "id": 2,
+          "kind": "cardboard_box",
+          "x": 52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 0.14894244230790712,
+        "2": 0.9674514883728143
+      },
+      "supportMaxAngularSpeed": {
+        "1": 1.0980090792145347e-7,
+        "2": 0.11767785996198654
+      },
+      "supportMaxAbsAngle": {
+        "1": 0.18357506102349885,
+        "2": 1.16882401912466
+      },
+      "plankMaxAbsAngle": 1.4287598880376002,
+      "plankMaxAngularSpeed": 0.1176128089427948,
+      "actualGaps": [
+        356.1837805163706,
+        188.172799370083,
+        153.5945147408786
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859864711761475,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "seconds": 8.250499999999999,
+      "averageFPS": 59.26913520392704,
+      "capture": "final-board-dual_edge_260_off.png"
+    },
+    {
+      "id": "dual_edge_260_on",
+      "outcome": "survived_and_confirmed",
+      "newReleases": 3,
+      "confirmedIncludingSupports": 5,
+      "initialSupportCount": 2,
+      "newObjectsTrulyConfirmed": 3,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": -52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        },
+        {
+          "id": 2,
+          "kind": "cardboard_box",
+          "x": 52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 0.42092224806961975,
+        "2": 0.5414917269062416
+      },
+      "supportMaxAngularSpeed": {
+        "1": 0.07859937846660614,
+        "2": 0.04648647457361221
+      },
+      "supportMaxAbsAngle": {
+        "1": 0.17219592584561788,
+        "2": 1.186388704348994
+      },
+      "plankMaxAbsAngle": 1.2910147159940129,
+      "plankMaxAngularSpeed": 0.08527611941099167,
+      "actualGaps": [
+        356.1837808613281,
+        188.17272220945506,
+        153.59999447382643
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859864711761475,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [
+          {
+            "plankId": 3,
+            "supportId": 1,
+            "distance": 1.5405672748973636,
+            "angle": 1.2430218284014245,
+            "maxForce": 210,
+            "maxTorque": 47.5
+          },
+          {
+            "plankId": 3,
+            "supportId": 2,
+            "distance": 1.0139829679486656,
+            "angle": 0.11559788678846417,
+            "maxForce": 210,
+            "maxTorque": 47.5
+          }
+        ],
+        "brokenPairs": []
+      },
+      "seconds": 6.9670000000000085,
+      "averageFPS": 59.56652791732446,
+      "capture": "final-board-dual_edge_260_on.png"
+    },
+    {
+      "id": "dual_edge_225_off",
+      "outcome": "ended",
+      "newReleases": 2,
+      "confirmedIncludingSupports": 3,
+      "initialSupportCount": 2,
+      "newObjectsTrulyConfirmed": 1,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": -52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        },
+        {
+          "id": 2,
+          "kind": "cardboard_box",
+          "x": 52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 0.14013638978181833,
+        "2": 0.7372339843665127
+      },
+      "supportMaxAngularSpeed": {
+        "1": 7.031485438346863e-8,
+        "2": 0.08095409721136093
+      },
+      "supportMaxAbsAngle": {
+        "1": 0.1381808100465875,
+        "2": 0.33364230787639937
+      },
+      "plankMaxAbsAngle": 1.264941429332841,
+      "plankMaxAngularSpeed": 0.07940499484539032,
+      "actualGaps": [
+        356.1837805163706,
+        188.1722208466092
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859867095947266,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "seconds": 5.191100000001495,
+      "averageFPS": 59.910230972223694,
+      "capture": "final-board-dual_edge_225_off.png"
+    },
+    {
+      "id": "dual_edge_225_on",
+      "outcome": "ended",
+      "newReleases": 2,
+      "confirmedIncludingSupports": 3,
+      "initialSupportCount": 2,
+      "newObjectsTrulyConfirmed": 1,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": -52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        },
+        {
+          "id": 2,
+          "kind": "cardboard_box",
+          "x": 52,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 0.1266317202039857,
+        "2": 0.33785689977119515
+      },
+      "supportMaxAngularSpeed": {
+        "1": 0.04672650992870331,
+        "2": 0.010341811925172806
+      },
+      "supportMaxAbsAngle": {
+        "1": 0.12545987620212964,
+        "2": 0.7445202881655971
+      },
+      "plankMaxAbsAngle": 1.348294496642738,
+      "plankMaxAngularSpeed": 0.06005871668457985,
+      "actualGaps": [
+        356.1837808613281,
+        188.17211465063767
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859867095947266,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [
+          {
+            "plankId": 3,
+            "supportId": 2,
+            "distance": 0.8866006748902368,
+            "angle": 0.09742094252521838,
+            "maxForce": 210,
+            "maxTorque": 47.5
+          },
+          {
+            "plankId": 3,
+            "supportId": 1,
+            "distance": 0.979715841217069,
+            "angle": 0.8024013468775593,
+            "maxForce": 210,
+            "maxTorque": 47.5
+          }
+        ],
+        "brokenPairs": []
+      },
+      "seconds": 5.183300000000753,
+      "averageFPS": 60.000385854562694,
+      "capture": "final-board-dual_edge_225_on.png"
+    },
+    {
+      "id": "single_bias_260_off",
+      "outcome": "ended",
+      "newReleases": 3,
+      "confirmedIncludingSupports": 2,
+      "initialSupportCount": 1,
+      "newObjectsTrulyConfirmed": 1,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": 0,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 0.19868128802918494
+      },
+      "supportMaxAngularSpeed": {
+        "1": 5.094334483146667e-7
+      },
+      "supportMaxAbsAngle": {
+        "1": 0.17454644473502792
+      },
+      "plankMaxAbsAngle": 58.69911701014231,
+      "plankMaxAngularSpeed": 1.4252383708953857,
+      "actualGaps": [
+        356.1837808613281,
+        188.15923209791492,
+        153.60401119929816
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859864711761475,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "seconds": 7.616699999999261,
+      "averageFPS": 59.0807042420003,
+      "capture": "final-board-single_bias_260_off.png"
+    },
+    {
+      "id": "single_bias_260_on",
+      "outcome": "survived_and_confirmed",
+      "newReleases": 3,
+      "confirmedIncludingSupports": 4,
+      "initialSupportCount": 1,
+      "newObjectsTrulyConfirmed": 3,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": -2.3469328880310059e-7,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 0.24393366043191322
+      },
+      "supportMaxAngularSpeed": {
+        "1": 0.04588537663221359
+      },
+      "supportMaxAbsAngle": {
+        "1": 0.17249882872705213
+      },
+      "plankMaxAbsAngle": 1.2048080169932258,
+      "plankMaxAngularSpeed": 0.1123388409614563,
+      "actualGaps": [
+        356.18378068395623,
+        188.16119929192615,
+        153.54904765339307
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859864711761475,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [
+          {
+            "plankId": 2,
+            "supportId": 1,
+            "distance": 0.6850476505116282,
+            "angle": 1.1299302643700457,
+            "maxForce": 210,
+            "maxTorque": 47.5
+          }
+        ],
+        "brokenPairs": []
+      },
+      "seconds": 7.033300000000756,
+      "averageFPS": 59.858103592901585,
+      "capture": "final-board-single_bias_260_on.png"
+    },
+    {
+      "id": "single_severe_260_off",
+      "outcome": "ended",
+      "newReleases": 2,
+      "confirmedIncludingSupports": 2,
+      "initialSupportCount": 1,
+      "newObjectsTrulyConfirmed": 1,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": 0,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 0.21015838461253297
+      },
+      "supportMaxAngularSpeed": {
+        "1": 1.641456037759781e-7
+      },
+      "supportMaxAbsAngle": {
+        "1": 0.1701317146123931
+      },
+      "plankMaxAbsAngle": 72.82306028913658,
+      "plankMaxAngularSpeed": 1.5667624473571777,
+      "actualGaps": [
+        356.1837808613281,
+        188.15923209791492
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859864711761475,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [],
+        "brokenPairs": []
+      },
+      "seconds": 4.249300000000751,
+      "averageFPS": 60.00988398088036,
+      "capture": "final-board-single_severe_260_off.png"
+    },
+    {
+      "id": "single_severe_260_on",
+      "outcome": "ended",
+      "newReleases": 2,
+      "confirmedIncludingSupports": 2,
+      "initialSupportCount": 1,
+      "newObjectsTrulyConfirmed": 1,
+      "initial": [
+        {
+          "id": 1,
+          "kind": "cardboard_box",
+          "x": -2.3469328880310059e-7,
+          "y": 50.5,
+          "mass": 4.389647960662842,
+          "contacts": 1
+        }
+      ],
+      "supportMaxDrift": {
+        "1": 6.770207620185528
+      },
+      "supportMaxAngularSpeed": {
+        "1": 1.0164612531661987
+      },
+      "supportMaxAbsAngle": {
+        "1": 5.579031275868409
+      },
+      "plankMaxAbsAngle": 74.38448251453651,
+      "plankMaxAngularSpeed": 1.6040120124816895,
+      "actualGaps": [
+        356.18378068395623,
+        188.16119929192615
+      ],
+      "nativeMass": {
+        "cardboard_box": 4.389647960662842,
+        "wood_plank": 3.4859864711761475,
+        "fridge": 7.023437023162842
+      },
+      "finalStabilizers": {
+        "active": [],
+        "brokenPairs": [
+          "2:1"
+        ]
+      },
+      "seconds": 4.6165000000000065,
+      "averageFPS": 60.00216614318198,
+      "capture": "final-board-single_severe_260_on.png"
+    }
+  ],
+  "conclusions": [
+    "Connection adds local help under moderate leverage: single support, fridge and paper at x55, off collapses while on truly confirms all three new loads. Board maximum angle 58.70 vs 1.205 degrees.",
+    "Dual support with x110 loading survives on either 260 board arm; connection reduces greatest support drift from 0.967 to 0.541 units, and right support peak angular velocity from 0.11768 to 0.04649 rad/s. It does not reduce every individual support metric.",
+    "Equal-mass 225-width board diagnostic fails the same x110 fridge load both with and without connection, while the 260-width arms survive all three loads. This separately demonstrates width benefit.",
+    "Severe single-support x125 leverage still fails with connection on or off. On actually breaks pair2:1; before breaking it transfers force into its real support, increasing support drift to6.77u vs0.21u without connection. Local help is finite, and cannot be described as shielding lower structure against all errors.",
+    "These are bounded mechanic fixtures with explicit real dynamic initial supports, not a human win-rate or proof of every structure. The same ordinary-controller algorithm determines actual drop gaps; no claim of forced identical gap."
+  ]
+}

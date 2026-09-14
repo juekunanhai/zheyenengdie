@@ -1,0 +1,42 @@
+{
+  "status": "passed_local_scope_only",
+  "date": "2026-09-13",
+  "batch": "1A",
+  "checks": 31,
+  "reports": {
+    "INTEGRATION": {
+      "file": "INTEGRATION.json",
+      "sha256": "59692d5508dec54187ef32a5964e7377c4544702f871a37c52d60b31076d9186",
+      "checks": 16
+    },
+    "PHYSICS": {
+      "file": "PHYSICS.json",
+      "sha256": "e5e71f4a34febcd350ef32e58171258d4e5188d6a733f6670eaaaffcaf2a098d",
+      "checks": 7
+    },
+    "AUDIO_RUNTIME": {
+      "file": "AUDIO_RUNTIME.json",
+      "sha256": "09bc6339c82538b48881a762762a462f0925b9fbc22c3b06a1db7f4f3fc83468",
+      "checks": 8
+    }
+  },
+  "build_report_sha256": "3c3e2121b7c82f75286e673d9edcfc2435a995a28cfe70bd98d0cc4c9e043cf1",
+  "test_tools_sha256": {
+    "check_batch1a_audio.cjs": "136c74942c38c200675cc08a2694cd3f1021d7d7e5781f3870192244a5a90e73",
+    "check_batch1a_physics.cjs": "6b6642426f93e1cb7d39db4fb1f4a1d64202ee469556c5cb4c5e95c2f080f8c3",
+    "check_batch1a.cjs": "12c60fe64e91cd8c3ae7cc933af5342b025b54ad4e266c8f1edb3d3c914a59e6"
+  },
+  "review_shell_sha256": {
+    "play.html": "a9c052ab909d04b7313801b66fadc44bbbaf579649429be6ec72bf55b8973a4e",
+    "play-player.html": "bd7696f6f5bd63cc3c1c651c0d7b172e81f55b1f45810c366361a7364870dad0",
+    "audio-1a.html": "3101007652f624a4a10d462a92609277dceafee71e4669dc0ec993a749f5ac5f"
+  },
+  "audio_approval_text": "音频先按照这版使用，后续如果不合适再换",
+  "next_batch_started": false,
+  "not_proven": [
+    "WeChat build and real-device behavior",
+    "Long-session difficulty balance",
+    "Full incidents, stars, deep assistance",
+    "Music and publication"
+  ]
+}

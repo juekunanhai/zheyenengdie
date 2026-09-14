@@ -1,0 +1,81 @@
+{
+  "revision": "playful-r3",
+  "status": "approved_for_current_use",
+  "listening_status": "user_approved",
+  "approval": "确认，配乐选择b。其余音效均认可，尝试找到切入的地方，开始开发",
+  "entries": [
+    {
+      "id": "bgm_city",
+      "kind": "replacement",
+      "candidate": "audio/playful-r3/encoded/bgm_city.mp3",
+      "import_path": "assets/batch1/audio/bgm_city.mp3",
+      "sha256": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "uuid": "f533f0ab-55a9-5184-8ad3-26ed9eb42a13",
+      "meta_sha256": "52c3f70cd938225066e72b652be4c9772324158d24eea194c5a1dde3857bc92e",
+      "source_manifest": "audio/playful-r3/MANIFEST.json",
+      "source_manifest_sha256": "75a5bf01f2a68af5ea6d625c6b7a7ec5bc29d26e47d6ca0d5bc19460d3ccbb27",
+      "previous_sha256": "b7d43a8c0cc7b07fce8f15a1b01f88a3334a0cdad5436259f2dd9e4d9fd4eeb5"
+    },
+    {
+      "id": "bgm_cloud",
+      "kind": "replacement",
+      "candidate": "audio/playful-r3/encoded/bgm_cloud.mp3",
+      "import_path": "assets/batch1/audio/bgm_cloud.mp3",
+      "sha256": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "uuid": "489d544b-86ed-55d5-a99d-230deb1d738b",
+      "meta_sha256": "08f8caf0f3cb13647f434f63e364b1295bddb2deed4c4f68a5c154c017731338",
+      "source_manifest": "audio/playful-r3/MANIFEST.json",
+      "source_manifest_sha256": "75a5bf01f2a68af5ea6d625c6b7a7ec5bc29d26e47d6ca0d5bc19460d3ccbb27",
+      "previous_sha256": "0f8bfbc3ed983b1a669c440e016bb35f5527a2d17fc1030b48ed2f44049c0aef"
+    },
+    {
+      "id": "bgm_space",
+      "kind": "replacement",
+      "candidate": "audio/playful-r3/encoded/bgm_space.mp3",
+      "import_path": "assets/batch1/audio/bgm_space.mp3",
+      "sha256": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "uuid": "31d3bb54-7d7f-5f29-914a-34d21260be84",
+      "meta_sha256": "df4f0cd22dda4cfe345e71db3c06e6644323a1e52bd85ccd6d55f8e94fa3cbc1",
+      "source_manifest": "audio/playful-r3/MANIFEST.json",
+      "source_manifest_sha256": "75a5bf01f2a68af5ea6d625c6b7a7ec5bc29d26e47d6ca0d5bc19460d3ccbb27",
+      "previous_sha256": "16f21a4828d4270c8313f0a0bfbb80debf42c056a479c4a34fc241a9eefe3dde"
+    },
+    {
+      "id": "voice_wow",
+      "kind": "new",
+      "candidate": "audio/cheerful-r2/voice/voice_wow.mp3",
+      "import_path": "assets/batch1/audio/voice_wow.mp3",
+      "sha256": "2bfd6da81e67b86c8dc18fbfcec9ff75c4b39cba1aa30d6d2e45479abfeff2de",
+      "uuid": "46c38ce1-228d-5235-a194-acef8fa6c1d9",
+      "meta_sha256": "3b9e316f206282a800290823ea2116f986348ac21ef495d45f6cc96f56b61c9c",
+      "source_manifest": "audio/cheerful-r2/voice/MANIFEST.json",
+      "source_manifest_sha256": "db3f26f33825b0f9fafd211c4833d14a8cb56831b514b0a62bfa2a5f360c5674"
+    },
+    {
+      "id": "voice_hey",
+      "kind": "new",
+      "candidate": "audio/cheerful-r2/voice/voice_hey.mp3",
+      "import_path": "assets/batch1/audio/voice_hey.mp3",
+      "sha256": "027d60484504864eda1fef12d8de61a4c81e62412487327dde654985d1b5c04f",
+      "uuid": "cd1c2546-a905-5056-ace8-fac5ecbea148",
+      "meta_sha256": "0fd4fdd425e59b05f2f6c2091c4bc9156726806a3f68d26d02172bdb57f90d91",
+      "source_manifest": "audio/cheerful-r2/voice/MANIFEST.json",
+      "source_manifest_sha256": "db3f26f33825b0f9fafd211c4833d14a8cb56831b514b0a62bfa2a5f360c5674"
+    },
+    {
+      "id": "voice_chuckle",
+      "kind": "new",
+      "candidate": "audio/cheerful-r2/voice/voice_chuckle.mp3",
+      "import_path": "assets/batch1/audio/voice_chuckle.mp3",
+      "sha256": "9fcbad3f11f346b9db3022070f636c62ff248be6ac54d6d10a3ee902c2545c56",
+      "uuid": "5192fe85-75e2-5cc3-8bae-aa1fc990a8a0",
+      "meta_sha256": "a448e06ded956ecf4cc9befa162e56d7e7078f610b11f0604a5778fdd6dcd73e",
+      "source_manifest": "audio/cheerful-r2/voice/MANIFEST.json",
+      "source_manifest_sha256": "db3f26f33825b0f9fafd211c4833d14a8cb56831b514b0a62bfa2a5f360c5674"
+    }
+  ],
+  "importer_sha256": "f00319c28702ad38b3cf03ed09cb27edfda2ec03bd10cc7bc567e8e980281f87",
+  "music_arrangement": "Three existing region references use the same approved B loop; all instruments retained",
+  "runtime_credits": "assets/batch1/scene-actions.ts / Settings MusicCredits",
+  "validation_boundary": "Approved candidate listening; loop edit and in-game triggering validated separately"
+}

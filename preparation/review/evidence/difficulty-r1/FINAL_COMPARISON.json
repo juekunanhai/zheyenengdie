@@ -1,0 +1,237 @@
+{
+  "status": "completed_bounded_calibration_pending_user_play_review",
+  "selected_profile": "profiles/contact-damped.json",
+  "selected_profile_sha256": "f8004cb0696492349c6bc5752247400eff9f62b53ec975ab503b6cff98728f0a",
+  "method": "Same ordinary automatic Cocos frames, six-object cyclic sequence and controller moveTo/release after 0.18 active seconds in planning. Same placement algorithm; actual state-dependent gaps are recorded rather than force-reset. Ten releases plus at least three seconds observation and 0.65 seconds true stability; no altered contacts, stability, scores, poses or stepping.",
+  "not_a_human_success_rate": true,
+  "before_passed": 0,
+  "after_passed": 7,
+  "fixed_actions": 8,
+  "reviewText": "8 组相同固定操作中，上版 0 组完成十件并持续稳固，新版 7 组完成。左右交替偏移仍有 1 组在确认九件后倒落。这是指定操作的检查结果，不是玩家胜率；基础难度仍待实际试玩复核。",
+  "reviewRows": [
+    {
+      "id": "center10",
+      "name": "居中连续放 10 件",
+      "before": "5 件真正确认后倒落",
+      "after": "10 件真正确认并持续稳固"
+    },
+    {
+      "id": "alternating10",
+      "name": "左右交替偏移 ±10",
+      "before": "3 件真正确认后倒落",
+      "after": "9 件真正确认后倒落"
+    },
+    {
+      "id": "all_plus10",
+      "name": "全程向右偏 10",
+      "before": "5 件真正确认后倒落",
+      "after": "10 件真正确认并持续稳固"
+    },
+    {
+      "id": "all_minus10",
+      "name": "全程向左偏 10",
+      "before": "5 件真正确认后倒落",
+      "after": "10 件真正确认并持续稳固"
+    },
+    {
+      "id": "fridge_plus15",
+      "name": "仅冰箱向右偏 15",
+      "before": "3 件真正确认后倒落",
+      "after": "10 件真正确认并持续稳固"
+    },
+    {
+      "id": "fridge_minus15",
+      "name": "仅冰箱向左偏 15",
+      "before": "3 件真正确认后倒落",
+      "after": "10 件真正确认并持续稳固"
+    },
+    {
+      "id": "paper_plus10",
+      "name": "仅纸箱向右偏 10",
+      "before": "5 件真正确认后倒落",
+      "after": "10 件真正确认并持续稳固"
+    },
+    {
+      "id": "paper_minus10",
+      "name": "仅纸箱向左偏 10",
+      "before": "3 件真正确认后倒落",
+      "after": "10 件真正确认并持续稳固"
+    }
+  ],
+  "results": [
+    {
+      "id": "center10",
+      "before": {
+        "released": 10,
+        "confirmed": 5,
+        "outcome": "ended",
+        "activeSeconds": 21.14979999999876,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-center10.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 10,
+        "outcome": "survived_and_confirmed",
+        "activeSeconds": 19.339900000002128,
+        "finalMaxAbsAngle": 0.23805410392676177,
+        "capture": "final-core-center10.png"
+      }
+    },
+    {
+      "id": "alternating10",
+      "before": {
+        "released": 4,
+        "confirmed": 3,
+        "outcome": "ended",
+        "activeSeconds": 9.533400000000347,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-alternating10.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 9,
+        "outcome": "ended",
+        "activeSeconds": 22.66640000000201,
+        "finalMaxAbsAngle": 177.21974918654595,
+        "capture": "final-core-alternating10.png"
+      }
+    },
+    {
+      "id": "all_plus10",
+      "before": {
+        "released": 10,
+        "confirmed": 5,
+        "outcome": "ended",
+        "activeSeconds": 20.99990000000023,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-all_plus10.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 10,
+        "outcome": "survived_and_confirmed",
+        "activeSeconds": 24.566600000001277,
+        "finalMaxAbsAngle": 0.45764497922736264,
+        "capture": "final-remaining-all_plus10.png"
+      }
+    },
+    {
+      "id": "all_minus10",
+      "before": {
+        "released": 9,
+        "confirmed": 5,
+        "outcome": "ended",
+        "activeSeconds": 20.874300000000655,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-all_minus10.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 10,
+        "outcome": "survived_and_confirmed",
+        "activeSeconds": 23.53330000000058,
+        "finalMaxAbsAngle": 0.37620425816336356,
+        "capture": "final-remaining-all_minus10.png"
+      }
+    },
+    {
+      "id": "fridge_plus15",
+      "before": {
+        "released": 5,
+        "confirmed": 3,
+        "outcome": "ended",
+        "activeSeconds": 9.866099999999602,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-fridge_plus15.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 10,
+        "outcome": "survived_and_confirmed",
+        "activeSeconds": 22.874899999998284,
+        "finalMaxAbsAngle": 1.8346460138997238,
+        "capture": "final-core-fridge_plus15.png"
+      }
+    },
+    {
+      "id": "fridge_minus15",
+      "before": {
+        "released": 5,
+        "confirmed": 3,
+        "outcome": "ended",
+        "activeSeconds": 10.299999999999963,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-fridge_minus15.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 10,
+        "outcome": "survived_and_confirmed",
+        "activeSeconds": 19.299900000002115,
+        "finalMaxAbsAngle": 1.5160721171885774,
+        "capture": "final-core-fridge_minus15.png"
+      }
+    },
+    {
+      "id": "paper_plus10",
+      "before": {
+        "released": 7,
+        "confirmed": 5,
+        "outcome": "ended",
+        "activeSeconds": 14.583300000000708,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-paper_plus10.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 10,
+        "outcome": "survived_and_confirmed",
+        "activeSeconds": 24.68319999999913,
+        "finalMaxAbsAngle": 0.12751663025616297,
+        "capture": "final-remaining-paper_plus10.png"
+      }
+    },
+    {
+      "id": "paper_minus10",
+      "before": {
+        "released": 9,
+        "confirmed": 3,
+        "outcome": "ended",
+        "activeSeconds": 20.51670000000105,
+        "finalMaxAbsAngle": null,
+        "capture": "baseline-paper_minus10.png"
+      },
+      "after": {
+        "released": 10,
+        "confirmed": 10,
+        "outcome": "survived_and_confirmed",
+        "activeSeconds": 24.71710000000134,
+        "finalMaxAbsAngle": 0.7827349831284068,
+        "capture": "final-remaining-paper_minus10.png"
+      }
+    }
+  ],
+  "runtimeErrors": 0,
+  "reports": [
+    "baseline.json",
+    "final-core.json",
+    "final-remaining.json"
+  ],
+  "not_proven": [
+    "Human experience or all placement combinations",
+    "Final user art approval",
+    "Full accident/director/deep-tower systems",
+    "WeChat/device/performance/release"
+  ],
+  "remaining_geometry_analysis": "10th fridge first tips from the right edge of the 9th toilet high cistern shelf. The COM has only about one design-unit right-side margin at initial contact. Small support motion consumes that margin, followed by progressive clockwise fridge tipping and lost contact. Older basketball and lower adjacent support contacts remain intact at this local tipping stage. This is a remaining asymmetric top-shelf placement boundary; the trace does not show an unexplained adhesive-joint explosion.",
+  "additional_evidence": [
+    "FINAL_GAMEPLAY.json",
+    "FINAL_BOARD_FIXTURES.json",
+    "final-timed.json",
+    "STABILIZER.json",
+    "DIFFICULTY_DIMENSIONS_150.json",
+    "NATIVE_CURRENT_FIXTURES.json",
+    "BUILD_REPORT.json"
+  ]
+}

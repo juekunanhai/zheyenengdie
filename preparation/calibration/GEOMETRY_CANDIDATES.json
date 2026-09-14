@@ -1,0 +1,156 @@
+{
+  "status": "preparation_geometry_candidates_only",
+  "scale_source_sha256": "8c4306d7ff7305fb6934288078054e2e0e1cb3e725738107fb568bdd24851846",
+  "objects": [
+    {
+      "slug": "cardboard_box",
+      "name": "纸箱",
+      "gameplay_scale": {
+        "width_u": 1.0,
+        "height_u": 1.0
+      },
+      "units_per_u": 100,
+      "shape": "box",
+      "size_world": [
+        100.0,
+        100.0
+      ],
+      "radius_world": null,
+      "sprite_source": "assets/batch0/art/object_cardboard_box.png",
+      "sprite_sha256": "ca9f234068ae645f793c440a0597c8da0a3deef6ac4ce6a3481d6a0f7a11bb00",
+      "source_alpha_bounds_px": [
+        8,
+        8,
+        291,
+        289
+      ],
+      "sprite_scale_candidate": 0.35587188612099646,
+      "sprite_size_world": [
+        106.40569395017795,
+        105.69395017793595
+      ],
+      "grip_local_world": [
+        0,
+        50.0
+      ],
+      "status": "geometry_candidate_not_physics_tested"
+    },
+    {
+      "slug": "wood_plank",
+      "name": "长木板",
+      "gameplay_scale": {
+        "width_u": 1.95,
+        "height_u": 0.28
+      },
+      "units_per_u": 100,
+      "shape": "box",
+      "size_world": [
+        195.0,
+        28.000000000000004
+      ],
+      "radius_world": null,
+      "sprite_source": "assets/batch0/art/object_wood_plank.png",
+      "sprite_sha256": "846eb12d425e206dd993d121f946eca25a81b4862236a75858de5795c99a79f3",
+      "source_alpha_bounds_px": [
+        8,
+        8,
+        412,
+        103
+      ],
+      "sprite_scale_candidate": 0.48267326732673266,
+      "sprite_size_world": [
+        202.7227722772277,
+        53.57673267326732
+      ],
+      "grip_local_world": [
+        0,
+        14.000000000000002
+      ],
+      "status": "geometry_candidate_not_physics_tested"
+    },
+    {
+      "slug": "basketball",
+      "name": "篮球",
+      "gameplay_scale": {
+        "width_u": 0.68,
+        "height_u": 0.68
+      },
+      "units_per_u": 100,
+      "shape": "circle",
+      "size_world": [
+        68.0,
+        68.0
+      ],
+      "radius_world": 34.0,
+      "sprite_source": "assets/batch0/art/object_basketball.png",
+      "sprite_sha256": "bcd896e6cb989523ad4b857efa61a35e040a71b8b620ba557c90e39237d50784",
+      "source_alpha_bounds_px": [
+        4,
+        4,
+        248,
+        248
+      ],
+      "sprite_scale_candidate": 0.2786885245901639,
+      "sprite_size_world": [
+        70.22950819672131,
+        70.22950819672131
+      ],
+      "grip_local_world": [
+        0,
+        34.0
+      ],
+      "status": "geometry_candidate_not_physics_tested"
+    },
+    {
+      "slug": "fridge",
+      "name": "冰箱",
+      "gameplay_scale": {
+        "width_u": 0.82,
+        "height_u": 1.45
+      },
+      "units_per_u": 100,
+      "shape": "box",
+      "size_world": [
+        82.0,
+        145.0
+      ],
+      "radius_world": null,
+      "sprite_source": "assets/batch0/art/object_fridge.png",
+      "sprite_sha256": "dc5656504b62f7895ed30cd7c3245e5ca8f256b81a2de6da25735a4b816a0470",
+      "source_alpha_bounds_px": [
+        8,
+        8,
+        242,
+        341
+      ],
+      "sprite_scale_candidate": 0.43543543543543545,
+      "sprite_size_world": [
+        108.85885885885887,
+        151.96696696696696
+      ],
+      "grip_local_world": [
+        0,
+        72.5
+      ],
+      "status": "geometry_candidate_not_physics_tested"
+    }
+  ],
+  "initial_baseline": {
+    "status": "accepted_for_first_calibration_not_physics_verified",
+    "approved_visual_platform_width_in_box_widths": 1.5775098732072335,
+    "platform_width_u": 1.6,
+    "approved_visual_drop_gap_u_approx": 3.6704946996466434,
+    "release_position": "Follow approved R6; visual gap estimate is not measured Collider clearance.",
+    "retired_defaults": "4.2u platform and 1.8u clearance are no longer active defaults.",
+    "rule": "Use SPEC 2.2; validate support and rotation in Batch 1A; no hidden wider support."
+  },
+  "not_verified": [
+    "support footprint matching",
+    "mass and center of mass",
+    "claw three-state attachment",
+    "rotation clearance",
+    "fixed step behavior",
+    "material friction and restitution",
+    "landing stability"
+  ]
+}

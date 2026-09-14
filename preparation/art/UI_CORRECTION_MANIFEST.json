@@ -1,0 +1,33 @@
+{
+  "revision": "2026-09-12-P4",
+  "script": "tools/restore_button_from_source.py",
+  "script_sha256": "ba662f65f34e78ae35301082792009c8e00e658dc6bdb3df436be551dde44a23",
+  "entries": [
+    {
+      "id": "btn_settings_base",
+      "output": "art/source-restored/btn_settings_base.png",
+      "sha256": "4c35f35602d93e5a413e8fa5fe531ab3badbe1cdadbdfc1657b19e289b9745a5",
+      "source": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/result_ui/result_btn_share.png",
+      "source_sha256": "91a8cfb520e31f9d30d97615568ca154a937a04977e11b0d953976ebdc36ced1",
+      "method": "source-pixel repair: clone occluded icon/highlight from intact right side; fill text only from same-row native blue; no replacement gloss drawing",
+      "status": "user_requested_source_repair_pending_visual_review",
+      "size": [
+        493,
+        178
+      ],
+      "source_crop": [
+        1,
+        6,
+        462,
+        152
+      ],
+      "padding_px": 16,
+      "repair_mask": "art/source-restored/btn_settings_repair_mask.png",
+      "changed_source_pixels": 6300,
+      "unchanged_outside_mask": true,
+      "original_alpha_unchanged": true,
+      "original_border_unchanged": true,
+      "highlight_donor_symmetry_axis_x": 230
+    }
+  ]
+}

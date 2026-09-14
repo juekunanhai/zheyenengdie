@@ -1,0 +1,182 @@
+{
+  "revision": "home-r4",
+  "file_base": "project_root",
+  "status": "approved_home_theme_A_offline_loop_prepared_for_runtime_import",
+  "approval": {
+    "user_decision_summary": "User confirmed earlier candidate A Carefree for Home, distinct from gameplay B; prepare a loop and integrate.",
+    "candidate_file": "preparation/audio/cheerful-r2/music/exports/music_a_carefree.mp3",
+    "candidate_sha256": "5ee6841787f20474e44dd65278675054c293cefffccbc77ce5bf71cf91789b87",
+    "scope": "Home music only. Gameplay music B is preserved; this script does not change runtime gains."
+  },
+  "source": {
+    "source_title": "Carefree",
+    "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037",
+    "source_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
+    "author": "Kevin MacLeod",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_instruments": "Ukulele, Guitar, Marimba, Glock, Percussion",
+    "instrumentation_caveat": "官网声明乐器编配；未核实是否每件乐器都是真人实录。"
+  },
+  "original": {
+    "file": "preparation/audio/cheerful-r2/music/sources/Carefree.mp3",
+    "sha256": "8433b770a630d9b1594fd484442c677907ece899a4d149954cd2e74fd733e311",
+    "bytes": 6566713,
+    "format": "Author full downloadable MP3; not lossless studio stems"
+  },
+  "source_manifest": {
+    "file": "preparation/audio/cheerful-r2/music/MANIFEST.json",
+    "sha256": "99b9c9f2a74f05830f98342ea8e1288b39423381026c237324787ce7211c0648"
+  },
+  "source_evidence": [
+    {
+      "file": "preparation/audio/home-r4/evidence/catalog-item.json",
+      "sha256": "ed2fb96986aff61a7437113dffde51da149be0fb7d0b54a0d910d0b30c5cf52f",
+      "bytes": 595
+    },
+    {
+      "file": "preparation/audio/home-r4/evidence/cc-by-4.0.html",
+      "sha256": "231a5dac65bbf135ba27145969a63cd289faadc172f1512c4810a6c60ba91036",
+      "bytes": 32178
+    },
+    {
+      "file": "preparation/audio/home-r4/evidence/incompetech-license.html",
+      "sha256": "479019ed42fd8384c63c04bd95dc6d0e0e0da505ddd6f567a13018c724f8416d",
+      "bytes": 12146
+    }
+  ],
+  "credits": {
+    "file": "preparation/audio/home-r4/CREDITS.txt",
+    "sha256": "a3318f31eb032bad202715faad7054fd089afe028ba8b38153fa8a54abcfd95a"
+  },
+  "loop": {
+    "start_sample": 878472,
+    "end_sample_exclusive": 2642472,
+    "source_start_s": 19.92,
+    "source_end_s": 59.92,
+    "sample_count": 1764000,
+    "duration_s": 40.0,
+    "source_tempo_bpm": 96,
+    "beat_count": 64,
+    "bar_count_4_4": 16,
+    "seam_overlap_samples": 2646,
+    "seam_overlap_s": 0.06,
+    "method": "continuous source post-roll wrapped into head with complementary raised-cosine weights",
+    "no_period_shortening": true,
+    "speed": 1.0,
+    "pitch_changed": false,
+    "constant_gain_db": -2.070599913279625,
+    "loop_intro_or_end_fade": false,
+    "selection": "19.92–59.92 s mid-song phrase, starting 80 ms before the nominal bar and retaining source orchestration."
+  },
+  "tracks": [
+    {
+      "id": "bgm_home",
+      "file": "preparation/audio/home-r4/encoded/bgm_home.mp3",
+      "sha256": "b4376030dd8b1432462507700629d5aa0eabc10f6049080c97c9952efbca8194",
+      "bytes": 961767,
+      "duration_s": 40.0,
+      "master": "preparation/audio/home-r4/masters/music_home_loop.wav",
+      "master_sha256": "b562f758222465bbddfd65e3e182e24f36c4cd8366afded68edb9c1cfc1a60f7",
+      "sample_rate": 44100,
+      "channels": 2,
+      "sample_count": 1764000,
+      "loop_check": {
+        "sample_count": 1764000,
+        "decoded_duration_s": 40.0,
+        "sample_rate_hz": 44100,
+        "channels": 2,
+        "peak_sample": 0.4118439853191376,
+        "join_step_absolute": 0.005049491301178932,
+        "ordinary_step_p99": 0.03713801445905088,
+        "join_within_ordinary_step_p99": true,
+        "edge_200ms_rms_dbfs": -26.32878128330085,
+        "longest_below_minus60_dbfs_s": 0.0,
+        "finite": true
+      },
+      "sources_and_edits": [
+        {
+          "file": "preparation/audio/cheerful-r2/music/sources/Carefree.mp3",
+          "sha256": "8433b770a630d9b1594fd484442c677907ece899a4d149954cd2e74fd733e311",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "64-beat / 16-bar mid-song excerpt; 60 ms periodic boundary overlap; constant-gain level adjustment; MP3 re-encoding. No tempo/pitch change, no added instruments, no stem separation, compressor, limiter or end fade."
+        }
+      ]
+    }
+  ],
+  "attribution": "\"Carefree\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/ Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037 Changes: 64-beat / 16-bar mid-song excerpt; 60 ms periodic boundary overlap; constant-gain level adjustment; MP3 re-encoding. No tempo/pitch change, no added instruments, no stem separation, compressor, limiter or end fade.",
+  "master": {
+    "file": "preparation/audio/home-r4/masters/music_home_loop.wav",
+    "sha256": "b562f758222465bbddfd65e3e182e24f36c4cd8366afded68edb9c1cfc1a60f7"
+  },
+  "checks": {
+    "master": {
+      "sample_count": 1764000,
+      "decoded_duration_s": 40.0,
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "peak_sample": 0.426055908203125,
+      "join_step_absolute": 0.00482177734375,
+      "ordinary_step_p99": 0.03814697265625,
+      "join_within_ordinary_step_p99": true,
+      "edge_200ms_rms_dbfs": -26.063417616185166,
+      "longest_below_minus60_dbfs_s": 0.0,
+      "finite": true
+    },
+    "encoded": {
+      "sample_count": 1764000,
+      "decoded_duration_s": 40.0,
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "peak_sample": 0.4118439853191376,
+      "join_step_absolute": 0.005049491301178932,
+      "ordinary_step_p99": 0.03713801445905088,
+      "join_within_ordinary_step_p99": true,
+      "edge_200ms_rms_dbfs": -26.32878128330085,
+      "longest_below_minus60_dbfs_s": 0.0,
+      "finite": true
+    },
+    "loudness": {
+      "integrated_lufs": -22.56,
+      "true_peak_dbfs": -7.7,
+      "loudness_range_lu": 2.1
+    },
+    "onset_grid": {
+      "method": "positive log-spectral flux; strongest local onset near each 4-beat bar",
+      "onset_seconds": [
+        20.017777777777777,
+        22.517097505668936,
+        25.02140589569161,
+        27.520725623582766,
+        30.025034013605442,
+        32.514376417233564,
+        35.02367346938775,
+        37.522993197278915,
+        40.02231292517007,
+        42.521632653061225,
+        45.01596371882086,
+        47.49532879818594,
+        50.01959183673469,
+        52.52390022675737,
+        55.01823129251701,
+        57.52253968253968,
+        60.0118820861678
+      ],
+      "fitted_beat_seconds": 0.6249338624338625,
+      "fitted_bpm": 96.01015980527039,
+      "grid_residual_max_ms": 22.375616913443253,
+      "caveat": "Measures pulse timing only, not subjective musical phrasing or timbre."
+    }
+  },
+  "review": [
+    "preparation/audio/home-r4/review/loop_join_3s_before_after.mp3",
+    "preparation/audio/home-r4/review/two_cycles.mp3"
+  ],
+  "listening_boundary": "Technical boundary checks passed; subjective join and actual Cocos/WeChat decoder looping require runtime review.",
+  "generator": {
+    "file": "preparation/tools/build_home_music_r4.py",
+    "sha256": "bcea6a602d3a7ae53ab535f2eec9a7bdd5612291316e24641b3ab5e60efef6ff",
+    "ffmpeg": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers"
+  }
+}

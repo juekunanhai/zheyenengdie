@@ -1,0 +1,540 @@
+{
+  "revision": "2026-09-12-R2",
+  "checked_at": "2026-09-12T23:18:40+08:00",
+  "status": "passed_documentation_and_integrity_only",
+  "scope": "preparation_closure_only_development_paused",
+  "ready_for": "four_object_batch_1a_development_inputs",
+  "development_status": "batch_1a_authorized_but_paused",
+  "documents": {
+    "spec": {
+      "path": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/SPEC.md",
+      "sha256": "c9ac61adbd9c0bc1d3e037162f9bd5167648fcc7c16725f735aca8140123e054"
+    },
+    "word_copies": [
+      {
+        "path": "/Users/admin/Downloads/zheyenengdie/docs/zhynd_codex_handoff/这也能叠_Codex开发交接_FINAL_v2_跨平台.docx",
+        "sha256": "1ae71ff232d3194378ea7570cd0e7bcca5998aece4775333b4abd81c66f077f9"
+      },
+      {
+        "path": "/Users/admin/Downloads/zheyenengdie/art-source/这也能叠_正式美术素材包_v1/00_DOCS/这也能叠_Codex开发交接_FINAL_v2_跨平台.docx",
+        "sha256": "1ae71ff232d3194378ea7570cd0e7bcca5998aece4775333b4abd81c66f077f9"
+      }
+    ]
+  },
+  "checks": {
+    "revision": "2026-09-12-R2",
+    "protected_files_unchanged": 481,
+    "word_body_items_match_spec": 1142,
+    "word_copies_identical": true,
+    "source_asset_entries_unchanged": 179,
+    "rules_json_same_revision": true,
+    "platform_text_matches_spec": true,
+    "first_four_scales_match": true,
+    "audio_status": "candidate_pending_listening",
+    "spec_sha256": "c9ac61adbd9c0bc1d3e037162f9bd5167648fcc7c16725f735aca8140123e054",
+    "docx_sha256": "1ae71ff232d3194378ea7570cd0e7bcca5998aece4775333b4abd81c66f077f9",
+    "runtime_restarted": false,
+    "gameplay_implemented": false
+  },
+  "word_visual_review": {
+    "status": "passed",
+    "page_count": 48,
+    "fresh_final_pages_reviewed": 27,
+    "pixel_identical_review_reused": 21,
+    "chinese_glyphs": "visible",
+    "clipping_or_overlap": "none_observed",
+    "tables_and_historical_appendix": "reviewed",
+    "pages": [
+      {
+        "page": 1,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "c5551c49a30e2bd186246e0f0e4caf427d989a2a51a54b15247fb24f11776f0d",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 2,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "210f225297c6755078cb215e02ac7d7b03cdab7ef823b5c6b878c4b1917c57cc",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 3,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "bf1cb6817f0687641351db52403f30029b537e3051e80a1cd1810195ddabe420",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 4,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "69b3ec6626f175db8da0553691d633b08f9625bea85665ec79074b0f918e5c5e",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 5,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "5cae3350e1983c8cc2f75e289ded7b538447d887943566cd052afb31a3e742e5",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 6,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "03a3ea47988abf66fe05dd3fe308ba559984834646b8c10b0ba6843cb573207b",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 7,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "171c0953f3252e625792704e416c2503070422385073513b7af9c805a06be8aa",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 8,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "22f0b1dbf5bc8f3585f1daaa7afefe47eac26d4e3af757f990ab2444f33e056a",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 9,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "78e143cb604decb7ddf64dc0888d2c040bfaea49dcdcddedb35567b07c323c35",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 10,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "5e128eac62cd7f7f11083ba9db55d7d123187d8e56cc531e01f4bc9889224599",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 11,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "218cebe9d4ec74a0923b318f03d9f443066037ce841dfb03a897e36ede9b6fab",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 12,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "f999f8a4816cd49d1baaa1c945b959e84e1bc228e52b549bb7f3642db3f801b3",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 13,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "690b51a49a1b3f3ef0e2e8330154b7569808842199fc728301cad7a17f560024",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 14,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "14757a1678f174c945dfc0bbd4789dd83364cf5f2f097905a64cfde575123c21",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 15,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "2d5b0961fc6e6fb1c36bec1ba07892cc4525d356faedf75f8595ae765b6186d2",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 16,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "87c2ae0f54fc016beefafb17d99503c785204bf3cf6036648f5fe958df0c10eb",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 17,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "85a6305c7fb0ceacbd030967ebcc8db9e347217d8a204a02e9a15c9226b2f60a",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 18,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "40cbd9c4c5c579de589131a8db6e5470098dabff7f482aaa5757dc56614c8d6b",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 19,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "0a14270e9987b9918d45917b28fab5e06c848949e1e2e58df93a06992380c25b",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 20,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "e5064c8bb9e6f665cd52b08e95f6850397640cef82f8845bdc19c11771279971",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 21,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "c66d992ca8b29c59a98fa6b2d3224d921cad667ab405c376ed86eecfb427b0a2",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 22,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "d8daea797bcd004fbd95c3958399819d39d3c7679a2a8ede6cd239ad6e4f4d47",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 23,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "90f11b9824fcd80b4f495354776c6209551e758b3e1d4302918b3c623bb79411",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 24,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "77cb7abd4e8ea4cac39c3423fc33992142b972a4b69fa5275d575ee2d381c31a",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 25,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "75f54dad8e8802152c55ac66147787fe7eb5a9e5490734569219389b9c030a06",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 26,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "a89d03d01fb0f60dc9ddfcb3aa4b6f8762ba720476b6731bf4b442dae8c1f1eb",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 27,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "c826e1a4077714c6dd246b84fc9a6eeaac7f695e5630adc4eaefcb869abdf02c",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 28,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "b4f9ec2f44b4ec3b861f1f9c78e9d0513bf7b526c9a8fc987f437dbd5c9dafc5",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 29,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "b0478a786b98b9beb42174cdd2268274590a99b338309e2e88000ff86367a07a",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 30,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "7695936efee3679b3c7d1e89844607c1ab472ebbe3fc44ef680e8f752043ede0",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 31,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "a7634fedb35d7f9c22a1887a60f53b727ec027675c6fcd3b7c980e2c0371e1f6",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 32,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "aec267e090d81c0d26ece2d1cbb95a6ab8aa202de3c369d2bae54c1067f423b1",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 33,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "4c5121108b86c3c996259fd43e7531435e6b771bda7735eed232ab88a02898d6",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 34,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "9b3c49388034cfbda94516ca3e7b89bcb1802b89e412be482e801c5e1f919c14",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 35,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "cb13d96efb79e55f90d4953416b7e91d438a09f18efd07ff024fa063d67184f8",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 36,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "2eb8463e5717d9a3d7d664fe18dbcd7c81054078440cafe78575477e204dfa7e",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 37,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "80ddc9e7e175f385caa2e7cf17e4da4457f62c55c6898fe7bfec10e962734a65",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 38,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "f11832bb68ba2d793a7479b463c7bea22b8cbd44343808b536a5a3778e524e7f",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 39,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "6cbdc3e564053247e6e7defe5df3cfa3582701ee50bcca3357388bf3478618ff",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 40,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "47f77e5820c85f3a157def24baa0b479d69c71af227dd73afa2570c69b5d3463",
+        "review": "visually_reviewed_final_render"
+      },
+      {
+        "page": 41,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "0e7ce03cf571dd8c7a6c168a179c7c4c0fd7da7e33aa87fece54bc21cd1aad85",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 42,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "0ea8967f44304ffb5ddcd618f78cc4d141f7dadce0b3047dc0e19f54a87c8ed0",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 43,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "e10a2c35a51def207df660ffcf49bd2c84b37f6ef5bb91839fdd21b1cae6b0c1",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 44,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "e0f4151ab975853f2e4ece56aa135bf35527e64ccb045a22ec07682a82e08066",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 45,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "fdb754719ae66bef1185b839b89261865d6e08620dd974f95170ea44c28fe9b7",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 46,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "f3d6a1e612531d7cfe6a9ad42a64b8e2ff9ec2253b1bef1b3ca7b86c6835c7e0",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 47,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "578034114c1cd79b63f90f44a6cb963c91711d406ae7bace9a38f91923a61954",
+        "review": "pixel_identical_to_visually_reviewed_render"
+      },
+      {
+        "page": 48,
+        "size": [
+          850,
+          1100
+        ],
+        "pixel_sha256": "e8a468b260825078442c82063e16eea99a0e65cc4d83e2be3e50d7883f107a62",
+        "review": "visually_reviewed_final_render"
+      }
+    ]
+  },
+  "integrity_report": "INTEGRITY_REPORT.json",
+  "protected_scope": {
+    "files_checked": 481,
+    "changed_files": [],
+    "source_png_count": 179,
+    "official_gameplay_scale_entries": 24,
+    "game_runtime_assets_settings_profiles_build_and_audio": "unchanged"
+  },
+  "first_calibration_baseline": {
+    "platform_width_u": 1.6,
+    "release_position": "accepted_R6_composition",
+    "visual_gap_estimate_u": 3.67,
+    "collider_clearance": "unmeasured_calibrate_in_1a",
+    "old_4_2u_platform_and_1_8u_gap": "retired_as_defaults"
+  },
+  "pending_by_batch": [
+    {
+      "batch": "0_to_1A",
+      "items": [
+        "Four-object collider, grip point and rotation clearance calibration",
+        "Input, Storage, Lifecycle and Audio boundaries at their first actual calls",
+        "Dynamic resize verification"
+      ]
+    },
+    {
+      "batch": "1A",
+      "items": [
+        "Basic full-tower physics including valid offscreen supports",
+        "Four-object controls and restart loop",
+        "Basic material and operation sounds audition and integration"
+      ]
+    },
+    {
+      "batch": "1B",
+      "items": [
+        "Incident bounds, support detachment and lost-object collision filtering",
+        "Star loss, count-based collapse and camera animation",
+        "Distance-weighted assistance calibration and incident audio"
+      ]
+    },
+    {
+      "batch": "before_1C_acceptance",
+      "items": [
+        "Sofa, toilet, dumbbell and whale art repair acceptance",
+        "Twelve objects and complete basic audiovisual experience",
+        "Real WeChat AppID and real-device verification"
+      ]
+    }
+  ],
+  "audio_status": "41_WAV_and_41_MP3_candidates_pending_listening_not_approved",
+  "not_proven": [
+    "Batch 0 runtime acceptance completed",
+    "Gameplay physics or playability",
+    "Subjective audio quality or approval",
+    "WeChat and other platform runtime or device performance",
+    "Publication readiness"
+  ],
+  "engine_launched_or_built_this_turn": false
+}

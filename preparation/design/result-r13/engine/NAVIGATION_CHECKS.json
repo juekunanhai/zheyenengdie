@@ -1,0 +1,7 @@
+{
+  "close_returns_home": true,
+  "stable_height_positive": true,
+  "real_height_matches": true,
+  "retry_hud": true,
+  "retry_reset": true
+}

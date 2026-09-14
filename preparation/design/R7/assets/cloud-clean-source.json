@@ -1,0 +1,54 @@
+{
+  "source": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/assets/cloud-soft-r7.png",
+  "output": "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/assets/cloud-soft-r7-clean.png",
+  "source_sha256": "2c6cfacad0da00a056944d0301f3a7ef2384a28f38b8662b49100248a6d673e8",
+  "output_sha256": "2ba4cc4f1fc84826f66089e3b8f0a73ef08100edd65db0db8e39aa332878cab1",
+  "dimensions": [
+    2022,
+    778
+  ],
+  "mode": "RGBA",
+  "source_unchanged": true,
+  "method": {
+    "body_seed": "4-connected cloud component containing pixel (1000,400) in alpha>=16 mask",
+    "soft_edge_preservation": "Protect main component plus 16-pixel Chebyshev-distance margin, using 33x33 maximum filter",
+    "removal": "Set alpha to 0 only for nonzero-alpha <=16 pixels outside protected margin; preserve all RGB and all other alpha values",
+    "no_hard_subject_threshold": true
+  },
+  "diff": {
+    "changed_pixels": 283,
+    "changed_channels": [
+      "alpha"
+    ],
+    "removed_alpha_min": 1,
+    "removed_alpha_max": 1,
+    "changed_rgb_pixels": 0,
+    "subject_and_soft_edge_changed_pixels": 0,
+    "alpha_gt_16_changed_pixels": 0,
+    "percentage_pixels": 0.01798977
+  },
+  "result_alpha": {
+    "fully_transparent": 1009605,
+    "partially_transparent": 563505,
+    "opaque": 6,
+    "bounds_any": [
+      71,
+      94,
+      1957,
+      717
+    ],
+    "edge_max": 0
+  },
+  "composite_previews": [
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/evidence/cloud-clean-light.png",
+    "/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/design/R7/evidence/cloud-clean-dark.png"
+  ],
+  "composite_note": "QA only. Background colors are not baked into the RGBA Sprite.",
+  "visual_review": {
+    "light_blue_composite": "passed",
+    "dark_blue_composite": "passed",
+    "isolated_blue_noise_visible": false,
+    "soft_cloud_edge_preserved": true,
+    "checkerboard_or_white_rectangle_visible": false
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "revision": "2026-09-12-P5",
+  "entries": [
+    {
+      "id": "bg_ground_city",
+      "generated_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-0737fe3a-dc07-4b8d-822d-6f70c630a1e9.png",
+      "prompt": "Production background for a CASUAL CARTOON TOY STACKING MOBILE GAME. Portrait 9:16 raster. Entire city is a visibly miniature plastic construction toy, like a high quality colorful 3D animated mobile puzzle game. Chunky geometric modern apartment blocks, blue and butter-yellow buildings, coral pink rectangular high-rises, saturated cyan windows, simplified candy-like cornices, tiny rooftop water tanks. Smooth molded plastic material, broad bevels, strong warm ambient shadows, exaggerated cartoon proportions, NO realistic materials, NO medieval architecture, NO Mediterranean village, NO stone texture, NO flowers, NO real photography. Bright cerulean blue sky with large soft balloon-like white clouds. Modern city skyline layers occupy bottom half and both edges; central vertical lane kept spacious for a tower that will be rendered separately. View from GROUND level across a sunny flat city plaza; simple pale warm yellow toy concrete plaza covers the bottom 18 percent edge-to-edge and connects to building sidewalks. The ground horizon under the tower must be unambiguously flat ground. Richly layered city walls to sides rise to 35 percent from top; lower right coral building and lower left yellow building frame scene. Upper 25 percent blue sky with no objects for HUD. Foreground and background silhouettes clean and bold, polished premium casual game art, joyful and vivid, dimensional toy diorama, harmonious blue/yellow palette. The tower and game objects and ground platform are NOT included. NO text, NO logo, NO UI, NO buttons, NO characters, NO faces, NO floating islands, NO border. Finished game environment texture, not a concept board.",
+      "tool": "built-in image_gen",
+      "status": "generated_final_candidate_pending_composition_review",
+      "purpose": "Missing complete environment layer",
+      "input_images_uploaded": false,
+      "output": "art/generated/bg_ground_city.png",
+      "sha256": "41e0107fefdcd32de30005aec0a9f1410b0474ad3a68f6c2fa881cbd144aaee2",
+      "source_sha256": "2a6db2cfb667868b9bfb205d0924d928b35711f6522797b864c776db5b613736",
+      "size": [
+        941,
+        1672
+      ]
+    },
+    {
+      "id": "bg_city_altitude",
+      "generated_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-6abf0a39-5607-4ea0-9554-d0fd1ea8a451.png",
+      "prompt": "Finished production portrait 9:16 background for a colorful CASUAL 2.5D TOY STACKING mobile game, city-altitude stage. Camera ABOVE STREET but LEVEL WITH THE MIDDLE AND ROOFTOPS of a modern plastic toy city. Rich city skyline receding into atmospheric distance, chunky blue, pale yellow and coral pink miniature modern rectangular buildings with rounded bevels, blue water tanks, simplified colorful windows. Playful polished molded-plastic geometry with warm sunlight and ambient occlusion, matching a premium cartoon mobile puzzle game. No ground visible, buildings continue out of the bottom edge. City occupies lower 50 percent and taller buildings at left/right edges rising to y=30%, blue clear sky upper 35 percent, some white sculptural rounded clouds at edges. Central vertical 40 percent kept low detail and atmospheric so a tower can be rendered over it. Perspective depth and city richness, NOT a flat skyline strip. No street plaza, no tower, no floating islands, no game objects, no characters, no text, no logo, no UI or borders. No realistic photo, no European village. Vivid blue/coral/yellow toy palette, dimensional soft-plastic surface, clean polished rendering.",
+      "tool": "built-in image_gen",
+      "status": "generated_final_candidate_pending_composition_review",
+      "purpose": "Missing complete environment layer",
+      "input_images_uploaded": false,
+      "output": "art/generated/bg_city_altitude.png",
+      "sha256": "421eba7ff483e58091828db771f812eb28bc4b775a995141d56a606783841a4b",
+      "source_sha256": "f2dbcb2bf627ecbf0b80498bf6972616cf3ef9757b65d44880a9261045efebfb",
+      "size": [
+        941,
+        1672
+      ]
+    },
+    {
+      "id": "bg_cloud_altitude",
+      "generated_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-a315aa46-f55f-4a3e-b802-12b03698bf4b.png",
+      "prompt": "Production background art for a portrait 9:16 CASUAL CARTOON TOY STACKING mobile game. Finished full canvas, no UI. We are now HIGH ABOVE THE MODERN CITY, among fluffy sculptural white clouds. Colorful miniature plastic city skyline much farther below, tiny blue and butter-yellow, coral pink toy high-rise buildings visible through clouds along bottom 20 percent. Deep bright blue sky upper half, billowing white soft clouds form a sea across lower 40 percent and some cloud tufts at left/right edges. Central vertical 45 percent of canvas comparatively open with blue atmospheric haze so a separate tower remains legible. Premium 2.5D toy diorama style, broad smooth bevels and molded plastic geometry, round playful forms, vibrant blue/coral/yellow palette on buildings, strong sunlit highlights and soft ambient occlusion. Blue sky transitions naturally towards deeper blue at top. No ground, no street, no floating rock islands, no tower, no game objects, no text, no characters, no UI or frame. Not realistic photo, not dark dystopia, no Mediterranean buildings. All visible artwork finished and suitable as actual mobile game background.",
+      "tool": "built-in image_gen",
+      "status": "generated_final_candidate_pending_composition_review",
+      "purpose": "Missing complete environment layer",
+      "input_images_uploaded": false,
+      "output": "art/generated/bg_cloud_altitude.png",
+      "sha256": "6a0cde45aee585f916b28c9233faa62ca07db21ff9df66de7d4ebc5ecdf1a531",
+      "source_sha256": "cd05725ba876dfc46f29de757bda8f3692f6d4ce3ee9508df91ec354cb3964ee",
+      "size": [
+        941,
+        1672
+      ]
+    },
+    {
+      "id": "bg_space_altitude",
+      "generated_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-d42445a5-3ac2-4ec6-a946-25f04d4b5d38.png",
+      "prompt": "Production environment background for portrait 9:16 casual CARTOON TOY STACKING game, finished raster image. HIGH ABOVE CLOUDS AT THE EDGE OF SPACE. Deep ultramarine blue gently shifting to indigo at top, luminous curved blue Earth atmosphere low across bottom 20 percent with small soft cloud bands on Earth, sparse tiny starlight flecks away from center, one small charming pastel blue ringed planet at upper right edge around y=30%, a small lavender moon far left around y=48%. Premium polished 2.5D toy game aesthetic, smoothly shaded plastic celestial spheres, soft glow, clean rounded shapes, vivid but harmonious blues/yellows, whimsical uplifting exploration mood not ominous. Keep central 50 percent vertical column relatively empty, dark blue, low contrast for a separately rendered tower. Upper 15 percent unobstructed for UI. Planets must remain small distant environmental accents. No city, no ground, no rock platforms, no tower, no characters, no letters, no logos, no HUD, no borders, no card corners, no mockup. Do not draw giant foreground planets, realistic astronomy photo, or dense nebulae. Finished background matching a sunny plastic toy city game as it ascends into space.",
+      "tool": "built-in image_gen",
+      "status": "generated_final_candidate_pending_composition_review",
+      "purpose": "Missing complete environment layer",
+      "input_images_uploaded": false,
+      "output": "art/generated/bg_space_altitude.png",
+      "sha256": "5088892dd68e34e57a5277b09ce2e9abce880b32ae9cbd289ee3fe7204eeb3ad",
+      "source_sha256": "0f8fac01b453bbfdf5a11bcad62b0ec1b9dad7455817430f874d3373f1372308",
+      "size": [
+        941,
+        1672
+      ]
+    },
+    {
+      "id": "btn_settings_icon",
+      "generated_source": "/Users/admin/.codex/generated_images/01a09348-61a0-72f3-a68f-2428fcc2dafc/exec-f3cbe237-7af7-44a8-934d-7830c6042982.png",
+      "prompt": "One single production-ready mobile casual game SETTINGS ICON on a genuinely transparent background, square PNG with alpha. A small rounded glossy vivid royal-blue circular-square toy-plastic button, with a chunky WHITE EIGHT-TOOTH GEAR symbol centered on it. Gear has circular blue hole. Shape readable at 44 pixels. Soft molded bevel edges, cyan rim reflection at upper left, navy depth and soft subtle shadow below, playful premium 2.5D toy game material, blue-yellow casual stacking game UI style. Use nearly all the canvas with 8 percent transparent margin. Clean antialiased silhouette. No text, no additional icons, no border frame, no environment, no checkerboard painted in, no stand, no gold or yellow gear, no settings sliders. White chunky gear on blue rounded button only.",
+      "tool": "built-in image_gen",
+      "status": "generated_final_candidate_pending_composition_review",
+      "purpose": "Missing home settings icon",
+      "input_images_uploaded": false,
+      "output": "art/generated/btn_settings_icon.png",
+      "sha256": "0da57f84f294413ac42fcd903d4c328b04532e6f456483e17ec504fc6dfffb8d",
+      "source_sha256": "5904c601b906dd2138b0506577603ddd41ea5bfc5dc23f65db9e5698d17499b8",
+      "size": [
+        320,
+        320
+      ]
+    }
+  ]
+}

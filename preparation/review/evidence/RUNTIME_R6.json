@@ -1,0 +1,50 @@
+{
+  "revision": "R6",
+  "build": "2026-09-12 22:18:58",
+  "status": "approved_layout_implemented_and_display_checked",
+  "screenshots": [
+    {
+      "file": "R6-cloud-normal.png",
+      "sha256": "dad6adda60a5c6a1c8e78f8c3aec7d014bbc994cf144d89bd9bd1b7e33060d05"
+    },
+    {
+      "file": "R6-ground-final.png",
+      "sha256": "04e98424754f2645c323c9756fb7123de4870261e66a6b2bfa8ed45be13a4fc7"
+    },
+    {
+      "file": "R6-ground-normal.png",
+      "sha256": "72f4a7a07c28eb0245543a7e13823c6ba74aa4b53ed2b33888acaf20e1d1989a"
+    },
+    {
+      "file": "R6-ground-short.png",
+      "sha256": "debc2c8a1964c90a9ab21aaaf0ba732232b64ceea2319cdd6aa6ee3fad44a12a"
+    },
+    {
+      "file": "R6-home.png",
+      "sha256": "ade5b542a132381bcf9e1d8efc4bf6e0b51a38ec26a8caf1411043db26f7c7cb"
+    },
+    {
+      "file": "R6-space-long.png",
+      "sha256": "ab1b0081d645dc4ca2a8bcb5b9020655eac94f24f462272735650d2362360cc5"
+    },
+    {
+      "file": "R6-space-zoom-final.png",
+      "sha256": "f8a52b65cbc564a46cdfbd13f89ffd5cc78a02bffc0e41134675a0462be587c4"
+    }
+  ],
+  "checks": [
+    "no separator board sprites in Home or HUD",
+    "vertical inventory",
+    "short top entry claw",
+    "height at safe-area top and stars beneath left",
+    "3 initial aspect ratios visually checked",
+    "ground cloud space displayed",
+    "HUD bounds unchanged under world zoom"
+  ],
+  "not_verified": [
+    "actual physics and input",
+    "WeChat safe-area/capsule",
+    "device performance",
+    "audio listening acceptance"
+  ]
+}
