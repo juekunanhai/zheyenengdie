@@ -7,6 +7,7 @@ import { WorldBoundary } from './incident-state';
 import { PlayFeedback } from './play-feedback';
 import type { TowerRisk } from './tower-director';
 import type { HighlightKind } from './run-highlights';
+import type { ItemKind, ItemState } from './item-system';
 
 /** Ordinary camera state only. Viewport metrics and transient incident effects are rebuilt. */
 export interface PlayViewState {
@@ -46,6 +47,13 @@ export class PlayView {
     private zoomDuration = .35;
     private incidentCamera = false;
     private readonly backdrop: HeightBackdrop;
+    private readonly inventory: Node | null;
+    private readonly itemSlots: Node[] = [];
+    private readonly itemLabels: Label[] = [];
+    private readonly offerLabel: Label | null;
+    private itemState: ItemState | null = null;
+    private itemHandler: ((kind: ItemKind) => void) | null = null;
+    private offerHandler: ((kind: ItemKind, replaceSlot?: 0 | 1) => void) | null = null;
 
     constructor(private readonly canvas: Node, private readonly frames: Map<string, SpriteFrame>) {
         this.safe = canvas.getChildByName('SafeArea')!;
@@ -73,6 +81,37 @@ export class PlayView {
         this.hint.outlineColor = new Color(23, 73, 144);
         this.feedback = new PlayFeedback(this.safe, this.root, frames);
         this.backdrop = canvas.getComponent(HeightBackdrop)!;
+        this.inventory = this.safe.getChildByName('InventoryColumn') ?? null;
+        let offerLabel: Label | null = null;
+        if (this.inventory) {
+            const empty = this.inventory.getChildByName('itembar_empty');
+            if (empty) empty.active = true;
+            for (let index = 0; index < 2; index++) {
+                const slot = this.makeNode(`ItemSlot${index}`, this.inventory);
+                slot.getComponent(UITransform)!.setContentSize(140, 60);
+                slot.setPosition(0, 78 - index * 78, 0);
+                const label = slot.addComponent(Label);
+                label.fontSize = 20; label.lineHeight = 24; label.isBold = true; label.color = Color.WHITE;
+                label.enableOutline = true; label.outlineWidth = 2; label.outlineColor = new Color(23, 73, 144);
+                this.itemSlots.push(slot); this.itemLabels.push(label);
+                const eventType = (Node as unknown as { EventType?: { TOUCH_END?: string } }).EventType?.TOUCH_END ?? 'touch-end';
+                (slot as unknown as { on?: (type: string, callback: () => void) => void }).on?.(eventType, () => {
+                    const stack = this.itemState?.slots[index];
+                    if (stack) this.itemHandler?.(stack.kind);
+                });
+            }
+            const offer = this.makeNode('ItemOffer', this.inventory);
+            offer.getComponent(UITransform)!.setContentSize(150, 48); offer.setPosition(0, -112, 0);
+            offerLabel = offer.addComponent(Label); offerLabel.fontSize = 15; offerLabel.lineHeight = 18;
+            offerLabel.color = Color.WHITE; offerLabel.enableOutline = true; offerLabel.outlineWidth = 2;
+            offerLabel.outlineColor = new Color(23, 73, 144);
+            const eventType = (Node as unknown as { EventType?: { TOUCH_END?: string } }).EventType?.TOUCH_END ?? 'touch-end';
+            (offer as unknown as { on?: (type: string, callback: () => void) => void }).on?.(eventType, () => {
+                const choice = this.itemState?.offer?.[0];
+                if (choice) this.offerHandler?.(choice);
+            });
+        }
+        this.offerLabel = offerLabel;
         this.fit();
     }
 
@@ -153,6 +192,29 @@ export class PlayView {
         this.safe.children.filter(node => node.name === 'hud_star_full').forEach((node, index) => {
             node.getComponent(Sprite)!.spriteFrame = this.frames.get(index < count ? 'hud_star_full' : 'hud_star_empty')!;
         });
+    }
+
+    setItemHandlers(use: (kind: ItemKind) => void, choose?: (kind: ItemKind, replaceSlot?: 0 | 1) => void): void {
+        this.itemHandler = use; this.offerHandler = choose ?? null;
+    }
+
+    setItems(state: ItemState): void {
+        this.itemState = {
+            slots: state.slots.map(stack => stack ? { ...stack } : null) as ItemState['slots'],
+            offer: state.offer ? [...state.offer] : null, offerPlacedCount: state.offerPlacedCount,
+            offeredMilestones: [...state.offeredMilestones], consumed: { ...state.consumed },
+            reviveUsed: state.reviveUsed, active: { ...state.active },
+        };
+        this.itemSlots.forEach((slot, index) => {
+            const stack = this.itemState!.slots[index];
+            slot.active = !!stack;
+            this.itemLabels[index].string = stack ? `${this.itemName(stack.kind)} ×${stack.count}` : '';
+        });
+        if (this.offerLabel) this.offerLabel.string = this.itemState.offer ? `奖励 ${this.itemName(this.itemState.offer[0])}` : '';
+    }
+
+    private itemName(kind: ItemKind): string {
+        return ({ strong_glue: '强力胶', undo: '撤销', shrink: '缩小', reroll: '重抽', feather: '羽量', restore_star: '补星' } as Record<ItemKind, string>)[kind];
     }
 
     setNext(kind: ObjectKind): void {

@@ -8,7 +8,8 @@ export const ENTER_SECONDS = .24;
 export const STABLE_SECONDS = .65;
 export const MAX_OBSERVE_SECONDS = 1.5;
 
-export type ObjectKind = 'cardboard_box' | 'wood_plank' | 'basketball' | 'fridge' | 'toilet' | 'dumbbell' | 'wooden_crate' | 'ice_block' | 'sofa' | 'whale' | 'burger' | 'slipper';
+export type ObjectKind = 'cardboard_box' | 'wood_plank' | 'basketball' | 'fridge' | 'toilet' | 'dumbbell' | 'wooden_crate' | 'ice_block' | 'sofa' | 'whale' | 'burger' | 'slipper'
+    | 'television' | 'bathtub' | 'piano' | 'tire' | 'bowling_ball' | 'oil_drum' | 'spring_pad' | 'cat_bed' | 'giraffe' | 'ufo' | 'rocket' | 'vending_machine';
 export interface ObjectSpec {
     kind: ObjectKind;
     width: number;
@@ -23,6 +24,8 @@ export interface ObjectSpec {
     density: number;
     contactAngularDamping?: number;
     adhesion?: { maxForce: number; maxTorque: number; maxImpactSpeed: number };
+    /** Temporary strong-glue bond budget. Undefined keeps the original finite bond behavior. */
+    adhesionSeconds?: number;
     /** First real support contact only; relative closing speed in Box2D metres/second. */
     contactImpactSpeed?: number;
     /** Total budget shared by at most two actual supports; angle error in degrees. */
@@ -241,9 +244,55 @@ export const OBJECTS: Record<ObjectKind, ObjectSpec> = {
         friction: 0.8, restitution: 0.01, density: 0.245651470001,
         contactAngularDamping: 6, contactImpactSpeed: 2.4,
     },
+    television: { kind: 'television', width: 105, height: 90, circle: false,
+        spriteWidth: 105, spriteHeight: 102, outline: [[-52.5,-45], [52.5,-45], [52.5,45], [-52.5,45]],
+        friction: 0.62, restitution: 0.01, density: 0.42, contactAngularDamping: 6, contactImpactSpeed: 2.4,
+        description: '天线先落地，屏幕随后保持平衡。' },
+    bathtub: { kind: 'bathtub', width: 155, height: 72, circle: false,
+        spriteWidth: 155, spriteHeight: 138, outline: [[-77.5,15], [-68,31], [58,30], [77.5,12], [69,-31], [-58,-31]],
+        friction: 0.68, restitution: 0.01, density: 0.34, contactAngularDamping: 6, contactImpactSpeed: 2.4,
+        description: '宽而浅的浴缸，适合承接下一件重物。' },
+    piano: { kind: 'piano', width: 165, height: 110, circle: false,
+        spriteWidth: 165, spriteHeight: 154, outline: [[-82.5,-55], [82.5,-55], [82.5,35], [55,55], [-55,55], [-82.5,35]],
+        friction: 0.72, restitution: 0.01, density: 0.62, contactAngularDamping: 6, contactImpactSpeed: 2.4,
+        description: '沉重的琴身，落稳后会成为可靠底座。' },
+    tire: { kind: 'tire', width: 95, height: 95, circle: true,
+        spriteWidth: 95, spriteHeight: 80, friction: 0.88, restitution: 0.02, density: 0.46,
+        adhesion: { maxForce: 900, maxTorque: 110, maxImpactSpeed: 2.1 }, contactAngularDamping: 6,
+        description: '圆滚滚的轮胎，接触时容易继续滚动。' },
+    bowling_ball: { kind: 'bowling_ball', width: 62, height: 62, circle: true,
+        spriteWidth: 62, spriteHeight: 72, friction: 0.5, restitution: 0.03, density: 1.08,
+        contactAngularDamping: 5, contactImpactSpeed: 2.4, description: '小而重的球，落点偏一点就会改变整座塔。' },
+    oil_drum: { kind: 'oil_drum', width: 72, height: 112, circle: false,
+        spriteWidth: 72, spriteHeight: 72, outline: [[-34,-56], [34,-56], [36,-47], [36,47], [30,56], [-30,56], [-36,47], [-36,-47]],
+        friction: 0.58, restitution: 0.01, density: 0.72, contactAngularDamping: 6, contactImpactSpeed: 2.4,
+        description: '窄而高的油桶，垂直姿态更容易站稳。' },
+    spring_pad: { kind: 'spring_pad', width: 90, height: 72, circle: false,
+        spriteWidth: 90, spriteHeight: 90, outline: [[-45,-36], [45,-36], [45,20], [34,36], [-34,36], [-45,20]],
+        friction: 0.74, restitution: 0.08, density: 0.3, contactAngularDamping: 5, contactImpactSpeed: 2.1,
+        description: '弹簧垫会回弹，释放时留出一点缓冲。' },
+    cat_bed: { kind: 'cat_bed', width: 120, height: 55, circle: false,
+        spriteWidth: 120, spriteHeight: 128, outline: [[-60,-27.5], [60,-27.5], [60,8], [46,27.5], [-46,27.5], [-60,8]],
+        friction: 0.86, restitution: 0.01, density: 0.27, contactAngularDamping: 6, contactImpactSpeed: 2.4,
+        description: '软乎乎的猫窝，横放时提供很宽的承托面。' },
+    giraffe: { kind: 'giraffe', width: 75, height: 205, circle: false,
+        spriteWidth: 75, spriteHeight: 73, outline: [[-25,-102.5], [25,-102.5], [37,-57], [28,102.5], [-28,102.5], [-37,-57]],
+        friction: 0.68, restitution: 0.01, density: 0.3, contactAngularDamping: 6, contactImpactSpeed: 2.4,
+        description: '长颈鹿把重心抬高，落点要更仔细。' },
+    ufo: { kind: 'ufo', width: 170, height: 62, circle: false,
+        spriteWidth: 170, spriteHeight: 148, outline: [[-85,0], [-65,22], [0,31], [65,22], [85,0], [65,-22], [0,-31], [-65,-22]],
+        friction: 0.7, restitution: 0.02, density: 0.28, contactAngularDamping: 5, contactImpactSpeed: 2.4,
+        description: '扁平的 UFO，能做成横跨两点的桥。' },
+    rocket: { kind: 'rocket', width: 78, height: 175, circle: false,
+        spriteWidth: 78, spriteHeight: 85, outline: [[0,87.5], [35,46], [39,-55], [22,-87.5], [-22,-87.5], [-39,-55], [-35,46]],
+        friction: 0.62, restitution: 0.02, density: 0.36, contactAngularDamping: 5, contactImpactSpeed: 2.4,
+        description: '火箭很高，旋转后会立刻改变占位高度。' },
+    vending_machine: { kind: 'vending_machine', width: 92, height: 155, circle: false,
+        spriteWidth: 92, spriteHeight: 97, outline: [[-46,-77.5], [46,-77.5], [46,67], [35,77.5], [-35,77.5], [-46,67]],
+        friction: 0.64, restitution: 0.01, density: 0.5, contactAngularDamping: 6, contactImpactSpeed: 2.4,
+        description: '自动贩卖机又高又重，适合在稳定阶段出现。' },
 };
-// Batch 1C base sequence: friendly opening, twelve kinds, with boards offered as real turns.
-// A risk-aware or randomized director remains a later batch.
+// Fixed opening: the director takes over only after these fourteen advertised turns.
 export const CALIBRATION_SEQUENCE: readonly ObjectKind[] = ["cardboard_box", "wood_plank", "fridge", "wooden_crate", "sofa", "whale", "wood_plank", "burger", "ice_block", "dumbbell", "wood_plank", "toilet", "slipper", "basketball"];
 
 export function halfExtents(spec: ObjectSpec, angle: number): { x: number; y: number } {

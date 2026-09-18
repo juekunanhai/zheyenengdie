@@ -14,6 +14,18 @@ const CLIP_IDS: Record<string, readonly string[]> = {
     impact_slipper: ['impact_soft_1', 'impact_soft_2', 'impact_soft_3'],
     impact_ice_block: ['impact_ice_1', 'impact_ice_2', 'impact_ice_3'],
     impact_whale: ['impact_heavy_1', 'impact_heavy_2', 'impact_heavy_3'],
+    impact_television: ['impact_metal_1', 'impact_metal_2', 'impact_metal_3'],
+    impact_bathtub: ['impact_ceramic_1', 'impact_ceramic_2', 'impact_ceramic_3'],
+    impact_piano: ['impact_heavy_1', 'impact_heavy_2', 'impact_heavy_3'],
+    impact_tire: ['impact_rubber_1', 'impact_rubber_2', 'impact_rubber_3'],
+    impact_bowling_ball: ['impact_rubber_1', 'impact_rubber_2', 'impact_rubber_3'],
+    impact_oil_drum: ['impact_metal_1', 'impact_metal_2', 'impact_metal_3'],
+    impact_spring_pad: ['impact_rubber_1', 'impact_rubber_2', 'impact_rubber_3'],
+    impact_cat_bed: ['impact_soft_1', 'impact_soft_2', 'impact_soft_3'],
+    impact_giraffe: ['impact_soft_1', 'impact_soft_2', 'impact_soft_3'],
+    impact_ufo: ['impact_metal_1', 'impact_metal_2', 'impact_metal_3'],
+    impact_rocket: ['impact_heavy_1', 'impact_heavy_2', 'impact_heavy_3'],
+    impact_vending_machine: ['impact_metal_1', 'impact_metal_2', 'impact_metal_3'],
     skill_rotate_90: ['rotate_90'], claw_release: ['claw_open'], ui_tap: ['next_handoff'],
 };
 

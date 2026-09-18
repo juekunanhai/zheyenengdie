@@ -9,6 +9,7 @@ import { PlayView, PlayViewState } from './play-view';
 import { LandingContact, TowerBody, TowerWorld, TowerWorldState } from './tower-world';
 import { classifyTowerRisk, DirectorState, RISK_THRESHOLDS, TowerDirector, TowerRisk } from './tower-director';
 import { HighlightEvent, HighlightState, HIGHLIGHT_TUNING, RunHighlights } from './run-highlights';
+import { ItemKind, ItemLedger, ItemState } from './item-system';
 const { ccclass, property } = _decorator;
 
 /** Two in-memory points for the current rules only. No storage, inventory, or ad entitlement. */
@@ -41,6 +42,7 @@ interface RunCheckpoint {
     chargedIncidentCount: number;
     incidentCount: number;
     risk: TowerRisk;
+    items: ItemState;
 }
 
 @ccclass('StackGameController')
@@ -74,6 +76,7 @@ export class StackGameController extends Component {
     private recentImpactSpeed = 0;
     private chargedIncidentCount = 0;
     private readonly highlights = new RunHighlights();
+    private readonly items = new ItemLedger();
     private untimedCalibration = false;
     private stars = 3;
     private incident: Incident | null = null;
@@ -103,6 +106,9 @@ export class StackGameController extends Component {
         this.audio = new GameAudio(this.node, new Map(this.approvedSounds.map(clip => [clip.name, clip])));
         this.music = new GameMusic(this.node, new Map(this.approvedSounds.map(clip => [clip.name, clip])));
         this.display.setStars(this.stars);
+        (this.display as PlayView & { setItemHandlers?: (use: (kind: ItemKind) => void, choose?: (kind: ItemKind, replaceSlot?: 0 | 1) => void) => void })
+            .setItemHandlers?.(kind => this.useItem(kind), (kind, slot) => this.chooseItem(kind, slot));
+        this.renderItems();
         this.tutorial = !readSettings().tutorialDone;
         this.lifecycle = new RunLifecycle(paused => {
             this.finger = null;
@@ -117,9 +123,12 @@ export class StackGameController extends Component {
         });
         bindAction(this.display.rotate, () => { this.audio.interact(); this.rotate(); });
         bindAction(this.display.pause, () => this.lifecycle.togglePause());
-        // Inventory is visually preserved, but its events cannot release a held object.
-        bindAction(this.display.safe.getChildByName('InventoryColumn')!, () => {});
         this.spawn();
+    }
+
+    private renderItems(): void {
+        const view = this.display as PlayView & { setItems?: (state: ItemState) => void };
+        view.setItems?.(this.items.snapshot());
     }
 
     private spawn(): void {
@@ -129,7 +138,8 @@ export class StackGameController extends Component {
             next: this.sequence[(this.releaseCount + 1) % this.sequence.length],
         } : this.releaseCount === 0 ? { current: this.objectDirector.current, next: this.objectDirector.next }
             : this.objectDirector.handoff({ elapsedSeconds: this.elapsedSeconds, risk: this.risk,
-                stableSeconds: this.steadySeconds, incidentCount: this.chargedIncidentCount });
+                stableSeconds: this.steadySeconds, incidentCount: this.chargedIncidentCount, placedCount: this.placedCount,
+                allowEarlyDiscovery: true });
         const spec = OBJECTS[choice.current];
         this.boundary = this.display.beginPlacement(this.world.placementTop(), Math.max(spec.width, spec.height));
         this.normalBoundary = this.display.logicalBounds();
@@ -158,6 +168,7 @@ export class StackGameController extends Component {
         }
         const dt = Math.min(delta, .067);
         this.clock += delta; this.audio.update(dt);
+        this.items.tick(dt);
         if (this.phase === 'defeated') {
             if (this.clock >= 1.2) this.commitResult();
             return;
@@ -289,6 +300,9 @@ export class StackGameController extends Component {
     release(): void {
         if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || this.restoringCheckpoint || this.restoreRequest || !this.display.cameraRecovered() || this.world.hasPlacementHazard()) return;
         this.undoCheckpoint = this.captureCheckpoint();
+        const effects = this.items.takeNextEffects();
+        (this.world as TowerWorld & { applyHeldEffects?: (record: TowerBody, effects: { glueSeconds: number; shrinkNext: boolean; featherNext: boolean }) => void })
+            .applyHeldEffects?.(this.current, effects);
         this.phase = 'falling'; this.clock = 0; this.finger = null;
         this.stableFor = 0;
         const shape = this.world.bounds(this.current);
@@ -300,7 +314,46 @@ export class StackGameController extends Component {
         });
         this.current.lossBoundary = { left: this.boundary.left, right: this.boundary.right, bottom: this.boundary.bottom };
         this.world.release(this.current); this.releaseCount++;
+        this.renderItems();
         this.display.setHint(''); this.audio.play('claw_release');
+    }
+
+    /** Inventory action entry point used by the local HUD and calibration host. */
+    useItem(kind: ItemKind): boolean {
+        if (this.phase === 'ended' || this.lifecycle?.paused || this.restoringCheckpoint || this.restoreRequest) return false;
+        const hasItem = () => this.items.snapshot().slots.some(stack => stack?.kind === kind);
+        if (!hasItem()) return false;
+        if (kind === 'undo') {
+            if (!this.undoCheckpoint || !this.items.use(kind)) return false;
+            this.renderItems();
+            return this.restoreCheckpoint('undo');
+        }
+        if (kind === 'restore_star') {
+            if (this.stars >= 3 || !this.items.use(kind)) return false;
+            this.stars++;
+            this.display.setStars(this.stars); this.renderItems();
+            return true;
+        }
+        if (kind === 'reroll') {
+            if (this.phase !== 'planning' || this.sequence || !this.current) return false;
+            const next = this.objectDirector.reroll({ elapsedSeconds: this.elapsedSeconds, risk: this.risk,
+                stableSeconds: this.steadySeconds, incidentCount: this.chargedIncidentCount, placedCount: this.placedCount,
+                allowEarlyDiscovery: true });
+            if (!next) return false;
+            if (!this.items.use(kind)) return false;
+            this.display.setNext(next); this.renderItems();
+            return true;
+        }
+        if (this.phase !== 'planning' || !this.current) return false;
+        if (!this.items.use(kind)) return false;
+        this.renderItems();
+        return true;
+    }
+
+    chooseItem(kind: ItemKind, replaceSlot?: 0 | 1): boolean {
+        if (!this.items.chooseOffer(kind, replaceSlot)) return false;
+        this.renderItems();
+        return true;
     }
 
     /** Local experiment host may select a fixed sequence before the first release.
@@ -348,6 +401,8 @@ export class StackGameController extends Component {
         this.presentHighlights(events, candidates);
         if (!confirmed) { this.saveStableCheckpoint(); return; }
         this.placedCount += confirmed;
+        this.items.maybeOpenOffer(this.placedCount);
+        this.renderItems();
         const previousPeak = this.peak;
         this.peak = Math.max(this.peak, this.world.confirmedTop());
         this.display.setHeight(this.peak);
@@ -380,7 +435,7 @@ export class StackGameController extends Component {
             sequence: this.sequence ? [...this.sequence] : null, untimedCalibration: this.untimedCalibration,
             elapsedSeconds: this.elapsedSeconds, steadySeconds: this.steadySeconds,
             recentImpactSpeed: this.recentImpactSpeed, chargedIncidentCount: this.chargedIncidentCount,
-            incidentCount: this.incidentCount, risk: this.risk,
+            incidentCount: this.incidentCount, risk: this.risk, items: this.items.exportState(),
         };
     }
 
@@ -424,6 +479,7 @@ export class StackGameController extends Component {
         this.elapsedSeconds = point.elapsedSeconds; this.steadySeconds = point.steadySeconds;
         this.recentImpactSpeed = point.recentImpactSpeed; this.chargedIncidentCount = point.chargedIncidentCount;
         this.incidentCount = point.incidentCount; this.risk = point.risk;
+        this.items.restoreCheckpoint(point.items);
         this.incident = null; this.recoveryFor = 0; this.failureReason = null; this.finger = null; this.dragOffset = 0;
         this.resumePhase = point.phase; this.resumeClock = point.clock;
         const bounds = this.display.logicalBounds();
@@ -434,7 +490,7 @@ export class StackGameController extends Component {
         if (kind === 'undo' && this.stableCheckpoint && (this.stableCheckpoint.releaseCount > point.releaseCount
             || this.stableCheckpoint.placedCount > point.placedCount)) this.stableCheckpoint = null;
         this.undoCheckpoint = null;
-        this.display.setStars(this.stars); this.display.setHeight(this.peak);
+        this.display.setStars(this.stars); this.display.setHeight(this.peak); this.renderItems();
         this.display.setNext(point.next);
         this.display.setHint('恢复中…'); this.display.setRisk('Safe', false);
         runResult.height = 0; runResult.placed = 0; runResult.reason = 'calibration_end';
@@ -575,6 +631,7 @@ export class StackGameController extends Component {
             drawMode: this.sequence ? 'calibration' : 'director', director: this.objectDirector.snapshot(),
             risk: this.risk, elapsedSeconds: this.elapsedSeconds, steadySeconds: this.steadySeconds,
             highlights: this.highlights.snapshot(),
+            items: this.items.snapshot(),
             checkpoints: { stable: this.stableCheckpoint ? { placed: this.stableCheckpoint.placedCount,
                 releases: this.stableCheckpoint.releaseCount, peakMetres: this.stableCheckpoint.peak / 100 } : null,
                 undo: this.undoCheckpoint ? { placed: this.undoCheckpoint.placedCount,

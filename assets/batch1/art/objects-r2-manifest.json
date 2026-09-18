@@ -1,0 +1,222 @@
+{
+  "revision": "2026-09-18-r2",
+  "source": "source-inputs/art-source/\u8fd9\u4e5f\u80fd\u53e0_\u6b63\u5f0f\u7f8e\u672f\u7d20\u6750\u5305_v1/02_ASSETS",
+  "objects": [
+    {
+      "kind": "television",
+      "type": "object",
+      "file": "assets/batch1/art/object_television.png",
+      "uuid": "f7d15c5b-4069-4e6a-8ec9-ade900168d97",
+      "width": 362,
+      "height": 351,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "television",
+      "type": "next",
+      "file": "assets/batch1/art/next_television.png",
+      "uuid": "41943e03-ce63-4b6f-8653-f561fcc26b44",
+      "width": 362,
+      "height": 351,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "bathtub",
+      "type": "object",
+      "file": "assets/batch1/art/object_bathtub.png",
+      "uuid": "b31ff5af-5d2b-4603-adff-c342012e7957",
+      "width": 362,
+      "height": 324,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "bathtub",
+      "type": "next",
+      "file": "assets/batch1/art/next_bathtub.png",
+      "uuid": "4004f3b0-0be7-48b9-a333-a5533104be64",
+      "width": 362,
+      "height": 324,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "piano",
+      "type": "object",
+      "file": "assets/batch1/art/object_piano.png",
+      "uuid": "fcb3d6da-1b6f-4b8d-a252-8df91deb370e",
+      "width": 362,
+      "height": 338,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "piano",
+      "type": "next",
+      "file": "assets/batch1/art/next_piano.png",
+      "uuid": "83613bef-1236-45dc-afe0-e55f6215eb47",
+      "width": 362,
+      "height": 338,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "tire",
+      "type": "object",
+      "file": "assets/batch1/art/object_tire.png",
+      "uuid": "195d5343-3656-4e84-b9a3-72318f9ed997",
+      "width": 338,
+      "height": 284,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "tire",
+      "type": "next",
+      "file": "assets/batch1/art/next_tire.png",
+      "uuid": "8e6001d5-20a7-4082-8ac6-6e290373fb46",
+      "width": 338,
+      "height": 284,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "bowling_ball",
+      "type": "object",
+      "file": "assets/batch1/art/object_bowling_ball.png",
+      "uuid": "f0039836-f090-4910-8a40-8b91b160e210",
+      "width": 310,
+      "height": 362,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "bowling_ball",
+      "type": "next",
+      "file": "assets/batch1/art/next_bowling_ball.png",
+      "uuid": "efb3953e-cee7-4d2d-a0e6-47a90c9ab285",
+      "width": 310,
+      "height": 362,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "oil_drum",
+      "type": "object",
+      "file": "assets/batch1/art/object_oil_drum.png",
+      "uuid": "cfa5f7dd-9714-43b5-a9b3-928682a81677",
+      "width": 362,
+      "height": 361,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "oil_drum",
+      "type": "next",
+      "file": "assets/batch1/art/next_oil_drum.png",
+      "uuid": "dc76fc96-603c-4051-a74f-68b2bd05a1e1",
+      "width": 362,
+      "height": 361,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "spring_pad",
+      "type": "object",
+      "file": "assets/batch1/art/object_spring_pad.png",
+      "uuid": "a82d7656-0123-4ef6-aa94-81af344ae988",
+      "width": 362,
+      "height": 362,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "spring_pad",
+      "type": "next",
+      "file": "assets/batch1/art/next_spring_pad.png",
+      "uuid": "619afe62-d42f-4454-ac6b-69c48ac04d45",
+      "width": 362,
+      "height": 362,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "cat_bed",
+      "type": "object",
+      "file": "assets/batch1/art/object_cat_bed.png",
+      "uuid": "ba4bc629-b906-44a8-9216-63533a9090d3",
+      "width": 338,
+      "height": 362,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "cat_bed",
+      "type": "next",
+      "file": "assets/batch1/art/next_cat_bed.png",
+      "uuid": "b9f800d0-4b25-4461-9a1a-205f0ae6cd79",
+      "width": 338,
+      "height": 362,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "giraffe",
+      "type": "object",
+      "file": "assets/batch1/art/object_giraffe.png",
+      "uuid": "d4edbcbe-61ca-49e2-983d-95b430bdfc98",
+      "width": 362,
+      "height": 354,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "giraffe",
+      "type": "next",
+      "file": "assets/batch1/art/next_giraffe.png",
+      "uuid": "6a038fc3-e57a-4684-b8d0-aaae427d4234",
+      "width": 362,
+      "height": 354,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "ufo",
+      "type": "object",
+      "file": "assets/batch1/art/object_ufo.png",
+      "uuid": "66219eaa-d6a5-4283-9f00-f1c29908c308",
+      "width": 362,
+      "height": 316,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "ufo",
+      "type": "next",
+      "file": "assets/batch1/art/next_ufo.png",
+      "uuid": "eafb8511-e4c4-47d3-b4ab-850f5af34923",
+      "width": 362,
+      "height": 316,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "rocket",
+      "type": "object",
+      "file": "assets/batch1/art/object_rocket.png",
+      "uuid": "be2a5f4f-8a0c-4481-a8cd-77cf626de131",
+      "width": 320,
+      "height": 350,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "rocket",
+      "type": "next",
+      "file": "assets/batch1/art/next_rocket.png",
+      "uuid": "9d082b4f-ea9e-45c9-a148-02ab2e0abfc9",
+      "width": 320,
+      "height": 350,
+      "processing": "single-colour-alpha-outline"
+    },
+    {
+      "kind": "vending_machine",
+      "type": "object",
+      "file": "assets/batch1/art/object_vending_machine.png",
+      "uuid": "6af4d96d-c870-45ff-b3a4-4988d587c68c",
+      "width": 333,
+      "height": 350,
+      "processing": "largest-alpha-component"
+    },
+    {
+      "kind": "vending_machine",
+      "type": "next",
+      "file": "assets/batch1/art/next_vending_machine.png",
+      "uuid": "a0244ca5-0b85-4967-ad53-f54ea8051bfd",
+      "width": 333,
+      "height": 350,
+      "processing": "single-colour-alpha-outline"
+    }
+  ]
+}

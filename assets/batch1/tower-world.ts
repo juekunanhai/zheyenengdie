@@ -4,6 +4,7 @@ import { localBounds, OBJECTS, ObjectSpec, planarAngle, PLATFORM_WIDTH } from '.
 import { ContactAssistance, ContactAssistanceState } from './contact-assistance';
 import type { TowerRiskSignals } from './tower-director';
 import type { HighlightPlacement } from './run-highlights';
+import type { ItemEffects } from './item-system';
 
 // Small contact gaps do not turn an old supported tower into a loss. These are 1B tuning candidates.
 const DETACH_GRACE_SECONDS = .12;
@@ -272,11 +273,13 @@ export class TowerWorld {
             const dt = Number.isFinite(game.deltaTime) ? Math.min(.1, Math.max(0, game.deltaTime)) : 0;
             this.restoration.elapsed += dt;
             this.safetyTime += dt;
+            this.contactAssistance.tick(dt);
             return;
         }
         if (!this.safety) return;
         this.safetyDt = Math.min(.1, Math.max(0, game.deltaTime));
         this.safetyTime += this.safetyDt;
+        this.contactAssistance.tick(this.safetyDt);
         for (const [key, relation] of this.supportReturns) if (relation.expires < this.safetyTime) this.supportReturns.delete(key);
         this.refreshSupport();
         this.checkLosses();
@@ -527,6 +530,35 @@ export class TowerWorld {
         record.body.wakeUp();
     }
 
+    /** Apply one-shot item modifiers while the body is still held kinematic. Geometry is
+     * copied before mutation so the shared OBJECTS catalogue remains immutable. */
+    applyHeldEffects(record: TowerBody, effects: ItemEffects): void {
+        if (record.lost || record.collider.enabled || (!effects.shrinkNext && !effects.featherNext && effects.glueSeconds <= 0)) return;
+        const scale = effects.shrinkNext ? .63 : 1;
+        record.spec = cloneSpec(record.spec);
+        if (scale !== 1) {
+            record.spec.width *= scale; record.spec.height *= scale;
+            record.spec.spriteWidth *= scale; record.spec.spriteHeight *= scale;
+            if (record.spec.spriteOffset) record.spec.spriteOffset = [record.spec.spriteOffset[0] * scale, record.spec.spriteOffset[1] * scale];
+            if (record.spec.outline) record.spec.outline = record.spec.outline.map(([x, y]) => [x * scale, y * scale]);
+        }
+        if (effects.featherNext) record.spec.density *= .3;
+        if (effects.glueSeconds > 0) {
+            record.spec.adhesion = { maxForce: 1300, maxTorque: 180, maxImpactSpeed: 2.2 };
+            record.spec.adhesionSeconds = Math.min(10, effects.glueSeconds);
+        }
+        this.applyColliderSpec(record);
+    }
+
+    private applyColliderSpec(record: TowerBody): void {
+        const { collider, spec } = record;
+        if (collider instanceof CircleCollider2D) collider.radius = spec.width / 2;
+        else if (collider instanceof PolygonCollider2D && spec.outline) collider.points = spec.outline.map(([x, y]) => new Vec2(x, y));
+        else if (collider instanceof BoxCollider2D) collider.size = new Size(spec.width, spec.height);
+        collider.density = spec.density; collider.friction = spec.friction; collider.restitution = spec.restitution;
+        collider.apply();
+    }
+
     isStable(): boolean {
         return this.bodies.every(({ body, collider, contacts, lost, supported }) => lost || !collider.enabled ||
             ((this.safety ? supported : contacts.size > 0) && body.linearVelocity.length() < .12 && Math.abs(body.angularVelocity) < .12));
@@ -756,6 +788,7 @@ export class TowerWorld {
             if (spec.contactImpactSpeed !== undefined && !nonnegative(spec.contactImpactSpeed)) fail();
             for (const tuning of [spec.adhesion, spec.stabilizer]) if (tuning !== undefined && (!tuning
                 || ![tuning.maxForce, tuning.maxTorque, tuning.maxImpactSpeed].every(nonnegative))) fail();
+            if (spec.adhesionSeconds !== undefined && !nonnegative(spec.adhesionSeconds)) fail();
             if (spec.stabilizer && !nonnegative(spec.stabilizer.maxAngleError)) fail();
             if (!saved.position || !saved.scale || ![saved.position.x, saved.position.y, saved.angle].every(Number.isFinite)
                 || ![saved.scale.x, saved.scale.y, saved.scale.z].every(positive)

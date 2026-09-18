@@ -11,6 +11,7 @@ interface AdhesionBond extends AdhesionContact {
     base: RigidBody2D;
     attached: RigidBody2D;
     offset: Vec2;
+    remainingSeconds: number;
 }
 interface StabilizerContact { plank: TowerBody; support: TowerBody; contact: IPhysics2DContact }
 interface StabilizerBond {
@@ -30,7 +31,7 @@ interface SavedMotor {
     collideConnected: boolean;
 }
 export interface ContactAssistanceState {
-    adhesion: (SavedMotor & { ballId: number; otherId: number; side: number })[];
+    adhesion: (SavedMotor & { ballId: number; otherId: number; side: number; remainingSeconds?: number })[];
     stabilizers: (SavedMotor & { plankId: number; supportId: number })[];
     cushionedIds: number[];
     brokenPairs: string[];
@@ -89,7 +90,8 @@ export class ContactAssistance {
         return {
             adhesion: Array.from(this.bonds.values()).filter(bond => this.bondIntact(bond) && idOf(bond.other) >= 0)
                 .map(bond => ({ ballId: bond.ball.id, otherId: idOf(bond.other), side: bond.side,
-                    ...motor(bond.joint, bond.offset) })),
+                    ...motor(bond.joint, bond.offset),
+                    ...(Number.isFinite(bond.remainingSeconds) ? { remainingSeconds: bond.remainingSeconds } : {}) })),
             stabilizers: Array.from(this.stabilizerBonds.values()).filter(bond => live.has(bond.plank.id) && live.has(bond.support.id))
                 .map(bond => ({ plankId: bond.plank.id, supportId: bond.support.id, ...motor(bond.joint, bond.offset) })),
             cushionedIds: Array.from(this.cushionedBodies).filter(id => live.has(id)),
@@ -108,7 +110,8 @@ export class ContactAssistance {
         const keys = new Set<string>(), counts = new Map<number, number>();
         for (const saved of state.adhesion) {
             const key = `${saved?.ballId}:${saved?.side}`;
-            if (!motor(saved) || !specs.get(saved.ballId)?.adhesion || (saved.otherId !== 0 && !specs.has(saved.otherId))
+            if (!motor(saved) || (saved.remainingSeconds !== undefined && (!Number.isFinite(saved.remainingSeconds) || saved.remainingSeconds < 0))
+                || !specs.get(saved.ballId)?.adhesion || (saved.otherId !== 0 && !specs.has(saved.otherId))
                 || saved.ballId === saved.otherId || (saved.side !== -1 && saved.side !== 1) || keys.has(key)) fail();
             keys.add(key);
         }
@@ -148,7 +151,8 @@ export class ContactAssistance {
             const base = saved.side < 0 ? other.body! : ball.body;
             const attached = saved.side < 0 ? ball.body : other.body!;
             this.bonds.set(`${saved.ballId}:${saved.side}`, { ball, other, side: saved.side, base, attached,
-                offset: new Vec2(saved.offset.x, saved.offset.y), joint: attach(base, attached, saved) });
+                offset: new Vec2(saved.offset.x, saved.offset.y), remainingSeconds: saved.remainingSeconds ?? Infinity,
+                joint: attach(base, attached, saved) });
         }
         for (const saved of state.stabilizers) {
             const plank = byId.get(saved.plankId)!, support = byId.get(saved.supportId)!;
@@ -174,6 +178,17 @@ export class ContactAssistance {
         }
         for (const [key, pending] of this.pendingStabilizers) {
             if (pending.plank === record && pending.contact === contact) this.pendingStabilizers.delete(key);
+        }
+    }
+
+    tick(seconds: number): void {
+        if (!Number.isFinite(seconds) || seconds <= 0) return;
+        for (const [key, bond] of this.bonds) {
+            if (!Number.isFinite(bond.remainingSeconds)) continue;
+            bond.remainingSeconds = Math.max(0, bond.remainingSeconds - seconds);
+            if (bond.remainingSeconds === 0) {
+                this.removeBond(bond); this.bonds.delete(key);
+            }
         }
     }
 
@@ -345,12 +360,13 @@ export class ContactAssistance {
         joint.maxForce = ball.spec.adhesion!.maxForce; joint.maxTorque = ball.spec.adhesion!.maxTorque;
         // Finite resistance to relative motion, without positional feedback oscillation.
         joint.correctionFactor = 0; joint.collideConnected = true; joint.apply();
-        return { ball, other, side, base, attached, offset, joint };
+        return { ball, other, side, base, attached, offset, remainingSeconds: ball.spec.adhesionSeconds ?? Infinity, joint };
     }
 
     private bondIntact(bond: AdhesionBond): boolean {
         if (!isValid(bond.other, true) || !isValid(bond.ball.collider, true)) return false;
         if (!bond.other.enabledInHierarchy || !bond.ball.collider.enabledInHierarchy) return false;
+        if (bond.remainingSeconds <= 0) return false;
         const offset = bond.base.getLocalPoint(bond.attached.getWorldPoint(new Vec2(), new Vec2()), new Vec2());
         return Vec2.distance(offset, bond.offset) <= bond.ball.spec.width * .12;
     }

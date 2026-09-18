@@ -49,7 +49,7 @@ interface DirectorObject {
     rarity: 'Common' | 'Rare';
 }
 
-/** Classification candidates for the twelve already shipped objects only.
+/** Classification candidates for all 24 shipped/candidate objects.
  * Difficulty is independent of absurdity: the whale is WTF but Normal, not Chaos. */
 export const DIRECTOR_OBJECTS: Record<ObjectKind, DirectorObject> = {
     cardboard_box: { difficulty: 'Easy', absurdity: 'Normal', roles: ['Stable'], rarity: 'Common' },
@@ -64,6 +64,28 @@ export const DIRECTOR_OBJECTS: Record<ObjectKind, DirectorObject> = {
     basketball: { difficulty: 'Hard', absurdity: 'Normal', roles: ['Rolling', 'Danger'], rarity: 'Common' },
     slipper: { difficulty: 'Normal', absurdity: 'WTF', roles: ['Danger'], rarity: 'Common' },
     whale: { difficulty: 'Normal', absurdity: 'WTF', roles: ['Stable'], rarity: 'Rare' },
+    television: { difficulty: 'Normal', absurdity: 'Weird', roles: ['Stable', 'Heavy'], rarity: 'Rare' },
+    bathtub: { difficulty: 'Normal', absurdity: 'Weird', roles: ['Platform', 'Rescue'], rarity: 'Rare' },
+    piano: { difficulty: 'Hard', absurdity: 'Normal', roles: ['Heavy'], rarity: 'Rare' },
+    tire: { difficulty: 'Hard', absurdity: 'Normal', roles: ['Rolling', 'Danger'], rarity: 'Rare' },
+    bowling_ball: { difficulty: 'Hard', absurdity: 'Normal', roles: ['Rolling', 'Danger'], rarity: 'Rare' },
+    oil_drum: { difficulty: 'Hard', absurdity: 'Normal', roles: ['Heavy', 'Danger'], rarity: 'Rare' },
+    spring_pad: { difficulty: 'Normal', absurdity: 'Weird', roles: ['Platform', 'Rescue'], rarity: 'Rare' },
+    cat_bed: { difficulty: 'Easy', absurdity: 'Weird', roles: ['Stable', 'Platform'], rarity: 'Rare' },
+    giraffe: { difficulty: 'Hard', absurdity: 'WTF', roles: ['Danger'], rarity: 'Rare' },
+    ufo: { difficulty: 'Normal', absurdity: 'WTF', roles: ['Bridge'], rarity: 'Rare' },
+    rocket: { difficulty: 'Hard', absurdity: 'WTF', roles: ['Danger'], rarity: 'Rare' },
+    vending_machine: { difficulty: 'Hard', absurdity: 'Normal', roles: ['Heavy', 'Danger'], rarity: 'Rare' },
+};
+
+/** Batch 2 discovery gates. These are explicit R2 tuning candidates until a live
+ * balance pass supplies final milestone values; omitting placedCount keeps the
+ * standalone director harness on the original twelve-object pool. */
+export const SECOND_BATCH_UNLOCKS: Readonly<Record<ObjectKind, number>> = {
+    television: 10, bathtub: 15, piano: 20, tire: 25, bowling_ball: 30, oil_drum: 35,
+    spring_pad: 40, cat_bed: 45, giraffe: 50, ufo: 55, rocket: 60, vending_machine: 70,
+    cardboard_box: 0, wood_plank: 0, basketball: 0, fridge: 0, toilet: 0, dumbbell: 0,
+    wooden_crate: 0, ice_block: 0, sofa: 0, whale: 0, burger: 0, slipper: 0,
 };
 
 /** Timing percentages are SPEC §7.1 initial values; other numbers are R1 candidates. */
@@ -83,6 +105,7 @@ export const DIRECTOR_TUNING = {
     longStableSeconds: 18,
     longStableDangerMultiplier: 2,
     recoveryDraws: 2,
+    earlyDiscoveryWeight: .02,
 } as const;
 
 export interface DirectorContext {
@@ -92,6 +115,10 @@ export interface DirectorContext {
     stableSeconds: number;
     /** Monotonic count of effective incidents (not an unconfirmed collapse trend). */
     incidentCount: number;
+    /** Confirmed placements used for the Batch 2 discovery gates. */
+    placedCount?: number;
+    /** Enables the SPEC's low-probability mysterious early entry in normal play. */
+    allowEarlyDiscovery?: boolean;
 }
 
 /** In-memory checkpoint values. Capturing/restoring does not consume a draw. */
@@ -110,6 +137,7 @@ export interface DirectorState {
     incidentCount: number;
     recoveryDrawsRemaining: number;
     lastSeen: { kind: ObjectKind; index: number }[];
+    discovered?: ObjectKind[];
 }
 
 /** One locked current/NEXT pair. Only handoff draws; observation never advances RNG.
@@ -129,6 +157,7 @@ export class TowerDirector {
     private incidentCount = 0;
     private recoveryDrawsRemaining = 0;
     private readonly lastSeen = new Map<ObjectKind, number>();
+    private readonly discovered = new Set<ObjectKind>();
 
     constructor(seed: number) {
         this.seed = seed >>> 0;
@@ -147,25 +176,39 @@ export class TowerDirector {
         }
         // Consume the already shown NEXT before considering changed risk.
         this.currentKind = this.nextKind;
-        this.nextKind = this.record(this.generatedCount < CALIBRATION_SEQUENCE.length
-            ? CALIBRATION_SEQUENCE[this.generatedCount] : this.choose(context));
+        const candidate = this.generatedCount < CALIBRATION_SEQUENCE.length
+            ? CALIBRATION_SEQUENCE[this.generatedCount] : this.choose(context);
+        this.markDiscovered(candidate);
+        this.nextKind = this.record(candidate);
         if (this.recoveryDrawsRemaining > 0) this.recoveryDrawsRemaining--;
         this.turn++;
         return { current: this.currentKind, next: this.nextKind };
     }
 
+    /** Replace the advertised NEXT without advancing CURRENT. The fixed opening is
+     * deliberately kept deterministic; item rerolls start once the opening has ended. */
+    reroll(context: DirectorContext): ObjectKind | null {
+        if (this.generatedCount < CALIBRATION_SEQUENCE.length) return null;
+        const candidate = this.choose(context);
+        this.markDiscovered(candidate);
+        this.nextKind = this.record(candidate);
+        this.turn++;
+        return this.nextKind;
+    }
+
     snapshot(): { seed: number; rngState: number; draws: number; turn: number; current: ObjectKind; next: ObjectKind;
-        hardStreak: number; rollingStreak: number; platformGap: number; recoveryDrawsRemaining: number } {
+        hardStreak: number; rollingStreak: number; platformGap: number; recoveryDrawsRemaining: number; discovered: ObjectKind[] } {
         return { seed: this.seed, rngState: this.rngState, draws: this.draws, turn: this.turn,
             current: this.currentKind, next: this.nextKind, hardStreak: this.hardStreak,
             rollingStreak: this.rollingStreak, platformGap: this.platformGap,
-            recoveryDrawsRemaining: this.recoveryDrawsRemaining };
+            recoveryDrawsRemaining: this.recoveryDrawsRemaining, discovered: Array.from(this.discovered) };
     }
 
     exportState(): DirectorState {
         return { ...this.snapshot(), generatedCount: this.generatedCount, lastKind: this.lastKind,
             incidentCount: this.incidentCount,
-            lastSeen: Array.from(this.lastSeen, ([kind, index]) => ({ kind, index })) };
+            lastSeen: Array.from(this.lastSeen, ([kind, index]) => ({ kind, index })),
+            discovered: Array.from(this.discovered) };
     }
 
     restoreState(state: DirectorState): void {
@@ -184,13 +227,18 @@ export class TowerDirector {
             || !count(state.platformGap) || state.platformGap > state.generatedCount
             || !count(state.incidentCount) || !count(state.recoveryDrawsRemaining)
             || state.recoveryDrawsRemaining > DIRECTOR_TUNING.recoveryDraws
-            || !Array.isArray(state.lastSeen)) throw new Error('Invalid director checkpoint');
+            || !Array.isArray(state.lastSeen) || (state.discovered !== undefined && !Array.isArray(state.discovered))) throw new Error('Invalid director checkpoint');
         const seen = new Map<ObjectKind, number>();
         const indices = new Set<number>();
         for (const entry of state.lastSeen) {
             if (!entry || !kind(entry.kind) || !count(entry.index) || entry.index >= state.generatedCount
                 || seen.has(entry.kind) || indices.has(entry.index)) throw new Error('Invalid director checkpoint history');
             seen.set(entry.kind, entry.index); indices.add(entry.index);
+        }
+        const discovered = new Set<ObjectKind>();
+        for (const item of state.discovered ?? []) {
+            if (!kind(item) || SECOND_BATCH_UNLOCKS[item] === 0 || discovered.has(item)) throw new Error('Invalid director discovery history');
+            discovered.add(item);
         }
         // The fixed opening is known history, so omitting an older rare item is
         // invalid even when current/NEXT still look correct.
@@ -202,7 +250,10 @@ export class TowerDirector {
             if (restored === undefined || restored < index
                 || (state.generatedCount <= CALIBRATION_SEQUENCE.length && restored !== index)) missingOpeningHistory = true;
         });
-        if (seen.get(state.next) !== state.generatedCount - 1 || seen.get(state.current) !== state.generatedCount - 2
+        const currentSeen = seen.get(state.current), nextSeen = seen.get(state.next);
+        if (nextSeen !== state.generatedCount - 1
+            || currentSeen === undefined || (state.generatedCount <= CALIBRATION_SEQUENCE.length
+                ? currentSeen !== state.generatedCount - 2 : currentSeen >= nextSeen)
             || missingOpeningHistory || (state.generatedCount <= CALIBRATION_SEQUENCE.length && seen.size !== openingSeen.size)
             || state.hardStreak > 2 || state.rollingStreak > 2 || state.platformGap > DIRECTOR_TUNING.maxPlatformGap
             || (state.incidentCount === 0 && state.recoveryDrawsRemaining > 0)
@@ -216,6 +267,7 @@ export class TowerDirector {
         this.hardStreak = state.hardStreak; this.rollingStreak = state.rollingStreak; this.platformGap = state.platformGap;
         this.incidentCount = state.incidentCount; this.recoveryDrawsRemaining = state.recoveryDrawsRemaining;
         this.lastSeen.clear(); seen.forEach((index, item) => this.lastSeen.set(item, index));
+        this.discovered.clear(); discovered.forEach(item => this.discovered.add(item));
     }
 
     private choose(context: DirectorContext): ObjectKind {
@@ -224,6 +276,8 @@ export class TowerDirector {
         const recovery = this.recoveryDrawsRemaining > 0;
         const candidates = (Object.keys(DIRECTOR_OBJECTS) as ObjectKind[]).filter(kind => {
             const item = DIRECTOR_OBJECTS[kind];
+            const locked = (context.placedCount ?? 0) < SECOND_BATCH_UNLOCKS[kind];
+            if (locked && !context.allowEarlyDiscovery) return false;
             if (kind === this.lastKind) return false;
             if (rescueDue && !this.rescue(kind)) return false;
             if ((recovery || this.hardStreak >= 2) && this.hard(kind)) return false;
@@ -243,6 +297,7 @@ export class TowerDirector {
             sum + (candidates.some(kind => DIRECTOR_OBJECTS[kind].difficulty === difficulty) ? band.weights[index] : 0), 0);
         const weights = candidates.map(kind => {
             const item = DIRECTOR_OBJECTS[kind];
+            const locked = (context.placedCount ?? 0) < SECOND_BATCH_UNLOCKS[kind];
             const sameDifficulty = candidates.filter(other => DIRECTOR_OBJECTS[other].difficulty === item.difficulty);
             const absurdityTotal = absurdities.reduce((sum, absurdity, index) => sum
                 + (sameDifficulty.some(other => DIRECTOR_OBJECTS[other].absurdity === absurdity)
@@ -250,6 +305,7 @@ export class TowerDirector {
             const peers = sameDifficulty.filter(other => DIRECTOR_OBJECTS[other].absurdity === item.absurdity).length;
             let weight = band.weights[difficulties.indexOf(item.difficulty)] / difficultyTotal
                 * DIRECTOR_TUNING.absurdityWeights[absurdities.indexOf(item.absurdity)] / absurdityTotal / peers;
+            if (locked) weight *= DIRECTOR_TUNING.earlyDiscoveryWeight;
             if ((context.risk === 'Dangerous' || context.risk === 'Critical' || recovery) && this.rescue(kind))
                 weight *= DIRECTOR_TUNING.highRiskRescueMultiplier;
             if (!recovery && (context.risk === 'Safe' || context.risk === 'Unstable') && context.stableSeconds >= DIRECTOR_TUNING.longStableSeconds
@@ -266,6 +322,9 @@ export class TowerDirector {
 
     private rescue(kind: ObjectKind): boolean {
         return DIRECTOR_OBJECTS[kind].roles.some(role => role === 'Platform' || role === 'Rescue');
+    }
+    private markDiscovered(kind: ObjectKind): void {
+        if (SECOND_BATCH_UNLOCKS[kind] > 0) this.discovered.add(kind);
     }
     private hard(kind: ObjectKind): boolean {
         return DIRECTOR_OBJECTS[kind].difficulty === 'Hard' || DIRECTOR_OBJECTS[kind].difficulty === 'Chaos';

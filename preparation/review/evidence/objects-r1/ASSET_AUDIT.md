@@ -50,3 +50,9 @@
 - `preparation/art/CANDIDATE_MANIFEST.json`、`EDGE_CANDIDATE_MANIFEST.json`、`USER_VISUAL_APPROVAL.json`、`preparation/tools/prepare_art.py`：核对既有处理和批准范围。
 
 本轮没有图形修复、图片生成、运行时接触/承托/旋转校准、长局平衡或真机测试。文件存在不代表图片合格，源码可编译也不代表新物体具有可玩手感。
+
+## R2 接入跟进（2026-09-18）
+
+后续开发从正式素材包复制了 12 件对象和 12 件 NEXT 作为运行时候选，生成对应 Cocos image meta，并将 24 个 SpriteFrame UUID 追加到 `assets/batch0/scenes/HUD.scene`。对象数据仍严格采用 `OBJECT_GAMEPLAY_SCALE.json` 的比例，Collider 是源码中的 R2 候选几何；`preparation/tools/check_batch2_assets.cjs` 只检查文件、尺寸、meta 和场景引用。
+
+这一步解除的是“没有运行时候选资源”的工程阻塞，不改写本轮只读审计的视觉结论，也不代表用户已确认美术或真实引擎校准通过。真实物理、挂点、旋转、NEXT 纯轮廓视觉和微信设备仍待验收。本轮截图、录屏与日志不提交。
