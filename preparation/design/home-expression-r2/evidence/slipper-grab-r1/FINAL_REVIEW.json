@@ -1,0 +1,28 @@
+{
+  "status": "independent_candidate_ready_for_user_review",
+  "revision": "slipper-grab-r1",
+  "productionIntegrated": false,
+  "previewInputs": {
+    "sample.js": "5e9f99f55209ae7e2c191114983a3c2b64a176e90a859a5679490a082e954c8a",
+    "sequence.json": "a2d69a6497dc958a91607cf1fd2a66dec77cd38c2f69b711a74a45cb62c7040b",
+    "index.html": "64d71844cdb4aff6d8a3c2f5bca151757fdeb77385a16d531c53d4b5fbe05d9a",
+    "sample.css": "ad001b302671bc39e1b41d643d0a801213eb39a79fb6e2199f54d38bb08e3958",
+    "slipper/face/manifest.json": "6b1327b8d99c48182edd5ddab78f453728d0216703617f1ab7500c67a0beffb7",
+    "slipper/hands/manifest.json": "3e4648a0e1b38f147e14a33ea6139cada49a272f4c1d61e91829ccc6204cb9c6",
+    "cloud/manifest.json": "6a5fef9a361dda00a88f49ee7f6ecb4095537cf12628447e3c960ec3e662c584"
+  },
+  "captureAssetsMatchCurrent": true,
+  "activeLocalFrameAndCloudFiles": 115,
+  "technicalChecksPassed": 13,
+  "browserErrors": [],
+  "productionInputsUnchanged": 338,
+  "videos": {
+    "sample-normal-raw.webm": "655baeb73a864fc40f2ca87aa0bb301f22fd87a37073836514c87fa902b2def5",
+    "sample-half-speed-raw.webm": "71385ce8462dfd910a68a2f7b54efac8b8368ef6f882468116f29b4bcd20b8b6"
+  },
+  "visualReview": "Root and independent reviewer checked 375px phone views, contact/effort/withdraw detail images and sequential frames from actual normal recording. Hands attach to front slipper and contact duck; no new blocking seam, body drift or residual gesture was found.",
+  "limits": [
+    "Independent sample only; no production integration or build.",
+    "No user approval of this new gesture is implied by technical or visual self-review."
+  ]
+}

@@ -1,0 +1,1292 @@
+{
+  "status": "independent-motion-sample-not-production",
+  "revision": "single-surface-finger-warp-r2",
+  "fps": 24,
+  "durationSeconds": 2,
+  "frameCount": 49,
+  "heroSize": [
+    1024,
+    1536
+  ],
+  "cropHeroPx": [
+    150,
+    680,
+    480,
+    1056
+  ],
+  "frameSize": [
+    330,
+    376
+  ],
+  "atlas": {
+    "file": "hand_atlas.png",
+    "columns": 7,
+    "rows": 7
+  },
+  "sourceHeroSha256": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+  "rootHeroPx": [
+    418.0,
+    731.0
+  ],
+  "contact": {
+    "palmHeroPx": [
+      275,
+      942
+    ],
+    "frontFingertipsHeroPx": [
+      270,
+      979
+    ],
+    "farThumbOccludedByOriginalBlueFrontLip": true
+  },
+  "occlusion": "Each RGBA frame already removes every pixel behind the original white toilet. Composite over unchanged hero at crop top-left. Hidden frames have no fade; movement enters original body occlusion.",
+  "motion": "Offline inverse TPS changes elbow/forearm curve and curls distal finger joints. Every pixel comes from one registered open master; half/grip generated poses are shape references only. No RGBA pose mixing, root rotation or whole-character movement.",
+  "frames": [
+    {
+      "timeSeconds": 0.0,
+      "phase": "hidden-hidden",
+      "wristHeroPx": [
+        490.0,
+        810.0
+      ],
+      "elbowHeroPx": [
+        465.0,
+        762.0
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 0,
+      "file": "frames/frame_000.png",
+      "atlasRect": [
+        0,
+        0,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.04167,
+      "phase": "hidden-hidden",
+      "wristHeroPx": [
+        490.0,
+        810.0
+      ],
+      "elbowHeroPx": [
+        465.0,
+        762.0
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 1,
+      "file": "frames/frame_001.png",
+      "atlasRect": [
+        330,
+        0,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.08333,
+      "phase": "hidden-hidden",
+      "wristHeroPx": [
+        490.0,
+        810.0
+      ],
+      "elbowHeroPx": [
+        465.0,
+        762.0
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 2,
+      "file": "frames/frame_002.png",
+      "atlasRect": [
+        660,
+        0,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.125,
+      "phase": "hidden-peek",
+      "wristHeroPx": [
+        489.78,
+        810.002
+      ],
+      "elbowHeroPx": [
+        464.905,
+        762.039
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 3,
+      "file": "frames/frame_003.png",
+      "atlasRect": [
+        990,
+        0,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.16667,
+      "phase": "hidden-peek",
+      "wristHeroPx": [
+        473.821,
+        810.167
+      ],
+      "elbowHeroPx": [
+        457.995,
+        764.835
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 4,
+      "file": "frames/frame_004.png",
+      "atlasRect": [
+        1320,
+        0,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.20833,
+      "phase": "hidden-peek",
+      "wristHeroPx": [
+        442.847,
+        810.486
+      ],
+      "elbowHeroPx": [
+        444.583,
+        770.264
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 5,
+      "file": "frames/frame_005.png",
+      "atlasRect": [
+        1650,
+        0,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.25,
+      "phase": "hidden-peek",
+      "wristHeroPx": [
+        411.296,
+        810.811
+      ],
+      "elbowHeroPx": [
+        430.922,
+        775.794
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 6,
+      "file": "frames/frame_006.png",
+      "atlasRect": [
+        1980,
+        0,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.29167,
+      "phase": "hidden-peek",
+      "wristHeroPx": [
+        393.604,
+        810.994
+      ],
+      "elbowHeroPx": [
+        423.262,
+        778.894
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 7,
+      "file": "frames/frame_007.png",
+      "atlasRect": [
+        0,
+        376,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.33333,
+      "phase": "peek-reach",
+      "wristHeroPx": [
+        389.888,
+        813.165
+      ],
+      "elbowHeroPx": [
+        421.061,
+        780.398
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 8,
+      "file": "frames/frame_008.png",
+      "atlasRect": [
+        330,
+        376,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.375,
+      "phase": "peek-reach",
+      "wristHeroPx": [
+        379.088,
+        820.678
+      ],
+      "elbowHeroPx": [
+        414.33,
+        785.25
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 9,
+      "file": "frames/frame_009.png",
+      "atlasRect": [
+        660,
+        376,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.41667,
+      "phase": "peek-reach",
+      "wristHeroPx": [
+        363.789,
+        831.321
+      ],
+      "elbowHeroPx": [
+        404.796,
+        792.124
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 10,
+      "file": "frames/frame_010.png",
+      "atlasRect": [
+        990,
+        376,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.45833,
+      "phase": "peek-reach",
+      "wristHeroPx": [
+        347.4,
+        842.722
+      ],
+      "elbowHeroPx": [
+        394.582,
+        799.487
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 11,
+      "file": "frames/frame_011.png",
+      "atlasRect": [
+        1320,
+        376,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.5,
+      "phase": "peek-reach",
+      "wristHeroPx": [
+        333.328,
+        852.511
+      ],
+      "elbowHeroPx": [
+        385.813,
+        805.809
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 12,
+      "file": "frames/frame_012.png",
+      "atlasRect": [
+        1650,
+        376,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.54167,
+      "phase": "peek-reach",
+      "wristHeroPx": [
+        324.981,
+        858.318
+      ],
+      "elbowHeroPx": [
+        380.611,
+        809.559
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 13,
+      "file": "frames/frame_013.png",
+      "atlasRect": [
+        1980,
+        376,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.58333,
+      "phase": "reach-touch",
+      "wristHeroPx": [
+        323.098,
+        860.193
+      ],
+      "elbowHeroPx": [
+        379.549,
+        810.133
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 14,
+      "file": "frames/frame_014.png",
+      "atlasRect": [
+        0,
+        752,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.625,
+      "phase": "reach-touch",
+      "wristHeroPx": [
+        317.869,
+        867.114
+      ],
+      "elbowHeroPx": [
+        376.935,
+        810.902
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 15,
+      "file": "frames/frame_015.png",
+      "atlasRect": [
+        330,
+        752,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.66667,
+      "phase": "reach-touch",
+      "wristHeroPx": [
+        309.822,
+        877.765
+      ],
+      "elbowHeroPx": [
+        372.911,
+        812.085
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 16,
+      "file": "frames/frame_016.png",
+      "atlasRect": [
+        660,
+        752,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.70833,
+      "phase": "reach-touch",
+      "wristHeroPx": [
+        301.091,
+        889.321
+      ],
+      "elbowHeroPx": [
+        368.546,
+        813.369
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 17,
+      "file": "frames/frame_017.png",
+      "atlasRect": [
+        990,
+        752,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.75,
+      "phase": "reach-touch",
+      "wristHeroPx": [
+        293.812,
+        898.954
+      ],
+      "elbowHeroPx": [
+        364.906,
+        814.439
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 18,
+      "file": "frames/frame_018.png",
+      "atlasRect": [
+        1320,
+        752,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.79167,
+      "phase": "reach-touch",
+      "wristHeroPx": [
+        290.12,
+        903.841
+      ],
+      "elbowHeroPx": [
+        363.06,
+        814.982
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 19,
+      "file": "frames/frame_019.png",
+      "atlasRect": [
+        1650,
+        752,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.83333,
+      "phase": "touch-grip",
+      "wristHeroPx": [
+        290.0,
+        904.541
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.0451,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 20,
+      "file": "frames/frame_020.png",
+      "atlasRect": [
+        1980,
+        752,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.875,
+      "phase": "touch-grip",
+      "wristHeroPx": [
+        290.0,
+        906.257
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.1881,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 21,
+      "file": "frames/frame_021.png",
+      "atlasRect": [
+        0,
+        1128,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.91667,
+      "phase": "touch-grip",
+      "wristHeroPx": [
+        290.0,
+        908.294
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.3579,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 22,
+      "file": "frames/frame_022.png",
+      "atlasRect": [
+        330,
+        1128,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 0.95833,
+      "phase": "touch-grip",
+      "wristHeroPx": [
+        290.0,
+        909.76
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.48,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 23,
+      "file": "frames/frame_023.png",
+      "atlasRect": [
+        660,
+        1128,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.0,
+      "phase": "grip-grip",
+      "wristHeroPx": [
+        290.0,
+        910.0
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.537,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 24,
+      "file": "frames/frame_024.png",
+      "atlasRect": [
+        990,
+        1128,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.04167,
+      "phase": "grip-grip",
+      "wristHeroPx": [
+        290.0,
+        910.0
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.7604,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 25,
+      "file": "frames/frame_025.png",
+      "atlasRect": [
+        1320,
+        1128,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.08333,
+      "phase": "grip-grip",
+      "wristHeroPx": [
+        290.0,
+        910.0
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.9737,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 26,
+      "file": "frames/frame_026.png",
+      "atlasRect": [
+        1650,
+        1128,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.125,
+      "phase": "grip-grip",
+      "wristHeroPx": [
+        290.0,
+        910.0
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 1.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 27,
+      "file": "frames/frame_027.png",
+      "atlasRect": [
+        1980,
+        1128,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.16667,
+      "phase": "grip-grip",
+      "wristHeroPx": [
+        290.0,
+        910.0
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 1.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 28,
+      "file": "frames/frame_028.png",
+      "atlasRect": [
+        0,
+        1504,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.20833,
+      "phase": "grip-grip",
+      "wristHeroPx": [
+        290.0,
+        910.0
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 1.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 29,
+      "file": "frames/frame_029.png",
+      "atlasRect": [
+        330,
+        1504,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.25,
+      "phase": "grip-grip",
+      "wristHeroPx": [
+        290.0,
+        910.0
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 1.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 30,
+      "file": "frames/frame_030.png",
+      "atlasRect": [
+        660,
+        1504,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.29167,
+      "phase": "grip-touch",
+      "wristHeroPx": [
+        290.0,
+        909.841
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.9735,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 31,
+      "file": "frames/frame_031.png",
+      "atlasRect": [
+        990,
+        1504,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.33333,
+      "phase": "grip-touch",
+      "wristHeroPx": [
+        290.0,
+        907.498
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.583,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 32,
+      "file": "frames/frame_032.png",
+      "atlasRect": [
+        1320,
+        1504,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.375,
+      "phase": "grip-touch",
+      "wristHeroPx": [
+        290.0,
+        904.673
+      ],
+      "elbowHeroPx": [
+        363.0,
+        815.0
+      ],
+      "grip": 0.1121,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 33,
+      "file": "frames/frame_033.png",
+      "atlasRect": [
+        1650,
+        1504,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.41667,
+      "phase": "touch-return",
+      "wristHeroPx": [
+        291.831,
+        902.398
+      ],
+      "elbowHeroPx": [
+        364.095,
+        814.264
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 34,
+      "file": "frames/frame_034.png",
+      "atlasRect": [
+        1980,
+        1504,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.45833,
+      "phase": "touch-return",
+      "wristHeroPx": [
+        309.447,
+        886.984
+      ],
+      "elbowHeroPx": [
+        374.633,
+        807.187
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 35,
+      "file": "frames/frame_035.png",
+      "atlasRect": [
+        0,
+        1880,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.5,
+      "phase": "touch-return",
+      "wristHeroPx": [
+        338.385,
+        861.663
+      ],
+      "elbowHeroPx": [
+        391.944,
+        795.56
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 36,
+      "file": "frames/frame_036.png",
+      "atlasRect": [
+        330,
+        1880,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.54167,
+      "phase": "touch-return",
+      "wristHeroPx": [
+        369.514,
+        834.425
+      ],
+      "elbowHeroPx": [
+        410.566,
+        783.052
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 37,
+      "file": "frames/frame_037.png",
+      "atlasRect": [
+        660,
+        1880,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.58333,
+      "phase": "touch-return",
+      "wristHeroPx": [
+        393.704,
+        813.259
+      ],
+      "elbowHeroPx": [
+        425.037,
+        773.333
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 38,
+      "file": "frames/frame_038.png",
+      "atlasRect": [
+        990,
+        1880,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.625,
+      "phase": "return-hidden",
+      "wristHeroPx": [
+        402.096,
+        806.004
+      ],
+      "elbowHeroPx": [
+        430.038,
+        769.991
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 39,
+      "file": "frames/frame_039.png",
+      "atlasRect": [
+        1320,
+        1880,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.66667,
+      "phase": "return-hidden",
+      "wristHeroPx": [
+        409.487,
+        806.34
+      ],
+      "elbowHeroPx": [
+        432.978,
+        769.319
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 40,
+      "file": "frames/frame_040.png",
+      "atlasRect": [
+        1650,
+        1880,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.70833,
+      "phase": "return-hidden",
+      "wristHeroPx": [
+        425.571,
+        807.071
+      ],
+      "elbowHeroPx": [
+        439.375,
+        767.857
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 41,
+      "file": "frames/frame_041.png",
+      "atlasRect": [
+        1980,
+        1880,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.75,
+      "phase": "return-hidden",
+      "wristHeroPx": [
+        446.0,
+        808.0
+      ],
+      "elbowHeroPx": [
+        447.5,
+        766.0
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 42,
+      "file": "frames/frame_042.png",
+      "atlasRect": [
+        0,
+        2256,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.79167,
+      "phase": "return-hidden",
+      "wristHeroPx": [
+        466.429,
+        808.929
+      ],
+      "elbowHeroPx": [
+        455.625,
+        764.143
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 43,
+      "file": "frames/frame_043.png",
+      "atlasRect": [
+        330,
+        2256,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.83333,
+      "phase": "return-hidden",
+      "wristHeroPx": [
+        482.513,
+        809.66
+      ],
+      "elbowHeroPx": [
+        462.022,
+        762.681
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 44,
+      "file": "frames/frame_044.png",
+      "atlasRect": [
+        660,
+        2256,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.875,
+      "phase": "return-hidden",
+      "wristHeroPx": [
+        489.904,
+        809.996
+      ],
+      "elbowHeroPx": [
+        464.962,
+        762.009
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 45,
+      "file": "frames/frame_045.png",
+      "atlasRect": [
+        990,
+        2256,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.91667,
+      "phase": "hidden-hidden",
+      "wristHeroPx": [
+        490.0,
+        810.0
+      ],
+      "elbowHeroPx": [
+        465.0,
+        762.0
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 46,
+      "file": "frames/frame_046.png",
+      "atlasRect": [
+        1320,
+        2256,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 1.95833,
+      "phase": "hidden-hidden",
+      "wristHeroPx": [
+        490.0,
+        810.0
+      ],
+      "elbowHeroPx": [
+        465.0,
+        762.0
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 47,
+      "file": "frames/frame_047.png",
+      "atlasRect": [
+        1650,
+        2256,
+        330,
+        376
+      ]
+    },
+    {
+      "timeSeconds": 2.0,
+      "phase": "hidden-hidden",
+      "wristHeroPx": [
+        490.0,
+        810.0
+      ],
+      "elbowHeroPx": [
+        465.0,
+        762.0
+      ],
+      "grip": 0.0,
+      "rootHeroPx": [
+        418.0,
+        731.0
+      ],
+      "index": 48,
+      "file": "frames/frame_048.png",
+      "atlasRect": [
+        1980,
+        2256,
+        330,
+        376
+      ]
+    }
+  ],
+  "sources": {
+    "grip": {
+      "generatedFile": "generated_grip.png",
+      "generatedSha256": "5cda4133dffa67a4883adc006b58feb057f6b285f9d860d526bcb8682e963838",
+      "registeredFile": "source_grip.png",
+      "usedAs": "shape reference"
+    },
+    "open": {
+      "generatedFile": "generated_open.png",
+      "generatedSha256": "322de8b544ffbe548db1b8b78c94fbd7c3137220a343f981d851b25265ca1e8e",
+      "registeredFile": "source_open.png",
+      "usedAs": "pixel master"
+    },
+    "half": {
+      "generatedFile": "generated_half.png",
+      "generatedSha256": "531eb72f616419886b9d9f02162d8d0f0c1cace3c098f91ff69f6f13512f92b2",
+      "registeredFile": "source_half.png",
+      "usedAs": "shape reference"
+    }
+  },
+  "prompts": "prompts.json"
+}

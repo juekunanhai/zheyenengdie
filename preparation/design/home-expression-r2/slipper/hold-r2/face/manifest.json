@@ -1,0 +1,218 @@
+{
+  "revision": "cute-closed-eyes-persistent-mouth-effort-r2",
+  "source": "assets/batch0/art/home_r9_slipper.png",
+  "sourceSize": [
+    340,
+    257
+  ],
+  "sourceSha256": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+  "rect": [
+    197,
+    106,
+    112,
+    95
+  ],
+  "rectConvention": "left, top, width, height in source slipper pixels",
+  "frames": [
+    {
+      "file": "close_00.png",
+      "timeSeconds": 0,
+      "phase": "close",
+      "sha256": "2a2e3e99cdde27906bbdb402fd8b021927ee3f22e933c50abc23ef2fb72ce296"
+    },
+    {
+      "file": "close_01.png",
+      "timeSeconds": 0.035,
+      "phase": "close",
+      "sha256": "fcf2740f9882f806ccabfceb4b7ed7ffac5575a081e099ff7862fdeaa67e21b6"
+    },
+    {
+      "file": "close_02.png",
+      "timeSeconds": 0.07,
+      "phase": "close",
+      "sha256": "ad9b0dcea2a75cf13f70a3152d476ada3d2f18aa2f1d1c573816897769755e93"
+    },
+    {
+      "file": "close_03.png",
+      "timeSeconds": 0.105,
+      "phase": "close",
+      "sha256": "bcd3b9d182934df3316caba1d821628984ac9a079f39f354b1088e467d52e22d"
+    },
+    {
+      "file": "close_04.png",
+      "timeSeconds": 0.14,
+      "phase": "close",
+      "sha256": "d053c2abcd8113bab88f563037a7737411d9ff1a1e9b5e7eb734deb23206127b"
+    },
+    {
+      "file": "hold_00.png",
+      "timeSeconds": 0.18,
+      "phase": "closed-effort-loop",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83"
+    },
+    {
+      "file": "hold_01.png",
+      "timeSeconds": 0.221667,
+      "phase": "closed-effort-loop",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1"
+    },
+    {
+      "file": "hold_02.png",
+      "timeSeconds": 0.263333,
+      "phase": "closed-effort-loop",
+      "sha256": "29f618ba7c15456c1d23a3a034fd84d0e18cafe5d6d0fc7399fe6aa95f8853cb"
+    },
+    {
+      "file": "hold_03.png",
+      "timeSeconds": 0.305,
+      "phase": "closed-effort-loop",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1"
+    },
+    {
+      "file": "hold_04.png",
+      "timeSeconds": 0.346667,
+      "phase": "closed-effort-loop",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83"
+    },
+    {
+      "file": "hold_05.png",
+      "timeSeconds": 0.388333,
+      "phase": "closed-effort-loop",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75"
+    },
+    {
+      "file": "hold_06.png",
+      "timeSeconds": 0.43,
+      "phase": "closed-effort-loop",
+      "sha256": "4997000593fdc8c4b3e3fb690cba6fad5d960e785f1e1320a4836a9f2f511ad0"
+    },
+    {
+      "file": "hold_07.png",
+      "timeSeconds": 0.471667,
+      "phase": "closed-effort-loop",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75"
+    },
+    {
+      "file": "hold_08.png",
+      "timeSeconds": 0.513333,
+      "phase": "closed-effort-loop",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83"
+    },
+    {
+      "file": "hold_09.png",
+      "timeSeconds": 0.555,
+      "phase": "closed-effort-loop",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1"
+    },
+    {
+      "file": "hold_10.png",
+      "timeSeconds": 0.596667,
+      "phase": "closed-effort-loop",
+      "sha256": "29f618ba7c15456c1d23a3a034fd84d0e18cafe5d6d0fc7399fe6aa95f8853cb"
+    },
+    {
+      "file": "hold_11.png",
+      "timeSeconds": 0.638333,
+      "phase": "closed-effort-loop",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1"
+    },
+    {
+      "file": "hold_12.png",
+      "timeSeconds": 0.68,
+      "phase": "closed-effort-loop",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83"
+    },
+    {
+      "file": "hold_13.png",
+      "timeSeconds": 0.721667,
+      "phase": "closed-effort-loop",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75"
+    },
+    {
+      "file": "hold_14.png",
+      "timeSeconds": 0.763333,
+      "phase": "closed-effort-loop",
+      "sha256": "4997000593fdc8c4b3e3fb690cba6fad5d960e785f1e1320a4836a9f2f511ad0"
+    },
+    {
+      "file": "hold_15.png",
+      "timeSeconds": 0.805,
+      "phase": "closed-effort-loop",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75"
+    },
+    {
+      "file": "hold_16.png",
+      "timeSeconds": 0.846667,
+      "phase": "closed-effort-loop",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83"
+    },
+    {
+      "file": "hold_17.png",
+      "timeSeconds": 0.888333,
+      "phase": "closed-effort-loop",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1"
+    },
+    {
+      "file": "hold_18.png",
+      "timeSeconds": 0.93,
+      "phase": "closed-effort-loop",
+      "sha256": "29f618ba7c15456c1d23a3a034fd84d0e18cafe5d6d0fc7399fe6aa95f8853cb"
+    },
+    {
+      "file": "hold_19.png",
+      "timeSeconds": 0.971667,
+      "phase": "closed-effort-loop",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1"
+    },
+    {
+      "file": "hold_20.png",
+      "timeSeconds": 1.013333,
+      "phase": "closed-effort-loop",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83"
+    },
+    {
+      "file": "hold_21.png",
+      "timeSeconds": 1.055,
+      "phase": "closed-effort-loop",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75"
+    },
+    {
+      "file": "hold_22.png",
+      "timeSeconds": 1.096667,
+      "phase": "closed-effort-loop",
+      "sha256": "4997000593fdc8c4b3e3fb690cba6fad5d960e785f1e1320a4836a9f2f511ad0"
+    },
+    {
+      "file": "hold_23.png",
+      "timeSeconds": 1.138333,
+      "phase": "closed-effort-loop",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75"
+    },
+    {
+      "file": "hold_24.png",
+      "timeSeconds": 1.18,
+      "phase": "closed-effort-loop",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83"
+    }
+  ],
+  "loopFrom": 0.18,
+  "durationSeconds": 1.18,
+  "loopDurationSeconds": 1,
+  "fps": 24,
+  "mouthFrequencyHz": 3,
+  "mouthMaxDisplacementSourcePixels": [
+    1,
+    1
+  ],
+  "mouthMaxDisplacementAt97pxSlipper": [
+    0.285,
+    0.285
+  ],
+  "eyesRemainClosedInLoop": true,
+  "loopFirstAndLastIdentical": true,
+  "runtime": "Begin once after both hands contact. Advance unwrapped elapsed clock; after 0.18 seconds loop only closed-effort frames. Never restart from frame0 on actor loop. Draw exactly one frame, no crossfade. No full slipper or whole-face jitter.",
+  "prompt": "prompt.txt",
+  "generatedReference": "generated-cute-effort.png",
+  "script": "bake_closed_effort.py",
+  "productionIntegrated": false
+}

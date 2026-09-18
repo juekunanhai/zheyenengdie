@@ -1,0 +1,67 @@
+{
+  "revision": "pinched-corners-effort-r2",
+  "source": "assets/batch0/art/home_r9_slipper.png",
+  "sourceSize": [
+    340,
+    257
+  ],
+  "sourceSha256": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+  "rect": [
+    197,
+    106,
+    111,
+    94
+  ],
+  "rectConvention": "left, top, width, height in original slipper pixels",
+  "frames": [
+    {
+      "index": 0,
+      "file": "effort_00.png",
+      "strength": 0.0,
+      "sha256": "6d75b94ddafa0ef663590f76b6b66e9c02ac2f28988c89c91e8bd7a4896cb872"
+    },
+    {
+      "index": 1,
+      "file": "effort_01.png",
+      "strength": 0.166667,
+      "sha256": "2186909cc2c1c249f0901405425c0a6a4ba25fcefc5e3731faf26e8168862e35"
+    },
+    {
+      "index": 2,
+      "file": "effort_02.png",
+      "strength": 0.333333,
+      "sha256": "1e29294ef8dd0c658915964183d9fd0aba2412b88cc73894606eed043ad00bfc"
+    },
+    {
+      "index": 3,
+      "file": "effort_03.png",
+      "strength": 0.5,
+      "sha256": "01333e3cf49e8f5920a3de5f71492b150b885c4a628573d2dd176a167a3d103c"
+    },
+    {
+      "index": 4,
+      "file": "effort_04.png",
+      "strength": 0.666667,
+      "sha256": "d88cd02dfff792691761cfdfb3bb56461fb8589eebccd2f2982e3e7db43dcd98"
+    },
+    {
+      "index": 5,
+      "file": "effort_05.png",
+      "strength": 0.833333,
+      "sha256": "3e1aae709d2f5dd7face3a3d1a9e215af1aaac367d1d586c7e23a64084e001df"
+    },
+    {
+      "index": 6,
+      "file": "effort_06.png",
+      "strength": 1.0,
+      "sha256": "641aa94f4b0cd1a59398e62de1e4ff05267d76286390f0b9d26083c1ec00049c"
+    }
+  ],
+  "playback": "play forward after hand contact; hold 0.35 seconds; reverse on release",
+  "method": "Original glossy eyes tighten without becoming thin lines. The single original mouth surface pinches locally at the centre, keeps fuller mouth corners and a subtle asymmetry, guided by the generated effort reference. Local red plastic is reconstructed within bounded feature masks. There is no two-face alpha crossfade.",
+  "generatedReference": "generated-effort-reference.png",
+  "prompt": "prompt.txt",
+  "script": "bake_effort.py",
+  "protected": "All original outline/stripes/highlights outside facial feature masks; no new eyebrows, teeth or X eyes.",
+  "integration": "Independent sample only, production source unchanged"
+}

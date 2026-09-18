@@ -1,0 +1,48 @@
+{
+  "recordedAt": "2026-09-16T05:07:24.617Z",
+  "scope": "Source rules, actual source methods under engine doubles, TypeScript noEmit and whitespace only. No project start, build, live physics, render/audio or device validation.",
+  "checks": [
+    {
+      "name": "highlight_rules",
+      "command": "node preparation/tools/check_run_highlights.cjs",
+      "exitCode": 0,
+      "output": "PASS ordinary / perfect landing adds no formal score or result kind\nPASS sustained old-tower Critical needs recovered risk, true stable duration and confirmation\nPASS separate sustained Critical episodes each count once\nPASS Critical spikes, impact-only risk and new-object danger never arm old-tower recovery\nPASS recovery accepts Unstable only after both old and complete tower actually recover\nPASS loss of the qualified old tower cancels a pending episode\nPASS zero/invalid pause delta does not progress; long resume frame is capped\nPASS active incident and newly charged incident cancel recovery and pending placement success, including zero-time callbacks\nPASS paused reads cannot consume an armed recovery or mutate result counts\nPASS incident end synchronizes at zero time before a valid same-frame release\nPASS bridge needs distinct bearing count, a real central gap and stable support\nPASS edge needs narrow real support and COM near its edge, not a centrally supported wide plank\nPASS geometry highlights preserve true stable confirmation even if conservative risk stays Dangerous\nPASS malformed geometry never awards a geometric event\nPASS large rescue needs high risk at release and must really support a pre-release confirmed old body\nPASS release captures old-body history and rejects duplicate release rewriting\nPASS late stable batch scores each piece at most once with deterministic bridge/edge/rescue priority\nPASS first ordinary confirmation consumes later geometric mutations and unsupported confirmations\nPASS a body event and independent danger episode may coincide without duplicate episode counting\nPASS feedback cooldown never suppresses points and never queues stale audio\nPASS new release cannot borrow the preceding placement stable duration\nPASS failure lock freezes all result data and internal clocks despite later collapse callbacks\nPASS invalid IDs and unregistered placements cannot manufacture scores\n{\"status\":\"passed\",\"checks\":23,\"limits\":\"Pure production source rules only; no project build/start, real physics, rendering/audio or device acceptance.\"}\n"
+    },
+    {
+      "name": "director",
+      "command": "node preparation/tools/check_tower_director.cjs",
+      "exitCode": 0,
+      "output": "PASS risk boundaries, six factors, valid zero, malformed sample\nPASS approved fourteen-piece opening, first-eight limits and early absurdity\nPASS seed replay and RNG stability across observation frequency\nPASS advertised NEXT stays locked through risk, snapshots and incident; handoff consumes it once\nPASS post-opening filters across 51,200 generated turns\nPASS incident recovery affects only two unseen draws and does not reset on unchanged count\n{\"safeRescue\":3979,\"dangerousRescue\":7342,\"normalDanger\":7769,\"stableDanger\":10074,\"earlyHard\":1923,\"lateHard\":9484}\nPASS high risk increases rescue opportunity; long stable period increases danger; time raises difficulty\n{\"unstableNormalDanger\":3710,\"unstableSteadyDanger\":4839}\nPASS steady Unstable tower can increase challenge; Dangerous/Critical ignore stale steady duration\n{\"status\":\"passed\",\"checks\":8,\"limits\":\"Pure source logic only. No Cocos startup, physical playtest, visual/audio review or WeChat/device acceptance.\"}\n"
+    },
+    {
+      "name": "result_metrics",
+      "command": "node preparation/tools/check_result_metrics.cjs",
+      "exitCode": 0,
+      "output": "{\n  \"status\": \"passed\",\n  \"assertions\": 255,\n  \"cases\": 6,\n  \"screenSizes\": [\n    [\n      375,\n      667,\n      375,\n      667\n    ],\n    [\n      300,\n      650,\n      300,\n      606\n    ],\n    [\n      450,\n      600,\n      450,\n      556\n    ],\n    [\n      375,\n      812,\n      375,\n      734\n    ]\n  ],\n  \"productionSourceSha256\": \"85d1415babce662f7a72f371d1ed60e04781f5c376b2f31f9bd1d3ee427e3b70\",\n  \"resultSceneSha256\": \"a050855362039e831271eb580ca8cfdfd020ca71d9c55b470686ce0bfae5184b\",\n  \"limits\": \"Transpiled production logic and static geometry under cc mock only. No font rendering, Creator/browser build, GPU or device verification.\"\n}\n"
+    },
+    {
+      "name": "integration",
+      "command": "node preparation/tools/check_director_integration.cjs",
+      "exitCode": 0,
+      "output": "{\n  \"status\": \"passed\",\n  \"count\": 25,\n  \"checks\": [\n    \"All 14 opening objects and advertised NEXT survive the first random boundary\",\n    \"Changing risk / sampling diagnostics cannot change current NEXT or RNG\",\n    \"Paused frame freezes risk timers, collision decay and draws\",\n    \"Early handoff does not score; later stable confirmation neither redraws nor counts twice\",\n    \"Director risk does not change existing physical stability scoring or award unsettled pieces\",\n    \"Lost-current recovery consumes its advertised NEXT once; held/surviving recovery does not\",\n    \"Only first effective loss counts toward director recovery, not incident start or duplicate loss\",\n    \"Explicit fixed calibration cycles without RNG and rejects changes after release\",\n    \"Orthogonal releases and naturally settled flips are not tilt; oblique leaning still is\",\n    \"World angular speed is converted from radians/s; width proxy allows a plank on a box\",\n    \"Held, lost and untouched falling bodies are excluded; contacted unscored and offscreen remain\",\n    \"A grounded local bond bridges contact gaps; a floating bonded group still has no support\",\n    \"Basketball ground bond retains real support through a contact gap in either pair order\",\n    \"Steady wide-plank towers accumulate time; short impact pauses it and structural danger resets\",\n    \"Repeated fixture support is unioned; overlapping supports never double-count width\",\n    \"Old-tower risk excludes the new landing impulse but includes its genuine support when rescuing\",\n    \"Unrelated new roots cannot contaminate old-tower risk, but a new bearing in its actual support path can\",\n    \"Bridge evidence needs two actual contacts with a gap across COM, not fixtures or bonds\",\n    \"Edge evidence uses physical COM and actual contact span; centered wide planks are not edges\",\n    \"Highlight contacts are copied from pooled manifolds; side/disabled support cannot earn geometry\",\n    \"Rescue evidence is a directed old-body load, not the rescuer resting on an old tower\",\n    \"Actual release -> stable confirmation -> failure copies one immutable genuine technical result\",\n    \"Resume enables feedback before a fresh same-frame stable event, while paused/failed frames stay frozen\",\n    \"Incident recovery permits a fresh release and genuine highlight before the next observation frame\",\n    \"Ordinary collision/spawn flow produces no narrow escape; old-tower recovery without a new placement can\"\n  ],\n  \"scope\": \"Actual TypeScript controller/world methods with engine doubles; no project, Box2D, browser or device execution.\"\n}\n"
+    },
+    {
+      "name": "feedback_audio",
+      "command": "node preparation/tools/check_play_feedback.cjs",
+      "exitCode": 0,
+      "output": "{\n  \"status\": \"passed\",\n  \"count\": 10,\n  \"checks\": [\n    \"Danger darkens only thin non-overlapping edge bands below input and HUD\",\n    \"Risk entry and immediate stable exit are interruptible and remain subtle\",\n    \"One contact highlight uses approved ring, stays away from planning text, and is rate limited\",\n    \"No invented contact marker for missing, invalid or offscreen contact\",\n    \"Pause/defeat clear cancels accents, blocks new playback and resumes only from current risk\",\n    \"Normal, danger, incident, voice and defeat music priorities; old call signature preserved\",\n    \"Danger gain respects music off, interaction lock, pause and simultaneous regional crossfade\",\n    \"Accident/failure cancellation stops active success and voice cues, preserving impact and star-loss audio\",\n    \"Accident/failure cancellation detaches an in-flight success clip before its deferred play can run\",\n    \"Pause/resume cancels active and in-flight success cues without replaying them or reopening sound\"\n  ],\n  \"boundary\": \"Engine mocks only. Pixel appearance, device performance, audible mixing and real input remain unverified.\"\n}\n"
+    },
+    {
+      "name": "typescript",
+      "command": "node /Applications/CocosCreator/3.8.8/CocosCreator.app/Contents/Resources/app.asar.unpacked/node_modules/typescript/bin/tsc --noEmit --skipLibCheck --pretty false",
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "name": "whitespace",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": ""
+    }
+  ]
+}

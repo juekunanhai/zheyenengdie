@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "errors": [],
+  "videos": [
+    {
+      "src": "evidence/camera-impact-r1/home-preview.webm",
+      "readyState": 4
+    },
+    {
+      "src": "evidence/camera-impact-r1/play-preview.webm",
+      "readyState": 4
+    }
+  ]
+}

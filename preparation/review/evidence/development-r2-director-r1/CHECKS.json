@@ -1,0 +1,45 @@
+{
+  "scope": "Static and source logic checks only; no project, rendering, Box2D, builds, upload or device execution.",
+  "results": [
+    {
+      "name": "home",
+      "chunk_id": "ccfe62",
+      "wall_time_seconds": 0.283088,
+      "exit_code": 0,
+      "original_token_count": 91,
+      "output": "{\n  \"status\": \"passed\",\n  \"assertions\": 3374,\n  \"sampledTimes\": 463,\n  \"frameCount\": 126,\n  \"frameBytes\": 2004487,\n  \"frameRGBABytes\": 41127024,\n  \"productionSourceSha256\": \"19c22aa5c4f5d1f2303785fbedb667c7eb2e568e07a60a3380571de7516c4574\",\n  \"limits\": \"Static references and mock cc logic only; no rendering, GPU/memory, Web/WeChat build or device validation.\"\n}\n"
+    },
+    {
+      "name": "director",
+      "chunk_id": "c1cbe6",
+      "wall_time_seconds": 0.956083416,
+      "exit_code": 0,
+      "original_token_count": 245,
+      "output": "PASS risk boundaries, six factors, valid zero, malformed sample\nPASS approved fourteen-piece opening, first-eight limits and early absurdity\nPASS seed replay and RNG stability across observation frequency\nPASS advertised NEXT stays locked through risk, snapshots and incident; handoff consumes it once\nPASS post-opening filters across 51,200 generated turns\nPASS incident recovery affects only two unseen draws and does not reset on unchanged count\n{\"safeRescue\":3979,\"dangerousRescue\":7342,\"normalDanger\":7769,\"stableDanger\":10074,\"earlyHard\":1923,\"lateHard\":9484}\nPASS high risk increases rescue opportunity; long stable period increases danger; time raises difficulty\n{\"unstableNormalDanger\":3710,\"unstableSteadyDanger\":4839}\nPASS steady Unstable tower can increase challenge; Dangerous/Critical ignore stale steady duration\n{\"status\":\"passed\",\"checks\":8,\"limits\":\"Pure source logic only. No Cocos startup, physical playtest, visual/audio review or WeChat/device acceptance.\"}\n"
+    },
+    {
+      "name": "integration",
+      "chunk_id": "cdb421",
+      "wall_time_seconds": 0.237551959,
+      "exit_code": 0,
+      "original_token_count": 391,
+      "output": "{\n  \"status\": \"passed\",\n  \"count\": 15,\n  \"checks\": [\n    \"All 14 opening objects and advertised NEXT survive the first random boundary\",\n    \"Changing risk / sampling diagnostics cannot change current NEXT or RNG\",\n    \"Paused frame freezes risk timers, collision decay and draws\",\n    \"Early handoff does not score; later stable confirmation neither redraws nor counts twice\",\n    \"Director risk does not change existing physical stability scoring or award unsettled pieces\",\n    \"Lost-current recovery consumes its advertised NEXT once; held/surviving recovery does not\",\n    \"Only first effective loss counts toward director recovery, not incident start or duplicate loss\",\n    \"Explicit fixed calibration cycles without RNG and rejects changes after release\",\n    \"Orthogonal releases and naturally settled flips are not tilt; oblique leaning still is\",\n    \"World angular speed is converted from radians/s; width proxy allows a plank on a box\",\n    \"Held, lost and untouched falling bodies are excluded; contacted unscored and offscreen remain\",\n    \"A grounded local bond bridges contact gaps; a floating bonded group still has no support\",\n    \"Basketball ground bond retains real support through a contact gap in either pair order\",\n    \"Steady wide-plank towers accumulate time; short impact pauses it and structural danger resets\",\n    \"Repeated fixture support is unioned; overlapping supports never double-count width\"\n  ],\n  \"scope\": \"Actual TypeScript controller/world methods with engine doubles; no project, Box2D, browser or device execution.\"\n}\n"
+    },
+    {
+      "name": "typecheck",
+      "chunk_id": "99d52a",
+      "wall_time_seconds": 0.768633042,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "name": "diff",
+      "chunk_id": "036a63",
+      "wall_time_seconds": 0.000001333,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ]
+}

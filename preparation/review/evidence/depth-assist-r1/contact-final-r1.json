@@ -1,0 +1,4154 @@
+{
+  "schema": "depth-contact-real-engine-r1",
+  "profile": "contact-final-r1",
+  "startedAt": "2026-09-15T02:26:45.743Z",
+  "status": "failed_or_incomplete",
+  "method": "Actual built TowerWorld / ContactAssistance / native Box2D events. Physical fixture mutations are documented per case. No production source, previous QA script or previous report is rewritten.",
+  "limits": "These directed contact tests do not establish ordinary player difficulty or subjective surprise.",
+  "scriptSha256": "a7e80f615730fe9a96ac9c3f77f9340654e7a108fcea7d4db64632a5520c7793",
+  "buildBefore": {
+    "count": 214,
+    "sha256": "ce163ca140f433243f046922866dacbf53825e5de7c2a578d004650dcd72cdc6",
+    "files": {
+      "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "assets/internal/config.json": "c195765619ae3c8c4ae2490e6692999c4dc6df2c6aaa419fe4dd6419a06b57e0",
+      "assets/internal/import/0b/0b0f7a282.json": "af35559160d16eedc22682e8307a61fc34bc9ae390eb7337067addb97a4901ac",
+      "assets/internal/index.js": "d842bf596127320ad8cd42ce506a2817cd8a6402fbec6735e6b13af359a40757",
+      "assets/main/config.json": "83766b0b143a767f5049c98572563f2a4f2bc12d82b97eac0e2d66b072ef7c16",
+      "assets/main/import/00/003ad394-a2b9-5f56-aae3-3f3ef9c23e06.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/02/024316fc4.json": "3a72047644b365d7d39705eb480a0f079fddaa3bf29dedd180cfee4ab2c4e514",
+      "assets/main/import/07/07c773086.json": "3f5921af635b1fd2dffb3c8e29b0c0af2c2a4ba842f66de7632458bba78e75a2",
+      "assets/main/import/08/0828129a-4f9c-54b6-9ee2-179ce3117b59.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/0a/0a5ff119a.json": "55627e20025d15c26d287bc7c1d2b627d6783da6d2bbb792ea675c20140b6d47",
+      "assets/main/import/0c/0ce809e46.json": "f0da1c325405bbed3862be6bb4e1126ab9d9fb66f100b80bf875fbb599ae22ef",
+      "assets/main/import/0e/0e2bb2f8-e9d6-5a22-86d6-4af881db414c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/0e/0e6a4113a.json": "470263bfbbdbe29ace5cea2f7d1dc295d021fb108406504203a2df3beee46f0b",
+      "assets/main/import/12/12f5e35f-0981-5ec0-b3e1-d12b545934c7.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/15/15e4005b-d75b-5047-85ee-ad1a2b421b35.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/1b/1b161928-9b08-57e4-b37f-3e98e294b8d4.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/1d/1d7fd559-bc53-547a-a00d-00b933f55893.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/24/245bd1c2-0956-5e84-a083-abf2aab6b42f.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/26/264face5-0a40-5cb6-9188-78d7ce379d59.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/26/26accb7e-da07-5a1d-9e4d-ac4d6df61841.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/29/29931145-bbf2-55d3-aa5e-0547c1218b0b.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/2a/2a967c38-21e7-5ab5-8f8c-70f49d9e9e74.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/2a/2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/30/306e7575-25b7-5824-86fc-c27de6bc9ef6.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/32/32f9d4f2-24f9-5839-af82-5ffde874e1b5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/34/34764b14-1abf-5de9-a05d-1daa96843744.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/41/419d0ef4-c2d9-5789-b752-a6cc0c60db30.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/44/445529b1-6a3d-5e50-a496-3310d01dfcc5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/47/47c4664d-ba9f-5678-93e6-a01649bc32e0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/49/499f9f6c-c755-572d-8a13-ec41a2e539b0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/4b/4b8aae92-095c-5e27-b928-b1db46048627.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/4e/4e388f47-1a9f-56a3-a88d-6d55971d0ac6.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/4e/4eeb7b63-a51a-5ef3-86ca-784a6163675c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/52/526f992a-df63-51ff-b727-031d1c49e4b8.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/54/544c2544-68e4-5023-83fd-97f3952a54e1.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/55/55b492a0-02aa-57a7-ae12-5fc00dfcc9b5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5a/5a3bdf5b-28c6-582b-897d-cb3c661307cc.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5a/5a961635-42c2-525a-9604-2c52fc98041b.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5a/5aaf430f-206d-5b84-9912-fd9e41fec676.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5b/5be35b2e-e5ca-531e-97aa-d85623afe450.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5c/5ca2c4ec-fc1d-5a20-aed2-991257193045.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5e/5e2578a8-4a8b-5612-9b1f-15da9ed36867.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/65/65a348ab-bfcb-5feb-a7ab-79c8a4a2b3b3.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/6b/6bf002f5-02dd-5682-a080-8d224174f941.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/75/7525c985-828e-55da-8b71-61d98ae41596.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/7b/7bb14d35-5685-5e29-8257-a0bb9f9e6e9e.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/7c/7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/94/944b899a-01b1-535a-aa70-502da07c9f84.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/99/99cdc2e8-34f7-5ca4-ad64-b0e0087756df.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/9a/9a223153-887d-5751-8adc-a7440d0ce9e0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/9e/9e397279-db05-5a28-bed7-b5f9babbf837.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/a6/a65ae333-33f7-596d-8eab-8df0c4e85945.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/a8/a86db27b-0807-555d-bc59-845f6b8b133a.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/aa/aa5672be-5f9d-5e29-bba8-4d207180adea.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ac/ac7dc395-89bc-5dda-831b-ad646cc85af3.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/b0/b0dd028e-7a35-53eb-afb8-2aa5e92d1381.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39",
+      "assets/main/import/be/becae09b-01d7-5898-bbb6-ff03ae81380e.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c0/c08f16c0-112c-5aff-9ce3-b5c54118cea7.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c1/c136c394-2eb2-5241-9baf-1dfec8168e2a.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c5/c5455892-cebe-5287-bf11-a67c3748dfd2.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c6/c6524d46-edc6-5bef-b8e4-f89110f5ce09.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c8/c89afe78-98e8-5395-b331-3c9547c952f8.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c8/c8e884b0-443b-5289-b43b-28289dbcbab5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c9/c997cc05-5668-54fe-b75c-806c28c42b57.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cc/cce2bc47-590b-57c1-9e2c-5c35bffb9c29.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cd/cd19e6da-f522-5400-95f3-c9fe48fb6cf0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cd/cd75bccb-35d6-5d95-a391-2a1fcf993d85.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ce/ceff0de3-adec-5565-9eee-30bf63829596.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cf/cf66836a-ddea-5263-be44-87a6fa70fce1.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/d5/d5e295ae-a079-527c-be77-ca42a8ca2cfc.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/d7/d711b439-0443-582d-8906-935f848bf98d.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/de/dedc90ac-5149-556d-9b3b-7d282443ee08.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/df/df056fce-6feb-5dfa-ad9c-3a1792cb5a93.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/e3/e3616b30-2519-50a3-93be-98e543223e56.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/e5/e58dfbb2-df57-5b00-8fe5-2b55520ee99c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/e7/e747c6e0-6604-586f-bd75-22e967577d99.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ea/eafb5727-1d0e-530f-a8ae-a6cdf2aa500d.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ee/ee5131c5-f13b-523f-b02c-c7ec91d39494.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f0/f0df6c01-9760-5361-a933-25fd127f6c9f.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f2/f2e73ada-8598-52b7-bc47-d28e60eec324.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f2/f2f32c9a-ed38-51f6-97db-8d19df5bb5e2.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f5/f5ca6384-3db3-5ede-96ed-3eb32cc2443d.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d",
+      "assets/main/import/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/index.js": "bb47a6ec0ef4534a5820c6bf23322ae5c95e23697d3ca43fb6d3c790222c933e",
+      "assets/main/native/00/003ad394-a2b9-5f56-aae3-3f3ef9c23e06.png": "0ff76a1e17faedf8d37afe6cf5d8e0e078cdc32680d7cc25606385ebb7cb2343",
+      "assets/main/native/01/01845990-b59e-52b4-a17e-4fc0fb692d25.mp3": "8678c25c5485d67a37ef30e399a08148c926e049613bbe1ba0ad90f75dd171f4",
+      "assets/main/native/08/0828129a-4f9c-54b6-9ee2-179ce3117b59.png": "5c850606594b1ded306e0c0816b7b9786ac9e07cf68b2a348a75b1366030482d",
+      "assets/main/native/08/084e4752-f842-5145-8bd5-179683cda3b8.mp3": "490a3e046c1c399e54311dfc1fb35c64d7f3a9588fb4bea35f9576b468fb75f4",
+      "assets/main/native/08/08f88886-a7e2-5c48-ae9c-d1765118fb93.mp3": "1196d41e94403b39bf8420c74ecde37469ee54a6a8b5394410df6b5bc9abe11c",
+      "assets/main/native/0b/0b2dbd56-5600-55f4-bbfa-d6a16164e7bb.mp3": "1723d08854f14a15bafd72bfa9751a88aaaa542519c535c258c503b76c79b7e2",
+      "assets/main/native/0e/0e2bb2f8-e9d6-5a22-86d6-4af881db414c.png": "dd6808cc08b0d151bd0e38d5a4895b59d6d2a2953bdd4f2f7af828b89d4c49d6",
+      "assets/main/native/12/12f5e35f-0981-5ec0-b3e1-d12b545934c7.png": "5aa6cd284910f44ed072bcc0fc1cd69d8a9006f619f56672b999f93fe062acb4",
+      "assets/main/native/15/15e4005b-d75b-5047-85ee-ad1a2b421b35.png": "c65333be7c8a98848d7f5552e347dfcaf8fd95b98b153c4a36ef82b98b762a5a",
+      "assets/main/native/16/1668fa3c-c833-58c0-a84c-fec1d25b6394.mp3": "f14f9173257c4afe3794900c8ad55fa2568bfb6c39c15687904182e9bbfb1f3c",
+      "assets/main/native/16/16942ec4-04ce-5700-bfc3-0989127a6698.mp3": "e57d174f0ac0cf0e2bf381c2576295da4337388cde49912518284548d3c8e65f",
+      "assets/main/native/1b/1b161928-9b08-57e4-b37f-3e98e294b8d4.png": "8332ef5048e449555016b1e0a481bd9be35a5e0e350919871f86d86695f764a2",
+      "assets/main/native/1d/1d7fd559-bc53-547a-a00d-00b933f55893.png": "eb0486b00b7f76f7bbcfe958cbe7d3e5e902fec48a99ff420cec25d9d2d8c4c4",
+      "assets/main/native/20/20634fb8-a68e-5cae-a9b2-7cb353390b81.mp3": "10d4b1b378aa9ee18417c8cf83e13b05f1b4d05a21b2b070e844de0554b86def",
+      "assets/main/native/20/2091d581-962f-5219-8737-f12341baa58e.mp3": "9bc35d647791b118f75a30419ee9d1a515a0dd1351a27e8a05f9b0ad3e1d661f",
+      "assets/main/native/24/245bd1c2-0956-5e84-a083-abf2aab6b42f.png": "dafb9e8507608ed83c68ed2e30a3e3886dc9a0f1b449150a27c1212602e5e947",
+      "assets/main/native/26/264face5-0a40-5cb6-9188-78d7ce379d59.png": "e181f89de91c29ece6b71458f00e77dbfe87e7e0deabf42df19c6c87d179a2af",
+      "assets/main/native/26/26accb7e-da07-5a1d-9e4d-ac4d6df61841.png": "e10a71b8b2ea919afb9cfc5ea682951b8df9392c0d187a450fe3a4a6a1c43c5f",
+      "assets/main/native/29/29931145-bbf2-55d3-aa5e-0547c1218b0b.png": "844c7db7eecf7501b188cca608922bc1af74e80513aba85c474dec9d14a040e1",
+      "assets/main/native/2a/2a967c38-21e7-5ab5-8f8c-70f49d9e9e74.png": "9079e248bbcd4bfc47f2704ae7a967398dab77b0501bdc0ce18f7bd8eba8a254",
+      "assets/main/native/2a/2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c.png": "2ba4cc4f1fc84826f66089e3b8f0a73ef08100edd65db0db8e39aa332878cab1",
+      "assets/main/native/30/306e7575-25b7-5824-86fc-c27de6bc9ef6.png": "2f6bdd3d6685c4ada45a1c2322495b40f3cebdcb7af77906dce151130b48e3a4",
+      "assets/main/native/31/31d3bb54-7d7f-5f29-914a-34d21260be84.mp3": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "assets/main/native/32/32f9d4f2-24f9-5839-af82-5ffde874e1b5.png": "c1f3677a1df12513406815fd5bf90f0c07c0d2f1ebe08a851c9de88ef8b5a8b0",
+      "assets/main/native/34/34764b14-1abf-5de9-a05d-1daa96843744.png": "0da57f84f294413ac42fcd903d4c328b04532e6f456483e17ec504fc6dfffb8d",
+      "assets/main/native/35/3555e3a1-c6cf-5675-a998-830c361f0078.mp3": "104d856d1b33b47de34b1414f2a501a759cbb789c707076b71d8d238db641ec4",
+      "assets/main/native/38/388f5d53-f5d4-539b-a43c-b35edb93f43d.mp3": "98ad2fd2b40f53fafa2e2f3856d18fb5fff7b5d665ab6e7d090698e423c65348",
+      "assets/main/native/41/419d0ef4-c2d9-5789-b752-a6cc0c60db30.png": "b73764e04b9ef944d39a6e1bc1d2081ae4357a68f414ed78af2e3fe4faebc467",
+      "assets/main/native/44/445529b1-6a3d-5e50-a496-3310d01dfcc5.png": "bb8c60541b5e7225fd728c5733c01f5e5808a400f6265434607e401e39aecf97",
+      "assets/main/native/46/46c38ce1-228d-5235-a194-acef8fa6c1d9.mp3": "2bfd6da81e67b86c8dc18fbfcec9ff75c4b39cba1aa30d6d2e45479abfeff2de",
+      "assets/main/native/47/47c4664d-ba9f-5678-93e6-a01649bc32e0.png": "e537a41b69d3e2d2a4768903ebb8bb42c25f4ff3718d713ba4006b5d591de449",
+      "assets/main/native/48/489d544b-86ed-55d5-a99d-230deb1d738b.mp3": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "assets/main/native/49/499f9f6c-c755-572d-8a13-ec41a2e539b0.png": "f5bca02fd9fc08fa47150189b3952eedb9fe4f21c39c708a889c31f29b555e1c",
+      "assets/main/native/4b/4b8aae92-095c-5e27-b928-b1db46048627.png": "97edca9af4c7b74d86adc25e9544f2777a2659e9fb2a1d5cad5da3108fdf5e0a",
+      "assets/main/native/4c/4cbb1aa5-6ded-52d4-a71f-56963e50495d.mp3": "3150afb53987a5a20bf97d5e4422ee6183af31185e76ff109198ed8b3e08dda8",
+      "assets/main/native/4e/4e388f47-1a9f-56a3-a88d-6d55971d0ac6.png": "4f373aa29d5427bdedb3c91618609b74b9d07b7e4fa0f0c506f71bf5e873ae1a",
+      "assets/main/native/4e/4eeb7b63-a51a-5ef3-86ca-784a6163675c.png": "347e14d4690f2a5ed28790d9dbfef286bca35aa207c7316a7e7ae625e6af0e08",
+      "assets/main/native/51/5192fe85-75e2-5cc3-8bae-aa1fc990a8a0.mp3": "9fcbad3f11f346b9db3022070f636c62ff248be6ac54d6d10a3ee902c2545c56",
+      "assets/main/native/52/526f992a-df63-51ff-b727-031d1c49e4b8.png": "b5697456058d44222439b6331c66b34f6c0df34a31bf5939767dc81e3ab5c578",
+      "assets/main/native/54/544c2544-68e4-5023-83fd-97f3952a54e1.png": "120657cefb6a9b216eb1d96a062e3e18b1cab83cf733b1a67cb7892fbbd65cbe",
+      "assets/main/native/55/55b492a0-02aa-57a7-ae12-5fc00dfcc9b5.png": "8485264f6295b02d06b6ac44807442c6f239b895a5c5348c0227d7a2388bd214",
+      "assets/main/native/57/575160e9-64f8-59b5-a21c-c45c3b03f2a7.mp3": "67ef3d60f6b25036c0f9d7a2f3d0038dcbe6a2a881be06ae2f6368dfa1f05776",
+      "assets/main/native/58/58e77d35-2f84-5afe-9511-9a1f0960dc49.mp3": "63996454af2c241c5bbf4e79225c32186edf8768ecc791c4dfaf578c1c83464a",
+      "assets/main/native/5a/5a3bdf5b-28c6-582b-897d-cb3c661307cc.png": "1b7d7859b5aabbc15a9f5f3cd87ea7af76a8adc454e9522245e618e415123b14",
+      "assets/main/native/5a/5a961635-42c2-525a-9604-2c52fc98041b.png": "d14e684e88ad783ea3c8e56f6d6da945bf148b1a6e3a767c2031051674fc35c8",
+      "assets/main/native/5a/5aaf430f-206d-5b84-9912-fd9e41fec676.png": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+      "assets/main/native/5b/5be35b2e-e5ca-531e-97aa-d85623afe450.png": "ead7a7aa35baededa46ee2e167ab06e92da602b8f19171b116d682c4ace7d1c6",
+      "assets/main/native/5c/5ca2c4ec-fc1d-5a20-aed2-991257193045.png": "671e25af2a4525d65fe391b2b20cac47edd2bad5f85f348b403ced790cd94412",
+      "assets/main/native/5e/5e2578a8-4a8b-5612-9b1f-15da9ed36867.png": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600",
+      "assets/main/native/64/6477cbe6-0a4d-5281-a745-5959437aba5f.mp3": "c3e3daa26cbb66ea469268601306a8bf83933846e9a1e63c44fb27d4a6af75ad",
+      "assets/main/native/65/65a348ab-bfcb-5feb-a7ab-79c8a4a2b3b3.png": "4887d9590b581e9d367b30b5965fa776802ab30de9cf153def5dc2958080180a",
+      "assets/main/native/68/68eb25a6-c69f-56fb-b452-a3a623b90ec9.mp3": "86bfdd9bbb70f9cc0e6fadb25e3307d4cb04ec5e0d5df6fe3c619b086845a714",
+      "assets/main/native/6a/6af8a123-d83b-59e6-a46c-3707007aa5b0.mp3": "d2b9f2e4c5b5eb4ebbabd6fadd800744d683d08eca419ba370f39b5ec4c8dc4a",
+      "assets/main/native/6b/6bf002f5-02dd-5682-a080-8d224174f941.png": "ac4ab0945bfc46780718bab740f4426d9827a69eb32e7ed6a6dfef3e9c925def",
+      "assets/main/native/6c/6c5f6a81-3aea-5348-a264-48eed8d66851.mp3": "9048c340b53d43a88346ce075ab535f1588b9d49fb672307247a03d335b91595",
+      "assets/main/native/75/7525c985-828e-55da-8b71-61d98ae41596.png": "2bbd8f64b8b910a22b50adb4ccc65f8ecef96df89b223bb6629d93ac3232db78",
+      "assets/main/native/77/77f12700-2121-5b38-b8fb-aaf0a7640b45.mp3": "a2494f9a3abe699cfb4a197a401afbd9a4b1cc16700e725bf261c99d450bb7fc",
+      "assets/main/native/7b/7bb14d35-5685-5e29-8257-a0bb9f9e6e9e.png": "7ea68f5cc744f5e503d7000077451a7025c1f6c3bc733088af786f3c284b0f60",
+      "assets/main/native/7c/7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371.png": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289",
+      "assets/main/native/84/8420f40b-9d91-5feb-88a6-7d934b37bbcf.mp3": "b4376030dd8b1432462507700629d5aa0eabc10f6049080c97c9952efbca8194",
+      "assets/main/native/89/8941d852-9b9d-5b9f-b41c-e5f03e8bbd0d.mp3": "af292c7f565d971e5f17dc84f13b32636dc9b411a96e2d2616f70ebded2857bb",
+      "assets/main/native/89/89abc0be-4d26-57ef-9c6e-b865e090915f.mp3": "95c5d680773985f41fe3eafacd767a4fab15f9992b045fc7e5c60ad8d9279a11",
+      "assets/main/native/8f/8f86c06b-09e0-504d-8956-565ed85acaf7.mp3": "943e30eda154470fbd86fc013a6f313b684e00490c7bd5e6093e81ea9d46d974",
+      "assets/main/native/94/944b899a-01b1-535a-aa70-502da07c9f84.png": "4a772aca627a7dc251342417cc339025bc72d2e19e97585c3a7f952387db75ba",
+      "assets/main/native/98/98f8e620-a898-5572-9bdb-93de19f9f70b.mp3": "1e8860ea65700f56a63149f7c886f3834e1465a4cf0022cbf487c9e84f1b8d64",
+      "assets/main/native/99/99cdc2e8-34f7-5ca4-ad64-b0e0087756df.png": "12eb3a5ac7081f3f5f568523707833aa318599a4d7a04315a2d71361651027cf",
+      "assets/main/native/9a/9a223153-887d-5751-8adc-a7440d0ce9e0.png": "4c35f35602d93e5a413e8fa5fe531ab3badbe1cdadbdfc1657b19e289b9745a5",
+      "assets/main/native/9e/9e397279-db05-5a28-bed7-b5f9babbf837.png": "61fb5938b185ef47866bc0634c6cc90a08efd1d08160ab5adf7298dfd9771ada",
+      "assets/main/native/a6/a65ae333-33f7-596d-8eab-8df0c4e85945.png": "1854a564b1bce2cdc4de438a277e757ffd931a138e46a1f33377f8987ad8cb8a",
+      "assets/main/native/a8/a86db27b-0807-555d-bc59-845f6b8b133a.png": "5118f2892fd6341495ea2a4bba35af9725ed5355149fe68311d541202b288587",
+      "assets/main/native/aa/aa5672be-5f9d-5e29-bba8-4d207180adea.png": "d78593c2d3af2e4bc4a677199c74e82771df5e4fe34741f26ee197eb3bce274c",
+      "assets/main/native/ac/ac7dc395-89bc-5dda-831b-ad646cc85af3.png": "c9e8cc38532c5032cc53406e601c1e651bf7b898adeb322cacd63b6223afa977",
+      "assets/main/native/b0/b0dd028e-7a35-53eb-afb8-2aa5e92d1381.png": "f8d8b26d64af8ba6e36163bfcb2533f1b60f0c429871b773613406d799ca37d0",
+      "assets/main/native/b2/b27a7b7e-5332-53be-a89e-46c50264fd03.mp3": "b0c60355de07522b7f047b28efbc1f05c474452954633c49df17580c3ade5eb9",
+      "assets/main/native/ba/ba670f01-60e8-5ba2-a93c-c1e43439928d.mp3": "5bddce1dedb6d73cfba99c2dbaf72efc5844550ee8ef57c8b5fbdf411939c73e",
+      "assets/main/native/be/becae09b-01d7-5898-bbb6-ff03ae81380e.png": "5dab10f11cb00ce0a6273108be6f24c9d9dcce3fcc94eede47025e23780aae12",
+      "assets/main/native/c0/c08f16c0-112c-5aff-9ce3-b5c54118cea7.png": "ac02371e70ac6fe460e59ba7412e26262a4a7f082a237d4fd3ce7e2e75bf1e40",
+      "assets/main/native/c1/c136c394-2eb2-5241-9baf-1dfec8168e2a.png": "b694ef2064bce56b6baa5f09d2cce71c8ffbe7fbc59b0845ed9bd28dae827630",
+      "assets/main/native/c5/c5455892-cebe-5287-bf11-a67c3748dfd2.png": "d550217e1ee82dfad1cc340325766d347c73c3bfaa8a52e0969b13778d8c0e70",
+      "assets/main/native/c6/c6524d46-edc6-5bef-b8e4-f89110f5ce09.png": "ac238ec0c57aa46348df4ac82fe9f803ff19dbf12991ba064223ff3849e6f4c4",
+      "assets/main/native/c8/c89afe78-98e8-5395-b331-3c9547c952f8.png": "889e70cd9c40704616e9adb5bbf9f8bc90e9e8779707c7a65db359358f0ef9e1",
+      "assets/main/native/c8/c8e884b0-443b-5289-b43b-28289dbcbab5.png": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+      "assets/main/native/c9/c997cc05-5668-54fe-b75c-806c28c42b57.png": "7d2b79989e56453ee29448ecf57dc62e325e72a062c4c283c5cd1f9c78b2f651",
+      "assets/main/native/cc/cce2bc47-590b-57c1-9e2c-5c35bffb9c29.png": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c",
+      "assets/main/native/cd/cd19e6da-f522-5400-95f3-c9fe48fb6cf0.png": "0d2ffbe45aaac6d2a1f611790924c1866b6aa468226bd393b0d51763494bc28a",
+      "assets/main/native/cd/cd1c2546-a905-5056-ace8-fac5ecbea148.mp3": "027d60484504864eda1fef12d8de61a4c81e62412487327dde654985d1b5c04f",
+      "assets/main/native/cd/cd75bccb-35d6-5d95-a391-2a1fcf993d85.png": "9c06bbc2d34307ecd6e0dc65d5e498bee1090a8ad411363ec9541fd55facf5f5",
+      "assets/main/native/ce/ceff0de3-adec-5565-9eee-30bf63829596.png": "391c2e9ba7b48010a3d96a00287a311c1513f7946cdeba353f88e0da7b81f8e9",
+      "assets/main/native/cf/cf66836a-ddea-5263-be44-87a6fa70fce1.png": "fd8f73fd39f304f76aa969074c57b7a1c5e219b1424f67b97b0bd42b90a345fb",
+      "assets/main/native/d5/d5e295ae-a079-527c-be77-ca42a8ca2cfc.png": "2aaaf0bf8d7cf83bf560cda75e31b36455e8ef57ffcf0ec42920c462384179f1",
+      "assets/main/native/d7/d711b439-0443-582d-8906-935f848bf98d.png": "91cf8330d9b7e04e7dbb6889047994f7c6e18b0ab217e17c8ec6e18782fb13b3",
+      "assets/main/native/de/dedc90ac-5149-556d-9b3b-7d282443ee08.png": "2a7d93c6a2dce6191129642ceeffe91bcbed0ee071fe1f5a493ecefbc9b96462",
+      "assets/main/native/df/df056fce-6feb-5dfa-ad9c-3a1792cb5a93.png": "7d00350198c6673398b476d537ed99342d9dcdeca08c3340c418480816a50b08",
+      "assets/main/native/e0/e06b303a-6cf1-5b66-9f0c-1677b411a75e.mp3": "c4eca31a89d547df305aba4da08e430d2eeac25cc0264241864dd95c7dbf3bbe",
+      "assets/main/native/e3/e3616b30-2519-50a3-93be-98e543223e56.png": "bcd896e6cb989523ad4b857efa61a35e040a71b8b620ba557c90e39237d50784",
+      "assets/main/native/e5/e58dfbb2-df57-5b00-8fe5-2b55520ee99c.png": "6afa01d86cb88c332287000fc1c6f63b803a6f4c6963148b42898737633430d6",
+      "assets/main/native/e5/e5c40fea-039d-505e-88b6-12b2b2600536.mp3": "ad8690e6d85244556733353d0462abf3ba191d320e3aedeadd7af373983a120f",
+      "assets/main/native/e7/e747c6e0-6604-586f-bd75-22e967577d99.png": "3c951db1fd8e91e578f3e0fb562a0ba235707ac71d4ac140fd31670f5439016e",
+      "assets/main/native/ea/eaf54498-57d3-5772-989b-4e07cbf25800.mp3": "79bef0d269ddfe7f5399626346230a9331d1a05f20314ee1827735f3e6cfcd58",
+      "assets/main/native/ea/eafb5727-1d0e-530f-a8ae-a6cdf2aa500d.png": "1d83ad171ab81e5534637fc505e3ccfa2dd4a1a201db071e881758652bf2cff6",
+      "assets/main/native/ee/ee5131c5-f13b-523f-b02c-c7ec91d39494.png": "5c072d91000b01eb1e16af9a01bbd3cafa8922e1a94fcedd4abb109c97937d89",
+      "assets/main/native/f0/f0df6c01-9760-5361-a933-25fd127f6c9f.png": "6a0cde45aee585f916b28c9233faa62ca07db21ff9df66de7d4ebc5ecdf1a531",
+      "assets/main/native/f1/f129b1dc-bae1-532d-92f7-23faa63e8f73.mp3": "a8cb0442ef13d00302e408207b41ce34da1adbabbeab473b5f9415aed5fbc56c",
+      "assets/main/native/f2/f2e73ada-8598-52b7-bc47-d28e60eec324.png": "2eade8e39d2b846ef6c58c98bde3eb1741e0c39578f22902fdaca208e7da33b8",
+      "assets/main/native/f2/f2f32c9a-ed38-51f6-97db-8d19df5bb5e2.png": "7e9c4091c33b5e8213258e7d21aa6878ff55f3a01e76025965b69a46227040a4",
+      "assets/main/native/f5/f533f0ab-55a9-5184-8ad3-26ed9eb42a13.mp3": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "assets/main/native/f5/f5ca6384-3db3-5ede-96ed-3eb32cc2443d.png": "119a169dfd8da4ee5a17c4bc12bd55fb8f0208e534b50cee54fdb794cdc9683b",
+      "assets/main/native/f8/f81cc1ac-143e-5635-8fb8-fa0e15237a4c.mp3": "85c6d04623c6435be513e65dbb2e98a85a6261ad95fb54191efc92389fb7d294",
+      "assets/main/native/f8/f8c554bc-9f92-5118-98b3-1ad21352aaae.mp3": "1cb7be61901bbe7554a7193bff0500c7622e10a2d2751ee572922476e9aa7929",
+      "assets/main/native/fc/fc9564a6-b37d-59cf-b9e6-f508791d2361.mp3": "dec6962d80dc980910c3dbf24359807ef8c3541d96bd72e516402d04ba23add5",
+      "assets/main/native/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+      "cocos-js/_commonjsHelpers-D6-Ny6z1.js": "f34f8a244f880cd917e3c96f5bbf05c925ea8b9acd773bbb9b61ff90e96e03ac",
+      "cocos-js/_virtual_cc-BeKhxg4p.js": "83d87c86cde7826389a01d943d23a5e91d394e980a7836c803463cf6d161fed8",
+      "cocos-js/assets/box2d.release.wasm-FOUq4jPK.wasm": "a066ae3080af280f8c09fe5e872f69a219e1c4e017f351064852482ef52954ff",
+      "cocos-js/box2d.release.asm-DJKTZot4.js": "c2afe6b14637f532b3906b9596c66095cc207b5203be5412a9185b5221d599f5",
+      "cocos-js/box2d.release.wasm-CSUuVOaQ.js": "0c882386612103773cc4e794d2c39a385de45b1e16c252d6837a6c3417418738",
+      "cocos-js/box2d.release.wasm-Czb_OePo.js": "e08c07d960c4170ca9e23348473beba133f41466c7aa54ef040c8ed60c25bfbc",
+      "cocos-js/cc.js": "33a509901a99eee86b29f7d1d79bf9fc62316b564b39a2bb9532275d9a04f0cf",
+      "favicon.ico": "0ee6ea35321de21db85992f64e4b846def7abac1222fa2250318878396df988e",
+      "index.html": "4ce027c6bdb572507c1e110e6a2a412b890e3c26d255544fe7abee7e9313d96d",
+      "index.js": "3f45e362e55d72cf38698a6824c4750f86b1793e41f5c94dab5bf2e67752964b",
+      "src/chunks/bundle.js": "92831b609777e6bc4bf4a3e5aea1d85604e8fd4ebe9e7e2b5471a019d2aa421c",
+      "src/effect.bin": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556",
+      "src/import-map.json": "ae84a42bfd0fe767a4141f7cd4e120b85ced56a55baf02bd48835d20bc6996f4",
+      "src/polyfills.bundle.js": "f1e4ced3322168d6b9915e782e4c1cf1055d75f66f2b38e7fcd60f48cf89082b",
+      "src/settings.json": "dd83fd1314b4ba7ff437c74035e1197cc55cc27d1ee2ec3d29a2e353ddb6d4e1",
+      "src/system.bundle.js": "5d1a25de07cc11276a6b1d6479cac7f12c0c561dd06941b8339e568c9d94f900",
+      "style.css": "48cc43329be1a113d6f0df5871fa55ba9ad9b7875d725104eb5578fd70bd079d"
+    }
+  },
+  "cases": [
+    {
+      "id": "detached_glue_group",
+      "status": "passed",
+      "startedAt": "2026-09-15T02:26:48.886Z",
+      "result": {
+        "fixture": "Real box, basketball and cap are individually physically settled. Both basketball joints are built by real contacts. Then only the real GroundSupport collider is disabled; local glue remains simulated.",
+        "before": [
+          {
+            "id": 1,
+            "kind": "cardboard_box",
+            "dynamic": true,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "bounds": {
+              "left": -50.45678298735392,
+              "right": 50.4569996966892,
+              "bottom": 0.45461334497390027,
+              "top": 100.45562389759462
+            },
+            "nodeBounds": {
+              "left": -50.45678298735394,
+              "right": 50.45699969668922,
+              "bottom": 0.45461334497387895,
+              "top": 100.45562389759465
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0,
+            "contacts": 2,
+            "assistDamping": 33.439153297809,
+            "awake": false
+          },
+          {
+            "id": 2,
+            "kind": "basketball",
+            "dynamic": true,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "bounds": {
+              "left": -34.00027107849019,
+              "right": 33.99972892150981,
+              "bottom": 100.53523254394531,
+              "top": 168.5352325439453
+            },
+            "nodeBounds": {
+              "left": -34.00027107849019,
+              "right": 33.99972892150981,
+              "bottom": 100.53523254394531,
+              "top": 168.5352325439453
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0,
+            "contacts": 2,
+            "assistDamping": 31.912581157151838,
+            "awake": false
+          },
+          {
+            "id": 3,
+            "kind": "cardboard_box",
+            "dynamic": true,
+            "placed": true,
+            "supported": true,
+            "lost": false,
+            "bounds": {
+              "left": -50.457051526106845,
+              "right": 50.45825611250748,
+              "bottom": 168.61702665183384,
+              "top": 268.61950309659403
+            },
+            "nodeBounds": {
+              "left": -50.457051526107236,
+              "right": 50.458256112507804,
+              "bottom": 168.61702665183344,
+              "top": 268.6195030965943
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0
+            },
+            "angularVelocity": 0,
+            "contacts": 1,
+            "assistDamping": 29.0742777327138,
+            "awake": false
+          }
+        ],
+        "firstDetached": {
+          "elapsed": 0.021599999994039536,
+          "bonds": 2,
+          "bodies": [
+            {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.45670529817437,
+                "right": 50.45682578683384,
+                "bottom": -0.3864205100054505,
+                "top": 99.61433697391689
+              },
+              "nodeBounds": {
+                "left": -50.45670529817438,
+                "right": 50.456825786833846,
+                "bottom": -0.38642051000546473,
+                "top": 99.61433697391689
+              },
+              "velocity": {
+                "x": -0.00003302084587630816,
+                "y": -1.0403753519058228
+              },
+              "angularVelocity": -0.00006455546827055514,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            },
+            {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -34.00006209962157,
+                "right": 33.99993790037843,
+                "bottom": 99.70425415039062,
+                "top": 167.70425415039062
+              },
+              "nodeBounds": {
+                "left": -34.00006209962157,
+                "right": 33.99993790037843,
+                "bottom": 99.70425415039062,
+                "top": 167.70425415039062
+              },
+              "velocity": {
+                "x": 0.00012554044951684773,
+                "y": -1.040359377861023
+              },
+              "angularVelocity": -0.00003536864824127406,
+              "contacts": 2,
+              "assistDamping": 0,
+              "awake": true
+            },
+            {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.45692858057928,
+                "right": 50.458096498237836,
+                "bottom": 167.7930690323953,
+                "top": 267.79526885914515
+              },
+              "nodeBounds": {
+                "left": -50.45692858057955,
+                "right": 50.45809649823806,
+                "bottom": 167.793069032395,
+                "top": 267.7952688591453
+              },
+              "velocity": {
+                "x": -0.000007550694135716185,
+                "y": -1.0403591394424438
+              },
+              "angularVelocity": 0.0001098240099963732,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            }
+          ]
+        },
+        "after": {
+          "elapsed": 0.5079999999999999,
+          "bonds": 2,
+          "bodies": [
+            {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.45679976323022,
+                "right": 50.456852423248556,
+                "bottom": -136.1332899327091,
+                "top": -36.132410639928686
+              },
+              "nodeBounds": {
+                "left": -50.45679976323024,
+                "right": 50.45685242324857,
+                "bottom": -136.13328993270912,
+                "top": -36.13241063992867
+              },
+              "velocity": {
+                "x": -0.00000412851386499824,
+                "y": -15.932502746582031
+              },
+              "angularVelocity": -0.0000015707751117588487,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            },
+            {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -34.000080265672295,
+                "right": 33.999919734327705,
+                "bottom": -35.98586452007294,
+                "top": 32.01413547992706
+              },
+              "nodeBounds": {
+                "left": -34.000080265672295,
+                "right": 33.999919734327705,
+                "bottom": -35.98586452007294,
+                "top": 32.01413547992706
+              },
+              "velocity": {
+                "x": 2.5688871474471853e-8,
+                "y": -15.932502746582031
+              },
+              "angularVelocity": -0.0000015702103155490477,
+              "contacts": 2,
+              "assistDamping": 0,
+              "awake": true
+            },
+            {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.45700018238062,
+                "right": 50.45824101074079,
+                "bottom": 32.15691126844735,
+                "top": 132.1593226649597
+              },
+              "nodeBounds": {
+                "left": -50.45700018238098,
+                "right": 50.45824101074109,
+                "bottom": 32.156911268447,
+                "top": 132.15932266495997
+              },
+              "velocity": {
+                "x": 0.00000412023928220151,
+                "y": -15.932500839233398
+              },
+              "angularVelocity": -0.000001564009721732873,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            }
+          ]
+        },
+        "samples": [
+          {
+            "elapsed": 0.021599999994039536,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45670529817437,
+                  "right": 50.45682578683384,
+                  "bottom": -0.3864205100054505,
+                  "top": 99.61433697391689
+                },
+                "nodeBounds": {
+                  "left": -50.45670529817438,
+                  "right": 50.456825786833846,
+                  "bottom": -0.38642051000546473,
+                  "top": 99.61433697391689
+                },
+                "velocity": {
+                  "x": -0.00003302084587630816,
+                  "y": -1.0403753519058228
+                },
+                "angularVelocity": -0.00006455546827055514,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00006209962157,
+                  "right": 33.99993790037843,
+                  "bottom": 99.70425415039062,
+                  "top": 167.70425415039062
+                },
+                "nodeBounds": {
+                  "left": -34.00006209962157,
+                  "right": 33.99993790037843,
+                  "bottom": 99.70425415039062,
+                  "top": 167.70425415039062
+                },
+                "velocity": {
+                  "x": 0.00012554044951684773,
+                  "y": -1.040359377861023
+                },
+                "angularVelocity": -0.00003536864824127406,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45692858057928,
+                  "right": 50.458096498237836,
+                  "bottom": 167.7930690323953,
+                  "top": 267.79526885914515
+                },
+                "nodeBounds": {
+                  "left": -50.45692858057955,
+                  "right": 50.45809649823806,
+                  "bottom": 167.793069032395,
+                  "top": 267.7952688591453
+                },
+                "velocity": {
+                  "x": -0.000007550694135716185,
+                  "y": -1.0403591394424438
+                },
+                "angularVelocity": 0.0001098240099963732,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.044,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456706054659314,
+                  "right": 50.456819586317344,
+                  "bottom": -1.2222863722220723,
+                  "top": 98.77846563586868
+                },
+                "nodeBounds": {
+                  "left": -50.45670605465932,
+                  "right": 50.45681958631735,
+                  "bottom": -1.2222863722220794,
+                  "top": 98.7784656358687
+                },
+                "velocity": {
+                  "x": -0.000006220342129381606,
+                  "y": -1.5598996877670288
+                },
+                "angularVelocity": -0.00001090813475457253,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.000052288760344,
+                  "right": 33.999947711239656,
+                  "bottom": 98.87388610839844,
+                  "top": 166.87388610839844
+                },
+                "nodeBounds": {
+                  "left": -34.000052288760344,
+                  "right": 33.999947711239656,
+                  "bottom": 98.87388610839844,
+                  "top": 166.87388610839844
+                },
+                "velocity": {
+                  "x": 0.000019096230971626937,
+                  "y": -1.5598996877670288
+                },
+                "angularVelocity": -0.000007582042599096894,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45692006322303,
+                  "right": 50.45808930307534,
+                  "bottom": 166.96455588521485,
+                  "top": 266.96674032985504
+                },
+                "nodeBounds": {
+                  "left": -50.4569200632233,
+                  "right": 50.45808930307557,
+                  "bottom": 166.96455588521457,
+                  "top": 266.96674032985527
+                },
+                "velocity": {
+                  "x": 4.893184168963671e-8,
+                  "y": -1.5598996877670288
+                },
+                "angularVelocity": 0.000016986035916488618,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.04840000000596046,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456706054659314,
+                  "right": 50.456819586317344,
+                  "bottom": -1.2222863722220723,
+                  "top": 98.77846563586868
+                },
+                "nodeBounds": {
+                  "left": -50.45670605465932,
+                  "right": 50.45681958631735,
+                  "bottom": -1.2222863722220794,
+                  "top": 98.7784656358687
+                },
+                "velocity": {
+                  "x": -0.000006220342129381606,
+                  "y": -1.5598996877670288
+                },
+                "angularVelocity": -0.00001090813475457253,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.000052288760344,
+                  "right": 33.999947711239656,
+                  "bottom": 98.87388610839844,
+                  "top": 166.87388610839844
+                },
+                "nodeBounds": {
+                  "left": -34.000052288760344,
+                  "right": 33.999947711239656,
+                  "bottom": 98.87388610839844,
+                  "top": 166.87388610839844
+                },
+                "velocity": {
+                  "x": 0.000019096230971626937,
+                  "y": -1.5598996877670288
+                },
+                "angularVelocity": -0.000007582042599096894,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45692006322303,
+                  "right": 50.45808930307534,
+                  "bottom": 166.96455588521485,
+                  "top": 266.96674032985504
+                },
+                "nodeBounds": {
+                  "left": -50.4569200632233,
+                  "right": 50.45808930307557,
+                  "bottom": 166.96455588521457,
+                  "top": 266.96674032985527
+                },
+                "velocity": {
+                  "x": 4.893184168963671e-8,
+                  "y": -1.5598996877670288
+                },
+                "angularVelocity": 0.000016986035916488618,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.07020000000298023,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456725247404584,
+                  "right": 50.456851228678616,
+                  "bottom": -3.723572985678409,
+                  "top": 96.27723015446054
+                },
+                "nodeBounds": {
+                  "left": -50.4567252474046,
+                  "right": 50.45685122867862,
+                  "bottom": -3.723572985678416,
+                  "top": 96.27723015446054
+                },
+                "velocity": {
+                  "x": 0.000003613994522311259,
+                  "y": -2.5976691246032715
+                },
+                "angularVelocity": 0.000010069662494061049,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007586942229,
+                  "right": 33.99992413057771,
+                  "bottom": 96.38121032714844,
+                  "top": 164.38121032714844
+                },
+                "nodeBounds": {
+                  "left": -34.00007586942229,
+                  "right": 33.99992413057771,
+                  "bottom": 96.38121032714844,
+                  "top": 164.38121032714844
+                },
+                "velocity": {
+                  "x": -0.00001941547634487506,
+                  "y": -2.5976691246032715
+                },
+                "angularVelocity": 0.00000667461199554964,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45695716651883,
+                  "right": 50.45812748425654,
+                  "bottom": 164.47682861164245,
+                  "top": 264.4790867576473
+                },
+                "nodeBounds": {
+                  "left": -50.456957166519125,
+                  "right": 50.45812748425679,
+                  "bottom": 164.47682861164213,
+                  "top": 264.4790867576475
+                },
+                "velocity": {
+                  "x": 0.0000026606296614772873,
+                  "y": -2.5976691246032715
+                },
+                "angularVelocity": -0.00001830942892411258,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.09170000000298023,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45673062194561,
+                  "right": 50.45685729276215,
+                  "bottom": -5.388580148357967,
+                  "top": 94.6122344972217
+                },
+                "nodeBounds": {
+                  "left": -50.45673062194562,
+                  "right": 50.456857292762166,
+                  "bottom": -5.388580148357981,
+                  "top": 94.61223449722172
+                },
+                "velocity": {
+                  "x": -1.6328118590536178e-7,
+                  "y": -3.115906000137329
+                },
+                "angularVelocity": 0.0000021083917545183795,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007879623445,
+                  "right": 33.99992120376555,
+                  "bottom": 94.71971130371094,
+                  "top": 162.71971130371094
+                },
+                "nodeBounds": {
+                  "left": -34.00007879623445,
+                  "right": 33.99992120376555,
+                  "bottom": 94.71971130371094,
+                  "top": 162.71971130371094
+                },
+                "velocity": {
+                  "x": -0.000004840382644033525,
+                  "y": -3.115906000137329
+                },
+                "angularVelocity": 0.0000012605875099325203,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45696428922139,
+                  "right": 50.45813554805396,
+                  "bottom": 162.81808313497254,
+                  "top": 262.8203561481294
+                },
+                "nodeBounds": {
+                  "left": -50.45696428922169,
+                  "right": 50.458135548054216,
+                  "bottom": 162.81808313497226,
+                  "top": 262.82035614812963
+                },
+                "velocity": {
+                  "x": 0.000001727594280964695,
+                  "y": -3.115906000137329
+                },
+                "angularVelocity": -0.000004974734110874124,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.09570000000298023,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45673062194561,
+                  "right": 50.45685729276215,
+                  "bottom": -5.388580148357967,
+                  "top": 94.6122344972217
+                },
+                "nodeBounds": {
+                  "left": -50.45673062194562,
+                  "right": 50.456857292762166,
+                  "bottom": -5.388580148357981,
+                  "top": 94.61223449722172
+                },
+                "velocity": {
+                  "x": -1.6328118590536178e-7,
+                  "y": -3.115906000137329
+                },
+                "angularVelocity": 0.0000021083917545183795,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007879623445,
+                  "right": 33.99992120376555,
+                  "bottom": 94.71971130371094,
+                  "top": 162.71971130371094
+                },
+                "nodeBounds": {
+                  "left": -34.00007879623445,
+                  "right": 33.99992120376555,
+                  "bottom": 94.71971130371094,
+                  "top": 162.71971130371094
+                },
+                "velocity": {
+                  "x": -0.000004840382644033525,
+                  "y": -3.115906000137329
+                },
+                "angularVelocity": 0.0000012605875099325203,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45696428922139,
+                  "right": 50.45813554805396,
+                  "bottom": 162.81808313497254,
+                  "top": 262.8203561481294
+                },
+                "nodeBounds": {
+                  "left": -50.45696428922169,
+                  "right": 50.458135548054216,
+                  "bottom": 162.81808313497226,
+                  "top": 262.82035614812963
+                },
+                "velocity": {
+                  "x": 0.000001727594280964695,
+                  "y": -3.115906000137329
+                },
+                "angularVelocity": -0.000004974734110874124,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.11750000000000001,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456734069471736,
+                  "right": 50.45685877406664,
+                  "bottom": -7.329558029425172,
+                  "top": 92.67126157377581
+                },
+                "nodeBounds": {
+                  "left": -50.45673406947174,
+                  "right": 50.45685877406665,
+                  "bottom": -7.329558029425179,
+                  "top": 92.67126157377581
+                },
+                "velocity": {
+                  "x": -0.0000022155568331072573,
+                  "y": -3.633711099624634
+                },
+                "angularVelocity": -0.0000020411207515280694,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007769330841,
+                  "right": 33.99992230669159,
+                  "bottom": 92.78186798095703,
+                  "top": 160.78186798095703
+                },
+                "nodeBounds": {
+                  "left": -34.00007769330841,
+                  "right": 33.99992230669159,
+                  "bottom": 92.78186798095703,
+                  "top": 160.78186798095703
+                },
+                "velocity": {
+                  "x": 0.000002686320613065618,
+                  "y": -3.633711099624634
+                },
+                "angularVelocity": -0.0000015733950249341433,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45696612827468,
+                  "right": 50.45813863804733,
+                  "bottom": 160.8830523668194,
+                  "top": 260.8853302053729
+                },
+                "nodeBounds": {
+                  "left": -50.45696612827498,
+                  "right": 50.458138638047586,
+                  "bottom": 160.8830523668191,
+                  "top": 260.8853302053731
+                },
+                "velocity": {
+                  "x": 0.000001347422198705317,
+                  "y": -3.6337108612060547
+                },
+                "angularVelocity": 0.0000018718924366112333,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.13929999999701978,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456740776545345,
+                  "right": 50.45686142595907,
+                  "bottom": -12.038570403965139,
+                  "top": 87.96225861287022
+                },
+                "nodeBounds": {
+                  "left": -50.45674077654536,
+                  "right": 50.45686142595908,
+                  "bottom": -12.038570403965153,
+                  "top": 87.96225861287023
+                },
+                "velocity": {
+                  "x": -0.0000020729355583171127,
+                  "y": -4.668029308319092
+                },
+                "angularVelocity": -0.0000012405274674165412,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007616796938,
+                  "right": 33.99992383203062,
+                  "bottom": 88.07831573486328,
+                  "top": 156.07831573486328
+                },
+                "nodeBounds": {
+                  "left": -34.00007616796938,
+                  "right": 33.99992383203062,
+                  "bottom": 88.07831573486328,
+                  "top": 156.07831573486328
+                },
+                "velocity": {
+                  "x": 0.0000010209192851107218,
+                  "y": -4.668029308319092
+                },
+                "angularVelocity": -0.0000010644154144756612,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45697006390699,
+                  "right": 50.45814553940002,
+                  "bottom": 156.18500262499646,
+                  "top": 256.18729107265034
+                },
+                "nodeBounds": {
+                  "left": -50.45697006390729,
+                  "right": 50.45814553940028,
+                  "bottom": 156.18500262499614,
+                  "top": 256.18729107265057
+                },
+                "velocity": {
+                  "x": 0.0000017430148773200926,
+                  "y": -4.668028354644775
+                },
+                "angularVelocity": 2.3724861364371463e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.16079999999701977,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456744425513314,
+                  "right": 50.456863525950084,
+                  "bottom": -14.80617455691634,
+                  "top": 85.19466024245929
+                },
+                "nodeBounds": {
+                  "left": -50.45674442551333,
+                  "right": 50.4568635259501,
+                  "bottom": -14.806174556916353,
+                  "top": 85.19466024245929
+                },
+                "velocity": {
+                  "x": -0.000001872351958809304,
+                  "y": -5.18454122543335
+                },
+                "angularVelocity": -5.980618311696162e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007658331742,
+                  "right": 33.99992341668258,
+                  "bottom": 85.3131332397461,
+                  "top": 153.3131332397461
+                },
+                "nodeBounds": {
+                  "left": -34.00007658331742,
+                  "right": 33.99992341668258,
+                  "bottom": 85.3131332397461,
+                  "top": 153.3131332397461
+                },
+                "velocity": {
+                  "x": -2.431962684568134e-7,
+                  "y": -5.18454122543335
+                },
+                "angularVelocity": -6.427578682632884e-7,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456973227696075,
+                  "right": 50.45815035992565,
+                  "bottom": 153.42245553978196,
+                  "top": 253.42475180385307
+                },
+                "nodeBounds": {
+                  "left": -50.45697322769638,
+                  "right": 50.45815035992591,
+                  "bottom": 153.42245553978165,
+                  "top": 253.42475180385333
+                },
+                "velocity": {
+                  "x": 0.000001950962541741319,
+                  "y": -5.184542179107666
+                },
+                "angularVelocity": -9.68754193308996e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.1655,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456744425513314,
+                  "right": 50.456863525950084,
+                  "bottom": -14.80617455691634,
+                  "top": 85.19466024245929
+                },
+                "nodeBounds": {
+                  "left": -50.45674442551333,
+                  "right": 50.4568635259501,
+                  "bottom": -14.806174556916353,
+                  "top": 85.19466024245929
+                },
+                "velocity": {
+                  "x": -0.000001872351958809304,
+                  "y": -5.18454122543335
+                },
+                "angularVelocity": -5.980618311696162e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007658331742,
+                  "right": 33.99992341668258,
+                  "bottom": 85.3131332397461,
+                  "top": 153.3131332397461
+                },
+                "nodeBounds": {
+                  "left": -34.00007658331742,
+                  "right": 33.99992341668258,
+                  "bottom": 85.3131332397461,
+                  "top": 153.3131332397461
+                },
+                "velocity": {
+                  "x": -2.431962684568134e-7,
+                  "y": -5.18454122543335
+                },
+                "angularVelocity": -6.427578682632884e-7,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456973227696075,
+                  "right": 50.45815035992565,
+                  "bottom": 153.42245553978196,
+                  "top": 253.42475180385307
+                },
+                "nodeBounds": {
+                  "left": -50.45697322769638,
+                  "right": 50.45815035992591,
+                  "bottom": 153.42245553978165,
+                  "top": 253.42475180385333
+                },
+                "velocity": {
+                  "x": 0.000001950962541741319,
+                  "y": -5.184542179107666
+                },
+                "angularVelocity": -9.68754193308996e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.18579999999701977,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45675135267082,
+                  "right": 50.45686693208946,
+                  "bottom": -21.16648026448606,
+                  "top": 78.83436492854617
+                },
+                "nodeBounds": {
+                  "left": -50.45675135267083,
+                  "right": 50.456866932089476,
+                  "bottom": -21.166480264486076,
+                  "top": 78.83436492854617
+                },
+                "velocity": {
+                  "x": -0.0000021213636500760913,
+                  "y": -6.216277122497559
+                },
+                "angularVelocity": -7.212069590423198e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007743693277,
+                  "right": 33.99992256306723,
+                  "bottom": 78.95719909667969,
+                  "top": 146.9571990966797
+                },
+                "nodeBounds": {
+                  "left": -34.00007743693277,
+                  "right": 33.99992256306723,
+                  "bottom": 78.95719909667969,
+                  "top": 146.9571990966797
+                },
+                "velocity": {
+                  "x": -1.78226528646519e-7,
+                  "y": -6.216277122497559
+                },
+                "angularVelocity": -7.547674840679974e-7,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45697902647138,
+                  "right": 50.45815988960469,
+                  "bottom": 147.07146450218534,
+                  "top": 247.07377577237767
+                },
+                "nodeBounds": {
+                  "left": -50.4569790264717,
+                  "right": 50.45815988960496,
+                  "bottom": 147.07146450218502,
+                  "top": 247.07377577237793
+                },
+                "velocity": {
+                  "x": 0.00000217898195842281,
+                  "y": -6.216278076171875
+                },
+                "angularVelocity": -9.98755126602191e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.20709999999403952,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45675456309882,
+                  "right": 50.45686804480887,
+                  "bottom": -24.758741078922398,
+                  "top": 75.24210846250998
+                },
+                "nodeBounds": {
+                  "left": -50.45675456309883,
+                  "right": 50.456868044808886,
+                  "bottom": -24.758741078922412,
+                  "top": 75.24210846250998
+                },
+                "velocity": {
+                  "x": -0.0000022897579583514016,
+                  "y": -6.731501579284668
+                },
+                "angularVelocity": -8.769872579250659e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.000077668642916,
+                  "right": 33.999922331357084,
+                  "bottom": 75.3669204711914,
+                  "top": 143.3669204711914
+                },
+                "nodeBounds": {
+                  "left": -34.000077668642916,
+                  "right": 33.999922331357084,
+                  "bottom": 75.3669204711914,
+                  "top": 143.3669204711914
+                },
+                "velocity": {
+                  "x": 2.7421362958079953e-8,
+                  "y": -6.731501579284668
+                },
+                "angularVelocity": -8.75007401646144e-7,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45698141624485,
+                  "right": 50.458164356182934,
+                  "bottom": 143.4834938386678,
+                  "top": 243.48581182103362
+                },
+                "nodeBounds": {
+                  "left": -50.45698141624517,
+                  "right": 50.458164356183204,
+                  "bottom": 143.4834938386675,
+                  "top": 243.48581182103388
+                },
+                "velocity": {
+                  "x": 0.0000022809128950029844,
+                  "y": -6.731500625610352
+                },
+                "angularVelocity": -8.542756972929055e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.22840000000596045,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45675765697465,
+                  "right": 50.45686887416167,
+                  "bottom": -28.625446255023057,
+                  "top": 71.37540723255464
+                },
+                "nodeBounds": {
+                  "left": -50.456757656974666,
+                  "right": 50.456868874161685,
+                  "bottom": -28.62544625502307,
+                  "top": 71.37540723255465
+                },
+                "velocity": {
+                  "x": -0.0000024174441932700574,
+                  "y": -7.24629545211792
+                },
+                "angularVelocity": -9.462243042435148e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007786319475,
+                  "right": 33.99992213680525,
+                  "bottom": 71.50208282470703,
+                  "top": 139.50208282470703
+                },
+                "nodeBounds": {
+                  "left": -34.00007786319475,
+                  "right": 33.99992213680525,
+                  "bottom": 71.50208282470703,
+                  "top": 139.50208282470703
+                },
+                "velocity": {
+                  "x": 7.434974946818329e-8,
+                  "y": -7.24629545211792
+                },
+                "angularVelocity": -9.35820708036772e-7,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456983596704916,
+                  "right": 50.45816874151714,
+                  "bottom": 139.62086513071216,
+                  "top": 239.62318954080396
+                },
+                "nodeBounds": {
+                  "left": -50.456983596705236,
+                  "right": 50.45816874151741,
+                  "bottom": 139.62086513071182,
+                  "top": 239.62318954080422
+                },
+                "velocity": {
+                  "x": 0.000002393436489001033,
+                  "y": -7.246296405792236
+                },
+                "angularVelocity": -8.565676807847922e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.2505,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456760657270166,
+                  "right": 50.4568694715538,
+                  "bottom": -32.76637267361909,
+                  "top": 67.23448443266138
+                },
+                "nodeBounds": {
+                  "left": -50.45676065727018,
+                  "right": 50.456869471553816,
+                  "bottom": -32.76637267361911,
+                  "top": 67.23448443266139
+                },
+                "velocity": {
+                  "x": -0.0000025243568870791933,
+                  "y": -7.76066255569458
+                },
+                "angularVelocity": -9.750295930643915e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007805990754,
+                  "right": 33.99992194009246,
+                  "bottom": 67.3629150390625,
+                  "top": 135.3629150390625
+                },
+                "nodeBounds": {
+                  "left": -34.00007805990754,
+                  "right": 33.99992194009246,
+                  "bottom": 67.3629150390625,
+                  "top": 135.3629150390625
+                },
+                "velocity": {
+                  "x": 4.8537106778212546e-8,
+                  "y": -7.76066255569458
+                },
+                "angularVelocity": -9.695530707176658e-7,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456985622377665,
+                  "right": 50.45817309877683,
+                  "bottom": 135.4837919425477,
+                  "top": 235.48612260134894
+                },
+                "nodeBounds": {
+                  "left": -50.456985622377985,
+                  "right": 50.4581730987771,
+                  "bottom": 135.48379194254738,
+                  "top": 235.4861226013492
+                },
+                "velocity": {
+                  "x": 0.0000025086953883146634,
+                  "y": -7.760661602020264
+                },
+                "angularVelocity": -9.232312550011557e-7,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.2722000000029802,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45676640283017,
+                  "right": 50.45687000885958,
+                  "bottom": -41.86999377312943,
+                  "top": 58.13086965271685
+                },
+                "nodeBounds": {
+                  "left": -50.45676640283018,
+                  "right": 50.456870008859596,
+                  "bottom": -41.86999377312945,
+                  "top": 58.13086965271686
+                },
+                "velocity": {
+                  "x": -0.000002737047680057003,
+                  "y": -8.788107872009277
+                },
+                "angularVelocity": -0.000001038644199979899,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007846028166,
+                  "right": 33.99992153971834,
+                  "bottom": 58.262535095214844,
+                  "top": 126.26253509521484
+                },
+                "nodeBounds": {
+                  "left": -34.00007846028166,
+                  "right": 33.99992153971834,
+                  "bottom": 58.262535095214844,
+                  "top": 126.26253509521484
+                },
+                "velocity": {
+                  "x": 1.051675102559102e-8,
+                  "y": -8.788107872009277
+                },
+                "angularVelocity": -0.0000010396279321867041,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45698923052389,
+                  "right": 50.45818176081039,
+                  "bottom": 126.38727340041193,
+                  "top": 226.38961607137043
+                },
+                "nodeBounds": {
+                  "left": -50.45698923052422,
+                  "right": 50.45818176081067,
+                  "bottom": 126.3872734004116,
+                  "top": 226.3896160713707
+                },
+                "velocity": {
+                  "x": 0.000002733674591581803,
+                  "y": -8.788105964660645
+                },
+                "angularVelocity": -0.0000010435252306706388,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.29390000000596045,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45676915424876,
+                  "right": 50.456869947909354,
+                  "bottom": -46.83224452153868,
+                  "top": 53.16862161049176
+                },
+                "nodeBounds": {
+                  "left": -50.456769154248775,
+                  "right": 50.456869947909375,
+                  "bottom": -46.83224452153869,
+                  "top": 53.168621610491776
+                },
+                "velocity": {
+                  "x": -0.0000028450415356928715,
+                  "y": -9.301187515258789
+                },
+                "angularVelocity": -0.0000010774348311315407,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007864707004,
+                  "right": 33.99992135292996,
+                  "bottom": 53.30176544189453,
+                  "top": 121.30176544189453
+                },
+                "nodeBounds": {
+                  "left": -34.00007864707004,
+                  "right": 33.99992135292996,
+                  "bottom": 53.30176544189453,
+                  "top": 121.30176544189453
+                },
+                "velocity": {
+                  "x": 7.704504589867156e-9,
+                  "y": -9.301187515258789
+                },
+                "angularVelocity": -0.000001079451294572209,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699080604615,
+                  "right": 50.45818605279668,
+                  "bottom": 121.42830107968184,
+                  "top": 221.43064949476442
+                },
+                "nodeBounds": {
+                  "left": -50.45699080604648,
+                  "right": 50.458186052796954,
+                  "bottom": 121.42830107968152,
+                  "top": 221.43064949476468
+                },
+                "velocity": {
+                  "x": 0.000002842575895556365,
+                  "y": -9.301189422607422
+                },
+                "angularVelocity": -0.000001089062152459519,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.29840000000596045,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45676915424876,
+                  "right": 50.456869947909354,
+                  "bottom": -46.83224452153868,
+                  "top": 53.16862161049176
+                },
+                "nodeBounds": {
+                  "left": -50.456769154248775,
+                  "right": 50.456869947909375,
+                  "bottom": -46.83224452153869,
+                  "top": 53.168621610491776
+                },
+                "velocity": {
+                  "x": -0.0000028450415356928715,
+                  "y": -9.301187515258789
+                },
+                "angularVelocity": -0.0000010774348311315407,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007864707004,
+                  "right": 33.99992135292996,
+                  "bottom": 53.30176544189453,
+                  "top": 121.30176544189453
+                },
+                "nodeBounds": {
+                  "left": -34.00007864707004,
+                  "right": 33.99992135292996,
+                  "bottom": 53.30176544189453,
+                  "top": 121.30176544189453
+                },
+                "velocity": {
+                  "x": 7.704504589867156e-9,
+                  "y": -9.301187515258789
+                },
+                "angularVelocity": -0.000001079451294572209,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699080604615,
+                  "right": 50.45818605279668,
+                  "bottom": 121.42830107968184,
+                  "top": 221.43064949476442
+                },
+                "nodeBounds": {
+                  "left": -50.45699080604648,
+                  "right": 50.458186052796954,
+                  "bottom": 121.42830107968152,
+                  "top": 221.43064949476468
+                },
+                "velocity": {
+                  "x": 0.000002842575895556365,
+                  "y": -9.301189422607422
+                },
+                "angularVelocity": -0.000001089062152459519,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.32029999999701975,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45677443571456,
+                  "right": 50.45686919195719,
+                  "bottom": -57.57651350313709,
+                  "top": 42.42435718084181
+                },
+                "nodeBounds": {
+                  "left": -50.456774435714564,
+                  "right": 50.4568691919572,
+                  "bottom": -57.57651350313711,
+                  "top": 42.424357180841824
+                },
+                "velocity": {
+                  "x": -0.00000305997082250542,
+                  "y": -10.326069831848145
+                },
+                "angularVelocity": -0.000001161771592705918,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.0000789826081,
+                  "right": 33.9999210173919,
+                  "bottom": 42.56023406982422,
+                  "top": 110.56023406982422
+                },
+                "nodeBounds": {
+                  "left": -34.0000789826081,
+                  "right": 33.9999210173919,
+                  "bottom": 42.56023406982422,
+                  "top": 110.56023406982422
+                },
+                "velocity": {
+                  "x": 1.4814318660683057e-8,
+                  "y": -10.326069831848145
+                },
+                "angularVelocity": -0.000001162707235380367,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.4569935246272,
+                  "right": 50.458194552072015,
+                  "bottom": 110.69005947945615,
+                  "top": 210.69241887650128
+                },
+                "nodeBounds": {
+                  "left": -50.45699352462754,
+                  "right": 50.4581945520723,
+                  "bottom": 110.69005947945581,
+                  "top": 210.69241887650153
+                },
+                "velocity": {
+                  "x": 0.0000030552105272363406,
+                  "y": -10.326071739196777
+                },
+                "angularVelocity": -0.0000011646154689515242,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.34190000000596044,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45677697519532,
+                  "right": 50.45686851618323,
+                  "bottom": -63.358086386073865,
+                  "top": 36.6427861724983
+                },
+                "nodeBounds": {
+                  "left": -50.456776975195325,
+                  "right": 50.45686851618324,
+                  "bottom": -63.35808638607388,
+                  "top": 36.64278617249831
+                },
+                "velocity": {
+                  "x": -0.0000031660918011766626,
+                  "y": -10.837872505187988
+                },
+                "angularVelocity": -0.0000012055440947733587,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007913457375,
+                  "right": 33.99992086542625,
+                  "bottom": 36.77991485595703,
+                  "top": 104.77991485595703
+                },
+                "nodeBounds": {
+                  "left": -34.00007913457375,
+                  "right": 33.99992086542625,
+                  "bottom": 36.77991485595703,
+                  "top": 104.77991485595703
+                },
+                "velocity": {
+                  "x": 2.1492521540267262e-8,
+                  "y": -10.837872505187988
+                },
+                "angularVelocity": -0.000001204968157253461,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699467612219,
+                  "right": 50.45819878029648,
+                  "bottom": 104.9112632063803,
+                  "top": 204.91362787001782
+                },
+                "nodeBounds": {
+                  "left": -50.45699467612253,
+                  "right": 50.45819878029676,
+                  "bottom": 104.91126320637996,
+                  "top": 204.9136278700181
+                },
+                "velocity": {
+                  "x": 0.000003159177367706434,
+                  "y": -10.837870597839355
+                },
+                "angularVelocity": -0.0000011976432006122195,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.3462999999970197,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45677697519532,
+                  "right": 50.45686851618323,
+                  "bottom": -63.358086386073865,
+                  "top": 36.6427861724983
+                },
+                "nodeBounds": {
+                  "left": -50.456776975195325,
+                  "right": 50.45686851618324,
+                  "bottom": -63.35808638607388,
+                  "top": 36.64278617249831
+                },
+                "velocity": {
+                  "x": -0.0000031660918011766626,
+                  "y": -10.837872505187988
+                },
+                "angularVelocity": -0.0000012055440947733587,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007913457375,
+                  "right": 33.99992086542625,
+                  "bottom": 36.77991485595703,
+                  "top": 104.77991485595703
+                },
+                "nodeBounds": {
+                  "left": -34.00007913457375,
+                  "right": 33.99992086542625,
+                  "bottom": 36.77991485595703,
+                  "top": 104.77991485595703
+                },
+                "velocity": {
+                  "x": 2.1492521540267262e-8,
+                  "y": -10.837872505187988
+                },
+                "angularVelocity": -0.000001204968157253461,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699467612219,
+                  "right": 50.45819878029648,
+                  "bottom": 104.9112632063803,
+                  "top": 204.91362787001782
+                },
+                "nodeBounds": {
+                  "left": -50.45699467612253,
+                  "right": 50.45819878029676,
+                  "bottom": 104.91126320637996,
+                  "top": 204.9136278700181
+                },
+                "velocity": {
+                  "x": 0.000003159177367706434,
+                  "y": -10.837870597839355
+                },
+                "angularVelocity": -0.0000011976432006122195,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.3685999999940395,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45678189328713,
+                  "right": 50.45686660186178,
+                  "bottom": -75.73898554854202,
+                  "top": 24.26189003134639
+                },
+                "nodeBounds": {
+                  "left": -50.45678189328714,
+                  "right": 50.4568666018618,
+                  "bottom": -75.73898554854205,
+                  "top": 24.261890031346404
+                },
+                "velocity": {
+                  "x": -0.000003370232889210456,
+                  "y": -11.860196113586426
+                },
+                "angularVelocity": -0.0000012826585589209571,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007941756485,
+                  "right": 33.99992058243515,
+                  "bottom": 24.40133285522461,
+                  "top": 92.40133285522461
+                },
+                "nodeBounds": {
+                  "left": -34.00007941756485,
+                  "right": 33.99992058243515,
+                  "bottom": 24.40133285522461,
+                  "top": 92.40133285522461
+                },
+                "velocity": {
+                  "x": 2.15978506190595e-8,
+                  "y": -11.860196113586426
+                },
+                "angularVelocity": -0.0000012822349617636064,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699662101028,
+                  "right": 50.45820720827951,
+                  "bottom": 92.53547934303084,
+                  "top": 192.53785416141434
+                },
+                "nodeBounds": {
+                  "left": -50.456996621010624,
+                  "right": 50.4582072082798,
+                  "bottom": 92.53547934303049,
+                  "top": 192.5378541614146
+                },
+                "velocity": {
+                  "x": 0.0000033632868507993408,
+                  "y": -11.860194206237793
+                },
+                "angularVelocity": -0.0000012761546486217412,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.3919000000059604,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456784273763915,
+                  "right": 50.4568653817406,
+                  "bottom": -82.3378707647845,
+                  "top": 17.663005982237507
+                },
+                "nodeBounds": {
+                  "left": -50.45678427376393,
+                  "right": 50.45686538174061,
+                  "bottom": -82.3378707647845,
+                  "top": 17.66300598223752
+                },
+                "velocity": {
+                  "x": -0.000003468459226496634,
+                  "y": -12.370718002319336
+                },
+                "angularVelocity": -0.0000013163299854568322,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.000079549034126,
+                  "right": 33.999920450965874,
+                  "bottom": 17.803516387939453,
+                  "top": 85.80351638793945
+                },
+                "nodeBounds": {
+                  "left": -34.000079549034126,
+                  "right": 33.999920450965874,
+                  "bottom": 17.803516387939453,
+                  "top": 85.80351638793945
+                },
+                "velocity": {
+                  "x": 1.5572613420999915e-8,
+                  "y": -12.370718002319336
+                },
+                "angularVelocity": -0.0000013174684454497765,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456997420073485,
+                  "right": 50.45821141973826,
+                  "bottom": 85.93896476573147,
+                  "top": 185.94134448927352
+                },
+                "nodeBounds": {
+                  "left": -50.45699742007383,
+                  "right": 50.45821141973856,
+                  "bottom": 85.93896476573113,
+                  "top": 185.9413444892738
+                },
+                "velocity": {
+                  "x": 0.000003463461098363041,
+                  "y": -12.370719909667969
+                },
+                "angularVelocity": -0.000001321175886914716,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.3967999999970197,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456784273763915,
+                  "right": 50.4568653817406,
+                  "bottom": -82.3378707647845,
+                  "top": 17.663005982237507
+                },
+                "nodeBounds": {
+                  "left": -50.45678427376393,
+                  "right": 50.45686538174061,
+                  "bottom": -82.3378707647845,
+                  "top": 17.66300598223752
+                },
+                "velocity": {
+                  "x": -0.000003468459226496634,
+                  "y": -12.370718002319336
+                },
+                "angularVelocity": -0.0000013163299854568322,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.000079549034126,
+                  "right": 33.999920450965874,
+                  "bottom": 17.803516387939453,
+                  "top": 85.80351638793945
+                },
+                "nodeBounds": {
+                  "left": -34.000079549034126,
+                  "right": 33.999920450965874,
+                  "bottom": 17.803516387939453,
+                  "top": 85.80351638793945
+                },
+                "velocity": {
+                  "x": 1.5572613420999915e-8,
+                  "y": -12.370718002319336
+                },
+                "angularVelocity": -0.0000013174684454497765,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456997420073485,
+                  "right": 50.45821141973826,
+                  "bottom": 85.93896476573147,
+                  "top": 185.94134448927352
+                },
+                "nodeBounds": {
+                  "left": -50.45699742007383,
+                  "right": 50.45821141973856,
+                  "bottom": 85.93896476573113,
+                  "top": 185.9413444892738
+                },
+                "velocity": {
+                  "x": 0.000003463461098363041,
+                  "y": -12.370719909667969
+                },
+                "angularVelocity": -0.000001321175886914716,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.41859999999403946,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45678888669502,
+                  "right": 50.45686244254503,
+                  "bottom": -96.35138333660238,
+                  "top": 3.6494950939319324
+                },
+                "nodeBounds": {
+                  "left": -50.45678888669504,
+                  "right": 50.45686244254505,
+                  "bottom": -96.3513833366024,
+                  "top": 3.6494950939319466
+                },
+                "velocity": {
+                  "x": -0.0000036638728033722145,
+                  "y": -13.390490531921387
+                },
+                "angularVelocity": -0.000001390622855979018,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007978634676,
+                  "right": 33.99992021365324,
+                  "bottom": 3.7919692993164062,
+                  "top": 71.7919692993164
+                },
+                "nodeBounds": {
+                  "left": -34.00007978634676,
+                  "right": 33.99992021365324,
+                  "bottom": 3.7919692993164062,
+                  "top": 71.7919692993164
+                },
+                "velocity": {
+                  "x": 1.672199800850649e-8,
+                  "y": -13.390490531921387
+                },
+                "angularVelocity": -0.0000013917064052293426,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456998687600944,
+                  "right": 50.458219837534614,
+                  "bottom": 71.92981183208272,
+                  "top": 171.9322010372814
+                },
+                "nodeBounds": {
+                  "left": -50.45699868760129,
+                  "right": 50.458219837534905,
+                  "bottom": 71.92981183208235,
+                  "top": 171.9322010372817
+                },
+                "velocity": {
+                  "x": 0.0000036584997360478155,
+                  "y": -13.39049243927002
+                },
+                "angularVelocity": -0.0000013952517292636912,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.4399000000059604,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45679112781315,
+                  "right": 50.456860733677644,
+                  "bottom": -103.76557201229846,
+                  "top": -3.764693046404382
+                },
+                "nodeBounds": {
+                  "left": -50.45679112781316,
+                  "right": 50.456860733677665,
+                  "bottom": -103.76557201229849,
+                  "top": -3.7646930464043677
+                },
+                "velocity": {
+                  "x": -0.000003761083689823863,
+                  "y": -13.899742126464844
+                },
+                "angularVelocity": -0.0000014311768836705596,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007989299047,
+                  "right": 33.99992010700953,
+                  "bottom": -3.6213111877441406,
+                  "top": 64.37868881225586
+                },
+                "nodeBounds": {
+                  "left": -34.00007989299047,
+                  "right": 33.99992010700953,
+                  "bottom": -3.6213111877441406,
+                  "top": 64.37868881225586
+                },
+                "velocity": {
+                  "x": 2.3718090602642405e-8,
+                  "y": -13.899742126464844
+                },
+                "angularVelocity": -0.0000014306680213849177,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699916494811,
+                  "right": 50.45822405141208,
+                  "bottom": 64.51763123043595,
+                  "top": 164.52002502821017
+                },
+                "nodeBounds": {
+                  "left": -50.456999164948456,
+                  "right": 50.45822405141238,
+                  "bottom": 64.5176312304356,
+                  "top": 164.52002502821045
+                },
+                "velocity": {
+                  "x": 0.0000037534430248342687,
+                  "y": -13.899740219116211
+                },
+                "angularVelocity": -0.0000014245084685171605,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.4607999999970197,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456793336731145,
+                  "right": 50.45685887327689,
+                  "bottom": -111.45108093066692,
+                  "top": -11.4502016142198
+                },
+                "nodeBounds": {
+                  "left": -50.45679333673116,
+                  "right": 50.45685887327691,
+                  "bottom": -111.45108093066693,
+                  "top": -11.450201614219786
+                },
+                "velocity": {
+                  "x": -0.00000385339217245928,
+                  "y": -14.408565521240234
+                },
+                "angularVelocity": -0.000001462629029447271,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007999671652,
+                  "right": 33.99992000328348,
+                  "bottom": -11.305959701538086,
+                  "top": 56.694040298461914
+                },
+                "nodeBounds": {
+                  "left": -34.00007999671652,
+                  "right": 33.99992000328348,
+                  "bottom": -11.305959701538086,
+                  "top": 56.694040298461914
+                },
+                "velocity": {
+                  "x": 1.773801905358141e-8,
+                  "y": -14.408565521240234
+                },
+                "angularVelocity": -0.0000014636772220910643,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699955608119,
+                  "right": 50.45822827475852,
+                  "bottom": 56.83401970146496,
+                  "top": 156.83641801668344
+                },
+                "nodeBounds": {
+                  "left": -50.45699955608154,
+                  "right": 50.45822827475882,
+                  "bottom": 56.834019701464605,
+                  "top": 156.83641801668372
+                },
+                "velocity": {
+                  "x": 0.000003847686457447708,
+                  "y": -14.408567428588867
+                },
+                "angularVelocity": -0.0000014672116321889916,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.4652000000029802,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.456793336731145,
+                  "right": 50.45685887327689,
+                  "bottom": -111.45108093066692,
+                  "top": -11.4502016142198
+                },
+                "nodeBounds": {
+                  "left": -50.45679333673116,
+                  "right": 50.45685887327691,
+                  "bottom": -111.45108093066693,
+                  "top": -11.450201614219786
+                },
+                "velocity": {
+                  "x": -0.00000385339217245928,
+                  "y": -14.408565521240234
+                },
+                "angularVelocity": -0.000001462629029447271,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.00007999671652,
+                  "right": 33.99992000328348,
+                  "bottom": -11.305959701538086,
+                  "top": 56.694040298461914
+                },
+                "nodeBounds": {
+                  "left": -34.00007999671652,
+                  "right": 33.99992000328348,
+                  "bottom": -11.305959701538086,
+                  "top": 56.694040298461914
+                },
+                "velocity": {
+                  "x": 1.773801905358141e-8,
+                  "y": -14.408565521240234
+                },
+                "angularVelocity": -0.0000014636772220910643,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45699955608119,
+                  "right": 50.45822827475852,
+                  "bottom": 56.83401970146496,
+                  "top": 156.83641801668344
+                },
+                "nodeBounds": {
+                  "left": -50.45699955608154,
+                  "right": 50.45822827475882,
+                  "bottom": 56.834019701464605,
+                  "top": 156.83641801668372
+                },
+                "velocity": {
+                  "x": 0.000003847686457447708,
+                  "y": -14.408567428588867
+                },
+                "angularVelocity": -0.0000014672116321889916,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.4869000000059604,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45679765103216,
+                  "right": 50.456854714047886,
+                  "bottom": -127.63515923191153,
+                  "top": -27.634279759486574
+                },
+                "nodeBounds": {
+                  "left": -50.456797651032176,
+                  "right": 50.4568547140479,
+                  "bottom": -127.63515923191154,
+                  "top": -27.63427975948656
+                },
+                "velocity": {
+                  "x": -0.000004037065082229674,
+                  "y": -15.424945831298828
+                },
+                "angularVelocity": -0.0000015323995512517286,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.000080182784586,
+                  "right": 33.999919817215414,
+                  "bottom": -27.488461017608643,
+                  "top": 40.51153898239136
+                },
+                "nodeBounds": {
+                  "left": -34.000080182784586,
+                  "right": 33.999919817215414,
+                  "bottom": -27.488461017608643,
+                  "top": 40.51153898239136
+                },
+                "velocity": {
+                  "x": 1.8693723902174497e-8,
+                  "y": -15.424945831298828
+                },
+                "angularVelocity": -0.000001533426029709517,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45700005973184,
+                  "right": 50.458236753566815,
+                  "bottom": 40.65343465656609,
+                  "top": 140.65584176535648
+                },
+                "nodeBounds": {
+                  "left": -50.457000059732195,
+                  "right": 50.458236753567114,
+                  "bottom": 40.653434656565736,
+                  "top": 140.65584176535677
+                },
+                "velocity": {
+                  "x": 0.0000040310505937668495,
+                  "y": -15.424947738647461
+                },
+                "angularVelocity": -0.0000015369677157650585,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          },
+          {
+            "elapsed": 0.5079999999999999,
+            "bonds": 2,
+            "bodies": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45679976323022,
+                  "right": 50.456852423248556,
+                  "bottom": -136.1332899327091,
+                  "top": -36.132410639928686
+                },
+                "nodeBounds": {
+                  "left": -50.45679976323024,
+                  "right": 50.45685242324857,
+                  "bottom": -136.13328993270912,
+                  "top": -36.13241063992867
+                },
+                "velocity": {
+                  "x": -0.00000412851386499824,
+                  "y": -15.932502746582031
+                },
+                "angularVelocity": -0.0000015707751117588487,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 2,
+                "kind": "basketball",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -34.000080265672295,
+                  "right": 33.999919734327705,
+                  "bottom": -35.98586452007294,
+                  "top": 32.01413547992706
+                },
+                "nodeBounds": {
+                  "left": -34.000080265672295,
+                  "right": 33.999919734327705,
+                  "bottom": -35.98586452007294,
+                  "top": 32.01413547992706
+                },
+                "velocity": {
+                  "x": 2.5688871474471853e-8,
+                  "y": -15.932502746582031
+                },
+                "angularVelocity": -0.0000015702103155490477,
+                "contacts": 2,
+                "assistDamping": 0,
+                "awake": true
+              },
+              {
+                "id": 3,
+                "kind": "cardboard_box",
+                "dynamic": true,
+                "placed": true,
+                "supported": false,
+                "lost": false,
+                "bounds": {
+                  "left": -50.45700018238062,
+                  "right": 50.45824101074079,
+                  "bottom": 32.15691126844735,
+                  "top": 132.1593226649597
+                },
+                "nodeBounds": {
+                  "left": -50.45700018238098,
+                  "right": 50.45824101074109,
+                  "bottom": 32.156911268447,
+                  "top": 132.15932266495997
+                },
+                "velocity": {
+                  "x": 0.00000412023928220151,
+                  "y": -15.932500839233398
+                },
+                "angularVelocity": -0.000001564009721732873,
+                "contacts": 1,
+                "assistDamping": 0,
+                "awake": true
+              }
+            ]
+          }
+        ]
+      },
+      "finishedAt": "2026-09-15T02:26:53.361Z"
+    },
+    {
+      "id": "joint_presolve_isolation",
+      "status": "failed",
+      "startedAt": "2026-09-15T02:26:53.363Z",
+      "error": "Error: Need observed native PRE_SOLVE loss and disabled probe contact\n    at check (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_depth_contact_regression.cjs:162:55)\n    at motorIsolation (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_depth_contact_regression.cjs:164:5)\n    at async run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_depth_contact_regression.cjs:36:24)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_depth_contact_regression.cjs:246:9",
+      "last": {
+        "filtered": {
+          "filtered": true,
+          "fixture": "Real double basketball MotorJoint first, then native transform + 15m/s injection after TowerWorld BEFORE guard into a pre-registered static screen-external probe. Actual PRE_SOLVE/POST_SOLVE and original production loss code remain live; no direct loss call.",
+          "before": {
+            "lower": {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": true,
+              "lost": false,
+              "bounds": {
+                "left": -50.45675209408753,
+                "right": 50.45711451561947,
+                "bottom": 0.45407159870003255,
+                "top": 100.45516656722177
+              },
+              "nodeBounds": {
+                "left": -50.456752094087555,
+                "right": 50.4571145156195,
+                "bottom": 0.45407159870000413,
+                "top": 100.4551665672218
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 2,
+              "assistDamping": 0,
+              "awake": false
+            },
+            "upper": {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": true,
+              "lost": false,
+              "bounds": {
+                "left": -34.000271289929515,
+                "right": 33.999728710070485,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "nodeBounds": {
+                "left": -34.000271289929515,
+                "right": 33.999728710070485,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 2,
+              "assistDamping": 0,
+              "awake": false
+            },
+            "cap": {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": true,
+              "lost": false,
+              "bounds": {
+                "left": -50.45704569552335,
+                "right": 50.458268264740695,
+                "bottom": 168.61659595319276,
+                "top": 268.61907858666814
+              },
+              "nodeBounds": {
+                "left": -50.45704569552374,
+                "right": 50.45826826474102,
+                "bottom": 168.61659595319236,
+                "top": 268.6190785866685
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": false
+            },
+            "joints": [
+              {
+                "maxForce": 1500,
+                "maxTorque": 150,
+                "enabled": true
+              },
+              {
+                "maxForce": 1500,
+                "maxTorque": 150,
+                "enabled": true
+              }
+            ]
+          },
+          "injected": {
+            "node": {
+              "left": -34.000271289929515,
+              "right": 33.999728710070485,
+              "bottom": 100.53474426269531,
+              "top": 168.5347442626953
+            },
+            "native": {
+              "left": 459,
+              "right": 527,
+              "bottom": 100.53474426269531,
+              "top": 168.5347442626953
+            },
+            "boundary": {
+              "left": -375,
+              "right": 375,
+              "bottom": -200,
+              "top": 800
+            }
+          },
+          "first": {
+            "lower": {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": true,
+              "lost": false,
+              "bounds": {
+                "left": -50.45675209408753,
+                "right": 50.45711451561947,
+                "bottom": 0.45407159870003255,
+                "top": 100.45516656722177
+              },
+              "nodeBounds": {
+                "left": -50.456752094087555,
+                "right": 50.4571145156195,
+                "bottom": 0.45407159870000413,
+                "top": 100.4551665672218
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "cap": {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.45704569552335,
+                "right": 50.458268264740695,
+                "bottom": 168.61659595319276,
+                "top": 268.61907858666814
+              },
+              "nodeBounds": {
+                "left": -50.45704569552374,
+                "right": 50.45826826474102,
+                "bottom": 168.61659595319236,
+                "top": 268.6190785866685
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 0,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "upper": {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": true,
+              "bounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "nodeBounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "velocity": {
+                "x": 15,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 0,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "nativeEnabled": false,
+            "bonds": 0,
+            "joints": [
+              {
+                "valid": false,
+                "enabled": false,
+                "maxForce": 1500,
+                "maxTorque": 150
+              },
+              {
+                "valid": false,
+                "enabled": false,
+                "maxForce": 1500,
+                "maxTorque": 150
+              }
+            ]
+          },
+          "after": {
+            "lower": {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": true,
+              "lost": false,
+              "bounds": {
+                "left": -50.45916235064431,
+                "right": 50.460355657862834,
+                "bottom": 0.4588166747856448,
+                "top": 100.4655960569985
+              },
+              "nodeBounds": {
+                "left": -50.45916235065053,
+                "right": 50.46035565787016,
+                "bottom": 0.45881667477824806,
+                "top": 100.46559605700473
+              },
+              "velocity": {
+                "x": -0.00010756539995782077,
+                "y": -6.789341568946838e-7
+              },
+              "angularVelocity": 4.0802842704579234e-7,
+              "contacts": 2,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "cap": {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": true,
+              "lost": false,
+              "bounds": {
+                "left": -50.46103721287307,
+                "right": 50.46285261146974,
+                "bottom": 100.91969728360093,
+                "top": 200.93087402571635
+              },
+              "nodeBounds": {
+                "left": -50.46103721290093,
+                "right": 50.46285261150256,
+                "bottom": 100.91969728356779,
+                "top": 200.93087402574423
+              },
+              "velocity": {
+                "x": -0.00030036427779123187,
+                "y": 0.21568042039871216
+              },
+              "angularVelocity": 0.00004245786112733185,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "upper": {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": true,
+              "bounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "nodeBounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "velocity": {
+                "x": 15,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 0,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "bonds": 0,
+            "nativeEnabled": false
+          },
+          "contacts": [],
+          "impulses": [],
+          "lossEvents": [
+            {
+              "id": 2,
+              "physicalPhase": "solver",
+              "stepping": false,
+              "bounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "nodeBounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              }
+            }
+          ]
+        },
+        "control": {
+          "filtered": false,
+          "fixture": "Real double basketball MotorJoint first, then native transform + 15m/s injection after TowerWorld BEFORE guard into a pre-registered static screen-external probe. Actual PRE_SOLVE/POST_SOLVE and original production loss code remain live; no direct loss call.",
+          "before": {
+            "lower": {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.45675209408753,
+                "right": 50.45711451561947,
+                "bottom": 0.45407159870003255,
+                "top": 100.45516656722177
+              },
+              "nodeBounds": {
+                "left": -50.456752094087555,
+                "right": 50.4571145156195,
+                "bottom": 0.45407159870000413,
+                "top": 100.4551665672218
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 2,
+              "assistDamping": 0,
+              "awake": false
+            },
+            "upper": {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -34.000271289929515,
+                "right": 33.999728710070485,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "nodeBounds": {
+                "left": -34.000271289929515,
+                "right": 33.999728710070485,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 2,
+              "assistDamping": 0,
+              "awake": false
+            },
+            "cap": {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.45704569552335,
+                "right": 50.458268264740695,
+                "bottom": 168.61659595319276,
+                "top": 268.61907858666814
+              },
+              "nodeBounds": {
+                "left": -50.45704569552374,
+                "right": 50.45826826474102,
+                "bottom": 168.61659595319236,
+                "top": 268.6190785866685
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "angularVelocity": 0,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": false
+            },
+            "joints": [
+              {
+                "maxForce": 1500,
+                "maxTorque": 150,
+                "enabled": true
+              },
+              {
+                "maxForce": 1500,
+                "maxTorque": 150,
+                "enabled": true
+              }
+            ]
+          },
+          "injected": {
+            "node": {
+              "left": -34.000271289929515,
+              "right": 33.999728710070485,
+              "bottom": 100.53474426269531,
+              "top": 168.5347442626953
+            },
+            "native": {
+              "left": 459,
+              "right": 527,
+              "bottom": 100.53474426269531,
+              "top": 168.5347442626953
+            },
+            "boundary": {
+              "left": -375,
+              "right": 375,
+              "bottom": -200,
+              "top": 800
+            }
+          },
+          "first": {
+            "lower": {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.522788499991805,
+                "right": 50.39082966917502,
+                "bottom": 0.46502195013403025,
+                "top": 100.46586702689758
+              },
+              "nodeBounds": {
+                "left": -50.52278849999182,
+                "right": 50.390829669175034,
+                "bottom": 0.46502195013401604,
+                "top": 100.4658670268976
+              },
+              "velocity": {
+                "x": -0.12403515726327896,
+                "y": -0.0000015404075384140015
+              },
+              "angularVelocity": -2.2351741790771484e-8,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "cap": {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.36590969245026,
+                "right": 50.54770397709938,
+                "bottom": 168.666779931261,
+                "top": 268.6675980282623
+              },
+              "nodeBounds": {
+                "left": -50.36590969245027,
+                "right": 50.547703977099395,
+                "bottom": 168.666779931261,
+                "top": 268.6675980282623
+              },
+              "velocity": {
+                "x": 0.16917435824871063,
+                "y": 0.09236700087785721
+              },
+              "angularVelocity": 0.001175133977085352,
+              "contacts": 0,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "upper": {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": 458.1105041503906,
+                "right": 526.1105041503906,
+                "bottom": 100.54689025878906,
+                "top": 168.54689025878906
+              },
+              "nodeBounds": {
+                "left": 458.1105041503906,
+                "right": 526.1105041503906,
+                "bottom": 100.54689025878906,
+                "top": 168.54689025878906
+              },
+              "velocity": {
+                "x": -0.44962573051452637,
+                "y": 0.022760426625609398
+              },
+              "angularVelocity": -0.021683061495423317,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "nativeEnabled": true,
+            "bonds": 0,
+            "joints": [
+              {
+                "valid": false,
+                "enabled": false,
+                "maxForce": 1500,
+                "maxTorque": 150
+              },
+              {
+                "valid": false,
+                "enabled": false,
+                "maxForce": 1500,
+                "maxTorque": 150
+              }
+            ]
+          },
+          "after": {
+            "lower": {
+              "id": 1,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -50.52586161993365,
+                "right": 50.386947363109,
+                "bottom": 0.479692704014397,
+                "top": 100.47972386803272
+              },
+              "nodeBounds": {
+                "left": -50.52586161993365,
+                "right": 50.386947363109,
+                "bottom": 0.479692704014397,
+                "top": 100.47972386803272
+              },
+              "velocity": {
+                "x": 3.293340711252313e-8,
+                "y": 3.509308754701124e-8
+              },
+              "angularVelocity": -1.838441221480025e-8,
+              "contacts": 1,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "cap": {
+              "id": 3,
+              "kind": "cardboard_box",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -48.500373659808176,
+                "right": 52.43908296520967,
+                "bottom": 105.91900785584308,
+                "top": 205.94584238478689
+              },
+              "nodeBounds": {
+                "left": -48.50037365946388,
+                "right": 52.43908296480403,
+                "bottom": 105.91900785625266,
+                "top": 205.94584238444216
+              },
+              "velocity": {
+                "x": 0.1662406474351883,
+                "y": -10.747108459472656
+              },
+              "angularVelocity": 0.0006996589945629239,
+              "contacts": 0,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "upper": {
+              "id": 2,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": true,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": 453.1205139160156,
+                "right": 521.1205139160156,
+                "bottom": 37.04075622558594,
+                "top": 105.04075622558594
+              },
+              "nodeBounds": {
+                "left": 453.1205139160156,
+                "right": 521.1205139160156,
+                "bottom": 37.04075622558594,
+                "top": 105.04075622558594
+              },
+              "velocity": {
+                "x": -0.44182854890823364,
+                "y": -10.815507888793945
+              },
+              "angularVelocity": -0.020937904715538025,
+              "contacts": 0,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "bonds": 0,
+            "nativeEnabled": true
+          },
+          "contacts": [
+            {
+              "otherId": 4,
+              "probe": true,
+              "disabled": false,
+              "disabledOnce": false,
+              "bounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              }
+            },
+            {
+              "otherId": 4,
+              "probe": true,
+              "disabled": false,
+              "disabledOnce": false,
+              "bounds": {
+                "left": 459,
+                "right": 527,
+                "bottom": 100.53474426269531,
+                "top": 168.5347442626953
+              }
+            }
+          ],
+          "impulses": [
+            {
+              "normalImpulses": [
+                610.043701171875
+              ],
+              "tangentImpulses": [
+                -0.2176063060760498
+              ]
+            },
+            {
+              "normalImpulses": [
+                0
+              ],
+              "tangentImpulses": [
+                0
+              ]
+            }
+          ],
+          "lossEvents": []
+        }
+      },
+      "finishedAt": "2026-09-15T02:26:59.368Z"
+    },
+    {
+      "id": "concave_pending_end",
+      "status": "passed",
+      "startedAt": "2026-09-15T02:26:59.372Z",
+      "result": {
+        "fixture": "Dynamic basketball with deliberately elastic QA contact parameters strikes a concave V containing two real native fixture faces. Ordinary Cocos runs 1/240s physics, max8, target30fps so transient PRE→END can occur before afterPhysics. endContact wrapper only records and forwards the actual production call.",
+        "fixtureCount": 3,
+        "maxContacts": 2,
+        "cancellations": [
+          {
+            "id": 1,
+            "nativeBeforeEnd": 2,
+            "keys": [
+              "1:-1"
+            ],
+            "allCancelled": true,
+            "bonds": 0
+          }
+        ],
+        "attempts": [
+          {
+            "start": 58,
+            "id": 1,
+            "end": {
+              "id": 1,
+              "kind": "basketball",
+              "dynamic": true,
+              "placed": false,
+              "supported": false,
+              "lost": false,
+              "bounds": {
+                "left": -34,
+                "right": 34,
+                "bottom": 152.60963439941406,
+                "top": 220.60963439941406
+              },
+              "nodeBounds": {
+                "left": -34,
+                "right": 34,
+                "bottom": 152.60963439941406,
+                "top": 220.60963439941406
+              },
+              "velocity": {
+                "x": 0,
+                "y": 19.768016815185547
+              },
+              "angularVelocity": 0,
+              "contacts": 0,
+              "assistDamping": 0,
+              "awake": true
+            },
+            "cancellations": [
+              {
+                "id": 1,
+                "nativeBeforeEnd": 2,
+                "keys": [
+                  "1:-1"
+                ],
+                "allCancelled": true,
+                "bonds": 0
+              }
+            ],
+            "bonds": 0
+          }
+        ],
+        "events": [
+          {
+            "type": "begin",
+            "id": 1,
+            "active": 1
+          },
+          {
+            "type": "pre",
+            "id": 1,
+            "active": 1,
+            "pendingThisContact": true
+          },
+          {
+            "type": "begin",
+            "id": 1,
+            "active": 2
+          },
+          {
+            "type": "pre",
+            "id": 1,
+            "active": 2,
+            "pendingThisContact": false
+          },
+          {
+            "type": "end",
+            "id": 1,
+            "active": 1,
+            "pendingRetained": false
+          },
+          {
+            "type": "end",
+            "id": 1,
+            "active": 0,
+            "pendingRetained": false
+          }
+        ],
+        "oldPhysics": {
+          "fixedTimeStep": 0.016666666666666666,
+          "maxSubSteps": 4,
+          "frameRate": 60
+        },
+        "fixturePhysics": {
+          "fixedTimeStep": 0.004166666666666667,
+          "maxSubSteps": 8,
+          "frameRate": 30
+        }
+      },
+      "finishedAt": "2026-09-15T02:26:59.910Z"
+    }
+  ],
+  "errors": [],
+  "buildAfter": {
+    "count": 214,
+    "sha256": "ce163ca140f433243f046922866dacbf53825e5de7c2a578d004650dcd72cdc6",
+    "files": {
+      "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "assets/internal/config.json": "c195765619ae3c8c4ae2490e6692999c4dc6df2c6aaa419fe4dd6419a06b57e0",
+      "assets/internal/import/0b/0b0f7a282.json": "af35559160d16eedc22682e8307a61fc34bc9ae390eb7337067addb97a4901ac",
+      "assets/internal/index.js": "d842bf596127320ad8cd42ce506a2817cd8a6402fbec6735e6b13af359a40757",
+      "assets/main/config.json": "83766b0b143a767f5049c98572563f2a4f2bc12d82b97eac0e2d66b072ef7c16",
+      "assets/main/import/00/003ad394-a2b9-5f56-aae3-3f3ef9c23e06.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/02/024316fc4.json": "3a72047644b365d7d39705eb480a0f079fddaa3bf29dedd180cfee4ab2c4e514",
+      "assets/main/import/07/07c773086.json": "3f5921af635b1fd2dffb3c8e29b0c0af2c2a4ba842f66de7632458bba78e75a2",
+      "assets/main/import/08/0828129a-4f9c-54b6-9ee2-179ce3117b59.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/0a/0a5ff119a.json": "55627e20025d15c26d287bc7c1d2b627d6783da6d2bbb792ea675c20140b6d47",
+      "assets/main/import/0c/0ce809e46.json": "f0da1c325405bbed3862be6bb4e1126ab9d9fb66f100b80bf875fbb599ae22ef",
+      "assets/main/import/0e/0e2bb2f8-e9d6-5a22-86d6-4af881db414c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/0e/0e6a4113a.json": "470263bfbbdbe29ace5cea2f7d1dc295d021fb108406504203a2df3beee46f0b",
+      "assets/main/import/12/12f5e35f-0981-5ec0-b3e1-d12b545934c7.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/15/15e4005b-d75b-5047-85ee-ad1a2b421b35.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/1b/1b161928-9b08-57e4-b37f-3e98e294b8d4.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/1d/1d7fd559-bc53-547a-a00d-00b933f55893.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/24/245bd1c2-0956-5e84-a083-abf2aab6b42f.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/26/264face5-0a40-5cb6-9188-78d7ce379d59.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/26/26accb7e-da07-5a1d-9e4d-ac4d6df61841.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/29/29931145-bbf2-55d3-aa5e-0547c1218b0b.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/2a/2a967c38-21e7-5ab5-8f8c-70f49d9e9e74.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/2a/2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/30/306e7575-25b7-5824-86fc-c27de6bc9ef6.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/32/32f9d4f2-24f9-5839-af82-5ffde874e1b5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/34/34764b14-1abf-5de9-a05d-1daa96843744.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/41/419d0ef4-c2d9-5789-b752-a6cc0c60db30.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/44/445529b1-6a3d-5e50-a496-3310d01dfcc5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/47/47c4664d-ba9f-5678-93e6-a01649bc32e0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/49/499f9f6c-c755-572d-8a13-ec41a2e539b0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/4b/4b8aae92-095c-5e27-b928-b1db46048627.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/4e/4e388f47-1a9f-56a3-a88d-6d55971d0ac6.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/4e/4eeb7b63-a51a-5ef3-86ca-784a6163675c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/52/526f992a-df63-51ff-b727-031d1c49e4b8.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/54/544c2544-68e4-5023-83fd-97f3952a54e1.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/55/55b492a0-02aa-57a7-ae12-5fc00dfcc9b5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5a/5a3bdf5b-28c6-582b-897d-cb3c661307cc.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5a/5a961635-42c2-525a-9604-2c52fc98041b.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5a/5aaf430f-206d-5b84-9912-fd9e41fec676.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5b/5be35b2e-e5ca-531e-97aa-d85623afe450.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5c/5ca2c4ec-fc1d-5a20-aed2-991257193045.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/5e/5e2578a8-4a8b-5612-9b1f-15da9ed36867.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/65/65a348ab-bfcb-5feb-a7ab-79c8a4a2b3b3.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/6b/6bf002f5-02dd-5682-a080-8d224174f941.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/75/7525c985-828e-55da-8b71-61d98ae41596.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/7b/7bb14d35-5685-5e29-8257-a0bb9f9e6e9e.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/7c/7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/94/944b899a-01b1-535a-aa70-502da07c9f84.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/99/99cdc2e8-34f7-5ca4-ad64-b0e0087756df.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/9a/9a223153-887d-5751-8adc-a7440d0ce9e0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/9e/9e397279-db05-5a28-bed7-b5f9babbf837.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/a6/a65ae333-33f7-596d-8eab-8df0c4e85945.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/a8/a86db27b-0807-555d-bc59-845f6b8b133a.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/aa/aa5672be-5f9d-5e29-bba8-4d207180adea.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ac/ac7dc395-89bc-5dda-831b-ad646cc85af3.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/b0/b0dd028e-7a35-53eb-afb8-2aa5e92d1381.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39",
+      "assets/main/import/be/becae09b-01d7-5898-bbb6-ff03ae81380e.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c0/c08f16c0-112c-5aff-9ce3-b5c54118cea7.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c1/c136c394-2eb2-5241-9baf-1dfec8168e2a.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c5/c5455892-cebe-5287-bf11-a67c3748dfd2.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c6/c6524d46-edc6-5bef-b8e4-f89110f5ce09.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c8/c89afe78-98e8-5395-b331-3c9547c952f8.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c8/c8e884b0-443b-5289-b43b-28289dbcbab5.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/c9/c997cc05-5668-54fe-b75c-806c28c42b57.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cc/cce2bc47-590b-57c1-9e2c-5c35bffb9c29.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cd/cd19e6da-f522-5400-95f3-c9fe48fb6cf0.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cd/cd75bccb-35d6-5d95-a391-2a1fcf993d85.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ce/ceff0de3-adec-5565-9eee-30bf63829596.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/cf/cf66836a-ddea-5263-be44-87a6fa70fce1.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/d5/d5e295ae-a079-527c-be77-ca42a8ca2cfc.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/d7/d711b439-0443-582d-8906-935f848bf98d.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/de/dedc90ac-5149-556d-9b3b-7d282443ee08.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/df/df056fce-6feb-5dfa-ad9c-3a1792cb5a93.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/e3/e3616b30-2519-50a3-93be-98e543223e56.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/e5/e58dfbb2-df57-5b00-8fe5-2b55520ee99c.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/e7/e747c6e0-6604-586f-bd75-22e967577d99.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ea/eafb5727-1d0e-530f-a8ae-a6cdf2aa500d.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/ee/ee5131c5-f13b-523f-b02c-c7ec91d39494.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f0/f0df6c01-9760-5361-a933-25fd127f6c9f.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f2/f2e73ada-8598-52b7-bc47-d28e60eec324.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f2/f2f32c9a-ed38-51f6-97db-8d19df5bb5e2.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/f5/f5ca6384-3db3-5ede-96ed-3eb32cc2443d.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d",
+      "assets/main/import/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.json": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "assets/main/index.js": "bb47a6ec0ef4534a5820c6bf23322ae5c95e23697d3ca43fb6d3c790222c933e",
+      "assets/main/native/00/003ad394-a2b9-5f56-aae3-3f3ef9c23e06.png": "0ff76a1e17faedf8d37afe6cf5d8e0e078cdc32680d7cc25606385ebb7cb2343",
+      "assets/main/native/01/01845990-b59e-52b4-a17e-4fc0fb692d25.mp3": "8678c25c5485d67a37ef30e399a08148c926e049613bbe1ba0ad90f75dd171f4",
+      "assets/main/native/08/0828129a-4f9c-54b6-9ee2-179ce3117b59.png": "5c850606594b1ded306e0c0816b7b9786ac9e07cf68b2a348a75b1366030482d",
+      "assets/main/native/08/084e4752-f842-5145-8bd5-179683cda3b8.mp3": "490a3e046c1c399e54311dfc1fb35c64d7f3a9588fb4bea35f9576b468fb75f4",
+      "assets/main/native/08/08f88886-a7e2-5c48-ae9c-d1765118fb93.mp3": "1196d41e94403b39bf8420c74ecde37469ee54a6a8b5394410df6b5bc9abe11c",
+      "assets/main/native/0b/0b2dbd56-5600-55f4-bbfa-d6a16164e7bb.mp3": "1723d08854f14a15bafd72bfa9751a88aaaa542519c535c258c503b76c79b7e2",
+      "assets/main/native/0e/0e2bb2f8-e9d6-5a22-86d6-4af881db414c.png": "dd6808cc08b0d151bd0e38d5a4895b59d6d2a2953bdd4f2f7af828b89d4c49d6",
+      "assets/main/native/12/12f5e35f-0981-5ec0-b3e1-d12b545934c7.png": "5aa6cd284910f44ed072bcc0fc1cd69d8a9006f619f56672b999f93fe062acb4",
+      "assets/main/native/15/15e4005b-d75b-5047-85ee-ad1a2b421b35.png": "c65333be7c8a98848d7f5552e347dfcaf8fd95b98b153c4a36ef82b98b762a5a",
+      "assets/main/native/16/1668fa3c-c833-58c0-a84c-fec1d25b6394.mp3": "f14f9173257c4afe3794900c8ad55fa2568bfb6c39c15687904182e9bbfb1f3c",
+      "assets/main/native/16/16942ec4-04ce-5700-bfc3-0989127a6698.mp3": "e57d174f0ac0cf0e2bf381c2576295da4337388cde49912518284548d3c8e65f",
+      "assets/main/native/1b/1b161928-9b08-57e4-b37f-3e98e294b8d4.png": "8332ef5048e449555016b1e0a481bd9be35a5e0e350919871f86d86695f764a2",
+      "assets/main/native/1d/1d7fd559-bc53-547a-a00d-00b933f55893.png": "eb0486b00b7f76f7bbcfe958cbe7d3e5e902fec48a99ff420cec25d9d2d8c4c4",
+      "assets/main/native/20/20634fb8-a68e-5cae-a9b2-7cb353390b81.mp3": "10d4b1b378aa9ee18417c8cf83e13b05f1b4d05a21b2b070e844de0554b86def",
+      "assets/main/native/20/2091d581-962f-5219-8737-f12341baa58e.mp3": "9bc35d647791b118f75a30419ee9d1a515a0dd1351a27e8a05f9b0ad3e1d661f",
+      "assets/main/native/24/245bd1c2-0956-5e84-a083-abf2aab6b42f.png": "dafb9e8507608ed83c68ed2e30a3e3886dc9a0f1b449150a27c1212602e5e947",
+      "assets/main/native/26/264face5-0a40-5cb6-9188-78d7ce379d59.png": "e181f89de91c29ece6b71458f00e77dbfe87e7e0deabf42df19c6c87d179a2af",
+      "assets/main/native/26/26accb7e-da07-5a1d-9e4d-ac4d6df61841.png": "e10a71b8b2ea919afb9cfc5ea682951b8df9392c0d187a450fe3a4a6a1c43c5f",
+      "assets/main/native/29/29931145-bbf2-55d3-aa5e-0547c1218b0b.png": "844c7db7eecf7501b188cca608922bc1af74e80513aba85c474dec9d14a040e1",
+      "assets/main/native/2a/2a967c38-21e7-5ab5-8f8c-70f49d9e9e74.png": "9079e248bbcd4bfc47f2704ae7a967398dab77b0501bdc0ce18f7bd8eba8a254",
+      "assets/main/native/2a/2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c.png": "2ba4cc4f1fc84826f66089e3b8f0a73ef08100edd65db0db8e39aa332878cab1",
+      "assets/main/native/30/306e7575-25b7-5824-86fc-c27de6bc9ef6.png": "2f6bdd3d6685c4ada45a1c2322495b40f3cebdcb7af77906dce151130b48e3a4",
+      "assets/main/native/31/31d3bb54-7d7f-5f29-914a-34d21260be84.mp3": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "assets/main/native/32/32f9d4f2-24f9-5839-af82-5ffde874e1b5.png": "c1f3677a1df12513406815fd5bf90f0c07c0d2f1ebe08a851c9de88ef8b5a8b0",
+      "assets/main/native/34/34764b14-1abf-5de9-a05d-1daa96843744.png": "0da57f84f294413ac42fcd903d4c328b04532e6f456483e17ec504fc6dfffb8d",
+      "assets/main/native/35/3555e3a1-c6cf-5675-a998-830c361f0078.mp3": "104d856d1b33b47de34b1414f2a501a759cbb789c707076b71d8d238db641ec4",
+      "assets/main/native/38/388f5d53-f5d4-539b-a43c-b35edb93f43d.mp3": "98ad2fd2b40f53fafa2e2f3856d18fb5fff7b5d665ab6e7d090698e423c65348",
+      "assets/main/native/41/419d0ef4-c2d9-5789-b752-a6cc0c60db30.png": "b73764e04b9ef944d39a6e1bc1d2081ae4357a68f414ed78af2e3fe4faebc467",
+      "assets/main/native/44/445529b1-6a3d-5e50-a496-3310d01dfcc5.png": "bb8c60541b5e7225fd728c5733c01f5e5808a400f6265434607e401e39aecf97",
+      "assets/main/native/46/46c38ce1-228d-5235-a194-acef8fa6c1d9.mp3": "2bfd6da81e67b86c8dc18fbfcec9ff75c4b39cba1aa30d6d2e45479abfeff2de",
+      "assets/main/native/47/47c4664d-ba9f-5678-93e6-a01649bc32e0.png": "e537a41b69d3e2d2a4768903ebb8bb42c25f4ff3718d713ba4006b5d591de449",
+      "assets/main/native/48/489d544b-86ed-55d5-a99d-230deb1d738b.mp3": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "assets/main/native/49/499f9f6c-c755-572d-8a13-ec41a2e539b0.png": "f5bca02fd9fc08fa47150189b3952eedb9fe4f21c39c708a889c31f29b555e1c",
+      "assets/main/native/4b/4b8aae92-095c-5e27-b928-b1db46048627.png": "97edca9af4c7b74d86adc25e9544f2777a2659e9fb2a1d5cad5da3108fdf5e0a",
+      "assets/main/native/4c/4cbb1aa5-6ded-52d4-a71f-56963e50495d.mp3": "3150afb53987a5a20bf97d5e4422ee6183af31185e76ff109198ed8b3e08dda8",
+      "assets/main/native/4e/4e388f47-1a9f-56a3-a88d-6d55971d0ac6.png": "4f373aa29d5427bdedb3c91618609b74b9d07b7e4fa0f0c506f71bf5e873ae1a",
+      "assets/main/native/4e/4eeb7b63-a51a-5ef3-86ca-784a6163675c.png": "347e14d4690f2a5ed28790d9dbfef286bca35aa207c7316a7e7ae625e6af0e08",
+      "assets/main/native/51/5192fe85-75e2-5cc3-8bae-aa1fc990a8a0.mp3": "9fcbad3f11f346b9db3022070f636c62ff248be6ac54d6d10a3ee902c2545c56",
+      "assets/main/native/52/526f992a-df63-51ff-b727-031d1c49e4b8.png": "b5697456058d44222439b6331c66b34f6c0df34a31bf5939767dc81e3ab5c578",
+      "assets/main/native/54/544c2544-68e4-5023-83fd-97f3952a54e1.png": "120657cefb6a9b216eb1d96a062e3e18b1cab83cf733b1a67cb7892fbbd65cbe",
+      "assets/main/native/55/55b492a0-02aa-57a7-ae12-5fc00dfcc9b5.png": "8485264f6295b02d06b6ac44807442c6f239b895a5c5348c0227d7a2388bd214",
+      "assets/main/native/57/575160e9-64f8-59b5-a21c-c45c3b03f2a7.mp3": "67ef3d60f6b25036c0f9d7a2f3d0038dcbe6a2a881be06ae2f6368dfa1f05776",
+      "assets/main/native/58/58e77d35-2f84-5afe-9511-9a1f0960dc49.mp3": "63996454af2c241c5bbf4e79225c32186edf8768ecc791c4dfaf578c1c83464a",
+      "assets/main/native/5a/5a3bdf5b-28c6-582b-897d-cb3c661307cc.png": "1b7d7859b5aabbc15a9f5f3cd87ea7af76a8adc454e9522245e618e415123b14",
+      "assets/main/native/5a/5a961635-42c2-525a-9604-2c52fc98041b.png": "d14e684e88ad783ea3c8e56f6d6da945bf148b1a6e3a767c2031051674fc35c8",
+      "assets/main/native/5a/5aaf430f-206d-5b84-9912-fd9e41fec676.png": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+      "assets/main/native/5b/5be35b2e-e5ca-531e-97aa-d85623afe450.png": "ead7a7aa35baededa46ee2e167ab06e92da602b8f19171b116d682c4ace7d1c6",
+      "assets/main/native/5c/5ca2c4ec-fc1d-5a20-aed2-991257193045.png": "671e25af2a4525d65fe391b2b20cac47edd2bad5f85f348b403ced790cd94412",
+      "assets/main/native/5e/5e2578a8-4a8b-5612-9b1f-15da9ed36867.png": "ea37c4782e3de2ef4f2154993838f537c947b804d8a18912c9cf8359665a7600",
+      "assets/main/native/64/6477cbe6-0a4d-5281-a745-5959437aba5f.mp3": "c3e3daa26cbb66ea469268601306a8bf83933846e9a1e63c44fb27d4a6af75ad",
+      "assets/main/native/65/65a348ab-bfcb-5feb-a7ab-79c8a4a2b3b3.png": "4887d9590b581e9d367b30b5965fa776802ab30de9cf153def5dc2958080180a",
+      "assets/main/native/68/68eb25a6-c69f-56fb-b452-a3a623b90ec9.mp3": "86bfdd9bbb70f9cc0e6fadb25e3307d4cb04ec5e0d5df6fe3c619b086845a714",
+      "assets/main/native/6a/6af8a123-d83b-59e6-a46c-3707007aa5b0.mp3": "d2b9f2e4c5b5eb4ebbabd6fadd800744d683d08eca419ba370f39b5ec4c8dc4a",
+      "assets/main/native/6b/6bf002f5-02dd-5682-a080-8d224174f941.png": "ac4ab0945bfc46780718bab740f4426d9827a69eb32e7ed6a6dfef3e9c925def",
+      "assets/main/native/6c/6c5f6a81-3aea-5348-a264-48eed8d66851.mp3": "9048c340b53d43a88346ce075ab535f1588b9d49fb672307247a03d335b91595",
+      "assets/main/native/75/7525c985-828e-55da-8b71-61d98ae41596.png": "2bbd8f64b8b910a22b50adb4ccc65f8ecef96df89b223bb6629d93ac3232db78",
+      "assets/main/native/77/77f12700-2121-5b38-b8fb-aaf0a7640b45.mp3": "a2494f9a3abe699cfb4a197a401afbd9a4b1cc16700e725bf261c99d450bb7fc",
+      "assets/main/native/7b/7bb14d35-5685-5e29-8257-a0bb9f9e6e9e.png": "7ea68f5cc744f5e503d7000077451a7025c1f6c3bc733088af786f3c284b0f60",
+      "assets/main/native/7c/7cc92f0d-f1ba-52df-9fb9-3bfa2c5f3371.png": "9e8ab6fb3876d09a27a22a0ccbdffb95f9204567a9ef689043d1e581d0766289",
+      "assets/main/native/84/8420f40b-9d91-5feb-88a6-7d934b37bbcf.mp3": "b4376030dd8b1432462507700629d5aa0eabc10f6049080c97c9952efbca8194",
+      "assets/main/native/89/8941d852-9b9d-5b9f-b41c-e5f03e8bbd0d.mp3": "af292c7f565d971e5f17dc84f13b32636dc9b411a96e2d2616f70ebded2857bb",
+      "assets/main/native/89/89abc0be-4d26-57ef-9c6e-b865e090915f.mp3": "95c5d680773985f41fe3eafacd767a4fab15f9992b045fc7e5c60ad8d9279a11",
+      "assets/main/native/8f/8f86c06b-09e0-504d-8956-565ed85acaf7.mp3": "943e30eda154470fbd86fc013a6f313b684e00490c7bd5e6093e81ea9d46d974",
+      "assets/main/native/94/944b899a-01b1-535a-aa70-502da07c9f84.png": "4a772aca627a7dc251342417cc339025bc72d2e19e97585c3a7f952387db75ba",
+      "assets/main/native/98/98f8e620-a898-5572-9bdb-93de19f9f70b.mp3": "1e8860ea65700f56a63149f7c886f3834e1465a4cf0022cbf487c9e84f1b8d64",
+      "assets/main/native/99/99cdc2e8-34f7-5ca4-ad64-b0e0087756df.png": "12eb3a5ac7081f3f5f568523707833aa318599a4d7a04315a2d71361651027cf",
+      "assets/main/native/9a/9a223153-887d-5751-8adc-a7440d0ce9e0.png": "4c35f35602d93e5a413e8fa5fe531ab3badbe1cdadbdfc1657b19e289b9745a5",
+      "assets/main/native/9e/9e397279-db05-5a28-bed7-b5f9babbf837.png": "61fb5938b185ef47866bc0634c6cc90a08efd1d08160ab5adf7298dfd9771ada",
+      "assets/main/native/a6/a65ae333-33f7-596d-8eab-8df0c4e85945.png": "1854a564b1bce2cdc4de438a277e757ffd931a138e46a1f33377f8987ad8cb8a",
+      "assets/main/native/a8/a86db27b-0807-555d-bc59-845f6b8b133a.png": "5118f2892fd6341495ea2a4bba35af9725ed5355149fe68311d541202b288587",
+      "assets/main/native/aa/aa5672be-5f9d-5e29-bba8-4d207180adea.png": "d78593c2d3af2e4bc4a677199c74e82771df5e4fe34741f26ee197eb3bce274c",
+      "assets/main/native/ac/ac7dc395-89bc-5dda-831b-ad646cc85af3.png": "c9e8cc38532c5032cc53406e601c1e651bf7b898adeb322cacd63b6223afa977",
+      "assets/main/native/b0/b0dd028e-7a35-53eb-afb8-2aa5e92d1381.png": "f8d8b26d64af8ba6e36163bfcb2533f1b60f0c429871b773613406d799ca37d0",
+      "assets/main/native/b2/b27a7b7e-5332-53be-a89e-46c50264fd03.mp3": "b0c60355de07522b7f047b28efbc1f05c474452954633c49df17580c3ade5eb9",
+      "assets/main/native/ba/ba670f01-60e8-5ba2-a93c-c1e43439928d.mp3": "5bddce1dedb6d73cfba99c2dbaf72efc5844550ee8ef57c8b5fbdf411939c73e",
+      "assets/main/native/be/becae09b-01d7-5898-bbb6-ff03ae81380e.png": "5dab10f11cb00ce0a6273108be6f24c9d9dcce3fcc94eede47025e23780aae12",
+      "assets/main/native/c0/c08f16c0-112c-5aff-9ce3-b5c54118cea7.png": "ac02371e70ac6fe460e59ba7412e26262a4a7f082a237d4fd3ce7e2e75bf1e40",
+      "assets/main/native/c1/c136c394-2eb2-5241-9baf-1dfec8168e2a.png": "b694ef2064bce56b6baa5f09d2cce71c8ffbe7fbc59b0845ed9bd28dae827630",
+      "assets/main/native/c5/c5455892-cebe-5287-bf11-a67c3748dfd2.png": "d550217e1ee82dfad1cc340325766d347c73c3bfaa8a52e0969b13778d8c0e70",
+      "assets/main/native/c6/c6524d46-edc6-5bef-b8e4-f89110f5ce09.png": "ac238ec0c57aa46348df4ac82fe9f803ff19dbf12991ba064223ff3849e6f4c4",
+      "assets/main/native/c8/c89afe78-98e8-5395-b331-3c9547c952f8.png": "889e70cd9c40704616e9adb5bbf9f8bc90e9e8779707c7a65db359358f0ef9e1",
+      "assets/main/native/c8/c8e884b0-443b-5289-b43b-28289dbcbab5.png": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+      "assets/main/native/c9/c997cc05-5668-54fe-b75c-806c28c42b57.png": "7d2b79989e56453ee29448ecf57dc62e325e72a062c4c283c5cd1f9c78b2f651",
+      "assets/main/native/cc/cce2bc47-590b-57c1-9e2c-5c35bffb9c29.png": "730bdfaa070aa032d333f49131cbe7a54e6f35f8339adec2e21b9bf9b030523c",
+      "assets/main/native/cd/cd19e6da-f522-5400-95f3-c9fe48fb6cf0.png": "0d2ffbe45aaac6d2a1f611790924c1866b6aa468226bd393b0d51763494bc28a",
+      "assets/main/native/cd/cd1c2546-a905-5056-ace8-fac5ecbea148.mp3": "027d60484504864eda1fef12d8de61a4c81e62412487327dde654985d1b5c04f",
+      "assets/main/native/cd/cd75bccb-35d6-5d95-a391-2a1fcf993d85.png": "9c06bbc2d34307ecd6e0dc65d5e498bee1090a8ad411363ec9541fd55facf5f5",
+      "assets/main/native/ce/ceff0de3-adec-5565-9eee-30bf63829596.png": "391c2e9ba7b48010a3d96a00287a311c1513f7946cdeba353f88e0da7b81f8e9",
+      "assets/main/native/cf/cf66836a-ddea-5263-be44-87a6fa70fce1.png": "fd8f73fd39f304f76aa969074c57b7a1c5e219b1424f67b97b0bd42b90a345fb",
+      "assets/main/native/d5/d5e295ae-a079-527c-be77-ca42a8ca2cfc.png": "2aaaf0bf8d7cf83bf560cda75e31b36455e8ef57ffcf0ec42920c462384179f1",
+      "assets/main/native/d7/d711b439-0443-582d-8906-935f848bf98d.png": "91cf8330d9b7e04e7dbb6889047994f7c6e18b0ab217e17c8ec6e18782fb13b3",
+      "assets/main/native/de/dedc90ac-5149-556d-9b3b-7d282443ee08.png": "2a7d93c6a2dce6191129642ceeffe91bcbed0ee071fe1f5a493ecefbc9b96462",
+      "assets/main/native/df/df056fce-6feb-5dfa-ad9c-3a1792cb5a93.png": "7d00350198c6673398b476d537ed99342d9dcdeca08c3340c418480816a50b08",
+      "assets/main/native/e0/e06b303a-6cf1-5b66-9f0c-1677b411a75e.mp3": "c4eca31a89d547df305aba4da08e430d2eeac25cc0264241864dd95c7dbf3bbe",
+      "assets/main/native/e3/e3616b30-2519-50a3-93be-98e543223e56.png": "bcd896e6cb989523ad4b857efa61a35e040a71b8b620ba557c90e39237d50784",
+      "assets/main/native/e5/e58dfbb2-df57-5b00-8fe5-2b55520ee99c.png": "6afa01d86cb88c332287000fc1c6f63b803a6f4c6963148b42898737633430d6",
+      "assets/main/native/e5/e5c40fea-039d-505e-88b6-12b2b2600536.mp3": "ad8690e6d85244556733353d0462abf3ba191d320e3aedeadd7af373983a120f",
+      "assets/main/native/e7/e747c6e0-6604-586f-bd75-22e967577d99.png": "3c951db1fd8e91e578f3e0fb562a0ba235707ac71d4ac140fd31670f5439016e",
+      "assets/main/native/ea/eaf54498-57d3-5772-989b-4e07cbf25800.mp3": "79bef0d269ddfe7f5399626346230a9331d1a05f20314ee1827735f3e6cfcd58",
+      "assets/main/native/ea/eafb5727-1d0e-530f-a8ae-a6cdf2aa500d.png": "1d83ad171ab81e5534637fc505e3ccfa2dd4a1a201db071e881758652bf2cff6",
+      "assets/main/native/ee/ee5131c5-f13b-523f-b02c-c7ec91d39494.png": "5c072d91000b01eb1e16af9a01bbd3cafa8922e1a94fcedd4abb109c97937d89",
+      "assets/main/native/f0/f0df6c01-9760-5361-a933-25fd127f6c9f.png": "6a0cde45aee585f916b28c9233faa62ca07db21ff9df66de7d4ebc5ecdf1a531",
+      "assets/main/native/f1/f129b1dc-bae1-532d-92f7-23faa63e8f73.mp3": "a8cb0442ef13d00302e408207b41ce34da1adbabbeab473b5f9415aed5fbc56c",
+      "assets/main/native/f2/f2e73ada-8598-52b7-bc47-d28e60eec324.png": "2eade8e39d2b846ef6c58c98bde3eb1741e0c39578f22902fdaca208e7da33b8",
+      "assets/main/native/f2/f2f32c9a-ed38-51f6-97db-8d19df5bb5e2.png": "7e9c4091c33b5e8213258e7d21aa6878ff55f3a01e76025965b69a46227040a4",
+      "assets/main/native/f5/f533f0ab-55a9-5184-8ad3-26ed9eb42a13.mp3": "a62902cece273710341af74811e149797206029f4e1a78627e22cbe042fc4a87",
+      "assets/main/native/f5/f5ca6384-3db3-5ede-96ed-3eb32cc2443d.png": "119a169dfd8da4ee5a17c4bc12bd55fb8f0208e534b50cee54fdb794cdc9683b",
+      "assets/main/native/f8/f81cc1ac-143e-5635-8fb8-fa0e15237a4c.mp3": "85c6d04623c6435be513e65dbb2e98a85a6261ad95fb54191efc92389fb7d294",
+      "assets/main/native/f8/f8c554bc-9f92-5118-98b3-1ad21352aaae.mp3": "1cb7be61901bbe7554a7193bff0500c7622e10a2d2751ee572922476e9aa7929",
+      "assets/main/native/fc/fc9564a6-b37d-59cf-b9e6-f508791d2361.mp3": "dec6962d80dc980910c3dbf24359807ef8c3541d96bd72e516402d04ba23add5",
+      "assets/main/native/fe/fee960c0-7cb9-5aa1-9aa7-9b48d736854e.png": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+      "cocos-js/_commonjsHelpers-D6-Ny6z1.js": "f34f8a244f880cd917e3c96f5bbf05c925ea8b9acd773bbb9b61ff90e96e03ac",
+      "cocos-js/_virtual_cc-BeKhxg4p.js": "83d87c86cde7826389a01d943d23a5e91d394e980a7836c803463cf6d161fed8",
+      "cocos-js/assets/box2d.release.wasm-FOUq4jPK.wasm": "a066ae3080af280f8c09fe5e872f69a219e1c4e017f351064852482ef52954ff",
+      "cocos-js/box2d.release.asm-DJKTZot4.js": "c2afe6b14637f532b3906b9596c66095cc207b5203be5412a9185b5221d599f5",
+      "cocos-js/box2d.release.wasm-CSUuVOaQ.js": "0c882386612103773cc4e794d2c39a385de45b1e16c252d6837a6c3417418738",
+      "cocos-js/box2d.release.wasm-Czb_OePo.js": "e08c07d960c4170ca9e23348473beba133f41466c7aa54ef040c8ed60c25bfbc",
+      "cocos-js/cc.js": "33a509901a99eee86b29f7d1d79bf9fc62316b564b39a2bb9532275d9a04f0cf",
+      "favicon.ico": "0ee6ea35321de21db85992f64e4b846def7abac1222fa2250318878396df988e",
+      "index.html": "4ce027c6bdb572507c1e110e6a2a412b890e3c26d255544fe7abee7e9313d96d",
+      "index.js": "3f45e362e55d72cf38698a6824c4750f86b1793e41f5c94dab5bf2e67752964b",
+      "src/chunks/bundle.js": "92831b609777e6bc4bf4a3e5aea1d85604e8fd4ebe9e7e2b5471a019d2aa421c",
+      "src/effect.bin": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556",
+      "src/import-map.json": "ae84a42bfd0fe767a4141f7cd4e120b85ced56a55baf02bd48835d20bc6996f4",
+      "src/polyfills.bundle.js": "f1e4ced3322168d6b9915e782e4c1cf1055d75f66f2b38e7fcd60f48cf89082b",
+      "src/settings.json": "dd83fd1314b4ba7ff437c74035e1197cc55cc27d1ee2ec3d29a2e353ddb6d4e1",
+      "src/system.bundle.js": "5d1a25de07cc11276a6b1d6479cac7f12c0c561dd06941b8339e568c9d94f900",
+      "style.css": "48cc43329be1a113d6f0df5871fa55ba9ad9b7875d725104eb5578fd70bd079d"
+    }
+  },
+  "buildUnchanged": true,
+  "finishedAt": "2026-09-15T02:27:00.030Z"
+}

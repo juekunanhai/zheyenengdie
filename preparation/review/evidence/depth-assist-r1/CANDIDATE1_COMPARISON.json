@@ -1,0 +1,332 @@
+{
+  "status": "rejected_candidate_retained_as_evidence",
+  "decision": "The parent rejected the horizontal impulse component after a center-policy regression; final implementation will be tested separately. These files are not final-version acceptance.",
+  "sourceReports": {
+    "before": {
+      "file": "before.json",
+      "buildSha256": "61f9930f86a836ae8a79df2bdb3c5606b88dac76889663fe1f5516d2aaa7ae21",
+      "gitBaseline": "0b3d93ddc27b054ac8f17f04ce85dc5f7fda4a8e"
+    },
+    "after": {
+      "file": "after.json",
+      "buildSha256": "9e5b3d04fd28df43ee5d293cb3cce4516ed30e090815432aea79cfbe593ce354",
+      "gitBaseline": "0b3d93ddc27b054ac8f17f04ce85dc5f7fda4a8e"
+    },
+    "after-angular-only": {
+      "file": "after-angular-only.json",
+      "buildSha256": "9e5b3d04fd28df43ee5d293cb3cce4516ed30e090815432aea79cfbe593ce354",
+      "gitBaseline": "0b3d93ddc27b054ac8f17f04ce85dc5f7fda4a8e"
+    },
+    "before-pressure28": {
+      "file": "before-pressure28.json",
+      "buildSha256": "61f9930f86a836ae8a79df2bdb3c5606b88dac76889663fe1f5516d2aaa7ae21",
+      "gitBaseline": "0b3d93ddc27b054ac8f17f04ce85dc5f7fda4a8e"
+    }
+  },
+  "pairedControllerEvidence": [
+    {
+      "case": "controller_center14",
+      "before": {
+        "rawOutcome": "all_released_and_confirmed",
+        "interpretation": "all_released_and_confirmed",
+        "releases": 14,
+        "cumulativePlaced": 14,
+        "stars": 3,
+        "lostIDs": [],
+        "failureReason": null,
+        "seconds": 31.136899999991027,
+        "peakMetres": 11.4866455078125,
+        "maxHorizontalDriftPerBody": {
+          "1": 0.3071155995130539,
+          "2": 0.46388586956163635,
+          "3": 1.1461291313171387,
+          "4": 2.3901505870744586,
+          "5": 3.188397316262126,
+          "6": 5.4796366691589355,
+          "7": 7.214635015465319,
+          "8": 13.647643268108368,
+          "9": 22.34850398078561,
+          "10": 13.721481561660767,
+          "11": 3.9341301284730434,
+          "12": 9.639906883239746,
+          "13": 4.257206678390503,
+          "14": 1.8038484081625938
+        },
+        "observedFps": 56.87785232314425
+      },
+      "candidate1": {
+        "rawOutcome": "final_settlement_timeout",
+        "interpretation": "settled_after_prior_losses",
+        "releases": 14,
+        "cumulativePlaced": 11,
+        "stars": 2,
+        "lostIDs": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "failureReason": null,
+        "seconds": 47.2049000000059,
+        "peakMetres": 8.87400146484375,
+        "maxHorizontalDriftPerBody": {
+          "1": 5.339102134108543,
+          "2": 0.750313588163408,
+          "3": 1.9750207215547562,
+          "4": 4.212601753883064,
+          "5": 5.828757798299193,
+          "6": 7.5520124435424805,
+          "7": 13.709403682500124,
+          "8": 245.56693936884403,
+          "9": 265.2025998663157,
+          "10": 203.45886540412903,
+          "11": 275.5297277867794,
+          "12": 25.414374828338623,
+          "13": 16.476075500249863,
+          "14": 27.249956250190735
+        },
+        "observedFps": 56.73139864716725
+      }
+    },
+    {
+      "case": "controller_alternating14",
+      "before": {
+        "rawOutcome": "all_released_and_confirmed",
+        "interpretation": "all_released_and_confirmed",
+        "releases": 14,
+        "cumulativePlaced": 14,
+        "stars": 3,
+        "lostIDs": [],
+        "failureReason": null,
+        "seconds": 30.99759999999397,
+        "peakMetres": 11.492149658203125,
+        "maxHorizontalDriftPerBody": {
+          "1": 0.38675975799560547,
+          "2": 0.4963951110839844,
+          "3": 1.1233196258544922,
+          "4": 2.7363853454589844,
+          "5": 3.447582721710205,
+          "6": 6.48252010345459,
+          "7": 8.998559474945068,
+          "8": 15.757509231567383,
+          "9": 22.971028327941895,
+          "10": 45.16981887817383,
+          "11": 6.74271297454834,
+          "12": 3.200334072113037,
+          "13": 8.860614776611328,
+          "14": 19.33854389190674
+        },
+        "observedFps": 56.972152682799425
+      },
+      "candidate1": {
+        "rawOutcome": "all_released_and_confirmed",
+        "interpretation": "all_released_and_confirmed",
+        "releases": 14,
+        "cumulativePlaced": 14,
+        "stars": 3,
+        "lostIDs": [],
+        "failureReason": null,
+        "seconds": 30.411799999996944,
+        "peakMetres": 11.4882666015625,
+        "maxHorizontalDriftPerBody": {
+          "1": 0.3353271484375,
+          "2": 0.4192638397216797,
+          "3": 0.9167604446411133,
+          "4": 2.3420543670654297,
+          "5": 2.9339776039123535,
+          "6": 5.569135665893555,
+          "7": 8.305753231048584,
+          "8": 15.141404151916504,
+          "9": 22.73470687866211,
+          "10": 44.976603507995605,
+          "11": 9.086860656738281,
+          "12": 3.0437726974487305,
+          "13": 8.316263198852539,
+          "14": 19.608583450317383
+        },
+        "observedFps": 57.28039774035654
+      }
+    },
+    {
+      "case": "controller_early_offset14",
+      "before": {
+        "rawOutcome": "all_released_and_confirmed",
+        "interpretation": "all_released_and_confirmed",
+        "releases": 14,
+        "cumulativePlaced": 14,
+        "stars": 3,
+        "lostIDs": [],
+        "failureReason": null,
+        "seconds": 31.12420000000291,
+        "peakMetres": 11.476279296875,
+        "maxHorizontalDriftPerBody": {
+          "1": 0.2779865264892578,
+          "2": 0.5450112810358405,
+          "3": 1.3610483966767788,
+          "4": 3.0260009765625,
+          "5": 3.736503802239895,
+          "6": 4.961151599884033,
+          "7": 6.744269742630422,
+          "8": 12.877333521842957,
+          "9": 19.87127910554409,
+          "10": 10.05451762676239,
+          "11": 3.218314602971077,
+          "12": 6.875447750091553,
+          "13": 5.661278307437897,
+          "14": 2.5960682183504105
+        },
+        "observedFps": 56.32273279312676
+      },
+      "candidate1": {
+        "rawOutcome": "all_released_and_confirmed",
+        "interpretation": "all_released_and_confirmed",
+        "releases": 14,
+        "cumulativePlaced": 14,
+        "stars": 3,
+        "lostIDs": [],
+        "failureReason": null,
+        "seconds": 31.115999999999843,
+        "peakMetres": 11.473443603515625,
+        "maxHorizontalDriftPerBody": {
+          "1": 0.26790332794189453,
+          "2": 0.5185938235372305,
+          "3": 1.3352916007861495,
+          "4": 2.657076835632324,
+          "5": 3.3727994225919247,
+          "6": 4.020159721374512,
+          "7": 5.681313363835216,
+          "8": 11.954145014286041,
+          "9": 18.236680515110493,
+          "10": 8.91655719280243,
+          "11": 4.464874837547541,
+          "12": 6.633049964904785,
+          "13": 3.5204534083604813,
+          "14": 1.897199124097824
+        },
+        "observedFps": 57.20529631058005
+      }
+    },
+    {
+      "case": "controller_pressure28",
+      "before": {
+        "rawOutcome": "defeated",
+        "interpretation": "defeated",
+        "releases": 15,
+        "cumulativePlaced": 14,
+        "stars": 2,
+        "lostIDs": [
+          4,
+          5,
+          6,
+          7,
+          10,
+          12,
+          13,
+          14,
+          15
+        ],
+        "failureReason": "large_collapse",
+        "seconds": 33.26920000000293,
+        "peakMetres": 11.485343017578124,
+        "maxHorizontalDriftPerBody": {
+          "1": 0.6381082534790039,
+          "2": 2.9662036895751953,
+          "3": 3.2218565940856934,
+          "4": 8.802753448486328,
+          "5": 13.702592611312866,
+          "6": 18.38282299041748,
+          "7": 34.61170959472656,
+          "8": 64.20448684692383,
+          "9": 177.7089786529541,
+          "10": 227.293231010437,
+          "11": 35.344712257385254,
+          "12": 201.64389419555664,
+          "13": 233.00157642364502,
+          "14": 252.74988555908203,
+          "15": 271.53985118865967
+        },
+        "observedFps": 56.95959025163914
+      },
+      "candidate1": {
+        "rawOutcome": "defeated",
+        "interpretation": "defeated",
+        "releases": 15,
+        "cumulativePlaced": 14,
+        "stars": 2,
+        "lostIDs": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          12,
+          13,
+          14,
+          15
+        ],
+        "failureReason": "large_collapse",
+        "seconds": 34.11020000000293,
+        "peakMetres": 11.488831787109374,
+        "maxHorizontalDriftPerBody": {
+          "1": 0.5342807769775391,
+          "2": 1.0008430480957031,
+          "3": 2.2271833419799805,
+          "4": 5.3574934005737305,
+          "5": 6.7591392993927,
+          "6": 10.849188804626465,
+          "7": 16.780581951141357,
+          "8": 30.516230583190918,
+          "9": 48.77712535858154,
+          "10": 128.67007160186768,
+          "11": 59.94278526306152,
+          "12": 183.49562644958496,
+          "13": 249.62195777893066,
+          "14": 255.81314659118652,
+          "15": 266.11493587493896
+        },
+        "observedFps": 57.57808514754622
+      }
+    }
+  ],
+  "angularOnlyCenter": {
+    "rawOutcome": "all_released_and_confirmed",
+    "interpretation": "all_released_and_confirmed",
+    "releases": 14,
+    "cumulativePlaced": 14,
+    "stars": 3,
+    "lostIDs": [],
+    "failureReason": null,
+    "seconds": 31.116599999993987,
+    "peakMetres": 11.47894287109375,
+    "maxHorizontalDriftPerBody": {
+      "1": 0.2762393206357956,
+      "2": 0.4632617614479386,
+      "3": 1.1478653755038977,
+      "4": 2.393158712424338,
+      "5": 3.196995619684458,
+      "6": 5.036655426025391,
+      "7": 6.678270446136594,
+      "8": 12.866758227348328,
+      "9": 19.55549119785428,
+      "10": 10.512007057666779,
+      "11": 4.271654866635799,
+      "12": 8.337717056274414,
+      "13": 3.931340217590332,
+      "14": 2.3099473416805267
+    },
+    "observedFps": 58.39326918751892
+  },
+  "angularOnlyMechanism": {
+    "mode": "angular-only",
+    "suppressedCalls": 10108,
+    "absoluteHorizontalImpulse": 36.39230735719996
+  },
+  "interpretation": [
+    "Center14 baseline confirmed all 14; candidate1 had an incident losing bodies 8/9/10/11 and ended with 11 cumulative placements, 2 stars, and sleeping remaining bodies. The raw settlement_timeout label does not mean persistent oscillation.",
+    "The real angular-only ablation restored all 14 in this bounded center run. It supports horizontal damping involvement; frame timing still varies, and this is not a population success-rate claim.",
+    "All safeguards passed on candidate1, which did not prevent a gameplay regression. Safety and difficulty acceptance are distinct.",
+    "The two-box, 3-degree platform collision fixture is deliberately fixed and easy: baseline already sleeps by the last second. It cannot establish large gameplay improvement.",
+    "Requested120fps achieved about75 before and79 candidate1. There is no native120fps acceptance."
+  ]
+}

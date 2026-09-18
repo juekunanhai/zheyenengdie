@@ -1,0 +1,137 @@
+{
+  "status": "prototype only; never imported into production assets or scene",
+  "generator": "built-in image_gen",
+  "baseSource": "original-hero.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "format": "Seven RGBA overlay PNGs per character. Frame 0 is fully transparent so the original face is exactly unchanged. Replace overlay frame directly; no crossfade, no scale change.",
+  "motion": "Original eyeballs and highlights stay at the same source pixels. Original surrounding face color gradients fill the occluded area; only the generated thin crease color and measured curve are reused. No generated raised cap, halo or highlight is imported. Duck upper lid leads; crate shallow response raises the lower lid first. Reverse frame order to reopen.",
+  "assets": [
+    {
+      "name": "duck",
+      "target": "R9Hero",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "rect": {
+        "left": 334,
+        "top": 61,
+        "width": 173,
+        "height": 114
+      },
+      "frames": [
+        {
+          "index": 0,
+          "closurePercent": 0,
+          "file": "duck_00.png",
+          "sha256": "92d9185aeaf3b70f6bf2d11cbf44feb4642027b4e25ab9aaeed551e25b2eef08"
+        },
+        {
+          "index": 1,
+          "closurePercent": 16.667,
+          "file": "duck_01.png",
+          "sha256": "8041502216a9fade7e7eab12285a378971cee43de70cab1aaf0fb0fa84db14d5"
+        },
+        {
+          "index": 2,
+          "closurePercent": 33.333,
+          "file": "duck_02.png",
+          "sha256": "3b5825e599fa8871e950056804211577e4a58329409ff2f4f919e3d7e2271c72"
+        },
+        {
+          "index": 3,
+          "closurePercent": 50.0,
+          "file": "duck_03.png",
+          "sha256": "4259f408952602bc7c7ae668bcd16b552cf6eb2cd99d93e0d831b5c9b99eda19"
+        },
+        {
+          "index": 4,
+          "closurePercent": 66.667,
+          "file": "duck_04.png",
+          "sha256": "1fa46d9bdb37e64773aa0e6403743d2f830c6f4083884140486ecdaded5beccd"
+        },
+        {
+          "index": 5,
+          "closurePercent": 83.333,
+          "file": "duck_05.png",
+          "sha256": "40740d2c66c59369af71ee08becad56d2e510a5563ab7ed92e813c4099afa036"
+        },
+        {
+          "index": 6,
+          "closurePercent": 100,
+          "file": "duck_06.png",
+          "sha256": "19b2a89bd26a7a498b86a004d498375d1557d478c3a393c9f8d98110c0d520ac"
+        }
+      ],
+      "suggestedPeakFrame": 6,
+      "suggestedCloseMs": 70,
+      "suggestedHoldMs": 35,
+      "suggestedOpenMs": 120
+    },
+    {
+      "name": "crate",
+      "target": "R9Hero",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "rect": {
+        "left": 284,
+        "top": 1089,
+        "width": 148,
+        "height": 174
+      },
+      "frames": [
+        {
+          "index": 0,
+          "closurePercent": 0,
+          "file": "crate_00.png",
+          "sha256": "9fd4585d16e124873e16c2c35d11b4e7407cfaf9a2494f16f1fb3481370927cb"
+        },
+        {
+          "index": 1,
+          "closurePercent": 16.667,
+          "file": "crate_01.png",
+          "sha256": "4e6cc55d6ecacc63081eaabbc4d472041807626ca7f8432d577559d1513b0dcd"
+        },
+        {
+          "index": 2,
+          "closurePercent": 33.333,
+          "file": "crate_02.png",
+          "sha256": "b2463f3768aeb0ed3203ed99f00c7764f25905d854ed51c5faeebe538abb3310"
+        },
+        {
+          "index": 3,
+          "closurePercent": 50.0,
+          "file": "crate_03.png",
+          "sha256": "8585e1980bc11608890241b8c1b1d4852ab5f144282e962a52930bcf33184b92"
+        },
+        {
+          "index": 4,
+          "closurePercent": 66.667,
+          "file": "crate_04.png",
+          "sha256": "de02ea995b6524aff74d54b638c5fea89f7c3d128ce37dd8a3f92e672e71f865"
+        },
+        {
+          "index": 5,
+          "closurePercent": 83.333,
+          "file": "crate_05.png",
+          "sha256": "3a9f832a29d07eb642ed8d0a3cd575c091a0f046fc39667f65b4bcebc6f65fe3"
+        },
+        {
+          "index": 6,
+          "closurePercent": 100,
+          "file": "crate_06.png",
+          "sha256": "92fa1bda0f43a05d0ac3dc0e93d1e6b6e2b4fe869063fe47d362de647e77a6f0"
+        }
+      ],
+      "suggestedPeakFrame": 2,
+      "suggestedCloseMs": 80,
+      "suggestedHoldMs": 70,
+      "suggestedOpenMs": 140
+    }
+  ]
+}

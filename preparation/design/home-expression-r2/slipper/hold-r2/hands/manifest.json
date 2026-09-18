@@ -1,0 +1,1017 @@
+{
+  "status": "independent-motion-sample-not-production",
+  "revision": "slipper-short-head-hold-r2",
+  "fps": 24,
+  "durationSeconds": 1.5833333333333333,
+  "loopFrom": 0.5833333333333334,
+  "loopDurationSeconds": 0.9999999999999999,
+  "frameCount": 39,
+  "frameSize": [
+    280,
+    340
+  ],
+  "rectStage": [
+    405,
+    475,
+    140,
+    170
+  ],
+  "referenceRectPx": [
+    350,
+    250,
+    630,
+    590
+  ],
+  "referenceScale": 2,
+  "contactSeconds": 0.5833333333333334,
+  "motion": "Short reach once, then fixed-palm persistent grip. Loop alters only elbow/wrist tension and finger tips; root and contact palms stay fixed. No retract frames, no translation/fade/crossfade. Original duck mouth, eyes and brows protected.",
+  "sourceSha256": "a4e5ba1f251132ea0d114e5d1acf9228d496e5319b0e91e859ae16f219c782cf",
+  "sourceFiles": {
+    "near": {
+      "path": "../../hands/source-near.png",
+      "sha256": "70cb1d87e7dd341c950232dab1a2bb2aff9a64851127cd38173e17d414c1e3a8"
+    },
+    "far": {
+      "path": "../../hands/source-far.png",
+      "sha256": "6eeede20e9d0adafef54b3f275da450307eebbefcc0e2bd9b6d1417329e08cc6"
+    }
+  },
+  "prompt": "../../hands/prompt.txt",
+  "frames": [
+    {
+      "index": 0,
+      "timeSeconds": 0.0,
+      "file": "frames/frame_000.png",
+      "far": {
+        "rootReferencePx": [
+          412.0,
+          294.0
+        ],
+        "palmReferencePx": [
+          393.0,
+          278.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          424.0,
+          285.0
+        ],
+        "palmReferencePx": [
+          397.0,
+          266.0
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "timeSeconds": 0.041667,
+      "file": "frames/frame_001.png",
+      "far": {
+        "rootReferencePx": [
+          412.2962962962963,
+          294.6666666666667
+        ],
+        "palmReferencePx": [
+          395.962962962963,
+          283.9259259259259
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          425.03703703703707,
+          285.3703703703704
+        ],
+        "palmReferencePx": [
+          401.14814814814815,
+          275.4074074074074
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "timeSeconds": 0.083333,
+      "file": "frames/frame_002.png",
+      "far": {
+        "rootReferencePx": [
+          413.037037037037,
+          296.3333333333333
+        ],
+        "palmReferencePx": [
+          403.3703703703703,
+          298.74074074074076
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          427.6296296296296,
+          286.29629629629625
+        ],
+        "palmReferencePx": [
+          411.51851851851853,
+          298.9259259259259
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "timeSeconds": 0.125,
+      "file": "frames/frame_003.png",
+      "far": {
+        "rootReferencePx": [
+          414.0,
+          298.5
+        ],
+        "palmReferencePx": [
+          413.0,
+          318.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          431.0,
+          287.5
+        ],
+        "palmReferencePx": [
+          425.0,
+          329.5
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "timeSeconds": 0.166667,
+      "file": "frames/frame_004.png",
+      "far": {
+        "rootReferencePx": [
+          414.962962962963,
+          300.66666666666663
+        ],
+        "palmReferencePx": [
+          422.6296296296296,
+          337.25925925925924
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          434.3703703703703,
+          288.7037037037037
+        ],
+        "palmReferencePx": [
+          438.48148148148147,
+          360.0740740740741
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "timeSeconds": 0.208333,
+      "file": "frames/frame_005.png",
+      "far": {
+        "rootReferencePx": [
+          415.7037037037037,
+          302.33333333333337
+        ],
+        "palmReferencePx": [
+          430.03703703703707,
+          352.0740740740741
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          436.96296296296293,
+          289.6296296296296
+        ],
+        "palmReferencePx": [
+          448.85185185185185,
+          383.5925925925926
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "timeSeconds": 0.25,
+      "file": "frames/frame_006.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          433.0,
+          358.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          453.0,
+          393.0
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "timeSeconds": 0.291667,
+      "file": "frames/frame_007.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          432.09765625,
+          357.7421875
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          452.2265625,
+          393.0859375
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "timeSeconds": 0.333333,
+      "file": "frames/frame_008.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          429.71875,
+          357.0625
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          450.1875,
+          393.3125
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "timeSeconds": 0.375,
+      "file": "frames/frame_009.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          426.35546875,
+          356.1015625
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          447.3046875,
+          393.6328125
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "timeSeconds": 0.416667,
+      "file": "frames/frame_010.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          422.5,
+          355.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          444.0,
+          394.0
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "timeSeconds": 0.458333,
+      "file": "frames/frame_011.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          418.64453125,
+          353.8984375
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          440.6953125,
+          394.3671875
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "timeSeconds": 0.5,
+      "file": "frames/frame_012.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          415.28125,
+          352.9375
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          437.8125,
+          394.6875
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "timeSeconds": 0.541667,
+      "file": "frames/frame_013.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.90234375,
+          352.2578125
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.7734375,
+          394.9140625
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "timeSeconds": 0.583333,
+      "file": "frames/frame_014.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "timeSeconds": 0.625,
+      "file": "frames/frame_015.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "timeSeconds": 0.666667,
+      "file": "frames/frame_016.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "timeSeconds": 0.708333,
+      "file": "frames/frame_017.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "timeSeconds": 0.75,
+      "file": "frames/frame_018.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "timeSeconds": 0.791667,
+      "file": "frames/frame_019.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "timeSeconds": 0.833333,
+      "file": "frames/frame_020.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "timeSeconds": 0.875,
+      "file": "frames/frame_021.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "timeSeconds": 0.916667,
+      "file": "frames/frame_022.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "timeSeconds": 0.958333,
+      "file": "frames/frame_023.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "timeSeconds": 1.0,
+      "file": "frames/frame_024.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "timeSeconds": 1.041667,
+      "file": "frames/frame_025.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "timeSeconds": 1.083333,
+      "file": "frames/frame_026.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "timeSeconds": 1.125,
+      "file": "frames/frame_027.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "timeSeconds": 1.166667,
+      "file": "frames/frame_028.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "timeSeconds": 1.208333,
+      "file": "frames/frame_029.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "timeSeconds": 1.25,
+      "file": "frames/frame_030.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 31,
+      "timeSeconds": 1.291667,
+      "file": "frames/frame_031.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "timeSeconds": 1.333333,
+      "file": "frames/frame_032.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 33,
+      "timeSeconds": 1.375,
+      "file": "frames/frame_033.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "timeSeconds": 1.416667,
+      "file": "frames/frame_034.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "timeSeconds": 1.458333,
+      "file": "frames/frame_035.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "timeSeconds": 1.5,
+      "file": "frames/frame_036.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 37,
+      "timeSeconds": 1.541667,
+      "file": "frames/frame_037.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "timeSeconds": 1.583333,
+      "file": "frames/frame_038.png",
+      "far": {
+        "rootReferencePx": [
+          416.0,
+          303.0
+        ],
+        "palmReferencePx": [
+          412.0,
+          352.0
+        ]
+      },
+      "near": {
+        "rootReferencePx": [
+          438.0,
+          290.0
+        ],
+        "palmReferencePx": [
+          435.0,
+          395.0
+        ]
+      }
+    }
+  ]
+}

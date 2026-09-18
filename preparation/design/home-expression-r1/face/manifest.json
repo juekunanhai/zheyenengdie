@@ -1,0 +1,82 @@
+{
+  "generator": "built-in image_gen",
+  "sourcePolicy": "approved original remains default; generated full sprite is never imported",
+  "assets": [
+    {
+      "name": "duck",
+      "asset": "assets/batch0/art/home_face_duck_blink_r1.png",
+      "uuid": "222c78c1-3d83-5612-86d4-749304296f3a",
+      "spriteFrameUuid": "222c78c1-3d83-5612-86d4-749304296f3a@f9941",
+      "targetSource": "home_r9_hero.png",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "rect": {
+        "left": 336,
+        "top": 61,
+        "width": 171,
+        "height": 114
+      },
+      "alpha": "feathered outside fully replaced eyes; clipped to solid original material interior (source alpha >=250)",
+      "sha256": "504c81d48dce3c872e64c0894a5f72bd7b215e8b38a4e7cbd6c036078bdecca4"
+    },
+    {
+      "name": "crate",
+      "asset": "assets/batch0/art/home_face_crate_blink_r1.png",
+      "uuid": "b396c45e-1593-5cd3-b273-13c11c9a2fe2",
+      "spriteFrameUuid": "b396c45e-1593-5cd3-b273-13c11c9a2fe2@f9941",
+      "targetSource": "home_r9_hero.png",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "rect": {
+        "left": 284,
+        "top": 1089,
+        "width": 148,
+        "height": 174
+      },
+      "alpha": "feathered outside fully replaced eyes; clipped to solid original material interior (source alpha >=250)",
+      "sha256": "c1fd01491c5379b68fd7da56393d62dbf952437489d569e6dead51f799722c3e"
+    },
+    {
+      "name": "toilet",
+      "asset": "assets/batch0/art/home_face_toilet_look_r1.png",
+      "uuid": "0a3c97aa-da25-56d4-8cc0-9dfa16eadc8f",
+      "spriteFrameUuid": "0a3c97aa-da25-56d4-8cc0-9dfa16eadc8f@f9941",
+      "targetSource": "home_r9_hero.png",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "rect": {
+        "left": 426,
+        "top": 431,
+        "width": 225,
+        "height": 130
+      },
+      "alpha": "feathered outside fully replaced eyes; clipped to solid original material interior (source alpha >=250)",
+      "sha256": "b0eba2e85ca3ec1a0b4048e9800185d43daef185c3b6dd60f07346d7379495a5"
+    },
+    {
+      "name": "slipper",
+      "asset": "assets/batch0/art/home_face_slipper_blink_r1.png",
+      "uuid": "65fa7661-19f3-5f2b-b310-84258484f515",
+      "spriteFrameUuid": "65fa7661-19f3-5f2b-b310-84258484f515@f9941",
+      "targetSource": "home_r9_slipper.png",
+      "sourceSize": [
+        340,
+        257
+      ],
+      "rect": {
+        "left": 192,
+        "top": 102,
+        "width": 120,
+        "height": 96
+      },
+      "alpha": "feathered outside fully replaced eyes; clipped to solid original material interior (source alpha >=250)",
+      "sha256": "0606c5213db15448bf1f6ac793bbe4a4f58710c7781bb81bcd5d1517f5938a26"
+    }
+  ]
+}

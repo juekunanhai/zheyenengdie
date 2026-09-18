@@ -1,0 +1,99 @@
+{
+  "version": "near-sky-clouds-r2-complete-official-sprite",
+  "source": {
+    "file": "../../../../assets/batch0/art/home_r10_background.png",
+    "sha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+    "width": 941,
+    "height": 1672
+  },
+  "cloudSource": {
+    "file": "../../../../assets/batch0/art/home_r9_cloud.png",
+    "sha256": "2ba4cc4f1fc84826f66089e3b8f0a73ef08100edd65db0db8e39aa332878cab1",
+    "method": "exact file copy, full complete alpha sprite"
+  },
+  "background": {
+    "file": "background-no-near-clouds.png",
+    "width": 941,
+    "height": 1672
+  },
+  "mask": {
+    "file": "moving-sky-mask.png",
+    "rect": [
+      0,
+      0,
+      941,
+      1672
+    ],
+    "use": "Draw all near clouds into transparent layer; destination-in this alpha mask; composite on background. White/RGB unimportant; use alpha."
+  },
+  "foreground": {
+    "file": "city-foreground.png",
+    "rect": [
+      0,
+      0,
+      941,
+      1672
+    ],
+    "use": "Optional full original city layer, draw AFTER moving clouds. Alternative to mask."
+  },
+  "layers": [
+    {
+      "id": "near_left",
+      "file": "moving-cloud.png",
+      "rect": [
+        -128,
+        62,
+        430,
+        165
+      ],
+      "opacity": 0.82,
+      "speed": 12
+    },
+    {
+      "id": "near_right",
+      "file": "moving-cloud.png",
+      "rect": [
+        698,
+        198,
+        405,
+        156
+      ],
+      "opacity": 0.84,
+      "speed": 10
+    },
+    {
+      "id": "far_middle",
+      "file": "moving-cloud.png",
+      "rect": [
+        600,
+        119,
+        178,
+        68
+      ],
+      "opacity": 0.36,
+      "speed": 5.5
+    },
+    {
+      "id": "middle_left",
+      "file": "moving-cloud.png",
+      "rect": [
+        107,
+        299,
+        255,
+        98
+      ],
+      "opacity": 0.58,
+      "speed": 8
+    }
+  ],
+  "recommendation": "All rects / speeds in original 941x1672 pixels. Draw background then cloud canvas masked by moving-sky-mask. Drift in same direction, unequal speeds; wrap only when fully offscreen. No vertical bob. No whole-background translation.",
+  "scope": "Upper four cloud groups replaced with complete officially approved cloud sprite. Low-altitude distant cloud / haze below y426 remains original, intentionally static far layer.",
+  "generator": "built-in image_gen clear sky donor only; no generated city/cloud sprite",
+  "files": {
+    "background-no-near-clouds.png": "a1ebc234ed6841b1234f99c9eb94304520435dba600100c6d33163fea9407a5f",
+    "moving-sky-mask.png": "379ddcc869789cbc220adfeae082feb61ee7e75268ef55569b8fef770a19d5e7",
+    "city-foreground.png": "1d2f6bfd66adbf226843d7273ebad7395f0a5a22f55400bc2d3363fe738f9e69",
+    "moving-cloud.png": "2ba4cc4f1fc84826f66089e3b8f0a73ef08100edd65db0db8e39aa332878cab1",
+    "generated-clear-sky.png": "307f27d6e4f129d564d168cc5c0196d5dd27cc628b97e93b1b686c7d747700f9"
+  }
+}

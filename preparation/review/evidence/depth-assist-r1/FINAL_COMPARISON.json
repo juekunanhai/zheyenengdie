@@ -1,0 +1,508 @@
+{
+  "schema": "depth-assist-final-comparison-r1",
+  "status": "bounded_safety_validated_broad_gameplay_improvement_not_established",
+  "testedFinal": "final.json",
+  "baseline": [
+    "before.json",
+    "before-pressure28.json"
+  ],
+  "rejectedHorizontalCandidate": "CANDIDATE1_COMPARISON.json",
+  "sourceIdentity": {
+    "before": {
+      "file": "before.json",
+      "buildSha256": "61f9930f86a836ae8a79df2bdb3c5606b88dac76889663fe1f5516d2aaa7ae21",
+      "gitBaseline": "0b3d93ddc27b054ac8f17f04ce85dc5f7fda4a8e"
+    },
+    "before-pressure28": {
+      "file": "before-pressure28.json",
+      "buildSha256": "61f9930f86a836ae8a79df2bdb3c5606b88dac76889663fe1f5516d2aaa7ae21",
+      "gitBaseline": "0b3d93ddc27b054ac8f17f04ce85dc5f7fda4a8e"
+    },
+    "final": {
+      "file": "final.json",
+      "buildSha256": "ce163ca140f433243f046922866dacbf53825e5de7c2a578d004650dcd72cdc6",
+      "gitBaseline": "0b3d93ddc27b054ac8f17f04ce85dc5f7fda4a8e"
+    }
+  },
+  "facts": [
+    "Three fixed 14-release trajectories retain all 14 placements and all 3 stars on final, matching the baseline completion outcome.",
+    "On those trajectories, maximum horizontal displacement of the oldest seven bodies falls by about 6.7 to 7.7 percent. These are bounded single-run measurements, not player success probabilities.",
+    "The fixed 28-release pressure policy ends in large_collapse after release15 on baseline and final. Final cumulativePlaced is13 versus14 baseline. Long-tower survivability has not improved in this test.",
+    "In the easy fixed collision fixture final settles after contact at roughly0.739/0.725/0.630 seconds for depth0/300/600. The600-depth transient angle peak is higher; reduced residual motion does not promise uniformly smaller impact peaks.",
+    "Both before and final already have zero tail angular velocity during the last second of this easy fixture. It does not establish large gameplay gains.",
+    "Final has no horizontal impulse path; all18 reported structure/safety assertions passed and errors are empty. A completed diagnostic suite is not the same as demonstrated surprise."
+  ],
+  "controllerComparisons": [
+    {
+      "case": "controller_center14",
+      "samePredefinedOffsetsAndSequence": true,
+      "before": {
+        "outcome": "all_released_and_confirmed",
+        "released": 14,
+        "cumulativePlaced": 14,
+        "remainingReleasedBodies": 14,
+        "stars": 3,
+        "incidentCount": 0,
+        "failureReason": null,
+        "peakMetres": 11.4866455078125,
+        "activeSeconds": 31.136899999991027,
+        "observedFps": 56.87785232314425,
+        "oldestSevenMaxHorizontalDrift": 7.214635015465319,
+        "wholeTowerMaxHorizontalDrift": 22.34850398078561,
+        "lostIDs": []
+      },
+      "final": {
+        "outcome": "all_released_and_confirmed",
+        "released": 14,
+        "cumulativePlaced": 14,
+        "remainingReleasedBodies": 14,
+        "stars": 3,
+        "incidentCount": 0,
+        "failureReason": null,
+        "peakMetres": 11.480577392578125,
+        "activeSeconds": 30.65029999999694,
+        "observedFps": 58.074472354273134,
+        "oldestSevenMaxHorizontalDrift": 6.671498433686793,
+        "wholeTowerMaxHorizontalDrift": 19.787879414856434,
+        "lostIDs": []
+      },
+      "oldestSevenDriftReductionFraction": 0.07528261382790069
+    },
+    {
+      "case": "controller_alternating14",
+      "samePredefinedOffsetsAndSequence": true,
+      "before": {
+        "outcome": "all_released_and_confirmed",
+        "released": 14,
+        "cumulativePlaced": 14,
+        "remainingReleasedBodies": 14,
+        "stars": 3,
+        "incidentCount": 0,
+        "failureReason": null,
+        "peakMetres": 11.492149658203125,
+        "activeSeconds": 30.99759999999397,
+        "observedFps": 56.972152682799425,
+        "oldestSevenMaxHorizontalDrift": 8.998559474945068,
+        "wholeTowerMaxHorizontalDrift": 45.16981887817383,
+        "lostIDs": []
+      },
+      "final": {
+        "outcome": "all_released_and_confirmed",
+        "released": 14,
+        "cumulativePlaced": 14,
+        "remainingReleasedBodies": 14,
+        "stars": 3,
+        "incidentCount": 0,
+        "failureReason": null,
+        "peakMetres": 11.486500244140625,
+        "activeSeconds": 30.71059999999401,
+        "observedFps": 57.699947249495146,
+        "oldestSevenMaxHorizontalDrift": 8.39937686920166,
+        "wholeTowerMaxHorizontalDrift": 43.93728828430176,
+        "lostIDs": []
+      },
+      "oldestSevenDriftReductionFraction": 0.0665865028076692
+    },
+    {
+      "case": "controller_early_offset14",
+      "samePredefinedOffsetsAndSequence": true,
+      "before": {
+        "outcome": "all_released_and_confirmed",
+        "released": 14,
+        "cumulativePlaced": 14,
+        "remainingReleasedBodies": 14,
+        "stars": 3,
+        "incidentCount": 0,
+        "failureReason": null,
+        "peakMetres": 11.476279296875,
+        "activeSeconds": 31.12420000000291,
+        "observedFps": 56.32273279312676,
+        "oldestSevenMaxHorizontalDrift": 6.744269742630422,
+        "wholeTowerMaxHorizontalDrift": 19.87127910554409,
+        "lostIDs": []
+      },
+      "final": {
+        "outcome": "all_released_and_confirmed",
+        "released": 14,
+        "cumulativePlaced": 14,
+        "remainingReleasedBodies": 14,
+        "stars": 3,
+        "incidentCount": 0,
+        "failureReason": null,
+        "peakMetres": 11.47697265625,
+        "activeSeconds": 31.395100000008917,
+        "observedFps": 58.225646677331206,
+        "oldestSevenMaxHorizontalDrift": 6.226080500520766,
+        "wholeTowerMaxHorizontalDrift": 18.76919113844633,
+        "lostIDs": []
+      },
+      "oldestSevenDriftReductionFraction": 0.07683400306992327
+    },
+    {
+      "case": "controller_pressure28",
+      "samePredefinedOffsetsAndSequence": true,
+      "before": {
+        "outcome": "defeated",
+        "released": 15,
+        "cumulativePlaced": 14,
+        "remainingReleasedBodies": 6,
+        "stars": 2,
+        "incidentCount": 1,
+        "failureReason": "large_collapse",
+        "peakMetres": 11.485343017578124,
+        "activeSeconds": 33.26920000000293,
+        "observedFps": 56.95959025163914,
+        "oldestSevenMaxHorizontalDrift": 34.61170959472656,
+        "wholeTowerMaxHorizontalDrift": 271.53985118865967,
+        "lostIDs": [
+          4,
+          5,
+          6,
+          7,
+          10,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "final": {
+        "outcome": "defeated",
+        "released": 15,
+        "cumulativePlaced": 13,
+        "remainingReleasedBodies": 10,
+        "stars": 2,
+        "incidentCount": 1,
+        "failureReason": "large_collapse",
+        "peakMetres": 10.869247745181713,
+        "activeSeconds": 33.858700000002926,
+        "observedFps": 57.97623653595178,
+        "oldestSevenMaxHorizontalDrift": 26.58865451812744,
+        "wholeTowerMaxHorizontalDrift": 269.19191455841064,
+        "lostIDs": [
+          10,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "oldestSevenDriftReductionFraction": 0.23180175641545064
+    }
+  ],
+  "impactComparisons": [
+    {
+      "case": "impact_depth0_fps60",
+      "before": {
+        "depth": 0,
+        "requestedFps": 60,
+        "observedFps": 56.07756149822582,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.1556529998779297,
+          "maxAngleChange": 1.111910827535294,
+          "maxBaseSpeed": 0.6143096089363098,
+          "contacted": true
+        },
+        "finalHorizontalDrift": 0.1289987564086914,
+        "finalAngleChange": 0.09778077471449098,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.5995999999940397,
+        "sampledLatencyMaximumInterval": 0.18589999999105933,
+        "allBodiesSleepingAtEnd": true
+      },
+      "final": {
+        "depth": 0,
+        "requestedFps": 60,
+        "observedFps": 58.46789241912133,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.2063980102539062,
+          "maxAngleChange": 1.0089130689553825,
+          "maxBaseSpeed": 0.6143096089363098,
+          "contacted": true,
+          "firstContactTime": 0.4135,
+          "firstStableWindowEnd": 1.81670000000298,
+          "finalHorizontalDrift": 0.1289987564086914,
+          "finalAngleChange": 0.09778077471449098,
+          "tailRmsOmega": 0,
+          "tailMaxOmega": 0,
+          "tailMaxHorizontalSpeed": 0,
+          "timeToFinalQuiet": 0.7390000000000001
+        },
+        "finalHorizontalDrift": 0.1289987564086914,
+        "finalAngleChange": 0.09778077471449098,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.7827999999970197,
+        "sampledLatencyMaximumInterval": 0.12290000000596013,
+        "allBodiesSleepingAtEnd": true
+      }
+    },
+    {
+      "case": "impact_depth300_fps60",
+      "before": {
+        "depth": 300,
+        "requestedFps": 60,
+        "observedFps": 58.25822835242423,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.2088336944580078,
+          "maxAngleChange": 1.1146311638156623,
+          "maxBaseSpeed": 0.6146119236946106,
+          "contacted": true
+        },
+        "finalHorizontalDrift": 0.07035862654447556,
+        "finalAngleChange": 0.08906886842813933,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.7825,
+        "sampledLatencyMaximumInterval": 0.1235,
+        "allBodiesSleepingAtEnd": true
+      },
+      "final": {
+        "depth": 300,
+        "requestedFps": 60,
+        "observedFps": 57.898677314699256,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.202876091003418,
+          "maxAngleChange": 1.1141129232123879,
+          "maxBaseSpeed": 0.6146119236946106,
+          "contacted": true,
+          "firstContactTime": 0.41420000000298024,
+          "firstStableWindowEnd": 1.7933999999910593,
+          "finalHorizontalDrift": 0.0729781836271286,
+          "finalAngleChange": 0.09154331789838777,
+          "tailRmsOmega": 0,
+          "tailMaxOmega": 0,
+          "tailMaxHorizontalSpeed": 0,
+          "timeToFinalQuiet": 0.7250000000000001
+        },
+        "finalHorizontalDrift": 0.0729781836271286,
+        "finalAngleChange": 0.09154331789838777,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.5877999999970196,
+        "sampledLatencyMaximumInterval": 0.11999999999999994,
+        "allBodiesSleepingAtEnd": true
+      }
+    },
+    {
+      "case": "impact_depth600_fps60",
+      "before": {
+        "depth": 600,
+        "requestedFps": 60,
+        "observedFps": 58.05406752211284,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.2063980102539062,
+          "maxAngleChange": 1.111910827535294,
+          "maxBaseSpeed": 0.6143096089363098,
+          "contacted": true
+        },
+        "finalHorizontalDrift": 0.1289987564086914,
+        "finalAngleChange": 0.09778077471449098,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.5667999999970199,
+        "sampledLatencyMaximumInterval": 0.12060000000894072,
+        "allBodiesSleepingAtEnd": true
+      },
+      "final": {
+        "depth": 600,
+        "requestedFps": 60,
+        "observedFps": 58.222344386329695,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.1338109970092773,
+          "maxAngleChange": 1.3255896671811458,
+          "maxBaseSpeed": 0.5465049147605896,
+          "contacted": true,
+          "firstContactTime": 0.40179999999701976,
+          "firstStableWindowEnd": 1.6826000000089416,
+          "finalHorizontalDrift": 0.08665943145751953,
+          "finalAngleChange": 0.08471761104001851,
+          "tailRmsOmega": 0,
+          "tailMaxOmega": 0,
+          "tailMaxHorizontalSpeed": 0,
+          "timeToFinalQuiet": 0.6297000000029805
+        },
+        "finalHorizontalDrift": 0.08665943145751953,
+        "finalAngleChange": 0.08471761104001851,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.6714000000059608,
+        "sampledLatencyMaximumInterval": 0.11820000000298059,
+        "allBodiesSleepingAtEnd": true
+      }
+    },
+    {
+      "case": "impact_depth600_fps30",
+      "before": {
+        "depth": 600,
+        "requestedFps": 30,
+        "observedFps": 30.117483074517,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.1580324172973633,
+          "maxAngleChange": 1.1146311638156623,
+          "maxBaseSpeed": 0.6146119236946106,
+          "contacted": true
+        },
+        "finalHorizontalDrift": 0.07035862654447556,
+        "finalAngleChange": 0.08906886842813933,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.66170000000298,
+        "sampledLatencyMaximumInterval": 0.1385,
+        "allBodiesSleepingAtEnd": true
+      },
+      "final": {
+        "depth": 600,
+        "requestedFps": 30,
+        "observedFps": 29.963103286058317,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.105025291442871,
+          "maxAngleChange": 1.0060589036559628,
+          "maxBaseSpeed": 0.6146116852760315,
+          "contacted": true,
+          "firstContactTime": 0.402,
+          "firstStableWindowEnd": 1.6908999999910594,
+          "finalHorizontalDrift": 0.07979515194892883,
+          "finalAngleChange": 0.03102954939936753,
+          "tailRmsOmega": 0,
+          "tailMaxOmega": 0,
+          "tailMaxHorizontalSpeed": 0,
+          "timeToFinalQuiet": 0.6258999999910594
+        },
+        "finalHorizontalDrift": 0.07979515194892883,
+        "finalAngleChange": 0.03102954939936753,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.6040999999940395,
+        "sampledLatencyMaximumInterval": 0.14320000000298028,
+        "allBodiesSleepingAtEnd": true
+      }
+    },
+    {
+      "case": "impact_depth600_fps120",
+      "before": {
+        "depth": 600,
+        "requestedFps": 120,
+        "observedFps": 74.95877267497295,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.2063980102539062,
+          "maxAngleChange": 1.0089130689553825,
+          "maxBaseSpeed": 0.5465050339698792,
+          "contacted": true
+        },
+        "finalHorizontalDrift": 0.1289987564086914,
+        "finalAngleChange": 0.09778077471449098,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.64320000000298,
+        "sampledLatencyMaximumInterval": 0.18709999999403953,
+        "allBodiesSleepingAtEnd": true
+      },
+      "final": {
+        "depth": 600,
+        "requestedFps": 120,
+        "observedFps": 80.23395320941789,
+        "observedMetrics": {
+          "maxHorizontalDrift": 1.163351058959961,
+          "maxAngleChange": 1.017969899794819,
+          "maxBaseSpeed": 0.5465049147605896,
+          "contacted": true,
+          "firstContactTime": 0.40029999999701976,
+          "firstStableWindowEnd": 1.6927999999970187,
+          "finalHorizontalDrift": 0.08294486999511719,
+          "finalAngleChange": 0.08702642842289343,
+          "tailRmsOmega": 0,
+          "tailMaxOmega": 0,
+          "tailMaxHorizontalSpeed": 0,
+          "timeToFinalQuiet": 0.6397000000029796
+        },
+        "finalHorizontalDrift": 0.08294486999511719,
+        "finalAngleChange": 0.08702642842289343,
+        "sampledLastSecondRmsOmega": 0.0,
+        "sampledFinalQuietLatency": 0.6503999999910588,
+        "sampledLatencyMaximumInterval": 0.12120000000298026,
+        "allBodiesSleepingAtEnd": true
+      }
+    }
+  ],
+  "finalChecks": [
+    {
+      "id": "sleeping_supported_body_not_woken",
+      "pass": true
+    },
+    {
+      "id": "removed_support_still_free_falls",
+      "pass": true
+    },
+    {
+      "id": "severe_near_overhang_not_saved",
+      "pass": true
+    },
+    {
+      "id": "awake_small_sway_returns_to_sleep",
+      "pass": true
+    },
+    {
+      "id": "real_supported_unplaced_body_receives_help",
+      "pass": true
+    },
+    {
+      "id": "same_depth_independent_of_viewport",
+      "pass": true,
+      "values": [
+        36.932476611663986,
+        36.9349226028285,
+        36.9349227553893
+      ]
+    },
+    {
+      "id": "supported_reference_survives_high_angular_speed",
+      "pass": true
+    },
+    {
+      "id": "rejected_horizontal_impulse_path_absent",
+      "pass": true,
+      "horizontalRate": 0
+    },
+    {
+      "id": "impact_depth0_fps60_actual_collision",
+      "pass": true
+    },
+    {
+      "id": "impact_depth300_fps60_actual_collision",
+      "pass": true
+    },
+    {
+      "id": "impact_depth600_fps60_actual_collision",
+      "pass": true
+    },
+    {
+      "id": "impact_depth600_fps30_actual_collision",
+      "pass": true
+    },
+    {
+      "id": "impact_depth600_fps120_actual_collision",
+      "pass": true
+    },
+    {
+      "id": "controller_center14_production_gates_unchanged",
+      "pass": true
+    },
+    {
+      "id": "controller_alternating14_production_gates_unchanged",
+      "pass": true
+    },
+    {
+      "id": "controller_early_offset14_production_gates_unchanged",
+      "pass": true
+    },
+    {
+      "id": "controller_pressure28_production_gates_unchanged",
+      "pass": true
+    },
+    {
+      "id": "build_unchanged_during_run",
+      "pass": true
+    }
+  ],
+  "finalEngineErrors": [],
+  "limitations": [
+    "Different natural rendering cadence can change contact and release timing; predefined x choices and sequence are matched, not exact native trajectories.",
+    "Historical before did not log per-frame quiet timing. The sampled quiet latency is independently derived from the same approximately0.1-second sample format for both arms; final observedMetrics also contains higher-resolution direct-event timing.",
+    "Requested120fps observed about75 before and80 final; no actual120fps or current-version WeChat device acceptance is claimed.",
+    "No extra point-position search or parameter optimization was used to find passing long-tower examples.",
+    "Human surprise, broadly forgiving off-center placement, and all irregular geometry combinations remain unproven."
+  ]
+}

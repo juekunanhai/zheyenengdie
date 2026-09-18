@@ -1,0 +1,34 @@
+{
+  "status": "bounded_revision_ready_for_device_review",
+  "checks": {
+    "web_matches_test": true,
+    "both_builds_same_runtime_inputs": true,
+    "current_inputs_match_record": true,
+    "test_build_unchanged": true,
+    "safety_assertions": 18,
+    "all_safety_assertions_pass": true,
+    "runtime_errors": []
+  },
+  "retained_runtime_inputs_verified_per_build": 314,
+  "limitations": [
+    "Fixed pressure trial still fails after release 15; no long-run gain established.",
+    "Surprise and new mobile feel have not been approved.",
+    "Requested 120fps produced about80fps; real120Hz not covered.",
+    "No WeChat upload or publication performed."
+  ],
+  "files_changed": [
+    " M README.md",
+    " M assets/batch1/game-controller.ts",
+    " M assets/batch1/tower-world.ts",
+    " M preparation/docs/BATCH_PLAN.md",
+    " M preparation/docs/READINESS.md",
+    "?? assets/batch1/contact-assistance.ts",
+    "?? assets/batch1/contact-assistance.ts.meta",
+    "?? preparation/docs/DEPTH_ASSIST_R1.md",
+    "?? preparation/review/depth-assist.html",
+    "?? preparation/review/evidence/depth-assist-r1/",
+    "?? preparation/tools/check_depth_assist.cjs",
+    "?? preparation/tools/check_depth_contact_regression.cjs",
+    "?? preparation/tools/record_depth_build.py"
+  ]
+}

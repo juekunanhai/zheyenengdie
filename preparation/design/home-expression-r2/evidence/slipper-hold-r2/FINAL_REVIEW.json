@@ -1,0 +1,28 @@
+{
+  "status": "independent_candidate_ready_for_user_review",
+  "revision": "slipper-hold-r2",
+  "productionIntegrated": false,
+  "previewInputs": {
+    "sample.js": "d7359281917bf6cf4483b6a481d39495a9739532ef7504e4e92a8c4477ff5946",
+    "sequence.json": "f8780b693af68664474a166184c3ed1c7323c7e89ee46df94e39f1fc4e17f273",
+    "index.html": "4693448cb60e3d33c9d919f49e484028c001628c1249f0274b34d470111a5dcf",
+    "sample.css": "ad001b302671bc39e1b41d643d0a801213eb39a79fb6e2199f54d38bb08e3958",
+    "slipper/hold-r2/face/manifest.json": "703b2b7014ac130e52be320fbadfa947f47567492d478202eeda7c0877323281",
+    "slipper/hold-r2/hands/manifest.json": "c35a4d5c395224cacc685436c6fcb66ba1141993bce0fb88fa9e43e3eebb7752",
+    "cloud/manifest.json": "6a5fef9a361dda00a88f49ee7f6ecb4095537cf12628447e3c960ec3e662c584"
+  },
+  "activeCaptureAssetsMatchCurrent": true,
+  "activeFrameAndCloudFiles": 129,
+  "technicalChecksPassed": 14,
+  "browserErrors": [],
+  "productionInputsUnchanged": 338,
+  "videos": {
+    "sample-normal-raw.webm": "2605f453ebfc67bc3f1c140fb37749a3d2079f7779060143f207970440f2ed37",
+    "sample-half-speed-raw.webm": "a1ef5e5e80882fbd24a71443a22f94c37e6b1468649beada9c6ca00baf3a003b"
+  },
+  "visualReview": "375px phone view, close grip/face views, actual normal video frames across 8.2/16.4s boundaries and mouth motion at 2/8/16/24s reviewed independently. Short hands stay on head, eyes remain closed and small mouth keeps trembling. No new blocking artifact found.",
+  "limits": [
+    "Independent sample only; no production integration, build, device verification or Git push.",
+    "Self-review does not imply user approval."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "actualExitCode": 0,
+  "command": "node <Creator3.8.8>/typescript/bin/tsc --noEmit --skipLibCheck -p tsconfig.json",
+  "scope": "Application TypeScript check; skipLibCheck excludes engine declaration-file diagnostics, not application source.",
+  "sourceHashes": {
+    "assets/batch1/tower-world.ts": "605a5b9ba84f2b62430e4e452399c2d4300a08a79c20e29e1dd493520064363d",
+    "assets/batch1/contact-assistance.ts": "83e328c0cdc56d5be724d2f4016e1853c6bdbac6e33a9713a44c73076dad7b2c",
+    "assets/batch1/game-controller.ts": "d9b054827cd62a1f17baeae9df5e280088fb8e980f1ccd1c90342a7da33b2b11"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "sourceSha256": "f7976c4e455bba8737bc052f3aa023d3a2d1454c4c0b01d9df70cac85ed4d80f",
+  "cloudIsExactApprovedSource": true,
+  "allPixelsAtOrBelow426Unchanged": true,
+  "preservedPixelsAtOrBelow426": 1172486,
+  "opaqueCityPixelsInsideUpperBandUnchanged": true,
+  "foregroundRgbAlwaysOriginal": true,
+  "noMovingMaskAlphaBelow426": true,
+  "cloudLayerCount": 4,
+  "note": "Original complete cloud sprite replaces edge-truncated source clouds. No cutout matte or hard patch polygon is used in final manifest."
+}

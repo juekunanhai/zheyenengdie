@@ -1,0 +1,1036 @@
+{
+  "status": "source-import-only-no-engine-build",
+  "frames": [
+    {
+      "file": "face/crate_01.png",
+      "source": "preparation/design/home-expression-r2/face/crate_01.png",
+      "uuid": "9bf9267c-3e7c-59d2-b820-07b747b53f17",
+      "sha256": "4e6cc55d6ecacc63081eaabbc4d472041807626ca7f8432d577559d1513b0dcd",
+      "bytes": 5607,
+      "rgbaBytes": 103008
+    },
+    {
+      "file": "face/crate_02.png",
+      "source": "preparation/design/home-expression-r2/face/crate_02.png",
+      "uuid": "1d6bb82e-c652-5a9b-9b7c-759e5f42b0ad",
+      "sha256": "b2463f3768aeb0ed3203ed99f00c7764f25905d854ed51c5faeebe538abb3310",
+      "bytes": 5621,
+      "rgbaBytes": 103008
+    },
+    {
+      "file": "face/duck_01.png",
+      "source": "preparation/design/home-expression-r2/face/duck_01.png",
+      "uuid": "f7047cc8-876e-58d0-bab3-64149df3a5e1",
+      "sha256": "8041502216a9fade7e7eab12285a378971cee43de70cab1aaf0fb0fa84db14d5",
+      "bytes": 4023,
+      "rgbaBytes": 78888
+    },
+    {
+      "file": "face/duck_02.png",
+      "source": "preparation/design/home-expression-r2/face/duck_02.png",
+      "uuid": "878d900d-46cf-5a59-9439-4324f7f83eab",
+      "sha256": "3b5825e599fa8871e950056804211577e4a58329409ff2f4f919e3d7e2271c72",
+      "bytes": 3947,
+      "rgbaBytes": 78888
+    },
+    {
+      "file": "face/duck_03.png",
+      "source": "preparation/design/home-expression-r2/face/duck_03.png",
+      "uuid": "e986866d-d831-50f1-80b0-98e37eccdf1f",
+      "sha256": "4259f408952602bc7c7ae668bcd16b552cf6eb2cd99d93e0d831b5c9b99eda19",
+      "bytes": 3687,
+      "rgbaBytes": 78888
+    },
+    {
+      "file": "face/duck_04.png",
+      "source": "preparation/design/home-expression-r2/face/duck_04.png",
+      "uuid": "c3ff6067-4bc4-5d84-931d-5b5e69d3ce97",
+      "sha256": "1fa46d9bdb37e64773aa0e6403743d2f830c6f4083884140486ecdaded5beccd",
+      "bytes": 3932,
+      "rgbaBytes": 78888
+    },
+    {
+      "file": "face/duck_05.png",
+      "source": "preparation/design/home-expression-r2/face/duck_05.png",
+      "uuid": "f70044e0-3c53-585c-8fd7-3922e59b9695",
+      "sha256": "40740d2c66c59369af71ee08becad56d2e510a5563ab7ed92e813c4099afa036",
+      "bytes": 3904,
+      "rgbaBytes": 78888
+    },
+    {
+      "file": "face/duck_06.png",
+      "source": "preparation/design/home-expression-r2/face/duck_06.png",
+      "uuid": "62e7d0ec-c47c-52cf-a186-6bf43db5b94f",
+      "sha256": "19b2a89bd26a7a498b86a004d498375d1557d478c3a393c9f8d98110c0d520ac",
+      "bytes": 3165,
+      "rgbaBytes": 78888
+    },
+    {
+      "file": "hand/frames/frame_000.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_000.png",
+      "uuid": "e11c52f7-b8a7-57b0-8205-8807bc86d7ec",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_001.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_001.png",
+      "uuid": "ff7345b5-11c9-5e08-97a3-bcd518b3e2a0",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_002.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_002.png",
+      "uuid": "50bce8c2-1609-5700-8cc0-47ec963eab41",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_003.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_003.png",
+      "uuid": "a261da57-caf2-5f6c-92cd-41c7ead72600",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_004.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_004.png",
+      "uuid": "7134a4da-6d46-5d73-aac9-a8578a5ab9ef",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_005.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_005.png",
+      "uuid": "4b20eda8-6e5c-5fd5-8d0b-b5a39f5ca8ba",
+      "sha256": "607b2e79f6ae740d2fc737aebcaa8a95713c8225dc6a05aeca5d90e57d79133b",
+      "bytes": 2718,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_006.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_006.png",
+      "uuid": "3a5783b5-1996-59d4-8c3a-1e19778353cc",
+      "sha256": "34f8418ce48115bbda9db00a35b22b83b4729eccce984c41192a5a9d02302c25",
+      "bytes": 9600,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_007.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_007.png",
+      "uuid": "a8b1c480-b334-5a8b-b647-c529fb2d2d42",
+      "sha256": "36bf27d6fc75135bf42df04c947b4fb6d030f24b2de3cc267ca5f89a96885ecb",
+      "bytes": 13277,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_008.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_008.png",
+      "uuid": "3efca0fd-e216-56a3-b849-087a6c392641",
+      "sha256": "4017df50d921083f235be0728fd756134f29371314192cd62d9bc0f38885abfe",
+      "bytes": 13946,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_009.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_009.png",
+      "uuid": "4867ab91-015b-574d-a0cb-c6c03f923ab6",
+      "sha256": "1220fcf96f20de293d98753197c81bd416700fb1f706e52e0afbbed8ef0c0bde",
+      "bytes": 15455,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_010.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_010.png",
+      "uuid": "02ef5b6a-c405-5ffc-8865-b3a4c10a8825",
+      "sha256": "dda9961cbc6a8a966385d18975614b4cf6f64333eec945106f9b58b1e00cb62f",
+      "bytes": 17486,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_011.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_011.png",
+      "uuid": "9508a6f2-ec79-5959-a82d-bdeda0576932",
+      "sha256": "98235532b7d254c3493c275e71fa16fd1e0b3c0bb971335f04706ff309e96b8c",
+      "bytes": 19416,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_012.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_012.png",
+      "uuid": "a9cd3f6c-0bbe-50a7-b52a-9d7eea37b0cd",
+      "sha256": "a7584a2d65b5e2a1b57fe42dccb54d1bd6fc0c1948df73910106f6d13908be76",
+      "bytes": 20979,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_013.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_013.png",
+      "uuid": "71847f44-b62e-5916-8ca4-edbcab3e0f8e",
+      "sha256": "baee2e38a5d0d22d680932409db71897c1c58f3d63f14bb0299e57b3aab51987",
+      "bytes": 21573,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_014.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_014.png",
+      "uuid": "f0796b83-ebb5-5437-9348-edf4a74b38cc",
+      "sha256": "9e18dd9d98b996799b388bc9113ab3c55881cb8b6882ff1096c577c1bcbd11e1",
+      "bytes": 21523,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_015.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_015.png",
+      "uuid": "63af7b5c-5f9a-5784-9b2b-8a010213eaed",
+      "sha256": "a542bd402d2d76d4362ae9ae375b020a9b75b5cc93bd4a3bed29e18376eb6b92",
+      "bytes": 22085,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_016.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_016.png",
+      "uuid": "0e129908-67b0-5274-b30e-5d3dddda4416",
+      "sha256": "1c3a20ec5f21a26fb6bc88a5f4dba984c322ce6d18bf017e53432e7494092bf0",
+      "bytes": 23018,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_017.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_017.png",
+      "uuid": "f56f707a-e8eb-56ce-86de-028c20092d70",
+      "sha256": "f38fd2753cec92f844760b5a79fe0119ed27058a798e242298f3f0129807ce10",
+      "bytes": 24032,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_018.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_018.png",
+      "uuid": "8aef8532-d482-5c57-ab30-47107115c85d",
+      "sha256": "7cfac42e1c3f52f772628f89529ea80da68bc330d40d5d53e3101c9094a4e82e",
+      "bytes": 24846,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_019.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_019.png",
+      "uuid": "0ac230cd-b825-5902-b07c-39bb955ea4df",
+      "sha256": "ef5e57c96abc5a450e9bfc6d9cd337e6bb15a724745e5db0713021e24d2cc21f",
+      "bytes": 25397,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_020.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_020.png",
+      "uuid": "ea920bae-fbc2-531d-8127-ef0127c25eb6",
+      "sha256": "9ef5eb6eb6b618019b7ad2ccc0f66f3281aa50cb3bc1f14fa8ac875edb5dd968",
+      "bytes": 25481,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_021.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_021.png",
+      "uuid": "9d0cbe61-3a3d-5239-a879-0ecf811c2d09",
+      "sha256": "207de98ef056d44056173b3771b867804a549a544db2e4a13910abac93fbb907",
+      "bytes": 25378,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_022.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_022.png",
+      "uuid": "c5a06177-0513-586b-a48e-fcacbe80b051",
+      "sha256": "443f27d767ed6fb456d89786da0b3feb40c9e3d4a832076ecf9b19620292f37b",
+      "bytes": 25163,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_023.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_023.png",
+      "uuid": "d8500166-0488-514a-8531-128c9289ea61",
+      "sha256": "9554c0ae01e4769d3e8b07441105f7fe9458efa139f4843b17f0d29b0e6c9f94",
+      "bytes": 25072,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_024.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_024.png",
+      "uuid": "8de1630f-dc06-531b-b13c-563e3da1aeb0",
+      "sha256": "b2e742f5bc004aba6b9f85c5fb93a24e6ad5c7339b973c1bc0a0991548aa4003",
+      "bytes": 25111,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_025.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_025.png",
+      "uuid": "0fe053bb-189f-5437-abb7-f666e4e01fdd",
+      "sha256": "e925103b248c267034a8428891dae2476e4719a2a5f1537d0f95d3d579d9c33c",
+      "bytes": 24808,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_026.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_026.png",
+      "uuid": "647438ca-e07e-5ed9-85ee-0df682d3b34a",
+      "sha256": "aff3880749cca0f7572d535959f9a6cc806768cf7f018bdf94e19521a9382ff7",
+      "bytes": 24529,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_027.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_027.png",
+      "uuid": "a07e4206-62a3-51e3-a710-8b41b4ff518f",
+      "sha256": "0fc0db0a8db58db7a1f50f16f48a95fb29d3e13386ce87ebd904b7af37fa0227",
+      "bytes": 24504,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_028.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_028.png",
+      "uuid": "ffc25619-c44d-5490-8e6f-fd810bf91e54",
+      "sha256": "77d16d2be08d20f141ff5539f06b00e8435bab2b9289a78f9f07e547fac1c2ab",
+      "bytes": 24533,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_029.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_029.png",
+      "uuid": "fecad3af-33ee-5557-abc9-b0c901cd2465",
+      "sha256": "77d16d2be08d20f141ff5539f06b00e8435bab2b9289a78f9f07e547fac1c2ab",
+      "bytes": 24533,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_030.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_030.png",
+      "uuid": "ff0b018a-d8ec-5cfb-af08-d56bf45d848e",
+      "sha256": "77d16d2be08d20f141ff5539f06b00e8435bab2b9289a78f9f07e547fac1c2ab",
+      "bytes": 24533,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_031.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_031.png",
+      "uuid": "e8d87ba4-7ce9-5b36-a496-2b1a9d178942",
+      "sha256": "77d1d1a1a19b0ee52f2f1819b5646425cdbfab3be979c834ae79b992ff48acde",
+      "bytes": 24593,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_032.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_032.png",
+      "uuid": "47f71d41-7a74-57bb-8575-12e563038a5e",
+      "sha256": "05fdc1eb8c1a3cacef598fe6e926b38b10bc6ed6e70eb61c4b4c8b6e9a7cd532",
+      "bytes": 24897,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_033.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_033.png",
+      "uuid": "5aac67dc-5952-5ef2-b20f-e0484bcead98",
+      "sha256": "07c53fcd3a44e23fb8d766501e6dda99e0b19bd37c7f82f82f6785144cb3e441",
+      "bytes": 25275,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_034.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_034.png",
+      "uuid": "6af83f46-037d-5beb-9d5a-27dfcdaa319a",
+      "sha256": "cc907fda2481afa8f2ca9179aed3c94dc55ef5534193109464bf8f0d079c442d",
+      "bytes": 25417,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_035.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_035.png",
+      "uuid": "c9151c95-1b54-5eda-8f7a-895f92c809e5",
+      "sha256": "82351af8b4b5b68b2689243b91515f1b4667a4102c5c6a1f7d71595c8180b931",
+      "bytes": 23762,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_036.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_036.png",
+      "uuid": "d2369eae-d6c3-58e1-ae7f-900f8d4751ee",
+      "sha256": "3ccb0ebfcada37babeb8633528e7f38bececaa484bbc14fcbb4cc176e1d666ab",
+      "bytes": 21062,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_037.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_037.png",
+      "uuid": "c477b885-af55-5690-ac1c-afc06f7244d6",
+      "sha256": "6f330a64498ee3cfab28697457c212adf13180490604d917ff077b80ac17a2e5",
+      "bytes": 16719,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_038.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_038.png",
+      "uuid": "eb1bcf4f-712f-5d92-9a53-18f391b316b2",
+      "sha256": "4cb1073508c557326fb40a266cc347816dd1ff92daa6204d63a9fa0ffcb26386",
+      "bytes": 12764,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_039.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_039.png",
+      "uuid": "66c1e4ac-9db2-5bc4-a6aa-aa8c82266951",
+      "sha256": "b0e5792aff644b1094a682e0a6e40bf5fc7ca7a6ff176f3d06131844ebef54c2",
+      "bytes": 11132,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_040.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_040.png",
+      "uuid": "45a89658-653b-5cb2-92fa-c20f66a37f5e",
+      "sha256": "b6bda3dc019e74037efa71d0734df8c9fea4d0b20f31188dd1652633b3bf2c3e",
+      "bytes": 9591,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_041.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_041.png",
+      "uuid": "ae258675-5a5d-5bc5-b672-9a13a10adefc",
+      "sha256": "b85961645eacc337ce79de849a626a4d5aefff9da0649e8cbc2adc0f2f9cfb24",
+      "bytes": 6035,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_042.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_042.png",
+      "uuid": "ac83df32-478b-5c80-bd0b-7ec547e1adc3",
+      "sha256": "09f01563478eb7ab70a70568f4c566443099bf64961c910160e3b3e34640dbb0",
+      "bytes": 1796,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_043.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_043.png",
+      "uuid": "73b678fe-c72d-5fb8-8b19-5d6508a63c43",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_044.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_044.png",
+      "uuid": "df69d8bb-eb00-508b-885d-2c8f4ed9bf91",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_045.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_045.png",
+      "uuid": "339b9390-8301-5bee-a024-3751d0fc5a10",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_046.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_046.png",
+      "uuid": "afe31db7-7423-5096-ad89-d81e95077f8a",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_047.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_047.png",
+      "uuid": "01b389a7-22b7-5b4f-81db-85bc9f12fbfa",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "hand/frames/frame_048.png",
+      "source": "preparation/design/home-expression-r2/hand/frames/frame_048.png",
+      "uuid": "19f58f6b-d30b-5237-ad4a-0b1b815f8158",
+      "sha256": "406526d4871ef8cbd125f7195f7ba6ad40d31f4c0e77f67133e4f9e958d0d78a",
+      "bytes": 1269,
+      "rgbaBytes": 496320
+    },
+    {
+      "file": "slipper/hold-r2/face/close_00.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/close_00.png",
+      "uuid": "b4927be2-4b7d-56fe-86a4-ce20f8d7f93d",
+      "sha256": "2a2e3e99cdde27906bbdb402fd8b021927ee3f22e933c50abc23ef2fb72ce296",
+      "bytes": 121,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/close_01.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/close_01.png",
+      "uuid": "22ed563d-558f-5b54-a39f-216eb8934c5c",
+      "sha256": "fcf2740f9882f806ccabfceb4b7ed7ffac5575a081e099ff7862fdeaa67e21b6",
+      "bytes": 18207,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/close_02.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/close_02.png",
+      "uuid": "ad85709b-d623-51dc-a89f-e613911f7b19",
+      "sha256": "ad9b0dcea2a75cf13f70a3152d476ada3d2f18aa2f1d1c573816897769755e93",
+      "bytes": 17239,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/close_03.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/close_03.png",
+      "uuid": "f0f0c40e-f676-5fc0-b868-744c81ebcd18",
+      "sha256": "bcd3b9d182934df3316caba1d821628984ac9a079f39f354b1088e467d52e22d",
+      "bytes": 15051,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/close_04.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/close_04.png",
+      "uuid": "48bbf462-1396-51c9-ad26-592f428c705b",
+      "sha256": "d053c2abcd8113bab88f563037a7737411d9ff1a1e9b5e7eb734deb23206127b",
+      "bytes": 15597,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_00.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_00.png",
+      "uuid": "550e9766-839e-5f26-a27b-072828859d2d",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83",
+      "bytes": 15725,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_01.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_01.png",
+      "uuid": "8718bb75-c351-5a70-bfe8-69ec7ef18b06",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1",
+      "bytes": 15728,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_02.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_02.png",
+      "uuid": "47134eb8-b893-5ea8-a01b-47fa4d495cd8",
+      "sha256": "29f618ba7c15456c1d23a3a034fd84d0e18cafe5d6d0fc7399fe6aa95f8853cb",
+      "bytes": 15759,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_03.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_03.png",
+      "uuid": "c6aceb04-f2c9-5467-aa4a-d5edc9bf122f",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1",
+      "bytes": 15728,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_04.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_04.png",
+      "uuid": "1921a13a-8c5f-5702-af04-aa12d8ba4335",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83",
+      "bytes": 15725,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_05.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_05.png",
+      "uuid": "be1ed829-415d-50a2-8c75-d396f7949677",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75",
+      "bytes": 15758,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_06.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_06.png",
+      "uuid": "ea1acb3d-694b-5b07-a4a8-4defec0e4eba",
+      "sha256": "4997000593fdc8c4b3e3fb690cba6fad5d960e785f1e1320a4836a9f2f511ad0",
+      "bytes": 15734,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_07.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_07.png",
+      "uuid": "8e0893c1-10f3-5152-907c-0044bc13fb7f",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75",
+      "bytes": 15758,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_08.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_08.png",
+      "uuid": "e1d602ee-1b13-5f56-875a-22651281c713",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83",
+      "bytes": 15725,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_09.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_09.png",
+      "uuid": "5c299e06-801a-5a44-91ea-e60b4e7a0711",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1",
+      "bytes": 15728,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_10.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_10.png",
+      "uuid": "337a853a-b633-5de5-935c-db89647262b3",
+      "sha256": "29f618ba7c15456c1d23a3a034fd84d0e18cafe5d6d0fc7399fe6aa95f8853cb",
+      "bytes": 15759,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_11.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_11.png",
+      "uuid": "7f0f545e-27ae-5d06-b461-d3ce68119f86",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1",
+      "bytes": 15728,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_12.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_12.png",
+      "uuid": "b928e857-1286-5961-8cf1-f133ddb00b5c",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83",
+      "bytes": 15725,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_13.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_13.png",
+      "uuid": "59a53594-94a2-579e-b913-85cb5a89e498",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75",
+      "bytes": 15758,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_14.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_14.png",
+      "uuid": "d19ac02c-1040-5bf1-a82c-0b182bc4fe5b",
+      "sha256": "4997000593fdc8c4b3e3fb690cba6fad5d960e785f1e1320a4836a9f2f511ad0",
+      "bytes": 15734,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_15.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_15.png",
+      "uuid": "d3c246c4-f48e-53ed-aaaa-30831d893c54",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75",
+      "bytes": 15758,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_16.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_16.png",
+      "uuid": "2ce0c198-82be-52a8-ba9a-9348d7420e2b",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83",
+      "bytes": 15725,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_17.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_17.png",
+      "uuid": "a590bca4-2910-5d3c-89a1-b02dd14570eb",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1",
+      "bytes": 15728,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_18.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_18.png",
+      "uuid": "f2b8290a-4af6-57c1-9905-0678cca925fe",
+      "sha256": "29f618ba7c15456c1d23a3a034fd84d0e18cafe5d6d0fc7399fe6aa95f8853cb",
+      "bytes": 15759,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_19.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_19.png",
+      "uuid": "10d99bbf-696d-5d1c-a609-c02ed7e6cab0",
+      "sha256": "af63e0b96decc914beaa8d83acca37b4f0b7c8ac0cc5cd6fca27ae5882f10ff1",
+      "bytes": 15728,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_20.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_20.png",
+      "uuid": "5105d521-b6fa-5ef1-a303-87c810d638ce",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83",
+      "bytes": 15725,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_21.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_21.png",
+      "uuid": "cc33856d-f1c4-56de-a051-60ed8052881c",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75",
+      "bytes": 15758,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_22.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_22.png",
+      "uuid": "5de2a63a-3a4a-595d-adfb-e50ed45b95a4",
+      "sha256": "4997000593fdc8c4b3e3fb690cba6fad5d960e785f1e1320a4836a9f2f511ad0",
+      "bytes": 15734,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_23.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_23.png",
+      "uuid": "60f66b7c-44c4-5e44-b479-fbb4d3227c05",
+      "sha256": "8fdfff19b8f95f784f26024e78bc07d2bba1f625e99294e4a2faae1e803a6b75",
+      "bytes": 15758,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/face/hold_24.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/face/hold_24.png",
+      "uuid": "d09594fd-ef29-5224-8eb3-f3209e20148b",
+      "sha256": "4b879be6015ca0d0056b112b9bea93b26e2c1728e1ded05c51c3f005a7b1dc83",
+      "bytes": 15725,
+      "rgbaBytes": 42560
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_000.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_000.png",
+      "uuid": "cd25d389-4b99-5948-b0c8-4f5e3bb5fdf7",
+      "sha256": "1b66113fafa7def6fdb8fe00fa7c370f8beb25d11274a1e88e4706df1b8fe941",
+      "bytes": 1153,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_001.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_001.png",
+      "uuid": "726b948e-c071-5ad4-94d7-d04f81faee96",
+      "sha256": "189577bdc4f6224b9b3fd460ab06cfdfaddc115dfd79f8f8aa6d8ff003d36f75",
+      "bytes": 12982,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_002.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_002.png",
+      "uuid": "b2c3e753-d2f9-557c-a847-a938d0004f7b",
+      "sha256": "37f247b26bcceb97a281e1ce4581a592acb5f375ba8a166dbf740af57def0218",
+      "bytes": 2411,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_003.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_003.png",
+      "uuid": "26fef906-b351-5da6-8faa-b227d5bedb67",
+      "sha256": "a6a70e6604ec516af46586ab04fe6e40e11164774ed894e3e4592544579336bf",
+      "bytes": 7775,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_004.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_004.png",
+      "uuid": "f0fdc294-b7c3-5ff0-87e0-dd18b45c0596",
+      "sha256": "13eee9bdd9a19d029313f5356ec0484204e795a9cf9e9e2ad125316dff0478bb",
+      "bytes": 14327,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_005.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_005.png",
+      "uuid": "21a13d77-c971-50c9-91b8-70a75db8bbf4",
+      "sha256": "d6d4618e170961af4da65de7da9ae2145f27011da1b728a267d1c3a1bd9281e9",
+      "bytes": 17486,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_006.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_006.png",
+      "uuid": "f1c8d8b2-6634-5b03-83a4-fc305482af36",
+      "sha256": "9312642217cb194ce1b23f624b183b9caac64655b31a2a750fb7e1cdac6e2655",
+      "bytes": 18770,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_007.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_007.png",
+      "uuid": "7d77c24e-5d85-51d9-880c-918ccc78b7ed",
+      "sha256": "1e0af5f5535e896678249a7d7c92d013ec613bace0a068b5a2be1e843146fb1c",
+      "bytes": 18919,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_008.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_008.png",
+      "uuid": "b5a6e8e1-03e1-5764-bc39-abd62405b911",
+      "sha256": "f515788f2877223284d34faf0770fc127512b599a0f830b13f227a1ff8d7cbaf",
+      "bytes": 19062,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_009.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_009.png",
+      "uuid": "b740e004-93b9-5fdb-8fdd-f2456119107f",
+      "sha256": "79892c92d5871e630cc864e5f146c87e9cd97c106ac46f0d33b743967cfae3c6",
+      "bytes": 19332,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_010.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_010.png",
+      "uuid": "9704ac4b-7759-5393-b35b-c0c755405977",
+      "sha256": "26abc9cb7cc81e0d0e1874bcb1dfe138fe46e585140d8f76ee6013e231f57f83",
+      "bytes": 19757,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_011.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_011.png",
+      "uuid": "33eb6851-fe3c-5c60-8387-8ad2c383125b",
+      "sha256": "a2ac59ef662d26be1a0296cf8357c0f8916d6c4e79586467226d251e7574f6ad",
+      "bytes": 20545,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_012.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_012.png",
+      "uuid": "66491351-e1a1-548f-84ee-f66f4728df35",
+      "sha256": "6fc6f1254716844706c3f7a8d432a087b69505511cd4ddc4603db7b20957f3ea",
+      "bytes": 21070,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_013.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_013.png",
+      "uuid": "f2a0e674-53bb-5067-af21-ff6d1ab227a8",
+      "sha256": "ce31835ee36931aba5bc9a5f1f1970c225508ba6e9e66678547191a3e82236cd",
+      "bytes": 21262,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_014.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_014.png",
+      "uuid": "7aff325e-f538-5edc-be21-5fbdf4b6ba08",
+      "sha256": "09b03a697981c2412427e7cd50711952324f1aa4b7459d70334e9d2bfd79cf3b",
+      "bytes": 21366,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_015.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_015.png",
+      "uuid": "a0f61c36-19fd-50d1-a327-f4e3531b90cf",
+      "sha256": "d09cecde22ab30850ac830f714101446a6d5ba456e8d5aa59978d17d2ba7c1ba",
+      "bytes": 21346,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_016.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_016.png",
+      "uuid": "e5541af9-8f11-522c-b096-48d5547574cd",
+      "sha256": "e677e41626ad22acb4ef426a3ba0e2f20c0c75b74a8aa383c083c3a434b4ae26",
+      "bytes": 21371,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_017.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_017.png",
+      "uuid": "352fbe2f-1845-56ea-a008-0a1c0186e27c",
+      "sha256": "1fd130a6b479c27ff42be72a6c217a50c2262bf05f8b7317221986a09900d081",
+      "bytes": 21230,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_018.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_018.png",
+      "uuid": "8487ed32-673f-59fe-a0ea-cf4e095d7a3c",
+      "sha256": "dd4fea9543f2b0fe25e03bd8b77835b589c65d168955eccc03d4aebc2213ac6b",
+      "bytes": 21255,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_019.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_019.png",
+      "uuid": "b8a1ce56-af62-516b-bceb-5c0a80619cc2",
+      "sha256": "17bd2312913b15f64ad68750bb3f891d3311abe69c6f323a94866f1f5154ffdf",
+      "bytes": 21178,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_020.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_020.png",
+      "uuid": "ee8b3256-2c74-5d13-8c2c-a3d2c255e196",
+      "sha256": "427c88edd06be8362d411b6f54383cb256f955cf9be6026f5cc719461bc85882",
+      "bytes": 21194,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_021.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_021.png",
+      "uuid": "09d485af-e423-5633-9eff-264b96bbf83f",
+      "sha256": "5a58381ff3db8b36f66712bf607cf03197397e5a1641f16e0050ea922e16b71d",
+      "bytes": 21208,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_022.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_022.png",
+      "uuid": "f2892e8d-a5b9-5c9b-9ad7-16f35ae34c24",
+      "sha256": "e4b1c66815f6d10d595e37341e5739f33065b5a3f98d59c49c27127219640322",
+      "bytes": 21115,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_023.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_023.png",
+      "uuid": "ecb0022d-cecc-58c6-8c3c-90a5a4ad8a1b",
+      "sha256": "813a76382b8f4324f1c468e7338c013e2a5376e8596b593d4291055d5e625780",
+      "bytes": 21080,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_024.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_024.png",
+      "uuid": "40c3491c-3a50-5680-840d-ab686234a6ae",
+      "sha256": "a777276d84f15f481fb02ad86af9f67592470c9b3ba4dcda558070062c1817bb",
+      "bytes": 21079,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_025.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_025.png",
+      "uuid": "e7f79969-b676-54ff-86a3-117f318eb239",
+      "sha256": "20dbdfbbe11976d271b79485fcbd26b1cdbf418491f14aa530f7cd7462e1c648",
+      "bytes": 21076,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_026.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_026.png",
+      "uuid": "1b2ad3c6-27bb-57aa-b44a-a78ece082bda",
+      "sha256": "e6db853be1e79d2c8611b396f0eec3ac06c386f81bfa1c0f106449e3164c877d",
+      "bytes": 21071,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_027.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_027.png",
+      "uuid": "c65b8d4f-8046-51a2-a562-5e3c9e525f34",
+      "sha256": "20dbdfbbe11976d271b79485fcbd26b1cdbf418491f14aa530f7cd7462e1c648",
+      "bytes": 21076,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_028.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_028.png",
+      "uuid": "8e9652ae-bada-5a33-b1d9-2fbee41edf0d",
+      "sha256": "a777276d84f15f481fb02ad86af9f67592470c9b3ba4dcda558070062c1817bb",
+      "bytes": 21079,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_029.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_029.png",
+      "uuid": "75943ced-2ae0-5fbe-98c9-08ba5c9cbf79",
+      "sha256": "813a76382b8f4324f1c468e7338c013e2a5376e8596b593d4291055d5e625780",
+      "bytes": 21080,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_030.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_030.png",
+      "uuid": "bc649b9e-7f4d-5222-afca-28ecae9c57f8",
+      "sha256": "e4b1c66815f6d10d595e37341e5739f33065b5a3f98d59c49c27127219640322",
+      "bytes": 21115,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_031.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_031.png",
+      "uuid": "5ff07c3e-2301-5c47-bcae-2d963dcc4cdb",
+      "sha256": "5a58381ff3db8b36f66712bf607cf03197397e5a1641f16e0050ea922e16b71d",
+      "bytes": 21208,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_032.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_032.png",
+      "uuid": "1bd1c39f-fa6c-525b-b23e-1f10b59ced55",
+      "sha256": "427c88edd06be8362d411b6f54383cb256f955cf9be6026f5cc719461bc85882",
+      "bytes": 21194,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_033.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_033.png",
+      "uuid": "86fae4b0-2a1f-5848-be80-eab9ae4b4907",
+      "sha256": "17bd2312913b15f64ad68750bb3f891d3311abe69c6f323a94866f1f5154ffdf",
+      "bytes": 21178,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_034.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_034.png",
+      "uuid": "7849d7c8-ba01-5819-b088-7d7e8d02d685",
+      "sha256": "dd4fea9543f2b0fe25e03bd8b77835b589c65d168955eccc03d4aebc2213ac6b",
+      "bytes": 21255,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_035.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_035.png",
+      "uuid": "fcc2be07-a2d1-5904-9722-172365aba064",
+      "sha256": "1fd130a6b479c27ff42be72a6c217a50c2262bf05f8b7317221986a09900d081",
+      "bytes": 21230,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_036.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_036.png",
+      "uuid": "60a59242-80f5-5255-9bd7-2ca246b23970",
+      "sha256": "e677e41626ad22acb4ef426a3ba0e2f20c0c75b74a8aa383c083c3a434b4ae26",
+      "bytes": 21371,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_037.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_037.png",
+      "uuid": "2b146d4d-7027-5ceb-b77d-8fb614076af9",
+      "sha256": "d09cecde22ab30850ac830f714101446a6d5ba456e8d5aa59978d17d2ba7c1ba",
+      "bytes": 21346,
+      "rgbaBytes": 380800
+    },
+    {
+      "file": "slipper/hold-r2/hands/frames/frame_038.png",
+      "source": "preparation/design/home-expression-r2/slipper/hold-r2/hands/frames/frame_038.png",
+      "uuid": "c1d311db-e389-5f2c-8e13-a0d3666a1257",
+      "sha256": "09b03a697981c2412427e7cd50711952324f1aa4b7459d70334e9d2bfd79cf3b",
+      "bytes": 21366,
+      "rgbaBytes": 380800
+    }
+  ],
+  "sky": [
+    {
+      "file": "cloud/background-no-near-clouds.png",
+      "source": "preparation/design/home-expression-r2/cloud/background-no-near-clouds.png",
+      "uuid": "7d510c82-5939-5068-87c3-8e9cbf728139",
+      "sha256": "a1ebc234ed6841b1234f99c9eb94304520435dba600100c6d33163fea9407a5f",
+      "bytes": 1557470,
+      "rgbaBytes": 6293408
+    },
+    {
+      "file": "cloud/city-foreground.png",
+      "source": "preparation/design/home-expression-r2/cloud/city-foreground.png",
+      "uuid": "91ba300d-a606-5d95-8887-b506b5370630",
+      "sha256": "1d2f6bfd66adbf226843d7273ebad7395f0a5a22f55400bc2d3363fe738f9e69",
+      "bytes": 1814414,
+      "rgbaBytes": 6293408
+    }
+  ],
+  "frameCount": 126,
+  "frameBytes": 2004487,
+  "frameRGBABytes": 41127024,
+  "allPNGBytes": 5376371,
+  "allPNGRGBABytes": 53713840
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-15",
+  "tool": "built-in image_gen.imagegen",
+  "user_authorization": "User permits generating missing finished art and local cleanup of generated/formal assets; image-reference upload permission already granted.",
+  "assets": [
+    {
+      "kind": "dust",
+      "reference": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_contact_dust.png",
+      "generated_original": "dust-generated.png",
+      "tool_source_file": "/Users/admin/.codex/generated_images/01a0a2f9-3aac-7172-a358-0b027ed8819d/exec-dbc3df32-51e4-4ea1-8605-286aa3c2d170.png",
+      "prompt": "Use case: stylized-concept. Production asset for a cheerful high-quality 2D stacking game. Reference image is ONLY a style guide: rounded fluffy blue-white toy puff with soft dimensional highlights. Generate ONE small clean landing dust puff, isolated and centered in a square canvas. Three to five rounded lobes, soft pearly white centers, subtle pale sky-blue shading, smooth polished 3D cartoon game texture. A gently squashed cloud silhouette slightly wider than tall. Modest and lightweight contact puff, not an explosion or smoke plume. Actual transparent background alpha, generous fully transparent margins on all four sides, complete uncut silhouette. NO checkerboard pattern, NO opaque backdrop, NO ground plane, NO text, no motion streaks, no stars, no orange or yellow ring, no neighboring fragments, no isolated noise dots. Clean antialiasing, subtle translucent edge, no strong outer glow. This is a final game sprite, not a mockup or sprite sheet."
+    },
+    {
+      "kind": "ring",
+      "reference": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_impact_ring.png",
+      "generated_original": "ring-generated.png",
+      "tool_source_file": "/Users/admin/.codex/generated_images/01a0a2f9-3aac-7172-a358-0b027ed8819d/exec-ee349ae5-6f17-4186-9e5c-723d8e0bf15b.png",
+      "prompt": "Use case: stylized-concept. Finished sprite for a playful polished stacking game. Input reference is only a style guide for the bright soft warm-white and buttery-gold elliptical contact ripple. Generate ONE clean subtle small elliptical landing ring viewed at a shallow angle, 2:1 horizontal silhouette. A delicate luminous warm-white elliptical rim with faint pale gold shading, transparent hollow center. Polished soft toy-game feel, thin elegant rim, modest local impact feedback. Actual transparent alpha background, complete uninterrupted ellipse with generous transparent margins, no objects in center, no cast shadow. NO upward spikes, NO radial streaks, NO flare points, NO starbursts, NO explosions, NO neighboring fragments, NO text, NO dust cloud, NO opaque colored disk. Keep it simple and lightweight, entirely isolated final production sprite, not a sprite sheet, no checkerboard."
+    }
+  ]
+}

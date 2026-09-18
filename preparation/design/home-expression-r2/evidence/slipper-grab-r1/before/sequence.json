@@ -1,0 +1,413 @@
+{
+  "status": "independent sample, not production integration",
+  "revision": "livelier-r1",
+  "duration": 6,
+  "layers": [
+    {
+      "name": "duck",
+      "start": 0.7,
+      "rect": [
+        334,
+        61,
+        173,
+        114
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null
+        },
+        {
+          "time": 0.01826,
+          "file": "face/duck_01.png"
+        },
+        {
+          "time": 0.03071,
+          "file": "face/duck_02.png"
+        },
+        {
+          "time": 0.04162,
+          "file": "face/duck_03.png"
+        },
+        {
+          "time": 0.05165,
+          "file": "face/duck_04.png"
+        },
+        {
+          "time": 0.06105,
+          "file": "face/duck_05.png"
+        },
+        {
+          "time": 0.07,
+          "file": "face/duck_06.png"
+        },
+        {
+          "time": 0.105,
+          "file": "face/duck_06.png"
+        },
+        {
+          "time": 0.125,
+          "file": "face/duck_05.png"
+        },
+        {
+          "time": 0.145,
+          "file": "face/duck_04.png"
+        },
+        {
+          "time": 0.165,
+          "file": "face/duck_03.png"
+        },
+        {
+          "time": 0.185,
+          "file": "face/duck_02.png"
+        },
+        {
+          "time": 0.205,
+          "file": "face/duck_01.png"
+        },
+        {
+          "time": 0.225,
+          "file": null
+        }
+      ]
+    },
+    {
+      "name": "duck",
+      "start": 1.12,
+      "rect": [
+        334,
+        61,
+        173,
+        114
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null
+        },
+        {
+          "time": 0.01513,
+          "file": "face/duck_01.png"
+        },
+        {
+          "time": 0.02544,
+          "file": "face/duck_02.png"
+        },
+        {
+          "time": 0.03449,
+          "file": "face/duck_03.png"
+        },
+        {
+          "time": 0.04279,
+          "file": "face/duck_04.png"
+        },
+        {
+          "time": 0.05059,
+          "file": "face/duck_05.png"
+        },
+        {
+          "time": 0.058,
+          "file": "face/duck_06.png"
+        },
+        {
+          "time": 0.082,
+          "file": "face/duck_06.png"
+        },
+        {
+          "time": 0.1,
+          "file": "face/duck_05.png"
+        },
+        {
+          "time": 0.118,
+          "file": "face/duck_04.png"
+        },
+        {
+          "time": 0.136,
+          "file": "face/duck_03.png"
+        },
+        {
+          "time": 0.154,
+          "file": "face/duck_02.png"
+        },
+        {
+          "time": 0.172,
+          "file": "face/duck_01.png"
+        },
+        {
+          "time": 0.19,
+          "file": null
+        }
+      ]
+    },
+    {
+      "name": "crate",
+      "start": 2.483,
+      "rect": [
+        284,
+        1089,
+        148,
+        174
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null
+        },
+        {
+          "time": 0.04757,
+          "file": "face/crate_01.png"
+        },
+        {
+          "time": 0.08,
+          "file": "face/crate_02.png"
+        },
+        {
+          "time": 0.16,
+          "file": "face/crate_02.png"
+        },
+        {
+          "time": 0.235,
+          "file": "face/crate_01.png"
+        },
+        {
+          "time": 0.31,
+          "file": null
+        }
+      ]
+    },
+    {
+      "name": "arm",
+      "start": 1.7,
+      "rect": [
+        150,
+        680,
+        330,
+        376
+      ],
+      "frames": [
+        {
+          "time": 0.0,
+          "file": "hand/frames/frame_000.png"
+        },
+        {
+          "time": 0.0375,
+          "file": "hand/frames/frame_001.png"
+        },
+        {
+          "time": 0.075,
+          "file": "hand/frames/frame_002.png"
+        },
+        {
+          "time": 0.1125,
+          "file": "hand/frames/frame_003.png"
+        },
+        {
+          "time": 0.15,
+          "file": "hand/frames/frame_004.png"
+        },
+        {
+          "time": 0.1875,
+          "file": "hand/frames/frame_005.png"
+        },
+        {
+          "time": 0.225,
+          "file": "hand/frames/frame_006.png"
+        },
+        {
+          "time": 0.2625,
+          "file": "hand/frames/frame_007.png"
+        },
+        {
+          "time": 0.3,
+          "file": "hand/frames/frame_008.png"
+        },
+        {
+          "time": 0.3375,
+          "file": "hand/frames/frame_009.png"
+        },
+        {
+          "time": 0.375,
+          "file": "hand/frames/frame_010.png"
+        },
+        {
+          "time": 0.4125,
+          "file": "hand/frames/frame_011.png"
+        },
+        {
+          "time": 0.45,
+          "file": "hand/frames/frame_012.png"
+        },
+        {
+          "time": 0.4875,
+          "file": "hand/frames/frame_013.png"
+        },
+        {
+          "time": 0.525,
+          "file": "hand/frames/frame_014.png"
+        },
+        {
+          "time": 0.5625,
+          "file": "hand/frames/frame_015.png"
+        },
+        {
+          "time": 0.6,
+          "file": "hand/frames/frame_016.png"
+        },
+        {
+          "time": 0.6375,
+          "file": "hand/frames/frame_017.png"
+        },
+        {
+          "time": 0.675,
+          "file": "hand/frames/frame_018.png"
+        },
+        {
+          "time": 0.7125,
+          "file": "hand/frames/frame_019.png"
+        },
+        {
+          "time": 0.75,
+          "file": "hand/frames/frame_020.png"
+        },
+        {
+          "time": 0.7875,
+          "file": "hand/frames/frame_021.png"
+        },
+        {
+          "time": 0.825,
+          "file": "hand/frames/frame_022.png"
+        },
+        {
+          "time": 0.8625,
+          "file": "hand/frames/frame_023.png"
+        },
+        {
+          "time": 0.9,
+          "file": "hand/frames/frame_024.png"
+        },
+        {
+          "time": 0.9375,
+          "file": "hand/frames/frame_025.png"
+        },
+        {
+          "time": 0.975,
+          "file": "hand/frames/frame_026.png"
+        },
+        {
+          "time": 1.0125,
+          "file": "hand/frames/frame_027.png"
+        },
+        {
+          "time": 1.05,
+          "file": "hand/frames/frame_028.png"
+        },
+        {
+          "time": 1.0875,
+          "file": "hand/frames/frame_029.png"
+        },
+        {
+          "time": 1.125,
+          "file": "hand/frames/frame_030.png"
+        },
+        {
+          "time": 1.1625,
+          "file": "hand/frames/frame_031.png"
+        },
+        {
+          "time": 1.2,
+          "file": "hand/frames/frame_032.png"
+        },
+        {
+          "time": 1.2375,
+          "file": "hand/frames/frame_033.png"
+        },
+        {
+          "time": 1.275,
+          "file": "hand/frames/frame_034.png"
+        },
+        {
+          "time": 1.3125,
+          "file": "hand/frames/frame_035.png"
+        },
+        {
+          "time": 1.35,
+          "file": "hand/frames/frame_036.png"
+        },
+        {
+          "time": 1.3875,
+          "file": "hand/frames/frame_037.png"
+        },
+        {
+          "time": 1.425,
+          "file": "hand/frames/frame_038.png"
+        },
+        {
+          "time": 1.4625,
+          "file": "hand/frames/frame_039.png"
+        },
+        {
+          "time": 1.5,
+          "file": "hand/frames/frame_040.png"
+        },
+        {
+          "time": 1.5375,
+          "file": "hand/frames/frame_041.png"
+        },
+        {
+          "time": 1.575,
+          "file": "hand/frames/frame_042.png"
+        },
+        {
+          "time": 1.6125,
+          "file": "hand/frames/frame_043.png"
+        },
+        {
+          "time": 1.65,
+          "file": "hand/frames/frame_044.png"
+        },
+        {
+          "time": 1.6875,
+          "file": "hand/frames/frame_045.png"
+        },
+        {
+          "time": 1.725,
+          "file": "hand/frames/frame_046.png"
+        },
+        {
+          "time": 1.7625,
+          "file": "hand/frames/frame_047.png"
+        },
+        {
+          "time": 1.8,
+          "file": "hand/frames/frame_048.png"
+        }
+      ]
+    }
+  ],
+  "details": {
+    "hand": [
+      130,
+      650,
+      460,
+      490
+    ],
+    "eye": [
+      320,
+      55,
+      195,
+      120
+    ]
+  },
+  "reviewTimes": {
+    "rest": 0,
+    "half_blink": 0.737,
+    "closed_blink": 0.785,
+    "second_blink": 1.19,
+    "peek": 1.988,
+    "reach": 2.222,
+    "contact": 2.375,
+    "grip": 2.672,
+    "withdraw": 3.158,
+    "returned": 3.51
+  }
+}

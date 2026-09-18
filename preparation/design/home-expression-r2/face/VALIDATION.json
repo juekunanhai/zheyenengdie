@@ -1,0 +1,144 @@
+{
+  "sourceOriginalSha256": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+  "productionSourceUnchanged": true,
+  "frames": [
+    {
+      "file": "duck_00.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": true,
+      "coveredPixels": 0,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "92d9185aeaf3b70f6bf2d11cbf44feb4642027b4e25ab9aaeed551e25b2eef08"
+    },
+    {
+      "file": "duck_01.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 1179,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "8041502216a9fade7e7eab12285a378971cee43de70cab1aaf0fb0fa84db14d5"
+    },
+    {
+      "file": "duck_02.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 1642,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "3b5825e599fa8871e950056804211577e4a58329409ff2f4f919e3d7e2271c72"
+    },
+    {
+      "file": "duck_03.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 2054,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "4259f408952602bc7c7ae668bcd16b552cf6eb2cd99d93e0d831b5c9b99eda19"
+    },
+    {
+      "file": "duck_04.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 2534,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "1fa46d9bdb37e64773aa0e6403743d2f830c6f4083884140486ecdaded5beccd"
+    },
+    {
+      "file": "duck_05.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 2975,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "40740d2c66c59369af71ee08becad56d2e510a5563ab7ed92e813c4099afa036"
+    },
+    {
+      "file": "duck_06.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 3360,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "19b2a89bd26a7a498b86a004d498375d1557d478c3a393c9f8d98110c0d520ac"
+    },
+    {
+      "file": "crate_00.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": true,
+      "coveredPixels": 0,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "9fd4585d16e124873e16c2c35d11b4e7407cfaf9a2494f16f1fb3481370927cb"
+    },
+    {
+      "file": "crate_01.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 3680,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "4e6cc55d6ecacc63081eaabbc4d472041807626ca7f8432d577559d1513b0dcd"
+    },
+    {
+      "file": "crate_02.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 5292,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "b2463f3768aeb0ed3203ed99f00c7764f25905d854ed51c5faeebe538abb3310"
+    },
+    {
+      "file": "crate_03.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 10009,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "8585e1980bc11608890241b8c1b1d4852ab5f144282e962a52930bcf33184b92"
+    },
+    {
+      "file": "crate_04.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 13053,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "de02ea995b6524aff74d54b638c5fea89f7c3d128ce37dd8a3f92e672e71f865"
+    },
+    {
+      "file": "crate_05.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 15200,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "3a9f832a29d07eb642ed8d0a3cd575c091a0f046fc39667f65b4bcebc6f65fe3"
+    },
+    {
+      "file": "crate_06.png",
+      "rgba": true,
+      "dimensionsCorrect": true,
+      "frame0IsTransparent": null,
+      "coveredPixels": 16510,
+      "contourOrTransparentSourcePixelsTouched": 0,
+      "sha256": "92fa1bda0f43a05d0ac3dc0e93d1e6b6e2b4fe869063fe47d362de647e77a6f0"
+    }
+  ],
+  "protectedRegionTouchedPixels": {
+    "duck_brow_left": 0,
+    "duck_brow_right": 0,
+    "crate_brow": 0,
+    "crate_mouth": 0,
+    "duck_beak_source_landmark_protection": 0
+  },
+  "method": "Only image-generated crease colors/position are used; occluding skin comes from original surrounding surface gradients. Eyeball pixels are never resampled. Source-landmark beak mask is explicitly protected.",
+  "duckCoverageMonotonic": true,
+  "crateCoverageMonotonic": true,
+  "cratePeak2OriginalPupilHighlightUnchanged": true,
+  "status": "passed"
+}

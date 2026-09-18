@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "originalFilesNeverOverwritten": true,
+  "runtimePolicy": "Only four local eye patches are imported. Generated full sprites contain synthetic backgrounds and are not runtime art.",
+  "processing": "Precise per-eye registration, local blue/yellow/ceramic/red face material replacement; feather only surrounding material. For slipper, the shifted generated mouth is excluded and the tiny red region beneath the far eye is reconstructed from neighboring original material. Final alpha is restricted to original interior alpha >=250, eroded 2px to keep contours intact.",
+  "validation": "Raw patch + original overlay, light/dark composite, doubled face details inspected. No old sclera or eyelid remnants remain visible.",
+  "sourceHashes": {
+    "original-home_r9_hero.png": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+    "original-home_r9_slipper.png": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+    "generated-hero.png": "408cd9808c176a57e195c52dcb4de22227c2f7d3be5349e35518bd33eeb6f8f9",
+    "generated-slipper.png": "002daaa5469ee8e718d162d7ab1641d5015f5e5d9eb7743264de230cc5008b20",
+    "hero-prompt.txt": "ce7b0f438b6156e488f088689d2a6906393c3b621f682c32ef4e76afec73418f",
+    "slipper-prompt.txt": "98e846f002909f7d612ef7930491c28185da0ce7ef69f6bcfc767ff741805646",
+    "process_faces.py": "88eca026e6bf184864a00ab6d04ae6b4edcae1d7259d59645fc54428fa4de03a"
+  }
+}

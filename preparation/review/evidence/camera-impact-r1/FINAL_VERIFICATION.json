@@ -1,0 +1,36 @@
+{
+  "status": "local_build_and_bounded_runtime_verified",
+  "createdAt": "2026-09-15T03:26:40.024Z",
+  "sourceScopeMatchesBothBuilds": true,
+  "webOutputs": 220,
+  "wechatOutputs": 236,
+  "assertions": 73,
+  "retainedInputs": 312,
+  "homeEvidenceCarriedOnlyAfterIdenticalHomeSourceSceneAssetsAndInputVerification": true,
+  "changesAfterHome": [
+    "assets/batch0/presentation/HeightBackdrop.ts",
+    "assets/batch0/scenes/HUD.scene"
+  ],
+  "addedAfterHome": [
+    "assets/batch0/art/fx_backdrop_cloud_r1.png",
+    "assets/batch0/art/fx_backdrop_cloud_r1.png.meta"
+  ],
+  "finalWebSha256": "e2011d951fb65e13a830efd295f2fc9b916d25f315aee0649246b4a78d8acd21",
+  "finalWechatSha256": "fb706ffdafeb53b72321e7eae7d3d9ef78d3ebbc41bbb1f540b7e42c7c3cb5d1",
+  "motionVideo": {
+    "home": "Actual recorded 375x667 engine page; includes load followed by seven seconds of untouched Home animation.",
+    "gameplay": "Approved box/fridge/ball sequence, actual controller release and native physics. At the end only PlayView.beginIncident(.75)/endIncident are manually triggered to demonstrate lens motion; no accident or loss is claimed."
+  },
+  "limitations": [
+    "No real-device validation of this new revision.",
+    "No claim of improved long-run physics or complete subjective surprise.",
+    "About five pixels of city edge mirroring remain at 0.75, not a new panoramic source."
+  ],
+  "records": [
+    "engine-final.json",
+    "concave-l-r1.json",
+    "home-r1.json",
+    "BUILD_web-desktop.json",
+    "BUILD_wechatgame.json"
+  ]
+}

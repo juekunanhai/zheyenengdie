@@ -1,0 +1,30 @@
+{
+  "stageSize": [
+    750,
+    1334
+  ],
+  "referenceRectStage": [
+    230,
+    350,
+    340,
+    360
+  ],
+  "referenceScale": 2,
+  "frontSlipperRectStage": [
+    262.54296875,
+    376.310546875,
+    194,
+    146.64117647058825
+  ],
+  "backSlipperCenterStage": [
+    289.54296875,
+    415.7340762867647
+  ],
+  "heroRectStage": [
+    185,
+    497.310546875,
+    470,
+    705.0
+  ],
+  "sourceNote": "Exact approved source sprites; composition only, reference for new local additions."
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>眨眼与抓握 · R2 活泼度细调</title>
+  <link rel="stylesheet" href="sample.css"><script src="sample.js?revision=livelier-r1" defer></script>
+</head>
+<body><main>
+  <header><p class="eyebrow">这也能叠 · R2 活泼度细调</p><h1>眨眨眼，搭把手</h1>
+    <p>轻快的双眨眼、探手与回应，云从城市后方缓缓飘过。物品保持叠放位置。</p>
+    <p class="boundary">独立动作小样，尚未替换游戏内首页。</p></header>
+  <div class="toolbar" aria-label="播放控制">
+    <button id="replay" disabled>重新播放</button><button id="pause" disabled>暂停</button>
+    <label>速度 <select id="speed"><option value="1">正常速度</option><option value="0.5">0.5 倍慢放</option></select></label>
+    <label><input id="loop" type="checkbox" checked>循环</label>
+    <output id="time">准备素材…</output>
+    <input id="seek" aria-label="动作进度" type="range" min="0" max="6" step="0.01" value="0" disabled>
+  </div>
+  <section class="workspace">
+    <figure class="full"><figcaption>手机尺寸</figcaption><canvas id="phone" width="750" height="1334" aria-label="完整首页动作小样"></canvas></figure>
+    <div class="detail-column">
+      <figure><figcaption>手部细节</figcaption><canvas id="hand-detail" width="900" height="680" aria-label="连续探手与抓握细节"></canvas></figure>
+      <figure><figcaption>眼睑细节</figcaption><canvas id="eye-detail" width="900" height="320" aria-label="眼角保持原位的眨眼细节"></canvas></figure>
+      <p id="status" role="status">素材加载中。</p>
+      <details><summary>小样范围与素材来源</summary>
+        <p>保留已认可的城市、Logo 和主体造型，调整局部动作与天空云层。页面由浏览器播放像素素材，不是新的 Cocos 构建。</p>
+        <p><a href="README.md">动作方案与自查记录</a> · <a href="face/manifest.json">眼部素材</a> · <a href="hand/manifest.json">手部素材</a></p>
+      </details>
+    </div>
+  </section>
+</main></body></html>

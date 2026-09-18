@@ -1,0 +1,7 @@
+{
+  "name": "play-before",
+  "contacts": [],
+  "method": "Approved box/fridge/ball sequence, actual controller release and native physics. At the end only PlayView.beginIncident(.75)/endIncident are manually triggered to demonstrate lens motion; no accident or loss is claimed.",
+  "status": "failed",
+  "error": "page.waitForFunction: Timeout 15000ms exceeded.\n    at /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/record_motion_demo.cjs:18:14"
+}

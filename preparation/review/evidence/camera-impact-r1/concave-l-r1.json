@@ -1,0 +1,4694 @@
+{
+  "profile": "concave-l-r1",
+  "startedAt": "2026-09-15T03:21:18.556Z",
+  "status": "passed_bounded_checks",
+  "build": {
+    "files": 220,
+    "sha256": "422012687ca0e06b5e5afbd9caac7674ecec30226c271157a5aa4505d8378770"
+  },
+  "scriptSha256": "90bf3215f653f5edad4287a054cf98bee06775de0c920fbfb37a781d51fec16b",
+  "method": {
+    "landing": "Actual normal first box release, plus isolated real fridge/ball and horizontal side-contact fixtures. The impact observer forwards the original callback without changing its arguments or result.",
+    "camera": "Explicit presentation fixture: fixed view heights and beginIncident/endIncident calls. It does not claim to be a naturally triggered accident or gameplay survival test.",
+    "pause": "Production lifecycle.togglePause freezes native simulation and presentation; browser timer only measures elapsed wall time.",
+    "limits": "Rectangle coverage is not pixel seam inspection. Screenshots and video still need visual review. Browser validation is not WeChat real-device acceptance."
+  },
+  "cases": [
+    {
+      "id": "concave_engineered_support",
+      "status": "completed",
+      "result": {
+        "fixture": {
+          "points": [
+            [
+              -160,
+              -30
+            ],
+            [
+              0,
+              -30
+            ],
+            [
+              0,
+              260
+            ],
+            [
+              -20,
+              260
+            ],
+            [
+              -20,
+              0
+            ],
+            [
+              -160,
+              0
+            ]
+          ],
+          "staticSupport": true,
+          "supportFriction": 0,
+          "supportRestitution": 0,
+          "disabledDefaultPlatform": true,
+          "boxInitial": {
+            "x": -70.506389,
+            "y": 110,
+            "vx": 0.15,
+            "vy": 0
+          },
+          "normalGravity": true,
+          "velocityServo": false
+        },
+        "events": [
+          {
+            "type": "begin",
+            "active": 1,
+            "normal": {
+              "x": -1,
+              "y": 0
+            },
+            "position": {
+              "x": -70.50638580322266,
+              "y": 110,
+              "z": 0
+            }
+          },
+          {
+            "type": "begin",
+            "active": 2,
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "position": {
+              "x": -70.93621826171875,
+              "y": 52.02143478393555,
+              "z": 0
+            }
+          }
+        ],
+        "contacts": [
+          {
+            "id": 2,
+            "pair": "2:1",
+            "speed": 0.15000000596046448,
+            "landing": null
+          },
+          {
+            "id": 2,
+            "pair": "2:1",
+            "speed": 0,
+            "landing": {
+              "id": 2,
+              "speed": 10.837871551513672,
+              "normal": {
+                "x": 0,
+                "y": 1
+              },
+              "point": {
+                "x": -70.93619918823242,
+                "y": 0.08001327514648438
+              }
+            }
+          }
+        ],
+        "samples": [
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 0,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 0,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 0,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 0,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.009700000002980233,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0119130290062428,
+                    "y": 0.9783399472613766,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029069098195911805,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94141685290282,
+                    "y": 414.3659917932565,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0119130290062428,
+                    "y": 0.9783399472613767,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 160.05898902864516,
+                    "y": 327.10619541420846,
+                    "width": 181.76485564851532,
+                    "height": 174.5195927580961
+                  }
+                },
+                "physicalScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.03330000001192093,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0286682975730281,
+                    "y": 0.9478758225944944,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002906909822681781,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94306433747835,
+                    "y": 411.69881875658257,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0286682975730281,
+                    "y": 0.9478758225944944,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 158.55605447986792,
+                    "y": 327.1559085016865,
+                    "width": 184.77401971522082,
+                    "height": 169.08582050979214
+                  }
+                },
+                "physicalScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.05,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0306113745970973,
+                    "y": 0.9443429552780049,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002895767221607587,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94325539253833,
+                    "y": 411.3895117092907,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0306113745970973,
+                    "y": 0.9443429552780049,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 158.38176199331764,
+                    "y": 327.16167364683736,
+                    "width": 185.1229867984414,
+                    "height": 168.45567612490663
+                  }
+                },
+                "physicalScale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.06670000000298024,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0264056180481282,
+                    "y": 0.9519897853670395,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771152063748,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94284185623297,
+                    "y": 412.059001453465,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0264056180481282,
+                    "y": 0.9519897853670394,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 158.75901507588003,
+                    "y": 327.1491951081207,
+                    "width": 184.3676535607059,
+                    "height": 169.8196126906886
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.08330000001192094,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.018618669307467,
+                    "y": 0.9661478739864234,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94207619396337,
+                    "y": 413.29856020098794,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.018618669307467,
+                    "y": 0.9661478739864233,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 159.4574983169711,
+                    "y": 327.1260911356036,
+                    "width": 182.96915575398452,
+                    "height": 172.3449381307687
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.1,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0096108504006038,
+                    "y": 0.9825257265443565,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94119048798302,
+                    "y": 414.7324621173831,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0096108504006038,
+                    "y": 0.9825257265443565,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 160.2654926617102,
+                    "y": 327.0993648263142,
+                    "width": 181.35139565254565,
+                    "height": 175.2661945821378
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.1165,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0014912896377552,
+                    "y": 0.9972885642949905,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771152063748,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9403921211864,
+                    "y": 416.0249674239967,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0014912896377552,
+                    "y": 0.9972885642949905,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 160.99381094230404,
+                    "y": 327.07527398984354,
+                    "width": 179.8931623577647,
+                    "height": 177.89938686830635
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.13330000001192094,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 0.9952991029138363,
+                    "y": 1.0085470856112067,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711267792018,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.93978326604957,
+                    "y": 417.01066534953327,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9952991029138363,
+                    "y": 1.0085470856112064,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.54924527177116,
+                    "y": 327.05690169580964,
+                    "width": 178.78107598855684,
+                    "height": 179.90752730744725
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.15000000000000002,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 0.9917561596226018,
+                    "y": 1.0149888006861785,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.93943490135734,
+                    "y": 417.57464573451966,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9917561596226018,
+                    "y": 1.0149888006861785,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.86704452735648,
+                    "y": 327.04638973956634,
+                    "width": 178.14478074800172,
+                    "height": 181.05651198990665
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.16670000000298024,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 0.9907265578946167,
+                    "y": 1.0168608038279696,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.93933366437454,
+                    "y": 417.73854200132365,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9907265578946167,
+                    "y": 1.0168608038279696,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.9593990009696,
+                    "y": 327.0433348985985,
+                    "width": 177.9598693268099,
+                    "height": 181.39041420545027
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.18330000001192093,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 0.9916746648375969,
+                    "y": 1.015136973022551,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771152063748,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.93942688827238,
+                    "y": 417.5876184118795,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9916746648375969,
+                    "y": 1.015136973022551,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.87435454614024,
+                    "y": 327.04614794353864,
+                    "width": 178.13014468426428,
+                    "height": 181.08294093668167
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.19990000000596048,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 0.9938607303272844,
+                    "y": 1.0111623084958465,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771120589197,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.93964183611908,
+                    "y": 417.2396314543886,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9938607303272844,
+                    "y": 1.0111623084958465,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.67826617323223,
+                    "y": 327.0526340266858,
+                    "width": 178.52275132577373,
+                    "height": 180.3739948554056
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.2166000000089407,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 0.9965558959909424,
+                    "y": 1.0062620072891957,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.93990684192914,
+                    "y": 416.8106038229409,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9965558959909423,
+                    "y": 1.0062620072891957,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.43651191097553,
+                    "y": 327.0606306162996,
+                    "width": 179.00678986190724,
+                    "height": 179.4999464132826
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.23330000001192092,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 0.9991155130895765,
+                    "y": 1.001608158018952,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771120589197,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94015851974316,
+                    "y": 416.40315337340166,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9991155130895764,
+                    "y": 1.001608158018952,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.20691624949768,
+                    "y": 327.06822503165665,
+                    "width": 179.46648454049097,
+                    "height": 178.66985668349002
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.25,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0011100596602165,
+                    "y": 0.9979817097086975,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771120589197,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94035463623308,
+                    "y": 416.08565319055486,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0011100596602165,
+                    "y": 0.9979817097086975,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.02800697456013,
+                    "y": 327.07414287581963,
+                    "width": 179.8246953233459,
+                    "height": 178.02302062947047
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.2666000000089407,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0020740048742083,
+                    "y": 0.996229082046894,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94044941745034,
+                    "y": 415.9322083995423,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0020740048742083,
+                    "y": 0.996229082046894,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 160.94154183914867,
+                    "y": 327.0770029131043,
+                    "width": 179.99781515660334,
+                    "height": 177.71041097287593
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.2833000000119209,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0017035058285937,
+                    "y": 0.9969027166752844,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94041298763042,
+                    "y": 415.9911859719183,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0017035058285937,
+                    "y": 0.9969027166752844,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 160.97477531516358,
+                    "y": 327.0759036378872,
+                    "width": 179.93127534493368,
+                    "height": 177.83056466806215
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.3,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0008671247740737,
+                    "y": 0.9984234095016843,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94033074933174,
+                    "y": 416.1243245717628,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0008671247740737,
+                    "y": 0.9984234095016843,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.04979804475954,
+                    "y": 327.07342208502985,
+                    "width": 179.7810654091444,
+                    "height": 178.10180497346596
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.3176000000089407,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1.0000781619320898,
+                    "y": 0.9998578873962004,
+                    "anchorX": -0.000004826284566661343,
+                    "anchorY": -50.080013275146484
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.0000029027711236841984,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.94025317349295,
+                    "y": 416.2499149441695,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 1.0000781619320898,
+                    "y": 0.9998578873962004,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12056739759885,
+                    "y": 327.07108122259126,
+                    "width": 179.6393715517882,
+                    "height": 178.35766744315652
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.33299999999999996,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.34910000000894065,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 1,
+              "particles": 2,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.36599999999999994,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.3833000000119209,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.39990000000596043,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.40840000000596044,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.43390000000596046,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.4417000000029802,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": [
+                {
+                  "id": 2,
+                  "age": 0.4666000000089407,
+                  "speed": 10.837871551513672,
+                  "point": {
+                    "x": -70.93619918823242,
+                    "y": 0.08001327514648438
+                  },
+                  "localPoint": {
+                    "x": -0.000004826284566661343,
+                    "y": -50.080013275146484
+                  },
+                  "deformation": {
+                    "x": 1,
+                    "y": 1,
+                    "anchorX": 0,
+                    "anchorY": 0
+                  }
+                }
+              ]
+            },
+            "anchorErrors": [
+              {
+                "id": 2,
+                "error": 0.000002902771098399652,
+                "visual": {
+                  "name": "object_cardboard_box",
+                  "active": true,
+                  "position": {
+                    "x": 250.9402454881152,
+                    "y": 416.2623570842005,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 0.9999999999999999,
+                    "y": 0.9999999999999999,
+                    "z": 1
+                  },
+                  "rectangle": {
+                    "x": 161.12757846207018,
+                    "y": 327.0708493151792,
+                    "width": 179.62533405209007,
+                    "height": 178.38301553804263
+                  }
+                },
+                "physicalScale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                }
+              }
+            ],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          },
+          {
+            "landing": {
+              "bursts": 0,
+              "particles": 0,
+              "reactions": []
+            },
+            "anchorErrors": [],
+            "physical": [
+              {
+                "id": 1,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              },
+              {
+                "id": 2,
+                "kind": "cardboard_box",
+                "scale": {
+                  "x": 0.9999999999999999,
+                  "y": 0.9999999999999999,
+                  "z": 1
+                },
+                "contacts": 1,
+                "lost": false
+              }
+            ]
+          }
+        ],
+        "targetId": 2
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "engineered_concave_simultaneous_native_contacts",
+      "pass": true,
+      "details": {
+        "sideIndex": 0,
+        "floorIndex": 1,
+        "events": [
+          {
+            "type": "begin",
+            "active": 1,
+            "normal": {
+              "x": -1,
+              "y": 0
+            },
+            "position": {
+              "x": -70.50638580322266,
+              "y": 110,
+              "z": 0
+            }
+          },
+          {
+            "type": "begin",
+            "active": 2,
+            "normal": {
+              "x": 0,
+              "y": 1
+            },
+            "position": {
+              "x": -70.93621826171875,
+              "y": 52.02143478393555,
+              "z": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "engineered_concave_floor_emits_landing_with_audio_dedup",
+      "pass": true
+    },
+    {
+      "id": "engineered_concave_floor_has_visual_feedback",
+      "pass": true
+    },
+    {
+      "id": "built_package_unchanged",
+      "pass": true,
+      "details": {
+        "files": 220,
+        "sha256": "422012687ca0e06b5e5afbd9caac7674ecec30226c271157a5aa4505d8378770"
+      }
+    }
+  ],
+  "errors": [],
+  "gaps": [],
+  "engine": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    }
+  },
+  "finishedAt": "2026-09-15T03:21:24.651Z"
+}

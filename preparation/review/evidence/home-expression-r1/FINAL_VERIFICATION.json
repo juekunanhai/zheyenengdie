@@ -1,0 +1,46 @@
+{
+  "status": "local_build_and_home_runtime_verified",
+  "createdAt": "2026-09-15T04:22:44.463552+00:00",
+  "checks": 59,
+  "renderedNaturalFrames": 601,
+  "unchangedPriorInputs": 324,
+  "changedExisting": [
+    "assets/batch0/presentation/HomePresentation.ts",
+    "assets/batch0/scenes/Home.scene"
+  ],
+  "addedRuntimeInputs": 12,
+  "bothBuildInputsMatchCurrent": true,
+  "qaMatchesCurrentWebBuild": true,
+  "webOutputs": 232,
+  "wechatOutputs": 248,
+  "webOutputSha256": "c4476ba415a166b1e0773d2e466fbde80b327e8f09f63549ae45dff4a7e90557",
+  "wechatOutputSha256": "7d611d8fb05d402c4ae164631344f7bc8a1eeebbbfdc25668bd1757abccc0fd3",
+  "runtimeCounts": {
+    "png": 104,
+    "mp3": 38,
+    "ts": 14,
+    "scene": 4
+  },
+  "wechatProject": {
+    "compileType": "game",
+    "appid": "wxc0360e0c829a3307"
+  },
+  "visualReview": [
+    "Original and finished patch composites on light/dark backgrounds",
+    "Actual rendered duck and crate blink frames: no old eye residue observed",
+    "Actual 375x667 and 390x844 grip frames: shoulder connected, fingers at crate rim",
+    "12-frame contact sheet from natural engine recording: stable bodies, local acting"
+  ],
+  "videoTrim": {
+    "source": "home-expression-natural-375x667.webm",
+    "output": "home-preview.webm",
+    "startSeconds": 2.25,
+    "maxSeconds": 10,
+    "purpose": "Skip loading; no scene-state changes or composited acting"
+  },
+  "limits": [
+    "This round changes Home presentation only.",
+    "No new real-device validation or upload/publish.",
+    "Prior physics, camera and landing evidence remains historical; runtime inputs preserved."
+  ]
+}

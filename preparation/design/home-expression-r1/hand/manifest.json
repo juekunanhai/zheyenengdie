@@ -1,0 +1,86 @@
+{
+  "open": {
+    "asset": "assets/batch0/art/home_arm_open_r1.png",
+    "uuid": "eed10a9c-e40a-570e-9447-dead33c30349",
+    "size": [
+      291,
+      276
+    ],
+    "shoulderLocalTopLeftPx": [
+      249.89999999999998,
+      39.9
+    ],
+    "heroTopLeftPx": [
+      174,
+      761
+    ],
+    "heroShoulderPx": [
+      424,
+      801
+    ],
+    "sourceImage": "generated_open.png",
+    "sourceSha256": "ffb9cd370dbeaee13c51dd6764fe304f0b6075d61c9e6d534c48617fa2b233b8",
+    "assetSha256": "5762a933ed2c810dad04dfdf57e67893b7f0e6c389ff18456a3db4f837241342",
+    "matteChecks": {
+      "mode": "RGBA",
+      "transparentCorner": true,
+      "transparentPixelCount": 55146,
+      "opaquePixelCount": 21865,
+      "fractionalEdgePixelCount": 3305
+    }
+  },
+  "grip": {
+    "asset": "assets/batch0/art/home_arm_grip_r1.png",
+    "uuid": "e1c2b3c0-d415-5b5a-8251-3cbf7705e7bb",
+    "size": [
+      291,
+      276
+    ],
+    "shoulderLocalTopLeftPx": [
+      249.89999999999998,
+      39.9
+    ],
+    "heroTopLeftPx": [
+      174,
+      761
+    ],
+    "heroShoulderPx": [
+      424,
+      801
+    ],
+    "sourceImage": "generated_grip.png",
+    "sourceSha256": "d26ec15f94f241c89a61278c5251a09db495147bec87663a8772b4c70141145a",
+    "assetSha256": "066787acfa45596ac206696575c63fb756ec65698f4b3565212863d0eef565f9",
+    "matteChecks": {
+      "mode": "RGBA",
+      "transparentCorner": true,
+      "transparentPixelCount": 57167,
+      "opaquePixelCount": 19949,
+      "fractionalEdgePixelCount": 3200
+    }
+  },
+  "coordinateSystem": "All coordinates use source image pixels with top-left origin, +x right, +y down. Original hero is 1024x1536.",
+  "sharedSourceCropPx": [
+    145,
+    165,
+    1115,
+    1085
+  ],
+  "sourceScale": 0.3,
+  "shoulderSourcePx": [
+    978,
+    298
+  ],
+  "sourceHeroSha256": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+  "gripContactHeroPx": [
+    262,
+    992
+  ],
+  "gripContactSpriteLocalPx": [
+    88,
+    231
+  ],
+  "recommendedRestAngleCocosDegrees": -12,
+  "recommendedGripAngleCocosDegrees": 0,
+  "visualReview": "Inspected both overlays composited on unchanged original 1024x1536 hero. Shoulder is attached to toilet left lower body; grip fingers cross blue crate front-left lid rim. No duplicate hero or background pixels."
+}

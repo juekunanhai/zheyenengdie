@@ -1,0 +1,8 @@
+Mode: built-in image_gen.
+Input: reference-sky-strip.png, cropped top 426 rows of original home_r10_background.png.
+
+Use case: precise-object-edit. Edit target is the supplied game sky strip. Remove ALL white clouds and replace them with the same clear blue sky painterly gradient that surrounds them. Preserve original color distribution, saturated cerulean upper sky with softly brighter cyan bottom; retain very subtle soft atmospheric painted texture but NO identifiable clouds, NO stars, NO sun, NO outlines, NO added objects. Buildings at bottom edges can be removed for this sky-fill donor because only cloud-mask interiors will be used; do not add city elements. Keep the wide horizontal composition. This is a seamless blue sky restoration donor for an existing casual mobile game, not a redesign. Entire output should be unobstructed matching blue sky. Do not add any white fog or pale cloud wisps.
+
+Generated output: /Users/admin/.codex/generated_images/01a0a408-6455-7712-b068-15af721878bb/exec-632c2d11-9881-4e63-886a-db3decca27b2.png
+Saved copy: generated-clear-sky.png.
+Local postprocessing: build_layers.py color-matches donor to original blue sky, uses a single continuous top sky band instead of polygon cloud patches, restores original foreground skyline pixels, and derives the alpha mask. Final moving cloud is an unchanged copy of the existing approved home_r9_cloud.png. Image generation did not generate new cloud shapes or a new city.

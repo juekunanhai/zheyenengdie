@@ -1,0 +1,15 @@
+{
+  "generator": "built-in image_gen",
+  "generatedSource": "generated-effort-reference.png",
+  "generatedSourceSha256": "dd4e9477b24d2ddbbbb455341a0d8842a4815b9871a53eea9de0ecf7d2d727a4",
+  "prompt": "prompt.txt",
+  "promptSha256": "7193f5f5baeb11aec5d1748d216ccd3b5f59ae6461f3109dfa0ff29bd26302ba",
+  "source": "assets/batch0/art/home_r9_slipper.png",
+  "sourceSha256": "a8cde9a5204b74d236ec8c906716ac5d081086bfa24443a32711c63d63a9a5a8",
+  "localDerivation": "bake_effort.py",
+  "sourceKeptUnchanged": true,
+  "generatedReferenceUsage": "Pinched-centre, fuller-corner effort lip reference. Final seven frames use a single original mouth surface with non-linear spatial compression and subtle asymmetric corner height. Original eyes retain about sixty percent height to avoid a sleepy slit expression. Generated full slipper and background are not used.",
+  "localDerivationSha256": "0fc607338d3abc613e32014c9d1b22b099c1e3f776a3782e48a09053ca0f9877",
+  "finalRevision": "pinched-corners-effort-r2",
+  "manifestSha256": "6b1327b8d99c48182edd5ddab78f453728d0216703617f1ab7500c67a0beffb7"
+}

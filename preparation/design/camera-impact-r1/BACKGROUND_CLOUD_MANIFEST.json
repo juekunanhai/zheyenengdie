@@ -1,0 +1,35 @@
+{
+  "generation": {
+    "date": "2026-09-15",
+    "tool": "built-in image_gen.imagegen",
+    "reference": "assets/batch0/art/cloud_large_01.png",
+    "generated_original": "cloud-generated.png",
+    "tool_source_file": "/Users/admin/.codex/generated_images/01a0a2f9-3aac-7172-a358-0b027ed8819d/exec-981e43a9-0c07-436a-ba9e-9658e6f769e1.png",
+    "prompt": "Use case: stylized-concept. Final standalone decorative sky cloud sprite for a cheerful polished 2.5D toy stacking game. The supplied image is a palette and rounded-lobe style reference, NOT a crop to preserve. Draw ONE light airy horizontally drifting white cloud, full complete silhouette, wide and fairly thin with a natural 2.8:1 width-to-height outline. A few large soft lobes across the top, several smaller soft rounded lobes below; vary heights asymmetrically and gracefully taper both ends. Every edge must curve naturally; NO straight horizontal cutoff along the bottom, NO clipped lobes, no rectangular masking. Pearl-white upper light, pale sky-blue lower shading, soft high-quality painted 3D toy-game volume, subtle edge translucency. This is gentle atmospheric background art, not a dense landing dust puff, not an explosion. Centered on actual transparent alpha background with generous transparent margin all around. No other objects, no ground plane, no cast floor shadow, no hard contour line, no background sky, no text, no checkerboard, no isolated stray pixels or detached fragments. Complete finished image, not mockup or sprite sheet.",
+    "reference_sha256": "343c86d95aede741264bc482bf02e75c504bae367d1c30455a72b770fae26162"
+  },
+  "name": "fx_backdrop_cloud_r1",
+  "source": "preparation/design/camera-impact-r1/cloud-generated.png",
+  "source_sha256": "0b8837a760d83df4cd383219834e227f5fe9aa3d9850437124f757b10dc6c978",
+  "crop_bounds": [
+    107,
+    139,
+    1990,
+    653
+  ],
+  "runtime": "assets/batch0/art/fx_backdrop_cloud_r1.png",
+  "runtime_sha256": "ede052f0b71821e6a36b992e04ab25eb0c0ef41b8249111567d52780c23ec2c9",
+  "size": [
+    512,
+    192
+  ],
+  "meta_sha256": "2193ff147106fda17a55c82e5d53cbaa89ee8a0688ab54eeb9fc00e86669b90e",
+  "sprite_frame_uuid": "502ae253-c610-5643-9ff3-17e141f49057@f9941",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "transparent_pixel_fraction": 0.6037699381510416,
+  "processing": "Reuse process_assets.clean_image: largest alpha>=8 connected component plus 3px edge, retain original RGBA, aspect-preserving Lanczos resize and transparent margins.",
+  "scene_change": "Replace only HeightBackdrop.cloudFrame in HUD.scene; Home and original cloud remain unchanged."
+}

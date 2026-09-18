@@ -1,0 +1,343 @@
+{
+  "status": "independent sample, not production integration",
+  "duration": 8,
+  "layers": [
+    {
+      "name": "duck",
+      "start": 0.95,
+      "rect": [
+        334,
+        61,
+        173,
+        114
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null
+        },
+        {
+          "time": 0.01826,
+          "file": "face/duck_01.png"
+        },
+        {
+          "time": 0.03071,
+          "file": "face/duck_02.png"
+        },
+        {
+          "time": 0.04162,
+          "file": "face/duck_03.png"
+        },
+        {
+          "time": 0.05165,
+          "file": "face/duck_04.png"
+        },
+        {
+          "time": 0.06105,
+          "file": "face/duck_05.png"
+        },
+        {
+          "time": 0.07,
+          "file": "face/duck_06.png"
+        },
+        {
+          "time": 0.105,
+          "file": "face/duck_06.png"
+        },
+        {
+          "time": 0.125,
+          "file": "face/duck_05.png"
+        },
+        {
+          "time": 0.145,
+          "file": "face/duck_04.png"
+        },
+        {
+          "time": 0.165,
+          "file": "face/duck_03.png"
+        },
+        {
+          "time": 0.185,
+          "file": "face/duck_02.png"
+        },
+        {
+          "time": 0.205,
+          "file": "face/duck_01.png"
+        },
+        {
+          "time": 0.225,
+          "file": null
+        }
+      ]
+    },
+    {
+      "name": "crate",
+      "start": 3.17,
+      "rect": [
+        284,
+        1089,
+        148,
+        174
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null
+        },
+        {
+          "time": 0.04757,
+          "file": "face/crate_01.png"
+        },
+        {
+          "time": 0.08,
+          "file": "face/crate_02.png"
+        },
+        {
+          "time": 0.16,
+          "file": "face/crate_02.png"
+        },
+        {
+          "time": 0.235,
+          "file": "face/crate_01.png"
+        },
+        {
+          "time": 0.31,
+          "file": null
+        }
+      ]
+    },
+    {
+      "name": "arm",
+      "start": 2.3,
+      "rect": [
+        150,
+        680,
+        330,
+        376
+      ],
+      "frames": [
+        {
+          "time": 0.0,
+          "file": "hand/frames/frame_000.png"
+        },
+        {
+          "time": 0.04167,
+          "file": "hand/frames/frame_001.png"
+        },
+        {
+          "time": 0.08333,
+          "file": "hand/frames/frame_002.png"
+        },
+        {
+          "time": 0.125,
+          "file": "hand/frames/frame_003.png"
+        },
+        {
+          "time": 0.16667,
+          "file": "hand/frames/frame_004.png"
+        },
+        {
+          "time": 0.20833,
+          "file": "hand/frames/frame_005.png"
+        },
+        {
+          "time": 0.25,
+          "file": "hand/frames/frame_006.png"
+        },
+        {
+          "time": 0.29167,
+          "file": "hand/frames/frame_007.png"
+        },
+        {
+          "time": 0.33333,
+          "file": "hand/frames/frame_008.png"
+        },
+        {
+          "time": 0.375,
+          "file": "hand/frames/frame_009.png"
+        },
+        {
+          "time": 0.41667,
+          "file": "hand/frames/frame_010.png"
+        },
+        {
+          "time": 0.45833,
+          "file": "hand/frames/frame_011.png"
+        },
+        {
+          "time": 0.5,
+          "file": "hand/frames/frame_012.png"
+        },
+        {
+          "time": 0.54167,
+          "file": "hand/frames/frame_013.png"
+        },
+        {
+          "time": 0.58333,
+          "file": "hand/frames/frame_014.png"
+        },
+        {
+          "time": 0.625,
+          "file": "hand/frames/frame_015.png"
+        },
+        {
+          "time": 0.66667,
+          "file": "hand/frames/frame_016.png"
+        },
+        {
+          "time": 0.70833,
+          "file": "hand/frames/frame_017.png"
+        },
+        {
+          "time": 0.75,
+          "file": "hand/frames/frame_018.png"
+        },
+        {
+          "time": 0.79167,
+          "file": "hand/frames/frame_019.png"
+        },
+        {
+          "time": 0.83333,
+          "file": "hand/frames/frame_020.png"
+        },
+        {
+          "time": 0.875,
+          "file": "hand/frames/frame_021.png"
+        },
+        {
+          "time": 0.91667,
+          "file": "hand/frames/frame_022.png"
+        },
+        {
+          "time": 0.95833,
+          "file": "hand/frames/frame_023.png"
+        },
+        {
+          "time": 1.0,
+          "file": "hand/frames/frame_024.png"
+        },
+        {
+          "time": 1.04167,
+          "file": "hand/frames/frame_025.png"
+        },
+        {
+          "time": 1.08333,
+          "file": "hand/frames/frame_026.png"
+        },
+        {
+          "time": 1.125,
+          "file": "hand/frames/frame_027.png"
+        },
+        {
+          "time": 1.16667,
+          "file": "hand/frames/frame_028.png"
+        },
+        {
+          "time": 1.20833,
+          "file": "hand/frames/frame_029.png"
+        },
+        {
+          "time": 1.25,
+          "file": "hand/frames/frame_030.png"
+        },
+        {
+          "time": 1.29167,
+          "file": "hand/frames/frame_031.png"
+        },
+        {
+          "time": 1.33333,
+          "file": "hand/frames/frame_032.png"
+        },
+        {
+          "time": 1.375,
+          "file": "hand/frames/frame_033.png"
+        },
+        {
+          "time": 1.41667,
+          "file": "hand/frames/frame_034.png"
+        },
+        {
+          "time": 1.45833,
+          "file": "hand/frames/frame_035.png"
+        },
+        {
+          "time": 1.5,
+          "file": "hand/frames/frame_036.png"
+        },
+        {
+          "time": 1.54167,
+          "file": "hand/frames/frame_037.png"
+        },
+        {
+          "time": 1.58333,
+          "file": "hand/frames/frame_038.png"
+        },
+        {
+          "time": 1.625,
+          "file": "hand/frames/frame_039.png"
+        },
+        {
+          "time": 1.66667,
+          "file": "hand/frames/frame_040.png"
+        },
+        {
+          "time": 1.70833,
+          "file": "hand/frames/frame_041.png"
+        },
+        {
+          "time": 1.75,
+          "file": "hand/frames/frame_042.png"
+        },
+        {
+          "time": 1.79167,
+          "file": "hand/frames/frame_043.png"
+        },
+        {
+          "time": 1.83333,
+          "file": "hand/frames/frame_044.png"
+        },
+        {
+          "time": 1.875,
+          "file": "hand/frames/frame_045.png"
+        },
+        {
+          "time": 1.91667,
+          "file": "hand/frames/frame_046.png"
+        },
+        {
+          "time": 1.95833,
+          "file": "hand/frames/frame_047.png"
+        },
+        {
+          "time": 2.0,
+          "file": "hand/frames/frame_048.png"
+        }
+      ]
+    }
+  ],
+  "details": {
+    "hand": [
+      130,
+      650,
+      460,
+      490
+    ],
+    "eye": [
+      320,
+      55,
+      195,
+      120
+    ]
+  },
+  "reviewTimes": {
+    "rest": 0,
+    "half_blink": 0.987,
+    "closed_blink": 1.035,
+    "peek": 2.62,
+    "reach": 2.88,
+    "contact": 3.05,
+    "grip": 3.38,
+    "withdraw": 3.92,
+    "returned": 4.31
+  }
+}

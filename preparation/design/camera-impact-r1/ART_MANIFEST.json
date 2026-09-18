@@ -1,0 +1,81 @@
+{
+  "generation": {
+    "date": "2026-09-15",
+    "tool": "built-in image_gen.imagegen",
+    "user_authorization": "User permits generating missing finished art and local cleanup of generated/formal assets; image-reference upload permission already granted.",
+    "assets": [
+      {
+        "kind": "dust",
+        "reference": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_contact_dust.png",
+        "generated_original": "dust-generated.png",
+        "tool_source_file": "/Users/admin/.codex/generated_images/01a0a2f9-3aac-7172-a358-0b027ed8819d/exec-dbc3df32-51e4-4ea1-8605-286aa3c2d170.png",
+        "prompt": "Use case: stylized-concept. Production asset for a cheerful high-quality 2D stacking game. Reference image is ONLY a style guide: rounded fluffy blue-white toy puff with soft dimensional highlights. Generate ONE small clean landing dust puff, isolated and centered in a square canvas. Three to five rounded lobes, soft pearly white centers, subtle pale sky-blue shading, smooth polished 3D cartoon game texture. A gently squashed cloud silhouette slightly wider than tall. Modest and lightweight contact puff, not an explosion or smoke plume. Actual transparent background alpha, generous fully transparent margins on all four sides, complete uncut silhouette. NO checkerboard pattern, NO opaque backdrop, NO ground plane, NO text, no motion streaks, no stars, no orange or yellow ring, no neighboring fragments, no isolated noise dots. Clean antialiasing, subtle translucent edge, no strong outer glow. This is a final game sprite, not a mockup or sprite sheet.",
+        "reference_sha256": "831d58703db58e5e736c57f33aa9ef7be6fd9784e51429619d183dc254d417b1"
+      },
+      {
+        "kind": "ring",
+        "reference": "source-inputs/art-source/这也能叠_正式美术素材包_v1/02_ASSETS/fx/fx_impact_ring.png",
+        "generated_original": "ring-generated.png",
+        "tool_source_file": "/Users/admin/.codex/generated_images/01a0a2f9-3aac-7172-a358-0b027ed8819d/exec-ee349ae5-6f17-4186-9e5c-723d8e0bf15b.png",
+        "prompt": "Use case: stylized-concept. Finished sprite for a playful polished stacking game. Input reference is only a style guide for the bright soft warm-white and buttery-gold elliptical contact ripple. Generate ONE clean subtle small elliptical landing ring viewed at a shallow angle, 2:1 horizontal silhouette. A delicate luminous warm-white elliptical rim with faint pale gold shading, transparent hollow center. Polished soft toy-game feel, thin elegant rim, modest local impact feedback. Actual transparent alpha background, complete uninterrupted ellipse with generous transparent margins, no objects in center, no cast shadow. NO upward spikes, NO radial streaks, NO flare points, NO starbursts, NO explosions, NO neighboring fragments, NO text, NO dust cloud, NO opaque colored disk. Keep it simple and lightweight, entirely isolated final production sprite, not a sprite sheet, no checkerboard.",
+        "reference_sha256": "b240baf07f0b33278c2f34ff627685e577eb0a72b183d3ca481e4d95c03778a2"
+      }
+    ]
+  },
+  "processing": {
+    "algorithm": "Largest 4-connected alpha>=8 component, 3px edge dilation, retain original RGBA within mask; clear isolated residual pixels; alpha-bounds crop, aspect-preserving Lanczos resize, transparent pad.",
+    "runtime_margin_pixels": 12,
+    "source_pixels_redrawn": false,
+    "scene_change": "Append only the two StackGameController.frames references"
+  },
+  "assets": [
+    {
+      "name": "fx_landing_dust_r1",
+      "source": "preparation/design/camera-impact-r1/dust-generated.png",
+      "source_sha256": "7697f924a99903fac656da93092d716cd4184491620f16dfec98f67156ed783e",
+      "crop_bounds": [
+        287,
+        441,
+        966,
+        854
+      ],
+      "runtime": "assets/batch0/art/fx_landing_dust_r1.png",
+      "size": [
+        256,
+        256
+      ],
+      "runtime_sha256": "a1329be520a12e796163540225e57a63258a4b518554d4d99540dc395143b87a",
+      "meta_sha256": "4eb56fe0a8a402b3d67e8d07b11751c6d0ed01bec5209c012115ecd601b42772",
+      "transparent_pixel_fraction": 0.6507720947265625,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sprite_frame_uuid": "6a4350af-9a5e-5b4a-899c-363c90a5bfa0@f9941"
+    },
+    {
+      "name": "fx_landing_ring_r1",
+      "source": "preparation/design/camera-impact-r1/ring-generated.png",
+      "source_sha256": "e4ad5fdc201fa853c5ad88bae6dba482ca293e2b8c07e88215318d8a12798537",
+      "crop_bounds": [
+        168,
+        313,
+        1605,
+        594
+      ],
+      "runtime": "assets/batch0/art/fx_landing_ring_r1.png",
+      "size": [
+        256,
+        128
+      ],
+      "runtime_sha256": "a22661b36527b485e603167e31d7bc87b8bf2d6f065e2096edd5eeb85df252ab",
+      "meta_sha256": "fe868257b7a48b54532cff219081169393f87189f15f7b2972aeafaa53e426f0",
+      "transparent_pixel_fraction": 0.775604248046875,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sprite_frame_uuid": "da582995-aa57-582d-977e-133c6e2192c2@f9941"
+    }
+  ]
+}

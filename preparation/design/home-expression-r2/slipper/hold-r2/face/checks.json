@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "frameCount": 30,
+  "loopFrameCount": 25,
+  "sourceUnchanged": true,
+  "protectedPixelsChanged": 0,
+  "loopFirstLastPixelIdentical": true,
+  "eyesIdenticalEveryLoopFrame": true,
+  "loopFramesAllHaveVisiblePatch": true,
+  "onlyMouthChangesDuringLoop": true,
+  "mouthDistinctLoopFrames": 5,
+  "sourceAlphaContourUntouched": true,
+  "reviewLimit": "Protection/loop checks do not establish cuteness; inspect mobile size and normal speed."
+}

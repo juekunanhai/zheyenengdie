@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "contourAndTransparentPixelsExactlyPreserved": true,
+    "sourceFileUnchanged": true,
+    "changedRgbPixels": 39288,
+    "note": "Source solid faces mostly have alpha 252-253. Eye overlays become opaque to occlude the original eyes; contour alpha is unchanged."
+  },
+  "slipper": {
+    "contourAndTransparentPixelsExactlyPreserved": true,
+    "sourceFileUnchanged": true,
+    "changedRgbPixels": 4585,
+    "note": "Source solid faces mostly have alpha 252-253. Eye overlays become opaque to occlude the original eyes; contour alpha is unchanged."
+  },
+  "assets": [
+    {
+      "file": "assets/batch0/art/home_face_duck_blink_r1.png",
+      "rgba": true,
+      "dimensionsMatchManifestAndMeta": true,
+      "featheredAlphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "504c81d48dce3c872e64c0894a5f72bd7b215e8b38a4e7cbd6c036078bdecca4"
+    },
+    {
+      "file": "assets/batch0/art/home_face_crate_blink_r1.png",
+      "rgba": true,
+      "dimensionsMatchManifestAndMeta": true,
+      "featheredAlphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "c1fd01491c5379b68fd7da56393d62dbf952437489d569e6dead51f799722c3e"
+    },
+    {
+      "file": "assets/batch0/art/home_face_toilet_look_r1.png",
+      "rgba": true,
+      "dimensionsMatchManifestAndMeta": true,
+      "featheredAlphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "b0eba2e85ca3ec1a0b4048e9800185d43daef185c3b6dd60f07346d7379495a5"
+    },
+    {
+      "file": "assets/batch0/art/home_face_slipper_blink_r1.png",
+      "rgba": true,
+      "dimensionsMatchManifestAndMeta": true,
+      "featheredAlphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "0606c5213db15448bf1f6ac793bbe4a4f58710c7781bb81bcd5d1517f5938a26"
+    }
+  ]
+}

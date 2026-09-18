@@ -1,0 +1,95 @@
+{
+  "status": "independent_candidate_ready_for_user_review",
+  "productionIntegrated": false,
+  "method": "Built-in image_gen plus authorized local registration, surface reconstruction and offline continuous warping; browser-only playback.",
+  "technicalChecks": [
+    {
+      "name": "finished_frames_loaded",
+      "pass": true,
+      "data": {
+        "files": 57
+      }
+    },
+    {
+      "name": "pause_and_replay_controls_work",
+      "pass": true
+    },
+    {
+      "name": "slow_motion_control_works",
+      "pass": true
+    },
+    {
+      "name": "normal_clock_advances_1",
+      "pass": true,
+      "data": {
+        "renderedFrames": 963,
+        "wallSeconds": 8.00659999999404
+      }
+    },
+    {
+      "name": "normal_clock_advances_0.5",
+      "pass": true,
+      "data": {
+        "renderedFrames": 1920,
+        "wallSeconds": 16.00559999999702
+      }
+    },
+    {
+      "name": "production_inputs_unchanged",
+      "pass": true,
+      "data": {
+        "protectedInputs": 338,
+        "changed": []
+      }
+    }
+  ],
+  "browserErrors": [],
+  "activeFrameFiles": 57,
+  "activeAssetHashesMatchCurrent": true,
+  "faceManifestSha256": "2e67d6525a34f50424e6bf8455c5cffc93969e48ff5a36d32642dadf71c4e1b6",
+  "handManifestSha256": "9c9660171c7c2297176e876671287131cb7059102ec4ffc2c9c23988bab76216",
+  "sequenceSha256": "a034f6ea173d78e82306fa471a7351007beffc6df81565d6e04989262297a0e5",
+  "previewInputs": {
+    "index.html": "42639cd0092462d43be8466d34675deb2541ffef42e154be5a8b797f58e3c747",
+    "sample.css": "ad001b302671bc39e1b41d643d0a801213eb39a79fb6e2199f54d38bb08e3958",
+    "sample.js": "f1d51ae0be018c0e5393c11b429d47cb463dbdaa37d43f850540fccc57cfa577",
+    "sequence.json": "a034f6ea173d78e82306fa471a7351007beffc6df81565d6e04989262297a0e5"
+  },
+  "videos": [
+    {
+      "source": "sample-normal-raw.webm",
+      "output": "sample-normal.webm",
+      "removedLoadingSeconds": 0.04,
+      "maxDurationSeconds": 8,
+      "sourceDimensions": [
+        374,
+        666
+      ],
+      "outputSha256": "6288ced19f2ce1d96f33c29707b30f824e4cf6b832cf4a37dc7f6031836fc77f"
+    },
+    {
+      "source": "sample-half-speed-raw.webm",
+      "output": "sample-half-speed.webm",
+      "removedLoadingSeconds": 0.08,
+      "maxDurationSeconds": 16,
+      "sourceDimensions": [
+        374,
+        666
+      ],
+      "outputSha256": "48aa559c7bcb88c0381c1a13a50853d5ef461a6dc3c75c6c4a5fde142461626b"
+    }
+  ],
+  "visualReview": [
+    "Original eye shape/pupil size retained; thin closing lids, no eye-mask dome.",
+    "Orange beak boundary and eyebrows remain protected in final patch.",
+    "Hand emerges and retracts through toilet occlusion; no spherical shoulder or whole-arm fade.",
+    "Single master finger deformation removes mixed-pose ghost fingertips.",
+    "Phone-size sequence reads as reaching, resting/lightly gripping the rim, crate reaction, then release and retreat."
+  ],
+  "limits": [
+    "Not user-approved naturalness.",
+    "Light grip, not a strong pull.",
+    "Enlarged far-thumb edge remains a drawn occlusion and should be judged at real phone size.",
+    "No Cocos/WeChat rebuild, integration, device test or publish in this round."
+  ]
+}

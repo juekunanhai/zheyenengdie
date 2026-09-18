@@ -1,0 +1,42 @@
+{
+  "schema": "depth-contact-acceptance-summary-r1",
+  "completedAt": "2026-09-15T02:29:36.490370+00:00",
+  "status": "three_bounded_real_contact_cases_passed",
+  "checks": [
+    {
+      "id": "detached_glue_group",
+      "status": "passed",
+      "report": "contact-final-r1.json",
+      "testScriptSha256": "a7e80f615730fe9a96ac9c3f77f9340654e7a108fcea7d4db64632a5520c7793"
+    },
+    {
+      "id": "concave_pending_end",
+      "status": "passed",
+      "report": "contact-final-r1.json",
+      "testScriptSha256": "a7e80f615730fe9a96ac9c3f77f9340654e7a108fcea7d4db64632a5520c7793"
+    },
+    {
+      "id": "joint_presolve_isolation",
+      "status": "passed",
+      "report": "contact-final-motor-r3.json",
+      "testScriptSha256": "213a8fa049306530ccc3e476b0c703f9a2c3c104770b0cd4c05d761620f3fbc6"
+    }
+  ],
+  "buildSha256": "ce163ca140f433243f046922866dacbf53825e5de7c2a578d004650dcd72cdc6",
+  "sameBuildAcrossRuns": true,
+  "buildUnchangedWithinAllRuns": true,
+  "pageErrors": [],
+  "retainedEarlierFailures": [
+    {
+      "report": "contact-final-r1.json",
+      "case": "joint_presolve_isolation",
+      "reason": "Initial injection render frame executed zero native physics steps. AFTER_PHYSICS removed invalid joints before any PRE_SOLVE. Therefore this run did not cover delayed destruction during the solver. Fixture subsequently seeds one public fixed-step accumulator budget before the declared injection."
+    },
+    {
+      "report": "contact-final-motor-r2.json",
+      "case": "joint_presolve_isolation",
+      "reason": "The unfiltered control transferred clear first-step drag to the cap (vx 0.125877), while lower vx magnitude 0.029326 did not meet an overly specific lower-only >0.05 assertion. The final assertion requires >0.05 response on either connected side and <0.03 on both filtered sides; then a fresh real-engine run passed. PRE_SOLVE, zero joint budget and collision impulse assertions were already observed in this run."
+    }
+  ],
+  "scope": "Actual compiled Cocos/native Box2D directed fixture regressions only. No fake contact or loss callback. Does not prove ordinary player surprise or WeChat device performance. No runtime source or built package was modified by this script."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "frames": 7,
+  "size": [
+    111,
+    94
+  ],
+  "frame0FullyTransparent": true,
+  "protectedPixelsChanged": 0,
+  "sourceUnchanged": true,
+  "outerContourAlphaChanges": 0,
+  "interiorAlphaReplacementCount": 5493,
+  "alphaNote": "Source interior pixels mostly carry alpha 253; opaque expression patches replace only the face interior. Exterior antialias and silhouette remain unchanged.",
+  "noDoubleFaceBlend": true,
+  "reviewLimit": "Technical protection checks do not prove expressive quality; review at 97px slipper width."
+}

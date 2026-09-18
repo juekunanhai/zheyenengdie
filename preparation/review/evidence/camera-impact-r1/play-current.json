@@ -1,0 +1,1035 @@
+{
+  "name": "play-current",
+  "contacts": [],
+  "method": "Approved box/fridge/ball sequence, actual controller release and native physics. At the end only PlayView.beginIncident(.75)/endIncident are manually triggered to demonstrate lens motion; no accident or loss is claimed.",
+  "beforeZoom": {
+    "phase": "planning",
+    "releases": 3,
+    "placed": 3,
+    "peakMetres": 3.3663458251953124,
+    "stars": 3,
+    "incidentCount": 0,
+    "incident": null,
+    "recoverySeconds": 0,
+    "failureReason": null,
+    "normalBoundary": {
+      "top": 710.0631539481027,
+      "bottom": -52.22256033761161,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428
+    },
+    "safety": {
+      "enabled": true,
+      "boundary": {
+        "top": 710.0631539481027,
+        "bottom": -52.22256033761161,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "referenceTop": 336.63458251953125,
+      "confirmedTop": 336.63458251953125,
+      "assistanceEnabled": true,
+      "maxAssistDamping": 40.8,
+      "filteredContacts": 0,
+      "nearDistance": 150,
+      "halfDistance": 250,
+      "maxAssistWeight": 0.85,
+      "horizontalRate": 0,
+      "responseRate": 8,
+      "pendingSupportReturns": 0,
+      "detachGraceSeconds": 0.12,
+      "fallSeconds": 0.12,
+      "fallSpeed": -0.75,
+      "collapseTrend": false,
+      "remainingStable": true,
+      "bodies": [
+        {
+          "id": 1,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 8.667037884834555,
+          "angularDamping": 14.667037884834555
+        },
+        {
+          "id": 2,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 6
+        },
+        {
+          "id": 3,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 6
+        },
+        {
+          "id": 4,
+          "lost": false,
+          "supported": false,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 1.5
+        }
+      ]
+    },
+    "sequence": [
+      "cardboard_box",
+      "fridge",
+      "basketball",
+      "wood_plank"
+    ],
+    "untimedCalibration": true,
+    "observationSeconds": null,
+    "maxObserveSeconds": 1.5,
+    "placementBlocked": false,
+    "placementTop": 336.63458251953125,
+    "stabilizers": {
+      "active": [],
+      "brokenPairs": []
+    },
+    "secondsLeft": 4,
+    "tutorial": false,
+    "paused": false,
+    "boundary": {
+      "top": 620.6345825195312,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428,
+      "bottom": -52.22256033761161
+    },
+    "view": {
+      "scale": 1.75,
+      "originY": -339,
+      "cameraY": 119.91963636968818,
+      "targetCameraY": 135.2060110909598,
+      "width": 750,
+      "height": 1334,
+      "heldTop": 620.6345825195312,
+      "zoom": 1,
+      "zoomTarget": 1,
+      "incidentCamera": false,
+      "landing": {
+        "bursts": 0,
+        "particles": 0,
+        "reactions": []
+      }
+    },
+    "music": {
+      "region": null,
+      "fading": false,
+      "fade": 1,
+      "gain": 0,
+      "paused": false,
+      "enabled": false,
+      "issues": [],
+      "sources": [
+        {
+          "clip": null,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        },
+        {
+          "clip": null,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        }
+      ]
+    },
+    "audioClips": 36,
+    "currentId": 4,
+    "bodies": [
+      {
+        "id": 1,
+        "kind": "cardboard_box",
+        "position": {
+          "x": -0.0003187321126461029,
+          "y": 50.46537399291992,
+          "z": 0
+        },
+        "angle": 0.0011876372866081507,
+        "size": [
+          100.912779,
+          100
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.000020728180970763788
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 4.389647960662842,
+        "awake": false,
+        "contacts": 2,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 8.667037884834555,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -50.45753390535898,
+          "right": 50.45704359861583,
+          "bottom": 0.46439120197961614,
+          "top": 100.46620121739035
+        }
+      },
+      {
+        "id": 2,
+        "kind": "fridge",
+        "position": {
+          "x": -0.00030392780900001526,
+          "y": 184.7062225341797,
+          "z": 0
+        },
+        "angle": 0.003324696714511193,
+        "size": [
+          150,
+          167.554858636
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.00005802690429845825
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 7.023437023162842,
+        "awake": false,
+        "contacts": 2,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 0.9999999999999999,
+          "y": 0.9999999999999999,
+          "z": 1
+        },
+        "bounds": {
+          "left": -74.99652477663923,
+          "right": 75.00352954156934,
+          "bottom": 100.9254502164214,
+          "top": 268.4869766616904
+        }
+      },
+      {
+        "id": 3,
+        "kind": "basketball",
+        "position": {
+          "x": -0.000553780933842063,
+          "y": 302.63458251953125,
+          "z": 0
+        },
+        "angle": 0.0006012181364954076,
+        "size": [
+          68,
+          68
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.000010493236004549544
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 1.4186254739761353,
+        "awake": false,
+        "contacts": 1,
+        "contactSeconds": 0.94420000000298,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -150.75259808839704
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -34.00055378093384,
+          "right": 33.99944621906616,
+          "bottom": 268.63458251953125,
+          "top": 336.63458251953125
+        }
+      },
+      {
+        "id": 4,
+        "kind": "wood_plank",
+        "position": {
+          "x": 0,
+          "y": 606.26220703125,
+          "z": 0
+        },
+        "angle": 0,
+        "size": [
+          260,
+          28.744805
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 0,
+        "awake": true,
+        "contacts": 0,
+        "contactSeconds": null,
+        "lost": false,
+        "supported": false,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": false,
+        "type": 1,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -130,
+          "right": 130,
+          "bottom": 591.88980503125,
+          "top": 620.63460903125
+        }
+      }
+    ]
+  },
+  "pulledBack": {
+    "phase": "planning",
+    "releases": 3,
+    "placed": 3,
+    "peakMetres": 3.3663458251953124,
+    "stars": 3,
+    "incidentCount": 0,
+    "incident": null,
+    "recoverySeconds": 0,
+    "failureReason": null,
+    "normalBoundary": {
+      "top": 710.0631539481027,
+      "bottom": -52.22256033761161,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428
+    },
+    "safety": {
+      "enabled": true,
+      "boundary": {
+        "top": 710.0631539481027,
+        "bottom": -52.22256033761161,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "referenceTop": 336.63458251953125,
+      "confirmedTop": 336.63458251953125,
+      "assistanceEnabled": true,
+      "maxAssistDamping": 40.8,
+      "filteredContacts": 0,
+      "nearDistance": 150,
+      "halfDistance": 250,
+      "maxAssistWeight": 0.85,
+      "horizontalRate": 0,
+      "responseRate": 8,
+      "pendingSupportReturns": 0,
+      "detachGraceSeconds": 0.12,
+      "fallSeconds": 0.12,
+      "fallSpeed": -0.75,
+      "collapseTrend": false,
+      "remainingStable": true,
+      "bodies": [
+        {
+          "id": 1,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 8.670564552016076,
+          "angularDamping": 14.670564552016076
+        },
+        {
+          "id": 2,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 6
+        },
+        {
+          "id": 3,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 6
+        },
+        {
+          "id": 4,
+          "lost": false,
+          "supported": false,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 1.5
+        }
+      ]
+    },
+    "sequence": [
+      "cardboard_box",
+      "fridge",
+      "basketball",
+      "wood_plank"
+    ],
+    "untimedCalibration": true,
+    "observationSeconds": null,
+    "maxObserveSeconds": 1.5,
+    "placementBlocked": false,
+    "placementTop": 336.63458251953125,
+    "stabilizers": {
+      "active": [],
+      "brokenPairs": []
+    },
+    "secondsLeft": 4,
+    "tutorial": false,
+    "paused": false,
+    "boundary": {
+      "top": 620.6345825195312,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428,
+      "bottom": -52.22256033761161
+    },
+    "view": {
+      "scale": 1.75,
+      "originY": -339,
+      "cameraY": 135.20449987111417,
+      "targetCameraY": 135.2060110909598,
+      "width": 750,
+      "height": 1334,
+      "heldTop": 620.6345825195312,
+      "zoom": 0.75,
+      "zoomTarget": 0.75,
+      "incidentCamera": true,
+      "landing": {
+        "bursts": 0,
+        "particles": 0,
+        "reactions": []
+      }
+    },
+    "music": {
+      "region": null,
+      "fading": false,
+      "fade": 1,
+      "gain": 0,
+      "paused": false,
+      "enabled": false,
+      "issues": [],
+      "sources": [
+        {
+          "clip": null,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        },
+        {
+          "clip": null,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        }
+      ]
+    },
+    "audioClips": 36,
+    "currentId": 4,
+    "bodies": [
+      {
+        "id": 1,
+        "kind": "cardboard_box",
+        "position": {
+          "x": -0.0003187321126461029,
+          "y": 50.46537399291992,
+          "z": 0
+        },
+        "angle": 0.0011876372866081507,
+        "size": [
+          100.912779,
+          100
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.000020728180970763788
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 4.389647960662842,
+        "awake": false,
+        "contacts": 2,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 8.670564552016076,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -50.45753390535898,
+          "right": 50.45704359861583,
+          "bottom": 0.46439120197961614,
+          "top": 100.46620121739035
+        }
+      },
+      {
+        "id": 2,
+        "kind": "fridge",
+        "position": {
+          "x": -0.00030392780900001526,
+          "y": 184.7062225341797,
+          "z": 0
+        },
+        "angle": 0.003324696714511193,
+        "size": [
+          150,
+          167.554858636
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.00005802690429845825
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 7.023437023162842,
+        "awake": false,
+        "contacts": 2,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 0.9999999999999999,
+          "y": 0.9999999999999999,
+          "z": 1
+        },
+        "bounds": {
+          "left": -74.99652477663923,
+          "right": 75.00352954156934,
+          "bottom": 100.9254502164214,
+          "top": 268.4869766616904
+        }
+      },
+      {
+        "id": 3,
+        "kind": "basketball",
+        "position": {
+          "x": -0.000553780933842063,
+          "y": 302.63458251953125,
+          "z": 0
+        },
+        "angle": 0.0006012181364954076,
+        "size": [
+          68,
+          68
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.000010493236004549544
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 1.4186254739761353,
+        "awake": false,
+        "contacts": 1,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -150.75259808839704
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -34.00055378093384,
+          "right": 33.99944621906616,
+          "bottom": 268.63458251953125,
+          "top": 336.63458251953125
+        }
+      },
+      {
+        "id": 4,
+        "kind": "wood_plank",
+        "position": {
+          "x": 0,
+          "y": 606.26220703125,
+          "z": 0
+        },
+        "angle": 0,
+        "size": [
+          260,
+          28.744805
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 0,
+        "awake": false,
+        "contacts": 0,
+        "contactSeconds": null,
+        "lost": false,
+        "supported": false,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": false,
+        "type": 1,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -130,
+          "right": 130,
+          "bottom": 591.88980503125,
+          "top": 620.63460903125
+        }
+      }
+    ]
+  },
+  "afterZoom": {
+    "phase": "planning",
+    "releases": 3,
+    "placed": 3,
+    "peakMetres": 3.3663458251953124,
+    "stars": 3,
+    "incidentCount": 0,
+    "incident": null,
+    "recoverySeconds": 0,
+    "failureReason": null,
+    "normalBoundary": {
+      "top": 710.0631539481027,
+      "bottom": -52.22256033761161,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428
+    },
+    "safety": {
+      "enabled": true,
+      "boundary": {
+        "top": 710.0631539481027,
+        "bottom": -52.22256033761161,
+        "left": -214.28571428571428,
+        "right": 214.28571428571428
+      },
+      "referenceTop": 336.63458251953125,
+      "confirmedTop": 336.63458251953125,
+      "assistanceEnabled": true,
+      "maxAssistDamping": 40.8,
+      "filteredContacts": 0,
+      "nearDistance": 150,
+      "halfDistance": 250,
+      "maxAssistWeight": 0.85,
+      "horizontalRate": 0,
+      "responseRate": 8,
+      "pendingSupportReturns": 0,
+      "detachGraceSeconds": 0.12,
+      "fallSeconds": 0.12,
+      "fallSpeed": -0.75,
+      "collapseTrend": false,
+      "remainingStable": true,
+      "bodies": [
+        {
+          "id": 1,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 8.670564645361297,
+          "angularDamping": 14.670564645361297
+        },
+        {
+          "id": 2,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 6
+        },
+        {
+          "id": 3,
+          "lost": false,
+          "supported": true,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 6
+        },
+        {
+          "id": 4,
+          "lost": false,
+          "supported": false,
+          "detachedSeconds": 0,
+          "fallingSeconds": 0,
+          "assistDamping": 0,
+          "angularDamping": 1.5
+        }
+      ]
+    },
+    "sequence": [
+      "cardboard_box",
+      "fridge",
+      "basketball",
+      "wood_plank"
+    ],
+    "untimedCalibration": true,
+    "observationSeconds": null,
+    "maxObserveSeconds": 1.5,
+    "placementBlocked": false,
+    "placementTop": 336.63458251953125,
+    "stabilizers": {
+      "active": [],
+      "brokenPairs": []
+    },
+    "secondsLeft": 4,
+    "tutorial": false,
+    "paused": false,
+    "boundary": {
+      "top": 620.6345825195312,
+      "left": -214.28571428571428,
+      "right": 214.28571428571428,
+      "bottom": -52.22256033761161
+    },
+    "view": {
+      "scale": 1.75,
+      "originY": -339,
+      "cameraY": 135.20600953440882,
+      "targetCameraY": 135.2060110909598,
+      "width": 750,
+      "height": 1334,
+      "heldTop": 620.6345825195312,
+      "zoom": 1,
+      "zoomTarget": 1,
+      "incidentCamera": false,
+      "landing": {
+        "bursts": 0,
+        "particles": 0,
+        "reactions": []
+      }
+    },
+    "music": {
+      "region": null,
+      "fading": false,
+      "fade": 1,
+      "gain": 0,
+      "paused": false,
+      "enabled": false,
+      "issues": [],
+      "sources": [
+        {
+          "clip": null,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        },
+        {
+          "clip": null,
+          "playing": false,
+          "time": 0,
+          "volume": 0
+        }
+      ]
+    },
+    "audioClips": 36,
+    "currentId": 4,
+    "bodies": [
+      {
+        "id": 1,
+        "kind": "cardboard_box",
+        "position": {
+          "x": -0.0003187321126461029,
+          "y": 50.46537399291992,
+          "z": 0
+        },
+        "angle": 0.0011876372866081507,
+        "size": [
+          100.912779,
+          100
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.000020728180970763788
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 4.389647960662842,
+        "awake": false,
+        "contacts": 2,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 8.670564645361297,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -50.45753390535898,
+          "right": 50.45704359861583,
+          "bottom": 0.46439120197961614,
+          "top": 100.46620121739035
+        }
+      },
+      {
+        "id": 2,
+        "kind": "fridge",
+        "position": {
+          "x": -0.00030392780900001526,
+          "y": 184.7062225341797,
+          "z": 0
+        },
+        "angle": 0.003324696714511193,
+        "size": [
+          150,
+          167.554858636
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.00005802690429845825
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 7.023437023162842,
+        "awake": false,
+        "contacts": 2,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -187.42857142857142
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 0.9999999999999999,
+          "y": 0.9999999999999999,
+          "z": 1
+        },
+        "bounds": {
+          "left": -74.99652477663923,
+          "right": 75.00352954156934,
+          "bottom": 100.9254502164214,
+          "top": 268.4869766616904
+        }
+      },
+      {
+        "id": 3,
+        "kind": "basketball",
+        "position": {
+          "x": -0.000553780933842063,
+          "y": 302.63458251953125,
+          "z": 0
+        },
+        "angle": 0.0006012181364954076,
+        "size": [
+          68,
+          68
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0.000010493236004549544
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 1.4186254739761353,
+        "awake": false,
+        "contacts": 1,
+        "contactSeconds": 1.5,
+        "lossBoundary": {
+          "left": -214.28571428571428,
+          "right": 214.28571428571428,
+          "bottom": -150.75259808839704
+        },
+        "lost": false,
+        "supported": true,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": true,
+        "type": 2,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -34.00055378093384,
+          "right": 33.99944621906616,
+          "bottom": 268.63458251953125,
+          "top": 336.63458251953125
+        }
+      },
+      {
+        "id": 4,
+        "kind": "wood_plank",
+        "position": {
+          "x": 0,
+          "y": 606.26220703125,
+          "z": 0
+        },
+        "angle": 0,
+        "size": [
+          260,
+          28.744805
+        ],
+        "physicsAxis": {
+          "x": 1,
+          "y": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0
+        },
+        "angularVelocity": 0,
+        "mass": 0,
+        "awake": false,
+        "contacts": 0,
+        "contactSeconds": null,
+        "lost": false,
+        "supported": false,
+        "detachedSeconds": 0,
+        "fallingSeconds": 0,
+        "assistDamping": 0,
+        "placed": false,
+        "type": 1,
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "left": -130,
+          "right": 130,
+          "bottom": 591.88980503125,
+          "top": 620.63460903125
+        }
+      }
+    ]
+  },
+  "status": "recorded"
+}

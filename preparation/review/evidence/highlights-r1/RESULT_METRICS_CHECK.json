@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "assertions": 255,
+  "cases": 6,
+  "screenSizes": [
+    [
+      375,
+      667,
+      375,
+      667
+    ],
+    [
+      300,
+      650,
+      300,
+      606
+    ],
+    [
+      450,
+      600,
+      450,
+      556
+    ],
+    [
+      375,
+      812,
+      375,
+      734
+    ]
+  ],
+  "productionSourceSha256": "85d1415babce662f7a72f371d1ed60e04781f5c376b2f31f9bd1d3ee427e3b70",
+  "resultSceneSha256": "a050855362039e831271eb580ca8cfdfd020ca71d9c55b470686ce0bfae5184b",
+  "limits": "Transpiled production logic and static geometry under cc mock only. No font rendering, Creator/browser build, GPU or device verification."
+}

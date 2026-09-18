@@ -1,0 +1,27 @@
+{
+  "status": "independent_candidate_ready_for_user_review",
+  "revision": "livelier-r1",
+  "productionIntegrated": false,
+  "previewInputs": {
+    "sample.js": "9d28da80df69f7214482abc37584c95c9f353ed2226f3e6e42123bcc91db681f",
+    "sequence.json": "5efe61a31c5e4941c7f12af0ddc151f4d2807741cddd7ea7955a760d685f8471",
+    "index.html": "311d131575da3539f2d1e0295c6cbb6900ffe0909f7405d83238509d5b452e97",
+    "sample.css": "ad001b302671bc39e1b41d643d0a801213eb39a79fb6e2199f54d38bb08e3958",
+    "cloud/manifest.json": "6a5fef9a361dda00a88f49ee7f6ecb4095537cf12628447e3c960ec3e662c584"
+  },
+  "activeAssetHashesMatchCapture": true,
+  "activeFrameAndCloudFiles": 60,
+  "technicalChecksPassed": 11,
+  "browserErrors": [],
+  "productionInputsUnchanged": 338,
+  "videos": {
+    "sample-normal-raw.webm": "d4ce27a19579c3d46c53aebddcfbfa73920207ae08c2f800c16a4681856d044d",
+    "sample-half-speed-raw.webm": "c16b59802fc27aca389b77547410269ca2d6ab8b34d5be949a5b4a1566dbf9cb"
+  },
+  "visualReview": "Phone screenshots at 0/6/12s, face and hand detail views, and contact sheet extracted from actual normal-speed recording. No new blocking seam, occlusion, ghosting or whole-character drift found.",
+  "limits": [
+    "User has not approved this refinement yet.",
+    "Upper main clouds move; lower distant clouds/haze stay in original background.",
+    "No Cocos or WeChat build, device verification, production integration, Git commit or push."
+  ]
+}

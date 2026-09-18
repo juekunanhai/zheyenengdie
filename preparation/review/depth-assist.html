@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>这也能叠 · 距离衰减试放</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#edf3f8;color:#173047;font:15px/1.65 system-ui}main{max-width:1020px;margin:auto;padding:22px}h1{font-size:25px;margin:0}h2{font-size:18px}a{color:#126bb2}.controls{display:flex;gap:8px;margin:16px 0;flex-wrap:wrap}button{font:inherit;border:1px solid #bacbd9;border-radius:8px;background:white;padding:8px 12px;color:inherit;cursor:pointer}button:disabled{opacity:.45}.workspace{display:flex;gap:24px;align-items:flex-start}iframe{border:0;display:block;box-shadow:0 8px 28px #20364d25;max-width:100%}aside{flex:1;background:white;padding:18px;border-radius:12px}.small{font-size:13px;color:#506778}#status{min-height:26px}@media(max-width:760px){main{padding:14px}.workspace{flex-direction:column}aside{width:100%}}
+</style>
+<main><h1>距离越远，旧部位越安静</h1>
+<p>近处保留放置手感；继续叠高后，旧物体的细微晃动逐渐消散。原来放歪的姿态仍会留在塔里。</p>
+<div class="controls"><button id="home" disabled>首页 · 正常试玩</button><button id="practice" disabled>无倒计时试放</button></div>
+<p id="status" role="status">正在加载真实引擎…</p>
+<div class="workspace"><iframe id="player" title="距离衰减版真实 Cocos 游戏" src="play-player.html?revision=depth-assist-r1" width="375" height="667"></iframe>
+<aside><h2>本轮重点</h2><p>试着让早期物体稍微偏一点，再继续向上叠。观察旧部位是否逐渐安静下来，新放下的物体是否更容易接住。</p>
+<p>篮球仍有双面胶，横放木板仍能局部加固。失去实际支撑的物体会正常掉落。</p>
+<p class="small">最近 1.5 米维持原响应，再往下按固定世界距离增强辅助；帮助不依赖屏幕尺寸。事故期间冻结高度参考，恢复后使用剩余塔高。无倒计时模式仅供试放，不代表正式难度。</p>
+<p><a href="../docs/DEPTH_ASSIST_R1.md">算法、参数与验收边界</a></p>
+<p class="small">本页使用本机当前 Web 构建。微信真机需重新构建后验证，上一版验收不自动覆盖此次物理改动。</p></aside></div></main>
+<script>
+const frame=document.querySelector('#player'),status=document.querySelector('#status'),buttons=[...document.querySelectorAll('button')];
+window.addEventListener('message',event=>{if(event.origin!==location.origin||event.source!==frame.contentWindow)return;
+ if(event.data.type==='play-ready'){buttons.forEach(b=>b.disabled=false);status.textContent='已加载 · 可从首页开始试玩';}
+ if(event.data.type==='play-error')status.textContent='加载失败：'+event.data.error;
+});
+async function load(practice){buttons.forEach(b=>b.disabled=true);try{const w=frame.contentWindow;
+ await w.qaLoad(practice?'HUD':'Home');
+ if(practice){const game=w.qaGame();if(!game.configureCalibration(game.snapshot().sequence,true))throw Error('试放模式初始化失败');}
+ status.textContent=practice?'无倒计时试放 · 计分仍需真实稳固':'正常试玩 · 保留正式倒计时';
+ }catch(error){status.textContent=String(error);}finally{buttons.forEach(b=>b.disabled=false);}}
+document.querySelector('#home').onclick=()=>load(false);document.querySelector('#practice').onclick=()=>load(true);
+</script></html>

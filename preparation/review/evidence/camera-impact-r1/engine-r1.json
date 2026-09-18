@@ -1,0 +1,88 @@
+{
+  "profile": "engine-r1",
+  "startedAt": "2026-09-15T03:03:53.041Z",
+  "status": "failed_or_incomplete",
+  "build": {
+    "files": 218,
+    "sha256": "e35ac31f277495c3d27b6b19280cc1b0ff1e5d17f1cd43da4a8dfc0bd6e6717a"
+  },
+  "scriptSha256": "8fa83ed96f23a00ab50458019986074e0a8b61cf0a1c835ea0cc9216ae8f4525",
+  "method": {
+    "landing": "Actual normal first box release, plus isolated real fridge/ball and horizontal side-contact fixtures. The impact observer forwards the original callback without changing its arguments or result.",
+    "camera": "Explicit presentation fixture: fixed view heights and beginIncident/endIncident calls. It does not claim to be a naturally triggered accident or gameplay survival test.",
+    "pause": "Production lifecycle.togglePause freezes native simulation and presentation; browser timer only measures elapsed wall time.",
+    "limits": "Rectangle coverage is not pixel seam inspection. Screenshots and video still need visual review. Browser validation is not WeChat real-device acceptance."
+  },
+  "cases": [
+    {
+      "id": "box_platform",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at firstLanding (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:116:28)\n    at run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:26)\n    at /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:216:11"
+    },
+    {
+      "id": "ball_fridge",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at ballLanding (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:133:16)\n    at run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:26)\n    at /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:216:50"
+    },
+    {
+      "id": "side_contact",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at sideContact (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:149:29)\n    at run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:26)\n    at /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:216:87"
+    },
+    {
+      "id": "camera_375x667_0m",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at cameraCase (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:182:16)\n    at async run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:20)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:218:9"
+    },
+    {
+      "id": "camera_375x667_60m",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at cameraCase (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:182:16)\n    at async run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:20)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:218:9"
+    },
+    {
+      "id": "camera_375x667_200m",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at cameraCase (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:182:16)\n    at async run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:20)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:218:9"
+    },
+    {
+      "id": "camera_390x844_0m",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at cameraCase (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:182:16)\n    at async run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:20)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:218:9"
+    },
+    {
+      "id": "camera_390x844_60m",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at cameraCase (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:182:16)\n    at async run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:20)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:218:9"
+    },
+    {
+      "id": "camera_390x844_200m",
+      "status": "failed",
+      "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'record')\n    at http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2235:31\n    at Array.map (<anonymous>)\n    at LandingFeedback.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:2233:59)\n    at PlayView.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:3052:35)\n    at StackGameController.snapshot (http://127.0.0.1:8767/build/web-desktop/assets/main/index.js:1068:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:23:32)\n    at tick (eval at evaluate (:311:30), <anonymous>:8:31)\n    at Director.emit (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:11833:19)\n    at Director.tick (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:47530:20)\n    at Game._updateCallback (http://127.0.0.1:8767/build/web-desktop/cocos-js/_virtual_cc-BeKhxg4p.js:50213:22)\n    at cameraCase (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:182:16)\n    at async run (/Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:208:20)\n    at async /Users/admin/Desktop/douchao/my-project/wechatgames/die/preparation/tools/check_camera_impact.cjs:218:9"
+    }
+  ],
+  "checks": [
+    {
+      "id": "built_package_unchanged",
+      "pass": true,
+      "details": {
+        "files": 218,
+        "sha256": "e35ac31f277495c3d27b6b19280cc1b0ff1e5d17f1cd43da4a8dfc0bd6e6717a"
+      }
+    }
+  ],
+  "errors": [],
+  "engine": {
+    "scene": "Home",
+    "engine": "3.8.8",
+    "physics": {
+      "gravity": {
+        "x": 0,
+        "y": -1000
+      },
+      "fixedTimeStep": 0.016666666666666666,
+      "maxSubSteps": 4,
+      "auto": true
+    }
+  },
+  "finishedAt": "2026-09-15T03:03:57.011Z"
+}

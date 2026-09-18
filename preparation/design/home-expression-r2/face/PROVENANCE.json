@@ -1,0 +1,33 @@
+{
+  "status": "final frozen candidate for independent R2 prototype only",
+  "generationTool": "built-in image_gen",
+  "generatedSourcePath": "generated-closed-lids.png",
+  "generatedExternalOriginal": "/Users/admin/.codex/generated_images/01a0a323-ea60-7791-9920-28c97bd2db6a/exec-da262627-ce97-4340-8ff0-17b75775d33c.png",
+  "productionArtModified": false,
+  "productionSceneOrCodeModified": false,
+  "localProcessingAuthorized": true,
+  "processing": "Original eye pixels are never rescaled. Eye-aperture masks derive from original pixels; adjacent original face gradients fill the covered area. Only measured crease color/curve is reused from generated closed eyes. The generated raised eyelid surface and halo are discarded. Original mouth and brows have explicit preservation regions. Frame 0 is transparent.",
+  "finalManifestSha256": "2e67d6525a34f50424e6bf8455c5cffc93969e48ff5a36d32642dadf71c4e1b6",
+  "files": {
+    "prompt.txt": "e1353b2c7992c53f2db37d611275fbf63d7d15718a6fbeaaf0f0dba63c6d2a4b",
+    "original-hero.png": "2e37cc91eb553454e6df241a984acfacd47f074d21f684a9731a21b2183834e7",
+    "generated-closed-lids.png": "8be2b52aabbda41ff0cc12d7bfc690114cd84237ef0b4eb5fc3cf2e032c88ee4",
+    "make_blink_frames.py": "1d2c2db8ba42737f8dc227bc9786aac721cb2fc6eb497a665434c96681fed8f8",
+    "manifest.json": "2e67d6525a34f50424e6bf8455c5cffc93969e48ff5a36d32642dadf71c4e1b6",
+    "VALIDATION.json": "d61eb086a7bdf6d141be4881fa9a2e6f648e0535fc46bbb48804354cae56aa4d",
+    "duck_00.png": "92d9185aeaf3b70f6bf2d11cbf44feb4642027b4e25ab9aaeed551e25b2eef08",
+    "duck_01.png": "8041502216a9fade7e7eab12285a378971cee43de70cab1aaf0fb0fa84db14d5",
+    "duck_02.png": "3b5825e599fa8871e950056804211577e4a58329409ff2f4f919e3d7e2271c72",
+    "duck_03.png": "4259f408952602bc7c7ae668bcd16b552cf6eb2cd99d93e0d831b5c9b99eda19",
+    "duck_04.png": "1fa46d9bdb37e64773aa0e6403743d2f830c6f4083884140486ecdaded5beccd",
+    "duck_05.png": "40740d2c66c59369af71ee08becad56d2e510a5563ab7ed92e813c4099afa036",
+    "duck_06.png": "19b2a89bd26a7a498b86a004d498375d1557d478c3a393c9f8d98110c0d520ac",
+    "crate_00.png": "9fd4585d16e124873e16c2c35d11b4e7407cfaf9a2494f16f1fb3481370927cb",
+    "crate_01.png": "4e6cc55d6ecacc63081eaabbc4d472041807626ca7f8432d577559d1513b0dcd",
+    "crate_02.png": "b2463f3768aeb0ed3203ed99f00c7764f25905d854ed51c5faeebe538abb3310",
+    "crate_03.png": "8585e1980bc11608890241b8c1b1d4852ab5f144282e962a52930bcf33184b92",
+    "crate_04.png": "de02ea995b6524aff74d54b638c5fea89f7c3d128ce37dd8a3f92e672e71f865",
+    "crate_05.png": "3a9f832a29d07eb642ed8d0a3cd575c091a0f046fc39667f65b4bcebc6f65fe3",
+    "crate_06.png": "92fa1bda0f43a05d0ac3dc0e93d1e6b6e2b4fe869063fe47d362de647e77a6f0"
+  }
+}
