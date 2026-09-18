@@ -1,5 +1,6 @@
 import { _decorator, Color, Component, game, Game, Graphics, Label, Node, Sprite, SpriteFrame, UITransform, UIOpacity } from 'cc';
 import { runResult } from '../../batch1/object-data';
+import { createRunSharePayload, createShareAdapter, ShareAdapter } from '../../batch1/share-adapter';
 
 const { ccclass, property } = _decorator;
 
@@ -19,6 +20,8 @@ export class ResultPresentation extends Component {
     private safeHeight = 0;
     private elapsed = 0;
     private hidden = false;
+    private readonly shareAdapter: ShareAdapter = createShareAdapter();
+    private shareHint: Label | null = null;
     private readonly hide = () => { this.hidden = true; this.resetButtons(); };
     private readonly show = () => { this.hidden = false; };
 
@@ -38,6 +41,8 @@ export class ResultPresentation extends Component {
         }
         this.setHeight(runResult.height);
         this.showMetrics();
+        this.showCollectionNotice();
+        this.addShareButton();
         this.fit();
         this.paintEntry();
     }
@@ -120,6 +125,49 @@ export class ResultPresentation extends Component {
                 label.color = heading ? new Color(24, 72, 164) : new Color(15, 34, 110);
             }
         });
+    }
+
+    private showCollectionNotice(): void {
+        const count = runResult.collectionNewObjects.length + runResult.collectionNewItems.length;
+        if (count === 0 && !runResult.newRecord) return;
+        const node = new Node('CollectionNewNotice'); node.layer = this.card.layer; this.card.addChild(node);
+        node.addComponent(UITransform).setContentSize(460, 54); node.setPosition(0, -122, 0);
+        const label = node.addComponent(Label);
+        label.string = `${count > 0 ? `图鉴新增 ${count} 项` : ''}${runResult.newRecord ? '新纪录' : ''}`;
+        label.fontSize = 27; label.lineHeight = 34; label.isBold = true;
+        label.color = new Color(227, 103, 29, 255); label.horizontalAlign = Label.HorizontalAlign.CENTER;
+        label.verticalAlign = Label.VerticalAlign.CENTER; label.enableWrapText = false;
+    }
+
+    private addShareButton(): void {
+        const button = new Node('result_btn_share'); button.layer = this.card.layer; this.card.addChild(button);
+        button.addComponent(UITransform).setContentSize(152, 60); button.setPosition(145, 340, 0);
+        const background = button.addComponent(Graphics); background.fillColor = new Color(255, 201, 71, 255);
+        background.roundRect(-76, -30, 152, 60, 18); background.fill();
+        const label = button.addComponent(Label); label.string = '分享战绩'; label.fontSize = 24; label.lineHeight = 30;
+        label.color = new Color(24, 57, 106, 255); label.isBold = true;
+        label.horizontalAlign = Label.HorizontalAlign.CENTER; label.verticalAlign = Label.VerticalAlign.CENTER;
+        button.on(Node.EventType.TOUCH_START, () => button.setScale(.96, .96, 1));
+        button.on(Node.EventType.TOUCH_END, () => button.setScale(1, 1, 1));
+        button.on(Node.EventType.TOUCH_CANCEL, () => button.setScale(1, 1, 1));
+        button.on(Node.EventType.TOUCH_END, () => { void this.shareRun(); });
+        const hintNode = new Node('ShareHint'); hintNode.layer = this.card.layer; this.card.addChild(hintNode);
+        hintNode.addComponent(UITransform).setContentSize(360, 44); hintNode.setPosition(145, 292, 0);
+        this.shareHint = hintNode.addComponent(Label); this.shareHint.fontSize = 18; this.shareHint.lineHeight = 24;
+        this.shareHint.color = new Color(24, 72, 164, 255); this.shareHint.horizontalAlign = Label.HorizontalAlign.CENTER;
+        this.shareHint.verticalAlign = Label.VerticalAlign.CENTER; this.shareHint.enableWrapText = false;
+    }
+
+    private async shareRun(): Promise<void> {
+        if (this.hidden || !this.shareHint) return;
+        this.shareHint.string = '正在打开分享…';
+        const result = await this.shareAdapter.share(createRunSharePayload({
+            runId: runResult.runId, height: runResult.height,
+        }));
+        this.shareHint.string = result.status === 'shared' ? '分享已发起'
+            : result.status === 'cancelled' ? '已取消分享'
+                : result.status === 'unsupported' ? '当前平台暂不支持分享'
+                    : '分享失败，可继续游戏';
     }
 
     update(dt: number): void {

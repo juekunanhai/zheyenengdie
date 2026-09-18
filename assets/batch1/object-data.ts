@@ -1,3 +1,5 @@
+import type { ItemKind } from './item-system';
+
 /** difficulty-r1 candidates: visible bearing geometry, contact cushioning and local plank support.
  * Formal source scale remains unchanged; candidate provenance is in preparation/design/difficulty-r1.
  * Materials remain calibration values, not final balance. */
@@ -321,6 +323,7 @@ export function planarAngle(q: { z: number; w: number }): number {
 
 export type RunPhase = 'entering' | 'planning' | 'falling' | 'observing' | 'incident' | 'defeated' | 'ended';
 export const runResult = {
-    height: 0, placed: 0, reason: 'calibration_end', technicalScore: 0,
+    runId: '', height: 0, placed: 0, reason: 'calibration_end', technicalScore: 0, newRecord: false,
+    collectionNewObjects: [] as ObjectKind[], collectionNewItems: [] as ItemKind[],
     highlights: { narrow_escape: 0, edge_balance: 0, bridge: 0, large_rescue: 0 },
 };

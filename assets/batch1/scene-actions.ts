@@ -1,6 +1,7 @@
-import { _decorator, AudioClip, AudioSource, Color, Component, director, game, Game, isValid, Label, Node, Sprite, SpriteFrame, UITransform } from 'cc';
+import { _decorator, AudioClip, AudioSource, Color, Component, director, game, Game, Graphics, isValid, Label, Node, Sprite, SpriteFrame, UITransform } from 'cc';
 import { GameAudio } from './game-audio';
 import { bindAction, hasUserInteraction, markUserInteraction, readSettings, writeSettings } from './local-platform';
+import { CollectionView } from './collection-view';
 const { ccclass, property } = _decorator;
 
 /** Existing Home/Settings/Result art; only implemented fields and actions are active. */
@@ -15,6 +16,8 @@ export class StackSceneActions extends Component {
     private homeMusic: AudioSource | null = null;
     private homeMusicGain = 0;
     private homeSuspended = false;
+    private collectionView: CollectionView | null = null;
+    private collectionButton: Node | null = null;
     private readonly onHomeTouch = () => { markUserInteraction(); this.syncHomeMusic(); };
     private readonly onHomeHide = () => { this.homeSuspended = true; this.stopHomeMusic(); };
     private readonly onHomeShow = () => { this.homeSuspended = false; this.syncHomeMusic(); };
@@ -32,6 +35,8 @@ export class StackSceneActions extends Component {
             game.on(Game.EVENT_HIDE, this.onHomeHide);
             game.on(Game.EVENT_SHOW, this.onHomeShow);
             this.syncHomeMusic();
+            this.collectionView = new CollectionView(this.node.getChildByName('SafeArea')!, new Map(this.frames.map(frame => [frame.name, frame])));
+            this.collectionButton = this.makeCollectionButton(content);
             bindAction(content.getChildByName('btn_start')!, () => this.go('HUD'));
             bindAction(content.getChildByName('btn_settings_icon')!, () => this.go('Settings'));
         } else if (scene === 'Result') {
@@ -75,6 +80,18 @@ export class StackSceneActions extends Component {
         this.stopHomeMusic();
         director.loadScene(scene, () => { if (this.isValid) this.navigating = false; });
     }
+
+    private makeCollectionButton(parent: Node): Node {
+        const button = new Node('btn_collection'); button.layer = parent.layer; parent.addChild(button);
+        button.addComponent(UITransform).setContentSize(156, 58); button.setPosition(-291, 608, 0);
+        const background = button.addComponent(Graphics); background.fillColor = new Color(255, 201, 71, 255);
+        background.roundRect(-78, -29, 156, 58, 18); background.fill();
+        const label = button.addComponent(Label); label.string = '图鉴'; label.fontSize = 27; label.lineHeight = 34;
+        label.color = new Color(24, 57, 106, 255); label.isBold = true;
+        label.horizontalAlign = Label.HorizontalAlign.CENTER; label.verticalAlign = Label.VerticalAlign.CENTER;
+        bindAction(button, () => this.collectionView?.open());
+        return button;
+    }
     private syncHomeMusic(): void {
         if (!this.homeMusicClip || this.navigating || this.homeSuspended
             || !hasUserInteraction() || !readSettings().music) {
@@ -100,6 +117,7 @@ export class StackSceneActions extends Component {
     }
     update(dt: number): void {
         this.audio?.update(dt);
+        this.collectionView?.update();
         if (!this.homeMusicClip) return;
         this.syncHomeMusic();
         if (this.homeMusic?.playing) {
@@ -111,5 +129,8 @@ export class StackSceneActions extends Component {
         this.node.off(Node.EventType.TOUCH_START, this.onHomeTouch, this, true);
         game.off(Game.EVENT_HIDE, this.onHomeHide); game.off(Game.EVENT_SHOW, this.onHomeShow);
         this.stopHomeMusic(); this.audio?.dispose();
+        this.collectionView?.dispose(); this.collectionView = null;
+        if (this.collectionButton && isValid(this.collectionButton, true)) this.collectionButton.destroy();
+        this.collectionButton = null;
     }
 }

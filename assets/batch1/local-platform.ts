@@ -1,6 +1,8 @@
 import { director, Director, EventTouch, game, Game, isValid, Node, PhysicsSystem2D, sys, Vec2, view } from 'cc';
+import { CollectionLedger, CollectionState } from './collection-system';
 
 const STORAGE_KEY = 'zhynd.local-settings.v1';
+const PROGRESS_STORAGE_KEY = 'zhynd.player-progress.v1';
 export interface LocalSettings { tutorialDone: boolean; music: boolean; sound: boolean; vibration: boolean }
 const defaults: LocalSettings = { tutorialDone: false, music: true, sound: true, vibration: false };
 let userHasInteracted = false;
@@ -21,6 +23,30 @@ export function readSettings(): LocalSettings {
 export function writeSettings(value: LocalSettings): boolean {
     try { sys.localStorage.setItem(STORAGE_KEY, JSON.stringify(value)); return true; }
     catch { return false; }
+}
+
+/** PlayerProgress is a separate storage boundary from replaceable settings/cache. */
+export function readPlayerProgress(): CollectionState {
+    const empty: CollectionState = { schemaVersion: 1, discoveredObjects: [], discoveredItems: [], bestHeight: 0 };
+    try {
+        const parsed = JSON.parse(sys.localStorage.getItem(PROGRESS_STORAGE_KEY) || 'null');
+        if (!parsed) return empty;
+        CollectionLedger.validateState(parsed);
+        return {
+            schemaVersion: 1,
+            discoveredObjects: [...parsed.discoveredObjects],
+            discoveredItems: [...parsed.discoveredItems],
+            bestHeight: parsed.bestHeight,
+        };
+    } catch { return empty; }
+}
+
+export function writePlayerProgress(value: CollectionState): boolean {
+    try {
+        CollectionLedger.validateState(value);
+        sys.localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(value));
+        return true;
+    } catch { return false; }
 }
 
 export interface PlayInput { start(id: number, point: Vec2): void; move(id: number, point: Vec2): void;

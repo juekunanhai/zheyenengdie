@@ -56,7 +56,11 @@ const { runResult } = data;
 check(runResult.technicalScore === 0 && Object.keys(runResult.highlights).length === 4
     && ['narrow_escape', 'edge_balance', 'bridge', 'large_rescue'].every(key => runResult.highlights[key] === 0),
 'results start with four actual-zero highlight counters');
-const { ResultPresentation } = load(sourcePath, { cc, '../../batch1/object-data': data });
+const share = {
+    createShareAdapter: () => ({ share: async () => ({ status: 'unsupported' }) }),
+    createRunSharePayload: input => ({ shareType: 'normal', mode: 'normal', runId: input.runId, targetHeight: input.height }),
+};
+const { ResultPresentation } = load(sourcePath, { cc, '../../batch1/object-data': data, '../../batch1/share-adapter': share });
 const frames = new Map();
 for (const name of fs.readdirSync(path.join(ROOT, 'assets/batch0/art')).filter(name => name.endsWith('.png.meta'))) {
     const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/batch0/art', name), 'utf8'));

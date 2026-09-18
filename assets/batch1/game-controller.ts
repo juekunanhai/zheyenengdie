@@ -2,7 +2,7 @@ import { _decorator, AudioClip, Component, director, SpriteFrame, Vec2 } from 'c
 import { GameAudio } from './game-audio';
 import { GameMusic } from './game-music';
 import { Incident, WorldBoundary } from './incident-state';
-import { bindAction, readSettings, RunLifecycle, TouchBinding, writeSettings } from './local-platform';
+import { bindAction, readPlayerProgress, readSettings, RunLifecycle, TouchBinding, writePlayerProgress, writeSettings } from './local-platform';
 import { CALIBRATION_SEQUENCE, ENTER_SECONDS, localBounds, MAX_OBSERVE_SECONDS, ObjectKind, OBJECTS, planarAngle, PLANNING_SECONDS,
     runResult, RunPhase, STABLE_SECONDS } from './object-data';
 import { PlayView, PlayViewState } from './play-view';
@@ -10,7 +10,12 @@ import { LandingContact, TowerBody, TowerWorld, TowerWorldState } from './tower-
 import { classifyTowerRisk, DirectorState, RISK_THRESHOLDS, TowerDirector, TowerRisk } from './tower-director';
 import { HighlightEvent, HighlightState, HIGHLIGHT_TUNING, RunHighlights } from './run-highlights';
 import { ItemKind, ItemLedger, ItemState } from './item-system';
+import { CollectionLedger } from './collection-system';
 const { ccclass, property } = _decorator;
+
+function newRunId(): string {
+    return `${Date.now().toString(36)}-${Math.floor(Math.random() * 0x1000000).toString(36)}`;
+}
 
 /** Two in-memory points for the current rules only. No storage, inventory, or ad entitlement. */
 interface RunCheckpoint {
@@ -77,6 +82,7 @@ export class StackGameController extends Component {
     private chargedIncidentCount = 0;
     private readonly highlights = new RunHighlights();
     private readonly items = new ItemLedger();
+    private collection = new CollectionLedger();
     private untimedCalibration = false;
     private stars = 3;
     private incident: Incident | null = null;
@@ -98,7 +104,9 @@ export class StackGameController extends Component {
     private get restoringCheckpoint(): boolean { return this.checkpointAction === 'rebuilding'; }
 
     onLoad(): void {
-        runResult.height = 0; runResult.placed = 0; runResult.reason = 'calibration_end';
+        this.collection = new CollectionLedger(readPlayerProgress());
+        runResult.runId = newRunId(); runResult.height = 0; runResult.placed = 0; runResult.reason = 'calibration_end';
+        runResult.newRecord = false; runResult.collectionNewObjects = []; runResult.collectionNewItems = [];
         runResult.technicalScore = 0; runResult.highlights = this.highlights.snapshot().counts;
         this.world = new TowerWorld(this.node.scene!, (record, pair, speed, landing) => this.impact(record, pair, speed, landing),
             record => this.lost(record));
@@ -141,6 +149,7 @@ export class StackGameController extends Component {
                 stableSeconds: this.steadySeconds, incidentCount: this.chargedIncidentCount, placedCount: this.placedCount,
                 allowEarlyDiscovery: true });
         const spec = OBJECTS[choice.current];
+        this.discoverObject(choice.current);
         this.boundary = this.display.beginPlacement(this.world.placementTop(), Math.max(spec.width, spec.height));
         this.normalBoundary = this.display.logicalBounds();
         this.world.configureSafety(this.normalBoundary, this.world.supportedTop());
@@ -352,8 +361,19 @@ export class StackGameController extends Component {
 
     chooseItem(kind: ItemKind, replaceSlot?: 0 | 1): boolean {
         if (!this.items.chooseOffer(kind, replaceSlot)) return false;
+        this.discoverItem(kind);
         this.renderItems();
         return true;
+    }
+
+    private discoverObject(kind: ObjectKind): void {
+        if (!this.collection.discoverObject(kind)) return;
+        if (typeof writePlayerProgress === 'function') writePlayerProgress(this.collection.snapshot());
+    }
+
+    private discoverItem(kind: ItemKind): void {
+        if (!this.collection.discoverItem(kind)) return;
+        if (typeof writePlayerProgress === 'function') writePlayerProgress(this.collection.snapshot());
     }
 
     /** Local experiment host may select a fixed sequence before the first release.
@@ -591,6 +611,10 @@ export class StackGameController extends Component {
         const highlights = this.highlights.lock();
         runResult.height = this.peak / 100; runResult.placed = this.placedCount; runResult.reason = reason;
         runResult.technicalScore = highlights.technicalScore; runResult.highlights = highlights.counts;
+        const discoveries = this.collection.runDiscoveries();
+        runResult.newRecord = this.collection.finishRun(runResult.height);
+        runResult.collectionNewObjects = discoveries.objects;
+        runResult.collectionNewItems = discoveries.items;
         this.display.setHint(reason === 'large_collapse' ? '这次倒得有点多…' : '星星用完啦');
         // Physics may finish the collapse, but no further input, score or result changes are allowed.
     }
@@ -605,6 +629,7 @@ export class StackGameController extends Component {
     private commitResult(): void {
         if (this.phase === 'ended') return;
         this.phase = 'ended'; this.clock = 0; this.finger = null;
+        if (typeof writePlayerProgress === 'function') writePlayerProgress(this.collection.snapshot());
         const settings = readSettings(); settings.tutorialDone = true; writeSettings(settings);
         this.audio.pause(true);
         this.music.pause(true);
@@ -631,6 +656,7 @@ export class StackGameController extends Component {
             drawMode: this.sequence ? 'calibration' : 'director', director: this.objectDirector.snapshot(),
             risk: this.risk, elapsedSeconds: this.elapsedSeconds, steadySeconds: this.steadySeconds,
             highlights: this.highlights.snapshot(),
+            collection: this.collection.snapshot(),
             items: this.items.snapshot(),
             checkpoints: { stable: this.stableCheckpoint ? { placed: this.stableCheckpoint.placedCount,
                 releases: this.stableCheckpoint.releaseCount, peakMetres: this.stableCheckpoint.peak / 100 } : null,
