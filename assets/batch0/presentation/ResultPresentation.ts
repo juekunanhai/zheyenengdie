@@ -1,4 +1,4 @@
-import { _decorator, Color, Component, game, Game, Graphics, Node, Sprite, SpriteFrame, UITransform, UIOpacity } from 'cc';
+import { _decorator, Color, Component, game, Game, Graphics, Label, Node, Sprite, SpriteFrame, UITransform, UIOpacity } from 'cc';
 import { runResult } from '../../batch1/object-data';
 
 const { ccclass, property } = _decorator;
@@ -37,6 +37,7 @@ export class ResultPresentation extends Component {
             button.on(Node.EventType.TOUCH_CANCEL, () => visual.setScale(1, 1, 1));
         }
         this.setHeight(runResult.height);
+        this.showMetrics();
         this.fit();
         this.paintEntry();
     }
@@ -74,6 +75,51 @@ export class ResultPresentation extends Component {
             node.setPosition(x + glyph.width * scale / 2, (-52 * 2.3 / 2 + glyph.height / 2) * scale, 0);
             x += (glyph.width - overlap) * scale;
         }
+    }
+
+    /** Native text uses the settled run snapshot, including real zeroes. No sample or percentile art. */
+    private showMetrics(): void {
+        const board = new Node('ResultMetrics');
+        board.layer = this.card.layer;
+        this.card.addChild(board);
+        board.setSiblingIndex(this.card.getChildByName('result_btn_retry')!.getSiblingIndex());
+        // R13's existing data area, in the same 2.3x coordinates as the rest of the card.
+        const width = 209 * 2.3, height = 70 * 2.3;
+        board.addComponent(UITransform).setContentSize(width, height);
+        board.setPosition((18 + 209 / 2 - 149) * 2.3, (168 - 189 - 70 / 2) * 2.3, 0);
+        const graphics = board.addComponent(Graphics);
+        graphics.fillColor = new Color(255, 255, 255, 248);
+        graphics.roundRect(-width / 2, -height / 2, width, height, 24);
+        graphics.fill();
+        graphics.strokeColor = new Color(193, 228, 247, 255);
+        graphics.lineWidth = 2;
+        graphics.moveTo(0, -height / 2 + 24);
+        graphics.lineTo(0, height / 2 - 24);
+        graphics.stroke();
+        const count = (value: number) => String(Number.isFinite(value) ? Math.max(0, Math.floor(value)) : 0);
+        const columns = [
+            { name: 'TechnicalScore', title: '本次技术分', value: count(runResult.technicalScore) },
+            { name: 'NarrowEscapes', title: '惊险稳住', value: `${count(runResult.highlights.narrow_escape)}次` },
+        ];
+        columns.forEach((column, index) => {
+            for (const heading of [true, false]) {
+                const node = new Node(`${column.name}${heading ? 'Title' : 'Value'}`);
+                node.layer = board.layer;
+                board.addChild(node);
+                node.addComponent(UITransform).setContentSize(width / 2 - 24, heading ? 42 : 66);
+                node.setPosition((index ? 1 : -1) * width / 4, heading ? 34 : -22, 0);
+                const label = node.addComponent(Label);
+                label.string = heading ? column.title : column.value;
+                label.fontSize = heading ? 27 : 48;
+                label.lineHeight = heading ? 36 : 60;
+                label.isBold = true;
+                label.horizontalAlign = Label.HorizontalAlign.CENTER;
+                label.verticalAlign = Label.VerticalAlign.CENTER;
+                label.overflow = Label.Overflow.SHRINK;
+                label.enableWrapText = false;
+                label.color = heading ? new Color(24, 72, 164) : new Color(15, 34, 110);
+            }
+        });
     }
 
     update(dt: number): void {

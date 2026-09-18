@@ -1,0 +1,1052 @@
+{
+  "status": "cocos-source-integration-awaiting-engine-validation",
+  "revision": "slipper-hold-r2",
+  "duration": 8.2,
+  "layers": [
+    {
+      "name": "duck",
+      "start": 0.7,
+      "rect": [
+        334,
+        61,
+        173,
+        114
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null,
+          "frame": -1
+        },
+        {
+          "time": 0.01826,
+          "file": "face/duck_01.png",
+          "frame": 2
+        },
+        {
+          "time": 0.03071,
+          "file": "face/duck_02.png",
+          "frame": 3
+        },
+        {
+          "time": 0.04162,
+          "file": "face/duck_03.png",
+          "frame": 4
+        },
+        {
+          "time": 0.05165,
+          "file": "face/duck_04.png",
+          "frame": 5
+        },
+        {
+          "time": 0.06105,
+          "file": "face/duck_05.png",
+          "frame": 6
+        },
+        {
+          "time": 0.07,
+          "file": "face/duck_06.png",
+          "frame": 7
+        },
+        {
+          "time": 0.105,
+          "file": "face/duck_06.png",
+          "frame": 7
+        },
+        {
+          "time": 0.125,
+          "file": "face/duck_05.png",
+          "frame": 6
+        },
+        {
+          "time": 0.145,
+          "file": "face/duck_04.png",
+          "frame": 5
+        },
+        {
+          "time": 0.165,
+          "file": "face/duck_03.png",
+          "frame": 4
+        },
+        {
+          "time": 0.185,
+          "file": "face/duck_02.png",
+          "frame": 3
+        },
+        {
+          "time": 0.205,
+          "file": "face/duck_01.png",
+          "frame": 2
+        },
+        {
+          "time": 0.225,
+          "file": null,
+          "frame": -1
+        }
+      ]
+    },
+    {
+      "name": "duck",
+      "start": 1.12,
+      "rect": [
+        334,
+        61,
+        173,
+        114
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null,
+          "frame": -1
+        },
+        {
+          "time": 0.01513,
+          "file": "face/duck_01.png",
+          "frame": 2
+        },
+        {
+          "time": 0.02544,
+          "file": "face/duck_02.png",
+          "frame": 3
+        },
+        {
+          "time": 0.03449,
+          "file": "face/duck_03.png",
+          "frame": 4
+        },
+        {
+          "time": 0.04279,
+          "file": "face/duck_04.png",
+          "frame": 5
+        },
+        {
+          "time": 0.05059,
+          "file": "face/duck_05.png",
+          "frame": 6
+        },
+        {
+          "time": 0.058,
+          "file": "face/duck_06.png",
+          "frame": 7
+        },
+        {
+          "time": 0.082,
+          "file": "face/duck_06.png",
+          "frame": 7
+        },
+        {
+          "time": 0.1,
+          "file": "face/duck_05.png",
+          "frame": 6
+        },
+        {
+          "time": 0.118,
+          "file": "face/duck_04.png",
+          "frame": 5
+        },
+        {
+          "time": 0.136,
+          "file": "face/duck_03.png",
+          "frame": 4
+        },
+        {
+          "time": 0.154,
+          "file": "face/duck_02.png",
+          "frame": 3
+        },
+        {
+          "time": 0.172,
+          "file": "face/duck_01.png",
+          "frame": 2
+        },
+        {
+          "time": 0.19,
+          "file": null,
+          "frame": -1
+        }
+      ]
+    },
+    {
+      "name": "crate",
+      "start": 2.483,
+      "rect": [
+        284,
+        1089,
+        148,
+        174
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": null,
+          "frame": -1
+        },
+        {
+          "time": 0.04757,
+          "file": "face/crate_01.png",
+          "frame": 0
+        },
+        {
+          "time": 0.08,
+          "file": "face/crate_02.png",
+          "frame": 1
+        },
+        {
+          "time": 0.16,
+          "file": "face/crate_02.png",
+          "frame": 1
+        },
+        {
+          "time": 0.235,
+          "file": "face/crate_01.png",
+          "frame": 0
+        },
+        {
+          "time": 0.31,
+          "file": null,
+          "frame": -1
+        }
+      ]
+    },
+    {
+      "name": "arm",
+      "start": 1.7,
+      "rect": [
+        150,
+        680,
+        330,
+        376
+      ],
+      "frames": [
+        {
+          "time": 0.0,
+          "file": "hand/frames/frame_000.png",
+          "frame": 8
+        },
+        {
+          "time": 0.0375,
+          "file": "hand/frames/frame_001.png",
+          "frame": 9
+        },
+        {
+          "time": 0.075,
+          "file": "hand/frames/frame_002.png",
+          "frame": 10
+        },
+        {
+          "time": 0.1125,
+          "file": "hand/frames/frame_003.png",
+          "frame": 11
+        },
+        {
+          "time": 0.15,
+          "file": "hand/frames/frame_004.png",
+          "frame": 12
+        },
+        {
+          "time": 0.1875,
+          "file": "hand/frames/frame_005.png",
+          "frame": 13
+        },
+        {
+          "time": 0.225,
+          "file": "hand/frames/frame_006.png",
+          "frame": 14
+        },
+        {
+          "time": 0.2625,
+          "file": "hand/frames/frame_007.png",
+          "frame": 15
+        },
+        {
+          "time": 0.3,
+          "file": "hand/frames/frame_008.png",
+          "frame": 16
+        },
+        {
+          "time": 0.3375,
+          "file": "hand/frames/frame_009.png",
+          "frame": 17
+        },
+        {
+          "time": 0.375,
+          "file": "hand/frames/frame_010.png",
+          "frame": 18
+        },
+        {
+          "time": 0.4125,
+          "file": "hand/frames/frame_011.png",
+          "frame": 19
+        },
+        {
+          "time": 0.45,
+          "file": "hand/frames/frame_012.png",
+          "frame": 20
+        },
+        {
+          "time": 0.4875,
+          "file": "hand/frames/frame_013.png",
+          "frame": 21
+        },
+        {
+          "time": 0.525,
+          "file": "hand/frames/frame_014.png",
+          "frame": 22
+        },
+        {
+          "time": 0.5625,
+          "file": "hand/frames/frame_015.png",
+          "frame": 23
+        },
+        {
+          "time": 0.6,
+          "file": "hand/frames/frame_016.png",
+          "frame": 24
+        },
+        {
+          "time": 0.6375,
+          "file": "hand/frames/frame_017.png",
+          "frame": 25
+        },
+        {
+          "time": 0.675,
+          "file": "hand/frames/frame_018.png",
+          "frame": 26
+        },
+        {
+          "time": 0.7125,
+          "file": "hand/frames/frame_019.png",
+          "frame": 27
+        },
+        {
+          "time": 0.75,
+          "file": "hand/frames/frame_020.png",
+          "frame": 28
+        },
+        {
+          "time": 0.7875,
+          "file": "hand/frames/frame_021.png",
+          "frame": 29
+        },
+        {
+          "time": 0.825,
+          "file": "hand/frames/frame_022.png",
+          "frame": 30
+        },
+        {
+          "time": 0.8625,
+          "file": "hand/frames/frame_023.png",
+          "frame": 31
+        },
+        {
+          "time": 0.9,
+          "file": "hand/frames/frame_024.png",
+          "frame": 32
+        },
+        {
+          "time": 0.9375,
+          "file": "hand/frames/frame_025.png",
+          "frame": 33
+        },
+        {
+          "time": 0.975,
+          "file": "hand/frames/frame_026.png",
+          "frame": 34
+        },
+        {
+          "time": 1.0125,
+          "file": "hand/frames/frame_027.png",
+          "frame": 35
+        },
+        {
+          "time": 1.05,
+          "file": "hand/frames/frame_028.png",
+          "frame": 36
+        },
+        {
+          "time": 1.0875,
+          "file": "hand/frames/frame_029.png",
+          "frame": 37
+        },
+        {
+          "time": 1.125,
+          "file": "hand/frames/frame_030.png",
+          "frame": 38
+        },
+        {
+          "time": 1.1625,
+          "file": "hand/frames/frame_031.png",
+          "frame": 39
+        },
+        {
+          "time": 1.2,
+          "file": "hand/frames/frame_032.png",
+          "frame": 40
+        },
+        {
+          "time": 1.2375,
+          "file": "hand/frames/frame_033.png",
+          "frame": 41
+        },
+        {
+          "time": 1.275,
+          "file": "hand/frames/frame_034.png",
+          "frame": 42
+        },
+        {
+          "time": 1.3125,
+          "file": "hand/frames/frame_035.png",
+          "frame": 43
+        },
+        {
+          "time": 1.35,
+          "file": "hand/frames/frame_036.png",
+          "frame": 44
+        },
+        {
+          "time": 1.3875,
+          "file": "hand/frames/frame_037.png",
+          "frame": 45
+        },
+        {
+          "time": 1.425,
+          "file": "hand/frames/frame_038.png",
+          "frame": 46
+        },
+        {
+          "time": 1.4625,
+          "file": "hand/frames/frame_039.png",
+          "frame": 47
+        },
+        {
+          "time": 1.5,
+          "file": "hand/frames/frame_040.png",
+          "frame": 48
+        },
+        {
+          "time": 1.5375,
+          "file": "hand/frames/frame_041.png",
+          "frame": 49
+        },
+        {
+          "time": 1.575,
+          "file": "hand/frames/frame_042.png",
+          "frame": 50
+        },
+        {
+          "time": 1.6125,
+          "file": "hand/frames/frame_043.png",
+          "frame": 51
+        },
+        {
+          "time": 1.65,
+          "file": "hand/frames/frame_044.png",
+          "frame": 52
+        },
+        {
+          "time": 1.6875,
+          "file": "hand/frames/frame_045.png",
+          "frame": 53
+        },
+        {
+          "time": 1.725,
+          "file": "hand/frames/frame_046.png",
+          "frame": 54
+        },
+        {
+          "time": 1.7625,
+          "file": "hand/frames/frame_047.png",
+          "frame": 55
+        },
+        {
+          "time": 1.8,
+          "file": "hand/frames/frame_048.png",
+          "frame": 56
+        }
+      ]
+    },
+    {
+      "name": "slipper_hands",
+      "space": "stage",
+      "start": 0,
+      "loopFrom": 0.5833333333333334,
+      "rect": [
+        405,
+        475,
+        140,
+        170
+      ],
+      "frames": [
+        {
+          "time": 0.0,
+          "file": "slipper/hold-r2/hands/frames/frame_000.png",
+          "frame": 87
+        },
+        {
+          "time": 0.041667,
+          "file": "slipper/hold-r2/hands/frames/frame_001.png",
+          "frame": 88
+        },
+        {
+          "time": 0.083333,
+          "file": "slipper/hold-r2/hands/frames/frame_002.png",
+          "frame": 89
+        },
+        {
+          "time": 0.125,
+          "file": "slipper/hold-r2/hands/frames/frame_003.png",
+          "frame": 90
+        },
+        {
+          "time": 0.166667,
+          "file": "slipper/hold-r2/hands/frames/frame_004.png",
+          "frame": 91
+        },
+        {
+          "time": 0.208333,
+          "file": "slipper/hold-r2/hands/frames/frame_005.png",
+          "frame": 92
+        },
+        {
+          "time": 0.25,
+          "file": "slipper/hold-r2/hands/frames/frame_006.png",
+          "frame": 93
+        },
+        {
+          "time": 0.291667,
+          "file": "slipper/hold-r2/hands/frames/frame_007.png",
+          "frame": 94
+        },
+        {
+          "time": 0.333333,
+          "file": "slipper/hold-r2/hands/frames/frame_008.png",
+          "frame": 95
+        },
+        {
+          "time": 0.375,
+          "file": "slipper/hold-r2/hands/frames/frame_009.png",
+          "frame": 96
+        },
+        {
+          "time": 0.416667,
+          "file": "slipper/hold-r2/hands/frames/frame_010.png",
+          "frame": 97
+        },
+        {
+          "time": 0.458333,
+          "file": "slipper/hold-r2/hands/frames/frame_011.png",
+          "frame": 98
+        },
+        {
+          "time": 0.5,
+          "file": "slipper/hold-r2/hands/frames/frame_012.png",
+          "frame": 99
+        },
+        {
+          "time": 0.541667,
+          "file": "slipper/hold-r2/hands/frames/frame_013.png",
+          "frame": 100
+        },
+        {
+          "time": 0.583333,
+          "file": "slipper/hold-r2/hands/frames/frame_014.png",
+          "frame": 101
+        },
+        {
+          "time": 0.625,
+          "file": "slipper/hold-r2/hands/frames/frame_015.png",
+          "frame": 102
+        },
+        {
+          "time": 0.666667,
+          "file": "slipper/hold-r2/hands/frames/frame_016.png",
+          "frame": 103
+        },
+        {
+          "time": 0.708333,
+          "file": "slipper/hold-r2/hands/frames/frame_017.png",
+          "frame": 104
+        },
+        {
+          "time": 0.75,
+          "file": "slipper/hold-r2/hands/frames/frame_018.png",
+          "frame": 105
+        },
+        {
+          "time": 0.791667,
+          "file": "slipper/hold-r2/hands/frames/frame_019.png",
+          "frame": 106
+        },
+        {
+          "time": 0.833333,
+          "file": "slipper/hold-r2/hands/frames/frame_020.png",
+          "frame": 107
+        },
+        {
+          "time": 0.875,
+          "file": "slipper/hold-r2/hands/frames/frame_021.png",
+          "frame": 108
+        },
+        {
+          "time": 0.916667,
+          "file": "slipper/hold-r2/hands/frames/frame_022.png",
+          "frame": 109
+        },
+        {
+          "time": 0.958333,
+          "file": "slipper/hold-r2/hands/frames/frame_023.png",
+          "frame": 110
+        },
+        {
+          "time": 1.0,
+          "file": "slipper/hold-r2/hands/frames/frame_024.png",
+          "frame": 111
+        },
+        {
+          "time": 1.041667,
+          "file": "slipper/hold-r2/hands/frames/frame_025.png",
+          "frame": 112
+        },
+        {
+          "time": 1.083333,
+          "file": "slipper/hold-r2/hands/frames/frame_026.png",
+          "frame": 113
+        },
+        {
+          "time": 1.125,
+          "file": "slipper/hold-r2/hands/frames/frame_027.png",
+          "frame": 114
+        },
+        {
+          "time": 1.166667,
+          "file": "slipper/hold-r2/hands/frames/frame_028.png",
+          "frame": 115
+        },
+        {
+          "time": 1.208333,
+          "file": "slipper/hold-r2/hands/frames/frame_029.png",
+          "frame": 116
+        },
+        {
+          "time": 1.25,
+          "file": "slipper/hold-r2/hands/frames/frame_030.png",
+          "frame": 117
+        },
+        {
+          "time": 1.291667,
+          "file": "slipper/hold-r2/hands/frames/frame_031.png",
+          "frame": 118
+        },
+        {
+          "time": 1.333333,
+          "file": "slipper/hold-r2/hands/frames/frame_032.png",
+          "frame": 119
+        },
+        {
+          "time": 1.375,
+          "file": "slipper/hold-r2/hands/frames/frame_033.png",
+          "frame": 120
+        },
+        {
+          "time": 1.416667,
+          "file": "slipper/hold-r2/hands/frames/frame_034.png",
+          "frame": 121
+        },
+        {
+          "time": 1.458333,
+          "file": "slipper/hold-r2/hands/frames/frame_035.png",
+          "frame": 122
+        },
+        {
+          "time": 1.5,
+          "file": "slipper/hold-r2/hands/frames/frame_036.png",
+          "frame": 123
+        },
+        {
+          "time": 1.541667,
+          "file": "slipper/hold-r2/hands/frames/frame_037.png",
+          "frame": 124
+        },
+        {
+          "time": 1.583333,
+          "file": "slipper/hold-r2/hands/frames/frame_038.png",
+          "frame": 125
+        }
+      ]
+    },
+    {
+      "name": "slipper_effort",
+      "space": "stage",
+      "start": 0.62333,
+      "loopFrom": 0.18,
+      "rect": [
+        374.94885110294115,
+        436.7928998161765,
+        63.90588235294118,
+        54.205882352941174
+      ],
+      "frames": [
+        {
+          "time": 0,
+          "file": "slipper/hold-r2/face/close_00.png",
+          "frame": 57
+        },
+        {
+          "time": 0.035,
+          "file": "slipper/hold-r2/face/close_01.png",
+          "frame": 58
+        },
+        {
+          "time": 0.07,
+          "file": "slipper/hold-r2/face/close_02.png",
+          "frame": 59
+        },
+        {
+          "time": 0.105,
+          "file": "slipper/hold-r2/face/close_03.png",
+          "frame": 60
+        },
+        {
+          "time": 0.14,
+          "file": "slipper/hold-r2/face/close_04.png",
+          "frame": 61
+        },
+        {
+          "time": 0.18,
+          "file": "slipper/hold-r2/face/hold_00.png",
+          "frame": 62
+        },
+        {
+          "time": 0.221667,
+          "file": "slipper/hold-r2/face/hold_01.png",
+          "frame": 63
+        },
+        {
+          "time": 0.263333,
+          "file": "slipper/hold-r2/face/hold_02.png",
+          "frame": 64
+        },
+        {
+          "time": 0.305,
+          "file": "slipper/hold-r2/face/hold_03.png",
+          "frame": 65
+        },
+        {
+          "time": 0.346667,
+          "file": "slipper/hold-r2/face/hold_04.png",
+          "frame": 66
+        },
+        {
+          "time": 0.388333,
+          "file": "slipper/hold-r2/face/hold_05.png",
+          "frame": 67
+        },
+        {
+          "time": 0.43,
+          "file": "slipper/hold-r2/face/hold_06.png",
+          "frame": 68
+        },
+        {
+          "time": 0.471667,
+          "file": "slipper/hold-r2/face/hold_07.png",
+          "frame": 69
+        },
+        {
+          "time": 0.513333,
+          "file": "slipper/hold-r2/face/hold_08.png",
+          "frame": 70
+        },
+        {
+          "time": 0.555,
+          "file": "slipper/hold-r2/face/hold_09.png",
+          "frame": 71
+        },
+        {
+          "time": 0.596667,
+          "file": "slipper/hold-r2/face/hold_10.png",
+          "frame": 72
+        },
+        {
+          "time": 0.638333,
+          "file": "slipper/hold-r2/face/hold_11.png",
+          "frame": 73
+        },
+        {
+          "time": 0.68,
+          "file": "slipper/hold-r2/face/hold_12.png",
+          "frame": 74
+        },
+        {
+          "time": 0.721667,
+          "file": "slipper/hold-r2/face/hold_13.png",
+          "frame": 75
+        },
+        {
+          "time": 0.763333,
+          "file": "slipper/hold-r2/face/hold_14.png",
+          "frame": 76
+        },
+        {
+          "time": 0.805,
+          "file": "slipper/hold-r2/face/hold_15.png",
+          "frame": 77
+        },
+        {
+          "time": 0.846667,
+          "file": "slipper/hold-r2/face/hold_16.png",
+          "frame": 78
+        },
+        {
+          "time": 0.888333,
+          "file": "slipper/hold-r2/face/hold_17.png",
+          "frame": 79
+        },
+        {
+          "time": 0.93,
+          "file": "slipper/hold-r2/face/hold_18.png",
+          "frame": 80
+        },
+        {
+          "time": 0.971667,
+          "file": "slipper/hold-r2/face/hold_19.png",
+          "frame": 81
+        },
+        {
+          "time": 1.013333,
+          "file": "slipper/hold-r2/face/hold_20.png",
+          "frame": 82
+        },
+        {
+          "time": 1.055,
+          "file": "slipper/hold-r2/face/hold_21.png",
+          "frame": 83
+        },
+        {
+          "time": 1.096667,
+          "file": "slipper/hold-r2/face/hold_22.png",
+          "frame": 84
+        },
+        {
+          "time": 1.138333,
+          "file": "slipper/hold-r2/face/hold_23.png",
+          "frame": 85
+        },
+        {
+          "time": 1.18,
+          "file": "slipper/hold-r2/face/hold_24.png",
+          "frame": 86
+        }
+      ]
+    }
+  ],
+  "details": {
+    "hand": [
+      130,
+      650,
+      460,
+      490
+    ],
+    "eye": [
+      320,
+      55,
+      195,
+      120
+    ]
+  },
+  "reviewTimes": {
+    "rest": 0,
+    "half_blink": 0.737,
+    "closed_blink": 0.785,
+    "second_blink": 1.19,
+    "peek": 1.988,
+    "reach": 2.222,
+    "contact": 2.375,
+    "grip": 2.672,
+    "withdraw": 3.158,
+    "returned": 3.51,
+    "slipper_peek": 0.25,
+    "slipper_contact": 0.6,
+    "slipper_effort": 1.15,
+    "slipper_held_4s": 4.15,
+    "slipper_before_loop": 8.15,
+    "slipper_after_loop": 8.25,
+    "slipper_before_second_loop": 16.35,
+    "slipper_after_second_loop": 16.45,
+    "slipper_held_24s": 24.15
+  },
+  "sky": {
+    "width": 941,
+    "height": 1672,
+    "layers": [
+      {
+        "rect": [
+          -128,
+          62,
+          430,
+          165
+        ],
+        "opacity": 0.82,
+        "speed": 12
+      },
+      {
+        "rect": [
+          698,
+          198,
+          405,
+          156
+        ],
+        "opacity": 0.84,
+        "speed": 10
+      },
+      {
+        "rect": [
+          600,
+          119,
+          178,
+          68
+        ],
+        "opacity": 0.36,
+        "speed": 5.5
+      },
+      {
+        "rect": [
+          107,
+          299,
+          255,
+          98
+        ],
+        "opacity": 0.58,
+        "speed": 8
+      }
+    ]
+  },
+  "files": [
+    "face/crate_01.png",
+    "face/crate_02.png",
+    "face/duck_01.png",
+    "face/duck_02.png",
+    "face/duck_03.png",
+    "face/duck_04.png",
+    "face/duck_05.png",
+    "face/duck_06.png",
+    "hand/frames/frame_000.png",
+    "hand/frames/frame_001.png",
+    "hand/frames/frame_002.png",
+    "hand/frames/frame_003.png",
+    "hand/frames/frame_004.png",
+    "hand/frames/frame_005.png",
+    "hand/frames/frame_006.png",
+    "hand/frames/frame_007.png",
+    "hand/frames/frame_008.png",
+    "hand/frames/frame_009.png",
+    "hand/frames/frame_010.png",
+    "hand/frames/frame_011.png",
+    "hand/frames/frame_012.png",
+    "hand/frames/frame_013.png",
+    "hand/frames/frame_014.png",
+    "hand/frames/frame_015.png",
+    "hand/frames/frame_016.png",
+    "hand/frames/frame_017.png",
+    "hand/frames/frame_018.png",
+    "hand/frames/frame_019.png",
+    "hand/frames/frame_020.png",
+    "hand/frames/frame_021.png",
+    "hand/frames/frame_022.png",
+    "hand/frames/frame_023.png",
+    "hand/frames/frame_024.png",
+    "hand/frames/frame_025.png",
+    "hand/frames/frame_026.png",
+    "hand/frames/frame_027.png",
+    "hand/frames/frame_028.png",
+    "hand/frames/frame_029.png",
+    "hand/frames/frame_030.png",
+    "hand/frames/frame_031.png",
+    "hand/frames/frame_032.png",
+    "hand/frames/frame_033.png",
+    "hand/frames/frame_034.png",
+    "hand/frames/frame_035.png",
+    "hand/frames/frame_036.png",
+    "hand/frames/frame_037.png",
+    "hand/frames/frame_038.png",
+    "hand/frames/frame_039.png",
+    "hand/frames/frame_040.png",
+    "hand/frames/frame_041.png",
+    "hand/frames/frame_042.png",
+    "hand/frames/frame_043.png",
+    "hand/frames/frame_044.png",
+    "hand/frames/frame_045.png",
+    "hand/frames/frame_046.png",
+    "hand/frames/frame_047.png",
+    "hand/frames/frame_048.png",
+    "slipper/hold-r2/face/close_00.png",
+    "slipper/hold-r2/face/close_01.png",
+    "slipper/hold-r2/face/close_02.png",
+    "slipper/hold-r2/face/close_03.png",
+    "slipper/hold-r2/face/close_04.png",
+    "slipper/hold-r2/face/hold_00.png",
+    "slipper/hold-r2/face/hold_01.png",
+    "slipper/hold-r2/face/hold_02.png",
+    "slipper/hold-r2/face/hold_03.png",
+    "slipper/hold-r2/face/hold_04.png",
+    "slipper/hold-r2/face/hold_05.png",
+    "slipper/hold-r2/face/hold_06.png",
+    "slipper/hold-r2/face/hold_07.png",
+    "slipper/hold-r2/face/hold_08.png",
+    "slipper/hold-r2/face/hold_09.png",
+    "slipper/hold-r2/face/hold_10.png",
+    "slipper/hold-r2/face/hold_11.png",
+    "slipper/hold-r2/face/hold_12.png",
+    "slipper/hold-r2/face/hold_13.png",
+    "slipper/hold-r2/face/hold_14.png",
+    "slipper/hold-r2/face/hold_15.png",
+    "slipper/hold-r2/face/hold_16.png",
+    "slipper/hold-r2/face/hold_17.png",
+    "slipper/hold-r2/face/hold_18.png",
+    "slipper/hold-r2/face/hold_19.png",
+    "slipper/hold-r2/face/hold_20.png",
+    "slipper/hold-r2/face/hold_21.png",
+    "slipper/hold-r2/face/hold_22.png",
+    "slipper/hold-r2/face/hold_23.png",
+    "slipper/hold-r2/face/hold_24.png",
+    "slipper/hold-r2/hands/frames/frame_000.png",
+    "slipper/hold-r2/hands/frames/frame_001.png",
+    "slipper/hold-r2/hands/frames/frame_002.png",
+    "slipper/hold-r2/hands/frames/frame_003.png",
+    "slipper/hold-r2/hands/frames/frame_004.png",
+    "slipper/hold-r2/hands/frames/frame_005.png",
+    "slipper/hold-r2/hands/frames/frame_006.png",
+    "slipper/hold-r2/hands/frames/frame_007.png",
+    "slipper/hold-r2/hands/frames/frame_008.png",
+    "slipper/hold-r2/hands/frames/frame_009.png",
+    "slipper/hold-r2/hands/frames/frame_010.png",
+    "slipper/hold-r2/hands/frames/frame_011.png",
+    "slipper/hold-r2/hands/frames/frame_012.png",
+    "slipper/hold-r2/hands/frames/frame_013.png",
+    "slipper/hold-r2/hands/frames/frame_014.png",
+    "slipper/hold-r2/hands/frames/frame_015.png",
+    "slipper/hold-r2/hands/frames/frame_016.png",
+    "slipper/hold-r2/hands/frames/frame_017.png",
+    "slipper/hold-r2/hands/frames/frame_018.png",
+    "slipper/hold-r2/hands/frames/frame_019.png",
+    "slipper/hold-r2/hands/frames/frame_020.png",
+    "slipper/hold-r2/hands/frames/frame_021.png",
+    "slipper/hold-r2/hands/frames/frame_022.png",
+    "slipper/hold-r2/hands/frames/frame_023.png",
+    "slipper/hold-r2/hands/frames/frame_024.png",
+    "slipper/hold-r2/hands/frames/frame_025.png",
+    "slipper/hold-r2/hands/frames/frame_026.png",
+    "slipper/hold-r2/hands/frames/frame_027.png",
+    "slipper/hold-r2/hands/frames/frame_028.png",
+    "slipper/hold-r2/hands/frames/frame_029.png",
+    "slipper/hold-r2/hands/frames/frame_030.png",
+    "slipper/hold-r2/hands/frames/frame_031.png",
+    "slipper/hold-r2/hands/frames/frame_032.png",
+    "slipper/hold-r2/hands/frames/frame_033.png",
+    "slipper/hold-r2/hands/frames/frame_034.png",
+    "slipper/hold-r2/hands/frames/frame_035.png",
+    "slipper/hold-r2/hands/frames/frame_036.png",
+    "slipper/hold-r2/hands/frames/frame_037.png",
+    "slipper/hold-r2/hands/frames/frame_038.png"
+  ]
+}

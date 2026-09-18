@@ -1035,7 +1035,7 @@
     "_id": "eb956793-0317-589d-b66c-b9c2de086fb3",
     "__type__": "fa1e0x5LFxRfZnAjwZR1Ute",
     "cloudFrame": {
-      "__uuid__": "2ad7cec6-9fa8-5b2e-b009-ecf918fd4f9c@f9941",
+      "__uuid__": "502ae253-c610-5643-9ff3-17e141f49057@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "groundForegroundFrame": {
@@ -4094,6 +4094,14 @@
       },
       {
         "__uuid__": "65a348ab-bfcb-5feb-a7ab-79c8a4a2b3b3@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "6a4350af-9a5e-5b4a-899c-363c90a5bfa0@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "da582995-aa57-582d-977e-133c6e2192c2@f9941",
         "__expectedType__": "cc.SpriteFrame"
       }
     ],

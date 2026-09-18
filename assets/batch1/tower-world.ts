@@ -1,16 +1,66 @@
 import { BoxCollider2D, CircleCollider2D, Collider2D, Contact2DType, director, Director, ERigidBody2DType, game,
-    IPhysics2DContact, isValid, Node, PolygonCollider2D, RelativeJoint2D, RigidBody2D, Size, Vec2 } from 'cc';
-import { localBounds, ObjectSpec, planarAngle, PLATFORM_WIDTH } from './object-data';
+    IPhysics2DContact, isValid, Node, PhysicsSystem2D, PolygonCollider2D, RigidBody2D, Size, Vec2 } from 'cc';
+import { localBounds, OBJECTS, ObjectSpec, planarAngle, PLATFORM_WIDTH } from './object-data';
+import { ContactAssistance, ContactAssistanceState } from './contact-assistance';
+import type { TowerRiskSignals } from './tower-director';
+import type { HighlightPlacement } from './run-highlights';
 
-// Creator 3.8.8 point-velocity uses world units; linearVelocity uses Box2D metres.
-const COCOS_PTM_RATIO = 32;
 // Small contact gaps do not turn an old supported tower into a loss. These are 1B tuning candidates.
 const DETACH_GRACE_SECONDS = .12;
 const FALL_SPEED = -.75;
 const FALL_SECONDS = .12;
-const MAX_DEEP_ASSIST = 8;
+// World units, not pixels or Box2D metres: preserve the newest 1.5 display metres.
+const ASSIST_NEAR_DISTANCE = 150;
+const ASSIST_HALF_DISTANCE = 250;
+const MAX_ASSIST_WEIGHT = .85;
+const ASSIST_ANGULAR_RATE = 48;
+const ASSIST_RESPONSE_RATE = 8;
 
 interface SafetyBoundary { top: number; bottom: number; left: number; right: number }
+interface SafetyState { boundary: SafetyBoundary; referenceTop: number; assist: boolean }
+export interface TowerBodyState {
+    id: number;
+    spec: ObjectSpec;
+    position: { x: number; y: number };
+    /** Full native angle, preserving complete turns used by existing motor offsets. */
+    angle: number;
+    scale: { x: number; y: number; z: number };
+    placed: boolean;
+    /** Eligibility during first-step recontact only; never restored as a support edge. */
+    supported: boolean;
+    contactSeconds: number | null;
+    lossBoundary?: { left: number; right: number; bottom: number };
+    assistDamping: number;
+    body: { type: ERigidBody2DType; allowSleep: boolean; bullet: boolean; fixedRotation: boolean;
+        gravityScale: number; linearDamping: number; angularDamping: number; group: number };
+    collider: { enabled: boolean; density: number; friction: number; restitution: number; sensor: boolean };
+}
+export interface TowerWorldState {
+    nextId: number;
+    bodies: TowerBodyState[];
+    safety: SafetyState | null;
+    assistance: ContactAssistanceState;
+    /** A short-lived permission to recontact the original bearing, never a support edge. */
+    supportReturns: { upperId: number; lowerId: number; remainingSeconds: number }[];
+}
+
+function cloneSpec(spec: ObjectSpec): ObjectSpec {
+    return { ...spec, ...(spec.spriteOffset ? { spriteOffset: [...spec.spriteOffset] as [number, number] } : {}),
+        ...(spec.outline ? { outline: spec.outline.map(point => [point[0], point[1]] as [number, number]) } : {}),
+        ...(spec.adhesion ? { adhesion: { ...spec.adhesion } } : {}),
+        ...(spec.stabilizer ? { stabilizer: { ...spec.stabilizer } } : {}) };
+}
+
+/** Copied at contact time; the native manifold itself is pooled by Cocos. */
+export interface LandingContact {
+    record: TowerBody;
+    support: Collider2D;
+    point: Vec2;
+    localPoint: Vec2;
+    localNormal: Vec2;
+    normal: Vec2;
+    speed: number;
+}
 
 export interface TowerBody {
     id: number;
@@ -32,65 +82,18 @@ export interface TowerBody {
     lossBoundary?: { left: number; right: number; bottom: number };
 }
 
-interface AdhesionContact { ball: TowerBody; other: Collider2D; side: number }
-interface AdhesionBond extends AdhesionContact {
-    joint: RelativeJoint2D;
-    base: RigidBody2D;
-    attached: RigidBody2D;
-    offset: Vec2;
-}
-interface StabilizerContact { plank: TowerBody; support: TowerBody; contact: IPhysics2DContact }
-interface StabilizerBond {
-    plank: TowerBody;
-    support: TowerBody;
-    joint: RelativeJoint2D;
-    offset: Vec2;
-    angle: number;
-}
-
-/** Compare physical angles across the -180/180 degree representation boundary. */
-function wrapAngle(angle: number): number { return ((angle + 180) % 360 + 360) % 360 - 180; }
-
-/** Creator 3.8.8 Box2D WASM exposes GetAngle() in radians with complete turns.
- * MotorJoint needs that original difference; quaternion angles could introduce
- * a spurious full-turn correction at attachment. Only error checks should wrap. */
-function relativeBodyAngle(base: RigidBody2D, attached: RigidBody2D): number {
-    const baseNative = base.impl!.impl as { GetAngle(): number };
-    const attachedNative = attached.impl!.impl as { GetAngle(): number };
-    return (attachedNative.GetAngle() - baseNative.GetAngle()) * 180 / Math.PI;
-}
-
-/** Initial overlaps must not become a motor's permanent target against contact resolution.
- * Creator's bundled Box2D linearSlop is .005 m. Preserve that solver tolerance,
- * correcting the target only along the actual support normal; never move either body. */
-function contactOffset(base: RigidBody2D, attached: RigidBody2D, baseCollider: Collider2D, contact: IPhysics2DContact): Vec2 {
-    const offset = base.getLocalPoint(attached.getWorldPoint(new Vec2(), new Vec2()), new Vec2());
-    const manifold = contact.getWorldManifold();
-    const correction = Math.max(0, -Math.min(...manifold.separations) - .005 * COCOS_PTM_RATIO);
-    if (correction > 0) {
-        const sign = contact.colliderA === baseCollider ? 1 : -1;
-        const normal = new Vec2(manifold.normal.x * sign * correction, manifold.normal.y * sign * correction);
-        offset.add(base.getLocalVector(normal, new Vec2()));
-    }
-    return offset;
-}
-
 /** Physics nodes never inherit a screen, Canvas or presentation scale. */
 export class TowerWorld {
     readonly root: Node;
     readonly bodies: TowerBody[] = [];
     readonly platform: BoxCollider2D;
     private nextId = 1;
-    private readonly pendingAdhesion = new Map<string, AdhesionContact & { contact: IPhysics2DContact }>();
-    private readonly bonds = new Map<string, AdhesionBond>();
-    private readonly cushionedBodies = new Set<number>();
-    private readonly pendingStabilizers = new Map<string, StabilizerContact>();
-    private readonly stabilizerBonds = new Map<string, StabilizerBond>();
-    // A torn connection cannot continually reconnect and consume more fall energy.
-    private readonly brokenStabilizers = new Set<string>();
-    private safety: { boundary: SafetyBoundary; confirmedTop: number; assist: boolean } | null = null;
+    private readonly contactAssistance = new ContactAssistance(this.bodies);
+    private safety: SafetyState | null = null;
+    private restoration: { safety: SafetyState | null; elapsed: number; supportedIds: Set<number> } | null = null;
     // Keep copied support directions, never query a pooled Cocos contact after END_CONTACT.
-    private readonly supportContacts = new Map<IPhysics2DContact, { upper: TowerBody; lower: Collider2D }>();
+    private readonly supportContacts = new Map<IPhysics2DContact, { upper: TowerBody; lower: Collider2D;
+        points: { x: number; y: number }[] }>();
     // A brief contact gap may reconnect only to its original, still grounded bearing surface.
     private readonly supportReturns = new Map<string, { upper: TowerBody; lower: Collider2D; expires: number }>();
     private readonly losing = new Set<number>();
@@ -98,7 +101,7 @@ export class TowerWorld {
     private safetyDt = 0;
     private filteredContacts = 0;
 
-    constructor(scene: Node, private readonly impact?: (record: TowerBody, pair: string, speed: number) => void,
+    constructor(scene: Node, private readonly impact?: (record: TowerBody, pair: string, speed: number, landing?: LandingContact) => void,
         private readonly onLoss?: (record: TowerBody) => void) {
         this.root = new Node('TowerPhysics');
         scene.addChild(this.root);
@@ -115,11 +118,15 @@ export class TowerWorld {
         director.on(Director.EVENT_AFTER_PHYSICS, this.afterPhysics, this);
     }
 
-    create(spec: ObjectSpec, x: number, y: number): TowerBody {
+    create(spec: ObjectSpec, x: number, y: number, saved?: TowerBodyState): TowerBody {
         const node = new Node(`Body:${this.nextId}:${spec.kind}`);
         // Configure off-scene: Creator reads the plain `bullet` field only when creating the
         // native body. Adding an active node first silently left native IsBullet() false.
         node.setPosition(x, y, 0);
+        if (saved) {
+            node.setScale(saved.scale.x, saved.scale.y, saved.scale.z);
+            node.setRotationFromEuler(0, 0, saved.angle);
+        }
         const body = node.addComponent(RigidBody2D);
         body.type = ERigidBody2DType.Kinematic;
         body.allowSleep = true;
@@ -129,6 +136,12 @@ export class TowerWorld {
         const freeAngularDamping = spec.circle ? .1 : 1.5;
         body.angularDamping = freeAngularDamping;
         body.bullet = true;
+        if (saved) {
+            body.type = saved.body.type; body.allowSleep = saved.body.allowSleep; body.bullet = saved.body.bullet;
+            body.fixedRotation = saved.body.fixedRotation; body.gravityScale = saved.body.gravityScale;
+            body.linearDamping = saved.body.linearDamping; body.angularDamping = saved.body.angularDamping;
+            body.group = saved.body.group;
+        }
         const collider = spec.circle ? node.addComponent(CircleCollider2D) :
             spec.outline ? node.addComponent(PolygonCollider2D) : node.addComponent(BoxCollider2D);
         collider.enabled = false;
@@ -138,9 +151,18 @@ export class TowerWorld {
         collider.density = spec.density;
         collider.friction = spec.friction;
         collider.restitution = spec.restitution;
+        if (saved) {
+            collider.density = saved.collider.density; collider.friction = saved.collider.friction;
+            collider.restitution = saved.collider.restitution; collider.sensor = saved.collider.sensor;
+        }
         const record: TowerBody = { id: this.nextId++, spec, node, body, collider, contacts: new Set(),
             placed: false, lost: false, supported: false, detachedSeconds: 0, fallingSeconds: 0,
             assistDamping: 0, contactSeconds: null };
+        if (saved) {
+            record.placed = saved.placed; record.contactSeconds = saved.contactSeconds;
+            record.assistDamping = saved.assistDamping;
+            if (saved.lossBoundary) record.lossBoundary = { ...saved.lossBoundary };
+        }
         // A concave PolygonCollider is partitioned into native fixtures. Keep public contacts
         // at object level, but retain each live native contact until its matching END event.
         const fixtureContacts = new Map<Collider2D, Set<IPhysics2DContact>>();
@@ -151,16 +173,13 @@ export class TowerWorld {
             if (active?.has(contact)) return;
             if (!active) { active = new Set(); fixtureContacts.set(other, active); }
             active.add(contact);
-            if (active.size > 1) return;
+            if (active.size > 1) { this.emitImpact(record, other, contact, false); return; }
             record.contacts.add(other);
             if (spec.contactAngularDamping !== undefined) body.angularDamping = spec.contactAngularDamping + record.assistDamping;
-            const peer = this.bodies.find(r => r.collider === other);
-            if (peer && peer.id > record.id) return;
-            const velocity = body.linearVelocity.clone();
-            if (other.body) velocity.subtract(other.body.linearVelocity);
-            this.impact?.(record, `${record.id}:${peer?.id ?? 0}`, velocity.length());
+            this.emitImpact(record, other, contact, true);
         });
         collider.on(Contact2DType.END_CONTACT, (_self: Collider2D, other: Collider2D, contact: IPhysics2DContact) => {
+            if (record.lost) return;
             const previous = this.supportContacts.get(contact);
             if (this.safety && previous?.upper.placed && previous.upper.supported && !previous.upper.lost) {
                 this.supportReturns.set(`${previous.upper.id}:${previous.lower.uuid}`,
@@ -170,14 +189,7 @@ export class TowerWorld {
             if (this.safety) this.refreshSupport();
             const active = fixtureContacts.get(other);
             if (!active?.delete(contact)) return;
-            // A side graze on the same object must not keep an ended support contact eligible
-            // for glue. Cocos recycles the contact object immediately after this END callback.
-            for (const [key, pending] of this.pendingAdhesion) {
-                if (pending.ball === record && pending.contact === contact) this.pendingAdhesion.delete(key);
-            }
-            for (const [key, pending] of this.pendingStabilizers) {
-                if (pending.plank === record && pending.contact === contact) this.pendingStabilizers.delete(key);
-            }
+            this.contactAssistance.endContact(record, contact);
             if (active.size > 0) return;
             fixtureContacts.delete(other);
             record.contacts.delete(other);
@@ -187,22 +199,81 @@ export class TowerWorld {
             (_self: Collider2D, other: Collider2D, contact: IPhysics2DContact) => {
                 if (this.rejectContact(record, other, contact)) return;
                 this.recordSupport(record, other, contact);
-                this.prepareCushion(record, other, contact);
-                if (spec.adhesion) this.prepareAdhesion(record, other, contact);
-                if (spec.stabilizer) this.prepareStabilizer(record, other, contact);
+                this.contactAssistance.preSolve(record, other, contact, spec);
         });
         this.bodies.push(record);
         this.root.addChild(node);
+        if (saved) {
+            // A quaternion drops whole turns. Restore the original native angle as well,
+            // so a motor's saved angular offset does not acquire a full-turn error.
+            const native = body.impl!.impl as { GetPosition(): Vec2; SetTransform(position: Vec2, angle: number): void };
+            native.SetTransform(native.GetPosition(), saved.angle * Math.PI / 180);
+            // The coming syncSceneToPhysics would otherwise reapply the quaternion's
+            // wrapped angle in this same frame. Position/scale dirtiness stays intact.
+            node.hasChangedFlags &= ~Node.TransformBit.ROTATION;
+            body.linearVelocity = new Vec2(); body.angularVelocity = 0;
+            collider.enabled = saved.collider.enabled;
+            if (saved.collider.enabled) collider.apply();
+            body.wakeUp();
+        }
         return record;
     }
 
+    private emitImpact(record: TowerBody, other: Collider2D, contact: IPhysics2DContact, audible: boolean): void {
+        if (this.restoring) return;
+        const peer = this.bodies.find(r => r.collider === other);
+        if (peer && peer.id > record.id) return;
+        const velocity = record.body.linearVelocity.clone();
+        if (other.body) velocity.subtract(other.body.linearVelocity);
+        // Audio remains object-deduplicated; a concave side contact must not consume
+        // a later real floor contact from another fixture. Presentation has its own cooldown.
+        this.impact?.(record, `${record.id}:${peer?.id ?? 0}`, audible ? velocity.length() : 0,
+            this.landingContact(record, other, contact));
+    }
+
+    private landingContact(record: TowerBody, other: Collider2D, contact: IPhysics2DContact): LandingContact | undefined {
+        if (other.sensor) return;
+        const manifold = contact.getWorldManifold();
+        if (!manifold.points.length) return;
+        const sign = contact.colliderA === record.collider ? -1 : 1;
+        const normal = new Vec2(manifold.normal.x * sign, manifold.normal.y * sign);
+        const peer = this.bodies.find(candidate => candidate.collider === other);
+        const upper = normal.y > .3 ? record : normal.y < -.3 ? peer : undefined;
+        const lower = upper === record ? other.body : record.body;
+        if (!upper || !lower || upper.placed || upper.lost) return;
+        if (upper !== record) normal.multiplyScalar(-1);
+        const point = new Vec2();
+        for (const p of manifold.points) point.add(p);
+        point.multiplyScalar(1 / manifold.points.length);
+        const velocity = upper.body.getLinearVelocityFromWorldPoint(point, new Vec2());
+        velocity.subtract(lower.getLinearVelocityFromWorldPoint(point, new Vec2()));
+        // This point API includes angular velocity and returns world units/s (PTM=32),
+        // unlike linearVelocity. Keep the existing impact-strength unit, metres/s.
+        const speed = -Vec2.dot(velocity, normal) / 32;
+        if (speed < .8) return;
+        return { record: upper, support: upper === record ? other : record.collider, point, normal, speed,
+            localPoint: upper.body.getLocalPoint(point, new Vec2()),
+            localNormal: upper.body.getLocalVector(normal, new Vec2()) };
+    }
+
     /** The controller freezes this normal-view boundary during an incident. Visual zoom never enters physics. */
-    configureSafety(boundary: SafetyBoundary, confirmedTop: number, assist = true): void {
-        this.safety = { boundary: { ...boundary }, confirmedTop, assist };
+    configureSafety(boundary: SafetyBoundary, referenceTop: number, assist = true): void {
+        if (this.restoration) return;
+        this.safety = { boundary: { ...boundary }, referenceTop: Math.max(0, referenceTop), assist };
         this.refreshSupport();
     }
 
+    assistanceTop(): number { return this.safety?.referenceTop ?? 0; }
+
     private beforePhysics(): void {
+        if (this.restoration) {
+            // Creator emits AFTER_PHYSICS even when its accumulator ran no substep.
+            // More than one fixed step of observed time guarantees a real solver pass.
+            const dt = Number.isFinite(game.deltaTime) ? Math.min(.1, Math.max(0, game.deltaTime)) : 0;
+            this.restoration.elapsed += dt;
+            this.safetyTime += dt;
+            return;
+        }
         if (!this.safety) return;
         this.safetyDt = Math.min(.1, Math.max(0, game.deltaTime));
         this.safetyTime += this.safetyDt;
@@ -227,8 +298,11 @@ export class TowerWorld {
         const towardY = manifold.normal.y * (contact.colliderA === record.collider ? 1 : -1);
         this.supportContacts.delete(contact);
         if (!manifold.points.length) return;
-        if (towardY < -.3) this.supportContacts.set(contact, { upper: record, lower: other });
-        else if (towardY > .3 && peer) this.supportContacts.set(contact, { upper: peer, lower: record.collider });
+        // Cocos pools manifolds. Save scalar contact evidence while the solver owns it,
+        // never retain a native point object for later stable-placement highlights.
+        const points = manifold.points.map(point => ({ x: point.x, y: point.y }));
+        if (towardY < -.3) this.supportContacts.set(contact, { upper: record, lower: other, points });
+        else if (towardY > .3 && peer) this.supportContacts.set(contact, { upper: peer, lower: record.collider, points });
     }
 
     /** Directed contacts and finite local glue must ultimately reach the real ground. A floating pair is not a root. */
@@ -245,14 +319,7 @@ export class TowerWorld {
             if (!active(a) || !active(b)) return;
             edges.push({ upper: a, lower: b }, { upper: b, lower: a });
         };
-        for (const bond of this.bonds.values()) {
-            if (this.bondIntact(bond)) connect(bond.ball.collider, bond.other);
-        }
-        for (const bond of this.stabilizerBonds.values()) {
-            const error = this.stabilizerError(bond);
-            if (error.distance <= Math.max(8, bond.plank.spec.height * .5) &&
-                error.angle <= bond.plank.spec.stabilizer!.maxAngleError) connect(bond.plank.collider, bond.support.collider);
-        }
+        for (const [a, b] of this.contactAssistance.supportPairs()) connect(a, b);
         let changed = true;
         while (changed) {
             changed = false;
@@ -267,8 +334,8 @@ export class TowerWorld {
         }
     }
 
-    private outside(record: TowerBody): { side: boolean; below: boolean } {
-        const edge = !record.placed && record.lossBoundary ? record.lossBoundary : this.safety!.boundary;
+    private outside(record: TowerBody, boundary = this.safety!.boundary): { side: boolean; below: boolean } {
+        const edge = !record.placed && record.lossBoundary ? record.lossBoundary : boundary;
         const bounds = this.nativeBounds(record);
         return { side: bounds.right < edge.left || bounds.left > edge.right, below: bounds.top < edge.bottom };
     }
@@ -288,7 +355,8 @@ export class TowerWorld {
         const previous = this.supportReturns.get(`${record.id}:${other.uuid}`);
         if (!previous || previous.expires < this.safetyTime) return false;
         const lower = this.bodies.find(candidate => candidate.collider === other);
-        if (other !== this.platform && (!lower?.supported || lower.lost)) return false;
+        const lowerSupported = lower && (lower.supported || this.restoration?.supportedIds.has(lower.id));
+        if (other !== this.platform && (!lowerSupported || lower?.lost)) return false;
         if (other === this.platform && !other.body.enabledInHierarchy) return false;
         const relative = record.body.linearVelocity.clone().subtract(other.body.linearVelocity);
         if (relative.length() >= .4 || Math.abs(record.body.angularVelocity) >= .5 || Math.abs(other.body.angularVelocity) >= .5) return false;
@@ -298,7 +366,29 @@ export class TowerWorld {
     }
 
     private rejectContact(record: TowerBody, other: Collider2D, contact: IPhysics2DContact): boolean {
+        // Retired bodies can still receive a deferred END/PRE_SOLVE callback during teardown.
+        if (record.lost) { contact.disabled = true; return true; }
         const peer = this.bodies.find(candidate => candidate.collider === other);
+        if (this.restoration?.safety) {
+            // A rebuild may reopen original bearing contacts, but it must not grant an
+            // already detached offscreen body a new route into the tower. Saved support
+            // is only a first-step eligibility fact, never inserted into the live graph.
+            const boundary = this.restoration.safety.boundary;
+            const isolated = (candidate: TowerBody, counterpart: Collider2D): boolean => {
+                if (candidate.lost) return true;
+                const outside = this.outside(candidate, boundary);
+                if (outside.side) return true;
+                if (!outside.below) return false;
+                return !candidate.placed || (!this.restoration!.supportedIds.has(candidate.id)
+                    && !this.mayReturnToSupport(candidate, counterpart, contact));
+            };
+            if (contact.disabled || contact.disabledOnce || isolated(record, other) || (peer && isolated(peer, record.collider))) {
+                contact.disabledOnce = true;
+                this.supportContacts.delete(contact); this.filteredContacts++;
+                return true;
+            }
+            return false;
+        }
         if (this.safety) {
             // Refresh an existing edge's real normal before using it as evidence. Do not insert
             // a brand-new contact here: an external impact cannot certify its own support.
@@ -333,16 +423,7 @@ export class TowerWorld {
         record.lost = true; record.supported = false;
         this.losing.delete(record.id);
         this.setAssist(record, 0);
-        // Disabling a collider or joint in PRE_SOLVE is deferred by Creator. Zero the existing
-        // motors immediately as well; contact.disabled is the immediate collision barrier.
-        for (const [key, bond] of this.bonds) if (bond.ball === record || bond.other === record.collider) {
-            bond.joint.maxForce = 0; bond.joint.maxTorque = 0;
-            this.removeBond(bond); this.bonds.delete(key);
-        }
-        for (const [key, bond] of this.stabilizerBonds) if (bond.plank === record || bond.support === record) {
-            bond.joint.maxForce = 0; bond.joint.maxTorque = 0;
-            this.removeBond(bond); this.stabilizerBonds.delete(key); this.brokenStabilizers.add(key);
-        }
+        this.contactAssistance.disableFor(record);
         for (const [contact, edge] of this.supportContacts) {
             if (edge.upper === record || edge.lower === record.collider) this.supportContacts.delete(contact);
         }
@@ -364,17 +445,20 @@ export class TowerWorld {
 
     private updateAssistance(dt: number): void {
         if (!this.safety) return;
-        const { boundary, confirmedTop, assist } = this.safety;
-        const height = Math.max(1, boundary.top - boundary.bottom);
+        const { referenceTop, assist } = this.safety;
+        const physics = PhysicsSystem2D.instance;
+        // Cocos may execute several fixed steps in one render frame. Smooth the
+        // damping parameter within that budget; native Box2D applies it per step.
+        dt = Math.min(dt, physics.fixedTimeStep * physics.maxSubSteps);
         for (const record of this.bodies) {
-            if (!assist || record.lost || !record.placed || !record.supported || record.body.linearVelocity.y < FALL_SPEED) {
+            if (!assist || record.lost || !record.supported || record.contactSeconds === null ||
+                record.body.type !== ERigidBody2DType.Dynamic || record.body.linearVelocity.y < FALL_SPEED) {
                 this.setAssist(record, 0); continue;
             }
-            const bounds = this.nativeBounds(record);
-            const depth = Math.max(0, confirmedTop - bounds.top);
-            const t = Math.max(0, Math.min(1, (depth - height) / (2 * height)));
-            const target = bounds.top < boundary.bottom ? MAX_DEEP_ASSIST * t * t * (3 - 2 * t) : 0;
-            this.setAssist(record, record.assistDamping + (target - record.assistDamping) * (1 - Math.exp(-8 * dt)));
+            const distance = Math.max(0, referenceTop - this.nativeBounds(record).top - ASSIST_NEAR_DISTANCE);
+            const weight = MAX_ASSIST_WEIGHT * (1 - Math.pow(2, -distance / ASSIST_HALF_DISTANCE));
+            const target = ASSIST_ANGULAR_RATE * weight;
+            this.setAssist(record, record.assistDamping + (target - record.assistDamping) * (1 - Math.exp(-ASSIST_RESPONSE_RATE * dt)));
         }
     }
 
@@ -389,8 +473,14 @@ export class TowerWorld {
     }
 
     safetySnapshot(): object {
-        return { enabled: !!this.safety, boundary: this.safety?.boundary, confirmedTop: this.safety?.confirmedTop,
-            assistanceEnabled: this.safety?.assist, maxAssistDamping: MAX_DEEP_ASSIST, filteredContacts: this.filteredContacts,
+        return { enabled: !!this.safety, boundary: this.safety?.boundary, referenceTop: this.safety?.referenceTop,
+            // Legacy diagnostic name; it no longer means historical score height.
+            confirmedTop: this.safety?.referenceTop, assistanceEnabled: this.safety?.assist,
+            maxAssistDamping: ASSIST_ANGULAR_RATE * MAX_ASSIST_WEIGHT, filteredContacts: this.filteredContacts,
+            nearDistance: ASSIST_NEAR_DISTANCE, halfDistance: ASSIST_HALF_DISTANCE, maxAssistWeight: MAX_ASSIST_WEIGHT,
+            // Horizontal drag was rejected by the real-controller ablation: it changed
+            // bearing motion enough to tip a previously viable dumbbell placement.
+            horizontalRate: 0, responseRate: ASSIST_RESPONSE_RATE,
             pendingSupportReturns: this.supportReturns.size,
             detachGraceSeconds: DETACH_GRACE_SECONDS, fallSeconds: FALL_SECONDS, fallSpeed: FALL_SPEED,
             collapseTrend: this.collapseTrend(), remainingStable: this.remainingStable(),
@@ -399,105 +489,15 @@ export class TowerWorld {
                 assistDamping: record.assistDamping, angularDamping: record.body.angularDamping })) };
     }
 
-    private horizontal(record: TowerBody): boolean {
-        return Math.abs(Math.sin(planarAngle(record.node.rotation) * Math.PI / 180)) <= Math.sin(Math.PI / 12);
-    }
-
-    private prepareCushion(record: TowerBody, other: Collider2D, contact: IPhysics2DContact): void {
-        if (!other.body || other.sensor) return;
-        const manifold = contact.getWorldManifold();
-        const normal = new Vec2(manifold.normal.x, manifold.normal.y);
-        normal.multiplyScalar(contact.colliderA === record.collider ? 1 : -1);
-        if (Math.abs(normal.y) < .7 || !manifold.points.length) return;
-        const peer = this.bodies.find(candidate => candidate.collider === other);
-        const incoming = normal.y < 0 ? record : peer;
-        const support = incoming === record ? peer : record;
-        if (!incoming || incoming.placed || incoming.body.type !== ERigidBody2DType.Dynamic ||
-            this.cushionedBodies.has(incoming.id) || (support && support.id > incoming.id)) return;
-        const supportBody = incoming === record ? other.body : record.body;
-        const boardLimit = support?.spec.stabilizer && this.horizontal(support) ? support.spec.stabilizer.maxImpactSpeed : undefined;
-        const limit = Math.min(incoming.spec.contactImpactSpeed ?? Infinity, boardLimit ?? Infinity);
-        if (!Number.isFinite(limit)) return;
-        if (incoming !== record) normal.multiplyScalar(-1);
-        // Consume this one-time help only on a real lower support, never a side graze.
-        this.cushionedBodies.add(incoming.id);
-        this.cushionImpact(incoming.body, supportBody, manifold.points[0], normal, limit);
-    }
-
-    private prepareStabilizer(plank: TowerBody, other: Collider2D, contact: IPhysics2DContact): void {
-        const support = this.bodies.find(record => record.collider === other);
-        if (!support) return; // Never attach the plank to the static ground.
-        const key = `${plank.id}:${support.id}`;
-        if (this.brokenStabilizers.has(key) || this.stabilizerBonds.has(key) || this.pendingStabilizers.has(key)) return;
-        const pending = { plank, support, contact };
-        if (this.validStabilizerContact(pending)) this.pendingStabilizers.set(key, pending);
-    }
-
-    private validStabilizerContact({ plank, support, contact }: StabilizerContact): boolean {
-        if (!plank.collider.enabledInHierarchy || !support.collider.enabledInHierarchy || support.collider.sensor ||
-            plank.body.type !== ERigidBody2DType.Dynamic || support.body.type !== ERigidBody2DType.Dynamic ||
-            support.id >= plank.id || !plank.contacts.has(support.collider) || !this.horizontal(plank)) return false;
-        const manifold = contact.getWorldManifold();
-        const towardY = manifold.normal.y * (contact.colliderA === plank.collider ? 1 : -1);
-        return towardY < -.7 && manifold.points.some(point => point.y <= plank.node.worldPosition.y);
-    }
-
-    private prepareAdhesion(ball: TowerBody, other: Collider2D, contact: IPhysics2DContact): void {
-        if (!other.body || other.sensor) return;
-        const manifold = contact.getWorldManifold();
-        const normal = new Vec2(manifold.normal.x, manifold.normal.y);
-        normal.multiplyScalar(contact.colliderA === ball.collider ? 1 : -1);
-        if (Math.abs(normal.y) < .7 || !manifold.points.length) return;
-        const side = Math.sign(normal.y), key = `${ball.id}:${side}`;
-        if (this.bonds.has(key) || this.pendingAdhesion.has(key)) return;
-        const peer = this.bodies.find(record => record.collider === other);
-        // A settled object brushing the top of a loose ball is not a new placement.
-        if (side > 0 && (!peer || peer.placed || peer.id < ball.id)) return;
-        this.pendingAdhesion.set(key, { ball, other, side, contact });
-        const incoming = peer && peer.id > ball.id ? peer : ball;
-        if (incoming.placed) return;
-        const support = incoming === ball ? other.body : ball.body;
-        if (incoming !== ball) normal.multiplyScalar(-1);
-        this.cushionImpact(incoming.body, support, manifold.points[0], normal, ball.spec.adhesion!.maxImpactSpeed);
-    }
-
-    private cushionImpact(body: RigidBody2D, support: RigidBody2D, point: Vec2, toward: Vec2, limit: number): void {
-        const relative = body.getLinearVelocityFromWorldPoint(point, new Vec2());
-        relative.subtract(support.getLinearVelocityFromWorldPoint(point, new Vec2()));
-        const closing = body.linearVelocity.clone().subtract(support.linearVelocity).dot(toward);
-        // Angular motion at an off-center contact must not reverse the body's translation.
-        const excess = Math.min(relative.dot(toward) / COCOS_PTM_RATIO - limit, Math.max(0, closing));
-        if (excess <= 0) return;
-        // Local glue cushioning removes closing energy only at a real new contact.
-        // Gravity, tangential motion, older bodies and free flight remain simulated.
-        body.linearVelocity = body.linearVelocity.clone().subtract(toward.multiplyScalar(excess));
-    }
-
     private afterPhysics(): void {
-        for (const [key, bond] of this.bonds) {
-            if (!this.bondIntact(bond)) { this.removeBond(bond); this.bonds.delete(key); }
+        this.contactAssistance.afterPhysics();
+        if (this.restoration) {
+            if (this.restoration.elapsed <= PhysicsSystem2D.instance.fixedTimeStep) return;
+            this.safety = this.restoration.safety;
+            this.restoration = null;
+            this.refreshSupport();
+            return;
         }
-        for (const [key, pending] of this.pendingAdhesion) {
-            if (pending.ball.contacts.has(pending.other) && pending.other.enabledInHierarchy) {
-                this.bonds.set(key, this.attach(pending));
-            }
-        }
-        this.pendingAdhesion.clear();
-        for (const [key, bond] of this.stabilizerBonds) {
-            const error = this.stabilizerError(bond);
-            if (!bond.plank.collider.enabledInHierarchy || !bond.support.collider.enabledInHierarchy ||
-                error.distance > Math.max(8, bond.plank.spec.height * .5) ||
-                error.angle > bond.plank.spec.stabilizer!.maxAngleError) {
-                this.removeBond(bond); this.stabilizerBonds.delete(key); this.brokenStabilizers.add(key);
-            }
-        }
-        for (const [key, pending] of this.pendingStabilizers) {
-            const count = Array.from(this.stabilizerBonds.values()).filter(bond => bond.plank === pending.plank).length;
-            if (count < 2 && !this.brokenStabilizers.has(key) && this.validStabilizerContact(pending)) {
-                this.stabilizerBonds.set(key, this.attachStabilizer(pending));
-            }
-        }
-        this.pendingStabilizers.clear();
         if (this.safety) {
             this.refreshSupport();
             for (const record of this.bodies) {
@@ -513,61 +513,8 @@ export class TowerWorld {
         for (const record of this.bodies) if (record.lost && record.node.active) record.node.active = false;
     }
 
-    private attachStabilizer({ plank, support, contact }: StabilizerContact): StabilizerBond {
-        const spec = plank.spec.stabilizer!;
-        const offset = contactOffset(support.body, plank.body, support.collider, contact);
-        const angle = relativeBodyAngle(support.body, plank.body);
-        const joint = support.node.addComponent(RelativeJoint2D);
-        joint.connectedBody = plank.body; joint.autoCalcOffset = false;
-        joint.linearOffset = offset; joint.angularOffset = angle;
-        // Fixed half-budget per support: adding a second support never exceeds the board's budget.
-        // Resist relative speed within that budget. Position feedback fought contact resolution
-        // under later loads; zero feedback neither pulls back a pose nor levels the board.
-        joint.maxForce = spec.maxForce / 2; joint.maxTorque = spec.maxTorque / 2;
-        joint.correctionFactor = 0; joint.collideConnected = true; joint.apply();
-        return { plank, support, joint, offset, angle };
-    }
-
-    private stabilizerError(bond: StabilizerBond): { distance: number; angle: number } {
-        const offset = bond.support.body.getLocalPoint(bond.plank.body.getWorldPoint(new Vec2(), new Vec2()), new Vec2());
-        const relative = planarAngle(bond.plank.node.rotation) - planarAngle(bond.support.node.rotation);
-        return { distance: Vec2.distance(offset, bond.offset), angle: Math.abs(wrapAngle(relative - bond.angle)) };
-    }
-
     stabilizerSnapshot(): { active: object[]; brokenPairs: string[] } {
-        return { active: Array.from(this.stabilizerBonds.values()).map(bond => ({
-            plankId: bond.plank.id, supportId: bond.support.id, ...this.stabilizerError(bond),
-            maxForce: bond.joint.maxForce, maxTorque: bond.joint.maxTorque,
-        })), brokenPairs: Array.from(this.brokenStabilizers) };
-    }
-
-    private attach(contact: AdhesionContact & { contact: IPhysics2DContact }): AdhesionBond {
-        const { ball, other, side } = contact;
-        const base = side < 0 ? other.body! : ball.body;
-        const attached = side < 0 ? ball.body : other.body!;
-        const offset = contactOffset(base, attached, side < 0 ? other : ball.collider, contact.contact);
-        const joint = base.node.addComponent(RelativeJoint2D);
-        joint.connectedBody = attached; joint.autoCalcOffset = false;
-        // Cocos auto offsets use world deltas. Explicit local offsets preserve rotated supports.
-        joint.linearOffset = offset;
-        joint.angularOffset = relativeBodyAngle(base, attached);
-        joint.maxForce = ball.spec.adhesion!.maxForce; joint.maxTorque = ball.spec.adhesion!.maxTorque;
-        // Finite resistance to relative motion, without positional feedback oscillation.
-        joint.correctionFactor = 0; joint.collideConnected = true; joint.apply();
-        return { ball, other, side, base, attached, offset, joint };
-    }
-
-    private bondIntact(bond: AdhesionBond): boolean {
-        if (!isValid(bond.other, true) || !isValid(bond.ball.collider, true)) return false;
-        if (!bond.other.enabledInHierarchy || !bond.ball.collider.enabledInHierarchy) return false;
-        const offset = bond.base.getLocalPoint(bond.attached.getWorldPoint(new Vec2(), new Vec2()), new Vec2());
-        return Vec2.distance(offset, bond.offset) <= bond.ball.spec.width * .12;
-    }
-
-    private removeBond(bond: { joint: RelativeJoint2D }): void {
-        if (!isValid(bond.joint, true)) return;
-        // Disable while bodies still exist so Box2D removes the native joint before body teardown.
-        bond.joint.enabled = false; bond.joint.destroy();
+        return this.contactAssistance.stabilizerSnapshot();
     }
 
     release(record: TowerBody): void {
@@ -601,6 +548,130 @@ export class TowerWorld {
             Math.abs(body.angularVelocity) <= 1.5).map(record => this.bounds(record).top));
     }
 
+    /** Assistance must not disappear just because a real supported top is shaking.
+     * This is independent of the stricter handoff gate and the historical score. */
+    supportedTop(): number {
+        return Math.max(0, ...this.bodies.filter(record => !record.lost && record.supported &&
+            record.collider.enabledInHierarchy && record.body.type === ERigidBody2DType.Dynamic &&
+            record.contactSeconds !== null).map(record => this.nativeBounds(record).top));
+    }
+
+    /** Read-only director inputs. Support width is a projected overlap proxy, not contact area.
+     * Includes contacted pieces before score confirmation and the entire offscreen valid tower. */
+    riskSignals(recentImpactSpeed = 0, placedOnly = false): TowerRiskSignals {
+        const active = this.bodies.filter(record => !record.lost && record.collider.enabledInHierarchy &&
+            record.body.type === ERigidBody2DType.Dynamic && record.contactSeconds !== null);
+        const sampled = placedOnly ? active.filter(record => record.placed) : active;
+        if (!sampled.length) return { maxTiltDegrees: 0, maxAngularSpeed: 0, minSupportRatio: 1,
+            unsupportedMassRatio: 0, recentImpactSpeed: 0, mainSupportStable: true };
+        const byCollider = new Map(active.map(record => [record.collider, record] as const));
+        const bounds = new Map(active.map(record => [record, this.nativeBounds(record)] as const));
+        const lowers = new Map<TowerBody, Set<Collider2D>>();
+        const add = (upper: TowerBody, lower: Collider2D): void => {
+            const peer = byCollider.get(lower);
+            if (!lower.enabledInHierarchy || (lower !== this.platform && !peer?.supported)) return;
+            let set = lowers.get(upper);
+            if (!set) { set = new Set(); lowers.set(upper, set); }
+            set.add(lower);
+        };
+        for (const edge of this.supportContacts.values()) if (byCollider.has(edge.upper.collider)) add(edge.upper, edge.lower);
+        // A finite basketball/plank bond may carry load between contact substeps. It is still
+        // connected to a grounded body, never an invented platform or a free-floating root.
+        for (const [a, b] of this.contactAssistance.supportPairs()) {
+            const first = byCollider.get(a), second = byCollider.get(b);
+            if (a === this.platform && second) { add(second, a); continue; }
+            if (b === this.platform && first) { add(first, b); continue; }
+            if (!first || !second) continue;
+            const ab = bounds.get(first)!, bb = bounds.get(second)!;
+            if (ab.top + ab.bottom > bb.top + bb.bottom) add(first, b);
+            else if (bb.top + bb.bottom > ab.top + ab.bottom) add(second, a);
+        }
+        let maxTiltDegrees = 0, maxAngularSpeed = 0, minSupportRatio = 1;
+        let mass = 0, unsupportedMass = 0;
+        // Only roots carrying the sampled tower affect its base stability. Keep a new
+        // rescuer underneath old pieces, but exclude an unrelated newly landed root.
+        const providers = new Set(sampled), pending = [...sampled];
+        for (let i = 0; i < pending.length; i++) {
+            for (const lower of lowers.get(pending[i]) ?? []) {
+                const peer = byCollider.get(lower);
+                if (peer && !providers.has(peer)) { providers.add(peer); pending.push(peer); }
+            }
+        }
+        const roots = active.filter(record => providers.has(record) && lowers.get(record)?.has(this.platform));
+        for (const record of sampled) {
+            const bodyMass = record.body.getMass();
+            mass += bodyMass;
+            if (!record.supported) unsupportedMass += bodyMass;
+            const axis = record.body.getWorldVector(new Vec2(1, 0), new Vec2());
+            const angle = Math.atan2(axis.y, axis.x) * 180 / Math.PI;
+            // A box/plank can legitimately land on another face. Orientation alone must not
+            // permanently mark that resting tower Critical; spin and lost support catch tipping.
+            const tilt = Math.abs(((angle % 90) + 135) % 90 - 45);
+            if (!record.spec.circle) maxTiltDegrees = Math.max(maxTiltDegrees, tilt);
+            maxAngularSpeed = Math.max(maxAngularSpeed, Math.abs(record.body.angularVelocity) * 180 / Math.PI);
+            const own = bounds.get(record)!;
+            const intervals: { left: number; right: number }[] = [];
+            for (const lower of lowers.get(record) ?? []) {
+                const support = lower === this.platform ? { left: -PLATFORM_WIDTH / 2, right: PLATFORM_WIDTH / 2 }
+                    : bounds.get(byCollider.get(lower)!)!;
+                const left = Math.max(own.left, support.left), right = Math.min(own.right, support.right);
+                if (right > left) intervals.push({ left, right });
+            }
+            intervals.sort((a, b) => a.left - b.left);
+            let covered = 0, end = -Infinity;
+            for (const interval of intervals) {
+                covered += Math.max(0, interval.right - Math.max(end, interval.left));
+                end = Math.max(end, interval.right);
+            }
+            minSupportRatio = Math.min(minSupportRatio, record.supported
+                ? Math.min(1, covered / Math.max(1, own.right - own.left)) : 0);
+        }
+        return { maxTiltDegrees, maxAngularSpeed, minSupportRatio,
+            unsupportedMassRatio: mass > 0 ? unsupportedMass / mass : 0, recentImpactSpeed,
+            mainSupportStable: roots.length > 0 && roots.every(record => record.supported &&
+                record.body.linearVelocity.length() < .12 && Math.abs(record.body.angularVelocity) < .12) };
+    }
+
+    /** Stable highlight evidence from real upward-bearing contact points only. A local
+     * bond may stabilize play, but cannot invent an edge/gap or prove a bridge by itself. */
+    highlightPlacement(record: TowerBody): HighlightPlacement & { point: { x: number; y: number } | null } {
+        const live = (body: TowerBody) => !body.lost && body.supported && body.collider.enabledInHierarchy;
+        const peers = new Map(this.bodies.filter(live).map(body => [body.collider, body] as const));
+        const groups = new Map<Collider2D, { x: number; y: number }[]>();
+        const supportedBodyIds = new Set<number>();
+        for (const edge of this.supportContacts.values()) {
+            if (!edge.lower.enabledInHierarchy || !live(edge.upper)) continue;
+            if (edge.lower === record.collider && edge.upper !== record) supportedBodyIds.add(edge.upper.id);
+            if (edge.upper !== record || (edge.lower !== this.platform && !peers.has(edge.lower))) continue;
+            const points = groups.get(edge.lower) ?? [];
+            points.push(...edge.points.filter(point => Number.isFinite(point.x) && Number.isFinite(point.y)));
+            groups.set(edge.lower, points);
+        }
+        const own = this.nativeBounds(record), width = Math.max(1, own.right - own.left);
+        const centerX = record.body.getWorldCenter(new Vec2()).x;
+        const bearings = Array.from(groups.values()).filter(points => points.length > 0).map(points => ({
+            left: Math.min(...points.map(point => point.x)), right: Math.max(...points.map(point => point.x)),
+        })).sort((a, b) => a.left - b.left);
+        // Union native-fixture spans so concave shapes and repeated contacts do not duplicate credit.
+        let covered = 0, end = -Infinity, bridgeGap = 0;
+        for (const bearing of bearings) {
+            if (end < centerX && bearing.left > centerX && Number.isFinite(end))
+                bridgeGap = Math.max(bridgeGap, bearing.left - end);
+            covered += Math.max(0, Math.min(own.right, bearing.right) - Math.max(own.left, end, bearing.left));
+            end = Math.max(end, bearing.right);
+        }
+        const single = bearings.length === 1 ? bearings[0] : null;
+        const half = single ? (single.right - single.left) / 2 : 0;
+        const points = Array.from(groups.values()).reduce((all, next) => all.concat(next), [] as { x: number; y: number }[]);
+        const accent = points.reduce<{ x: number; y: number } | null>((nearest, point) =>
+            !nearest || Math.abs(point.x - centerX) < Math.abs(nearest.x - centerX) ? point : nearest, null);
+        return { id: record.id, supported: live(record), bearingCount: bearings.length,
+            supportRatio: Math.min(1, covered / width),
+            centerOffsetRatio: single && half > .001 ? Math.abs(centerX - (single.left + single.right) / 2) / half : 0,
+            bridgeGapRatio: bridgeGap / width, supportedBodyIds: Array.from(supportedBodyIds),
+            point: accent ? { ...accent } : null };
+    }
+
     bounds(record: TowerBody): { left: number; right: number; bottom: number; top: number } {
         const bounds = localBounds(record.spec, planarAngle(record.node.rotation)), p = record.node.position;
         return { left: p.x + bounds.left, right: p.x + bounds.right, bottom: p.y + bounds.bottom, top: p.y + bounds.top };
@@ -610,16 +681,149 @@ export class TowerWorld {
         return Math.max(0, ...this.bodies.filter(r => r.placed && !r.lost).map(r => this.bounds(r).top));
     }
 
+    get restoring(): boolean { return this.restoration !== null; }
+
+    canSaveCheckpoint(): boolean {
+        if (this.restoring || !this.safety || !this.isStable() || this.hasPlacementHazard()) return false;
+        return this.bodies.every(record => {
+            if (record.lost || !record.collider.enabled) return true;
+            const outside = this.outside(record);
+            // A supported, confirmed tower base remains valid below the moving camera.
+            return !outside.side && (!outside.below || (record.placed && record.supported));
+        });
+    }
+
+    exportState(): TowerWorldState {
+        if (this.restoring) throw new Error('Cannot save while restoring tower contacts');
+        const live = new Map(this.bodies.filter(record => !record.lost && record.collider.enabledInHierarchy)
+            .map(record => [record.collider, record] as const));
+        const supportReturns: TowerWorldState['supportReturns'] = [];
+        for (const relation of this.supportReturns.values()) {
+            const lower = live.get(relation.lower);
+            if (relation.expires < this.safetyTime || !live.has(relation.upper.collider)
+                || !relation.upper.placed || !relation.lower.enabledInHierarchy
+                || (relation.lower !== this.platform && !lower)) continue;
+            supportReturns.push({ upperId: relation.upper.id, lowerId: lower?.id ?? 0,
+                // Subtraction can add a tiny floating-point error to the original .12 s.
+                remainingSeconds: Math.min(DETACH_GRACE_SECONDS, Math.max(0, relation.expires - this.safetyTime)) });
+        }
+        return { nextId: this.nextId, safety: this.safety ? { ...this.safety, boundary: { ...this.safety.boundary } } : null,
+            bodies: this.bodies.filter(record => !record.lost).map(record => {
+                const { body, collider } = record;
+                // A touch can move/rotate a held kinematic node and release in the same
+                // frame, before syncSceneToPhysics. Its node owns that uncommitted pose.
+                const held = body.type === ERigidBody2DType.Kinematic && !collider.enabled;
+                const position = held ? record.node.position : body.getWorldPoint(new Vec2(), new Vec2());
+                const native = body.impl!.impl as { GetAngle(): number };
+                return { id: record.id, spec: cloneSpec(record.spec), position: { x: position.x, y: position.y },
+                    angle: held ? planarAngle(record.node.rotation) : native.GetAngle() * 180 / Math.PI,
+                    scale: { x: record.node.scale.x, y: record.node.scale.y, z: record.node.scale.z },
+                    placed: record.placed, supported: record.supported, contactSeconds: record.contactSeconds,
+                    ...(record.lossBoundary ? { lossBoundary: { ...record.lossBoundary } } : {}),
+                    assistDamping: record.assistDamping,
+                    body: { type: body.type, allowSleep: body.allowSleep, bullet: body.bullet, fixedRotation: body.fixedRotation,
+                        gravityScale: body.gravityScale, linearDamping: body.linearDamping,
+                        angularDamping: body.angularDamping, group: body.group },
+                    collider: { enabled: collider.enabled, density: collider.density, friction: collider.friction,
+                        restitution: collider.restitution, sensor: collider.sensor } };
+            }), assistance: this.contactAssistance.exportState(this.platform), supportReturns };
+    }
+
+    /** Validate everything before touching the live world. This is an in-memory run checkpoint,
+     * not a loader for arbitrary editor scenes or cross-version persisted saves. */
+    static validateState(state: TowerWorldState): void {
+        const fail = (): never => { throw new Error('Invalid tower checkpoint'); };
+        const positive = (value: number): boolean => Number.isFinite(value) && value > 0;
+        const nonnegative = (value: number): boolean => Number.isFinite(value) && value >= 0;
+        const boundary = (value: SafetyBoundary): boolean => !!value &&
+            [value.left, value.right, value.bottom, value.top].every(Number.isFinite)
+            && value.left < value.right && value.bottom < value.top;
+        if (!state || !Array.isArray(state.bodies) || !Array.isArray(state.supportReturns)
+            || !Number.isSafeInteger(state.nextId) || state.nextId < 1) fail();
+        if (state.safety !== null && (!state.safety || !boundary(state.safety.boundary)
+            || !nonnegative(state.safety.referenceTop) || typeof state.safety.assist !== 'boolean')) fail();
+        const specs = new Map<number, ObjectSpec>();
+        for (const saved of state.bodies) {
+            if (!saved || !Number.isSafeInteger(saved.id) || saved.id < 1 || saved.id >= state.nextId || specs.has(saved.id)) fail();
+            const spec = saved.spec, body = saved.body, collider = saved.collider;
+            if (!spec || !Object.prototype.hasOwnProperty.call(OBJECTS, spec.kind)
+                || ![spec.width, spec.height, spec.spriteWidth, spec.spriteHeight, spec.density].every(positive)
+                || ![spec.friction, spec.restitution].every(nonnegative) || typeof spec.circle !== 'boolean') fail();
+            const point = (value: readonly number[]): boolean => Array.isArray(value) && value.length === 2 && value.every(Number.isFinite);
+            if (spec.spriteOffset !== undefined && !point(spec.spriteOffset)) fail();
+            if (spec.outline !== undefined && (!Array.isArray(spec.outline) || spec.outline.length < 3 || !spec.outline.every(point))) fail();
+            if (spec.contactAngularDamping !== undefined && !nonnegative(spec.contactAngularDamping)) fail();
+            if (spec.contactImpactSpeed !== undefined && !nonnegative(spec.contactImpactSpeed)) fail();
+            for (const tuning of [spec.adhesion, spec.stabilizer]) if (tuning !== undefined && (!tuning
+                || ![tuning.maxForce, tuning.maxTorque, tuning.maxImpactSpeed].every(nonnegative))) fail();
+            if (spec.stabilizer && !nonnegative(spec.stabilizer.maxAngleError)) fail();
+            if (!saved.position || !saved.scale || ![saved.position.x, saved.position.y, saved.angle].every(Number.isFinite)
+                || ![saved.scale.x, saved.scale.y, saved.scale.z].every(positive)
+                || typeof saved.placed !== 'boolean' || typeof saved.supported !== 'boolean' || !nonnegative(saved.assistDamping)
+                || (saved.contactSeconds !== null && !nonnegative(saved.contactSeconds))) fail();
+            if (saved.lossBoundary && (![saved.lossBoundary.left, saved.lossBoundary.right, saved.lossBoundary.bottom].every(Number.isFinite)
+                || saved.lossBoundary.left >= saved.lossBoundary.right)) fail();
+            if (!body || (body.type !== ERigidBody2DType.Dynamic && body.type !== ERigidBody2DType.Kinematic)
+                || ![body.allowSleep, body.bullet, body.fixedRotation].every(value => typeof value === 'boolean')
+                || !Number.isFinite(body.gravityScale) || ![body.linearDamping, body.angularDamping].every(nonnegative)
+                || !Number.isInteger(body.group) || body.group <= 0) fail();
+            if (!collider || ![collider.enabled, collider.sensor].every(value => typeof value === 'boolean')
+                || !positive(collider.density) || ![collider.friction, collider.restitution].every(nonnegative)) fail();
+            if (collider.enabled !== (body.type === ERigidBody2DType.Dynamic)
+                || ((saved.placed || saved.supported) && !collider.enabled)) fail();
+            specs.set(saved.id, spec);
+        }
+        ContactAssistance.validateState(state.assistance, specs);
+        const enabled = new Set(state.bodies.filter(body => body.collider.enabled).map(body => body.id));
+        if (state.assistance.adhesion.some(bond => !enabled.has(bond.ballId) || (bond.otherId !== 0 && !enabled.has(bond.otherId)))
+            || state.assistance.stabilizers.some(bond => !enabled.has(bond.plankId) || !enabled.has(bond.supportId))) fail();
+        const returns = new Set<string>();
+        for (const relation of state.supportReturns) {
+            if (!relation || !enabled.has(relation.upperId) || !state.bodies.find(body => body.id === relation.upperId)?.placed
+                || (relation.lowerId !== 0 && !enabled.has(relation.lowerId)) || relation.upperId === relation.lowerId
+                || !nonnegative(relation.remainingSeconds) || relation.remainingSeconds > DETACH_GRACE_SECONDS) fail();
+            const key = `${relation.upperId}:${relation.lowerId}`;
+            if (returns.has(key)) fail();
+            returns.add(key);
+        }
+    }
+
+    restoreState(state: TowerWorldState): void {
+        TowerWorld.validateState(state);
+        // Remove motors while their native endpoints still exist. Retire records before
+        // disabling bodies so any deferred callbacks cannot leak into the restored run.
+        this.contactAssistance.dispose();
+        this.safety = null;
+        this.restoration = { safety: state.safety ? { ...state.safety, boundary: { ...state.safety.boundary } } : null,
+            elapsed: 0, supportedIds: new Set(state.bodies.filter(body => body.supported).map(body => body.id)) };
+        for (const record of this.bodies) {
+            record.lost = true; record.supported = false;
+            record.collider.enabled = false; record.body.enabled = false; record.node.active = false;
+            record.node.destroy();
+        }
+        this.bodies.length = 0;
+        this.supportContacts.clear(); this.supportReturns.clear(); this.losing.clear();
+        this.safetyTime = 0; this.safetyDt = 0; this.filteredContacts = 0;
+        for (const saved of state.bodies) {
+            this.nextId = saved.id;
+            this.create(cloneSpec(saved.spec), saved.position.x, saved.position.y, saved);
+        }
+        this.nextId = state.nextId;
+        this.contactAssistance.restoreState(state.assistance, this.platform);
+        const byId = new Map(this.bodies.map(record => [record.id, record] as const));
+        for (const saved of state.supportReturns) {
+            const upper = byId.get(saved.upperId)!;
+            const lower = saved.lowerId === 0 ? this.platform : byId.get(saved.lowerId)!.collider;
+            this.supportReturns.set(`${upper.id}:${lower.uuid}`, { upper, lower, expires: saved.remainingSeconds });
+        }
+    }
+
     dispose(): void {
         director.off(Director.EVENT_BEFORE_PHYSICS, this.beforePhysics, this);
         director.off(Director.EVENT_AFTER_PHYSICS, this.afterPhysics, this);
         this.supportContacts.clear(); this.supportReturns.clear(); this.losing.clear();
-        this.pendingAdhesion.clear();
-        for (const bond of this.bonds.values()) this.removeBond(bond);
-        this.bonds.clear();
-        this.pendingStabilizers.clear();
-        for (const bond of this.stabilizerBonds.values()) this.removeBond(bond);
-        this.stabilizerBonds.clear(); this.brokenStabilizers.clear(); this.cushionedBodies.clear();
+        this.restoration = null;
+        this.contactAssistance.dispose();
         if (isValid(this.root, true)) this.root.destroy();
     }
 }

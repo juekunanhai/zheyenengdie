@@ -29,14 +29,14 @@ export class GameMusic {
     }
 
     /** View/camera height, never the record score. Midpoints match the visual transitions. */
-    update(dt: number, viewHeight: number, incident = false, defeated = false, reacting = false): void {
+    update(dt: number, viewHeight: number, incident = false, defeated = false, reacting = false, dangerous = false): void {
         if (!readSettings().music || !hasUserInteraction()) { this.stop(); return; }
         if (this.suspended) return;
         const region = viewHeight >= 160 ? 2 : viewHeight >= 55 ? 1 : 0;
         if (this.active < 0) this.start(region);
         if (this.active < 0) return; // Missing audio never blocks the run.
         if (this.fadingFrom < 0 && this.voices[this.active].region !== region) this.start(region);
-        const targetGain = defeated ? 0 : incident || reacting ? .09 : .28;
+        const targetGain = defeated ? 0 : incident || reacting ? .09 : dangerous ? .20 : .28;
         const gainSpeed = reacting && targetGain < this.gain ? 1.8 : .3;
         this.gain += Math.sign(targetGain - this.gain) * Math.min(Math.abs(targetGain - this.gain), dt * gainSpeed);
         // AudioPlayer.load is asynchronous. Keep the previous phrase audible until STARTED.

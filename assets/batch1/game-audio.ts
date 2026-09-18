@@ -49,17 +49,21 @@ export class GameAudio {
     private stop(): void {
         this.stopReactions();
         for (const voice of this.voices) {
-            if (isValid(voice.source, true)) voice.source.stop();
+            if (isValid(voice.source, true)) {
+                voice.source.stop();
+                // Pause/restore also cancels any in-flight collision or operation clip.
+                voice.source.clip = null;
+            }
             voice.availableAt = 0;
         }
     }
     isReacting(): boolean {
         return this.voices.some(v => v.reaction && (v.source.playing || v.availableAt > this.clock));
     }
-    /** Accidents interrupt comments without suppressing impact or star-loss feedback. */
+    /** Accidents interrupt comments and short success cues, preserving impact/star-loss feedback. */
     stopReactions(): void {
         for (const voice of this.voices) {
-            if (!voice.reaction) continue;
+            if (!voice.reaction && voice.pairKey !== 'highlight') continue;
             if (isValid(voice.source, true)) {
                 voice.source.stop();
                 // Cocos queues stop() until AudioPlayer.load resolves. Detach this clip

@@ -271,4 +271,7 @@ export function planarAngle(q: { z: number; w: number }): number {
 }
 
 export type RunPhase = 'entering' | 'planning' | 'falling' | 'observing' | 'incident' | 'defeated' | 'ended';
-export const runResult = { height: 0, placed: 0, reason: 'calibration_end' };
+export const runResult = {
+    height: 0, placed: 0, reason: 'calibration_end', technicalScore: 0,
+    highlights: { narrow_escape: 0, edge_balance: 0, bridge: 0, large_rescue: 0 },
+};

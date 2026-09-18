@@ -1,8 +1,19 @@
 import { Color, isValid, Label, Layers, Node, Sprite, SpriteFrame, UITransform, Vec2, Vec3, Widget } from 'cc';
 import { HeightBackdrop } from '../batch0/presentation/HeightBackdrop';
 import { localBounds, ObjectKind, OBJECTS, planarAngle, PLATFORM_WIDTH, UNITS_PER_METRE } from './object-data';
-import { TowerBody } from './tower-world';
+import { LandingContact, TowerBody } from './tower-world';
+import { LandingFeedback } from './landing-feedback';
 import { WorldBoundary } from './incident-state';
+import { PlayFeedback } from './play-feedback';
+import type { TowerRisk } from './tower-director';
+import type { HighlightKind } from './run-highlights';
+
+/** Ordinary camera state only. Viewport metrics and transient incident effects are rebuilt. */
+export interface PlayViewState {
+    readonly cameraY: number;
+    readonly targetCameraY: number;
+    readonly heldTop: number;
+}
 
 /** R6 artwork, with screen-space views of independent unscaled physics bodies. */
 export class PlayView {
@@ -18,6 +29,8 @@ export class PlayView {
     private readonly height: Label;
     private readonly next: Sprite;
     private readonly views = new Map<number, Node>();
+    private readonly landing: LandingFeedback;
+    private readonly feedback: PlayFeedback;
     private scale = 1.75;
     private fitScale = 1;
     private originY = 0;
@@ -39,6 +52,7 @@ export class PlayView {
         this.safe.getChildByName('World_1x')!.active = false;
         this.root = this.makeNode('PlayWorld', this.safe);
         this.root.setSiblingIndex(0);
+        this.landing = new LandingFeedback(this.root, frames);
         this.input = this.makeNode('PlayInput', this.safe);
         this.input.setSiblingIndex(1);
         this.platform = this.image('platform_city_base', this.root);
@@ -57,6 +71,7 @@ export class PlayView {
         this.hint.color = Color.WHITE; this.hint.isBold = true;
         this.hint.enableOutline = true; this.hint.outlineWidth = 3;
         this.hint.outlineColor = new Color(23, 73, 144);
+        this.feedback = new PlayFeedback(this.safe, this.root, frames);
         this.backdrop = canvas.getComponent(HeightBackdrop)!;
         this.fit();
     }
@@ -87,6 +102,7 @@ export class PlayView {
         this.input.getComponent(UITransform)!.setContentSize(size.width, size.height);
         this.root.getComponent(UITransform)!.setContentSize(size.width, size.height);
         this.hint.node.setPosition(0, size.height / 2 - 370 * this.fitScale, 0);
+        this.feedback.fit(size.width, size.height, size.height / 2 - 430 * this.fitScale);
         this.next.node.setPosition(297, size.height / 2 - 268, 0);
         for (const child of this.safe.children) child.getComponent(Widget)?.updateAlignment();
         return true;
@@ -151,6 +167,40 @@ export class PlayView {
         this.next.node.getComponent(UITransform)!.setContentSize(size.width * ratio, size.height * ratio);
     }
     setHint(text: string): void { this.hint.string = text; }
+    setRisk(risk: TowerRisk, active = true): void { this.feedback.setRisk(risk, active); }
+    showHighlight(kind: HighlightKind, worldPoint?: { x: number; y: number }): boolean {
+        return this.feedback.showHighlight(kind, worldPoint);
+    }
+    clearFeedback(): void { this.feedback.clear(); }
+    land(contact: LandingContact): void { this.landing.land(contact); }
+    exportState(): PlayViewState {
+        return { cameraY: this.cameraY, targetCameraY: this.targetCameraY, heldTop: this.heldTop };
+    }
+    restoreState(state: PlayViewState): void {
+        // Validate before destroying any view so a bad checkpoint cannot partly restore.
+        if (!state || ![state.cameraY, state.targetCameraY, state.heldTop].every(Number.isFinite)
+            || state.cameraY < 0 || state.targetCameraY < state.cameraY)
+            throw new RangeError('Invalid ordinary camera state');
+        for (const node of this.views.values()) {
+            if (!isValid(node, true)) continue;
+            node.active = false; node.destroy();
+        }
+        this.views.clear();
+        this.landing.clear();
+        this.feedback.clear();
+        this.hint.string = '';
+        this.cameraY = state.cameraY; this.targetCameraY = state.targetCameraY; this.heldTop = state.heldTop;
+        this.incidentCamera = false;
+        this.zoom = this.zoomFrom = this.zoomTarget = 1;
+        this.zoomTime = 0; this.zoomDuration = .35;
+        // Always derive dimensions from the live SafeArea. The controller compares normal
+        // boundaries and refits a restored held body only when the viewport actually changed.
+        this.width = this.heightPixels = -1;
+        this.fit();
+        // Clear the previous camera/zoom immediately. Restored body views are recreated by
+        // the next controller draw, even when their numeric IDs match destroyed bodies.
+        this.update(0, [], null, 1);
+    }
     getViewHeight(): number { return this.cameraY / UNITS_PER_METRE; }
     setHeight(value: number): void { this.height.string = (value / UNITS_PER_METRE).toFixed(1); }
     follow(top: number): void {
@@ -163,18 +213,25 @@ export class PlayView {
         this.cameraY += (this.targetCameraY - this.cameraY) * (1 - Math.exp(-7 * dt));
         this.zoomTime = Math.min(this.zoomDuration, this.zoomTime + dt);
         const t = this.zoomTime / this.zoomDuration;
-        this.zoom = t === 1 ? this.zoomTarget : this.zoomFrom + (this.zoomTarget - this.zoomFrom) * t * t * (3 - 2 * t);
-        // Only the independent world presentation zooms. Logical coordinates and HUD stay fixed.
+        const eased = t * t * (3 - 2 * t);
+        // Interpolate viewing distance: scenery at different depths shares one dolly move.
+        const distance = 1 / this.zoomFrom + (1 / this.zoomTarget - 1 / this.zoomFrom) * eased;
+        this.zoom = t === 1 ? this.zoomTarget : 1 / distance;
+        // Keep the optical centre at SafeArea origin, matching the frozen incident observation.
+        // Physics coordinates, the normal logical boundary and HUD remain unchanged.
         this.root.setScale(this.zoom, this.zoom, 1);
+        const focus = this.canvas.getComponent(UITransform)!.convertToNodeSpaceAR(this.safe.worldPosition);
         // cameraY is already smoothed: scenery must use this same value in the same frame.
-        this.backdrop.setViewHeight(this.cameraY / UNITS_PER_METRE, true, UNITS_PER_METRE * this.scale, this.zoom);
+        this.backdrop.setViewHeight(this.cameraY / UNITS_PER_METRE, true, UNITS_PER_METRE * this.scale, this.zoom, focus);
         const platformFrame = this.frames.get('platform_city_base')!.originalSize;
         const width = PLATFORM_WIDTH * this.scale, h = width * platformFrame.height / platformFrame.width;
         this.platform.getComponent(UITransform)!.setContentSize(width, h);
         // Adopted PNG: the wooden face center is row 82. Pixels only align the artwork;
         // PLATFORM_WIDTH and the physical support plane remain in world units.
         this.platform.setPosition(0, this.screenY(0) - h / 2 + width * 82 / platformFrame.width, 0);
+        this.landing.update(dt, this.scale, y => this.screenY(y));
         for (const record of records) this.paintBody(record);
+        this.feedback.update(dt, this.scale, y => this.screenY(y));
         this.paintClaw(held, retract, entering);
     }
 
@@ -189,10 +246,15 @@ export class PlayView {
         if (!node.active) return;
         const p = record.node.position;
         const [offsetX, offsetY] = record.spec.spriteOffset ?? [0, 0];
+        const deform = this.landing.deformation(record);
+        // Scale only the sprite about the real contact, so the bearing point never lifts.
+        const visualX = deform.anchorX + (offsetX - deform.anchorX) * deform.x;
+        const visualY = deform.anchorY + (offsetY - deform.anchorY) * deform.y;
         const a = planarAngle(record.node.rotation) * Math.PI / 180;
-        const x = p.x + offsetX * Math.cos(a) - offsetY * Math.sin(a);
-        const y = p.y + offsetX * Math.sin(a) + offsetY * Math.cos(a);
+        const x = p.x + visualX * Math.cos(a) - visualY * Math.sin(a);
+        const y = p.y + visualX * Math.sin(a) + visualY * Math.cos(a);
         node.setPosition(x * this.scale, this.screenY(y), 0);
+        node.setScale(deform.x, deform.y, 1);
         // Copy the planar quaternion; Euler readback at 180 degrees can choose a different branch.
         node.setRotation(record.node.rotation);
         node.getComponent(UITransform)!.setContentSize(record.spec.spriteWidth * this.scale, record.spec.spriteHeight * this.scale);
@@ -217,8 +279,11 @@ export class PlayView {
 
     snapshot(): object { return { scale: this.scale, originY: this.originY, cameraY: this.cameraY, targetCameraY: this.targetCameraY,
         width: this.width, height: this.heightPixels, heldTop: this.heldTop, zoom: this.zoom,
-        zoomTarget: this.zoomTarget, incidentCamera: this.incidentCamera }; }
+        zoomTarget: this.zoomTarget, incidentCamera: this.incidentCamera, landing: this.landing.snapshot(),
+        feedback: this.feedback.snapshot() }; }
     dispose(): void {
+        this.landing.dispose();
+        this.feedback.dispose();
         for (const node of [this.root, this.input, this.hint.node]) if (isValid(node, true)) node.destroy();
     }
 }

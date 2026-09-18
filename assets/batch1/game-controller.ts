@@ -5,9 +5,43 @@ import { Incident, WorldBoundary } from './incident-state';
 import { bindAction, readSettings, RunLifecycle, TouchBinding, writeSettings } from './local-platform';
 import { CALIBRATION_SEQUENCE, ENTER_SECONDS, localBounds, MAX_OBSERVE_SECONDS, ObjectKind, OBJECTS, planarAngle, PLANNING_SECONDS,
     runResult, RunPhase, STABLE_SECONDS } from './object-data';
-import { PlayView } from './play-view';
-import { TowerBody, TowerWorld } from './tower-world';
+import { PlayView, PlayViewState } from './play-view';
+import { LandingContact, TowerBody, TowerWorld, TowerWorldState } from './tower-world';
+import { classifyTowerRisk, DirectorState, RISK_THRESHOLDS, TowerDirector, TowerRisk } from './tower-director';
+import { HighlightEvent, HighlightState, HIGHLIGHT_TUNING, RunHighlights } from './run-highlights';
 const { ccclass, property } = _decorator;
+
+/** Two in-memory points for the current rules only. No storage, inventory, or ad entitlement. */
+interface RunCheckpoint {
+    world: TowerWorldState;
+    director: DirectorState;
+    highlights: HighlightState;
+    view: PlayViewState;
+    currentId: number | null;
+    next: ObjectKind;
+    phase: RunPhase;
+    boundary: WorldBoundary;
+    normalBoundary: WorldBoundary;
+    clock: number;
+    stableFor: number;
+    planningLeft: number;
+    releaseCount: number;
+    placedCount: number;
+    peak: number;
+    stars: number;
+    rotations: number;
+    tutorial: boolean;
+    firstTouchGreeted: boolean;
+    playfulReactionUsed: boolean;
+    sequence: readonly ObjectKind[] | null;
+    untimedCalibration: boolean;
+    elapsedSeconds: number;
+    steadySeconds: number;
+    recentImpactSpeed: number;
+    chargedIncidentCount: number;
+    incidentCount: number;
+    risk: TowerRisk;
+}
 
 @ccclass('StackGameController')
 export class StackGameController extends Component {
@@ -32,7 +66,14 @@ export class StackGameController extends Component {
     private dragOffset = 0;
     private tutorial = false;
     private rotations = 0;
-    private sequence: readonly ObjectKind[] = CALIBRATION_SEQUENCE;
+    private sequence: readonly ObjectKind[] | null = null;
+    private readonly objectDirector = new TowerDirector(Date.now());
+    private risk: TowerRisk = 'Safe';
+    private elapsedSeconds = 0;
+    private steadySeconds = 0;
+    private recentImpactSpeed = 0;
+    private chargedIncidentCount = 0;
+    private readonly highlights = new RunHighlights();
     private untimedCalibration = false;
     private stars = 3;
     private incident: Incident | null = null;
@@ -45,9 +86,18 @@ export class StackGameController extends Component {
     private pendingResize = false;
     private firstTouchGreeted = false;
     private playfulReactionUsed = false;
+    private stableCheckpoint: RunCheckpoint | null = null;
+    private undoCheckpoint: RunCheckpoint | null = null;
+    private checkpointAction: 'stable' | 'undo' | 'rebuilding' | null = null;
+    private get restoreRequest(): 'stable' | 'undo' | null {
+        return this.checkpointAction === 'rebuilding' ? null : this.checkpointAction;
+    }
+    private get restoringCheckpoint(): boolean { return this.checkpointAction === 'rebuilding'; }
 
     onLoad(): void {
-        this.world = new TowerWorld(this.node.scene!, (record, pair, speed) => this.impact(record, pair, speed),
+        runResult.height = 0; runResult.placed = 0; runResult.reason = 'calibration_end';
+        runResult.technicalScore = 0; runResult.highlights = this.highlights.snapshot().counts;
+        this.world = new TowerWorld(this.node.scene!, (record, pair, speed, landing) => this.impact(record, pair, speed, landing),
             record => this.lost(record));
         this.display = new PlayView(this.node, new Map(this.frames.map(frame => [frame.name, frame])));
         this.audio = new GameAudio(this.node, new Map(this.approvedSounds.map(clip => [clip.name, clip])));
@@ -56,8 +106,9 @@ export class StackGameController extends Component {
         this.tutorial = !readSettings().tutorialDone;
         this.lifecycle = new RunLifecycle(paused => {
             this.finger = null;
-            this.audio.pause(paused);
-            this.music.pause(paused);
+            if (paused) this.display.clearFeedback();
+            this.audio.pause(paused || this.restoringCheckpoint);
+            this.music.pause(paused || this.restoringCheckpoint);
             this.display.setHint(paused ? '已暂停 · 点击暂停按钮继续' : '');
         });
         this.touches = new TouchBinding(this.display.input, {
@@ -72,14 +123,20 @@ export class StackGameController extends Component {
     }
 
     private spawn(): void {
-        const index = this.releaseCount % this.sequence.length;
-        const spec = OBJECTS[this.sequence[index]];
+        // A displayed NEXT becomes current unchanged. Only this handoff can draw a new NEXT.
+        const choice = this.sequence ? {
+            current: this.sequence[this.releaseCount % this.sequence.length],
+            next: this.sequence[(this.releaseCount + 1) % this.sequence.length],
+        } : this.releaseCount === 0 ? { current: this.objectDirector.current, next: this.objectDirector.next }
+            : this.objectDirector.handoff({ elapsedSeconds: this.elapsedSeconds, risk: this.risk,
+                stableSeconds: this.steadySeconds, incidentCount: this.chargedIncidentCount });
+        const spec = OBJECTS[choice.current];
         this.boundary = this.display.beginPlacement(this.world.placementTop(), Math.max(spec.width, spec.height));
         this.normalBoundary = this.display.logicalBounds();
-        this.world.configureSafety(this.normalBoundary, this.peak);
+        this.world.configureSafety(this.normalBoundary, this.world.supportedTop());
         this.pendingResize = false;
         this.current = this.world.create(spec, 0, this.boundary.top - localBounds(spec, 0).top + 55);
-        this.display.setNext(this.sequence[(index + 1) % this.sequence.length]);
+        this.display.setNext(choice.next);
         this.audio.play('next_handoff', .35);
         this.phase = 'entering'; this.clock = 0;
         this.planningLeft = PLANNING_SECONDS; this.rotations = 0;
@@ -88,19 +145,53 @@ export class StackGameController extends Component {
     update(delta: number): void {
         this.lifecycle.update(delta);
         if (this.lifecycle.paused || this.phase === 'ended') return;
+        if (this.restoreRequest) {
+            const kind = this.restoreRequest;
+            this.checkpointAction = null;
+            const point = kind === 'stable' ? this.stableCheckpoint : this.undoCheckpoint;
+            if (point) this.applyCheckpoint(point, kind);
+            return;
+        }
+        if (this.restoringCheckpoint) {
+            if (!this.world.restoring) this.finishRestore();
+            return;
+        }
         const dt = Math.min(delta, .067);
         this.clock += delta; this.audio.update(dt);
         if (this.phase === 'defeated') {
             if (this.clock >= 1.2) this.commitResult();
             return;
         }
+        // Use the same bounded active-game delta as physics-facing control. Paused/background
+        // frames and a long resume gap cannot advance difficulty or consume random draws.
+        this.elapsedSeconds += dt;
+        this.recentImpactSpeed *= Math.exp(-dt / .6);
         for (const record of this.world.bodies) {
             if (record.lost || !record.collider.enabled) continue;
             if (record.contactSeconds !== null)
                 record.contactSeconds = Math.min(MAX_OBSERVE_SECONDS, record.contactSeconds + delta);
         }
+        const signals = this.world.riskSignals(this.recentImpactSpeed);
+        this.risk = this.incident ? 'Critical' : classifyTowerRisk(signals);
+        const structuralRisk = classifyTowerRisk({ ...signals, recentImpactSpeed: 0 });
+        // Accumulate genuinely steady low-risk time. Ordinary short landing impulses pause
+        // this progress; actual structural danger/accidents clear it. A well-supported wide
+        // plank may remain Unstable by the conservative width proxy, without blocking rhythm.
+        if (this.incident || structuralRisk === 'Dangerous' || structuralRisk === 'Critical') this.steadySeconds = 0;
+        else if ((this.risk === 'Safe' || this.risk === 'Unstable') && this.world.isStable()) this.steadySeconds += dt;
         if (!this.incident && this.world.collapseTrend()) this.beginIncident();
+        this.highlights.observe({ dt, oldTowerRisk: classifyTowerRisk(this.world.riskSignals(0, true)),
+            towerRisk: structuralRisk, stable: this.world.isStable(),
+            hasExistingTower: this.world.bodies.filter(record => record.placed && !record.lost).length >= 2,
+            incidentActive: this.incident !== null, incidentCount: this.chargedIncidentCount });
+        // Re-enable after pause before a fresh stable event can consume its feedback slot.
+        // Defeated/ended frames already returned; their feedback remains disabled.
+        this.display.setRisk(this.risk);
         if (this.incident) { this.updateIncident(dt); return; }
+        // Assistance follows the actually supported structure, not the historical score.
+        // A handoff can precede score confirmation; those supported pieces still help the base.
+        // The incident early return freezes this reference for the whole recovery animation.
+        this.world.configureSafety(this.normalBoundary, this.world.supportedTop());
         this.confirmStable(dt);
         if (this.phase === 'entering') this.enter();
         else if (this.phase === 'planning') this.plan(dt);
@@ -109,27 +200,30 @@ export class StackGameController extends Component {
 
     lateUpdate(dt: number): void {
         if (!this.display || this.lifecycle.paused) return;
+        const feedbackActive = this.phase !== 'defeated' && this.phase !== 'ended';
         const holdPhase = this.phase === 'incident' ? this.resumePhase : this.phase;
         const held = (holdPhase === 'planning' || holdPhase === 'entering') && !this.current?.lost ? this.current : null;
         if (this.display.fit()) {
             // A release/incident owns its rule boundary until a safe handoff.
             this.pendingResize = true;
-            if (held && !this.incident && this.phase !== 'defeated') this.refitHeld();
+            if (held && !this.incident && this.phase !== 'defeated' && !this.restoringCheckpoint) this.refitHeld();
         }
-        this.display.update(Math.min(dt, .067), this.world.bodies, held, Math.min(1, this.clock / .24), holdPhase === 'entering');
+        this.display.update(this.restoringCheckpoint ? 0 : Math.min(dt, .067), this.world.bodies, held, Math.min(1, this.clock / .24), holdPhase === 'entering');
+        if (this.restoringCheckpoint) return;
         this.music.update(Math.min(dt, .067), this.display.getViewHeight(), this.incident !== null,
-            this.phase === 'defeated' || this.phase === 'ended', this.audio.isReacting());
+            !feedbackActive, this.audio.isReacting(), this.risk === 'Dangerous' || this.risk === 'Critical');
     }
 
     private refitHeld(): void {
         const held = this.current!;
         this.boundary = this.display.beginPlacement(this.world.placementTop(), Math.max(held.spec.width, held.spec.height));
         this.normalBoundary = this.display.logicalBounds();
-        this.world.configureSafety(this.normalBoundary, this.peak);
+        this.world.configureSafety(this.normalBoundary, this.world.supportedTop());
         const bounds = localBounds(held.spec, planarAngle(held.node.rotation));
         const x = Math.max(this.boundary.left - bounds.left + 4,
             Math.min(this.boundary.right - bounds.right - 4, held.node.position.x));
-        held.node.setPosition(x, this.boundary.top - bounds.top, 0);
+        const enteringOffset = this.phase === 'entering' ? 55 * (1 - Math.min(1, this.clock / ENTER_SECONDS)) ** 3 : 0;
+        held.node.setPosition(x, this.boundary.top - bounds.top + enteringOffset, 0);
         this.pendingResize = false; this.finger = null;
     }
 
@@ -156,7 +250,7 @@ export class StackGameController extends Component {
 
     private touchStart(id: number, point: Vec2): void {
         this.audio.interact();
-        if (this.phase !== 'planning' || this.lifecycle.paused || this.finger !== null || !this.display.cameraRecovered()) return;
+        if (this.phase !== 'planning' || this.lifecycle.paused || this.finger !== null || this.restoringCheckpoint || this.restoreRequest || !this.display.cameraRecovered()) return;
         if (!this.firstTouchGreeted && !this.world.hasPlacementHazard()) {
             this.firstTouchGreeted = true;
             this.audio.play('voice_hey', .65);
@@ -175,14 +269,14 @@ export class StackGameController extends Component {
     }
 
     moveTo(x: number): void {
-        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || !this.display.cameraRecovered()) return;
+        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || this.restoringCheckpoint || this.restoreRequest || !this.display.cameraRecovered()) return;
         const bounds = localBounds(this.current.spec, planarAngle(this.current.node.rotation));
         const clamped = Math.max(this.boundary.left - bounds.left + 4, Math.min(this.boundary.right - bounds.right - 4, x));
         this.current.node.setPosition(clamped, this.current.node.position.y, 0);
     }
 
     rotate(): void {
-        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || !this.display.cameraRecovered()) return;
+        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || this.restoringCheckpoint || this.restoreRequest || !this.display.cameraRecovered()) return;
         const current = this.current;
         this.rotations++;
         current.node.setRotationFromEuler(0, 0, -(this.rotations % 4) * 90);
@@ -193,16 +287,24 @@ export class StackGameController extends Component {
     }
 
     release(): void {
-        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || !this.display.cameraRecovered() || this.world.hasPlacementHazard()) return;
+        if (this.phase !== 'planning' || !this.current || this.lifecycle.paused || this.restoringCheckpoint || this.restoreRequest || !this.display.cameraRecovered() || this.world.hasPlacementHazard()) return;
+        this.undoCheckpoint = this.captureCheckpoint();
         this.phase = 'falling'; this.clock = 0; this.finger = null;
         this.stableFor = 0;
+        const shape = this.world.bounds(this.current);
+        this.highlights.recordRelease(this.current.id, {
+            large: shape.right - shape.left >= HIGHLIGHT_TUNING.largeMinWidth &&
+                this.current.spec.width * this.current.spec.height >= HIGHLIGHT_TUNING.largeMinArea,
+            oldTowerRisk: classifyTowerRisk(this.world.riskSignals(0, true)),
+            oldBodyIds: this.world.bodies.filter(record => record.placed && !record.lost).map(record => record.id),
+        });
         this.current.lossBoundary = { left: this.boundary.left, right: this.boundary.right, bottom: this.boundary.bottom };
         this.world.release(this.current); this.releaseCount++;
         this.display.setHint(''); this.audio.play('claw_release');
     }
 
-    /** Local experiment host may select a sequence before the first release.
-     * No mid-run NEXT replacement, persistent setting, or production director. */
+    /** Local experiment host may select a fixed sequence before the first release.
+     * This explicit calibration override bypasses the director, never a mid-run risk change. */
     configureCalibration(sequence: readonly ObjectKind[], untimed = false): boolean {
         if (this.releaseCount !== 0 || !this.current || this.phase === 'ended'
             || sequence.length < 2 || sequence[0] !== this.current.spec.kind
@@ -229,34 +331,137 @@ export class StackGameController extends Component {
     }
 
     private confirmStable(dt: number): void {
+        // Scoring keeps the approved physical stability rule. SPEC §6.6's non-Critical
+        // requirement belongs to future checkpoint saving, not success/height confirmation.
         this.stableFor = this.world.isStable() ? this.stableFor + dt : 0;
         if (this.stableFor < STABLE_SECONDS) return;
         let confirmed = 0;
         let playfulPlacement = false;
+        const candidates: ReturnType<TowerWorld['highlightPlacement']>[] = [];
         for (const record of this.world.bodies) {
             if (record.lost || !record.collider.enabled || record.placed) continue;
             record.placed = true; confirmed++;
+            candidates.push(this.world.highlightPlacement(record));
             if (['whale', 'burger', 'toilet', 'slipper'].indexOf(record.spec.kind) >= 0) playfulPlacement = true;
         }
-        if (!confirmed) return;
+        const events = this.highlights.confirmStable(candidates);
+        this.presentHighlights(events, candidates);
+        if (!confirmed) { this.saveStableCheckpoint(); return; }
         this.placedCount += confirmed;
         const previousPeak = this.peak;
         this.peak = Math.max(this.peak, this.world.confirmedTop());
         this.display.setHeight(this.peak);
-        this.world.configureSafety(this.normalBoundary, this.peak);
         // Score uses 100 world units/metre. One event can cross several 5 m milestones.
         // Consuming the crossing now prevents muted/cooling events being celebrated later.
-        if (Math.floor(this.peak / 500) > Math.floor(previousPeak / 500)) {
+        if (events.some(event => event.feedback)) {
+            // A qualified short success cue has priority over an unrelated commentary voice.
+        } else if (Math.floor(this.peak / 500) > Math.floor(previousPeak / 500)) {
             this.audio.play('voice_wow', .75);
         } else if (playfulPlacement && !this.playfulReactionUsed) {
             this.playfulReactionUsed = this.audio.play('voice_chuckle', .7);
         }
         // Camera room is selected at handoff, independently of delayed score confirmation.
-        // The approved stable cue is reserved for qualified highlights in Batch 2.
+        // Ordinary placements stay quiet; success cues require the ledger's actual evidence.
+        this.saveStableCheckpoint();
+    }
+
+    private captureCheckpoint(): RunCheckpoint {
+        return {
+            world: this.world.exportState(), director: this.objectDirector.exportState(),
+            highlights: this.highlights.exportState(), view: this.display.exportState(),
+            currentId: this.current?.id ?? null, phase: this.phase,
+            next: this.sequence ? this.sequence[(this.releaseCount +
+                (this.phase === 'entering' || this.phase === 'planning' ? 1 : 0)) % this.sequence.length] : this.objectDirector.next,
+            boundary: { ...this.boundary }, normalBoundary: { ...this.normalBoundary },
+            clock: this.clock, stableFor: this.stableFor, planningLeft: this.planningLeft,
+            releaseCount: this.releaseCount, placedCount: this.placedCount, peak: this.peak,
+            stars: this.stars, rotations: this.rotations, tutorial: this.tutorial,
+            firstTouchGreeted: this.firstTouchGreeted, playfulReactionUsed: this.playfulReactionUsed,
+            sequence: this.sequence ? [...this.sequence] : null, untimedCalibration: this.untimedCalibration,
+            elapsedSeconds: this.elapsedSeconds, steadySeconds: this.steadySeconds,
+            recentImpactSpeed: this.recentImpactSpeed, chargedIncidentCount: this.chargedIncidentCount,
+            incidentCount: this.incidentCount, risk: this.risk,
+        };
+    }
+
+    private saveStableCheckpoint(): void {
+        if (this.placedCount === 0 || (this.stableCheckpoint?.placedCount ?? -1) >= this.placedCount
+            || this.lifecycle.paused || this.incident || this.restoringCheckpoint || this.restoreRequest
+            || this.phase === 'defeated' || this.phase === 'ended' || this.risk === 'Critical'
+            || this.stableFor < STABLE_SECONDS || !this.world.canSaveCheckpoint()
+            || this.recentImpactSpeed >= RISK_THRESHOLDS.impactSpeed[0]) return;
+        this.stableCheckpoint = this.captureCheckpoint();
+    }
+
+    /** Local calibration entry only. Actual item consumption / ad revival are not implemented.
+     * Queuing avoids rebuilding Box2D inside a touch/contact callback. Pause remains in force. */
+    restoreCheckpoint(kind: 'stable' | 'undo'): boolean {
+        if ((kind !== 'stable' && kind !== 'undo') || this.phase === 'ended' || this.restoreRequest
+            || this.restoringCheckpoint || !this.world || this.world.restoring
+            || !(kind === 'stable' ? this.stableCheckpoint : this.undoCheckpoint)) return false;
+        this.checkpointAction = kind;
+        this.finger = null;
+        return true;
+    }
+
+    private applyCheckpoint(point: RunCheckpoint, kind: 'stable' | 'undo'): void {
+        this.checkpointAction = 'rebuilding';
+        this.audio.pause(true); this.music.pause(true);
+        this.world.restoreState(point.world);
+        this.objectDirector.restoreState(point.director);
+        this.highlights.restoreState(point.highlights);
+        this.display.restoreState(point.view);
+        this.current = this.world.bodies.find(record => record.id === point.currentId) ?? null;
+        this.phase = point.phase; this.boundary = { ...point.boundary }; this.normalBoundary = { ...point.normalBoundary };
+        this.clock = point.clock; this.stableFor = point.stableFor; this.planningLeft = point.planningLeft;
+        // An undo after auto-drop must leave a real chance to act, rather than replaying
+        // the expired timer on the very next frame. Stable restoration keeps its timer.
+        if (kind === 'undo' && this.phase === 'planning') { this.planningLeft = PLANNING_SECONDS; this.clock = 0; }
+        this.releaseCount = point.releaseCount; this.placedCount = point.placedCount; this.peak = point.peak;
+        this.stars = point.stars; this.rotations = point.rotations; this.tutorial = point.tutorial;
+        this.firstTouchGreeted = point.firstTouchGreeted; this.playfulReactionUsed = point.playfulReactionUsed;
+        this.sequence = point.sequence ? [...point.sequence] : null; this.untimedCalibration = point.untimedCalibration;
+        this.elapsedSeconds = point.elapsedSeconds; this.steadySeconds = point.steadySeconds;
+        this.recentImpactSpeed = point.recentImpactSpeed; this.chargedIncidentCount = point.chargedIncidentCount;
+        this.incidentCount = point.incidentCount; this.risk = point.risk;
+        this.incident = null; this.recoveryFor = 0; this.failureReason = null; this.finger = null; this.dragOffset = 0;
+        this.resumePhase = point.phase; this.resumeClock = point.clock;
+        const bounds = this.display.logicalBounds();
+        this.pendingResize = (['left', 'right', 'top', 'bottom'] as const)
+            .some(key => Math.abs(bounds[key] - this.normalBoundary[key]) > .01);
+        // Undo cannot keep a revive point from its abandoned future. A genuinely stable
+        // restored tower may establish a new point after the solver has rebuilt contacts.
+        if (kind === 'undo' && this.stableCheckpoint && (this.stableCheckpoint.releaseCount > point.releaseCount
+            || this.stableCheckpoint.placedCount > point.placedCount)) this.stableCheckpoint = null;
+        this.undoCheckpoint = null;
+        this.display.setStars(this.stars); this.display.setHeight(this.peak);
+        this.display.setNext(point.next);
+        this.display.setHint('恢复中…'); this.display.setRisk('Safe', false);
+        runResult.height = 0; runResult.placed = 0; runResult.reason = 'calibration_end';
+        runResult.technicalScore = 0; runResult.highlights = { narrow_escape: 0, edge_balance: 0, bridge: 0, large_rescue: 0 };
+    }
+
+    private finishRestore(): void {
+        this.checkpointAction = null;
+        if (this.pendingResize && (this.phase === 'planning' || this.phase === 'entering')) this.refitHeld();
+        this.display.setRisk(this.risk); this.display.setHint('');
+        this.audio.pause(this.lifecycle.paused); this.music.pause(this.lifecycle.paused);
+    }
+
+    private presentHighlights(events: readonly HighlightEvent[], candidates: ReturnType<TowerWorld['highlightPlacement']>[]): void {
+        for (const event of events) {
+            if (!event.feedback) continue;
+            const target = event.bodyId === null ? this.world.bodies.filter(record => record.placed && !record.lost && record.supported)
+                .sort((a, b) => this.world.nativeBounds(b).top - this.world.nativeBounds(a).top)[0]
+                : this.world.bodies.find(record => record.id === event.bodyId);
+            const point = candidates.find(candidate => candidate.id === event.bodyId)?.point
+                ?? (target ? this.world.highlightPlacement(target).point : null);
+            if (this.display.showHighlight(event.kind, point ?? undefined)) this.audio.play('stable', .55, 'highlight');
+        }
     }
 
     private beginIncident(): void {
-        if (this.incident || this.phase === 'defeated' || this.phase === 'ended') return;
+        if (this.incident || this.restoringCheckpoint || this.phase === 'defeated' || this.phase === 'ended') return;
         const boundary = this.normalBoundary;
         const intersects = (a: WorldBoundary, b: WorldBoundary) => a.left <= b.right && a.right >= b.left && a.top >= b.bottom && a.bottom <= b.top;
         const placed = this.world.bodies.filter(record => record.placed && !record.lost);
@@ -265,9 +470,13 @@ export class StackGameController extends Component {
         const cx = (boundary.left + boundary.right) / 2, cy = (boundary.top + boundary.bottom) / 2;
         const halfWidth = (boundary.right - boundary.left) / (2 * zoom), halfHeight = (boundary.top - boundary.bottom) / (2 * zoom);
         const observation = { left: cx - halfWidth, right: cx + halfWidth, bottom: cy - halfHeight, top: cy + halfHeight };
-        this.incident = new Incident(boundary, observation, this.peak,
+        this.incident = new Incident(boundary, observation, this.world.assistanceTop(),
             placed.filter(record => intersects(this.world.nativeBounds(record), observation)).map(record => record.id), zoom);
         this.incidentCount++;
+        this.risk = 'Critical'; this.steadySeconds = 0;
+        this.display.clearFeedback();
+        this.highlights.observe({ dt: 0, oldTowerRisk: 'Critical', towerRisk: 'Critical', hasExistingTower: false,
+            stable: false, incidentActive: true, incidentCount: this.chargedIncidentCount });
         this.audio.stopReactions();
         this.resumePhase = this.phase; this.resumeClock = this.clock;
         this.phase = 'incident'; this.clock = 0; this.recoveryFor = 0; this.finger = null; this.stableFor = 0;
@@ -277,13 +486,14 @@ export class StackGameController extends Component {
 
     /** Called before the physical loss flag changes, so the first old piece belongs to the frozen set. */
     private lost(record: TowerBody): void {
-        if (this.phase === 'ended' || this.phase === 'defeated') return;
+        if (this.restoringCheckpoint || this.phase === 'ended' || this.phase === 'defeated') return;
         this.beginIncident();
         const loss = this.incident!.recordLoss(record.id);
         if (loss.duplicate) return;
         if (this.recoveryFor >= .6) this.display.holdIncident();
         this.recoveryFor = 0;
         if (loss.firstLoss) {
+            this.chargedIncidentCount++;
             this.stars = Math.max(0, this.stars - 1);
             this.display.setStars(this.stars);
             // The optional incident clip is bound only after its separate audio review.
@@ -301,6 +511,10 @@ export class StackGameController extends Component {
         if (!wasRecovering) this.display.endIncident();
         if (!this.display.cameraRecovered()) return;
         this.incident = null; this.recoveryFor = 0;
+        // A touch can release the held piece before the next update. Synchronize the
+        // ledger now, without advancing any stable/danger timer or restoring old chances.
+        this.highlights.observe({ dt: 0, oldTowerRisk: this.risk, towerRisk: this.risk, stable: false,
+            hasExistingTower: false, incidentActive: false, incidentCount: this.chargedIncidentCount });
         if (this.current && !this.current.lost) {
             this.phase = this.resumePhase; this.clock = this.resumeClock;
             if (this.pendingResize && (this.phase === 'planning' || this.phase === 'entering')) this.refitHeld();
@@ -317,7 +531,10 @@ export class StackGameController extends Component {
         this.audio.stopReactions();
         if (this.current && !this.current.collider.enabled) this.current.node.active = false;
         this.phase = 'defeated'; this.clock = 0; this.finger = null;
+        this.display.clearFeedback(); this.display.setRisk('Safe', false);
+        const highlights = this.highlights.lock();
         runResult.height = this.peak / 100; runResult.placed = this.placedCount; runResult.reason = reason;
+        runResult.technicalScore = highlights.technicalScore; runResult.highlights = highlights.counts;
         this.display.setHint(reason === 'large_collapse' ? '这次倒得有点多…' : '星星用完啦');
         // Physics may finish the collapse, but no further input, score or result changes are allowed.
     }
@@ -338,11 +555,14 @@ export class StackGameController extends Component {
         director.loadScene('Result');
     }
 
-    private impact(record: TowerBody, pair: string, speed: number): void {
-        if (record.lost || speed < .6 || this.phase === 'ended') return;
-        const bounds = this.world.bounds(record);
-        if (bounds.top < this.boundary.bottom || bounds.right < this.boundary.left || bounds.left > this.boundary.right) return;
-        this.audio.play(`impact_${record.spec.kind}`, Math.min(.85, .25 + speed * .035), pair);
+    private impact(record: TowerBody, pair: string, speed: number, landing?: LandingContact): void {
+        if (record.lost || this.restoringCheckpoint || this.lifecycle?.paused || this.phase === 'ended') return;
+        if (this.phase !== 'defeated') this.recentImpactSpeed = Math.max(this.recentImpactSpeed, landing?.speed ?? speed);
+        const bounds = this.world.nativeBounds(record);
+        if (speed >= .6 && bounds.top >= this.boundary.bottom && bounds.right >= this.boundary.left && bounds.left <= this.boundary.right)
+            this.audio.play(`impact_${record.spec.kind}`, Math.min(.85, .25 + speed * .035), pair);
+        if (landing && this.phase !== 'defeated' && landing.point.y >= this.normalBoundary.bottom && landing.point.y <= this.normalBoundary.top &&
+            landing.point.x >= this.normalBoundary.left && landing.point.x <= this.normalBoundary.right) this.display.land(landing);
     }
 
     /** Read-only diagnostics used by the local calibration page. */
@@ -351,7 +571,16 @@ export class StackGameController extends Component {
             stars: this.stars, incidentCount: this.incidentCount, incident: this.incident?.snapshot() ?? null,
             recoverySeconds: this.recoveryFor, failureReason: this.failureReason, normalBoundary: this.normalBoundary,
             safety: this.world.safetySnapshot(),
-            sequence: [...this.sequence], untimedCalibration: this.untimedCalibration,
+            sequence: [...(this.sequence ?? CALIBRATION_SEQUENCE)], untimedCalibration: this.untimedCalibration,
+            drawMode: this.sequence ? 'calibration' : 'director', director: this.objectDirector.snapshot(),
+            risk: this.risk, elapsedSeconds: this.elapsedSeconds, steadySeconds: this.steadySeconds,
+            highlights: this.highlights.snapshot(),
+            checkpoints: { stable: this.stableCheckpoint ? { placed: this.stableCheckpoint.placedCount,
+                releases: this.stableCheckpoint.releaseCount, peakMetres: this.stableCheckpoint.peak / 100 } : null,
+                undo: this.undoCheckpoint ? { placed: this.undoCheckpoint.placedCount,
+                    releases: this.undoCheckpoint.releaseCount, peakMetres: this.undoCheckpoint.peak / 100 } : null,
+                restoring: this.restoringCheckpoint, queued: this.restoreRequest },
+            recentImpactSpeed: this.recentImpactSpeed, chargedIncidentCount: this.chargedIncidentCount,
             observationSeconds: this.current?.contactSeconds, maxObserveSeconds: MAX_OBSERVE_SECONDS,
             placementBlocked: this.world.hasPlacementHazard(), placementTop: this.world.placementTop(),
             stabilizers: this.world.stabilizerSnapshot(),
