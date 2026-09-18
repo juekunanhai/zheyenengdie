@@ -1,6 +1,6 @@
 # 开发与准备当前状态
 
-2026-09-18 当前：**Batch 3 图鉴与普通战绩分享源码接入已继续推进。** 24 件物体和 6 个道具的首次发现、独立 PlayerProgress、本地图鉴列表/详情页、结算新发现提示，以及微信/Web `ShareAdapter` 均已接入。`check_batch3_collection.cjs`、`check_result_metrics.cjs` 和既有 Batch 2/导演/检查点/世界/视图/反馈回归通过。没有构建或启动项目；截图、录屏、日志不提交。正式大图绑定、Cocos 真实视觉、微信分享面板、平台降级、设备安全区和分享回流仍未验收，详见 [Batch 3 实施记录](BATCH3_IMPLEMENTATION.md)。
+2026-09-18 当前：**Batch 3 图鉴与普通战绩分享源码接入已继续推进。** 24 件物体和 6 个道具的首次发现、独立 PlayerProgress、本地图鉴列表/详情页、正式大图 SpriteFrame 绑定、结算新发现提示，以及微信/Web `ShareAdapter` 均已接入。`check_batch3_collection.cjs`、`check_batch3_assets.cjs`、`check_result_metrics.cjs` 和既有 Batch 2/导演/检查点/世界/视图/反馈回归通过。没有构建或启动项目；截图、录屏、日志不提交。Cocos 真实视觉、微信分享面板、平台降级、设备安全区和分享回流仍未验收，详见 [Batch 3 实施记录](BATCH3_IMPLEMENTATION.md)。
 
 2026-09-18 Batch 2 R2：**源码接入已继续推进。** 两槽道具账本、三选一里程碑、六道具消费、检查点恢复防复制、HUD 槽位、第二批 12 件对象数据、正式素材候选/meta/HUD 引用、导演解锁门槛和 NEXT 重抽均已完成静态接入。没有构建或启动项目；截图、录屏、日志不提交。真实 Cocos Box2D、素材最终视觉、广告复活、微信设备和长局平衡仍未验收，详见 [Batch 2 R2 实施记录](BATCH2_R2_IMPLEMENTATION.md)。
 

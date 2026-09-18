@@ -930,7 +930,128 @@
     "_enabled": true,
     "__prefab": null,
     "_id": "9ad4aae7-8765-56b1-8e30-e1afd441666b",
-    "frames": [],
+    "frames": [
+      {
+        "__uuid__": "f5ca6384-3db3-5ede-96ed-3eb32cc2443d@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "dedc90ac-5149-556d-9b3b-7d282443ee08@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "e3616b30-2519-50a3-93be-98e543223e56@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "b0dd028e-7a35-53eb-afb8-2aa5e92d1381@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cce2bc47-590b-57c1-9e2c-5c35bffb9c29@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "c5455892-cebe-5287-bf11-a67c3748dfd2@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "c08f16c0-112c-5aff-9ce3-b5c54118cea7@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "4b8aae92-095c-5e27-b928-b1db46048627@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "e58dfbb2-df57-5b00-8fe5-2b55520ee99c@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "245bd1c2-0956-5e84-a083-abf2aab6b42f@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "ee5131c5-f13b-523f-b02c-c7ec91d39494@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f2f32c9a-ed38-51f6-97db-8d19df5bb5e2@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f7d15c5b-4069-4e6a-8ec9-ade900168d97@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "b31ff5af-5d2b-4603-adff-c342012e7957@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "fcb3d6da-1b6f-4b8d-a252-8df91deb370e@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "195d5343-3656-4e84-b9a3-72318f9ed997@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f0039836-f090-4910-8a40-8b91b160e210@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "cfa5f7dd-9714-43b5-a9b3-928682a81677@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "a82d7656-0123-4ef6-aa94-81af344ae988@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "ba4bc629-b906-44a8-9216-63533a9090d3@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "d4edbcbe-61ca-49e2-983d-95b430bdfc98@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "66219eaa-d6a5-4283-9f00-f1c29908c308@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "be2a5f4f-8a0c-4481-a8cd-77cf626de131@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "6af4d96d-c870-45ff-b3a4-4988d587c68c@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "f1ba3d7a-6a7b-5eb8-930b-6635e3acb303@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "a9531952-4f35-5ce3-ad68-f6cb70067dfb@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "b768d615-f3b4-58cf-a3da-139ef9cdcc78@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "0f4a3a44-341a-5875-aeb5-8f598321537b@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "025e4084-bb59-5ee2-97c2-de7bba9b8498@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      },
+      {
+        "__uuid__": "913772e9-14e8-5cd9-80c8-4169adf565d1@f9941",
+        "__expectedType__": "cc.SpriteFrame"
+      }
+    ],
     "uiSound": {
       "__uuid__": "3555e3a1-c6cf-5675-a998-830c361f0078",
       "__expectedType__": "cc.AudioClip"

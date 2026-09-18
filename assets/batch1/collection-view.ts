@@ -13,6 +13,8 @@ export class CollectionView {
     private ledger = new CollectionLedger();
     private tab: CollectionTab = 'objects';
     private openDetail: { tab: CollectionTab; index: number } | null = null;
+    private static readonly DESIGN_WIDTH = 750;
+    private static readonly DESIGN_HEIGHT = 1334;
 
     constructor(private readonly parent: Node, frames: Map<string, SpriteFrame>) {
         this.frames = frames;
@@ -52,6 +54,8 @@ export class CollectionView {
         const graphics = this.root.getComponent(Graphics)!;
         graphics.clear(); graphics.fillColor = new Color(12, 37, 74, 235);
         graphics.rect(-width / 2, -height / 2, width, height); graphics.fill();
+        const scale = Math.min(1, width / CollectionView.DESIGN_WIDTH, height / CollectionView.DESIGN_HEIGHT);
+        this.page.setScale(scale, scale, 1);
         this.page.setPosition(0, 0, 0);
     }
 
@@ -118,8 +122,7 @@ export class CollectionView {
         const image = this.frames.get(entry.spriteName);
         if (image) {
             const node = new Node('DetailSprite'); node.layer = this.page.layer; this.page.addChild(node);
-            node.addComponent(UITransform).setContentSize(260, 220); node.setPosition(0, 270, 0);
-            const sprite = node.addComponent(Sprite); sprite.spriteFrame = image; sprite.sizeMode = Sprite.SizeMode.CUSTOM; sprite.trim = false;
+            this.fitDetailSprite(node, image, 300, 220);
         } else {
             this.text(this.page, 'DetailArtFallback', '正式大图随资源包载入', 22, 0, 270, 580, 44, new Color(150, 194, 230, 255));
         }
@@ -132,12 +135,24 @@ export class CollectionView {
         const entry = itemEntry(kind); const image = this.frames.get(entry.spriteName);
         if (image) {
             const node = new Node('DetailSprite'); node.layer = this.page.layer; this.page.addChild(node);
-            node.addComponent(UITransform).setContentSize(220, 220); node.setPosition(0, 270, 0);
-            const sprite = node.addComponent(Sprite); sprite.spriteFrame = image; sprite.sizeMode = Sprite.SizeMode.CUSTOM; sprite.trim = false;
+            this.fitDetailSprite(node, image, 250, 240);
         } else {
             this.text(this.page, 'DetailArtFallback', '正式道具图随资源包载入', 22, 0, 270, 580, 44, new Color(150, 194, 230, 255));
         }
         this.text(this.page, 'DetailDescription', entry.description, 29, 0, 80, 650, 130, Color.WHITE);
+    }
+
+    private fitDetailSprite(node: Node, image: SpriteFrame, maxWidth: number, maxHeight: number): void {
+        const source = image.originalSize;
+        const sourceWidth = source.width || maxWidth;
+        const sourceHeight = source.height || maxHeight;
+        const scale = Math.min(maxWidth / sourceWidth, maxHeight / sourceHeight);
+        node.addComponent(UITransform).setContentSize(sourceWidth * scale, sourceHeight * scale);
+        node.setPosition(0, 270, 0);
+        const sprite = node.addComponent(Sprite);
+        sprite.spriteFrame = image;
+        sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+        sprite.trim = false;
     }
 
     private entryButton(title: string, subtitle: string, x: number, y: number, width: number, height: number,
